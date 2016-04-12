@@ -26,16 +26,18 @@
 
 /* ============= 1.4 Input */
 //inputlara tiklandiginda labelin alta gelmesi
-$(".alan input").click(function(){
+$("input").focus(function(){
     $(this).parent().addClass("aktif dolu");
 })
 //inputtan ayrilindiginda, inputa yazi yoksa label eski haline doner, yazi varsa label aktif kalir
-$(".alan input").focusout(function(){
+$("input").focusout(function(){
     if($(this).val() == ""){
         $(this).parent().removeClass("dolu");
     }
     $(this).parent().removeClass("aktif");
 })
+//labelden sonra input geliyorsa, o labeli inputun üstüne getirir
+$("label + input").prev().css("transform","translateY(24px)");
 
 /* ============= 1.5 Radio Button */
 /* ============= 1.6 Tarih Secici */

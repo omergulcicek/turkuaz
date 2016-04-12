@@ -1019,57 +1019,36 @@ input[type=search] {
     width: 100%
 }
 
-.alan {
-    height: 80px;
-    padding: 8px 0 16px 0;
-    position: relative
+.aktif input {
+    border-bottom: 2px dotted #057970
 }
 
-.alan::after, .alan::before {
-    bottom: 20px;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    width: 100%
-}
-
-.alan::after {
-    background-color: #1AC5B8;
-    transform: scale3d(1, .25, 1);
-    transition: transform .3s
-}
-
-.alan.aktif::after {
-    transform: scaleX(1)
-}
-
-.alan label {
-    color: #858585;
+label {
+    color: #1AC5B8;
     display: block;
     font-weight: 400;
     line-height: 16px;
     margin: 0;
     position: relative;
-    transform: translateY(24px);
     transform-origin: 0 50%;
-    transition: transform .3s, font-size .3s
+    transition: all .3s
 }
 
 .aktif label {
-    color: #4ba6a3;
-    transform: translateY(0) scale(.75)
+    color: #057970;
+    transform: translateY(24px) scale(1)
 }
 
-.alan.dolu label {
-    transform: translateY(55px) scale(.75)
+.dolu label {
+    transform: translateY(55px) scale(.75) !important
 }
 
-.alan input {
-    border:none;
+input {
     line-height: 16px;
+    margin-bottom: 15px;
     outline: none
 }
+
 
 /* ============= 7.5 Radio Buton */
 /* ============= 7.6 Tarih Secici */
