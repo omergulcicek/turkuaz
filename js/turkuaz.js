@@ -26,18 +26,18 @@
 
 /* ============= 1.4 Input */
 //inputlara tiklandiginda labelin alta gelmesi
-$("input").focus(function(){
-    $(this).parent().addClass("aktif dolu");
+$input = "input[type=text],input[type=password],input[type=email],input[type=url],input[type=date],input[type=tel],input[type=number],input[type=search]";
+//inputlara tiklandiginda labelin alta gelmesi
+$($input).focus(function(){
+    $(this).addClass("aktif dolu");
 })
 //inputtan ayrilindiginda, inputa yazi yoksa label eski haline doner, yazi varsa label aktif kalir
-$("input").focusout(function(){
+$($input).focusout(function(){
     if($(this).val() == ""){
-        $(this).parent().removeClass("dolu");
+        $(this).removeClass("dolu");
     }
-    $(this).parent().removeClass("aktif");
+    $(this).removeClass("aktif");
 })
-//labelden sonra input geliyorsa, o labeli inputun üstüne getirir
-$("label + input").prev().css("transform","translateY(24px)");
 
 /* ============= 1.5 Radio Button */
 /* ============= 1.6 Tarih Secici */
