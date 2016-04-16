@@ -51,6 +51,18 @@ html {
     box-sizing: inherit
 }
 
+::-webkit-scrollbar {
+    width:10px;
+    background-color: rgba(0,0,0,.05);
+}
+::-webkit-scrollbar-track {
+    border: 0;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1AC5B8;
+}
+
 body {
     background-color: #FFF;
     font-family: "Roboto", sans-serif;
@@ -1023,6 +1035,7 @@ button:hover {
 }
 [type=checkbox]:checked + label:before {
     backface-visibility: hidden;
+    border-color: #1AC5B8;
     border-top-color: transparent;
     border-left-color: transparent;
     height: 22px;
@@ -1079,14 +1092,14 @@ button:hover {
     width: 100%
 }
 
-[type=text],
-[type=password],
-[type=email],
-[type=url],
-[type=date],
-[type=tel],
-[type=number],
-[type=search] {
+[type=text].aktif,
+[type=password].aktif,
+[type=email].aktif,
+[type=url].aktif,
+[type=date].aktif,
+[type=tel].aktif,
+[type=number].aktif,
+[type=search].aktif {
     border-bottom: 2px solid #1AC5B8
 }
 
@@ -1152,13 +1165,13 @@ button:hover {
     font-size: 15px;
     height: 25px;
     line-height: 25px;
-    padding: 0 25px;
+    padding: 0 15px 0 25px;
     position: relative
 }
 
 [type=radio]:checked + label:before {
     backface-visibility: hidden;
-    background-color: #000;
+    background-color: #1AC5B8;
     height: 18px;
     left: 0;
     top: 0;
@@ -1188,6 +1201,50 @@ button:hover {
 /* ============= 7.6 Tarih Secici */
 /* ============= 7.7 Textarea */
 
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #eee;
+    box-sizing: content-box;
+    display: block;
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 16px;
+    margin: 15px 0;
+    min-height: 50px;
+    outline: none;
+    position: relative;
+    resize: none;
+    transition: all .3s;
+    width: 100%
+}
+
+textarea.aktif {
+    border-bottom: 2px solid #1AC5B8
+}
+
+textarea + label {
+    color: #1AC5B8;
+    cursor: auto;
+    display: block;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0;
+    pointer-events: none;
+    position: relative;
+    transform: translateY(-145px);
+    transform-origin: 0 50%;
+    transition: all .3s
+}
+
+textarea.aktif + label {
+    color: #057970
+}
+
+textarea.dolu + label {
+    transform: translateY(-170px) scale(.75) !important
+}
 
 /* ============= 8. Footer */
 

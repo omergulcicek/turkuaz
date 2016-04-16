@@ -26,7 +26,7 @@
 
 /* ============= 1.4 Input */
 //inputlara tiklandiginda labelin alta gelmesi
-$input = "input[type=text],input[type=password],input[type=email],input[type=url],input[type=date],input[type=tel],input[type=number],input[type=search]";
+$input = "Textarea,input[type=text],input[type=password],input[type=email],input[type=url],input[type=date],input[type=tel],input[type=number],input[type=search]";
 //inputlara tiklandiginda labelin alta gelmesi
 $($input).focus(function(){
     $(this).addClass("aktif dolu");
