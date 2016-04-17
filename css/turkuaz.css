@@ -63,6 +63,11 @@ html {
     background-color: #1AC5B8;
 }
 
+::selection {
+    background-color: #1AC5B8;
+    color: #FFF
+}
+
 body {
     background-color: #FFF;
     font-family: "Roboto", sans-serif;
@@ -259,11 +264,6 @@ table {
 td,
 th {
     padding: 0
-}
-
-::selection {
-    background-color: #f44336;
-    color: #FFF
 }
 
 /* ============= 2. Grid Kodlari  */
@@ -1373,6 +1373,54 @@ menu.mobil ul li {
 
 /* ============= 11. Sayfa Konumu */
 
+nav.konum {
+    background-color: #1AC5B8;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color:rgba(255,255,255,.6);
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 0 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+nav.konum a {
+    color: rgba(255,255,255,.6);
+    margin-right: 10px
+}
+
+nav.konum a:last-of-type {
+    color: #FFF
+}
+
+nav.konum a::after {
+    content: ">";
+    margin-left: 10px
+}
+
+nav.konum a:last-of-type::after {
+    content:""
+}
+
+nav.konum a:hover {
+    text-decoration: none
+}
+
+nav.konum.saydam {
+    background-color: transparent !important
+}
+
+nav.konum.saydam a {
+    color: rgba(0,0,0,.6)
+}
+
+nav.konum.saydam a:last-of-type {
+    color: #000
+}
+
 /* ============= 12. Sayfa Numaralandirma */
 
 /* ============= 13. Yazi */
@@ -1467,21 +1515,25 @@ menu.mobil ul li {
 /* ============= 13.3 Yazi Renkleri */
 
 .yazi-beyaz,
+.yazi-beyaz a,
 menu.yazi-beyaz ul li a {
     color: #FFF !important
 }
 
 .yazi-sari,
+.yazi-sari a,
 menu.yazi-sari ul li a {
     color: #FFEE58 !important
 }
 
 .yazi-sari2,
+.yazi-sari2 a,
 menu.yazi-sari2 ul li a {
     color: #FFEB3B !important
 }
 
 .yazi-sari3,
+.yazi-sari3 a,
 menu.yazi-sari3 ul li a {
     color: #FDD835 !important
 }
@@ -1492,236 +1544,283 @@ menu.yazi-sari4 ul li a {
 }
 
 .yazi-sari5,
+.yazi-sari5 a,
 menu.yazi-sari5 ul li a {
     color: #F9A825 !important
 }
 
 .yazi-turuncu,
+.yazi-turuncu a,
 menu.yazi-turuncu ul li a {
     color: #FFA726 !important
 }
 
 .yazi-turuncu2,
+.yazi-turuncu2 a,
 menu.yazi-turuncu2 ul li a {
     color: #FF9800 !important
 }
 
 .yazi-turuncu3,
+.yazi-turuncu3 a,
 menu.yazi-turuncu3 ul li a {
     color: #FB8C00 !important
 }
 
 .yazi-turuncu4,
+.yazi-turuncu4 a,
 menu.yazi-turuncu4 ul li a {
     color: #F57C00 !important
 }
 
 .yazi-turuncu5,
+.yazi-turuncu5 a,
 menu.yazi-turuncu5 ul li a {
     color: #EF6C00 !important
 }
 
 .yazi-kirmizi,
+.yazi-kirmizi a,
 menu.yazi-kirmizi ul li a {
     color: #f44336 !important
 }
 
 .yazi-kirmizi2,
+.yazi-kirmizi2 a,
 menu.yazi-kirmizi2 ul li a {
     color: #e53935 !important
 }
 
 .yazi-kirmizi3,
+.yazi-kirmizi3 a,
 menu.yazi-kirmizi3 ul li a {
     color: #d32f2f !important
 }
 
 .yazi-kirmizi4,
+.yazi-kirmizi4 a,
 menu.yazi-kirmizi4 ul li a {
     color: #c62828 !important
 }
 
 .yazi-kirmizi5,
+.yazi-kirmizi5 a,
 menu.yazi-kirmizi5 ul li a {
     color: #b71c1c !important
 }
 
 .yazi-pembe,
+.yazi-pembe a,
 menu.yazi-pembe ul li a {
     color: #E91E63 !important
 }
 
 .yazi-pembe2,
+.yazi-pembe2 a,
 menu.yazi-pembe2 ul li a {
     color: #D81B60 !important
 }
 
 .yazi-pembe3,
+.yazi-pembe3 a,
 menu.yazi-pembe3 ul li a {
     color: #C2185B !important
 }
 
 .yazi-pembe4,
+.yazi-pembe4 a,
 menu.yazi-pembe4 ul li a {
     color: #AD1457 !important
 }
 
 .yazi-pembe5,
+.yazi-pembe5 a,
 menu.yazi-pembe5 ul li a {
     color: #880E4F !important
 }
 
 .yazi-mor,
+.yazi-mor a,
 menu.yazi-mor ul li a {
     color: #9C27B0 !important
 }
 
 .yazi-mor2,
+.yazi-mor2 a,
 menu.yazi-mor2 ul li a {
     color: #8E24AA !important
 }
 
 .yazi-mor3,
+.yazi-mor3 a,
 menu.yazi-mor3 ul li a {
     color: #7B1FA2 !important
 }
 
 .yazi-mor4,
+.yazi-mor4 a,
 menu.yazi-mor4 ul li a {
     color: #6A1B9A !important
 }
 
 .yazi-mor5,
+.yazi-mor5 a,
 menu.yazi-mor5 ul li a {
     color: #4A148C !important
 }
 
 .yazi-mavi,
+.yazi-mavi a,
 menu.yazi-mavi ul li a {
     color: #2196F3 !important
 }
 
 .yazi-mavi2,
+.yazi-mavi2 a,
 menu.yazi-mavi2 ul li a {
     color: #1E88E5 !important
 }
 
 .yazi-mavi3,
+.yazi-mavi3 a,
 menu.yazi-mavi3 ul li a {
     color: #1976D2 !important
 }
 
 .yazi-mavi4,
+.yazi-mavi4 a,
 menu.yazi-mavi4 ul li a {
     color: #1565C0 !important
 }
 
 .yazi-mavi5,
+.yazi-mavi5 a,
 menu.yazi-mavi5 ul li a {
     color: #0D47A1 !important
 }
 
 .yazi-turkuaz,
+.yazi-turkuaz a,
 menu.yazi-turkuaz ul li a {
     color: #1AC5B8 !important
 }
 
 .yazi-turkuaz2,
+.yazi-turkuaz2 a,
 menu.yazi-turkuaz2 ul li a {
     color: #13b4a8 !important
 }
 
 .yazi-turkuaz3,
+.yazi-turkuaz3 a,
 menu.yazi-turkuaz3 ul li a {
     color: #0da196 !important
 }
 
 .yazi-turkuaz4,
+.yazi-turkuaz4 a,
 menu.yazi-turkuaz4 ul li a {
     color: #0a8b81 !important
 }
 
 .yazi-turkuaz5,
+.yazi-turkuaz5 a,
 menu.yazi-turkuaz5 ul li a {
     color: #057970 !important
 }
 
 .yazi-yesil,
+.yazi-yesil a,
 menu.yazi-yesil ul li a {
     color: #4CAF50 !important
 }
 
 .yazi-yesil2,
+.yazi-yesil2 a,
 menu.yazi-yesil2 ul li a {
     color: #43A047 !important
 }
 
 .yazi-yesil3,
+.yazi-yesil3 a,
 menu.yazi-yesil3 ul li a {
     color: #388E3C !important
 }
 
 .yazi-yesil4,
+.yazi-yesil4 a,
 menu.yazi-yesil4 ul li a {
     color: #2E7D32 !important
 }
 
 .yazi-yesil5,
+.yazi-yesil5 a,
 menu.yazi-yesil5 ul li a {
     color: #1B5E20 !important
 }
 
 .yazi-kahverengi,
+.yazi-kahverengi a,
 menu.yazi-kahverengi ul li a {
     color: #795548 !important
 }
 
 .yazi-kahverengi2,
+.yazi-kahverengi2 a,
 menu.yazi-kahverengi2 ul li a {
     color: #6D4C41 !important
 }
 
 .yazi-kahverengi3,
+.yazi-kahverengi3 a,
 menu.yazi-kahverengi3 ul li a {
     color: #5D4037 !important
 }
 
 .yazi-kahverengi4,
+.yazi-kahverengi4 a,
 menu.yazi-kahverengi4 ul li a {
     color: #4E342E !important
 }
 
 .yazi-kahverengi5,
+.yazi-kahverengi5 a,
 menu.yazi-kahverengi5 ul li a {
     color: #3E2723 !important
 }
 
 .yazi-gri,
+.yazi-gri a,
 menu.yazi-gri ul li a {
     color: #B0BEC5 !important
 }
 
 .yazi-gri2,
+.yazi-gri2 a,
 menu.yazi-gri2 ul li a {
     color: #90A4AE !important
 }
 
 .yazi-gri3,
+.yazi-gri3 a,
 menu.yazi-gri3 ul li a {
     color: #607D8B !important
 }
 
 .yazi-gri4,
+.yazi-gri4 a,
 menu.yazi-gri4 ul li a {
     color: #455A64 !important
 }
 
 .yazi-gri5,
+.yazi-gri5 a,
 menu.yazi-gri5 ul li a {
     color: #37474F !important
 }
 
 .yazi-siyah,
+.yazi-siyah a,
 menu.yazi-siyah ul li a {
     color: #000 !important
 }
