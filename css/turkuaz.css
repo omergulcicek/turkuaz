@@ -7,6 +7,7 @@
 *    Turkuaz Framework - CSS Kod Duzeni
 *
 *    1.     Genel CSS
+*      1.1    Tablolar
 *    2.     Grid Sistemi
 *    3.     Yardimci Kodlar
 *    4.     Yazi Stili
@@ -253,6 +254,8 @@ code {
     white-space: pre-wrap
 }
 
+/* ============= 1.1 Tablolar */
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -264,6 +267,51 @@ table {
 td,
 th {
     padding: 0
+}
+
+table th,
+table td {
+    border: 1px solid rgba(0, 0, 0, .05);
+    padding: 15px
+}
+
+table th {
+    background-color: rgba(0, 0, 0, .05);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 0px;
+    text-align: left
+}
+
+table.renkli tr:nth-child(even) {
+    background-color: rgba(0,0,0,.05)
+}
+
+table.vurgu tr:hover td {
+    background-color: rgba(0,0,0,.075);
+    transition: all .3s
+}
+
+table.saydam th {
+    background-color: transparent
+}
+
+table.saydam th,
+table.saydam td {
+    border:0
+}
+
+table.saydam tr:first-of-type th {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+table.yazi-ortala tr th {
+    text-align: center
+}
+
+table.yazi-sag tr th {
+    text-align: right
 }
 
 /* ============= 2. Grid Kodlari  */
@@ -605,6 +653,36 @@ th {
 
 .gizle {
     display: none !important
+}
+
+@media only screen and (max-width: 400px) {
+    .gizle-ck {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .gizle-k {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .gizle-o {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .gizle-b {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .gizle-cb {
+        display: none
+    }
 }
 
 .cizgi {
