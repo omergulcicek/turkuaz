@@ -1093,6 +1093,88 @@ button:hover {
 
 /* ============= 6.3 Buton Efektleri */
 
+[class*="efekt"] {
+    overflow: hidden;
+    position: relative
+}
+        
+[class*="efekt"]::before {
+    background: #fff;
+    content: "";
+    opacity: .25;
+    position: absolute;
+    transition: all .3s
+}
+        
+.buton.efekt1:before {
+    height: 150px;
+    left: -70px;
+    top: -40px;
+    transform: rotate(37deg);
+    width: 50px
+}
+        
+.buton.efekt1:hover:before {
+    left: 99%
+    }
+        
+.buton.efekt2:before {
+    height: 150px;
+    left: 99%;
+    top: -40px;
+    transform: rotate(37deg);
+    width: 50px
+}
+        
+.buton.efekt2:hover:before {
+    left: -72px
+}
+        
+.buton.efekt3:before {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 0
+}
+        
+.buton.efekt3:hover:before {
+    width: 100%
+}
+        
+.buton.efekt4:before {
+    bottom: 0;
+    height: 100%;
+    left: 100%;
+    width: 0
+}
+        
+.buton.efekt4:hover:before {
+    left: 0;
+    width: 100%
+}
+        
+.buton.efekt5:before {
+	height: 0;
+	left: 0;
+	top: 0;
+	width: 100%
+}
+        
+.buton.efekt5:hover:before {
+	height: 100%
+}
+        
+.buton.efekt6:before {
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%
+}
+        
+.buton.efekt6:hover:before {
+	height: 100%
+}
+
 /* ============= 7. Form */
 /* ============= 7.1 Checkbox */
 
