@@ -20,7 +20,7 @@
 *      6.3    Buton Efektleri
 *    7.     Form
 *      7.1    Checkbox
-*      7.2    Combobox
+*      7.2    Select
 *      7.3    Dosya Secici
 *      7.4    Input
 *      7.5    Radio Buton
@@ -271,15 +271,15 @@ th {
 
 table th,
 table td {
-    border: 1px solid rgba(0, 0, 0, .05);
+    border: 1px solid rgba(0,0,0,.05);
     padding: 15px
 }
 
 table th {
-    background-color: rgba(0, 0, 0, .05);
-    border-left: 1px solid rgba(0, 0, 0, .1);
-    border-right: 1px solid rgba(0, 0, 0, .1);
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    background-color: rgba(0,0,0,.05);
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 0px;
     text-align: left
 }
@@ -303,7 +303,7 @@ table.saydam td {
 }
 
 table.saydam tr:first-of-type th {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
 table.yazi-ortala tr th {
@@ -418,7 +418,9 @@ table.yazi-sag tr th {
 .row .tr {
     box-sizing: border-box;
     float: left;
-    padding: 0 15px
+    min-height: 1px;
+    padding: 0 15px;
+    position: relative
 }
 
 /* Mobil Cihazlar */
@@ -693,7 +695,7 @@ table.yazi-sag tr th {
 }
 
 .temizle {
-    clear: both;
+    clear: both
 }
 
 /* ============= 4. Yazi Stili */
@@ -706,7 +708,8 @@ table.yazi-sag tr th {
 /* ============= 5. Arkaplanlar */
 /* ============= 5.1 Arkaplan Desenleri */
 
-.desen, .desen1 {
+.desen,
+.desen1 {
     background-image: url("../img/desen.png")
 }
 
@@ -1015,29 +1018,29 @@ menu.siyah ul li ul li a {
 button.saydam {
     background-color: transparent !important;
     box-shadow: none !important;
-    color : #000
+    color: #000
 }
 
 .buton.saydam:hover,
 button.saydam:hover {
     box-shadow: inset 0 0 0 0 transparent !important;
-    color : #000
+    color: #000
 }
 
 .buton.pasif,
 button.pasif {
     background-color: #DFDFDF !important;
     box-shadow: none;
-    color: rgba(0, 0, 0, .4) !important;
-    cursor:default;
+    color: rgba(0,0,0,.4) !important;
+    cursor:default
 }
 
 .buton.pasif:hover,
 button.pasif:hover {
     background-color: #DFDFDF !important;
     box-shadow: inset 0 0 0 0 transparent !important;
-    color: rgba(0, 0, 0, .4) !important;
-    cursor:default;
+    color: rgba(0,0,0,.4) !important;
+    cursor:default
 }
 
 .buton.golge,
@@ -1055,7 +1058,7 @@ button.golge:hover {
 .buton,
 button {
     background-color: #1AC5B8;
-    border : none;
+    border: none;
     border-radius: 3px;
     color: #FFF;
     cursor: pointer;
@@ -1098,19 +1101,27 @@ button:hover {
     opacity: 0;
     position: absolute
 }
+
 [type=checkbox] {
     box-sizing: border-box;
     padding: 0
 }
+
 [type=checkbox] + label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
     height: 25px;
     line-height: 25px;
+    min-width: 50px;
     padding: 0 25px;
     position: relative
 }
+
+.tr [type=checkbox]:last-of-type + label {
+    margin-bottom: 15px
+}
+
 [type=checkbox]:checked + label:before {
     backface-visibility: hidden;
     border-color: #1AC5B8;
@@ -1123,6 +1134,7 @@ button:hover {
     transform-origin: 100% 100%;
     width: 12px
 }
+
 [type=checkbox] + label:before, [type=checkbox]:not(.filled-in) + label:after {
     border: 2px solid #000;
     border-radius: 1px;
@@ -1136,12 +1148,27 @@ button:hover {
     width: 18px;
     z-index: 0
 }
+
 [type=checkbox]:not(.filled-in) + label:after {
     border: 0;
     transform: scale(0)
 }
 
-/* ============= 7.2 Combobox */
+/* ============= 7.2 Select */
+
+select {
+    background-color: rgba(255,255,255,.85);
+    border:1px solid #f2f2f2;
+    border-radius: 2px;
+    display: block;
+    height: 40px;
+    margin-bottom: 15px;
+    outline: none;
+    letter-spacing: .3px;
+    padding: 0 50px 0 10px;
+    width: 100%
+}
+
 /* ============= 7.3 Dosya Secici */
 /* ============= 7.4 Input */
 
@@ -1247,6 +1274,10 @@ button:hover {
     position: relative
 }
 
+.tr [type=radio]:last-of-type + label {
+    margin-bottom: 15px
+}
+
 [type=radio]:checked + label:before {
     backface-visibility: hidden;
     background-color: #1AC5B8;
@@ -1277,6 +1308,11 @@ button:hover {
 }
 
 /* ============= 7.6 Tarih Secici */
+
+[type=date] + label {
+    transform: translateY(-64px) scale(.75) !important
+}
+
 /* ============= 7.7 Textarea */
 
 textarea {
@@ -1332,7 +1368,7 @@ textarea.dolu + label {
 
 menu {
     background-color: #1AC5B8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
     display: none;
     height: 50px;
     position: relative;
@@ -1455,7 +1491,7 @@ nav.konum {
     background-color: #1AC5B8;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    color:rgba(255,255,255,.6);
+    color: rgba(255,255,255,.6);
     height: 50px;
     line-height: 50px;
     overflow: hidden;
@@ -1521,7 +1557,7 @@ nav.konum.saydam a:last-of-type {
 }
 
 .yazi-golge2 {
-    text-shadow: 4px 3px 0 #0a9a8f, 9px 8px 0 rgba(0, 0, 0, 0.15)
+    text-shadow: 4px 3px 0 #0a9a8f, 9px 8px 0 rgba(0,0,0,.15)
 }
 
 .yazi-kalin {
