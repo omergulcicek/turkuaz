@@ -28,6 +28,9 @@
 *      7.7    Textarea
 *    8.     Footer
 *    9.     Kartlar
+*      9.1    Kart Ayarlari
+*      9.2    Kart Boyutlari
+*      9.3    Kart Efektleri
 *    10.    Menu
 *    11.    Sayfa Konumu
 *    12.    Sayfa Numaralandirma
@@ -264,11 +267,6 @@ table {
     width: 100%
 }
 
-td,
-th {
-    padding: 0
-}
-
 table th,
 table td {
     border: 1px solid rgba(0,0,0,.05);
@@ -323,7 +321,7 @@ table.yazi-sag tr th {
     margin: 0 auto
 }
 
-/* Mobil Cihazlar (400px'den kucuk) */
+/* Mobil Cihazlar */
 .container {
     width: 85%
 }
@@ -336,7 +334,7 @@ table.yazi-sag tr th {
     width: 100%
 }
 
-/* Mini Tabletler (400px - 800px arasi) */
+/* Mini Tabletler */
 @media only screen and (min-width: 400px) {
     .container {
         width: 80%
@@ -349,7 +347,7 @@ table.yazi-sag tr th {
     }
 }
 
-/* Tabletler (800px - 1000px arasi) */
+/* Tabletler */
 @media only screen and (min-width: 800px) {
     .container {
         width: 75%
@@ -362,7 +360,7 @@ table.yazi-sag tr th {
     }
 }
 
-/* Bilgisayarlar (1000px - 1200px arasi) */
+/* Bilgisayarlar */
 @media only screen and (min-width: 1000px) {
     .container {
         width: 70%
@@ -375,7 +373,7 @@ table.yazi-sag tr th {
     }
 }
 
-/* Yuksek Cozunurlukler (1200px fazlasi) */
+/* Yuksek Cozunurlukler */
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1250px;
@@ -643,7 +641,7 @@ table.yazi-sag tr th {
 }
 
 .ortala {
-    display: block;
+    display: block !important;
     float: none;
     margin-left: auto;
     margin-right: auto
@@ -1093,19 +1091,20 @@ button:hover {
 
 /* ============= 6.3 Buton Efektleri */
 
-[class*="efekt"] {
+.buton[class*="efekt"] {
     overflow: hidden;
     position: relative
 }
-        
-[class*="efekt"]::before {
+
+.buton[class*="efekt"]::before {
     background: #fff;
     content: "";
     opacity: .25;
     position: absolute;
     transition: all .3s
 }
-        
+
+.buton.efekt:before,
 .buton.efekt1:before {
     height: 150px;
     left: -70px;
@@ -1113,11 +1112,12 @@ button:hover {
     transform: rotate(37deg);
     width: 50px
 }
-        
+
+.buton.efekt:hover:before,
 .buton.efekt1:hover:before {
     left: 99%
-    }
-        
+}
+
 .buton.efekt2:before {
     height: 150px;
     left: 99%;
@@ -1125,54 +1125,54 @@ button:hover {
     transform: rotate(37deg);
     width: 50px
 }
-        
+
 .buton.efekt2:hover:before {
     left: -72px
 }
-        
+
 .buton.efekt3:before {
     bottom: 0;
     height: 100%;
     left: 0;
     width: 0
 }
-        
+
 .buton.efekt3:hover:before {
     width: 100%
 }
-        
+
 .buton.efekt4:before {
     bottom: 0;
     height: 100%;
     left: 100%;
     width: 0
 }
-        
+
 .buton.efekt4:hover:before {
     left: 0;
     width: 100%
 }
-        
+
 .buton.efekt5:before {
-	height: 0;
-	left: 0;
-	top: 0;
-	width: 100%
+    height: 0;
+    left: 0;
+    top: 0;
+    width: 100%
 }
-        
+
 .buton.efekt5:hover:before {
-	height: 100%
+    height: 100%
 }
-        
+
 .buton.efekt6:before {
-	bottom: 0;
-	height: 0;
-	left: 0;
-	width: 100%
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%
 }
-        
+
 .buton.efekt6:hover:before {
-	height: 100%
+    height: 100%
 }
 
 /* ============= 7. Form */
@@ -1445,6 +1445,173 @@ textarea.dolu + label {
 /* ============= 8. Footer */
 
 /* ============= 9. Kartlar */
+/* ============= 9.1 Kart Ayarlari */
+
+.kart.golge {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
+    transition: all .3s
+}
+
+.kart.golge:hover {
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,.4)
+}
+
+/* ============= 9.2 Kart Boyutlari */
+
+.kart {
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    height: 400px;
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%
+}
+
+.kart.kucuk {
+    height: 300px
+}
+
+.kart.buyuk {
+    height: 500px
+}
+
+.kart > .resim {
+    height: 200px;
+    overflow: hidden;
+    width: 100%
+}
+
+.kart.kucuk > .resim {
+    height: 125px
+}
+
+.kart.buyuk > .resim {
+    height: 248px
+}
+
+.kart > .resim img {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    cursor: pointer;
+    height: auto;
+    transition: all .4s;
+    width: 100%
+}
+
+.kart .icerik {
+    height: 150px;
+    overflow: hidden;
+    padding: 10px 15px 0 15px
+}
+
+.kart.kucuk .icerik {
+    height: 114px
+}
+
+.kart.buyuk .icerik {
+    height: 190px
+}
+
+@media only screen and (min-width: 800px) {
+    .kart .icerik {
+        padding: 15px 25px 0 25px
+    }
+    .kart.kucuk .icerik {
+        padding: 10px 20px 0 20px
+    }
+}
+
+.kart .icerik h1,
+.kart .icerik h2,
+.kart .icerik h3,
+.kart .icerik h4,
+.kart .icerik h5,
+.kart .icerik h6 {
+    font-size: 22px;
+    margin-top: 0
+}
+
+.kart .icerik h1 a,
+.kart .icerik h2 a,
+.kart .icerik h3 a,
+.kart .icerik h4 a,
+.kart .icerik h5 a,
+.kart .icerik h6 a {
+    color: #000
+}
+
+.kart .icerik p {
+    font-size: 14px;
+    height: 100px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.kart.kucuk .icerik p {
+    height: 70px
+}
+
+.kart.buyuk .icerik p {
+    height: 150px
+}
+
+.kart .icerik::after {
+    background-color: rgba(0,0,0,.05);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 350px;
+    width: 100%
+}
+
+.kart.kucuk .icerik::after {
+    top: 251px
+}
+
+.kart.buyuk .icerik::after {
+    top: 450px
+}
+
+.kart .detay {
+    font-size: 12px;
+    height: 47px;
+    line-height: 47px
+}
+
+.kart.kucuk .detay,
+.kart.buyuk .detay {
+    margin-top: 13px
+}
+
+.kart .detay a.buton {
+    display: block;
+    height: 48px;
+    line-height: 26px
+}
+
+.kart .detay div:last-of-type {
+    float: right;
+    margin-right: 15px
+}
+
+.kart .detay div:first-of-type {
+    float: left;
+    margin-left: 15px
+}
+
+@media only screen and (min-width: 800px) {
+    .kart .detay div:last-of-type {
+        margin-right: 25px
+    }
+    .kart .detay div:first-of-type {
+        margin-left: 25px
+    }
+}
+
+/* ============= 9.3 Kart Efektleri */
+
+
 
 /* ============= 10. Menu */
 
@@ -1620,49 +1787,49 @@ nav.konum.saydam a:last-of-type {
 /* ============= 12. Sayfa Numaralandirma */
 
 nav.numara {
-border: 1px solid rgba(0,0,0,.1);
-border-radius: 4px;
-box-shadow: 0 2px 2px rgba(0,0,0,.07);
-display: inline-block;
-margin: 25px 0
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.07);
+    display: inline-block;
+    margin: 25px 0
 }
 
 nav.numara a {
-border-right: 1px solid rgba(0,0,0,.1);
-color: #000;
-display: block;
-float:left;
-padding: 8px 13px 8px 13px;
-text-align: center;
-transition: all .3s
+    border-right: 1px solid rgba(0,0,0,.1);
+    color: #000;
+    display: block;
+    float:left;
+    padding: 8px 13px 8px 13px;
+    text-align: center;
+    transition: all .3s
 }
 
 nav.numara a:last-of-type {
-border-right: 0
+    border-right: 0
 }
 
 nav.numara a.aktif {
-background-color: rgba(0,0,0,.2)
+    background-color: rgba(0,0,0,.2)
 }
 
 nav.numara a:hover {
-box-shadow : inset 0 0 0 100px rgba(0,0,0,.075);
-text-decoration: none
+    box-shadow : inset 0 0 0 100px rgba(0,0,0,.075);
+    text-decoration: none
 }
 
 nav.numara.buyuk a {
-font-size: 16px;
-padding: 16px 26px 16px 26px
+    font-size: 16px;
+    padding: 16px 26px 16px 26px
 }
 
 nav.numara.kucuk a {
-font-size: 11px;
-padding: 4px 6.5px 4px 6.5px
+    font-size: 11px;
+    padding: 4px 6.5px 4px 6.5px
 }
 
 nav.numara.golge {
-border: 0;
-box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
+    border: 0;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
 }
 
 /* ============= 13. Yazi */
