@@ -104,6 +104,22 @@ body {
     }
 }
 
+body > .karart {
+    background-color: rgba(0,0,0,.85);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998
+}
+
+@media only screen and (min-width: 1000px) {
+    body > .karart {
+        display: none
+    }
+}
+
 article,
 aside,
 details,
@@ -630,6 +646,206 @@ table.yazi-sag tr th {
     }
 }
 
+/* Mobil Cihazlar */
+@media only screen and (max-width: 400px) {
+    .row .tr.ck-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.ck-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.ck-3 {
+        margin-left: 25%
+    }
+    .row .tr.ck-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.ck-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.ck-6 {
+        margin-left: 50%
+    }
+    .row .tr.ck-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.ck-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.ck-9 {
+        margin-left: 75%
+    }
+    .row .tr.ck-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.ck-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.ck-12 {
+        margin-left: 100%
+    }
+}
+
+/* Mini Tabletler */
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .row .tr.k-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.k-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.k-3 {
+        margin-left: 25%
+    }
+    .row .tr.k-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.k-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.k-6 {
+        margin-left: 50%
+    }
+    .row .tr.k-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.k-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.k-9 {
+        margin-left: 75%
+    }
+    .row .tr.k-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.k-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.k-12 {
+        margin-left: 100%
+    }
+}
+
+/* Tabletler */
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .row .tr.o-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.o-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.o-3 {
+        margin-left: 25%
+    }
+    .row .tr.o-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.o-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.o-6 {
+        margin-left: 50%
+    }
+    .row .tr.o-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.o-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.o-9 {
+        margin-left: 75%
+    }
+    .row .tr.o-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.o-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.o-12 {
+        margin-left: 100%
+    }
+}
+
+/* Bilgisayarlar */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .row .tr.b-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.b-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.b-3 {
+        margin-left: 25%
+    }
+    .row .tr.b-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.b-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.b-6 {
+        margin-left: 50%
+    }
+    .row .tr.b-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.b-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.b-9 {
+        margin-left: 75%
+    }
+    .row .tr.b-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.b-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.b-12 {
+        margin-left: 100%
+    }
+}
+
+/* Yuksek Cozunurlukler */
+@media only screen and (min-width: 1200px) {
+    .row .tr.cb-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.cb-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.cb-3 {
+        margin-left: 25%
+    }
+    .row .tr.cb-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.cb-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.cb-6 {
+        margin-left: 50%
+    }
+    .row .tr.cb-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.cb-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.cb-9 {
+        margin-left: 75%
+    }
+    .row .tr.cb-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.cb-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.cb-12 {
+        margin-left: 100%
+    }
+}
+
 /* ============= 3. Yardimci Kodlar =============== */
 
 .sol {
@@ -750,262 +966,262 @@ table.yazi-sag tr th {
 /* ============= 5.2 Arkaplan Renkleri */
 
 .beyaz,
-menu.beyaz ul li ul li a {
+nav.menu.beyaz ul li ul li a {
     background-color: #FFF !important
 }
 
 .sari,
-menu.sari ul li ul li a {
+nav.menu.sari ul li ul li a {
     background-color: #FFEE58 !important
 }
 
 .sari2,
-menu.sari2 ul li ul li a {
+nav.menu.sari2 ul li ul li a {
     background-color: #FFEB3B !important
 }
 
 .sari3,
-menu.sari3 ul li ul li a {
+nav.menu.sari3 ul li ul li a {
     background-color: #FDD835 !important
 }
 
 .sari4,
-menu.sari4 ul li ul li a {
+nav.menu.sari4 ul li ul li a {
     background-color: #FBC02D !important
 }
 
 .sari5,
-menu.sari5 ul li ul li a {
+nav.menu.sari5 ul li ul li a {
     background-color: #F9A825 !important
 }
 
 .turuncu,
-menu.turuncu ul li ul li a {
+nav.menu.turuncu ul li ul li a {
     background-color: #FFA726 !important
 }
 
 .turuncu2,
-menu.turuncu2 ul li ul li a {
+nav.menu.turuncu2 ul li ul li a {
     background-color: #FF9800 !important
 }
 
 .turuncu3,
-menu.turuncu3 ul li ul li a {
+nav.menu.turuncu3 ul li ul li a {
     background-color: #FB8C00 !important
 }
 
 .turuncu4,
-menu.turuncu4 ul li ul li a {
+nav.menu.turuncu4 ul li ul li a {
     background-color: #F57C00 !important
 }
 
 .turuncu5,
-menu.turuncu5 ul li ul li a {
+nav.menu.turuncu5 ul li ul li a {
     background-color: #EF6C00 !important
 }
 
 .kirmizi,
-menu.kirmizi ul li ul li a {
+nav.menu.kirmizi ul li ul li a {
     background-color: #f44336 !important
 }
 
 .kirmizi2,
-menu.kirmizi2 ul li ul li a {
+nav.menu.kirmizi2 ul li ul li a {
     background-color: #e53935 !important
 }
 
 .kirmizi3,
-menu.kirmizi3 ul li ul li a {
+nav.menu.kirmizi3 ul li ul li a {
     background-color: #d32f2f !important
 }
 
 .kirmizi4,
-menu.kirmizi4 ul li ul li a {
+nav.menu.kirmizi4 ul li ul li a {
     background-color: #c62828 !important
 }
 
 .kirmizi5,
-menu.kirmizi5 ul li ul li a {
+nav.menu.kirmizi5 ul li ul li a {
     background-color: #b71c1c !important
 }
 
 .pembe,
-menu.pembe ul li ul li a {
+nav.menu.pembe ul li ul li a {
     background-color: #E91E63 !important
 }
 
 .pembe2,
-menu.pembe2 ul li ul li a {
+nav.menu.pembe2 ul li ul li a {
     background-color: #D81B60 !important
 }
 
 .pembe3,
-menu.pembe3 ul li ul li a {
+nav.menu.pembe3 ul li ul li a {
     background-color: #C2185B !important
 }
 
 .pembe4,
-menu.pembe4 ul li ul li a {
+nav.menu.pembe4 ul li ul li a {
     background-color: #AD1457 !important
 }
 
 .pembe5,
-menu.pembe5 ul li ul li a {
+nav.menu.pembe5 ul li ul li a {
     background-color: #880E4F !important
 }
 
 .mor,
-menu.mor ul li ul li a {
+nav.menu.mor ul li ul li a {
     background-color: #9C27B0 !important
 }
 
 .mor2,
-menu.mor2 ul li ul li a {
+nav.menu.mor2 ul li ul li a {
     background-color: #8E24AA !important
 }
 
 .mor3,
-menu.mor3 ul li ul li a {
+nav.menu.mor3 ul li ul li a {
     background-color: #7B1FA2 !important
 }
 
 .mor4,
-menu.mor4 ul li ul li a {
+nav.menu.mor4 ul li ul li a {
     background-color: #6A1B9A !important
 }
 
 .mor5,
-menu.mor5 ul li ul li a {
+nav.menu.mor5 ul li ul li a {
     background-color: #4A148C !important
 }
 
 .mavi,
-menu.mavi ul li ul li a {
+nav.menu.mavi ul li ul li a {
     background-color: #2196F3 !important
 }
 
 .mavi2,
-menu.mavi2 ul li ul li a {
+nav.menu.mavi2 ul li ul li a {
     background-color: #1E88E5 !important
 }
 
 .mavi3,
-menu.mavi3 ul li ul li a {
+nav.menu.mavi3 ul li ul li a {
     background-color: #1976D2 !important
 }
 
 .mavi4,
-menu.mavi4 ul li ul li a {
+nav.menu.mavi4 ul li ul li a {
     background-color: #1565C0 !important
 }
 
 .mavi5,
-menu.mavi5 ul li ul li a {
+nav.menu.mavi5 ul li ul li a {
     background-color: #0D47A1 !important
 }
 
 .turkuaz,
-menu.turkuaz ul li ul li a {
+nav.menu.turkuaz ul li ul li a {
     background-color: #1AC5B8 !important
 }
 
 .turkuaz2,
-menu.turkuaz2 ul li ul li a {
+nav.menu.turkuaz2 ul li ul li a {
     background-color: #13b4a8 !important
 }
 
 .turkuaz3,
-menu.turkuaz3 ul li ul li a {
+nav.menu.turkuaz3 ul li ul li a {
     background-color: #0da196 !important
 }
 
 .turkuaz4,
-menu.turkuaz4 ul li ul li a {
+nav.menu.turkuaz4 ul li ul li a {
     background-color: #0a8b81 !important
 }
 
 .turkuaz5,
-menu.turkuaz5 ul li ul li a {
+nav.menu.turkuaz5 ul li ul li a {
     background-color: #057970 !important
 }
 
 .yesil,
-menu.yesil ul li ul li a {
+nav.menu.yesil ul li ul li a {
     background-color: #4CAF50 !important
 }
 
 .yesil2,
-menu.yesil2 ul li ul li a {
+nav.menu.yesil2 ul li ul li a {
     background-color: #43A047 !important
 }
 
 .yesil3,
-menu.yesil3 ul li ul li a {
+nav.menu.yesil3 ul li ul li a {
     background-color: #388E3C !important
 }
 
 .yesil4,
-menu.yesil4 ul li ul li a {
+nav.menu.yesil4 ul li ul li a {
     background-color: #2E7D32 !important
 }
 
 .yesil5,
-menu.yesil5 ul li ul li a {
+nav.menu.yesil5 ul li ul li a {
     background-color: #1B5E20 !important
 }
 
 .kahverengi,
-menu.kahverengi ul li ul li a {
+nav.menu.kahverengi ul li ul li a {
     background-color: #795548 !important
 }
 
 .kahverengi2,
-menu.kahverengi2 ul li ul li a {
+nav.menu.kahverengi2 ul li ul li a {
     background-color: #6D4C41 !important
 }
 
 .kahverengi3,
-menu.kahverengi3 ul li ul li a {
+nav.menu.kahverengi3 ul li ul li a {
     background-color: #5D4037 !important
 }
 
 .kahverengi4,
-menu.kahverengi4 ul li ul li a {
+nav.menu.kahverengi4 ul li ul li a {
     background-color: #4E342E !important
 }
 
 .kahverengi5,
-menu.kahverengi5 ul li ul li a {
+nav.menu.kahverengi5 ul li ul li a {
     background-color: #3E2723 !important
 }
 
 .gri,
-menu.gri ul li ul li a {
+nav.menu.gri ul li ul li a {
     background-color: #B0BEC5 !important
 }
 
 .gri2,
-menu.gri2 ul li ul li a {
+nav.menu.gri2 ul li ul li a {
     background-color: #90A4AE !important
 }
 
 .gri3,
-menu.gri3 ul li ul li a {
+nav.menu.gri3 ul li ul li a {
     background-color: #607D8B !important
 }
 
 .gri4,
-menu.gri4 ul li ul li a {
+nav.menu.gri4 ul li ul li a {
     background-color: #455A64 !important
 }
 
 .gri5,
-menu.gri5 ul li ul li a {
+nav.menu.gri5 ul li ul li a {
     background-color: #37474F !important
 }
 
 .siyah,
-menu.siyah ul li ul li a {
+nav.menu.siyah ul li ul li a {
     background-color: #000 !important
 }
 
@@ -1716,39 +1932,42 @@ footer .detay {
 
 /* ============= 10. Menu */
 
-menu {
+nav.menu {
     background-color: #1AC5B8;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
-    display: none;
-    height: 50px;
-    position: relative;
-    width: 100%;
+    display: block;
+    height: 100%;
+    left: -300px;
+    position: fixed;
+    top: 0;
+    width: 300px;
     z-index: 999
 }
 
-menu.sabit {
+nav.menu.sabit {
     position: fixed
 }
 
-menu ul {
+nav.menu ul {
     height: 50px
 }
 
-menu ul li {
-    float:left
+nav.menu ul li {
+    float:none;
+    position: relative
 }
 
-menu ul li.acilir > a::after {
+nav.menu ul li.acilir > a::after {
     content: "";
-    position: relative;
-    top:10px;
-    left:8px;
+    position: absolute;;
+    top:23px;
+    right: 15px;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0,0,0,.2)
 }
 
-menu ul li a {
+nav.menu ul li a {
     color: #FFF;
     cursor: pointer;
     display: block;
@@ -1759,80 +1978,80 @@ menu ul li a {
     transition: all .1s
 }
 
-menu ul li:hover > a {
+nav.menu ul li:hover > a {
     background-color: rgba(0,0,0,.1);
     color: #FFF;
     text-decoration: none
 }
 
-menu ul li a.aktif {
+nav.menu ul li a.aktif {
     background-color: rgba(0,0,0,.1)
 }
 
-menu ul li ul {
+nav.menu ul li ul {
     display: none;
     position: absolute
 }
 
-menu ul li:hover ul {
-    display: block;
-    z-index: 999
+nav.menu ul li:hover ul {
+    display: none
 }
 
-menu ul li ul li {
+nav.menu ul li ul li {
     border-left: 1px solid #009688;
     border-right: 1px solid #009688;
     float: none;
     width: 200px
 }
 
-menu ul li ul li:last-child {
+nav.menu ul li ul li:last-child {
     border-bottom: 1px solid #009688;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     overflow: hidden
 }
 
-menu ul li ul li a:hover {
+nav.menu ul li ul li a:hover {
     padding-left: 20px
 }
 
-menu.mobil {
-    display: none;
-    height: 100%;
-    position: fixed;
-    width: 250px
-}
-
-menu.mobil ul {
-    width: 250px;
-}
-
-menu.mobil ul li {
-    float: none
-}
-
-.mobil-logo {
+nav.menu > img.logo {
     cursor: pointer;
     display: block;
     height: 50px;
-    position: absolute;
-    left: 25px;
-    top: 25px;
+    position: fixed;
+    left: 40px;
+    top: 20px;
     width: 50px
 }
 
 @media only screen and (min-width: 1000px) {
-    menu {
-        display: block !important
-    }
-    menu.mobil {
-        display: none !important
-    }
-    .mobil-logo {
-        display: none !important
+    nav.menu {
+        height: 50px;
+        left: 0;
+        position: relative;
+        width: 100%
     }
 
+    nav.menu ul li {
+        float: left;
+        position: static
+    }
+
+    nav.menu ul li:hover ul {
+        display: block;
+        z-index: 999
+    }
+
+    nav.menu ul li.acilir > a::after {
+        position: relative;
+        top:10px;
+        left:8px
+    }
+
+    nav.menu > img.logo {
+        display: none
+    }
 }
 
 /* ============= 11. Sayfa Konumu */
@@ -2026,311 +2245,311 @@ nav.numara.golge {
 
 .yazi-beyaz,
 .yazi-beyaz a,
-menu.yazi-beyaz ul li a {
+nav.menu.yazi-beyaz ul li a {
     color: #FFF !important
 }
 
 .yazi-sari,
 .yazi-sari a,
-menu.yazi-sari ul li a {
+nav.menu.yazi-sari ul li a {
     color: #FFEE58 !important
 }
 
 .yazi-sari2,
 .yazi-sari2 a,
-menu.yazi-sari2 ul li a {
+nav.menu.yazi-sari2 ul li a {
     color: #FFEB3B !important
 }
 
 .yazi-sari3,
 .yazi-sari3 a,
-menu.yazi-sari3 ul li a {
+nav.menu.yazi-sari3 ul li a {
     color: #FDD835 !important
 }
 
 .yazi-sari4,
-menu.yazi-sari4 ul li a {
+nav.menu.yazi-sari4 ul li a {
     color: #FBC02D !important
 }
 
 .yazi-sari5,
 .yazi-sari5 a,
-menu.yazi-sari5 ul li a {
+nav.menu.yazi-sari5 ul li a {
     color: #F9A825 !important
 }
 
 .yazi-turuncu,
 .yazi-turuncu a,
-menu.yazi-turuncu ul li a {
+nav.menu.yazi-turuncu ul li a {
     color: #FFA726 !important
 }
 
 .yazi-turuncu2,
 .yazi-turuncu2 a,
-menu.yazi-turuncu2 ul li a {
+nav.menu.yazi-turuncu2 ul li a {
     color: #FF9800 !important
 }
 
 .yazi-turuncu3,
 .yazi-turuncu3 a,
-menu.yazi-turuncu3 ul li a {
+nav.menu.yazi-turuncu3 ul li a {
     color: #FB8C00 !important
 }
 
 .yazi-turuncu4,
 .yazi-turuncu4 a,
-menu.yazi-turuncu4 ul li a {
+nav.menu.yazi-turuncu4 ul li a {
     color: #F57C00 !important
 }
 
 .yazi-turuncu5,
 .yazi-turuncu5 a,
-menu.yazi-turuncu5 ul li a {
+nav.menu.yazi-turuncu5 ul li a {
     color: #EF6C00 !important
 }
 
 .yazi-kirmizi,
 .yazi-kirmizi a,
-menu.yazi-kirmizi ul li a {
+nav.menu.yazi-kirmizi ul li a {
     color: #f44336 !important
 }
 
 .yazi-kirmizi2,
 .yazi-kirmizi2 a,
-menu.yazi-kirmizi2 ul li a {
+nav.menu.yazi-kirmizi2 ul li a {
     color: #e53935 !important
 }
 
 .yazi-kirmizi3,
 .yazi-kirmizi3 a,
-menu.yazi-kirmizi3 ul li a {
+nav.menu.yazi-kirmizi3 ul li a {
     color: #d32f2f !important
 }
 
 .yazi-kirmizi4,
 .yazi-kirmizi4 a,
-menu.yazi-kirmizi4 ul li a {
+nav.menu.yazi-kirmizi4 ul li a {
     color: #c62828 !important
 }
 
 .yazi-kirmizi5,
 .yazi-kirmizi5 a,
-menu.yazi-kirmizi5 ul li a {
+nav.menu.yazi-kirmizi5 ul li a {
     color: #b71c1c !important
 }
 
 .yazi-pembe,
 .yazi-pembe a,
-menu.yazi-pembe ul li a {
+nav.menu.yazi-pembe ul li a {
     color: #E91E63 !important
 }
 
 .yazi-pembe2,
 .yazi-pembe2 a,
-menu.yazi-pembe2 ul li a {
+nav.menu.yazi-pembe2 ul li a {
     color: #D81B60 !important
 }
 
 .yazi-pembe3,
 .yazi-pembe3 a,
-menu.yazi-pembe3 ul li a {
+nav.menu.yazi-pembe3 ul li a {
     color: #C2185B !important
 }
 
 .yazi-pembe4,
 .yazi-pembe4 a,
-menu.yazi-pembe4 ul li a {
+nav.menu.yazi-pembe4 ul li a {
     color: #AD1457 !important
 }
 
 .yazi-pembe5,
 .yazi-pembe5 a,
-menu.yazi-pembe5 ul li a {
+nav.menu.yazi-pembe5 ul li a {
     color: #880E4F !important
 }
 
 .yazi-mor,
 .yazi-mor a,
-menu.yazi-mor ul li a {
+nav.menu.yazi-mor ul li a {
     color: #9C27B0 !important
 }
 
 .yazi-mor2,
 .yazi-mor2 a,
-menu.yazi-mor2 ul li a {
+nav.menu.yazi-mor2 ul li a {
     color: #8E24AA !important
 }
 
 .yazi-mor3,
 .yazi-mor3 a,
-menu.yazi-mor3 ul li a {
+nav.menu.yazi-mor3 ul li a {
     color: #7B1FA2 !important
 }
 
 .yazi-mor4,
 .yazi-mor4 a,
-menu.yazi-mor4 ul li a {
+nav.menu.yazi-mor4 ul li a {
     color: #6A1B9A !important
 }
 
 .yazi-mor5,
 .yazi-mor5 a,
-menu.yazi-mor5 ul li a {
+nav.menu.yazi-mor5 ul li a {
     color: #4A148C !important
 }
 
 .yazi-mavi,
 .yazi-mavi a,
-menu.yazi-mavi ul li a {
+nav.menu.yazi-mavi ul li a {
     color: #2196F3 !important
 }
 
 .yazi-mavi2,
 .yazi-mavi2 a,
-menu.yazi-mavi2 ul li a {
+nav.menu.yazi-mavi2 ul li a {
     color: #1E88E5 !important
 }
 
 .yazi-mavi3,
 .yazi-mavi3 a,
-menu.yazi-mavi3 ul li a {
+nav.menu.yazi-mavi3 ul li a {
     color: #1976D2 !important
 }
 
 .yazi-mavi4,
 .yazi-mavi4 a,
-menu.yazi-mavi4 ul li a {
+nav.menu.yazi-mavi4 ul li a {
     color: #1565C0 !important
 }
 
 .yazi-mavi5,
 .yazi-mavi5 a,
-menu.yazi-mavi5 ul li a {
+nav.menu.yazi-mavi5 ul li a {
     color: #0D47A1 !important
 }
 
 .yazi-turkuaz,
 .yazi-turkuaz a,
-menu.yazi-turkuaz ul li a {
+nav.menu.yazi-turkuaz ul li a {
     color: #1AC5B8 !important
 }
 
 .yazi-turkuaz2,
 .yazi-turkuaz2 a,
-menu.yazi-turkuaz2 ul li a {
+nav.menu.yazi-turkuaz2 ul li a {
     color: #13b4a8 !important
 }
 
 .yazi-turkuaz3,
 .yazi-turkuaz3 a,
-menu.yazi-turkuaz3 ul li a {
+nav.menu.yazi-turkuaz3 ul li a {
     color: #0da196 !important
 }
 
 .yazi-turkuaz4,
 .yazi-turkuaz4 a,
-menu.yazi-turkuaz4 ul li a {
+nav.menu.yazi-turkuaz4 ul li a {
     color: #0a8b81 !important
 }
 
 .yazi-turkuaz5,
 .yazi-turkuaz5 a,
-menu.yazi-turkuaz5 ul li a {
+nav.menu.yazi-turkuaz5 ul li a {
     color: #057970 !important
 }
 
 .yazi-yesil,
 .yazi-yesil a,
-menu.yazi-yesil ul li a {
+nav.menu.yazi-yesil ul li a {
     color: #4CAF50 !important
 }
 
 .yazi-yesil2,
 .yazi-yesil2 a,
-menu.yazi-yesil2 ul li a {
+nav.menu.yazi-yesil2 ul li a {
     color: #43A047 !important
 }
 
 .yazi-yesil3,
 .yazi-yesil3 a,
-menu.yazi-yesil3 ul li a {
+nav.menu.yazi-yesil3 ul li a {
     color: #388E3C !important
 }
 
 .yazi-yesil4,
 .yazi-yesil4 a,
-menu.yazi-yesil4 ul li a {
+nav.menu.yazi-yesil4 ul li a {
     color: #2E7D32 !important
 }
 
 .yazi-yesil5,
 .yazi-yesil5 a,
-menu.yazi-yesil5 ul li a {
+nav.menu.yazi-yesil5 ul li a {
     color: #1B5E20 !important
 }
 
 .yazi-kahverengi,
 .yazi-kahverengi a,
-menu.yazi-kahverengi ul li a {
+nav.menu.yazi-kahverengi ul li a {
     color: #795548 !important
 }
 
 .yazi-kahverengi2,
 .yazi-kahverengi2 a,
-menu.yazi-kahverengi2 ul li a {
+nav.menu.yazi-kahverengi2 ul li a {
     color: #6D4C41 !important
 }
 
 .yazi-kahverengi3,
 .yazi-kahverengi3 a,
-menu.yazi-kahverengi3 ul li a {
+nav.menu.yazi-kahverengi3 ul li a {
     color: #5D4037 !important
 }
 
 .yazi-kahverengi4,
 .yazi-kahverengi4 a,
-menu.yazi-kahverengi4 ul li a {
+nav.menu.yazi-kahverengi4 ul li a {
     color: #4E342E !important
 }
 
 .yazi-kahverengi5,
 .yazi-kahverengi5 a,
-menu.yazi-kahverengi5 ul li a {
+nav.menu.yazi-kahverengi5 ul li a {
     color: #3E2723 !important
 }
 
 .yazi-gri,
 .yazi-gri a,
-menu.yazi-gri ul li a {
+nav.menu.yazi-gri ul li a {
     color: #B0BEC5 !important
 }
 
 .yazi-gri2,
 .yazi-gri2 a,
-menu.yazi-gri2 ul li a {
+nav.menu.yazi-gri2 ul li a {
     color: #90A4AE !important
 }
 
 .yazi-gri3,
 .yazi-gri3 a,
-menu.yazi-gri3 ul li a {
+nav.menu.yazi-gri3 ul li a {
     color: #607D8B !important
 }
 
 .yazi-gri4,
 .yazi-gri4 a,
-menu.yazi-gri4 ul li a {
+nav.menu.yazi-gri4 ul li a {
     color: #455A64 !important
 }
 
 .yazi-gri5,
 .yazi-gri5 a,
-menu.yazi-gri5 ul li a {
+nav.menu.yazi-gri5 ul li a {
     color: #37474F !important
 }
 
 .yazi-siyah,
 .yazi-siyah a,
-menu.yazi-siyah ul li a {
+nav.menu.yazi-siyah ul li a {
     color: #000 !important
 }
