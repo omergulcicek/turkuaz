@@ -32,12 +32,15 @@
 *      9.2    Kart Boyutlari
 *      9.3    Kart Efektleri
 *    10.    Menu
-*    11.    Sayfa Konumu
-*    12.    Sayfa Numaralandirma
-*    13.    Yazi
-*      13.1    Yazi Ayarlari
-*      13.2    Yazi Boyutlari
-*      13.3    Yazi Renkleri
+*    11.    Notlar
+*    12.    Paneller
+*    13.    Sayfa Konumu
+*    14.    Sayfa Numaralandirma
+*    15.    Tab Menu
+*    16.    Yazi
+*      16.1    Yazi Ayarlari
+*      16.2    Yazi Boyutlari
+*      16.3    Yazi Renkleri
 *
 */
 
@@ -2054,7 +2057,46 @@ nav.menu > img.logo {
     }
 }
 
-/* ============= 11. Sayfa Konumu */
+/* ============= 11. Notlar */
+
+div.not {
+    background-color: #F44336;
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 3px;
+    color: #FFF;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 20px 50px 20px 20px;
+    position: relative;
+    width: 100%
+}
+
+div.not p {
+    margin-bottom: 0
+}
+
+div.not span.kaldir {
+    color: #FFF;
+    cursor: pointer;
+    opacity: .4;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    transition: all .3s;
+    top: 11px
+}
+
+div.not:hover span.kaldir {
+    opacity: 1
+}
+
+div.not span.kaldir:hover {
+    text-shadow: 0 0 5px rgba(0,0,0,.5)
+}
+
+/* ============= 12. Paneller */
+
+/* ============= 13. Sayfa Konumu */
 
 nav.konum {
     background-color: #1AC5B8;
@@ -2104,7 +2146,7 @@ nav.konum.saydam a:last-of-type {
     color: #000
 }
 
-/* ============= 12. Sayfa Numaralandirma */
+/* ============= 14. Sayfa Numaralandirma */
 
 nav.numara {
     border: 1px solid rgba(0,0,0,.1);
@@ -2152,8 +2194,8 @@ nav.numara.golge {
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
 }
 
-/* ============= 13. Yazi */
-/* ============= 13.1 Yazi Ayarlari */
+/* ============= 15. Yazi */
+/* ============= 15.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
@@ -2201,7 +2243,7 @@ nav.numara.golge {
     white-space: nowrap
 }
 
-/* ============= 13.2 Yazi Boyutlari */
+/* ============= 15.2 Yazi Boyutlari */
 
 .yazi-cokbuyuk {
     font-size: 40px
@@ -2241,7 +2283,7 @@ nav.numara.golge {
     }
 }
 
-/* ============= 13.3 Yazi Renkleri */
+/* ============= 15.3 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a,
