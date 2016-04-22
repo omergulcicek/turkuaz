@@ -33,7 +33,7 @@
 *      9.3    Kart Efektleri
 *    10.    Menu
 *    11.    Notlar
-*    12.    Paneller
+*    12.    Pano
 *    13.    Sayfa Konumu
 *    14.    Sayfa Numaralandirma
 *    15.    Tab Menu
@@ -2059,7 +2059,7 @@ nav.menu > img.logo {
 
 /* ============= 11. Notlar */
 
-div.not {
+.not {
     background-color: #F44336;
     border: 1px solid rgba(0,0,0,.05);
     border-radius: 3px;
@@ -2071,11 +2071,19 @@ div.not {
     width: 100%
 }
 
-div.not p {
+.not.golge {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+    transition: all .3s
+}
+.not.golge:hover {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.4)
+}
+
+.not p {
     margin-bottom: 0
 }
 
-div.not span.kaldir {
+.not span.kaldir {
     color: #FFF;
     cursor: pointer;
     opacity: .4;
@@ -2086,15 +2094,78 @@ div.not span.kaldir {
     top: 11px
 }
 
-div.not:hover span.kaldir {
+.not:hover span.kaldir {
     opacity: 1
 }
 
-div.not span.kaldir:hover {
+.not span.kaldir:hover {
     text-shadow: 0 0 5px rgba(0,0,0,.5)
 }
 
-/* ============= 12. Paneller */
+/* ============= 12. Pano */
+
+.pano {
+    background-color: #1AC5B8;
+    border-radius: 3px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12);
+    margin-bottom: 15px
+}
+
+.pano.golge {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+    transition: all .3s
+}
+
+.pano.golge:hover {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.4)
+}
+
+.pano h1,
+.pano h2,
+.pano h3,
+.pano h4,
+.pano h5,
+.pano h6 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18px;
+    margin: 0;
+    padding: 10px 15px
+}
+
+.pano.kucuk h1,
+.pano.kucuk h2,
+.pano.kucuk h3,
+.pano.kucuk h4,
+.pano.kucuk h5,
+.pano.kucuk h6 {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 5px 15px
+}
+
+.pano.buyuk h1,
+.pano.buyuk h2,
+.pano.buyuk h3,
+.pano.buyuk h4,
+.pano.buyuk h5,
+.pano.buyuk h6 {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 15px
+}
+
+.pano .icerik {
+    background-color: #FFF;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 15px
+}
+
+.pano .icerik p {
+    margin: 0
+}
 
 /* ============= 13. Sayfa Konumu */
 
