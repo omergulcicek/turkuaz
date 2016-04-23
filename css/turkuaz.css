@@ -31,16 +31,18 @@
 *      9.1    Kart Ayarlari
 *      9.2    Kart Boyutlari
 *      9.3    Kart Efektleri
-*    10.    Menu
+*    10.    Nav
+*      10.1    Etkilet
+*      10.2    Menu
+*      10.3    Sayfa Konumu
+*      10.4    Sayfa Numaralandirma
 *    11.    Notlar
 *    12.    Pano
-*    13.    Sayfa Konumu
-*    14.    Sayfa Numaralandirma
-*    15.    Tab Menu
-*    16.    Yazi
-*      16.1    Yazi Ayarlari
-*      16.2    Yazi Boyutlari
-*      16.3    Yazi Renkleri
+*    13.    Tab Menu
+*    14.    Yazi
+*      14.1    Yazi Ayarlari
+*      14.2    Yazi Boyutlari
+*      14.3    Yazi Renkleri
 *
 */
 
@@ -1262,12 +1264,12 @@ button.pasif:hover {
 
 .buton.golge,
 button.golge {
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
+    box-shadow: 0 2px 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3)
 }
 
 .buton.golge:hover,
 button.golge:hover {
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.4), inset 0 0 0 100px rgba(0,0,0,.15) !important
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3)
 }
 
 /* ============= 6.2 Buton Cesitleri */
@@ -1284,7 +1286,7 @@ button {
     font-size: 12px;
     font-weight: normal;
     height: 40px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 20px;
     outline: 0;
     overflow: hidden;
@@ -1303,7 +1305,7 @@ button {
 
 .buton:hover,
 button:hover {
-    box-shadow: inset 0 0 0 100px rgba(0,0,0,.15) !important;
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,.15);
     color: #FFF;
     text-decoration: none
 }
@@ -1671,6 +1673,7 @@ footer {
     position: relative;
     width: 100%
 }
+
 footer .detay {
     background-color: rgba(0,0,0,.3);
     padding: 15px 0;
@@ -1933,17 +1936,104 @@ footer .detay {
     -webkit-filter: blur(1px)
 }
 
-/* ============= 10. Menu */
+/* ============= 10. Nav */
+/* ============= 10.1 Etiket */
+
+nav.etiket {
+    display: table;
+    margin-bottom: 15px
+}
+
+nav.etiket a {
+    background: #f5f5f5;
+    border-radius: 3px 0 0 3px;
+    color: rgba(0,0,0,.6);
+    display: inline-block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px 15px 0;
+    padding: 0 20px 0 23px;
+    position: relative;
+    text-decoration: none;
+    transition: color .1s
+}
+
+nav.etiket.kucuk a {
+    font-size: 11px;
+    height: 24px;
+    line-height: 24px
+}
+
+nav.etiket.buyuk a {
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px
+}
+
+nav.etiket a::before {
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0,0,0,.25);
+    content: "";
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    top: 11px;
+    width: 6px
+}
+
+nav.etiket.kucuk a::before {
+    top: 8px
+}
+
+nav.etiket.buyuk a::before {
+    top: 16px
+}
+
+nav.etiket a::after {
+    background: #fff;
+    border-bottom: 15px solid transparent;
+    border-left: 10px solid #f5f5f5;
+    border-top: 15px solid transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+nav.etiket.kucuk a::after {
+    border-bottom: 12px solid transparent;
+    border-left: 8px solid #f5f5f5;
+    border-top: 12px solid transparent
+}
+
+nav.etiket.buyuk a::after {
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #f5f5f5;
+    border-top: 20px solid transparent
+}
+
+nav.etiket a:hover {
+    background-color: #1AC5B8;
+    color: #FFF
+}
+
+nav.etiket a:hover::after {
+    border-left-color: #1AC5B8
+}
+
+/* ============= 10.2 Menu */
 
 nav.menu {
     background-color: #1AC5B8;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     display: block;
     height: 100%;
-    left: -300px;
+    left: -240px;
     position: fixed;
     top: 0;
-    width: 300px;
+    width: 240px;
     z-index: 999
 }
 
@@ -1961,13 +2051,13 @@ nav.menu ul li {
 }
 
 nav.menu ul li.acilir > a::after {
-    content: "";
-    position: absolute;;
-    top:23px;
-    right: 15px;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.2)
+    border-top: 4px solid rgba(0,0,0,.2);
+    content: "";
+    position: absolute;
+    right: 23px;
+    top: 23px
 }
 
 nav.menu ul li a {
@@ -2028,10 +2118,14 @@ nav.menu > img.logo {
     width: 50px
 }
 
+nav.menu .container {
+    width: 100% !important
+}
+
 @media only screen and (min-width: 1000px) {
     nav.menu {
         height: 50px;
-        left: 0;
+        left: 0 !important;
         position: relative;
         width: 100%
     }
@@ -2047,14 +2141,112 @@ nav.menu > img.logo {
     }
 
     nav.menu ul li.acilir > a::after {
+        left:8px;
         position: relative;
-        top:10px;
-        left:8px
+        top:10px
     }
 
     nav.menu > img.logo {
-        display: none
+        display: none !important
     }
+}
+
+/* ============= 10.3 Sayfa Konumu */
+
+nav.konum {
+    background-color: #1AC5B8;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: rgba(255,255,255,.6);
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 0 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+nav.konum a {
+    color: rgba(255,255,255,.6);
+    margin-right: 10px
+}
+
+nav.konum a:last-of-type {
+    color: #FFF
+}
+
+nav.konum a::after {
+    content: ">";
+    margin-left: 10px
+}
+
+nav.konum a:last-of-type::after {
+    content:""
+}
+
+nav.konum a:hover {
+    text-decoration: none
+}
+
+nav.konum.saydam {
+    background-color: transparent !important
+}
+
+nav.konum.saydam a {
+    color: rgba(0,0,0,.6)
+}
+
+nav.konum.saydam a:last-of-type {
+    color: #000
+}
+
+/* ============= 10.4 Sayfa Numaralandirma */
+
+nav.numara {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.07);
+    display: inline-block;
+    margin: 25px 0
+}
+
+nav.numara a {
+    border-right: 1px solid rgba(0,0,0,.1);
+    color: #000;
+    display: block;
+    float:left;
+    padding: 8px 13px 8px 13px;
+    text-align: center;
+    transition: all .3s
+}
+
+nav.numara a:last-of-type {
+    border-right: 0
+}
+
+nav.numara a.aktif {
+    background-color: rgba(0,0,0,.2)
+}
+
+nav.numara a:hover {
+    box-shadow : inset 0 0 0 100px rgba(0,0,0,.075);
+    text-decoration: none
+}
+
+nav.numara.buyuk a {
+    font-size: 16px;
+    padding: 16px 26px 16px 26px
+}
+
+nav.numara.kucuk a {
+    font-size: 11px;
+    padding: 4px 6.5px 4px 6.5px
+}
+
+nav.numara.golge {
+    border: 0;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
 }
 
 /* ============= 11. Notlar */
@@ -2167,106 +2359,10 @@ nav.menu > img.logo {
     margin: 0
 }
 
-/* ============= 13. Sayfa Konumu */
+/* ============= 13. Tab Menu */
 
-nav.konum {
-    background-color: #1AC5B8;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: rgba(255,255,255,.6);
-    height: 50px;
-    line-height: 50px;
-    overflow: hidden;
-    padding: 0 25px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%
-}
-
-nav.konum a {
-    color: rgba(255,255,255,.6);
-    margin-right: 10px
-}
-
-nav.konum a:last-of-type {
-    color: #FFF
-}
-
-nav.konum a::after {
-    content: ">";
-    margin-left: 10px
-}
-
-nav.konum a:last-of-type::after {
-    content:""
-}
-
-nav.konum a:hover {
-    text-decoration: none
-}
-
-nav.konum.saydam {
-    background-color: transparent !important
-}
-
-nav.konum.saydam a {
-    color: rgba(0,0,0,.6)
-}
-
-nav.konum.saydam a:last-of-type {
-    color: #000
-}
-
-/* ============= 14. Sayfa Numaralandirma */
-
-nav.numara {
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 4px;
-    box-shadow: 0 2px 2px rgba(0,0,0,.07);
-    display: inline-block;
-    margin: 25px 0
-}
-
-nav.numara a {
-    border-right: 1px solid rgba(0,0,0,.1);
-    color: #000;
-    display: block;
-    float:left;
-    padding: 8px 13px 8px 13px;
-    text-align: center;
-    transition: all .3s
-}
-
-nav.numara a:last-of-type {
-    border-right: 0
-}
-
-nav.numara a.aktif {
-    background-color: rgba(0,0,0,.2)
-}
-
-nav.numara a:hover {
-    box-shadow : inset 0 0 0 100px rgba(0,0,0,.075);
-    text-decoration: none
-}
-
-nav.numara.buyuk a {
-    font-size: 16px;
-    padding: 16px 26px 16px 26px
-}
-
-nav.numara.kucuk a {
-    font-size: 11px;
-    padding: 4px 6.5px 4px 6.5px
-}
-
-nav.numara.golge {
-    border: 0;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
-}
-
-/* ============= 15. Yazi */
-/* ============= 15.1 Yazi Ayarlari */
+/* ============= 14. Yazi */
+/* ============= 14.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
@@ -2314,7 +2410,7 @@ nav.numara.golge {
     white-space: nowrap
 }
 
-/* ============= 15.2 Yazi Boyutlari */
+/* ============= 14.2 Yazi Boyutlari */
 
 .yazi-cokbuyuk {
     font-size: 40px
@@ -2354,7 +2450,7 @@ nav.numara.golge {
     }
 }
 
-/* ============= 15.3 Yazi Renkleri */
+/* ============= 14.3 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a,

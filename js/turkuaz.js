@@ -6,14 +6,7 @@
 /*!
 *    Turkuaz Framework - JavaScript Kod Duzeni
 *
-*    1.     Form
-*      1.1    Checkbox
-*      1.2    Combobox
-*      1.3    Dosya Secici
-*      1.4    Input
-*      1.5    Radio Buton
-*      1.6    Tarih Secici
-*      1.7    Textarea
+*   1. Form
 *   2. Menu
 *   3. Notlar
 *
@@ -22,39 +15,64 @@
 
 
 /* ============= 1. Form */
-/* ============= 1.1 Checkbox */
-/* ============= 1.2 Combobox */
-/* ============= 1.3 Dosya Secici */
-/* ============= 1.4 Input */
 
-//inputlara tiklandiginda labelin alta gelmesi
-$input = "Textarea,input[type=text],input[type=password],input[type=email],input[type=url],input[type=date],input[type=tel],input[type=number],input[type=search]";
+// Radio ve checkbox haric diger inputlari ve textarea'yi degiskene atar.
+$formEtiketleri = "input[type=text],input[type=password],input[type=email],input[type=url],input[type=date],input[type=tel],input[type=number],input[type=search],textarea";
 
-//inputlara tiklandiginda labelin alta gelmesi
-$($input).focus(function(){
+// Inputlarin Labellerinin Ilk Hareketleri
+$($formEtiketleri).focus(function(){
+    //inputlara ve textarea'ya imlec geldiginde bu tag'lara 'aktif dolu' sinifini ekler ve labeller uste gecer.
     $(this).addClass("aktif dolu");
 });
 
-//inputtan ayrilindiginda, inputa yazi yoksa label eski haline doner, yazi varsa label aktif kalir
-$($input).focusout(function(){
+// Input Labellerinin Sonraki Hareketleri
+$($formEtiketleri).focusout(function(){
+    //inputtan veya textarea'dan ayrilindiginda icerisinde yazi yoksa 'dolu' sinifini kaldirir ve label alta gecer, yazi varsa kaldirmaz.
     if($(this).val() == ""){
         $(this).removeClass("dolu");
     }
+    //inputtan veya textarea'dan ayrilindiginda aktif class'ini kaldirir.
     $(this).removeClass("aktif");
 });
 
-/* ============= 1.5 Radio Button */
-/* ============= 1.6 Tarih Secici */
-/* ============= 1.7 Textarea */
+
 
 /* ============= 2. Menu */
 
+// Menuyu Acar
+$("nav.menu>img.logo").click(function(){
+    //mobil menuyu acmak icin butona basilinca butonu gizler.
+    $(this).hide();
+    //menuyu 0 left'e getirir (eskisi left:-240px) yani mobil menu gorunur.
+    $(this).parent().animate({left:"0"});
+    //body'e karart divini ekler ve menu harici her yeri karartir.
+    $("body").append("<div class='karart'></div>");
+});
+
+// Menuyu Gizler
+$("body").on('click', '.karart', function(){
+    //menuyu 240px sola tasir yani gizler.
+    $("nav.menu").animate({left:"-240px"});
+    //karart divini kaldirir.
+    $(".karart").remove();
+    //400 milisaniye sonra logoyu gosterir.
+    $("nav.menu>img.logo").delay(400).fadeIn();
+});
+
+// Acilir Menulerin Oklari
+//menudeki li'lerin icerisinde alt menu var ise o li'ye 'acilir' class'ini ekler ve sagina minik bir ok gelir.
+$("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir");
+
+
+
 /* ============= 3. Notlar */
 
-// not class'ına ait div'leri kapatmak icin '×' butonunu ekler
-$("div.not").append("<span class=kaldir>×</span>");
+// Notlara Kapatma Butonu Getirir
+//not class'ina ait tag'lari kapatmak icin sag ustune 'x' butonunu ekler.
+$("div.not").append("<span class=kaldir>&times;</span>");
 
-// '×' butonuna basınca o notu kaldırır
+// Notlarin Kaldirilmasi
+//'x' butonuna basinca o notu kaldirir.
 $("div.not span.kaldir").click(function(){
     $(this).parent().remove();
 });
