@@ -490,6 +490,42 @@ table.yazi-sag tr th {
 .row .tr.ck12 {
     width: 100%
 }
+.row .tr.ck-1 {
+    margin-left: 8.3333333333%
+}
+.row .tr.ck-2 {
+    margin-left: 16.6666666667%
+}
+.row .tr.ck-3 {
+    margin-left: 25%
+}
+.row .tr.ck-4 {
+    margin-left: 33.3333333333%
+}
+.row .tr.ck-5 {
+    margin-left: 41.6666666667%
+}
+.row .tr.ck-6 {
+    margin-left: 50%
+}
+.row .tr.ck-7 {
+    margin-left: 58.3333333333%
+}
+.row .tr.ck-8 {
+    margin-left: 66.6666666667%
+}
+.row .tr.ck-9 {
+    margin-left: 75%
+}
+.row .tr.ck-10 {
+    margin-left: 83.3333333333%
+}
+.row .tr.ck-11 {
+    margin-left: 91.6666666667%
+}
+.row .tr.ck-12 {
+    margin-left: 100%
+}
 
 /* Mini Tabletler */
 @media only screen and (min-width: 400px) {
@@ -528,6 +564,42 @@ table.yazi-sag tr th {
     }
     .row .tr.k12 {
         width: 100%
+    }
+    .row .tr.k-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.k-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.k-3 {
+        margin-left: 25%
+    }
+    .row .tr.k-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.k-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.k-6 {
+        margin-left: 50%
+    }
+    .row .tr.k-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.k-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.k-9 {
+        margin-left: 75%
+    }
+    .row .tr.k-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.k-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.k-12 {
+        margin-left: 100%
     }
 }
 
@@ -569,6 +641,42 @@ table.yazi-sag tr th {
     .row .tr.o12 {
         width: 100%
     }
+    .row .tr.o-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.o-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.o-3 {
+        margin-left: 25%
+    }
+    .row .tr.o-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.o-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.o-6 {
+        margin-left: 50%
+    }
+    .row .tr.o-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.o-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.o-9 {
+        margin-left: 75%
+    }
+    .row .tr.o-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.o-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.o-12 {
+        margin-left: 100%
+    }
 }
 
 /* Bilgisayarlar */
@@ -608,6 +716,42 @@ table.yazi-sag tr th {
     }
     .row .tr.b12 {
         width: 100%
+    }
+    .row .tr.b-1 {
+        margin-left: 8.3333333333%
+    }
+    .row .tr.b-2 {
+        margin-left: 16.6666666667%
+    }
+    .row .tr.b-3 {
+        margin-left: 25%
+    }
+    .row .tr.b-4 {
+        margin-left: 33.3333333333%
+    }
+    .row .tr.b-5 {
+        margin-left: 41.6666666667%
+    }
+    .row .tr.b-6 {
+        margin-left: 50%
+    }
+    .row .tr.b-7 {
+        margin-left: 58.3333333333%
+    }
+    .row .tr.b-8 {
+        margin-left: 66.6666666667%
+    }
+    .row .tr.b-9 {
+        margin-left: 75%
+    }
+    .row .tr.b-10 {
+        margin-left: 83.3333333333%
+    }
+    .row .tr.b-11 {
+        margin-left: 91.6666666667%
+    }
+    .row .tr.b-12 {
+        margin-left: 100%
     }
 }
 
@@ -649,170 +793,6 @@ table.yazi-sag tr th {
     .row .tr.cb12 {
         width: 100%
     }
-}
-
-/* Mobil Cihazlar */
-@media only screen and (max-width: 400px) {
-    .row .tr.ck-1 {
-        margin-left: 8.3333333333%
-    }
-    .row .tr.ck-2 {
-        margin-left: 16.6666666667%
-    }
-    .row .tr.ck-3 {
-        margin-left: 25%
-    }
-    .row .tr.ck-4 {
-        margin-left: 33.3333333333%
-    }
-    .row .tr.ck-5 {
-        margin-left: 41.6666666667%
-    }
-    .row .tr.ck-6 {
-        margin-left: 50%
-    }
-    .row .tr.ck-7 {
-        margin-left: 58.3333333333%
-    }
-    .row .tr.ck-8 {
-        margin-left: 66.6666666667%
-    }
-    .row .tr.ck-9 {
-        margin-left: 75%
-    }
-    .row .tr.ck-10 {
-        margin-left: 83.3333333333%
-    }
-    .row .tr.ck-11 {
-        margin-left: 91.6666666667%
-    }
-    .row .tr.ck-12 {
-        margin-left: 100%
-    }
-}
-
-/* Mini Tabletler */
-@media only screen and (min-width: 400px) and (max-width: 800px) {
-    .row .tr.k-1 {
-        margin-left: 8.3333333333%
-    }
-    .row .tr.k-2 {
-        margin-left: 16.6666666667%
-    }
-    .row .tr.k-3 {
-        margin-left: 25%
-    }
-    .row .tr.k-4 {
-        margin-left: 33.3333333333%
-    }
-    .row .tr.k-5 {
-        margin-left: 41.6666666667%
-    }
-    .row .tr.k-6 {
-        margin-left: 50%
-    }
-    .row .tr.k-7 {
-        margin-left: 58.3333333333%
-    }
-    .row .tr.k-8 {
-        margin-left: 66.6666666667%
-    }
-    .row .tr.k-9 {
-        margin-left: 75%
-    }
-    .row .tr.k-10 {
-        margin-left: 83.3333333333%
-    }
-    .row .tr.k-11 {
-        margin-left: 91.6666666667%
-    }
-    .row .tr.k-12 {
-        margin-left: 100%
-    }
-}
-
-/* Tabletler */
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-    .row .tr.o-1 {
-        margin-left: 8.3333333333%
-    }
-    .row .tr.o-2 {
-        margin-left: 16.6666666667%
-    }
-    .row .tr.o-3 {
-        margin-left: 25%
-    }
-    .row .tr.o-4 {
-        margin-left: 33.3333333333%
-    }
-    .row .tr.o-5 {
-        margin-left: 41.6666666667%
-    }
-    .row .tr.o-6 {
-        margin-left: 50%
-    }
-    .row .tr.o-7 {
-        margin-left: 58.3333333333%
-    }
-    .row .tr.o-8 {
-        margin-left: 66.6666666667%
-    }
-    .row .tr.o-9 {
-        margin-left: 75%
-    }
-    .row .tr.o-10 {
-        margin-left: 83.3333333333%
-    }
-    .row .tr.o-11 {
-        margin-left: 91.6666666667%
-    }
-    .row .tr.o-12 {
-        margin-left: 100%
-    }
-}
-
-/* Bilgisayarlar */
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    .row .tr.b-1 {
-        margin-left: 8.3333333333%
-    }
-    .row .tr.b-2 {
-        margin-left: 16.6666666667%
-    }
-    .row .tr.b-3 {
-        margin-left: 25%
-    }
-    .row .tr.b-4 {
-        margin-left: 33.3333333333%
-    }
-    .row .tr.b-5 {
-        margin-left: 41.6666666667%
-    }
-    .row .tr.b-6 {
-        margin-left: 50%
-    }
-    .row .tr.b-7 {
-        margin-left: 58.3333333333%
-    }
-    .row .tr.b-8 {
-        margin-left: 66.6666666667%
-    }
-    .row .tr.b-9 {
-        margin-left: 75%
-    }
-    .row .tr.b-10 {
-        margin-left: 83.3333333333%
-    }
-    .row .tr.b-11 {
-        margin-left: 91.6666666667%
-    }
-    .row .tr.b-12 {
-        margin-left: 100%
-    }
-}
-
-/* Yuksek Cozunurlukler */
-@media only screen and (min-width: 1200px) {
     .row .tr.cb-1 {
         margin-left: 8.3333333333%
     }
@@ -1298,6 +1278,26 @@ button.golge {
 .buton.golge:hover,
 button.golge:hover {
     box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3)
+}
+
+.buton.yuvarlak,
+button.yuvarlak {
+    padding: 20px !important
+}
+
+.buton.yuvarlak.kucuk,
+button.yuvarlak.kucuk {
+    padding: 15px !important
+}
+
+.buton.yuvarlak.buyuk,
+button.yuvarlak.buyuk {
+    padding: 30px !important
+}
+
+.buton.yay,
+button.yay {
+    width: 100%;
 }
 
 /* ============= 6.2 Buton Cesitleri */
@@ -1814,6 +1814,7 @@ footer .detay {
 }
 
 .kart .icerik p {
+    font-size: 14px;
     height: 100px;
     line-height: 24px;
     overflow: hidden
@@ -2062,45 +2063,36 @@ nav.etiket a:hover::after {
 nav.menu {
     background-color: #1AC5B8;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
-    height: 50px;
-    width: 100%;
-    z-index: 999
-}
-
-nav.menu.sabit {
-    position: fixed !important;
-    top: 0
-}
-
-nav.menu.mobil {
+    display: block;
     height: 100%;
     left: -240px;
     position: fixed;
     top: 0;
-    width: 240px
+    width: 240px;
+    z-index: 999
 }
 
-nav.menu > img.logo {
-    display: none
+nav.menu.sabit {
+    position: fixed
 }
 
-nav.menu.mobil > img.logo {
-    cursor: pointer;
-    display: block;
-    height: 50px;
-    position: fixed;
-    left: 40px;
-    top: 20px;
-    width: 50px
+nav.menu ul {
+    height: 50px
 }
 
 nav.menu ul li {
-    float: left
+    float:none;
+    position: relative
 }
 
-nav.menu.mobil ul li {
-    float: none;
-    position: relative
+nav.menu ul li.acilir > a::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgba(0,0,0,.2);
+    content: "";
+    position: absolute;
+    right: 23px;
+    top: 23px
 }
 
 nav.menu ul li a {
@@ -2114,29 +2106,9 @@ nav.menu ul li a {
     transition: all .1s
 }
 
-nav.menu ul li.acilir > a::after {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.2);
-    content: "";
-    left: 8px;
-    position: relative;
-    top: 10px
-}
-
-nav.menu.mobil ul li.acilir > a::after {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.2);
-    content: "";
-    left: auto;
-    position: absolute;
-    right: 23px;
-    top: 23px
-}
-
 nav.menu ul li:hover > a {
     background-color: rgba(0,0,0,.1);
+    color: #FFF;
     text-decoration: none
 }
 
@@ -2151,17 +2123,12 @@ nav.menu ul li ul {
 }
 
 nav.menu ul li:hover ul {
-    display: table;
-    z-index: 999
-}
-
-nav.menu.mobil ul li:hover ul {
     display: none
 }
 
 nav.menu ul li ul li {
     float: none;
-    min-width: 200px
+    width: 200px
 }
 
 nav.menu ul li ul li:last-child {
@@ -2171,46 +2138,51 @@ nav.menu ul li ul li:last-child {
 }
 
 nav.menu ul li ul li a:hover {
-    box-shadow: inset 0 0 100px rgba(0,0,0,.15)
+    box-shadow: inset 0 0 100px rgba(0,0,0,.15);
+    padding-left: 20px
 }
 
+nav.menu > img.logo {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    position: fixed;
+    left: 40px;
+    top: 20px;
+    width: 50px
+}
 @media only screen and (max-width: 1000px) {
-    nav.menu > img.logo {
-        display: none
-    }
-    nav.menu.mobil .container {
+    nav.menu .container {
         width: 100% !important
     }
 }
 
 @media only screen and (min-width: 1000px) {
-    nav.menu > img.logo {
-        display: none
-    }
-    nav.menu.mobil {
-        background-color: #1AC5B8;
-        box-shadow: 0 0 10px rgba(0,0,0,.5);
+    nav.menu {
         height: 50px;
-        position: static;
-        width: 100%;
+        left: 0 !important;
+        position: relative;
+        width: 100%
+    }
+
+    nav.menu ul li {
+        float: left;
+        position: static
+    }
+
+    nav.menu ul li:hover ul {
+        display: table;
         z-index: 999
     }
-    nav.menu.mobil > img.logo {
-        display: none !important
-    }
-    nav.menu.mobil ul li {
-        float: left
-    }
-    nav.menu.mobil ul li.acilir > a::after {
-        left: 8px;
+
+    nav.menu ul li.acilir > a::after {
+        left:8px;
         position: relative;
-        top: 10px
+        top:10px
     }
-    nav.menu.mobil ul li:hover ul {
-        display: table
-    }
-    nav.menu.mobil.sabit {
-        left: 0 !important
+
+    nav.menu > img.logo {
+        display: none !important
     }
 }
 
@@ -2228,6 +2200,18 @@ nav.konum {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%
+}
+
+nav.konum.kucuk {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px
+}
+
+nav.konum.buyuk {
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px
 }
 
 nav.konum a {
@@ -2312,6 +2296,16 @@ nav.numara.golge {
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
 }
 
+nav.numara.saydam {
+    background-color: transparent !important;
+    border: 0;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0)
+}
+
+nav.numara.saydam a {
+    border-right: 0px solid #FFF;
+}
+
 /* ============= 11. Notlar */
 
 .not {
@@ -2324,14 +2318,6 @@ nav.numara.golge {
     padding: 20px 50px 20px 20px;
     position: relative;
     width: 100%
-}
-
-.not.golge {
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
-    transition: all .3s
-}
-.not.golge:hover {
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,.4)
 }
 
 .not p {
@@ -2356,6 +2342,25 @@ nav.numara.golge {
 .not span.kaldir:hover {
     text-shadow: 0 0 5px rgba(0,0,0,.5)
 }
+
+.not.golge {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
+    transition: all .3s
+}
+
+.not.golge:hover {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.4)
+}
+
+.not.saydam {
+    background-color: transparent !important;
+    color: #000
+}
+
+.not.saydam span.kaldir {
+    color: #000
+}
+
 
 /* ============= 12. Pano */
 
