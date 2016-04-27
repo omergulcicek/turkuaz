@@ -22,9 +22,10 @@ Web üzerinde responsive siteler geliştirmek için tasarlanan yerli ve ücretsi
 7.  Form
 8.  Footer
 9.  Kartlar
-10. Menu
-11. Sayfa Konumu
-12. Sayfa Numaralandırma
-13. Yazı Ayarları
+10. Nav
+11. Notlar
+12. Pano
+13. Tab Menü
+14. Yazı
 
 -
