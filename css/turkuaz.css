@@ -20,10 +20,10 @@
 *      6.3    Buton Efektleri
 *    7.     Form
 *      7.1    Checkbox
-*      7.2    Select
-*      7.3    Dosya Secici
-*      7.4    Input
-*      7.5    Radio Buton
+*      7.2    Dosya Secici
+*      7.3    Input
+*      7.4    Radio Buton
+*      7.5    Select
 *      7.6    Tarih Secici
 *      7.7    Textarea
 *    8.     Footer
@@ -32,7 +32,7 @@
 *      9.2    Kart Boyutlari
 *      9.3    Kart Efektleri
 *    10.    Nav
-*      10.1    Etkilet
+*      10.1    Etiket
 *      10.2    Menu
 *      10.3    Sayfa Konumu
 *      10.4    Sayfa Numaralandirma
@@ -303,7 +303,7 @@ table th {
     text-align: left
 }
 
-table.renkli tr:nth-child(even) {
+table.renkli tr:nth-child(odd) {
     background-color: rgba(0,0,0,.05)
 }
 
@@ -1491,23 +1491,8 @@ button:hover {
     transform: scale(0)
 }
 
-/* ============= 7.2 Select */
-
-select {
-    background-color: rgba(255,255,255,.85);
-    border:1px solid #f2f2f2;
-    border-radius: 2px;
-    display: block;
-    height: 40px;
-    margin-bottom: 15px;
-    outline: none;
-    letter-spacing: .3px;
-    padding: 0 50px 0 10px;
-    width: 100%
-}
-
-/* ============= 7.3 Dosya Secici */
-/* ============= 7.4 Input */
+/* ============= 7.2 Dosya Secici */
+/* ============= 7.3 Input */
 
 [type=text],
 [type=password],
@@ -1588,7 +1573,7 @@ select {
     transform: translateY(-64px) scale(.75) !important
 }
 
-/* ============= 7.5 Radio Buton */
+/* ============= 7.4 Radio Buton */
 
 [type=radio] {
     box-sizing: border-box;
@@ -1644,6 +1629,21 @@ select {
     transform: scale(0)
 }
 
+/* ============= 7.5 Select */
+
+select {
+    background-color: rgba(255,255,255,.85);
+    border:1px solid #f2f2f2;
+    border-radius: 2px;
+    display: block;
+    height: 40px;
+    margin-bottom: 15px;
+    outline: none;
+    letter-spacing: .3px;
+    padding: 0 50px 0 10px;
+    width: 100%
+}
+
 /* ============= 7.6 Tarih Secici */
 
 [type=date] + label {
@@ -1684,7 +1684,7 @@ textarea + label {
     margin: 0;
     pointer-events: none;
     position: relative;
-    transform: translateY(-145px);
+    transform: translateY(-65px);
     transform-origin: 0 50%;
     transition: all .3s
 }
@@ -1694,7 +1694,7 @@ textarea.aktif + label {
 }
 
 textarea.dolu + label {
-    transform: translateY(-170px) scale(.75) !important
+    transform: translateY(-90px) scale(.75) !important
 }
 
 /* ============= 8. Footer */
@@ -1809,7 +1809,13 @@ footer .detay {
 .kart .icerik h3 a,
 .kart .icerik h4 a,
 .kart .icerik h5 a,
-.kart .icerik h6 a {
+.kart .icerik h6 a,
+.kart .icerik a h1,
+.kart .icerik a h2,
+.kart .icerik a h3,
+.kart .icerik a h4,
+.kart .icerik a h5,
+.kart .icerik a h6 {
     color: #000
 }
 
@@ -1884,7 +1890,7 @@ footer .detay {
 
 /* ============= 9.3 Kart Efektleri */
 
-/* Yakınlaştırma */
+/* Yakinlastirma */
 .kart.efekt1 > .resim img {
     transform: scale(1)
 }
@@ -1893,7 +1899,7 @@ footer .detay {
     transform: scale(1.3)
 }
 
-/* Uzaklaştırma */
+/* Uzaklastirma */
 .kart.efekt2 > .resim img {
     transform: scale(1.3)
 }
@@ -1902,7 +1908,7 @@ footer .detay {
     transform: scale(1)
 }
 
-/* Sola Geçer */
+/* Sola Gecer */
 .kart.efekt3 > .resim img {
     margin-left: 30px;
     transform: scale(1.2)
@@ -1912,7 +1918,7 @@ footer .detay {
     margin-left: 0
 }
 
-/* Sağa Geçer */
+/* Saga Gecer */
 .kart.efekt4 > .resim img {
     margin-left: -30px;
     transform: scale(1.2)
@@ -1922,7 +1928,7 @@ footer .detay {
     margin-left: 0
 }
 
-/* Çapraz Yakınlaştırır */
+/* Capraz Yakinlastirir */
 .kart.efekt5 > .resim img {
     transform: rotate(0) scale(1)
 }
@@ -1953,7 +1959,7 @@ footer .detay {
     -webkit-filter: grayscale(100%)
 }
 
-/* Bulanıklaştırır */
+/* Bulaniklastirir */
 .kart.efekt8 > .resim img {
     -webkit-filter: blur(1px)
 }
@@ -1962,7 +1968,7 @@ footer .detay {
     -webkit-filter: blur(0)
 }
 
-/* Netleştirir */
+/* Netlestirir */
 .kart.efekt9 > .resim img {
     -webkit-filter: blur(0)
 }
@@ -2309,7 +2315,7 @@ nav.numara.saydam a {
 /* ============= 11. Notlar */
 
 .not {
-    background-color: #F44336;
+    background-color: #1AC5B8;
     border: 1px solid rgba(0,0,0,.05);
     border-radius: 3px;
     color: #FFF;
