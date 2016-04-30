@@ -978,263 +978,381 @@ table.yazi-sag tr th {
 
 /* ============= 5.2 Arkaplan Renkleri */
 
-.beyaz,
-nav.menu.beyaz ul li ul li a {
+.beyaz {
     background-color: #FFF !important
 }
 
 .sari,
-nav.menu.sari ul li ul li a {
-    background-color: #FFEE58 !important
-}
-
-.sari2,
-nav.menu.sari2 ul li ul li a {
+.sari6 {
     background-color: #FFEB3B !important
 }
 
-.sari3,
-nav.menu.sari3 ul li ul li a {
+.sari2 {
+    background-color: #FFF9C4 !important
+}
+
+.sari3 {
+    background-color: #FFF59D !important
+}
+
+.sari4 {
+    background-color: #FFF176 !important
+}
+
+.sari5 {
+    background-color: #FFEE58 !important
+}
+
+.sari7 {
     background-color: #FDD835 !important
 }
 
-.sari4,
-nav.menu.sari4 ul li ul li a {
+.sari8 {
     background-color: #FBC02D !important
 }
 
-.sari5,
-nav.menu.sari5 ul li ul li a {
+.sari9 {
     background-color: #F9A825 !important
 }
 
-.turuncu,
-nav.menu.turuncu ul li ul li a {
-    background-color: #FFA726 !important
+.sari10 {
+    background-color: #F57F17 !important
 }
 
-.turuncu2,
-nav.menu.turuncu2 ul li ul li a {
+.turuncu,
+.turuncu6 {
     background-color: #FF9800 !important
 }
 
-.turuncu3,
-nav.menu.turuncu3 ul li ul li a {
+.turuncu2 {
+    background-color: #FFE0B2 !important
+}
+
+.turuncu3 {
+    background-color: #FFCC80 !important
+}
+
+.turuncu4 {
+    background-color: #FFB74D !important
+}
+
+.turuncu5 {
+    background-color: #FFA726 !important
+}
+
+.turuncu7 {
     background-color: #FB8C00 !important
 }
 
-.turuncu4,
-nav.menu.turuncu4 ul li ul li a {
+.turuncu8 {
     background-color: #F57C00 !important
 }
 
-.turuncu5,
-nav.menu.turuncu5 ul li ul li a {
+.turuncu9 {
     background-color: #EF6C00 !important
 }
 
+.turuncu10 {
+    background-color: #E65100 !important
+}
+
 .kirmizi,
-nav.menu.kirmizi ul li ul li a {
-    background-color: #f44336 !important
+.kirmizi6 {
+    background-color: #F44336 !important
 }
 
-.kirmizi2,
-nav.menu.kirmizi2 ul li ul li a {
-    background-color: #e53935 !important
+.kirmizi2 {
+    background-color: #FFCDD2 !important
 }
 
-.kirmizi3,
-nav.menu.kirmizi3 ul li ul li a {
-    background-color: #d32f2f !important
+.kirmizi3 {
+    background-color: #EF9A9A !important
 }
 
-.kirmizi4,
-nav.menu.kirmizi4 ul li ul li a {
-    background-color: #c62828 !important
+.kirmizi4 {
+    background-color: #E57373 !important
 }
 
-.kirmizi5,
-nav.menu.kirmizi5 ul li ul li a {
-    background-color: #b71c1c !important
+.kirmizi5 {
+    background-color: #EF5350 !important
+}
+
+.kirmizi7 {
+    background-color: #E53935 !important
+}
+
+.kirmizi8 {
+    background-color: #D32F2F !important
+}
+
+.kirmizi9 {
+    background-color: #C62828 !important
+}
+
+.kirmizi10 {
+    background-color: #B71C1C !important
 }
 
 .pembe,
-nav.menu.pembe ul li ul li a {
+.pembe6 {
     background-color: #E91E63 !important
 }
 
-.pembe2,
-nav.menu.pembe2 ul li ul li a {
+.pembe2 {
+    background-color: #F8BBD0 !important
+}
+
+.pembe3 {
+    background-color: #F48FB1 !important
+}
+
+.pembe4 {
+    background-color: #F06292 !important
+}
+
+.pembe5 {
+    background-color: #EC407A !important
+}
+
+.pembe7 {
     background-color: #D81B60 !important
 }
 
-.pembe3,
-nav.menu.pembe3 ul li ul li a {
+.pembe8 {
     background-color: #C2185B !important
 }
 
-.pembe4,
-nav.menu.pembe4 ul li ul li a {
+.pembe9 {
     background-color: #AD1457 !important
 }
 
-.pembe5,
-nav.menu.pembe5 ul li ul li a {
+.pembe10 {
     background-color: #880E4F !important
 }
 
 .mor,
-nav.menu.mor ul li ul li a {
+.mor6 {
     background-color: #9C27B0 !important
 }
 
-.mor2,
-nav.menu.mor2 ul li ul li a {
+.mor2 {
+    background-color: #E1BEE7 !important
+}
+
+.mor3 {
+    background-color: #CE93D8 !important
+}
+
+.mor4 {
+    background-color: #BA68C8 !important
+}
+
+.mor5 {
+    background-color: #AB47BC !important
+}
+
+.mor7 {
     background-color: #8E24AA !important
 }
 
-.mor3,
-nav.menu.mor3 ul li ul li a {
+.mor8 {
     background-color: #7B1FA2 !important
 }
 
-.mor4,
-nav.menu.mor4 ul li ul li a {
+.mor9 {
     background-color: #6A1B9A !important
 }
 
-.mor5,
-nav.menu.mor5 ul li ul li a {
+.mor10 {
     background-color: #4A148C !important
 }
 
 .mavi,
-nav.menu.mavi ul li ul li a {
+.mavi6 {
     background-color: #2196F3 !important
 }
 
-.mavi2,
-nav.menu.mavi2 ul li ul li a {
+.mavi2 {
+    background-color: #BBDEFB !important
+}
+
+.mavi3 {
+    background-color: #90CAF9 !important
+}
+
+.mavi4 {
+    background-color: #64B5F6 !important
+}
+
+.mavi5 {
+    background-color: #42A5F5 !important
+}
+
+.mavi7 {
     background-color: #1E88E5 !important
 }
 
-.mavi3,
-nav.menu.mavi3 ul li ul li a {
+.mavi8 {
     background-color: #1976D2 !important
 }
 
-.mavi4,
-nav.menu.mavi4 ul li ul li a {
+.mavi9 {
     background-color: #1565C0 !important
 }
 
-.mavi5,
-nav.menu.mavi5 ul li ul li a {
+.mavi10 {
     background-color: #0D47A1 !important
 }
 
 .turkuaz,
-nav.menu.turkuaz ul li ul li a {
+.turkuaz6 {
     background-color: #1AC5B8 !important
 }
 
-.turkuaz2,
-nav.menu.turkuaz2 ul li ul li a {
-    background-color: #13b4a8 !important
+.turkuaz2 {
+    background-color: #C1FDF8 !important
 }
 
-.turkuaz3,
-nav.menu.turkuaz3 ul li ul li a {
-    background-color: #0da196 !important
+.turkuaz3 {
+    background-color: #56F7EB !important
 }
 
-.turkuaz4,
-nav.menu.turkuaz4 ul li ul li a {
-    background-color: #0a8b81 !important
+.turkuaz4 {
+    background-color: #36EADD !important
 }
 
-.turkuaz5,
-nav.menu.turkuaz5 ul li ul li a {
-    background-color: #057970 !important
+.turkuaz5 {
+    background-color: #2ED8CB !important
+}
+
+.turkuaz7 {
+    background-color: #12B9AC !important
+}
+
+.turkuaz8 {
+    background-color: #0CAB9E !important
+}
+
+.turkuaz9 {
+    background-color: #03968A !important
+}
+
+.turkuaz10 {
+    background-color: #038075 !important
 }
 
 .yesil,
-nav.menu.yesil ul li ul li a {
+.yesil6  {
     background-color: #4CAF50 !important
 }
 
-.yesil2,
-nav.menu.yesil2 ul li ul li a {
+.yesil2 {
+    background-color: #C8E6C9 !important
+}
+
+.yesil3 {
+    background-color: #A5D6A7 !important
+}
+
+.yesil4 {
+    background-color: #81C784 !important
+}
+
+.yesil5 {
+    background-color: #66BB6A !important
+}
+
+.yesil7 {
     background-color: #43A047 !important
 }
 
-.yesil3,
-nav.menu.yesil3 ul li ul li a {
+.yesil8 {
     background-color: #388E3C !important
 }
 
-.yesil4,
-nav.menu.yesil4 ul li ul li a {
+.yesil9 {
     background-color: #2E7D32 !important
 }
 
-.yesil5,
-nav.menu.yesil5 ul li ul li a {
+.yesil10 {
     background-color: #1B5E20 !important
 }
 
 .kahverengi,
-nav.menu.kahverengi ul li ul li a {
+.kahverengi6 {
     background-color: #795548 !important
 }
 
-.kahverengi2,
-nav.menu.kahverengi2 ul li ul li a {
+.kahverengi2 {
+    background-color: #D7CCC8 !important
+}
+
+.kahverengi3 {
+    background-color: #BCAAA4 !important
+}
+
+.kahverengi4 {
+    background-color: #A1887F !important
+}
+
+.kahverengi5 {
+    background-color: #8D6E63 !important
+}
+
+.kahverengi7 {
     background-color: #6D4C41 !important
 }
 
-.kahverengi3,
-nav.menu.kahverengi3 ul li ul li a {
+.kahverengi8 {
     background-color: #5D4037 !important
 }
 
-.kahverengi4,
-nav.menu.kahverengi4 ul li ul li a {
+.kahverengi9 {
     background-color: #4E342E !important
 }
 
-.kahverengi5,
-nav.menu.kahverengi5 ul li ul li a {
+.kahverengi10 {
     background-color: #3E2723 !important
 }
 
 .gri,
-nav.menu.gri ul li ul li a {
-    background-color: #B0BEC5 !important
+.gri6 {
+    background-color: #9E9E9E !important
 }
 
-.gri2,
-nav.menu.gri2 ul li ul li a {
-    background-color: #90A4AE !important
+.gri2 {
+    background-color: #F5F5F5 !important
 }
 
-.gri3,
-nav.menu.gri3 ul li ul li a {
-    background-color: #607D8B !important
+.gri3 {
+    background-color: #EEEEEE !important
 }
 
-.gri4,
-nav.menu.gri4 ul li ul li a {
-    background-color: #455A64 !important
+.gri4 {
+    background-color: #E0E0E0 !important
 }
 
-.gri5,
-nav.menu.gri5 ul li ul li a {
-    background-color: #37474F !important
+.gri5 {
+    background-color: #BDBDBD !important
 }
 
-.siyah,
-nav.menu.siyah ul li ul li a {
+.gri7 {
+    background-color: #757575 !important
+}
+
+.gri8 {
+    background-color: #616161 !important
+}
+
+.gri9 {
+    background-color: #4E4E4E !important
+}
+
+.gri10 {
+    background-color: #424040 !important
+}
+
+.siyah {
     background-color: #000 !important
 }
 
