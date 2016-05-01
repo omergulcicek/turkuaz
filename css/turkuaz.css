@@ -2645,312 +2645,484 @@ nav.numara.saydam a {
 /* ============= 14.3 Yazi Renkleri */
 
 .yazi-beyaz,
-.yazi-beyaz a,
-nav.menu.yazi-beyaz ul li a {
+.yazi-beyaz a {
     color: #FFF !important
 }
 
 .yazi-sari,
 .yazi-sari a,
-nav.menu.yazi-sari ul li a {
-    color: #FFEE58 !important
-}
-
-.yazi-sari2,
-.yazi-sari2 a,
-nav.menu.yazi-sari2 ul li a {
+.yazi-sari6,
+.yazi-sari6 a {
     color: #FFEB3B !important
 }
 
+.yazi-sari2,
+.yazi-sari2 a {
+    color: #FFF9C4 !important
+}
+
 .yazi-sari3,
-.yazi-sari3 a,
-nav.menu.yazi-sari3 ul li a {
-    color: #FDD835 !important
+.yazi-sari3 a {
+    color: #FFF59D !important
 }
 
 .yazi-sari4,
-nav.menu.yazi-sari4 ul li a {
-    color: #FBC02D !important
+.yazi-sari4 a {
+    color: #FFF176 !important
 }
 
 .yazi-sari5,
-.yazi-sari5 a,
-nav.menu.yazi-sari5 ul li a {
+.yazi-sari5 a {
+    color: #FFEE58 !important
+}
+
+.yazi-sari7,
+.yazi-sari7 a {
+    color: #FDD835 !important
+}
+
+.yazi-sari8,
+.yazi-sari8 a {
+    color: #FBC02D !important
+}
+
+.yazi-sari9,
+.yazi-sari9 a {
     color: #F9A825 !important
+}
+
+.yazi-sari10,
+.yazi-sari10 a {
+    color: #F57F17 !important
 }
 
 .yazi-turuncu,
 .yazi-turuncu a,
-nav.menu.yazi-turuncu ul li a {
-    color: #FFA726 !important
-}
-
-.yazi-turuncu2,
-.yazi-turuncu2 a,
-nav.menu.yazi-turuncu2 ul li a {
+.yazi-turuncu6,
+.yazi-turuncu6 a {
     color: #FF9800 !important
 }
 
+.yazi-turuncu2,
+.yazi-turuncu2 a {
+    color: #FFE0B2 !important
+}
+
 .yazi-turuncu3,
-.yazi-turuncu3 a,
-nav.menu.yazi-turuncu3 ul li a {
-    color: #FB8C00 !important
+.yazi-turuncu3 a {
+    color: #FFCC80 !important
 }
 
 .yazi-turuncu4,
-.yazi-turuncu4 a,
-nav.menu.yazi-turuncu4 ul li a {
-    color: #F57C00 !important
+.yazi-turuncu4 a {
+    color: #FFB74D !important
 }
 
 .yazi-turuncu5,
-.yazi-turuncu5 a,
-nav.menu.yazi-turuncu5 ul li a {
+.yazi-turuncu5 a {
+    color: #FFA726 !important
+}
+
+.yazi-turuncu7,
+.yazi-turuncu7 a {
+    color: #FB8C00 !important
+}
+
+.yazi-turuncu8,
+.yazi-turuncu8 a {
+    color: #F57C00 !important
+}
+
+.yazi-turuncu9,
+.yazi-turuncu9 a {
     color: #EF6C00 !important
+}
+
+.yazi-turuncu10,
+.yazi-turuncu10 a {
+    color: #E65100 !important
 }
 
 .yazi-kirmizi,
 .yazi-kirmizi a,
-nav.menu.yazi-kirmizi ul li a {
-    color: #f44336 !important
+.yazi-kirmizi6,
+.yazi-kirmizi6 a {
+    color: #F44336 !important
 }
 
 .yazi-kirmizi2,
-.yazi-kirmizi2 a,
-nav.menu.yazi-kirmizi2 ul li a {
-    color: #e53935 !important
+.yazi-kirmizi2 a {
+    color: #FFCDD2 !important
 }
 
 .yazi-kirmizi3,
-.yazi-kirmizi3 a,
-nav.menu.yazi-kirmizi3 ul li a {
-    color: #d32f2f !important
+.yazi-kirmizi3 a {
+    color: #EF9A9A !important
 }
 
 .yazi-kirmizi4,
-.yazi-kirmizi4 a,
-nav.menu.yazi-kirmizi4 ul li a {
-    color: #c62828 !important
+.yazi-kirmizi4 a {
+    color: #E57373 !important
 }
 
 .yazi-kirmizi5,
-.yazi-kirmizi5 a,
-nav.menu.yazi-kirmizi5 ul li a {
-    color: #b71c1c !important
+.yazi-kirmizi5 a {
+    color: #EF5350 !important
+}
+
+.yazi-kirmizi7,
+.yazi-kirmizi7 a {
+    color: #E53935 !important
+}
+
+.yazi-kirmizi8,
+.yazi-kirmizi8 a {
+    color: #D32F2F !important
+}
+
+.yazi-kirmizi9,
+.yazi-kirmizi9 a {
+    color: #C62828 !important
+}
+
+.yazi-kirmizi10,
+.yazi-kirmizi10 a {
+    color: #B71C1C !important
 }
 
 .yazi-pembe,
 .yazi-pembe a,
-nav.menu.yazi-pembe ul li a {
+.yazi-pembe6,
+.yazi-pembe6 a {
     color: #E91E63 !important
 }
 
 .yazi-pembe2,
-.yazi-pembe2 a,
-nav.menu.yazi-pembe2 ul li a {
-    color: #D81B60 !important
+.yazi-pembe2 a {
+    color: #F8BBD0 !important
 }
 
 .yazi-pembe3,
-.yazi-pembe3 a,
-nav.menu.yazi-pembe3 ul li a {
-    color: #C2185B !important
+.yazi-pembe3 a {
+    color: #F48FB1 !important
 }
 
 .yazi-pembe4,
-.yazi-pembe4 a,
-nav.menu.yazi-pembe4 ul li a {
-    color: #AD1457 !important
+.yazi-pembe4 a {
+    color: #F06292 !important
 }
 
 .yazi-pembe5,
-.yazi-pembe5 a,
-nav.menu.yazi-pembe5 ul li a {
+.yazi-pembe5 a {
+    color: #EC407A !important
+}
+
+.yazi-pembe7,
+.yazi-pembe7 a {
+    color: #D81B60 !important
+}
+
+.yazi-pembe8,
+.yazi-pembe8 a {
+    color: #C2185B !important
+}
+
+.yazi-pembe9,
+.yazi-pembe9 a {
+    color: #AD1457 !important
+}
+
+.yazi-pembe10,
+.yazi-pembe10 a {
     color: #880E4F !important
 }
 
 .yazi-mor,
-.yazi-mor a,
-nav.menu.yazi-mor ul li a {
-    color: #9C27B0 !important
+.yazi-mor a {
+    color: # !important
 }
 
 .yazi-mor2,
-.yazi-mor2 a,
-nav.menu.yazi-mor2 ul li a {
-    color: #8E24AA !important
+.yazi-mor2 a {
+    color: #9C27B0 !important
 }
 
 .yazi-mor3,
-.yazi-mor3 a,
-nav.menu.yazi-mor3 ul li a {
-    color: #7B1FA2 !important
+.yazi-mor3 a {
+    color: #E1BEE7 !important
 }
 
 .yazi-mor4,
-.yazi-mor4 a,
-nav.menu.yazi-mor4 ul li a {
-    color: #6A1B9A !important
+.yazi-mor4 a {
+    color: #CE93D8 !important
 }
 
 .yazi-mor5,
-.yazi-mor5 a,
-nav.menu.yazi-mor5 ul li a {
+.yazi-mor5 a {
+    color: #BA68C8 !important
+}
+
+.yazi-mor6,
+.yazi-mor6 a {
+    color: #AB47BC !important
+}
+
+.yazi-mor7,
+.yazi-mor7 a {
+    color: #8E24AA !important
+}
+
+.yazi-mor8,
+.yazi-mor8 a {
+    color: #7B1FA2 !important
+}
+
+.yazi-mor9,
+.yazi-mor9 a {
+    color: #6A1B9A !important
+}
+
+.yazi-mor10,
+.yazi-mor10 a {
     color: #4A148C !important
 }
 
 .yazi-mavi,
 .yazi-mavi a,
-nav.menu.yazi-mavi ul li a {
+.yazi-mavi6,
+.yazi-mavi6 a {
     color: #2196F3 !important
 }
 
 .yazi-mavi2,
-.yazi-mavi2 a,
-nav.menu.yazi-mavi2 ul li a {
-    color: #1E88E5 !important
+.yazi-mavi2 a {
+    color: #BBDEFB !important
 }
 
 .yazi-mavi3,
-.yazi-mavi3 a,
-nav.menu.yazi-mavi3 ul li a {
-    color: #1976D2 !important
+.yazi-mavi3 a {
+    color: #90CAF9 !important
 }
 
 .yazi-mavi4,
-.yazi-mavi4 a,
-nav.menu.yazi-mavi4 ul li a {
-    color: #1565C0 !important
+.yazi-mavi4 a {
+    color: #64B5F6 !important
 }
 
 .yazi-mavi5,
-.yazi-mavi5 a,
-nav.menu.yazi-mavi5 ul li a {
+.yazi-mavi5 a {
+    color: #42A5F5 !important
+}
+
+.yazi-mavi7,
+.yazi-mavi7 a {
+    color: #1E88E5 !important
+}
+
+.yazi-mavi8,
+.yazi-mavi8 a {
+    color: #1976D2 !important
+}
+
+.yazi-mavi9,
+.yazi-mavi9 a {
+    color: #1565C0 !important
+}
+
+.yazi-mavi10,
+.yazi-mavi10 a {
     color: #0D47A1 !important
 }
 
 .yazi-turkuaz,
 .yazi-turkuaz a,
-nav.menu.yazi-turkuaz ul li a {
+.yazi-turkuaz6,
+.yazi-turkuaz6 a {
     color: #1AC5B8 !important
 }
 
 .yazi-turkuaz2,
-.yazi-turkuaz2 a,
-nav.menu.yazi-turkuaz2 ul li a {
-    color: #13b4a8 !important
+.yazi-turkuaz2 a {
+    color: #C1FDF8 !important
 }
 
 .yazi-turkuaz3,
-.yazi-turkuaz3 a,
-nav.menu.yazi-turkuaz3 ul li a {
-    color: #0da196 !important
+.yazi-turkuaz3 a {
+    color: #56F7EB !important
 }
 
 .yazi-turkuaz4,
-.yazi-turkuaz4 a,
-nav.menu.yazi-turkuaz4 ul li a {
-    color: #0a8b81 !important
+.yazi-turkuaz4 a {
+    color: #36EADD !important
 }
 
 .yazi-turkuaz5,
-.yazi-turkuaz5 a,
-nav.menu.yazi-turkuaz5 ul li a {
-    color: #057970 !important
+.yazi-turkuaz5 a {
+    color: #2ED8CB !important
+}
+
+.yazi-turkuaz7,
+.yazi-turkuaz7 a {
+    color: #12B9AC !important
+}
+
+.yazi-turkuaz8,
+.yazi-turkuaz8 a {
+    color: #0CAB9E !important
+}
+
+.yazi-turkuaz9,
+.yazi-turkuaz9 a {
+    color: #03968A !important
+}
+
+.yazi-turkuaz10,
+.yazi-turkuaz10 a {
+    color: #038075 !important
 }
 
 .yazi-yesil,
 .yazi-yesil a,
-nav.menu.yazi-yesil ul li a {
+.yazi-yesil6,
+.yazi-yesil6 a {
     color: #4CAF50 !important
 }
 
 .yazi-yesil2,
-.yazi-yesil2 a,
-nav.menu.yazi-yesil2 ul li a {
-    color: #43A047 !important
+.yazi-yesil2 a {
+    color: #C8E6C9 !important
 }
 
 .yazi-yesil3,
-.yazi-yesil3 a,
-nav.menu.yazi-yesil3 ul li a {
-    color: #388E3C !important
+.yazi-yesil3 a {
+    color: #A5D6A7 !important
 }
 
 .yazi-yesil4,
-.yazi-yesil4 a,
-nav.menu.yazi-yesil4 ul li a {
-    color: #2E7D32 !important
+.yazi-yesil4 a {
+    color: #81C784 !important
 }
 
 .yazi-yesil5,
-.yazi-yesil5 a,
-nav.menu.yazi-yesil5 ul li a {
+.yazi-yesil5 a {
+    color: #66BB6A !important
+}
+
+.yazi-yesil7,
+.yazi-yesil7 a {
+    color: #43A047 !important
+}
+
+.yazi-yesil8,
+.yazi-yesil8 a {
+    color: #388E3C !important
+}
+
+.yazi-yesil9,
+.yazi-yesil9 a {
+    color: #2E7D32 !important
+}
+
+.yazi-yesil10,
+.yazi-yesil10 a {
     color: #1B5E20 !important
 }
 
 .yazi-kahverengi,
 .yazi-kahverengi a,
-nav.menu.yazi-kahverengi ul li a {
+.yazi-kahverengi6,
+.yazi-kahverengi6 a {
     color: #795548 !important
 }
 
 .yazi-kahverengi2,
-.yazi-kahverengi2 a,
-nav.menu.yazi-kahverengi2 ul li a {
-    color: #6D4C41 !important
+.yazi-kahverengi2 a {
+    color: #D7CCC8 !important
 }
 
 .yazi-kahverengi3,
-.yazi-kahverengi3 a,
-nav.menu.yazi-kahverengi3 ul li a {
-    color: #5D4037 !important
+.yazi-kahverengi3 a {
+    color: #BCAAA4 !important
 }
 
 .yazi-kahverengi4,
-.yazi-kahverengi4 a,
-nav.menu.yazi-kahverengi4 ul li a {
-    color: #4E342E !important
+.yazi-kahverengi4 a {
+    color: #A1887F !important
 }
 
 .yazi-kahverengi5,
-.yazi-kahverengi5 a,
-nav.menu.yazi-kahverengi5 ul li a {
+.yazi-kahverengi5 a {
+    color: #8D6E63 !important
+}
+
+.yazi-kahverengi7,
+.yazi-kahverengi7 a {
+    color: #6D4C41 !important
+}
+
+.yazi-kahverengi8,
+.yazi-kahverengi8 a {
+    color: #5D4037 !important
+}
+
+.yazi-kahverengi9,
+.yazi-kahverengi9 a {
+    color: #4E342E !important
+}
+
+.yazi-kahverengi10,
+.yazi-kahverengi10 a {
     color: #3E2723 !important
 }
 
 .yazi-gri,
 .yazi-gri a,
-nav.menu.yazi-gri ul li a {
-    color: #B0BEC5 !important
+.yazi-gri6,
+.yazi-gri6 a {
+    color: #9E9E9E !important
 }
 
 .yazi-gri2,
-.yazi-gri2 a,
-nav.menu.yazi-gri2 ul li a {
-    color: #90A4AE !important
+.yazi-gri2 a {
+    color: #F5F5F5 !important
 }
 
 .yazi-gri3,
-.yazi-gri3 a,
-nav.menu.yazi-gri3 ul li a {
-    color: #607D8B !important
+.yazi-gri3 a {
+    color: #EEEEEE !important
 }
 
 .yazi-gri4,
-.yazi-gri4 a,
-nav.menu.yazi-gri4 ul li a {
-    color: #455A64 !important
+.yazi-gri4 a {
+    color: #E0E0E0 !important
 }
 
 .yazi-gri5,
-.yazi-gri5 a,
-nav.menu.yazi-gri5 ul li a {
-    color: #37474F !important
+.yazi-gri5 a {
+    color: #BDBDBD !important
+}
+
+.yazi-gri7,
+.yazi-gri7 a {
+    color: #757575 !important
+}
+
+.yazi-gri8,
+.yazi-gri8 a {
+    color: #616161 !important
+}
+
+.yazi-gri9,
+.yazi-gri9 a {
+    color: #4E4E4E !important
+}
+
+.yazi-gri10,
+.yazi-gri10 a {
+    color: #424040 !important
 }
 
 .yazi-siyah,
-.yazi-siyah a,
-nav.menu.yazi-siyah ul li a {
+.yazi-siyah a {
     color: #000 !important
 }
