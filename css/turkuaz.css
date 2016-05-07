@@ -28,8 +28,8 @@
 *      7.7    Textarea
 *    8.     Footer
 *    9.     Kartlar
-*      9.1    Kart Ayarlari
-*      9.2    Kart Boyutlari
+*      9.1    Kart Kodlari
+*      9.2    Kart Ayarlari
 *      9.3    Kart Efektleri
 *    10.    Nav
 *      10.1    Etiket
@@ -309,7 +309,7 @@ table.renkli tr:nth-child(odd) {
 
 table.vurgu tr:hover td {
     background-color: rgba(0,0,0,.075);
-    transition: all .3s
+    transition: .3s
 }
 
 table.saydam th {
@@ -1357,7 +1357,50 @@ table.yazi-sag tr th {
 }
 
 /* ============= 6. Buton */
-/* ============= 6.1 Buton Ayarlari */
+/* ============= 6.1 Butonlar */
+
+.buton,
+button {
+    background-color: #1AC5B8;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: normal;
+    height: 40px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    outline: 0;
+    overflow: hidden;
+    padding: 10px 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease-out
+}
+
+.buton.kucuk {
+    height: 30px;
+    line-height: 10px;
+    padding: 10px 15px
+}
+
+.buton.buyuk {
+    height: 60px;
+    line-height: 40px
+}
+
+.buton:hover,
+button:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15);
+    color: #FFF;
+    text-decoration: none
+}
 
 .buton.saydam,
 button.saydam {
@@ -1388,16 +1431,6 @@ button.pasif:hover {
     cursor:default
 }
 
-.buton.golge,
-button.golge {
-    box-shadow: 0 2px 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3)
-}
-
-.buton.golge:hover,
-button.golge:hover {
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3)
-}
-
 .buton.yuvarlak,
 button.yuvarlak {
     padding: 20px !important
@@ -1418,50 +1451,6 @@ button.yay {
     width: 100%;
 }
 
-/* ============= 6.2 Buton Cesitleri */
-
-.buton,
-button {
-    background-color: #1AC5B8;
-    border: none;
-    border-radius: 3px;
-    color: #FFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Roboto";
-    font-size: 12px;
-    font-weight: normal;
-    height: 40px;
-    letter-spacing: 1.5px;
-    line-height: 20px;
-    outline: 0;
-    overflow: hidden;
-    padding: 10px 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .3s
-}
-
-.buton.kucuk {
-    height: 30px;
-    line-height: 10px;
-    padding: 10px 15px
-}
-
-.buton.buyuk {
-    height: 60px;
-    line-height: 40px
-}
-
-.buton:hover,
-button:hover {
-    box-shadow: inset 0 0 0 100px rgba(0,0,0,.15);
-    color: #FFF;
-    text-decoration: none
-}
-
 /* ============= 6.3 Buton Efektleri */
 
 .buton[class*="efekt"] {
@@ -1474,7 +1463,7 @@ button:hover {
     content: "";
     opacity: .25;
     position: absolute;
-    transition: all .3s
+    transition: .3s
 }
 
 .buton.efekt:before,
@@ -1592,14 +1581,14 @@ button:hover {
 
 [type=checkbox] + label:before, [type=checkbox]:not(.filled-in) + label:after {
     border: 2px solid #000;
-    border-radius: 1px;
+    border-radius: 2px;
     content: "";
     height: 18px;
     margin-top: 3px;
     left: 0;
     position: absolute;
     top: 0;
-    transition: .2s;
+    transition: .1s;
     width: 18px;
     z-index: 0
 }
@@ -1633,7 +1622,7 @@ button:hover {
     margin-bottom: 15px;
     outline: none;
     position: relative;
-    transition: all .3s;
+    transition: .3s;
     width: 100%
 }
 
@@ -1666,7 +1655,7 @@ button:hover {
     position: relative;
     transform: translateY(-42px);
     transform-origin: 0 50%;
-    transition: all .3s
+    transition: .3s
 }
 
 [type=text].aktif + label,
@@ -1737,7 +1726,7 @@ button:hover {
     left: 0;
     position: absolute;
     top: 0;
-    transition: .2s;
+    transition: .3s;
     width: 18px;
     z-index: 0
 }
@@ -1752,7 +1741,7 @@ button:hover {
 select {
     background-color: rgba(255,255,255,.85);
     border:1px solid #f2f2f2;
-    border-radius: 2px;
+    border-radius: 3px;
     display: block;
     height: 40px;
     margin-bottom: 15px;
@@ -1785,7 +1774,7 @@ textarea {
     outline: none;
     position: relative;
     resize: none;
-    transition: all .3s;
+    transition: .3s;
     width: 100%
 }
 
@@ -1804,7 +1793,7 @@ textarea + label {
     position: relative;
     transform: translateY(-65px);
     transform-origin: 0 50%;
-    transition: all .3s
+    transition: .3s
 }
 
 textarea.aktif + label {
@@ -1835,23 +1824,12 @@ footer .detay {
 }
 
 /* ============= 9. Kartlar */
-/* ============= 9.1 Kart Ayarlari */
-
-.kart.golge {
-    border: 0;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
-    transition: all .3s
-}
-
-.kart.golge:hover {
-    box-shadow: 0 3px 20px 0 rgba(0,0,0,.4)
-}
-
-/* ============= 9.2 Kart Boyutlari */
+/* ============= 9.1 Kart Kodlari */
 
 .kart {
-    border: 1px solid rgba(0,0,0,.1);
+    background-color: #FFF;
     border-radius: 3px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
     height: 400px;
     margin-bottom: 25px;
     position: relative;
@@ -1885,7 +1863,7 @@ footer .detay {
     border-top-left-radius: 3px;
     cursor: pointer;
     height: 100%;
-    transition: all .4s;
+    transition: .3s;
     width: 100%
 }
 
@@ -2006,7 +1984,7 @@ footer .detay {
     }
 }
 
-/* ============= 9.3 Kart Efektleri */
+/* ============= 9.2 Kart Efektleri */
 
 /* Yakinlastirma */
 .kart.efekt1 > .resim img {
@@ -2052,7 +2030,7 @@ footer .detay {
 }
 
 .kart.efekt5 > .resim img:hover {
-    transform: rotate(15deg) scale(1.52)
+    transform: rotate(15deg) scale(1.75)
 }
 
 /* Siyah Beyaz */
@@ -2114,8 +2092,7 @@ nav.etiket a {
     margin: 0 10px 15px 0;
     padding: 0 20px 0 23px;
     position: relative;
-    text-decoration: none;
-    transition: color .1s
+    text-decoration: none
 }
 
 nav.etiket.kucuk a {
@@ -2132,7 +2109,7 @@ nav.etiket.buyuk a {
 
 nav.etiket a::before {
     background: #FFF;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 0 0 2px rgba(0,0,0,.25);
     content: "";
     height: 6px;
@@ -2227,7 +2204,7 @@ nav.menu ul li a {
     letter-spacing: .5px;
     line-height: 50px;
     padding: 0 15px;
-    transition: all .1s
+    transition: .3s
 }
 
 nav.menu ul li:hover > a {
@@ -2241,7 +2218,7 @@ nav.menu ul li a.aktif {
 }
 
 nav.menu ul li ul {
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
     display: none;
     position: absolute
 }
@@ -2252,18 +2229,24 @@ nav.menu ul li:hover ul {
 
 nav.menu ul li ul li {
     float: none;
-    width: 200px
+    width: 100%
 }
 
 nav.menu ul li ul li:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     overflow: hidden
 }
 
+nav.menu ul li ul li a {
+    background-color: #FFF !important;
+    color: #000;
+    padding-left: 30px
+}
+
 nav.menu ul li ul li a:hover {
-    box-shadow: inset 0 0 100px rgba(0,0,0,.15);
-    padding-left: 20px
+    box-shadow: inset 0 0 250px rgba(0,0,0,.15);
+    color: #000;
 }
 
 nav.menu > img.logo {
@@ -2304,7 +2287,16 @@ nav.menu > img.logo {
         position: relative;
         top:10px
     }
-
+    nav.menu ul li ul {
+        box-shadow: 0 5px 10px rgba(0,0,0,.1)
+    }
+    nav.menu ul li ul li:last-child {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px
+    }
+    nav.menu ul li ul li a {
+        padding-left: 15px
+    }
     nav.menu > img.logo {
         display: none !important
     }
@@ -2376,7 +2368,7 @@ nav.konum.saydam a:last-of-type {
 
 nav.numara {
     border: 1px solid rgba(0,0,0,.1);
-    border-radius: 4px;
+    border-radius: 3px;
     box-shadow: 0 2px 2px rgba(0,0,0,.07);
     display: inline-block;
     margin: 25px 0
@@ -2389,7 +2381,7 @@ nav.numara a {
     float:left;
     padding: 8px 13px 8px 13px;
     text-align: center;
-    transition: all .3s
+    transition: .3s
 }
 
 nav.numara a:last-of-type {
@@ -2415,11 +2407,6 @@ nav.numara.kucuk a {
     padding: 4px 6.5px 4px 6.5px
 }
 
-nav.numara.golge {
-    border: 0;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5)
-}
-
 nav.numara.saydam {
     background-color: transparent !important;
     border: 0;
@@ -2434,7 +2421,7 @@ nav.numara.saydam a {
 
 .not {
     background-color: #1AC5B8;
-    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
     border-radius: 3px;
     color: #FFF;
     line-height: 1.6;
@@ -2455,7 +2442,7 @@ nav.numara.saydam a {
     font-size: 25px;
     position: absolute;
     right: 20px;
-    transition: all .3s;
+    transition: .3s;
     top: 11px
 }
 
@@ -2465,15 +2452,6 @@ nav.numara.saydam a {
 
 .not span.kaldir:hover {
     text-shadow: 0 0 5px rgba(0,0,0,.5)
-}
-
-.not.golge {
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
-    transition: all .3s
-}
-
-.not.golge:hover {
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,.4)
 }
 
 .not.saydam {
@@ -2491,17 +2469,8 @@ nav.numara.saydam a {
 .pano {
     background-color: #1AC5B8;
     border-radius: 3px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.12);
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
     margin-bottom: 15px
-}
-
-.pano.golge {
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.5);
-    transition: all .3s
-}
-
-.pano.golge:hover {
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,.4)
 }
 
 .pano h1,
