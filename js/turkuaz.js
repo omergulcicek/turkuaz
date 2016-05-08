@@ -63,7 +63,21 @@ $("body").on('click', '.karart', function(){
 //menudeki li'lerin icerisinde alt menu var ise o li'ye 'acilir' class'ini ekler ve sagina minik bir ok gelir.
 $("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir");
 
+// Akordiyon Menu
+// Mobile menu de hover kalkar akkordiyon devreye girer
 
+
+$(".acilir").click(function() {
+
+    var lisayisi = $(this).find("li").length;
+    var yukseklik = lisayisi * 50;
+
+    $(this).find("ul").css({
+        "height": yukseklik + "px",
+        "position": "relative",
+        "width": "100%"
+    }).slideToggle("slow").parent().siblings(".acilir").find("ul:visible").slideUp("fast");;
+});
 
 /* ============= 3. Notlar */
 
