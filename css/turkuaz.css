@@ -1862,7 +1862,6 @@ footer .detay {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     cursor: pointer;
-    height: 100%;
     transition: .3s;
     width: 100%
 }
@@ -2167,6 +2166,7 @@ nav.menu {
     display: block;
     height: 100%;
     left: -240px;
+    overflow-y: scroll;
     position: fixed;
     top: 0;
     width: 240px;
@@ -2186,16 +2186,6 @@ nav.menu ul li {
     position: relative
 }
 
-nav.menu ul li.acilir > a::after {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.2);
-    content: "";
-    position: absolute;
-    right: 23px;
-    top: 23px
-}
-
 nav.menu ul li a {
     color: #FFF;
     cursor: pointer;
@@ -2213,6 +2203,16 @@ nav.menu ul li:hover > a {
     text-decoration: none
 }
 
+nav.menu ul li.acilir > a::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgba(0,0,0,.2);
+    content: "";
+    position: absolute;
+    right: 23px;
+    top: 23px
+}
+
 nav.menu ul li a.aktif {
     background-color: rgba(0,0,0,.1)
 }
@@ -2220,7 +2220,7 @@ nav.menu ul li a.aktif {
 nav.menu ul li ul {
     box-shadow: 0 0 0 rgba(0,0,0,0);
     display: none;
-    position: absolute
+    position: relative
 }
 
 nav.menu ul li:hover ul {
@@ -2245,7 +2245,7 @@ nav.menu ul li ul li a {
 }
 
 nav.menu ul li ul li a:hover {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.15);
+    box-shadow: inset 0 0 250px rgba(0,0,0,.1);
     color: #000;
 }
 
@@ -2258,8 +2258,10 @@ nav.menu > img.logo {
     top: 20px;
     width: 50px
 }
-@media only screen and (max-width: 1000px) {
-    nav.menu .container {
+@media only screen and (max-width: 999px) {
+    nav.menu .container,
+    nav.menu .container-kucuk,
+    nav.menu .container-buyuk {
         width: 100% !important
     }
 }
@@ -2271,17 +2273,17 @@ nav.menu > img.logo {
         position: relative;
         width: 100%
     }
-
     nav.menu ul li {
         float: left;
         position: static
     }
-
-    nav.menu ul li:hover ul {
-        display: table;
+    nav.menu ul li ul {
+        position: absolute !important;
         z-index: 999
     }
-
+    nav.menu ul li:hover ul {
+        display: table !important
+    }
     nav.menu ul li.acilir > a::after {
         left:8px;
         position: relative;
@@ -2295,7 +2297,8 @@ nav.menu > img.logo {
         border-bottom-right-radius: 3px
     }
     nav.menu ul li ul li a {
-        padding-left: 15px
+        padding-left: 15px;
+        transition: .15s
     }
     nav.menu > img.logo {
         display: none !important
