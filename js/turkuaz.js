@@ -63,21 +63,38 @@ $("body").on('click', '.karart', function(){
 //menudeki li'lerin icerisinde alt menu var ise o li'ye 'acilir' class'ini ekler ve sagina minik bir ok gelir.
 $("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir");
 
+
 // Akordiyon Menu
-// Mobile menu de hover kalkar akkordiyon devreye girer
-
-
-$(".acilir").click(function() {
-
-    var lisayisi = $(this).find("li").length;
-    var yukseklik = lisayisi * 50;
-
+$("body").on('click', 'nav.menu.mobil ul li.acilir', function(){
+    //alt menudeki link sayisina gore ul'nin yuksekligini hesaplar.
+    var yukseklik = $(this).find("li").length * 50;
+    //alt menuye yukseklik degerini verir.
     $(this).find("ul").css({
-        "height": yukseklik + "px",
-        "position": "relative",
-        "width": "100%"
-    }).slideToggle("slow").parent().siblings(".acilir").find("ul:visible").slideUp("fast");;
+        "height": yukseklik + "px"
+        //500ms hizinda acilir menuyu gorunur yapar, diger acilir menuleri gizler.
+    }).slideToggle("500").parent().siblings(".acilir").find("ul:visible").slideToggle("500");
 });
+
+// Mobil Menu
+function mobil(){
+    if ($(window).width() <= 1000) {
+        //cozunurluk 1000px'in altina indiginde menuye mobil sinifini ekler.
+        $("nav.menu").addClass("mobil");
+    }
+    else {
+        //cozunurluk 1000px'in ustunde mobil sinifini kaldirir.
+        $("nav.menu").removeClass("mobil");
+    }
+    $("nav.menu ul li.acilir ul").each(function(){
+        //cozunurluk degistiginde acilir menuler gizlenir.
+        $(this).hide("600");
+    });
+}
+
+//cozunurluk her degistiginde mobil fonksiyonunu calistir.
+mobil(); $(window).resize(function() { mobil(); });
+
+
 
 /* ============= 3. Notlar */
 
