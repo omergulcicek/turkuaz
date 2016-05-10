@@ -107,3 +107,23 @@ $("div.not").append("<span class=kaldir>&times;</span>");
 $("div.not span.kaldir").click(function(){
     $(this).parent().remove();
 });
+
+$(".tab-icerik").hide();
+            $(".tab-icerik:first").show();
+            
+            $(".tab-no").click(function(){
+               
+                var sira = $(this).index();
+                
+                $(".tab-no").removeClass("aktif");
+                
+                $(this).addClass("aktif");
+                
+                $(".tab-icerik").hide();
+                $(".tab-icerik:eq("+ sira +")").show();
+         
+                return false;
+            });
+            
+            
+        });
