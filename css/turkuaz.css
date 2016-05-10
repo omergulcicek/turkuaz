@@ -2524,12 +2524,19 @@ nav.numara.saydam a {
 .tab .sekme {
     background: #FFF;
     border-bottom: 2px solid rgba(26,198,185,.1);
+    border-right: 2px dotted rgba(26,198,185,.1);
     color: rgba(26,198,185,.5);
     cursor: pointer;
     display: inline-block;
     letter-spacing: 1px;
+    margin-right: -4px;
     padding: 5px 10px;
+    text-align: center;
     transition: color .3s
+}
+
+.tab .sekme:first-of-type {
+    border-left: 2px dotted rgba(26,198,185,.1)
 }
 
 .tab .sekme.aktif {

@@ -101,7 +101,7 @@ $(".tab .sekme:first").addClass("aktif");
 $(".tab .icerik").hide();
 //ilk icerigi gosterir.
 $(".tab .icerik:first").show();
-$(".tab .sekme").click(function() {
+$(".tab .sekme").css("width", 100 / $(".tab .sekme").length + "%").click(function() {
     //sekmelerdeki aktif sinifini kaldirir.
     $(".tab .sekme").removeClass("aktif");
     //tiklanan sekmeye aktif sinifini ekler.
