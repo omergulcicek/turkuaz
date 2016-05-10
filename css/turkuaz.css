@@ -2270,6 +2270,7 @@ nav.menu > img.logo {
     nav.menu {
         height: 50px;
         left: 0 !important;
+        overflow: visible;
         position: relative;
         width: 100%
     }
