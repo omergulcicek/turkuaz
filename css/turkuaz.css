@@ -2517,28 +2517,32 @@ nav.numara.saydam a {
 
 /* ============= 13. Tab Menu */
 
-.tab-no {
-            display: inline-block;
-            background: #fff;
-            color: #000;
-            padding: 7px;
-            border: 1px solid #000;
-            cursor: pointer;
-        }
-        
-        .aktif {
-            background: #000;
-            color: #fff;
-            border: 1px solid #000;
-        }
-        
-        .tab-icerik {
-            margin-top: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 10px;
-        }
-        
+.tab {
+    margin-bottom: 15px
+}
+
+.tab .sekme {
+    background: #FFF;
+    border-bottom: 2px solid rgba(26,198,185,.1);
+    color: rgba(26,198,185,.5);
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: color .3s
+}
+
+.tab .sekme.aktif {
+    border-bottom: 2px solid #1AC5B8;
+    color: #1AC5B8;
+    font-weight: bold
+}
+
+.tab .icerik {
+    border-radius: 3px;
+    padding: 25px 0
+}
+
 
 /* ============= 14. Yazi */
 /* ============= 14.1 Yazi Ayarlari */

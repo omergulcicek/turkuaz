@@ -94,7 +94,23 @@ function mobil(){
 //cozunurluk her degistiginde mobil fonksiyonunu calistir.
 mobil(); $(window).resize(function() { mobil(); });
 
-
+// Tab Menu
+//ilk sekmeye aktif sinifini ekler.
+$(".tab .sekme:first").addClass("aktif");
+//iceriklerin tamamını gizler.
+$(".tab .icerik").hide();
+//ilk icerigi gosterir.
+$(".tab .icerik:first").show();
+$(".tab .sekme").click(function() {
+    //sekmelerdeki aktif sinifini kaldirir.
+    $(".tab .sekme").removeClass("aktif");
+    //tiklanan sekmeye aktif sinifini ekler.
+    $(this).addClass("aktif");
+    //iceriklerin hepsini gizler.
+    $(".tab .icerik").hide();
+    //kacinci sekme secildiyse, o sekmenin icerigini gosterir.
+    $(".tab .icerik:eq(" + $(this).index() + ")").show();
+});
 
 /* ============= 3. Notlar */
 
@@ -107,23 +123,3 @@ $("div.not").append("<span class=kaldir>&times;</span>");
 $("div.not span.kaldir").click(function(){
     $(this).parent().remove();
 });
-
-$(".tab-icerik").hide();
-            $(".tab-icerik:first").show();
-            
-            $(".tab-no").click(function(){
-               
-                var sira = $(this).index();
-                
-                $(".tab-no").removeClass("aktif");
-                
-                $(this).addClass("aktif");
-                
-                $(".tab-icerik").hide();
-                $(".tab-icerik:eq("+ sira +")").show();
-         
-                return false;
-            });
-            
-            
-        });
