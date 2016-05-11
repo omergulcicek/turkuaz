@@ -95,21 +95,24 @@ function mobil(){
 mobil(); $(window).resize(function() { mobil(); });
 
 // Tab Menu
-//ilk sekmeye aktif sinifini ekler.
-$(".tab .sekme:first").addClass("aktif");
-//iceriklerin tamamını gizler.
-$(".tab .icerik").hide();
-//ilk icerigi gosterir.
-$(".tab .icerik:first").show();
+$(".tab").each(function() {
+    //ilk sekmeye aktif sinifini ekler.
+    $(this).find(".sekme:first").addClass("aktif");
+    //iceriklerin tamamını gizler.
+    $(this).find(".icerik").hide();
+    //ilk icerigi gosterir.
+    $(this).find(".icerik:first").show(); 
+});
+
 $(".tab .sekme").css("width", 100 / $(".tab .sekme").length + "%").click(function() {
     //sekmelerdeki aktif sinifini kaldirir.
-    $(".tab .sekme").removeClass("aktif");
+    $(this).parent().find(".sekme").removeClass("aktif");
     //tiklanan sekmeye aktif sinifini ekler.
     $(this).addClass("aktif");
     //iceriklerin hepsini gizler.
-    $(".tab .icerik").hide();
+    $(this).parent().find(".icerik").hide();
     //kacinci sekme secildiyse, o sekmenin icerigini gosterir.
-    $(".tab .icerik:eq(" + $(this).index() + ")").show();
+    $(this).parent().find(".icerik:eq(" + $(this).index() + ")").show();
 });
 
 /* ============= 3. Notlar */
