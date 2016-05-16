@@ -101,10 +101,12 @@ $(".tab").each(function() {
     //iceriklerin tamamını gizler.
     $(this).find(".icerik").hide();
     //ilk icerigi gosterir.
-    $(this).find(".icerik:first").show(); 
+    $(this).find(".icerik:first").show();
 });
 
-$(".tab .sekme").css("width", 100 / $(".tab .sekme").length + "%").click(function() {
+$(".tab .sekme").css("width",function(){
+    return  100 / ($(this).parent().children(".sekme").length) + "%";
+}).click(function() {
     //sekmelerdeki aktif sinifini kaldirir.
     $(this).parent().find(".sekme").removeClass("aktif");
     //tiklanan sekmeye aktif sinifini ekler.
