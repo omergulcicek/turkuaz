@@ -40,7 +40,7 @@ $($formEtiketleri).focusout(function(){
 /* ============= 2. Menu */
 
 // Menuyu Acar
-$("nav.menu>img.logo").click(function(){
+$("nav.menu.mobil>img.logo").click(function(){
     //mobil menuyu acmak icin butona basilinca butonu gizler.
     $(this).hide();
     //menuyu 0 left'e getirir (eskisi left:-240px) yani mobil menu gorunur.
@@ -52,11 +52,11 @@ $("nav.menu>img.logo").click(function(){
 // Menuyu Gizler
 $("body").on('click', '.karart', function(){
     //menuyu 240px sola tasir yani gizler.
-    $("nav.menu").animate({left:"-240px"});
+    $("nav.menu.mobil").animate({left:"-240px"});
     //karart divini kaldirir.
     $(".karart").remove();
     //400 milisaniye sonra logoyu gosterir.
-    $("nav.menu>img.logo").delay(400).fadeIn();
+    $("nav.menu.mobil>img.logo").delay(400).fadeIn();
 });
 
 // Acilir Menulerin Oklari
@@ -79,11 +79,11 @@ $("body").on('click', 'nav.menu.mobil ul li.acilir', function(){
 function mobil(){
     if ($(window).width() <= 1000) {
         //cozunurluk 1000px'in altina indiginde menuye mobil sinifini ekler.
-        $("nav.menu").addClass("mobil");
+        $("nav.menu.mobil").addClass("mobilmenu");
     }
     else {
         //cozunurluk 1000px'in ustunde mobil sinifini kaldirir.
-        $("nav.menu").removeClass("mobil");
+        $("nav.menu.mobil").removeClass("mobilmenu");
     }
     $("nav.menu ul li.acilir ul").each(function(){
         //cozunurluk degistiginde acilir menuler gizlenir.
