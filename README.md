@@ -1,31 +1,23 @@
-![Turkuaz logo](http://i.hizliresim.com/LAXqlJ.png)
+![Turkuaz logo](http://omergulcicek.com/turkuazcss/img/favicon.png)
 
-Web üzerinde responsive siteler geliştirmek için tasarlanan yerli ve ücretsiz bir Framework'tür.
+Responsive siteler geliştirmek için tasarlanan yerli ve ücretsiz bir Framework
 
-**Geliştirici** : [Ömer Gülçiçek](https://github.com/omergulcicek)
+Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn edilmiştir.
 
-**Emeği Geçenler** : [Yasin Softaoğlu](https://github.com/ysoftaoglu)
+Başlangıçta bireysel olarak [Ömer Gülçiçek](https://github.com/omergulcicek) tarafından geliştirilmeye başlanmıştır. Ardından [Yasin Softaoğlu](https://github.com/ysoftaoglu)'nun desteği ile hız kazanmış ve beraber geliştirilmeye devam etmiştir.
 
 **Mevcut Sürüm** : v1.0
 
--
--
 
-**CSS Kod Düzeni**
+##İletişim
 
-1.  Genel CSS Kodları
-2.  Grid Sistemi
-3.  Yardımcı Kodlar
-4.  Yazı Stili
-5.  Arkaplan
-6.  Buton
-7.  Form
-8.  Footer
-9.  Kartlar
-10. Nav
-11. Notlar
-12. Pano
-13. Tab Menü
-14. Yazı
+Turkuaz Css hakkında yardım, eleştiri yada hata bildirimi için iletisim@turkuazcss.com adresi üzerinden bize ulaşabilirsiniz.
 
--
+
+##Sosyal Ağlar
+
+[facebook.com/TurkuazCss](http://facebook.com/TurkuazCss)
+
+[twitter.com/TurkuazCss](http://twitter.com/TurkuazCss)
+
+[instagram.com/TurkuazCss](http://instagram.com/TurkuazCss)
