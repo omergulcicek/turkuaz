@@ -4,9 +4,9 @@
 */
 
 /*!
-*    Turkuaz Framework - CSS Kod Duzeni
+*    Turkuaz Framework - Css Kod Duzeni
 *
-*    1.     Genel CSS
+*    1.     Genel Css
 *      1.1    Tablolar
 *    2.     Grid Sistemi
 *    3.     Yardimci Kodlar
@@ -260,7 +260,9 @@ pre {
     background-color: #f5f2f0;
     border:1px solid rgba(0,0,0,.12);
     border-radius: 3px;
-    overflow-y: auto
+    display: inline-block;
+    overflow-y: auto;
+    width: 100%
 }
 
 code {
@@ -1341,12 +1343,40 @@ table.vurgu tr:hover td {
     background-color: #000 !important
 }
 
-.facebook {
-    background-color: #3B5998
+.siyah2 {
+    background-color: #404040 !important
+}
+
+.siyah3 {
+    background-color: #353535 !important
+}
+
+.siyah4 {
+    background-color: #303030 !important
+}
+
+.siyah5 {
+    background-color: #252525 !important
+}
+
+.siyah6 {
+    background-color: #202020 !important
+}
+
+.siyah7 {
+    background-color: #151515 !important
+}
+
+.siyah8 {
+    background-color: #101010 !important
+}
+
+.siyah9 {
+    background-color: #050505 !important
 }
 
 .facebook {
-    background-color: #3B5999
+    background-color: #3B5998
 }
 
 .twitter {
@@ -1417,7 +1447,7 @@ button {
     position: relative;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: .3s ease-out
 }
 
@@ -1577,18 +1607,18 @@ button.yay {
 /* ============= 7. Form */
 /* ============= 7.1 Checkbox */
 
-[type=checkbox]:not(:checked), [type=checkbox]:checked {
+.tr-checkbox:not(:checked), .tr-checkbox:checked {
     left: -9999px;
     opacity: 0;
     position: absolute
 }
 
-[type=checkbox] {
+.tr-checkbox {
     box-sizing: border-box;
     padding: 0
 }
 
-[type=checkbox] + label {
+.tr-checkbox + label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -1599,11 +1629,11 @@ button.yay {
     position: relative
 }
 
-.tr [type=checkbox]:last-of-type + label {
+.tr-checkbox:last-of-type + label {
     margin-bottom: 15px
 }
 
-[type=checkbox]:checked + label:before {
+.tr-checkbox:checked + label:before {
     backface-visibility: hidden;
     border-color: #1AC5B8;
     border-top-color: transparent;
@@ -1616,7 +1646,7 @@ button.yay {
     width: 12px
 }
 
-[type=checkbox] + label:before, [type=checkbox]:not(.filled-in) + label:after {
+.tr-checkbox + label:before, .tr-checkbox:not(.filled-in) + label:after {
     border: 2px solid rgba(0,0,0,.75);
     border-radius: 2px;
     content: "";
@@ -1630,7 +1660,7 @@ button.yay {
     z-index: 0
 }
 
-[type=checkbox]:not(.filled-in) + label:after {
+.tr-checkbox:not(.filled-in) + label:after {
     border: 0;
     transform: scale(0)
 }
@@ -1638,14 +1668,7 @@ button.yay {
 /* ============= 7.2 Dosya Secici */
 /* ============= 7.3 Input */
 
-[type=text],
-[type=password],
-[type=email],
-[type=url],
-[type=date],
-[type=tel],
-[type=number],
-[type=search] {
+.tr-input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #eee;
@@ -1663,25 +1686,11 @@ button.yay {
     width: 100%
 }
 
-[type=text].aktif,
-[type=password].aktif,
-[type=email].aktif,
-[type=url].aktif,
-[type=date].aktif,
-[type=tel].aktif,
-[type=number].aktif,
-[type=search].aktif {
+.tr-input.aktif {
     border-bottom: 2px solid #1AC5B8
 }
 
-[type=text] + label,
-[type=password] + label,
-[type=email] + label,
-[type=url] + label,
-[type=date] + label,
-[type=tel] + label,
-[type=number] + label,
-[type=search] + label {
+.tr-input + label {
     color: #1AC5B8;
     cursor: auto;
     display: block;
@@ -1696,42 +1705,28 @@ button.yay {
     transition: .3s
 }
 
-[type=text].aktif + label,
-[type=password].aktif + label,
-[type=email].aktif + label,
-[type=url].aktif + label,
-[type=date].aktif + label,
-[type=tel].aktif + label,
-[type=number].aktif + label,
-[type=search].aktif + label {
+.tr-input + label {
     color: #057970
 }
 
-[type=text].dolu + label,
-[type=password].dolu + label,
-[type=email].dolu + label,
-[type=url].dolu + label,
-[type=date].dolu + label,
-[type=tel].dolu + label,
-[type=number].dolu + label,
-[type=search].dolu + label {
+.tr-input.dolu + label {
     transform: translateY(-60px) scale(.75) !important
 }
 
 /* ============= 7.4 Radio Buton */
 
-[type=radio] {
+.tr-radio {
     box-sizing: border-box;
     padding: 0
 }
 
-[type=radio]:not(:checked), [type=radio]:checked {
+.tr-radio:not(:checked), .tr-radio:checked {
     left: -9999px;
     opacity: 0;
     position: absolute
 }
 
-[type=radio] + label {
+.tr-radio + label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -1742,11 +1737,11 @@ button.yay {
     text-align: left !important
 }
 
-.tr [type=radio]:last-of-type + label {
+.tr-radio:last-of-type + label {
     margin-bottom: 15px
 }
 
-[type=radio]:checked + label:before {
+.tr-radio:checked + label:before {
     backface-visibility: hidden;
     background-color: #1AC5B8;
     height: 18px;
@@ -1756,7 +1751,7 @@ button.yay {
     width: 18px
 }
 
-[type=radio] + label:before, [type=radio]:not(.filled-in) + label:after {
+.tr-radio + label:before, .tr-radio:not(.filled-in) + label:after {
     border: 2px solid rgba(0,0,0,.75);
     border-radius: 50%;
     content: "";
@@ -1770,7 +1765,7 @@ button.yay {
     z-index: 0
 }
 
-[type=radio]:not(.filled-in) + label:after {
+.tr-radio:not(.filled-in) + label:after {
     border: 0;
     transform: scale(0)
 }
@@ -1792,14 +1787,13 @@ select {
 
 /* ============= 7.6 Tarih Secici */
 
-[type=date] + label {
-    text-align: left !important;
+input[type="date"].tr-input + label {
     transform: translateY(-60px) scale(.75) !important
 }
 
 /* ============= 7.7 Textarea */
 
-textarea {
+.tr-textarea {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #eee;
@@ -1818,11 +1812,11 @@ textarea {
     width: 100%
 }
 
-textarea.aktif {
+.tr-textarea.aktif {
     border-bottom: 2px solid #1AC5B8
 }
 
-textarea + label {
+.tr-textarea + label {
     color: #1AC5B8;
     cursor: auto;
     display: block;
@@ -1837,11 +1831,11 @@ textarea + label {
     transition: .3s
 }
 
-textarea.aktif + label {
+.tr-textarea.aktif + label {
     color: #057970
 }
 
-textarea.dolu + label {
+.tr-textarea.dolu + label {
     transform: translateY(-85px) scale(.75) !important
 }
 
@@ -2347,7 +2341,7 @@ nav.menu ul li ul li:hover a {
         background-color: #1AC5B8;
         height: 100%;
         left: -240px;
-        overflow-y: scroll;
+        overflow-y: auto;
         position: fixed;
         width: 240px
     }
@@ -2400,9 +2394,9 @@ nav.konum {
     color: rgba(255,255,255,.6);
     height: 50px;
     line-height: 50px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding: 0 25px;
-    text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%
 }
@@ -2675,6 +2669,10 @@ nav.numara.saydam a {
 
 .yazi-ince {
     font-weight: 100
+}
+
+.yazi-yatay {
+    font-style: italic
 }
 
 .yazi-buyukharf {
@@ -3218,4 +3216,44 @@ nav.numara.saydam a {
 .yazi-siyah,
 .yazi-siyah a {
     color: #000 !important
+}
+
+.yazi-siyah2,
+.yazi-siyah2 a {
+    color: #404040 !important
+}
+
+.yazi-siyah3,
+.yazi-siyah3 a {
+    color: #353535 !important
+}
+
+.yazi-siyah4,
+.yazi-siyah4 a {
+    color: #303030 !important
+}
+
+.yazi-siyah5,
+.yazi-siyah5 a {
+    color: #252525 !important
+}
+
+.yazi-siyah6,
+.yazi-siyah6 a {
+    color: #202020 !important
+}
+
+.yazi-siyah7,
+.yazi-siyah7 a {
+    color: #151515 !important
+}
+
+.yazi-siyah8,
+.yazi-siyah8 a {
+    color: #101010 !important
+}
+
+.yazi-siyah9,
+.yazi-siyah9 a {
+    color: #050505 !important
 }
