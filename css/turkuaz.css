@@ -313,7 +313,7 @@ table tr td {
 }
 
 table.renkli tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.02)
+    background-color: rgba(0,0,0,.04)
 }
 
 table.vurgu tr:hover td {
@@ -2237,11 +2237,11 @@ nav.koleksiyon a:hover {
 }
 
 nav.koleksiyon.renkli a:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.02);
+    background-color: rgba(0,0,0,.03);
 }
 
 nav.koleksiyon.renkli a:nth-of-type(odd):hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.08);
 }
 
 /* ============= 10.3 Menu */
@@ -2451,29 +2451,31 @@ nav.konum.saydam a:last-of-type {
 
 nav.numara {
     background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 2px 2px rgba(0,0,0,.07);
     display: inline-block;
     margin: 25px 0
 }
 
 nav.numara a {
-    border-right: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+    border-left: 0;
     color: #000;
     display: block;
-    float:left;
-    padding: 8px 13px 8px 13px;
-    text-align: center;
+    float: left;
+    padding: 8px 13px;
     transition: .3s
 }
 
-nav.numara a:last-of-type {
-    border-right: 0
+nav.numara a:first-of-type {
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px
 }
 
-nav.numara a.aktif {
-    background-color: rgba(0,0,0,.2)
+nav.numara a:last-of-type {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px
 }
 
 nav.numara a:hover {
@@ -2481,24 +2483,42 @@ nav.numara a:hover {
     text-decoration: none
 }
 
-nav.numara.buyuk a {
-    font-size: 16px;
-    padding: 16px 26px 16px 26px
+nav.numara a.aktif {
+    box-shadow : inset 0 0 0 100px rgba(0,0,0,.075);
+    pointer-events: none
 }
 
 nav.numara.kucuk a {
-    font-size: 11px;
-    padding: 4px 6.5px 4px 6.5px
+    font-size: 12px;
+    padding: 6px 9px 6px 9px
+}
+
+nav.numara.buyuk a {
+    font-size: 16px;
+    padding: 12px 20px 12px 20px
 }
 
 nav.numara.saydam {
     background-color: transparent !important;
-    border: 0;
-    box-shadow: 0 0 0 0 rgba(0,0,0,0)
+    box-shadow: 0 0 0 rgba(0,0,0,0)
 }
 
 nav.numara.saydam a {
-    border-right: 0px solid #FFF;
+    border: 0
+}
+
+nav.numara.ayrik {
+    box-shadow: 0 0 0 rgba(0,0,0,0)
+}
+
+nav.numara.ayrik a {
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin-left: 10px
+}
+
+nav.numara.ayrik a:first-of-type {
+    margin-left: 0
 }
 
 /* ============= 11. Notlar */
