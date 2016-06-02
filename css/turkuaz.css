@@ -2250,11 +2250,41 @@ nav.menu {
     background-color: #1AC5B8;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     display: block;
+    height: 50px;
     left: 0;
     position: relative;
     top: 0;
     width: 100%;
     z-index: 999
+}
+
+nav.menu img:not(.logo) {
+    height: 40px;
+    display: block;
+    float: none !important;
+    margin: 15px auto
+}
+
+nav.menu h1,
+nav.menu h2,
+nav.menu h3,
+nav.menu h4,
+nav.menu h5,
+nav.menu h6 {
+    line-height: 30px;
+    float: left;
+    font-size: 25px;
+    margin-right: 10px
+}
+
+nav.menu h1.sag,
+nav.menu h2.sag,
+nav.menu h3.sag,
+nav.menu h4.sag,
+nav.menu h5.sag,
+nav.menu h6.sag {
+    margin-left: 10px;
+    margin-right: 0
 }
 
 nav.menu.sabit {
@@ -2331,6 +2361,21 @@ nav.menu ul li ul li:hover a {
     nav.menu.mobil > img.logo {
         display: none
     }
+    nav.menu img:not(.logo) {
+        height: 34px;
+        float: left !important;
+        margin: 8px 15px 8px 0
+    }
+    nav.menu img.sag:not(.logo) {
+        float: right !important
+    }
+    nav.menu img.sol:not(.logo) {
+        float: left !important
+    }
+    nav.menu img.sag:not(.logo) {
+        margin-left: 15px;
+        margin-right: 0
+    }
     nav.menu ul li:hover ul {
         display: table !important
     }
@@ -2345,6 +2390,16 @@ nav.menu ul li ul li:hover a {
         position: fixed;
         width: 240px
     }
+    nav.menu h1,
+    nav.menu h2,
+    nav.menu h3,
+    nav.menu h4,
+    nav.menu h5,
+    nav.menu h6 {
+        float: none !important;
+        margin: 15px 0 !important;
+        text-align: center
+    }
     nav.menu.mobil > img.logo {
         cursor: pointer;
         display: block;
@@ -2358,6 +2413,10 @@ nav.menu ul li ul li:hover a {
     nav.menu.mobil .container-kucuk,
     nav.menu.mobil .container-buyuk {
         width: 100% !important
+    }
+    nav.menu ul.sag,
+    nav.menu ul.sol {
+        width: 100%
     }
     nav.menu.mobil ul li {
         float: none;
@@ -2632,21 +2691,16 @@ nav.numara.ayrik a:first-of-type {
 
 .tab .sekme {
     background: #FFF;
-    border-bottom: 2px dotted rgba(26,198,185,.15);
-    border-left: 2px dotted rgba(26,198,185,.15);
+    border-bottom: 2px solid rgba(26,198,185,.15);
     color: rgba(26,198,185,.5);
     cursor: pointer;
     display: inline-block;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 30px;
     margin-right: -4px;
     padding: 5px 10px;
     text-align: center;
-    transition: color .3s
-}
-
-.tab .sekme:first-of-type {
-    border-left: 0
+    transition: .3s
 }
 
 .tab .sekme.aktif {
