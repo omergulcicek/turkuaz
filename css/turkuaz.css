@@ -2143,7 +2143,7 @@ nav.etiket a {
     letter-spacing: 1px;
     line-height: 1;
     margin-bottom: 4px;
-    padding: 10px;
+    padding: 7px;
     transition: .3s
 }
 
@@ -2154,9 +2154,20 @@ nav.etiket a:hover {
 }
 
 nav.etiket.resim a img {
-    display: inline-block;
     border-radius: 3px 0 0 3px;
+    display: inline-block;
     height: 32px;
+    margin: -11px 7px -12px -7px;
+    vertical-align: baseline;
+    width: 30px
+}
+
+nav.etiket.resim a .detay {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: -7px -7px -7px 5px
 }
 
 
