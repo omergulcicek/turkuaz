@@ -1518,17 +1518,24 @@ button.pasif:hover {
 
 .buton.yuvarlak,
 button.yuvarlak {
-    padding: 20px !important
+    height: 40px;
+    line-height: 40px;
+    padding: 0px !important;
+    width: 40px
 }
 
 .buton.yuvarlak.kucuk,
 button.yuvarlak.kucuk {
-    padding: 15px !important
+    height: 30px;
+    line-height: 30px;
+    width: 30px
 }
 
 .buton.yuvarlak.buyuk,
 button.yuvarlak.buyuk {
-    padding: 30px !important
+    height: 60px;
+    line-height: 60px;
+    width: 60px
 }
 
 .buton.yay,
