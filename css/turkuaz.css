@@ -141,11 +141,11 @@ h6 {
 }
 
 h1 {
-    font-size: 30px
+    font-size: 42px
 }
 
 h2 {
-    font-size: 27px
+    font-size: 32px
 }
 
 h3 {
@@ -153,54 +153,15 @@ h3 {
 }
 
 h4 {
-    font-size: 21px
-}
-
-h5 {
     font-size: 18px
 }
 
+h5 {
+    font-size: 14px
+}
+
 h6 {
-    font-size: 15px
-}
-
-@media only screen and (min-width: 800px) {
-    h1 {
-        font-size: 43px
-    }
-    h2 {
-        font-size: 38px
-    }
-    h3 {
-        font-size: 33px
-    }
-    h4 {
-        font-size: 28px
-    }
-    h5 {
-        font-size: 22px
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 66px
-    }
-    h2 {
-        font-size: 56px
-    }
-    h3 {
-        font-size: 46px
-    }
-    h4 {
-        font-size: 36px
-    }
-    h5 {
-        font-size: 26px
-    }
-    h6 {
-        font-size: 16px
-    }
+    font-size: 12px
 }
 
 a {
@@ -299,7 +260,7 @@ table tr td:last-of-type {
 }
 
 table tr th {
-    background-color: rgba(0,0,0,.025);
+    background-color: rgba(0,0,0,.02);
     padding: 15px;
     text-align: left;
     width: 100vw
@@ -314,7 +275,11 @@ table tr td {
 }
 
 table.renkli tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.04)
+    background-color: rgba(0,0,0,.02)
+}
+
+table.renkli tr th {
+    background-color: transparent;
 }
 
 table.vurgu tr:hover td {
@@ -1391,12 +1356,36 @@ table::-webkit-scrollbar-thumb {
     background-color: #050505 !important
 }
 
+.blogger {
+    background-color: #F87F14 !important
+}
+
+.codepen {
+    background-color: #1B1C1B !important
+}
+
+.dribbble {
+    background-color: #EC4A89 !important
+}
+
 .facebook {
     background-color: #3B5998 !important
 }
 
-.twitter {
-    background-color: #5EA9DD !important
+.flickr {
+    background-color: #FF0084 !important
+}
+
+.foursquare {
+    background-color: #F94877 !important
+}
+
+.github {
+    background-color: #323131 !important
+}
+
+.google {
+    background-color: #DC483B !important
 }
 
 .instagram {
@@ -1407,40 +1396,52 @@ table::-webkit-scrollbar-thumb {
     background-color: #007AB5 !important
 }
 
-.google {
-    background-color: #DC483B !important
-}
-
-.tumblr {
-    background-color: #2C4762 !important
-}
-
-.foursquare {
-    background-color: #F94877 !important
-}
-
-.youtube {
-    background-color: #EE1C1B !important
+.periscope {
+    background-color: #30A4C6 !important
 }
 
 .pinterest {
     background-color: #CB2027 !important
 }
 
-.dribbble {
-    background-color: #EC4A89 !important
+.scorp {
+    background-color: #DE2228 !important
 }
 
-.codepen {
-    background-color: #1B1C1B !important
+.snapchat {
+    background-color: #FFFC01 !important
+}
+
+.skype {
+    background-color: #00ADED !important
+}
+
+.swarm {
+    background-color: #FFA633 !important
+}
+
+.tumblr {
+    background-color: #2C4762 !important
+}
+
+.twitter {
+    background-color: #5EA9DD !important
+}
+
+.vine {
+    background-color: #00B489 !important
 }
 
 .vimeo {
     background-color: #1AB7EA !important
 }
 
-.github {
-    background-color: #323131 !important
+.wordpress {
+    background-color: #00749A !important
+}
+
+.youtube {
+    background-color: #EE1C1B !important
 }
 
 /* ============= 6. Buton */
@@ -1460,10 +1461,10 @@ button {
     font-weight: normal;
     height: 40px;
     letter-spacing: 1.5px;
-    line-height: 20px;
+    line-height: 40px;
     outline: 0;
     overflow: hidden;
-    padding: 10px 25px !important;
+    padding: 0 25px !important;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -1473,13 +1474,13 @@ button {
 
 .buton.kucuk {
     height: 30px;
-    line-height: 10px;
+    line-height: 30px;
     padding: 10px 15px
 }
 
 .buton.buyuk {
     height: 60px;
-    line-height: 40px
+    line-height: 60px
 }
 
 .buton:hover,
@@ -1500,7 +1501,7 @@ button.saydam {
 .buton.saydam:hover,
 button.saydam:hover {
     box-shadow: inset 0 0 0 0 transparent !important;
-    border: 1px solid rgba(0,0,0,.75);
+    border: 1px solid rgba(0,0,0,.3);
     color: #000
 }
 
@@ -1545,6 +1546,18 @@ button.yuvarlak.buyuk {
 .buton.yay,
 button.yay {
     width: 100%;
+}
+
+.buton i,
+button i {
+    margin-right: 7px;
+    opacity: .85
+}
+
+.buton.yuvarlak i,
+button.yuvarlak i {
+    margin-right: 0;
+    opacity: 1
 }
 
 /* ============= 6.3 Buton Efektleri */
@@ -1639,6 +1652,7 @@ a.etiket {
     background-color: rgba(0,0,0,.1);
     border-radius: 3px;
     color: #333333;
+    cursor: pointer;
     display: inline-block;
     font-size: 12px;
     letter-spacing: 1px;
@@ -1773,7 +1787,7 @@ a.etiket.resim img {
     transition: .3s
 }
 
-.tr-input + label {
+.tr-input.aktif + label {
     color: #057970
 }
 
@@ -2212,16 +2226,16 @@ nav.koleksiyon a:last-child {
 }
 
 nav.koleksiyon a:hover {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.04);
     text-decoration: none
 }
 
 nav.koleksiyon.renkli a:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.03)
+    background-color: rgba(0,0,0,.02)
 }
 
 nav.koleksiyon.renkli a:nth-of-type(odd):hover {
-    background-color: rgba(0,0,0,.08)
+    background-color: rgba(0,0,0,.04)
 }
 
 nav.koleksiyon.saydam {
@@ -2521,7 +2535,7 @@ nav.numara a {
     display: block;
     float: left;
     padding: 8px 13px;
-    transition: .3s
+    transition: .15s
 }
 
 nav.numara a:first-of-type {
