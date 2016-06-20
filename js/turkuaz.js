@@ -17,7 +17,7 @@
 /* ============= 1. Form */
 
 // Radio ve checkbox haric diger inputlari ve textarea'yi degiskene atar.
-$formEtiketleri = "input[type=text],input[type=password],input[type=email],input[type=url],input[type=date],input[type=tel],input[type=number],input[type=search],textarea";
+$formEtiketleri = ".tr-input,.tr-checkbox,.tr-radio,.tr-textarea";
 
 // Inputlarin Labellerinin Ilk Hareketleri
 $($formEtiketleri).focus(function(){
@@ -67,7 +67,7 @@ $("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir"
 // Akordiyon Menu
 $("body").on('click', 'nav.menu.mobil ul li.acilir', function(){
     //alt menudeki link sayisina gore ul'nin yuksekligini hesaplar.
-    var yukseklik = $(this).find("li").length * 50;
+    var yukseklik = $(this).find("li").length * 45;
     //alt menuye yukseklik degerini verir.
     $(this).find("ul").css({
         "height": yukseklik + "px"
@@ -126,5 +126,5 @@ $("div.not").append("<span class=kaldir>&times;</span>");
 // Notlarin Kaldirilmasi
 //'x' butonuna basinca o notu kaldirir.
 $("div.not span.kaldir").click(function(){
-    $(this).parent().remove();
+    $(this).parent().fadeOut();
 });
