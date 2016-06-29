@@ -906,99 +906,99 @@ table::-webkit-scrollbar-thumb {
 
 .desen,
 .desen1 {
-    background-image: url("../img/desen.png")
+    background-image: url("../img/desen/desen.png")
 }
 
 .desen2 {
-    background-image: url("../img/desen2.png")
+    background-image: url("../img/desen/desen2.png")
 }
 
 .desen3 {
-    background-image: url("../img/desen3.png")
+    background-image: url("../img/desen/desen3.png")
 }
 
 .desen4 {
-    background-image: url("../img/desen4.png")
+    background-image: url("../img/desen/desen4.png")
 }
 
 .desen5 {
-    background-image: url("../img/desen5.png")
+    background-image: url("../img/desen/desen5.png")
 }
 
 .desen6 {
-    background-image: url("../img/desen6.png")
+    background-image: url("../img/desen/desen6.png")
 }
 
 .desen7 {
-    background-image: url("../img/desen7.png")
+    background-image: url("../img/desen/desen7.png")
 }
 
 .desen8 {
-    background-image: url("../img/desen8.png")
+    background-image: url("../img/desen/desen8.png")
 }
 
 .desen9 {
-    background-image: url("../img/desen9.png")
+    background-image: url("../img/desen/desen9.png")
 }
 
 .desen10 {
-    background-image: url("../img/desen10.png")
+    background-image: url("../img/desen/desen10.png")
 }
 
 .desen11 {
-    background-image: url("../img/desen11.png")
+    background-image: url("../img/desen/desen11.png")
 }
 
 .desen12 {
-    background-image: url("../img/desen12.png")
+    background-image: url("../img/desen/desen12.png")
 }
 
 .desen13 {
-    background-image: url("../img/desen13.png")
+    background-image: url("../img/desen/desen13.png")
 }
 
 .desen14 {
-    background-image: url("../img/desen14.png")
+    background-image: url("../img/desen/desen14.png")
 }
 
 .desen15 {
-    background-image: url("../img/desen15.png")
+    background-image: url("../img/desen/desen15.png")
 }
 
 .desen16 {
-    background-image: url("../img/desen16.png")
+    background-image: url("../img/desen/desen16.png")
 }
 
 .desen17 {
-    background-image: url("../img/desen17.png")
+    background-image: url("../img/desen/desen17.png")
 }
 
 .desen18 {
-    background-image: url("../img/desen18.png")
+    background-image: url("../img/desen/desen18.png")
 }
 
 .desen19 {
-    background-image: url("../img/desen19.png")
+    background-image: url("../img/desen/desen19.png")
 }
 
 .desen20 {
-    background-image: url("../img/desen20.png")
+    background-image: url("../img/desen/desen20.png")
 }
 
 .desen21 {
-    background-image: url("../img/desen21.png")
+    background-image: url("../img/desen/desen21.png")
 }
 
 .desen22 {
-    background-image: url("../img/desen23.png")
+    background-image: url("../img/desen/desen23.png")
 }
 
 .desen24 {
-    background-image: url("../img/desen24.png")
+    background-image: url("../img/desen/desen24.png")
 }
 
 .desen25 {
-    background-image: url("../img/desen25.png")
+    background-image: url("../img/desen/desen25.png")
 }
 
 /* ============= 5.2 Arkaplan Renkleri */
@@ -1579,7 +1579,9 @@ button.pasif:hover {
 }
 
 .buton.yuvarlak,
-button.yuvarlak {
+button.yuvarlak,
+.buton.kare,
+button.kare {
     height: 40px;
     line-height: 40px;
     padding: 0px !important;
@@ -1587,14 +1589,18 @@ button.yuvarlak {
 }
 
 .buton.yuvarlak.kucuk,
-button.yuvarlak.kucuk {
+button.yuvarlak.kucuk,
+.buton.kare.kucuk,
+button.kare.kucuk {
     height: 30px;
     line-height: 30px;
     width: 30px
 }
 
 .buton.yuvarlak.buyuk,
-button.yuvarlak.buyuk {
+button.yuvarlak.buyuk,
+.buton.kare.buyuk,
+button.kare.buyuk {
     height: 60px;
     line-height: 60px;
     width: 60px
@@ -1608,11 +1614,19 @@ button.yay {
 .buton i,
 button i {
     margin-right: 7px;
-    opacity: .85
+    opacity: .85;
+    vertical-align: middle
 }
 
 .buton.yuvarlak i,
 button.yuvarlak i {
+    margin-right: -1px;
+    margin-top: -2px;
+    opacity: 1
+}
+
+.buton.kare i,
+button.kare i {
     margin-right: 0;
     opacity: 1
 }
