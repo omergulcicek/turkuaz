@@ -857,8 +857,9 @@ table::-webkit-scrollbar-thumb {
 
 .cizgi {
     background-color: #eee;
+    display: inline-block;
     height: 1px;
-    margin: 25px auto;
+    margin: 10px auto;
     text-align: center;
     width: 99%
 }
@@ -871,6 +872,7 @@ table::-webkit-scrollbar-thumb {
     position: relative;
     width: auto
 }
+
 .cizgi a,
 .cizgi h1,
 .cizgi h2,
@@ -1614,6 +1616,7 @@ button.yay {
 .buton i,
 button i {
     margin-right: 7px;
+    margin-top: -2px;
     opacity: .85;
     vertical-align: middle
 }
@@ -1621,7 +1624,6 @@ button i {
 .buton.yuvarlak i,
 button.yuvarlak i {
     margin-right: -1px;
-    margin-top: -2px;
     opacity: 1
 }
 
