@@ -1,10 +1,11 @@
 /*!
-* Turkuaz Framework v1.0
+* Turkuaz Css v1.0
 * www.turkuazcss.com
+* MIT Lisansı (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
 */
 
 /*!
-*    Turkuaz Framework - Css Kod Duzeni
+*    Turkuaz Css - Kod Duzeni
 *
 *    1.     Genel Css
 *      1.1    Tablolar
@@ -70,7 +71,7 @@ html {
 
 body {
     background-color: #FFF;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 13px;
     margin: 0;
     letter-spacing: .3px
@@ -179,15 +180,18 @@ a:hover {
 
 b,
 strong {
+    font-family: "Noto Sans Bold";
     font-weight: 700
 }
 
 i,
 em {
+    font-family: "Noto Sans Italic";
     font-style: italic
 }
 
 p {
+    line-height: 2;
     margin-bottom: 10px;
     margin-top: 0
 }
@@ -899,8 +903,18 @@ table::-webkit-scrollbar-thumb {
 /* ============= 4. Yazi Stili */
 
 @font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto.ttf)
+    font-family: "Noto Sans";
+    src: url(../fonts/NotoSans.ttf)
+}
+
+@font-face {
+  font-family: "Noto Sans Italic";
+  src: url("../fonts/NotoSans-Italic.ttf")
+}
+
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url("../fonts/NotoSans-Bold.ttf")
 }
 
 /* ============= 5. Arkaplanlar */
@@ -1515,8 +1529,8 @@ button {
     color: #FFF;
     cursor: pointer;
     display: inline-block;
-    font-family: "Roboto";
-    font-size: 12px;
+    font-family: "Noto Sans";
+    font-size: 12.5px;
     font-weight: normal;
     height: 40px;
     letter-spacing: 1.5px;
@@ -1727,7 +1741,7 @@ a.etiket {
     color: #333333;
     cursor: pointer;
     display: inline-block;
-    font-size: 12px;
+    font-size: 12.5px;
     letter-spacing: 1px;
     line-height: 1;
     margin: 0 5px 5px 0;
@@ -1886,7 +1900,7 @@ input:checked.tr-anahtar + label:after {
     border-bottom: 2px solid #eee;
     box-sizing: content-box;
     display: block;
-    font-family: "Roboto";
+    font-family: "Noto Sans";
     font-size: 16px;
     height: 32px;
     letter-spacing: .5px;
@@ -1999,6 +2013,10 @@ select {
 
 /* ============= 8.7 Tarih Secici */
 
+input[type="date"].tr-input {
+    line-height: 20px
+}
+
 input[type="date"].tr-input + label {
     transform: translateY(-60px) scale(.75) !important
 }
@@ -2011,7 +2029,7 @@ input[type="date"].tr-input + label {
     border-bottom: 2px solid #eee;
     box-sizing: content-box;
     display: block;
-    font-family: "Roboto";
+    font-family: "Noto Sans";
     font-size: 16px;
     letter-spacing: .5px;
     line-height: 16px;
@@ -2183,7 +2201,7 @@ footer .detay {
 
 .kart .detay {
     border-top: 1px solid rgba(0,0,0,.05);
-    font-size: 12px;
+    font-size: 12.5px;
     height: 50px;
     line-height: 50px;
     margin-top: 5px
@@ -2487,7 +2505,8 @@ nav.menu ul li ul li:last-child {
 
 nav.menu ul li ul li a {
     background-color: #FFF !important;
-    color: #000
+    color: #000;
+    font-size: 13px
 }
 
 nav.menu ul li ul li:hover a {
@@ -2690,7 +2709,7 @@ nav.numara a.aktif {
 }
 
 nav.numara.kucuk a {
-    font-size: 12px;
+    font-size: 12.5px;
     padding: 6px 9px 6px 9px
 }
 

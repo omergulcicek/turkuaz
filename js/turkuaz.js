@@ -63,7 +63,6 @@ $("body").on('click', '.karart', function(){
 //menudeki li'lerin icerisinde alt menu var ise o li'ye 'acilir' class'ini ekler ve sagina minik bir ok gelir.
 $("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir");
 
-
 // Akordiyon Menu
 $("body").on('click', 'nav.menu.mobil ul li.acilir', function(){
     //alt menudeki link sayisina gore ul'nin yuksekligini hesaplar.
