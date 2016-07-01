@@ -32,21 +32,20 @@
 *    9.     Footer
 *    10.    Kartlar
 *      10.1   Kart Kodlari
-*      10.2   Kart Ayarlari
-*      10.3   Kart Efektleri
+*      10.2   Kart Efektleri
 *    11.    Nav
-*      11.1   Etiket
+*      11.1   Filtre Menu
 *      11.2   Koleksiyonlar
 *      11.3   Menu
 *      11.4   Sayfa Konumu
 *      11.5   Sayfa Numaralandirma
+*      11.6   Tab Menu
 *    12.    Notlar
 *    13.    Pano
-*    14.    Tab Menu
-*    15.    Yazi
-*      15.1   Yazi Ayarlari
-*      15.2   Yazi Boyutlari
-*      15.3   Yazi Renkleri
+*    14.    Yazi
+*      14.1   Yazi Ayarlari
+*      14.2   Yazi Boyutlari
+*      14.3   Yazi Renkleri
 *
 */
 
@@ -815,8 +814,6 @@ table::-webkit-scrollbar-thumb {
 }
 
 .ortala {
-    display: block !important;
-    float: none;
     margin-left: auto;
     margin-right: auto
 }
@@ -908,13 +905,13 @@ table::-webkit-scrollbar-thumb {
 }
 
 @font-face {
-  font-family: "Noto Sans Italic";
-  src: url("../fonts/NotoSans-Italic.ttf")
+    font-family: "Noto Sans Italic";
+    src: url("../fonts/NotoSans-Italic.ttf")
 }
 
 @font-face {
-  font-family: "Noto Sans Bold";
-  src: url("../fonts/NotoSans-Bold.ttf")
+    font-family: "Noto Sans Bold";
+    src: url("../fonts/NotoSans-Bold.ttf")
 }
 
 /* ============= 5. Arkaplanlar */
@@ -2340,6 +2337,65 @@ footer .detay {
     -webkit-filter: blur(1px)
 }
 
+/* ============= 11 Nav */
+/* ============= 11.1 Filtre Menu */
+
+nav.filtre {
+    display: table;
+    margin-bottom: 30px;
+    width: 100%
+}
+
+nav.filtre ul {
+    background-color: #1AC5B8;
+    border-radius: 50px;
+    display: table;
+    margin-bottom: 10px
+}
+
+nav.filtre.ortala ul {
+    margin: auto
+}
+
+nav.filtre ul li {
+    float: left
+}
+
+nav.filtre ul li a.sekme {
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin: 3px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    padding: 5px 13px;
+    text-align: center;
+    transition: .3s
+}
+
+nav.filtre a.sekme:hover {
+    background-color: #FFF;
+    border-radius: 50px;
+    color: #000;
+    opacity: .5;
+    text-decoration: none
+}
+
+nav.filtre a.sekme.aktif {
+    background-color: #FFF;
+    border-radius: 50px;
+    color: #000;
+    opacity: 1
+}
+
+nav.filtre .icerik {
+    background-color: #FFF
+}
+
+
+
 /* ============= 11.2 Koleksiyonlar */
 
 nav.koleksiyon {
@@ -2505,8 +2561,7 @@ nav.menu ul li ul li:last-child {
 
 nav.menu ul li ul li a {
     background-color: #FFF !important;
-    color: #000;
-    font-size: 13px
+    color: #000
 }
 
 nav.menu ul li ul li:hover a {
@@ -2749,6 +2804,50 @@ nav.numara.ayrik a:first-of-type {
     margin-left: 0
 }
 
+/* ============= 11.6 Tab Menu */
+
+nav.tab {
+    display: table;
+    margin-bottom: 30px;
+    width: 100%
+}
+
+nav.tab li {
+    float: left;
+}
+
+nav.tab .sekme {
+    background: #FFF;
+    border-bottom: 2px solid rgba(26,198,185,.15);
+    color: #000;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 30px;
+    opacity: .5;
+    padding: 5px 10px;
+    text-align: center;
+    transition: .3s
+}
+
+nav.tab .sekme.aktif {
+    border-bottom: 2px solid #1AC5B8;
+    color: #1AC5B8;
+    font-weight: bold;
+    opacity: 1
+}
+
+nav.tab .sekme:hover {
+    text-decoration: none;
+}
+
+nav.tab .icerik {
+    border-radius: 3px;
+    padding-top: 20px
+}
+
+
+
 /* ============= 12. Notlar */
 
 .not {
@@ -2852,41 +2951,8 @@ nav.numara.ayrik a:first-of-type {
     margin: 0
 }
 
-/* ============= 14. Tab Menu */
-
-.tab {
-    margin-bottom: 30px
-}
-
-.tab .sekme {
-    background: #FFF;
-    border-bottom: 2px solid rgba(26,198,185,.15);
-    color: #000;
-    cursor: pointer;
-    display: block;
-    float: left;
-    letter-spacing: 1px;
-    line-height: 30px;
-    opacity: .5;
-    padding: 5px 10px;
-    text-align: center;
-    transition: .3s
-}
-
-.tab .sekme.aktif {
-    border-bottom: 2px solid #1AC5B8;
-    color: #1AC5B8;
-    font-weight: bold;
-    opacity: 1
-}
-
-.tab .icerik {
-    border-radius: 3px;
-    padding: 25px 0
-}
-
-/* ============= 15. Yazi */
-/* ============= 15.1 Yazi Ayarlari */
+/* ============= 14. Yazi */
+/* ============= 14.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
@@ -2938,7 +3004,7 @@ nav.numara.ayrik a:first-of-type {
     white-space: nowrap
 }
 
-/* ============= 15.2 Yazi Boyutlari */
+/* ============= 14.2 Yazi Boyutlari */
 
 .yazi-cokbuyuk {
     font-size: 40px
@@ -2978,7 +3044,7 @@ nav.numara.ayrik a:first-of-type {
     }
 }
 
-/* ============= 15.3 Yazi Renkleri */
+/* ============= 14.3 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a {

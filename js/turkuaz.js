@@ -103,18 +103,47 @@ $(".tab").each(function() {
     $(this).find(".icerik:first").show();
 });
 
-$(".tab .sekme").css("width",function(){
-    return  100 / ($(this).parent().children(".sekme").length) + "%";
-}).click(function() {
+$(".tab .sekme").parent().css("width",function(){
+    //sekmelerin genislik yuzdesini ayarlar.
+    return  100 / ($(this).parent().children("li").length) + "%";
+})
+
+$(".tab .sekme").click(function() {
     //sekmelerdeki aktif sinifini kaldirir.
-    $(this).parent().find(".sekme").removeClass("aktif");
+    $(this).parent().siblings().find(".sekme").removeClass("aktif");
     //tiklanan sekmeye aktif sinifini ekler.
     $(this).addClass("aktif");
     //iceriklerin hepsini gizler.
-    $(this).parent().find(".icerik").hide();
+    $(this).parents().find(".tab .icerik").hide();
     //kacinci sekme secildiyse, o sekmenin icerigini gosterir.
-    $(this).parent().find(".icerik:eq(" + $(this).index() + ")").show();
+    $(this).parents().find(".tab .icerik:eq(" + $(this).parent().index() + ")").show();
 });
+
+// Filtre Menu
+//s0 sinifina ait sekmeyi aktif yapar.
+$(".filtre .sekme.s0").addClass("aktif");
+$(".filtre .sekme").click(function() {
+    //tiklanan sekmenin sinifini alir.
+    var sinif = $(this).attr("class");
+    //siniftan 'sekme' yazisini siler.
+    sinif = sinif.replace("sekme " , "");
+    //secilen sekmeye aktif sinifini ekleyip, diger sekmelerden aktif sinifini siler.
+    $(this).addClass("aktif").parent().siblings().find("a").removeClass("aktif");
+    if(sinif == "s0" || sinif == "s0 aktif") {
+        //s0 sinifi secildiyse tum icerikler gosterilir.
+        $(this).parents().find(".icerik").show();
+    }
+    else {
+        //siniftan 'aktif' yazisini siler.
+        sinif = sinif.replace(" aktif" , "");
+        //secilen sinif haricindeki diger icerikleri gizler.
+        $(this).parents().find(".filtre").find(".icerik:not(." + sinif + ")").hide();
+        //secilen siniftaki tum icerikleri gosterir.
+        $(this).parents().find(".filtre").find(".icerik." + sinif).fadeIn();
+    }
+});
+
+
 
 /* ============= 3. Notlar */
 
