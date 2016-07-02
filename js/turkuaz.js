@@ -121,7 +121,7 @@ $(".tab .sekme").click(function() {
 
 // Filtre Menu
 //s0 sinifina ait sekmeyi aktif yapar.
-$(".filtre .sekme.s0").addClass("aktif");
+$(".filtre .sekme.hepsi").addClass("aktif");
 $(".filtre .sekme").click(function() {
     //tiklanan sekmenin sinifini alir.
     var sinif = $(this).attr("class");
@@ -129,7 +129,7 @@ $(".filtre .sekme").click(function() {
     sinif = sinif.replace("sekme " , "");
     //secilen sekmeye aktif sinifini ekleyip, diger sekmelerden aktif sinifini siler.
     $(this).addClass("aktif").parent().siblings().find("a").removeClass("aktif");
-    if(sinif == "s0" || sinif == "s0 aktif") {
+    if(sinif == "hepsi" || sinif == "hepsi aktif") {
         //s0 sinifi secildiyse tum icerikler gosterilir.
         $(this).parents().find(".icerik").show();
     }

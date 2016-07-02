@@ -1775,7 +1775,6 @@ a.etiket.resim img {
 .tr-form {
     background-color: #FFF;
     border-radius: 5px;
-    margin-bottom: 25px;
     padding: 30px
 }
 
@@ -2354,7 +2353,7 @@ nav.filtre ul {
 }
 
 nav.filtre.ortala ul {
-    margin: auto
+    margin: 0 auto 10px auto
 }
 
 nav.filtre ul li {
@@ -2808,7 +2807,6 @@ nav.numara.ayrik a:first-of-type {
 
 nav.tab {
     display: table;
-    margin-bottom: 30px;
     width: 100%
 }
 
