@@ -5,7 +5,7 @@ Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn
 
 [Ömer Gülçiçek](https://github.com/omergulcicek) tarafından geliştirilmeye başlanmış olan Turkuaz Css, 11 Nisan 2016 tarihinde github üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. İsmini Türk rengi olarakta bilinen Turkuaz'dan alır. Türkçe sınıf isimleriyle oluşturulmuş ilk yerli Css Framework olma özelliğini taşır.
 
-*Destekleri için [Yasin Softaoğlu](https://github.com/ysoftaoglu)'na çok teşekkür ederim.*
+*Destekleri için [Yasin Softaoğlu](https://github.com/ysoftaoglu) kardeşime ve [Bilal Çınarlı](https://github.com/bcinarli) abime çok teşekkür ederim.*
 
 # Sürümler
 > **Mevcut Sürüm : v1.0** - Turkuaz Css yayınlandı.
