@@ -1527,7 +1527,7 @@ button {
     cursor: pointer;
     display: inline-block;
     font-family: "Noto Sans";
-    font-size: 12.5px;
+    font-size: 13px;
     font-weight: normal;
     height: 40px;
     letter-spacing: 1.5px;
@@ -1738,7 +1738,7 @@ a.etiket {
     color: #333333;
     cursor: pointer;
     display: inline-block;
-    font-size: 12.5px;
+    font-size: 13px;
     letter-spacing: 1px;
     line-height: 1;
     margin: 0 5px 5px 0;
@@ -2197,7 +2197,7 @@ footer .detay {
 
 .kart .detay {
     border-top: 1px solid rgba(0,0,0,.05);
-    font-size: 12.5px;
+    font-size: 13px;
     height: 50px;
     line-height: 50px;
     margin-top: 5px
@@ -2338,12 +2338,6 @@ footer .detay {
 
 /* ============= 11 Nav */
 /* ============= 11.1 Filtre Menu */
-
-.filtre {
-    display: table;
-    margin-bottom: 15px;
-    width: 100%
-}
 
 .filtre nav {
     background-color: #1AC5B8;
@@ -2757,7 +2751,7 @@ nav.numara a.aktif {
 }
 
 nav.numara.kucuk a {
-    font-size: 12.5px;
+    font-size: 13px;
     padding: 6px 9px 6px 9px
 }
 
@@ -2799,15 +2793,20 @@ nav.numara.ayrik a:first-of-type {
 
 /* ============= 11.6 Tab Menu */
 
+.tab {
+    background-color: #FFF
+}
+
 .tab nav {
     display: table;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: 100%
 }
 
 .tab nav a {
-    background: #FFF;
-    border-bottom: 2px solid rgba(26,198,185,.15);
+    background: rgba(26,198,185,.15);
+    border: 2px solid rgba(26,198,185,.15);
+    border-right: 0;
     color: #000;
     cursor: pointer;
     display: table-cell;
@@ -2819,15 +2818,20 @@ nav.numara.ayrik a:first-of-type {
     transition: .3s
 }
 
+.tab a:last-child {
+    border-right: 2px solid rgba(26,198,185,.15)
+}
+
 .tab nav a.aktif {
-    border-bottom: 2px solid #1AC5B8;
+    background-color: #FFF;
+    border-bottom-color: #FFF;
     color: #1AC5B8;
     font-weight: bold;
     opacity: 1
 }
 
 .tab nav a:hover {
-    text-decoration: none;
+    text-decoration: none
 }
 
 
