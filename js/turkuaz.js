@@ -95,53 +95,33 @@ mobil(); $(window).resize(function() { mobil(); });
 
 // Tab Menu
 $(".tab").each(function() {
-    //ilk sekmeye aktif sinifini ekler.
-    $(this).find(".sekme:first").addClass("aktif");
-    //iceriklerin tamamını gizler.
-    $(this).find(".icerik").hide();
-    //ilk icerigi gosterir.
-    $(this).find(".icerik:first").show();
+    $(this).find("nav a:first").addClass("aktif")
+           .end()
+           .find(".icerik").removeClass("gizle")
+           .not(".icerik:first").addClass("gizle")
 });
-
-$(".tab .sekme").parent().css("width",function(){
-    //sekmelerin genislik yuzdesini ayarlar.
-    return  100 / ($(this).parent().children("li").length) + "%";
+$(".tab").on("click", "nav a", function(){
+    var index = $(this).index();
+    $(this).addClass("aktif")
+           .siblings().removeClass("aktif")
+           .end()
+           .parents(".tab").find(".tr.icerik").addClass("gizle")
+           .eq(index).removeClass("gizle")
 })
 
-$(".tab .sekme").click(function() {
-    //sekmelerdeki aktif sinifini kaldirir.
-    $(this).parent().siblings().find(".sekme").removeClass("aktif");
-    //tiklanan sekmeye aktif sinifini ekler.
-    $(this).addClass("aktif");
-    //iceriklerin hepsini gizler.
-    $(this).parents().find(".tab .icerik").hide();
-    //kacinci sekme secildiyse, o sekmenin icerigini gosterir.
-    $(this).parents().find(".tab .icerik:eq(" + $(this).parent().index() + ")").show();
-});
-
 // Filtre Menu
-//s0 sinifina ait sekmeyi aktif yapar.
-$(".filtre .sekme.hepsi").addClass("aktif");
-$(".filtre .sekme").click(function() {
-    //tiklanan sekmenin sinifini alir.
-    var sinif = $(this).attr("class");
-    //siniftan 'sekme' yazisini siler.
-    sinif = sinif.replace("sekme " , "");
-    //secilen sekmeye aktif sinifini ekleyip, diger sekmelerden aktif sinifini siler.
-    $(this).addClass("aktif").parent().siblings().find("a").removeClass("aktif");
-    if(sinif == "hepsi" || sinif == "hepsi aktif") {
-        //s0 sinifi secildiyse tum icerikler gosterilir.
-        $(this).parents().find(".icerik").show();
+$(".filtre [data-target='hepsi']").addClass("aktif");
+$(".filtre").on("click", "nav a", function(){
+    var target = $(this).data("target");
+    $(this).addClass("aktif")
+           .siblings().removeClass("aktif")
+           .end()
+           .parents(".filtre").find(".tr.icerik").removeClass("gizle")
+           .not("." + target).addClass("gizle")
+    if(target == "hepsi" || target == "hepsi aktif") {
+        $(this).parents(".filtre").find(".icerik").removeClass("gizle")
     }
-    else {
-        //siniftan 'aktif' yazisini siler.
-        sinif = sinif.replace(" aktif" , "");
-        //secilen sinif haricindeki diger icerikleri gizler.
-        $(this).parents().find(".filtre").find(".icerik:not(." + sinif + ")").hide();
-        //secilen siniftaki tum icerikleri gosterir.
-        $(this).parents().find(".filtre").find(".icerik." + sinif).fadeIn();
-    }
-});
+})
 
 
 

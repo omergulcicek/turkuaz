@@ -2339,28 +2339,20 @@ footer .detay {
 /* ============= 11 Nav */
 /* ============= 11.1 Filtre Menu */
 
-nav.filtre {
+.filtre {
     display: table;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     width: 100%
 }
 
-nav.filtre ul {
+.filtre nav {
     background-color: #1AC5B8;
     border-radius: 50px;
     display: table;
-    margin-bottom: 10px
-}
-
-nav.filtre.ortala ul {
     margin: 0 auto 10px auto
 }
 
-nav.filtre ul li {
-    float: left
-}
-
-nav.filtre ul li a.sekme {
+.filtre nav a {
     color: #FFF;
     cursor: pointer;
     display: block;
@@ -2374,7 +2366,7 @@ nav.filtre ul li a.sekme {
     transition: .3s
 }
 
-nav.filtre a.sekme:hover {
+.filtre nav a:hover {
     background-color: #FFF;
     border-radius: 50px;
     color: #000;
@@ -2382,14 +2374,16 @@ nav.filtre a.sekme:hover {
     text-decoration: none
 }
 
-nav.filtre a.sekme.aktif {
+.filtre nav a.aktif {
     background-color: #FFF;
     border-radius: 50px;
     color: #000;
     opacity: 1
 }
 
-nav.filtre .icerik {
+.filtre .icerik {
+    animation: opac 5s;
+    -webkit-animation: opac 5s;
     background-color: #FFF
 }
 
@@ -2805,21 +2799,18 @@ nav.numara.ayrik a:first-of-type {
 
 /* ============= 11.6 Tab Menu */
 
-nav.tab {
+.tab nav {
     display: table;
+    margin-bottom: 15px;
     width: 100%
 }
 
-nav.tab li {
-    float: left;
-}
-
-nav.tab .sekme {
+.tab nav a {
     background: #FFF;
     border-bottom: 2px solid rgba(26,198,185,.15);
     color: #000;
     cursor: pointer;
-    display: block;
+    display: table-cell;
     letter-spacing: 1px;
     line-height: 30px;
     opacity: .5;
@@ -2828,20 +2819,15 @@ nav.tab .sekme {
     transition: .3s
 }
 
-nav.tab .sekme.aktif {
+.tab nav a.aktif {
     border-bottom: 2px solid #1AC5B8;
     color: #1AC5B8;
     font-weight: bold;
     opacity: 1
 }
 
-nav.tab .sekme:hover {
+.tab nav a:hover {
     text-decoration: none;
-}
-
-nav.tab .icerik {
-    border-radius: 3px;
-    padding-top: 20px
 }
 
 
