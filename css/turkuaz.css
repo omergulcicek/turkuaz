@@ -2,6 +2,7 @@
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansı (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
+* Noto Sans Yazi Stili (https://fonts.google.com/specimen/Noto+Sans)
 */
 
 /*!
@@ -17,8 +18,7 @@
 *      5.2    Arkaplan Renkleri
 *    6.     Buton
 *      6.1    Buton Ayarlari
-*      6.2    Buton Cesitleri
-*      6.3    Buton Efektleri
+*      6.2    Buton Efektleri
 *    7. Etiket
 *    8.     Form
 *      8.1    Anahtarlar
@@ -1517,7 +1517,7 @@ table::-webkit-scrollbar-thumb {
 /* ============= 6. Buton */
 /* ============= 6.1 Butonlar */
 
-.buton,
+a.buton,
 button {
     background-color: #1AC5B8;
     border: none;
@@ -1542,58 +1542,58 @@ button {
     transition: .3s ease-out
 }
 
-.buton.kucuk {
+a.buton.kucuk {
     height: 30px;
     line-height: 30px;
     padding: 10px 15px
 }
 
-.buton.buyuk {
+a.buton.buyuk {
     height: 60px;
     line-height: 60px
 }
 
-.buton:hover,
+a.buton:hover,
 button:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15);
     color: #FFF;
     text-decoration: none
 }
 
-.buton.saydam,
+a.buton.saydam,
 button.saydam {
     background-color: transparent !important;
-    border: 1px solid rgba(0,0,0,.15);
+    border: 1px solid rgba(0,0,0,.1);
     box-shadow: none !important;
     color: #000
 }
 
-.buton.saydam:hover,
+a.buton.saydam:hover,
 button.saydam:hover {
     box-shadow: inset 0 0 0 0 transparent !important;
     border: 1px solid rgba(0,0,0,.3);
     color: #000
 }
 
-.buton.pasif,
+a.buton.pasif,
 button.pasif {
-    background-color: #DFDFDF !important;
+    background-color: #E6E6E6 !important;
     box-shadow: none;
     color: rgba(0,0,0,.4) !important;
     cursor:default
 }
 
-.buton.pasif:hover,
+a.buton.pasif:hover,
 button.pasif:hover {
-    background-color: #DFDFDF !important;
+    background-color: #E6E6E6 important;
     box-shadow: inset 0 0 0 0 transparent !important;
     color: rgba(0,0,0,.4) !important;
     cursor:default
 }
 
-.buton.yuvarlak,
+a.buton.yuvarlak,
 button.yuvarlak,
-.buton.kare,
+a.buton.kare,
 button.kare {
     height: 40px;
     line-height: 40px;
@@ -1601,57 +1601,99 @@ button.kare {
     width: 40px
 }
 
-.buton.yuvarlak.kucuk,
+a.buton.yuvarlak.kucuk,
 button.yuvarlak.kucuk,
-.buton.kare.kucuk,
+a.buton.kare.kucuk,
 button.kare.kucuk {
     height: 30px;
     line-height: 30px;
     width: 30px
 }
 
-.buton.yuvarlak.buyuk,
+a.buton.yuvarlak.buyuk,
 button.yuvarlak.buyuk,
-.buton.kare.buyuk,
+a.buton.kare.buyuk,
 button.kare.buyuk {
     height: 60px;
     line-height: 60px;
     width: 60px
 }
 
-.buton.yay,
+a.buton.yay,
 button.yay {
     width: 100%;
 }
 
-.buton i,
-button i {
+a.buton i.fa,
+button i.fa {
     margin-right: 7px;
     margin-top: -2px;
     opacity: .85;
     vertical-align: middle
 }
 
-.buton.yuvarlak i,
-button.yuvarlak i {
-    margin-right: -1px;
+a.buton.yuvarlak i.fa,
+button.yuvarlak i.fa {
+    margin-right: -2px;
     opacity: 1
 }
 
-.buton.kare i,
-button.kare i {
-    margin-right: 0;
+a.buton.kare i.fa,
+button.kare i.fa {
+    margin-right: -2px;
     opacity: 1
 }
 
-/* ============= 6.3 Buton Efektleri */
+.butonlar {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    display: inline-flex;
+}
 
-.buton[class*="efekt"] {
+.butonlar a.buton {
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: -5px
+}
+
+.butonlar a.buton:first-of-type {
+    border-radius: 3px 0 0 3px;
+    margin-left: 0
+}
+
+.butonlar a.buton:last-of-type {
+    border-radius: 0 3px 3px 0
+}
+
+.butonlar a.buton:hover {
+    box-shadow: inset 0 0 100px rgba(0,0,0,.1)
+}
+
+.butonlar.dikey {
+    display: table
+}
+
+.butonlar.dikey a.buton {
+    display: block;
+    margin-left: 0
+}
+
+.butonlar.dikey a.buton:first-of-type {
+    border-radius: 3px 3px 0 0
+}
+
+.butonlar.dikey a.buton:last-of-type {
+    border-radius: 0 0 3px 3px
+}
+
+/* ============= 6.2 Buton Efektleri */
+
+a.buton[class*="efekt"] {
     overflow: hidden;
     position: relative
 }
 
-.buton[class*="efekt"]::before {
+a.buton[class*="efekt"]::before {
     background: #fff;
     content: "";
     opacity: .25;
@@ -1659,8 +1701,8 @@ button.kare i {
     transition: .3s
 }
 
-.buton.efekt:before,
-.buton.efekt1:before {
+a.buton.efekt:before,
+a.buton.efekt1:before {
     height: 150px;
     left: -70px;
     top: -40px;
@@ -1668,12 +1710,12 @@ button.kare i {
     width: 50px
 }
 
-.buton.efekt:hover:before,
-.buton.efekt1:hover:before {
+a.buton.efekt:hover:before,
+a.buton.efekt1:hover:before {
     left: 99%
 }
 
-.buton.efekt2:before {
+a.buton.efekt2:before {
     height: 150px;
     left: 99%;
     top: -40px;
@@ -1681,52 +1723,52 @@ button.kare i {
     width: 50px
 }
 
-.buton.efekt2:hover:before {
+a.buton.efekt2:hover:before {
     left: -72px
 }
 
-.buton.efekt3:before {
+a.buton.efekt3:before {
     bottom: 0;
     height: 100%;
     left: 0;
     width: 0
 }
 
-.buton.efekt3:hover:before {
+a.buton.efekt3:hover:before {
     width: 100%
 }
 
-.buton.efekt4:before {
+a.buton.efekt4:before {
     bottom: 0;
     height: 100%;
     left: 100%;
     width: 0
 }
 
-.buton.efekt4:hover:before {
+a.buton.efekt4:hover:before {
     left: 0;
     width: 100%
 }
 
-.buton.efekt5:before {
+a.buton.efekt5:before {
     height: 0;
     left: 0;
     top: 0;
     width: 100%
 }
 
-.buton.efekt5:hover:before {
+a.buton.efekt5:hover:before {
     height: 100%
 }
 
-.buton.efekt6:before {
+a.buton.efekt6:before {
     bottom: 0;
     height: 0;
     left: 0;
     width: 100%
 }
 
-.buton.efekt6:hover:before {
+a.buton.efekt6:hover:before {
     height: 100%
 }
 
@@ -1741,7 +1783,7 @@ a.etiket {
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 1;
-    margin: 0 5px 5px 0;
+    margin: 0 1px 5px 0;
     padding: 7px;
     transition: .3s
 }
@@ -2389,7 +2431,6 @@ nav.koleksiyon {
     background-color: #FFF;
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     margin-bottom: 25px;
     position: relative
 }
@@ -2716,7 +2757,6 @@ nav.konum.saydam a:last-of-type {
 /* ============= 11.5 Sayfa Numaralandirma */
 
 nav.numara {
-    background-color: #FFF;
     border-radius: 5px;
     cursor: default;
     display: inline-block;
@@ -2724,6 +2764,7 @@ nav.numara {
 }
 
 nav.numara a {
+    background-color: #FFF;
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 3px;
     color: #000;
@@ -2775,8 +2816,7 @@ nav.numara.buyuk a {
 
 .tab {
     background-color: #FFF;
-    border: 1px solid rgba(26,198,185,.15);
-    margin-bottom: 20px;
+    border: 1px solid rgba(26,198,185,.15)
 }
 
 .tab nav {
@@ -2786,7 +2826,7 @@ nav.numara.buyuk a {
 }
 
 .tab nav a {
-    background: #FDFDFD;
+    background: #f5f5f5;
     border-bottom: 1px solid rgba(26,198,185,.15);
     border-right: 1px solid rgba(26,198,185,.15);
     color: #000;
@@ -2796,8 +2836,7 @@ nav.numara.buyuk a {
     line-height: 30px;
     opacity: .75;
     padding: 5px 10px;
-    text-align: center;
-    transition: .3s
+    text-align: center
 }
 
 .tab nav a:last-child {
@@ -2807,7 +2846,7 @@ nav.numara.buyuk a {
 .tab nav a.aktif {
     background-color: #FFF;
     border-bottom-color: #FFF;
-    color: #404040;
+    color: #333;
     font-weight: bold;
     opacity: 1
 }
