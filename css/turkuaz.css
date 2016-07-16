@@ -2166,157 +2166,79 @@ footer .detay {
 .kart {
     background-color: #FFF;
     border-radius: 3px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.15);
-    height: 400px;
-    margin-bottom: 25px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    cursor: default;
+    margin-bottom: 30px;
+    overflow: hidden;
     position: relative;
     width: 100%
 }
 
-.kart.kucuk {
-    height: 300px
+.kart .resim {
+    height: 400px;
+    min-width: 100%;
+    max-width: none;
+    transition: .3s;
+    vertical-align: middle
 }
 
-.kart.buyuk {
-    height: 500px
-}
-
-.kart > .resim {
-    height: 195px;
+.kart .icerik {
+    background-color: #FFF;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    height: 175px;
+    left: 0;
     overflow: hidden;
-    width: 100%
-}
-
-.kart.kucuk > .resim {
-    height: 125px
-}
-
-.kart.buyuk > .resim {
-    height: 248px
-}
-
-.kart > .resim img {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    cursor: pointer;
-    height: 100%;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
     transition: .3s;
     width: 100%
 }
 
-.kart .icerik {
-    height: 150px;
+.kart:hover .icerik {
+    height: 60px;
+    padding-top: 0
+}
+
+.kart .icerik .baslik {
+    font-size: 32px;
     overflow: hidden;
-    padding: 10px 15px 0 15px
+    padding: 0 5%;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
-.kart.kucuk .icerik {
-    height: 114px
+.kart .icerik .baslik::after {
+    background-color: rgba(0,0,0,.25);
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 10px auto;
+    transition: .15s;
+    width: 75px
 }
 
-.kart.buyuk .icerik {
-    height: 190px
-}
-
-@media only screen and (min-width: 800px) {
-    .kart .icerik {
-        padding: 15px 25px 0 25px
-    }
-    .kart.kucuk .icerik {
-        padding: 10px 20px 0 20px
-    }
-}
-
-.kart .icerik h1,
-.kart .icerik h2,
-.kart .icerik h3,
-.kart .icerik h4,
-.kart .icerik h5,
-.kart .icerik h6 {
-    font-size: 22px;
-    margin-top: 0
-}
-
-.kart .icerik h1 a,
-.kart .icerik h2 a,
-.kart .icerik h3 a,
-.kart .icerik h4 a,
-.kart .icerik h5 a,
-.kart .icerik h6 a,
-.kart .icerik a h1,
-.kart .icerik a h2,
-.kart .icerik a h3,
-.kart .icerik a h4,
-.kart .icerik a h5,
-.kart .icerik a h6 {
-    color: #000
+.kart:hover .icerik .baslik::after {
+    height: 0
 }
 
 .kart .icerik p {
-    font-size: 14px;
-    height: 100px;
-    line-height: 24px;
-    overflow: hidden
-}
-
-.kart.kucuk .icerik p {
-    height: 70px
-}
-
-.kart.buyuk .icerik p {
-    height: 150px
-}
-
-.kart .detay {
-    border-top: 1px solid rgba(0,0,0,.05);
+    color: #555;
     font-size: 13px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: 5px
+    line-height: 1.5;
+    padding: 0 10% 5% 10%
 }
 
-.kart.kucuk .detay,
-.kart.buyuk .detay {
-    margin-top: 13px
+.kart a.buton {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transform: translateY(60px);
+    width: 100%
 }
 
-.kart .detay a {
-    color: #000;
-    display: block;
-    font-size: 16px;
-    opacity: .75;
-    transition: .3s
-}
-
-.kart .detay:hover a {
-    opacity: 1;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px rgba(0,0,0,.3)
-}
-
-.kart .detay a.buton {
-    display: block;
-    height: 48px;
-    line-height: 26px
-}
-
-.kart .detay div:last-of-type {
-    float: right;
-    margin-right: 15px
-}
-
-.kart .detay div:first-of-type {
-    float: left;
-    margin-left: 15px
-}
-
-@media only screen and (min-width: 800px) {
-    .kart .detay div:last-of-type {
-        margin-right: 25px
-    }
-    .kart .detay div:first-of-type {
-        margin-left: 25px
-    }
+.kart:hover a.buton {
+    transform: translateY(0);
 }
 
 /* ============= 10.2 Kart Efektleri */
