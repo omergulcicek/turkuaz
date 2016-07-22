@@ -32,9 +32,7 @@ $formEtiketleri = ".tr-input,.tr-checkbox,.tr-radio,.tr-textarea";
 
 $($formEtiketleri).focus(function(){
     $(this).addClass("aktif dolu");
-});
-
-$($formEtiketleri).focusout(function(){
+}).focusout(function(){
     if($(this).val() == ""){
         $(this).removeClass("dolu");
     }

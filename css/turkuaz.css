@@ -190,7 +190,7 @@ em {
 }
 
 p {
-    line-height: 2;
+    line-height: 1.5;
     margin-bottom: 10px;
     margin-top: 0
 }
@@ -242,7 +242,7 @@ form {
 
 /* ============= 1.1 Tablolar */
 
-table {
+table.tr-tablo {
     background-color: #FFF;
     border-collapse: collapse;
     border-spacing: 0;
@@ -255,22 +255,22 @@ table {
     width: 100%
 }
 
-table tr:last-of-type td {
+table.tr-tablo tr:last-of-type td {
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
-table tr td:last-of-type {
+table.tr-tablo tr td:last-of-type {
     border-right: 1px solid rgba(0,0,0,.05);
 }
 
-table tr th {
+table.tr-tablo tr th {
     background-color: rgba(0,0,0,.02);
     padding: 15px;
     text-align: left;
     width: 100vw
 }
 
-table tr td {
+table.tr-tablo tr td {
     border-left: 1px solid rgba(0,0,0,.05);
     border-top: 1px solid rgba(0,0,0,.05);
     color: #212121;
@@ -278,30 +278,30 @@ table tr td {
     width: 100vw
 }
 
-table.renkli tr:nth-of-type(odd) {
+table.tr-tablo.renkli tr:nth-of-type(odd) {
     background-color: rgba(0,0,0,.02)
 }
 
-table.renkli tr th {
+table.tr-tablo.renkli tr th {
     background-color: transparent;
 }
 
-table.vurgu tr:hover td {
+table.tr-tablo.vurgu tr:hover td {
     background-color: rgba(0,0,0,.025)
 }
 
-table::-webkit-scrollbar {
+table.tr-tablo::-webkit-scrollbar {
     height: 10px;
     width: 10px;
     background-color: rgba(0,0,0,.05);
 }
 
-table::-webkit-scrollbar-track {
+table.tr-tablo::-webkit-scrollbar-track {
     border: 0;
     background-color: transparent;
 }
 
-table::-webkit-scrollbar-thumb {
+table.tr-tablo::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,.25);
 }
 
@@ -1015,6 +1015,10 @@ table::-webkit-scrollbar-thumb {
 }
 
 /* ============= 5.2 Arkaplan Renkleri */
+
+.saydam {
+    background-color: transparent !important
+}
 
 .beyaz {
     background-color: #FFF !important
@@ -1844,7 +1848,7 @@ a.etiket.kapat:hover span.kaldir {
 
 /* ============= 8. Form */
 
-.tr-form {
+form.tr-form {
     background-color: #FFF;
     border-radius: 5px;
     padding: 30px
@@ -1962,7 +1966,7 @@ input:checked.tr-anahtar + label:after {
 /* ============= 8.3 Dosya Secici */
 /* ============= 8.4 Input */
 
-.tr-input {
+input.tr-input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #eee;
@@ -1973,18 +1977,18 @@ input:checked.tr-anahtar + label:after {
     height: 32px;
     letter-spacing: .5px;
     line-height: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     outline: none;
     position: relative;
     transition: .3s;
     width: 100%
 }
 
-.tr-input.aktif {
+input.tr-input.aktif {
     border-bottom: 2px solid #1AC5B8
 }
 
-.tr-input + label {
+input.tr-input + label {
     color: #1AC5B8;
     cursor: auto;
     display: block;
@@ -1994,33 +1998,33 @@ input:checked.tr-anahtar + label:after {
     pointer-events: none;
     position: relative;
     text-align: left !important;
-    transform: translateY(-40px);
+    transform: translateY(-35px);
     transform-origin: 0 50%;
     transition: .3s
 }
 
-.tr-input.aktif + label {
+input.tr-input.aktif + label {
     color: #057970
 }
 
-.tr-input.dolu + label {
-    transform: translateY(-60px) scale(.75) !important
+input.tr-input.dolu + label {
+    transform: translateY(-55px) scale(.75) !important
 }
 
 /* ============= 8.5 Radio Buton */
 
-.tr-radio {
+input.tr-radio {
     box-sizing: border-box;
     padding: 0
 }
 
-.tr-radio:not(:checked), .tr-radio:checked {
+input.tr-radio:not(:checked), .tr-radio:checked {
     left: -9999px;
     opacity: 0;
     position: absolute
 }
 
-.tr-radio + label {
+input.tr-radio + label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -2031,11 +2035,11 @@ input:checked.tr-anahtar + label:after {
     text-align: left !important
 }
 
-.tr-radio:last-of-type + label {
+input.tr-radio:last-of-type + label {
     margin-bottom: 15px
 }
 
-.tr-radio:checked + label:before {
+input.tr-radio:checked + label:before {
     backface-visibility: hidden;
     background-color: #1AC5B8;
     height: 18px;
@@ -2045,7 +2049,7 @@ input:checked.tr-anahtar + label:after {
     width: 18px
 }
 
-.tr-radio + label:before, .tr-radio:not(.filled-in) + label:after {
+input.tr-radio + label:before, .tr-radio:not(.filled-in) + label:after {
     border: 2px solid rgba(0,0,0,.75);
     border-radius: 50%;
     content: "";
@@ -2059,7 +2063,7 @@ input:checked.tr-anahtar + label:after {
     z-index: 0
 }
 
-.tr-radio:not(.filled-in) + label:after {
+input.tr-radio:not(.filled-in) + label:after {
     border: 0;
     transform: scale(0)
 }
@@ -2072,7 +2076,7 @@ select {
     border-radius: 3px;
     display: block;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     outline: none;
     letter-spacing: .3px;
     padding: 0 50px 0 10px;
@@ -2091,7 +2095,7 @@ input[type="date"].tr-input + label {
 
 /* ============= 8.8 Textarea */
 
-.tr-textarea {
+textarea.tr-textarea {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #eee;
@@ -2101,7 +2105,7 @@ input[type="date"].tr-input + label {
     font-size: 16px;
     letter-spacing: .5px;
     line-height: 16px;
-    margin: 10px 0;
+    margin-bottom: 5px;
     min-height: 50px;
     outline: none;
     position: relative;
@@ -2110,11 +2114,11 @@ input[type="date"].tr-input + label {
     width: 100%
 }
 
-.tr-textarea.aktif {
+textarea.tr-textarea.aktif {
     border-bottom: 2px solid #1AC5B8
 }
 
-.tr-textarea + label {
+textarea.tr-textarea + label {
     color: #1AC5B8;
     cursor: auto;
     display: block;
@@ -2123,23 +2127,23 @@ input[type="date"].tr-input + label {
     margin: 0;
     pointer-events: none;
     position: relative;
-    transform: translateY(-65px);
+    transform: translateY(-60px);
     text-align: left !important;
     transform-origin: 0 50%;
     transition: .3s
 }
 
-.tr-textarea.aktif + label {
+textarea.tr-textarea.aktif + label {
     color: #057970
 }
 
-.tr-textarea.dolu + label {
-    transform: translateY(-85px) scale(.75) !important
+textarea.tr-textarea.dolu + label {
+    transform: translateY(-80px) scale(.75) !important
 }
 
 /* ============= 9. Footer */
 
-footer {
+footer.tr-footer {
     background-color: #1AC5B8;
     box-shadow: 0 0 5px rgba(0,0,0,.5);
     color: #FFF;
@@ -2148,11 +2152,11 @@ footer {
     width: 100%
 }
 
-footer nav ul li a {
+footer.tr-footer nav ul li a {
     line-height: 23px
 }
 
-footer .detay {
+footer.tr-footer .detay {
     background-color: rgba(0,0,0,.3);
     padding: 15px 0;
     position: relative;
@@ -2171,6 +2175,7 @@ footer .detay {
     margin-bottom: 30px;
     overflow: hidden;
     position: relative;
+    text-align: center;
     width: 100%
 }
 
@@ -2244,89 +2249,89 @@ footer .detay {
 /* ============= 10.2 Kart Efektleri */
 
 /* Yakinlastirma */
-.kart.efekt1 > .resim img {
+.kart.efekt1 > img {
     transform: scale(1)
 }
 
-.kart.efekt1 > .resim img:hover {
+.kart.efekt1:hover > img {
     transform: scale(1.3)
 }
 
 /* Uzaklastirma */
-.kart.efekt2 > .resim img {
+.kart.efekt2 > img {
     transform: scale(1.3)
 }
 
-.kart.efekt2 > .resim img:hover {
+.kart.efekt2:hover > img {
     transform: scale(1)
 }
 
 /* Sola Gecer */
-.kart.efekt3 > .resim img {
+.kart.efekt3 img {
     margin-left: 30px;
     transform: scale(1.2)
 }
 
-.kart.efekt3 > .resim img:hover {
+.kart.efekt3:hover > img {
     margin-left: 0
 }
 
 /* Saga Gecer */
-.kart.efekt4 > .resim img {
+.kart.efekt4 > img {
     margin-left: -30px;
     transform: scale(1.2)
 }
 
-.kart.efekt4 > .resim img:hover {
+.kart.efekt4:hover > img {
     margin-left: 0
 }
 
 /* Capraz Yakinlastirir */
-.kart.efekt5 > .resim img {
+.kart.efekt5 > img {
     transform: rotate(0) scale(1)
 }
 
-.kart.efekt5 > .resim img:hover {
+.kart.efekt5:hover > img {
     transform: rotate(15deg) scale(1.75)
 }
 
 /* Siyah Beyaz */
-.kart.efekt6 > .resim img {
+.kart.efekt6 > img {
     opacity: .95;
     -webkit-filter: grayscale(100%)
 }
 
-.kart.efekt6 > .resim img:hover {
+.kart.efekt6:hover > img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
 
 /* Renklendirir */
-.kart.efekt7 > .resim img {
+.kart.efekt7 > img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
 
-.kart.efekt7 > .resim img:hover {
+.kart.efekt7:hover > img {
     opacity: .95;
     -webkit-filter: grayscale(100%)
 }
 
 /* Bulaniklastirir */
-.kart.efekt8 > .resim img {
+.kart.efekt8 > img {
     -webkit-filter: blur(1px)
 }
 
-.kart.efekt8 > .resim img:hover {
+.kart.efekt8:hover > img {
     -webkit-filter: blur(0)
 }
 
 /* Netlestirir */
-.kart.efekt9 > .resim img {
+.kart.efekt9 > img {
     -webkit-filter: blur(0)
 }
 
-.kart.efekt9 > .resim img:hover {
+.kart.efekt9:hover > img {
     -webkit-filter: blur(1px)
 }
 
@@ -2336,6 +2341,7 @@ footer .detay {
 .filtre nav {
     background-color: #1AC5B8;
     border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     display: table;
     margin: 0 auto 10px auto
 }
@@ -2365,6 +2371,7 @@ footer .detay {
 .filtre nav a.aktif {
     background-color: #FFF;
     border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     color: #000;
     opacity: 1
 }
@@ -2387,12 +2394,7 @@ nav.koleksiyon {
     position: relative
 }
 
-nav.koleksiyon h1,
-nav.koleksiyon h2,
-nav.koleksiyon h3,
-nav.koleksiyon h4,
-nav.koleksiyon h5,
-nav.koleksiyon h6 {
+nav.koleksiyon .baslik {
     border-bottom: 1px solid rgba(0,0,0,.1);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -2431,12 +2433,7 @@ nav.koleksiyon.saydam {
     box-shadow: 0 0 0 0 transparent;
 }
 
-nav.koleksiyon.saydam h1,
-nav.koleksiyon.saydam h2,
-nav.koleksiyon.saydam h3,
-nav.koleksiyon.saydam h4,
-nav.koleksiyon.saydam h5,
-nav.koleksiyon.saydam h6 {
+nav.koleksiyon.saydam .baslik {
     border-bottom: 0
 }
 
@@ -2448,7 +2445,7 @@ nav.koleksiyon.saydam a {
 
 nav.menu {
     background-color: #1AC5B8;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     display: block;
     height: 45px;
     left: 0;
@@ -2465,30 +2462,28 @@ nav.menu img:not(.logo) {
     margin: 15px auto
 }
 
-nav.menu h1,
-nav.menu h2,
-nav.menu h3,
-nav.menu h4,
-nav.menu h5,
-nav.menu h6 {
+nav.menu .baslik {
     line-height: 25px;
     float: left;
     font-size: 25px;
     margin-right: 10px
 }
 
-nav.menu h1.sag,
-nav.menu h2.sag,
-nav.menu h3.sag,
-nav.menu h4.sag,
-nav.menu h5.sag,
-nav.menu h6.sag {
+nav.menu a:hover {
+    text-decoration: none
+}
+
+nav.menu .baslik.sag {
     margin-left: 10px;
     margin-right: 0
 }
 
 nav.menu.sabit {
     position: fixed
+}
+
+nav.menu.saydam {
+    box-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
 nav.menu ul {
@@ -2590,12 +2585,7 @@ nav.menu ul li ul li:hover a {
         position: fixed;
         width: 240px
     }
-    nav.menu h1,
-    nav.menu h2,
-    nav.menu h3,
-    nav.menu h4,
-    nav.menu h5,
-    nav.menu h6 {
+    nav.menu .baslik {
         float: none !important;
         margin: 15px 0 !important;
         text-align: center
@@ -2865,12 +2855,7 @@ nav.numara.buyuk a {
     margin-bottom: 15px
 }
 
-.pano h1,
-.pano h2,
-.pano h3,
-.pano h4,
-.pano h5,
-.pano h6 {
+.pano .baslik {
     color: #FFF;
     font-size: 15px;
     font-weight: 100;
@@ -2879,23 +2864,13 @@ nav.numara.buyuk a {
     padding: 15px
 }
 
-.pano.kucuk h1,
-.pano.kucuk h2,
-.pano.kucuk h3,
-.pano.kucuk h4,
-.pano.kucuk h5,
-.pano.kucuk h6 {
+.pano.kucuk .baslik {
     font-size: 13px;
     line-height: 15px;
     padding: 5px 15px
 }
 
-.pano.buyuk h1,
-.pano.buyuk h2,
-.pano.buyuk h3,
-.pano.buyuk h4,
-.pano.buyuk h5,
-.pano.buyuk h6 {
+.pano.buyuk .baslik {
     font-size: 19px;
     line-height: 23px;
     padding: 20px 15px
@@ -2928,11 +2903,11 @@ nav.numara.buyuk a {
 }
 
 .yazi-golge {
-    text-shadow: 3px 3px 3px rgba(0,0,0,.3)
+    text-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
 }
 
 .yazi-golge2 {
-    text-shadow: 4px 3px 0 #0a9a8f, 9px 8px 0 rgba(0,0,0,.15)
+    text-shadow: 4px 3px 0 rgba(0,0,0,.15), 9px 8px 0 rgba(0,0,0,.15)
 }
 
 .yazi-kalin,
