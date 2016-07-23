@@ -82,20 +82,29 @@ function mobil(){
 mobil(); $(window).resize(function() { mobil(); });
 
 // Tab Menu
-$(".tab").each(function() {
-    $(this).find("nav a:first").addClass("aktif")
-           .end()
-           .find(".icerik").removeClass("gizle")
-           .not(".icerik:first").addClass("gizle")
-});
-$(".tab").on("click", "nav a", function(){
-    var index = $(this).index();
-    $(this).addClass("aktif")
-           .siblings().removeClass("aktif")
-           .end()
-           .parents(".tab").find(".tr.icerik").addClass("gizle")
-           .eq(index).removeClass("gizle")
-})
+;(function($){
+    $.fn.tab = function(ayarlar){
+        var obj = $.extend({
+            "aktifSinifi" : "aktif",
+            "aktifSekme" : 1,
+            "icerikSinifi" : "tr-icerik"
+        }, ayarlar);
+        return this.each(function() {
+            $(this).addClass("tr-tab")
+            .find("nav a").eq(obj.aktifSekme - 1).addClass(obj.aktifSinifi)
+            .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("tr-icerik gizle")
+            .eq(obj.aktifSekme - 1).removeClass("gizle")
+            $(this).find("nav a").click(function(){
+                var index = $(this).index();
+                $(this).addClass(obj.aktifSinifi)
+                .siblings().removeClass(obj.aktifSinifi)
+                .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("gizle")
+                .eq(index).removeClass("gizle")
+            });
+        });
+    }
+})(jQuery);
+
 
 // Filtre Menu
 $(".filtre [data-target=hepsi]").addClass("aktif");

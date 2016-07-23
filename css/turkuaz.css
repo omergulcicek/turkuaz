@@ -168,11 +168,13 @@ h6 {
 a {
     background-color: transparent;
     color: #2196F3;
-    text-decoration: none
+    text-decoration: none;
+    transition: .1s
 }
 
 a:hover {
     color: #000;
+    cursor: pointer;
     outline: 0;
     text-decoration: underline
 }
@@ -2756,21 +2758,18 @@ nav.numara.buyuk a {
 
 /* ============= 11.6 Tab Menu */
 
-.tab {
+.tr-tab {
     background-color: #FFF;
-    border: 1px solid rgba(26,198,185,.15)
 }
 
-.tab nav {
+.tr-tab nav {
     display: table;
-    margin-bottom: 5px;
     width: 100%
 }
 
-.tab nav a {
-    background: #f5f5f5;
-    border-bottom: 1px solid rgba(26,198,185,.15);
-    border-right: 1px solid rgba(26,198,185,.15);
+.tr-tab nav a {
+    border: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,.1);
     color: #000;
     cursor: pointer;
     display: table-cell;
@@ -2781,23 +2780,27 @@ nav.numara.buyuk a {
     text-align: center
 }
 
-.tab nav a:last-child {
+.tr-tab nav a:last-child {
     border-right-width: 0
 }
 
-.tab nav a.aktif {
+.tr-tab nav a.aktif {
     background-color: #FFF;
-    border-bottom-color: #FFF;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,0);
     color: #333;
-    font-weight: bold;
     opacity: 1
 }
 
-.tab nav a:hover {
+.tr-tab nav a:hover {
     text-decoration: none
 }
 
-
+.tr-tab .tr-icerik {
+    border: 1px solid rgba(0,0,0,.1);
+    border-top: 0;
+    padding-top: 15px;
+}
 
 /* ============= 12. Notlar */
 
