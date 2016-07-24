@@ -8,9 +8,9 @@
 *    Turkuaz Framework - JavaScript Kod Duzeni
 *
 *   1. Etiket
-*   1. Form
-*   2. Menu
-*   3. Notlar
+*   2. Form
+*   3. Menu
+*   4. Notlar
 *
 */
 
@@ -24,6 +24,7 @@ $("a.etiket.kapat").append("<span class=kaldir>&times;</span>")
                    .find("span.kaldir").click(function(){
                        $(this).parents("a.etiket.kapat").addClass("gizle");
                     });
+
 
 
 /* ============= 2. Form */
@@ -43,13 +44,16 @@ $($formEtiketleri).focus(function(){
 
 /* ============= 3. Menu */
 
+//Mobil Menu
 $("nav.menu.mobil").on("click", "img.logo", function(){
     $(this).hide()
-           .parent().animate({left:"0"});
-    $("body").append("<div class=karart></div>");
+           .parents("nav.menu.mobil").animate({left:"0"});
+    $("body").append("<div class='tr-karart'></div>")
+             .end().find(".tr-karart").css({ "background-color": "rgba(0,0,0,.85)", "height": "100%",
+                 "left": "0", "position": "fixed", "top": "0", "width": "100%", "z-index": "999" })
 });
 
-$("body").on("click", ".karart", function(){
+$("body").on("click", ".tr-karart", function(){
     $(this).remove();
     $("nav.menu.mobil").animate({left:"-240px"})
                        .find("img.logo").delay(400).fadeIn();
@@ -70,9 +74,11 @@ $("body").on("click", "nav.menu.mobil ul li.acilir", function(){
 function mobil(){
     if ($(window).width() <= 1000) {
         $("nav.menu.mobil").addClass("mobilmenu");
+        $(".tr-karart").removeClass("gizle");
     }
     else {
         $("nav.menu.mobil").removeClass("mobilmenu");
+        $(".tr-karart").addClass("gizle");
     }
     $("nav.menu ul li.acilir ul").each(function(){
         $(this).hide("600");
@@ -105,18 +111,17 @@ mobil(); $(window).resize(function() { mobil(); });
     }
 })(jQuery);
 
-
 // Filtre Menu
-$(".filtre [data-target=hepsi]").addClass("aktif");
-$(".filtre").on("click", "nav a", function(){
+$(".tr-filtre [data-target=hepsi]").addClass("aktif");
+$(".tr-filtre").on("click", "nav a", function(){
     var target = $(this).data("target");
     $(this).addClass("aktif")
            .siblings().removeClass("aktif")
            .end()
-           .parents(".filtre").find(".tr.icerik").removeClass("gizle")
+           .parents(".tr-filtre").find(".tr.icerik").removeClass("gizle")
            .not("." + target).addClass("gizle")
     if(target == "hepsi" || target == "hepsi aktif") {
-        $(this).parents(".filtre").find(".icerik").removeClass("gizle")
+        $(this).parents(".tr-filtre").find(".icerik").removeClass("gizle")
     }
 })
 
@@ -124,8 +129,8 @@ $(".filtre").on("click", "nav a", function(){
 
 /* ============= 4. Notlar */
 
-$("div.not").append("<span class=kaldir>&times;</span>");
+$(".tr-not").append("<span class=kaldir>&times;</span>");
 
-$("div.not").on("click", "span.kaldir", function(){
-    $(this).parents("div.not").addClass("gizle")
+$(".tr-not").on("click", "span.kaldir", function(){
+    $(this).parents(".tr-not").addClass("gizle")
 })

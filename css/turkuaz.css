@@ -100,22 +100,6 @@ body {
     }
 }
 
-body > .karart {
-    background-color: rgba(0,0,0,.85);
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 998
-}
-
-@media only screen and (min-width: 1000px) {
-    body > .karart {
-        display: none
-    }
-}
-
 article,
 aside,
 details,
@@ -2256,12 +2240,12 @@ footer.tr-footer .detay {
 }
 
 .kart.efekt1:hover > img {
-    transform: scale(1.3)
+    transform: scale(1.1)
 }
 
 /* Uzaklastirma */
 .kart.efekt2 > img {
-    transform: scale(1.3)
+    transform: scale(1.1)
 }
 
 .kart.efekt2:hover > img {
@@ -2271,7 +2255,7 @@ footer.tr-footer .detay {
 /* Sola Gecer */
 .kart.efekt3 img {
     margin-left: 30px;
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .kart.efekt3:hover > img {
@@ -2281,7 +2265,7 @@ footer.tr-footer .detay {
 /* Saga Gecer */
 .kart.efekt4 > img {
     margin-left: -30px;
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .kart.efekt4:hover > img {
@@ -2294,7 +2278,7 @@ footer.tr-footer .detay {
 }
 
 .kart.efekt5:hover > img {
-    transform: rotate(15deg) scale(1.75)
+    transform: rotate(5deg) scale(1.1)
 }
 
 /* Siyah Beyaz */
@@ -2340,7 +2324,7 @@ footer.tr-footer .detay {
 /* ============= 11 Nav */
 /* ============= 11.1 Filtre Menu */
 
-.filtre nav {
+.tr-filtre nav {
     background-color: #1AC5B8;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
@@ -2348,7 +2332,7 @@ footer.tr-footer .detay {
     margin: 0 auto 10px auto
 }
 
-.filtre nav a {
+.tr-filtre nav a {
     color: #FFF;
     cursor: pointer;
     display: block;
@@ -2362,7 +2346,7 @@ footer.tr-footer .detay {
     transition: .3s
 }
 
-.filtre nav a:hover {
+.tr-filtre nav a:hover {
     background-color: #FFF;
     border-radius: 50px;
     color: #000;
@@ -2370,7 +2354,7 @@ footer.tr-footer .detay {
     text-decoration: none
 }
 
-.filtre nav a.aktif {
+.tr-filtre nav a.aktif {
     background-color: #FFF;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
@@ -2378,7 +2362,7 @@ footer.tr-footer .detay {
     opacity: 1
 }
 
-.filtre .icerik {
+.tr-filtre .icerik {
     animation: opac 5s;
     -webkit-animation: opac 5s;
     background-color: #FFF
@@ -2759,7 +2743,7 @@ nav.numara.buyuk a {
 /* ============= 11.6 Tab Menu */
 
 .tr-tab {
-    background-color: #FFF;
+    background-color: #FFF
 }
 
 .tr-tab nav {
@@ -2780,10 +2764,6 @@ nav.numara.buyuk a {
     text-align: center
 }
 
-.tr-tab nav a:last-child {
-    border-right-width: 0
-}
-
 .tr-tab nav a.aktif {
     background-color: #FFF;
     border: 1px solid rgba(0,0,0,.1);
@@ -2799,12 +2779,12 @@ nav.numara.buyuk a {
 .tr-tab .tr-icerik {
     border: 1px solid rgba(0,0,0,.1);
     border-top: 0;
-    padding-top: 15px;
+    padding-top: 15px
 }
 
 /* ============= 12. Notlar */
 
-.not {
+.tr-not {
     background-color: #1AC5B8;
     box-shadow: 0 1px 6px rgba(0,0,0,.15);
     border-radius: 3px;
@@ -2816,11 +2796,11 @@ nav.numara.buyuk a {
     width: 100%
 }
 
-.not p {
+.tr-not p {
     margin-bottom: 0
 }
 
-.not span.kaldir {
+.tr-not span.kaldir {
     color: #FFF;
     cursor: pointer;
     opacity: .4;
@@ -2831,34 +2811,34 @@ nav.numara.buyuk a {
     top: 11px
 }
 
-.not:hover span.kaldir {
+.tr-not:hover span.kaldir {
     opacity: 1
 }
 
-.not span.kaldir:hover {
+.tr-not span.kaldir:hover {
     text-shadow: 0 0 5px rgba(0,0,0,.5)
 }
 
-.not.saydam {
+.tr-not.saydam {
     background-color: transparent !important;
     color: #000
 }
 
-.not.saydam span.kaldir {
+.tr-not.saydam span.kaldir {
     color: #000
 }
 
 
 /* ============= 13. Pano */
 
-.pano {
+.tr-pano {
     background-color: #1AC5B8;
     border-radius: 5px;
     box-shadow: 0 1px 6px rgba(0,0,0,.15);
     margin-bottom: 15px
 }
 
-.pano .baslik {
+.tr-pano .baslik {
     color: #FFF;
     font-size: 15px;
     font-weight: 100;
@@ -2867,26 +2847,26 @@ nav.numara.buyuk a {
     padding: 15px
 }
 
-.pano.kucuk .baslik {
+.tr-pano.kucuk .baslik {
     font-size: 13px;
     line-height: 15px;
     padding: 5px 15px
 }
 
-.pano.buyuk .baslik {
+.tr-pano.buyuk .baslik {
     font-size: 19px;
     line-height: 23px;
     padding: 20px 15px
 }
 
-.pano .icerik {
+.tr-pano .icerik {
     background-color: #FFF;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     padding: 15px
 }
 
-.pano .icerik p {
+.tr-pano .icerik p {
     margin: 0
 }
 
