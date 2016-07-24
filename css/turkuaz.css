@@ -46,6 +46,7 @@
 *      14.1   Yazi Ayarlari
 *      14.2   Yazi Boyutlari
 *      14.3   Yazi Renkleri
+*     15. Akordiyon Menü
 *
 */
 
@@ -2599,9 +2600,6 @@ nav.menu ul li ul li:hover a {
         position: relative
     }
     nav.menu.mobil ul li.acilir > a::after {
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 4px solid rgba(0,0,0,.2);
         content: "";
         position: absolute;
         left: auto;
@@ -3489,4 +3487,55 @@ nav.numara.buyuk a {
 .yazi-siyah9,
 .yazi-siyah9 a {
     color: #050505 !important
+}
+
+
+.tr-akordiyon {
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    display: table;
+    width: 100%;
+}
+.tr-akordiyon .baslik {
+    color: #b5b5b5;
+    display: block;
+    border-top: 1px solid rgba(0,0,0,.2);
+    font-size: 14px;
+    padding: 10px 35px;
+    letter-spacing: .5px;
+    transition: .1s;
+}
+.tr-akordiyon .baslik:hover {
+    color: #000;
+    text-decoration: none;
+}
+.tr-akordiyon .baslik:first-child {
+    border-top-width: 0
+}
+.tr-akordiyon .baslik::before {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgba(0,0,0,.2);
+    content: "";
+    left: -8px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    transform: rotate(-90deg);
+    transition: .3s
+}
+.tr-akordiyon .baslik:hover::before {
+    border-top: 4px solid rgba(0,0,0,1);
+}
+.tr-akordiyon .baslik.aktif {
+    color: #000;
+    border-bottom-width: 0
+}
+.tr-akordiyon .baslik.aktif::before {
+    border-top-color: rgba(0,0,0,1);
+    content: "";
+    transform: rotate(0deg);
+}
+.tr-akordiyon .icerik {
+    padding: 5px 35px;
 }
