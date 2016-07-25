@@ -8,51 +8,54 @@
 /*!
 *    Turkuaz Css - Kod Duzeni
 *
-*    1.     Genel Css
-*      1.1    Tablolar
-*    2.     Grid Sistemi
-*    3.     Yardimci Kodlar
-*    4.     Yazi Stili
-*    5.     Arkaplan
-*      5.1    Arkaplan Desenleri
-*      5.2    Arkaplan Renkleri
-*    6.     Buton
-*      6.1    Buton Ayarlari
-*      6.2    Buton Efektleri
-*    7. Etiket
-*    8.     Form
-*      8.1    Anahtarlar
-*      8.2    Checkbox
-*      8.3    Dosya Secici
-*      8.4    Input
-*      8.5    Radio Buton
-*      8.6    Select
-*      8.7    Tarih Secici
-*      8.8    Textarea
-*    9.     Footer
-*    10.    Kartlar
-*      10.1   Kart Kodlari
-*      10.2   Kart Efektleri
-*    11.    Nav
-*      11.1   Filtre Menu
-*      11.2   Koleksiyonlar
-*      11.3   Menu
-*      11.4   Sayfa Konumu
-*      11.5   Sayfa Numaralandirma
-*      11.6   Tab Menu
-*    12.    Notlar
-*    13.    Pano
-*    14.    Yazi
-*      14.1   Yazi Ayarlari
-*      14.2   Yazi Boyutlari
-*      14.3   Yazi Renkleri
-*     15. Akordiyon Menü
+*    1.     Css
+*      1.1     Grid Sistemi
+*      1.2     Renkler
+*      1.3     Tablo
+*      1.4     Yardimci Kodlar
+*      1.5     Yazi Stili
+*    2.     Bilesenler
+*      2.1     Arkaplanlar
+*      2.2     Butonlar
+*        2.2.1    Buton Ayarlari
+*        2.2.2    Buton Efektleri
+*      2.3     Etiketler
+*      2.4     Form Elemanlari
+*        2.4.1    Anahtarlar
+*        2.4.2    Checkbox
+*        2.4.3    Dosya Secici
+*        2.4.4    Input
+*        2.4.5    Radio Buton
+*        2.4.6    Select
+*        2.4.7    Tarih Secici
+*        2.4.8    Textarea
+*      2.5     Footer
+*      2.6     Kartlar
+*        2.6.1    Kart Kodlari
+*        2.6.2    Kart Efektleri
+*      2.7     Koleksiyonlar
+*      2.8     Menu
+*      2.9     Notlar
+*      2.10    Pano
+*      2.11    Sayfa Konumu
+*      2.12    Sayfa Numaralandirma
+*      2.13    Yazilar
+*        2.13.1   Yazi Ayarlari
+*        2.13.2   Yazi Boyutlari
+*        2.13.3   Yazi Renkleri
+*    3.     JavaScript
+*      3.1     Akordiyon Menu
+*      3.2     Filtre Menu
+*      3.3     Medya
+*      3.4     Modal
+*      3.5     Slider
+*      3.6     Tab Menu
 *
 */
 
 
 
-/* ============= 1. Genel CSS  */
+/* ============= 1. Css  */
 
 html {
     box-sizing: border-box
@@ -227,72 +230,7 @@ form {
     width: 100%
 }
 
-/* ============= 1.1 Tablolar */
-
-table.tr-tablo {
-    background-color: #FFF;
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: block;
-    font-size: 13px;
-    margin: 10px 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: relative;
-    width: 100%
-}
-
-table.tr-tablo tr:last-of-type td {
-    border-bottom: 1px solid rgba(0,0,0,.05);
-}
-
-table.tr-tablo tr td:last-of-type {
-    border-right: 1px solid rgba(0,0,0,.05);
-}
-
-table.tr-tablo tr th {
-    background-color: rgba(0,0,0,.02);
-    padding: 15px;
-    text-align: left;
-    width: 100vw
-}
-
-table.tr-tablo tr td {
-    border-left: 1px solid rgba(0,0,0,.05);
-    border-top: 1px solid rgba(0,0,0,.05);
-    color: #212121;
-    padding: 15px;
-    width: 100vw
-}
-
-table.tr-tablo.renkli tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.02)
-}
-
-table.tr-tablo.renkli tr th {
-    background-color: transparent;
-}
-
-table.tr-tablo.vurgu tr:hover td {
-    background-color: rgba(0,0,0,.025)
-}
-
-table.tr-tablo::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
-    background-color: rgba(0,0,0,.05);
-}
-
-table.tr-tablo::-webkit-scrollbar-track {
-    border: 0;
-    background-color: transparent;
-}
-
-table.tr-tablo::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.25);
-}
-
-/* ============= 2. Grid Kodlari  */
+/* ============= 1.1 Grid Sistemi  */
 
 .container,
 .container-kucuk,
@@ -790,218 +728,7 @@ table.tr-tablo::-webkit-scrollbar-thumb {
     }
 }
 
-/* ============= 3. Yardimci Kodlar =============== */
-
-.sol {
-    float: left !important
-}
-
-.sag {
-    float: right !important
-}
-
-.ortala {
-    margin-left: auto;
-    margin-right: auto
-}
-
-.yuvarlak {
-    border-radius: 50% !important
-}
-
-.gizle {
-    display: none !important
-}
-
-@media only screen and (max-width: 400px) {
-    .gizle-ck {
-        display: none
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 800px) {
-    .gizle-k {
-        display: none
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
-    .gizle-o {
-        display: none
-    }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-    .gizle-b {
-        display: none
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .gizle-cb {
-        display: none
-    }
-}
-
-.cizgi {
-    background-color: #eee;
-    display: inline-block;
-    height: 1px;
-    margin: 10px auto;
-    text-align: center;
-    width: 99%
-}
-
-.cizgi img {
-    background-color: #FFF;
-    bottom: 17px;
-    height: 35px;
-    padding: 5px 10px;
-    position: relative;
-    width: auto
-}
-
-.cizgi a,
-.cizgi h1,
-.cizgi h2,
-.cizgi h3,
-.cizgi h4,
-.cizgi h5,
-.cizgi h6,
-.cizgi p,
-.cizgi span {
-    background-color: #FFF;
-    bottom: 13px;
-    color: #000;
-    display: inline-block;
-    font-size: 15px;
-    margin: 0;
-    padding: 5px;
-    position: relative
-}
-
-.temizle {
-    clear: both
-}
-
-/* ============= 4. Yazi Stili */
-
-@font-face {
-    font-family: "Noto Sans";
-    src: url(../fonts/NotoSans.ttf)
-}
-
-@font-face {
-    font-family: "Noto Sans Italic";
-    src: url("../fonts/NotoSans-Italic.ttf")
-}
-
-@font-face {
-    font-family: "Noto Sans Bold";
-    src: url("../fonts/NotoSans-Bold.ttf")
-}
-
-/* ============= 5. Arkaplanlar */
-/* ============= 5.1 Arkaplan Desenleri */
-
-.desen,
-.desen1 {
-    background-image: url("../img/desen/desen.png")
-}
-
-.desen2 {
-    background-image: url("../img/desen/desen2.png")
-}
-
-.desen3 {
-    background-image: url("../img/desen/desen3.png")
-}
-
-.desen4 {
-    background-image: url("../img/desen/desen4.png")
-}
-
-.desen5 {
-    background-image: url("../img/desen/desen5.png")
-}
-
-.desen6 {
-    background-image: url("../img/desen/desen6.png")
-}
-
-.desen7 {
-    background-image: url("../img/desen/desen7.png")
-}
-
-.desen8 {
-    background-image: url("../img/desen/desen8.png")
-}
-
-.desen9 {
-    background-image: url("../img/desen/desen9.png")
-}
-
-.desen10 {
-    background-image: url("../img/desen/desen10.png")
-}
-
-.desen11 {
-    background-image: url("../img/desen/desen11.png")
-}
-
-.desen12 {
-    background-image: url("../img/desen/desen12.png")
-}
-
-.desen13 {
-    background-image: url("../img/desen/desen13.png")
-}
-
-.desen14 {
-    background-image: url("../img/desen/desen14.png")
-}
-
-.desen15 {
-    background-image: url("../img/desen/desen15.png")
-}
-
-.desen16 {
-    background-image: url("../img/desen/desen16.png")
-}
-
-.desen17 {
-    background-image: url("../img/desen/desen17.png")
-}
-
-.desen18 {
-    background-image: url("../img/desen/desen18.png")
-}
-
-.desen19 {
-    background-image: url("../img/desen/desen19.png")
-}
-
-.desen20 {
-    background-image: url("../img/desen/desen20.png")
-}
-
-.desen21 {
-    background-image: url("../img/desen/desen21.png")
-}
-
-.desen22 {
-    background-image: url("../img/desen/desen23.png")
-}
-
-.desen24 {
-    background-image: url("../img/desen/desen24.png")
-}
-
-.desen25 {
-    background-image: url("../img/desen/desen25.png")
-}
-
-/* ============= 5.2 Arkaplan Renkleri */
+/* ============= 1.2 Renkler */
 
 .saydam {
     background-color: transparent !important
@@ -1505,8 +1232,284 @@ table.tr-tablo::-webkit-scrollbar-thumb {
     background-color: #EE1C1B !important
 }
 
-/* ============= 6. Buton */
-/* ============= 6.1 Butonlar */
+/* ============= 1.3 Tablolar */
+
+table.tr-tablo {
+    background-color: #FFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    font-size: 13px;
+    margin: 10px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%
+}
+
+table.tr-tablo tr:last-of-type td {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+table.tr-tablo tr td:last-of-type {
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+
+table.tr-tablo tr th {
+    background-color: rgba(0,0,0,.02);
+    padding: 15px;
+    text-align: left;
+    width: 100vw
+}
+
+table.tr-tablo tr td {
+    border-left: 1px solid rgba(0,0,0,.05);
+    border-top: 1px solid rgba(0,0,0,.05);
+    color: #212121;
+    padding: 15px;
+    width: 100vw
+}
+
+table.tr-tablo.renkli tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.02)
+}
+
+table.tr-tablo.renkli tr th {
+    background-color: transparent;
+}
+
+table.tr-tablo.vurgu tr:hover td {
+    background-color: rgba(0,0,0,.025)
+}
+
+table.tr-tablo::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(0,0,0,.05);
+}
+
+table.tr-tablo::-webkit-scrollbar-track {
+    border: 0;
+    background-color: transparent;
+}
+
+table.tr-tablo::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.25);
+}
+
+/* ============= 1.4 Yardimci Kodlar */
+
+.sol {
+    float: left !important
+}
+
+.sag {
+    float: right !important
+}
+
+.ortala {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.yuvarlak {
+    border-radius: 50% !important
+}
+
+.gizle {
+    display: none !important
+}
+
+@media only screen and (max-width: 400px) {
+    .gizle-ck {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .gizle-k {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .gizle-o {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .gizle-b {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .gizle-cb {
+        display: none
+    }
+}
+
+.cizgi {
+    background-color: #eee;
+    display: inline-block;
+    height: 1px;
+    margin: 10px auto;
+    text-align: center;
+    width: 99%
+}
+
+.cizgi img {
+    background-color: #FFF;
+    bottom: 17px;
+    height: 35px;
+    padding: 5px 10px;
+    position: relative;
+    width: auto
+}
+
+.cizgi a,
+.cizgi h1,
+.cizgi h2,
+.cizgi h3,
+.cizgi h4,
+.cizgi h5,
+.cizgi h6,
+.cizgi p,
+.cizgi span {
+    background-color: #FFF;
+    bottom: 13px;
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    position: relative
+}
+
+.temizle {
+    clear: both
+}
+
+/* ============= 1.5 Yazi Ayarlari */
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url(../fonts/NotoSans.ttf)
+}
+
+@font-face {
+    font-family: "Noto Sans Italic";
+    src: url("../fonts/NotoSans-Italic.ttf")
+}
+
+@font-face {
+    font-family: "Noto Sans Bold";
+    src: url("../fonts/NotoSans-Bold.ttf")
+}
+
+/* ============= 2. Bilesenler */
+/* ============= 2.1 Arkaplanlar */
+
+.desen,
+.desen1 {
+    background-image: url("../img/desen/desen.png")
+}
+
+.desen2 {
+    background-image: url("../img/desen/desen2.png")
+}
+
+.desen3 {
+    background-image: url("../img/desen/desen3.png")
+}
+
+.desen4 {
+    background-image: url("../img/desen/desen4.png")
+}
+
+.desen5 {
+    background-image: url("../img/desen/desen5.png")
+}
+
+.desen6 {
+    background-image: url("../img/desen/desen6.png")
+}
+
+.desen7 {
+    background-image: url("../img/desen/desen7.png")
+}
+
+.desen8 {
+    background-image: url("../img/desen/desen8.png")
+}
+
+.desen9 {
+    background-image: url("../img/desen/desen9.png")
+}
+
+.desen10 {
+    background-image: url("../img/desen/desen10.png")
+}
+
+.desen11 {
+    background-image: url("../img/desen/desen11.png")
+}
+
+.desen12 {
+    background-image: url("../img/desen/desen12.png")
+}
+
+.desen13 {
+    background-image: url("../img/desen/desen13.png")
+}
+
+.desen14 {
+    background-image: url("../img/desen/desen14.png")
+}
+
+.desen15 {
+    background-image: url("../img/desen/desen15.png")
+}
+
+.desen16 {
+    background-image: url("../img/desen/desen16.png")
+}
+
+.desen17 {
+    background-image: url("../img/desen/desen17.png")
+}
+
+.desen18 {
+    background-image: url("../img/desen/desen18.png")
+}
+
+.desen19 {
+    background-image: url("../img/desen/desen19.png")
+}
+
+.desen20 {
+    background-image: url("../img/desen/desen20.png")
+}
+
+.desen21 {
+    background-image: url("../img/desen/desen21.png")
+}
+
+.desen22 {
+    background-image: url("../img/desen/desen23.png")
+}
+
+.desen24 {
+    background-image: url("../img/desen/desen24.png")
+}
+
+.desen25 {
+    background-image: url("../img/desen/desen25.png")
+}
+
+/* ============= 2.2 Buton */
+/* ============= 2.2.1 Buton Ayarlari */
 
 a.buton,
 button {
@@ -1682,7 +1685,7 @@ button.kare i.fa {
     border-radius: 0 0 3px 3px
 }
 
-/* ============= 6.2 Buton Efektleri */
+/* ============= 2.2.2 Buton Efektleri */
 
 a.buton[class*="efekt"] {
     overflow: hidden;
@@ -1768,7 +1771,7 @@ a.buton.efekt6:hover:before {
     height: 100%
 }
 
-/* ============= 7. Etiket */
+/* ============= 2.3 Etiketler */
 
 a.etiket {
     background-color: rgba(0,0,0,.1);
@@ -1833,7 +1836,7 @@ a.etiket.kapat:hover span.kaldir {
     opacity: 1
 }
 
-/* ============= 8. Form */
+/* ============= 2.4 Form Elemanlari */
 
 form.tr-form {
     background-color: #FFF;
@@ -1841,19 +1844,19 @@ form.tr-form {
     padding: 30px
 }
 
-/* ============= 8.1 Anahtarlar */
+/* ============= 2.4.1 Anahtarlar */
 
-.tr-anahtar:not(:checked), .tr-anahtar:checked {
+input.tr-anahtar:not(:checked), .tr-anahtar:checked {
     left: -9999px;
     opacity: 0;
     position: absolute
 }
 
-.tr-anahtar + label {
+input.tr-anahtar + label {
     margin-left: 50px
 }
 
-.tr-anahtar + label:before {
+input.tr-anahtar + label:before {
     background: rgba(0,0,0,.1);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
@@ -1867,7 +1870,7 @@ form.tr-form {
     z-index: 1
 }
 
-.tr-anahtar + label:after {
+input.tr-anahtar + label:after {
     background: #FFF;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
@@ -1890,20 +1893,20 @@ input:checked.tr-anahtar + label:after {
     margin-left: -27px
 }
 
-/* ============= 8.2 Checkbox */
+/* ============= 2.4.2 Checkbox */
 
-.tr-checkbox:not(:checked), .tr-checkbox:checked {
+input.tr-checkbox:not(:checked), .tr-checkbox:checked {
     left: -9999px;
     opacity: 0;
     position: absolute
 }
 
-.tr-checkbox {
+input.tr-checkbox {
     box-sizing: border-box;
     padding: 0
 }
 
-.tr-checkbox + label {
+input.tr-checkbox + label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -1914,11 +1917,11 @@ input:checked.tr-anahtar + label:after {
     position: relative
 }
 
-.tr-checkbox:last-of-type + label {
+input.tr-checkbox:last-of-type + label {
     margin-bottom: 15px
 }
 
-.tr-checkbox:checked + label:before {
+input.tr-checkbox:checked + label:before {
     backface-visibility: hidden;
     border-color: #1AC5B8;
     border-top-color: transparent;
@@ -1931,7 +1934,7 @@ input:checked.tr-anahtar + label:after {
     width: 12px
 }
 
-.tr-checkbox + label:before, .tr-checkbox:not(.filled-in) + label:after {
+input.tr-checkbox + label:before, .tr-checkbox:not(.filled-in) + label:after {
     border: 2px solid rgba(0,0,0,.75);
     border-radius: 2px;
     content: "";
@@ -1945,13 +1948,14 @@ input:checked.tr-anahtar + label:after {
     z-index: 0
 }
 
-.tr-checkbox:not(.filled-in) + label:after {
+input.tr-checkbox:not(.filled-in) + label:after {
     border: 0;
     transform: scale(0)
 }
 
-/* ============= 8.3 Dosya Secici */
-/* ============= 8.4 Input */
+/* ============= 2.4.3 Dosya Secici */
+
+/* ============= 2.4.4 Input */
 
 input.tr-input {
     background-color: transparent;
@@ -1998,7 +2002,7 @@ input.tr-input.dolu + label {
     transform: translateY(-55px) scale(.75) !important
 }
 
-/* ============= 8.5 Radio Buton */
+/* ============= 2.4.5 Radio Buton */
 
 input.tr-radio {
     box-sizing: border-box;
@@ -2055,7 +2059,7 @@ input.tr-radio:not(.filled-in) + label:after {
     transform: scale(0)
 }
 
-/* ============= 8.6 Select */
+/* ============= 2.4.6 Select */
 
 select {
     background-color: rgba(255,255,255,.85);
@@ -2070,7 +2074,7 @@ select {
     width: 100%
 }
 
-/* ============= 8.7 Tarih Secici */
+/* ============= 2.4.7 Tarih Secici */
 
 input[type="date"].tr-input {
     line-height: 20px
@@ -2080,7 +2084,7 @@ input[type="date"].tr-input + label {
     transform: translateY(-60px) scale(.75) !important
 }
 
-/* ============= 8.8 Textarea */
+/* ============= 2.4.8 Textarea */
 
 textarea.tr-textarea {
     background-color: transparent;
@@ -2128,13 +2132,13 @@ textarea.tr-textarea.dolu + label {
     transform: translateY(-80px) scale(.75) !important
 }
 
-/* ============= 9. Footer */
+/* ============= 2.5 Footer */
 
 footer.tr-footer {
     background-color: #1AC5B8;
     box-shadow: 0 0 5px rgba(0,0,0,.5);
     color: #FFF;
-    padding: 25px 0 50px 0;
+    padding-top: 25px;
     position: relative;
     width: 100%
 }
@@ -2144,15 +2148,15 @@ footer.tr-footer nav ul li a {
 }
 
 footer.tr-footer .detay {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.1);
+    margin-top: 50px;
     padding: 15px 0;
     position: relative;
-    top: 50px;
     width: 100%
 }
 
-/* ============= 10. Kartlar */
-/* ============= 10.1 Kart Kodlari */
+/* ============= 2.6 Kartlar */
+/* ============= 2.6.1 Kart Kodlari */
 
 .kart {
     background-color: #FFF;
@@ -2233,7 +2237,7 @@ footer.tr-footer .detay {
     transform: translateY(0);
 }
 
-/* ============= 10.2 Kart Efektleri */
+/* ============= 2.6.2 Kart Efektleri */
 
 /* Yakinlastirma */
 .kart.efekt1 > img {
@@ -2322,56 +2326,7 @@ footer.tr-footer .detay {
     -webkit-filter: blur(1px)
 }
 
-/* ============= 11 Nav */
-/* ============= 11.1 Filtre Menu */
-
-.tr-filtre nav {
-    background-color: #1AC5B8;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
-    display: table;
-    margin: 0 auto 10px auto
-}
-
-.tr-filtre nav a {
-    color: #FFF;
-    cursor: pointer;
-    display: block;
-    float: left;
-    font-size: 13px;
-    margin: 3px;
-    letter-spacing: 1px;
-    line-height: 1.7;
-    padding: 5px 13px;
-    text-align: center;
-    transition: .3s
-}
-
-.tr-filtre nav a:hover {
-    background-color: #FFF;
-    border-radius: 50px;
-    color: #000;
-    opacity: .5;
-    text-decoration: none
-}
-
-.tr-filtre nav a.aktif {
-    background-color: #FFF;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
-    color: #000;
-    opacity: 1
-}
-
-.tr-filtre .icerik {
-    animation: opac 5s;
-    -webkit-animation: opac 5s;
-    background-color: #FFF
-}
-
-
-
-/* ============= 11.2 Koleksiyonlar */
+/* ============= 2.7 Koleksiyonlar */
 
 nav.koleksiyon {
     background-color: #FFF;
@@ -2428,7 +2383,7 @@ nav.koleksiyon.saydam a {
     border-bottom: 0
 }
 
-/* ============= 11.3 Menu */
+/* ============= 2.8 Menu */
 
 nav.menu {
     background-color: #1AC5B8;
@@ -2618,169 +2573,7 @@ nav.menu ul li ul li:hover a {
     }
 }
 
-/* ============= 11.4 Sayfa Konumu */
-
-nav.konum {
-    background-color: #1AC5B8;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: rgba(255,255,255,.6);
-    height: 50px;
-    line-height: 50px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 0 25px;
-    white-space: nowrap;
-    width: 100%
-}
-
-nav.konum.kucuk {
-    font-size: 13px;
-    height: 30px;
-    line-height: 30px
-}
-
-nav.konum.buyuk {
-    font-size: 20px;
-    height: 70px;
-    line-height: 70px
-}
-
-nav.konum a {
-    color: rgba(255,255,255,.6);
-    margin-right: 10px
-}
-
-nav.konum a:last-of-type {
-    color: #FFF
-}
-
-nav.konum a::after {
-    content: ">";
-    margin-left: 10px
-}
-
-nav.konum a:last-of-type::after {
-    content:""
-}
-
-nav.konum a:hover {
-    text-decoration: none
-}
-
-nav.konum.saydam {
-    background-color: transparent !important
-}
-
-nav.konum.saydam a {
-    color: rgba(0,0,0,.6)
-}
-
-nav.konum.saydam a:last-of-type {
-    color: #000
-}
-
-/* ============= 11.5 Sayfa Numaralandirma */
-
-nav.numara {
-    border-radius: 5px;
-    cursor: default;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-nav.numara a {
-    background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.1);
-    border-radius: 3px;
-    color: #000;
-    cursor: pointer;
-    font-size: 13px;
-    margin-left: 2px;
-    padding: 8px 13px;
-    transition: .15s
-}
-
-nav.numara a:first-child {
-    margin-left: 0
-}
-
-nav.numara a:hover {
-    border: 1px solid rgba(0,0,0,.3);
-    text-decoration: none
-}
-
-nav.numara a.aktif {
-    background-color: #1AC5B8;
-    border-color: transparent;
-    color: #FFF;
-    cursor: default
-}
-
-nav.numara a.pasif {
-    color: #ECECEC;
-    cursor: default
-}
-
-nav.numara a.pasif:hover {
-    border-color: rgba(0,0,0,.1)
-}
-
-nav.numara.kucuk a {
-    font-size: 11px;
-    margin-left: 2px;
-    padding: 5px 8px
-}
-
-nav.numara.buyuk a {
-    font-size: 15px;
-    margin-left: 2px;
-    padding: 10px 15px
-}
-
-/* ============= 11.6 Tab Menu */
-
-.tr-tab {
-    background-color: #FFF
-}
-
-.tr-tab nav {
-    display: table;
-    width: 100%
-}
-
-.tr-tab nav a {
-    border: 1px solid rgba(0,0,0,0);
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    color: #000;
-    cursor: pointer;
-    display: table-cell;
-    letter-spacing: 1px;
-    line-height: 30px;
-    opacity: .75;
-    padding: 5px 10px;
-    text-align: center
-}
-
-.tr-tab nav a.aktif {
-    background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.1);
-    border-bottom: 1px solid rgba(0,0,0,0);
-    color: #333;
-    opacity: 1
-}
-
-.tr-tab nav a:hover {
-    text-decoration: none
-}
-
-.tr-tab .tr-icerik {
-    border: 1px solid rgba(0,0,0,.1);
-    border-top: 0;
-    padding-top: 15px
-}
-
-/* ============= 12. Notlar */
+/* ============= 2.9 Notlar */
 
 .tr-not {
     background-color: #1AC5B8;
@@ -2827,7 +2620,7 @@ nav.numara.buyuk a {
 }
 
 
-/* ============= 13. Pano */
+/* ============= 2.10 Pano */
 
 .tr-pano {
     background-color: #1AC5B8;
@@ -2868,8 +2661,128 @@ nav.numara.buyuk a {
     margin: 0
 }
 
-/* ============= 14. Yazi */
-/* ============= 14.1 Yazi Ayarlari */
+/* ============= 2.11 Sayfa Konumu */
+
+.tr-konum {
+    background-color: #1AC5B8;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: rgba(255,255,255,.6);
+    height: 50px;
+    line-height: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 25px;
+    white-space: nowrap;
+    width: 100%
+}
+
+.tr-konum.kucuk {
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px
+}
+
+.tr-konum.buyuk {
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px
+}
+
+.tr-konum a {
+    color: rgba(255,255,255,.6);
+    margin-right: 10px
+}
+
+.tr-konum a:last-of-type {
+    color: #FFF
+}
+
+.tr-konum a::after {
+    content: ">";
+    margin-left: 10px
+}
+
+.tr-konum a:last-of-type::after {
+    content:""
+}
+
+.tr-konum a:hover {
+    text-decoration: none
+}
+
+.tr-konum.saydam {
+    background-color: transparent !important
+}
+
+.tr-konum.saydam a {
+    color: rgba(0,0,0,.6)
+}
+
+.tr-konum.saydam a:last-of-type {
+    color: #000
+}
+
+/* ============= 2.12 Sayfa Numaralandirma */
+
+.tr-numara {
+    border-radius: 5px;
+    cursor: default;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.tr-numara a {
+    background-color: #FFF;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 2px;
+    padding: 8px 13px;
+    transition: .15s
+}
+
+.tr-numara a:first-child {
+    margin-left: 0
+}
+
+.tr-numara a:hover {
+    border: 1px solid rgba(0,0,0,.3);
+    text-decoration: none
+}
+
+.tr-numara a.aktif {
+    background-color: #1AC5B8;
+    border-color: transparent;
+    color: #FFF;
+    cursor: default
+}
+
+.tr-numara a.pasif {
+    color: #ECECEC;
+    cursor: default
+}
+
+.tr-numara a.pasif:hover {
+    border-color: rgba(0,0,0,.1)
+}
+
+.tr-numara.kucuk a {
+    font-size: 11px;
+    margin-left: 2px;
+    padding: 5px 8px
+}
+
+.tr-numara.buyuk a {
+    font-size: 15px;
+    margin-left: 2px;
+    padding: 10px 15px
+}
+
+/* ============= 2.13. Yazi */
+/* ============= 2.13.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
@@ -2884,7 +2797,7 @@ nav.numara.buyuk a {
 }
 
 .yazi-golge {
-    text-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    text-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10)
 }
 
 .yazi-golge2 {
@@ -2893,12 +2806,12 @@ nav.numara.buyuk a {
 
 .yazi-kalin,
 .yazi-kalin a {
-    font-weight: bold
+    font-weight: bold !important
 }
 
 .yazi-ince,
 .yazi-ince a {
-    font-weight: 100
+    font-weight: 100 !important
 }
 
 .yazi-yatay,
@@ -2907,15 +2820,15 @@ nav.numara.buyuk a {
 }
 
 .yazi-buyukharf {
-    text-transform: uppercase
+    text-transform: uppercase !important
 }
 
 .yazi-kucukharf {
-    text-transform: lowercase
+    text-transform: lowercase !important
 }
 
 .yazi-basharfbuyuk {
-    text-transform: capitalize
+    text-transform: capitalize !important
 }
 
 .yazi-kes {
@@ -2924,7 +2837,7 @@ nav.numara.buyuk a {
     white-space: nowrap
 }
 
-/* ============= 14.2 Yazi Boyutlari */
+/* ============= 2.13.2 Yazi Boyutlari */
 
 .yazi-cokbuyuk {
     font-size: 40px
@@ -2964,7 +2877,7 @@ nav.numara.buyuk a {
     }
 }
 
-/* ============= 14.3 Yazi Renkleri */
+/* ============= 2.13.3 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a {
@@ -3489,53 +3402,157 @@ nav.numara.buyuk a {
     color: #050505 !important
 }
 
+/* ============= 3. JavaScript */
+/* ============= 3.1 Akordiyon Menu */
 
 .tr-akordiyon {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     display: table;
-    width: 100%;
+    width: 100%
 }
+
 .tr-akordiyon .baslik {
+    border-top: 1px solid rgba(0,0,0,.2);
     color: #b5b5b5;
     display: block;
-    border-top: 1px solid rgba(0,0,0,.2);
     font-size: 14px;
-    padding: 10px 35px;
     letter-spacing: .5px;
-    transition: .1s;
+    padding: 10px 35px;
+    transition: .1s
 }
+
 .tr-akordiyon .baslik:hover {
     color: #000;
-    text-decoration: none;
+    text-decoration: none
 }
+
 .tr-akordiyon .baslik:first-child {
     border-top-width: 0
 }
+
 .tr-akordiyon .baslik::before {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0,0,0,.2);
     content: "";
-    left: -8px;
     display: inline-block;
+    left: -8px;
     position: relative;
-    top: -2px;
     transform: rotate(-90deg);
-    transition: .3s
+    transition: .3s;
+    top: -2px
 }
+
 .tr-akordiyon .baslik:hover::before {
-    border-top: 4px solid rgba(0,0,0,1);
+    border-top: 4px solid rgba(0,0,0,1)
 }
+
 .tr-akordiyon .baslik.aktif {
-    color: #000;
-    border-bottom-width: 0
+    border-bottom-width: 0;
+    color: #000
 }
+
 .tr-akordiyon .baslik.aktif::before {
     border-top-color: rgba(0,0,0,1);
     content: "";
-    transform: rotate(0deg);
+    transform: rotate(0deg)
 }
+
 .tr-akordiyon .icerik {
-    padding: 5px 35px;
+    padding: 5px 35px
+}
+
+/* ============= 3.2 Filtre Menu */
+
+.tr-filtre nav {
+    background-color: #1AC5B8;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    display: table;
+    margin: 0 auto 10px auto
+}
+
+.tr-filtre nav a {
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin: 3px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    padding: 5px 13px;
+    text-align: center;
+    transition: .3s
+}
+
+.tr-filtre nav a:hover {
+    background-color: #FFF;
+    border-radius: 50px;
+    color: #000;
+    opacity: .5;
+    text-decoration: none
+}
+
+.tr-filtre nav a.aktif {
+    background-color: #FFF;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    color: #000;
+    opacity: 1
+}
+
+.tr-filtre .icerik {
+    animation: opac 5s;
+    -webkit-animation: opac 5s;
+    background-color: #FFF
+}
+
+/* ============= 3.3 Medya */
+
+/* ============= 3.4 Modal */
+
+/* ============= 3.5 Slider */
+
+/* ============= 3.6 Tab Menu */
+
+.tr-tab {
+    background-color: #FFF
+}
+
+.tr-tab nav {
+    display: table;
+    width: 100%
+}
+
+.tr-tab nav a {
+    border: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #000;
+    cursor: pointer;
+    display: table-cell;
+    letter-spacing: 1px;
+    line-height: 30px;
+    opacity: .75;
+    padding: 5px 10px;
+    text-align: center
+}
+
+.tr-tab nav a.aktif {
+    background-color: #FFF;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,0);
+    color: #333;
+    opacity: 1
+}
+
+.tr-tab nav a:hover {
+    text-decoration: none
+}
+
+.tr-tab .tr-icerik {
+    border: 1px solid rgba(0,0,0,.1);
+    border-top: 0;
+    padding-top: 15px
 }
