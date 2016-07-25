@@ -11,6 +11,7 @@
 *   2. Form
 *   3. Menu
 *   4. Notlar
+*   5. Sayfa Konumu
 *
 */
 
@@ -163,3 +164,8 @@ $(".tr-not").append("<span class=kaldir>&times;</span>");
 $(".tr-not").on("click", "span.kaldir", function(){
     $(this).parents(".tr-not").addClass("gizle")
 })
+
+
+/* ============= 5. Sayfa Konumu */
+
+$(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault(); })
