@@ -130,27 +130,29 @@ $(".tr-filtre").on("click", "nav a", function(){
 ;(function($){
     $.fn.akordiyon = function(ayarlar){
         var obj = $.extend({
-            "akordiyonSinifi" : "tr-akordiyon",
             "aktifSinifi" : "aktif",
             "baslikSinifi" : "baslik",
             "icerikSinifi" : "icerik",
-            "aktifSekme" : 1
+            "aktifSekme" : 1,
+            "sure" : 200,
+            "gecikme" : 0,
+            "tema" : ""
         }, ayarlar);
         return this.each(function() {
             $sekmeSayisi = $("." + obj.baslikSinifi, this).length;
             if (Math.abs(obj.aktifSekme) > $sekmeSayisi){
                 obj.aktifSekme = $sekmeSayisi;
             }
-            $(this).find("." + obj.icerikSinifi).slideUp()
-            .eq(obj.aktifSekme-1).slideDown()
-            .end().end().find("." + obj.baslikSinifi).eq(obj.aktifSekme-1).addClass("aktif")
+            $(this).addClass("tr-akordiyon " + obj.tema)
+            .find("." + obj.icerikSinifi).delay(obj.gecikme).slideUp(obj.sure)
+            .eq(obj.aktifSekme-1).slideDown(obj.sure)
+            .end().end().find("." + obj.baslikSinifi).eq(obj.aktifSekme-1).addClass("aktif");
             $(this).find("." + obj.baslikSinifi).click(function(e){
                 e.preventDefault();
                 var index = $(this).index("." + obj.baslikSinifi);
-                $(this).addClass(obj.aktifSinifi)
-                .siblings("." + obj.aktifSinifi).removeClass("aktif")
-                .parents("." + obj.akordiyonSinifi).find("." + obj.icerikSinifi).slideUp()
-                .eq(index-1).slideDown()
+                $(this).toggleClass(obj.aktifSinifi).siblings("."+ obj.baslikSinifi).removeClass(obj.aktifSinifi)
+                .end().next().delay(obj.gecikme).slideToggle(obj.sure)
+                .end().next().delay(obj.gecikme).siblings("."+ obj.icerikSinifi).slideUp(obj.sure)
             });
         });
     }

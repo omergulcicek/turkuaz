@@ -3406,61 +3406,87 @@ nav.menu ul li ul li:hover a {
 /* ============= 3.1 Akordiyon Menu */
 
 .tr-akordiyon {
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 5px;
     display: table;
+    margin-bottom: 30px;
     width: 100%
 }
 
+.tr-akordiyon.tema2 {
+    border: 1px solid rgba(0,0,0,.05)
+}
+
 .tr-akordiyon .baslik {
-    border-top: 1px solid rgba(0,0,0,.2);
-    color: #b5b5b5;
+    background-color: rgba(0,0,0,.025);
+    border-left: 5px solid transparent;
+    color: #000;
     display: block;
     font-size: 14px;
     letter-spacing: .5px;
-    padding: 10px 35px;
-    transition: .1s
+    margin-bottom: 2px;
+    padding: 10px 15px;
+    position: relative;
+    transition: .3s
+}
+
+.tr-akordiyon.tema2 .baslik {
+    border-left-width: 0;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    margin-bottom: 0
+}
+
+.tr-akordiyon.tema2 .baslik:last-of-type {
+    border-bottom-width: 0
 }
 
 .tr-akordiyon .baslik:hover {
-    color: #000;
+    background-color: rgba(0,0,0,.025);
+    border-left: 5px solid #1AC5B8;
     text-decoration: none
 }
 
-.tr-akordiyon .baslik:first-child {
-    border-top-width: 0
+.tr-akordiyon.tema2 .baslik:hover {
+    background-color: rgba(0,0,0,.05);
+    border-left-width: 0
 }
 
-.tr-akordiyon .baslik::before {
+.tr-akordiyon .baslik::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.2);
+    border-top: 4px solid rgba(0,0,0,.1);
     content: "";
-    display: inline-block;
-    left: -8px;
-    position: relative;
+    position: absolute;
+    right: 20px;
     transform: rotate(-90deg);
     transition: .3s;
-    top: -2px
+    top: 18px
 }
 
-.tr-akordiyon .baslik:hover::before {
-    border-top: 4px solid rgba(0,0,0,1)
+.tr-akordiyon .baslik:hover::after {
+    border-top-color: rgba(0,0,0,1)
 }
 
 .tr-akordiyon .baslik.aktif {
-    border-bottom-width: 0;
+    background-color: rgba(0,0,0,.025);
+    border-left: 5px solid #1AC5B8;
     color: #000
 }
 
-.tr-akordiyon .baslik.aktif::before {
+.tr-akordiyon.tema2 .baslik.aktif {
+    background-color: rgba(0,0,0,.05);
+    border-left-width: 0
+}
+
+.tr-akordiyon .baslik.aktif::after {
     border-top-color: rgba(0,0,0,1);
-    content: "";
     transform: rotate(0deg)
 }
 
 .tr-akordiyon .icerik {
-    padding: 5px 35px
+    padding: 10px 20px
+}
+
+.tr-akordiyon .icerik p {
+    margin-bottom: 0
 }
 
 /* ============= 3.2 Filtre Menu */
