@@ -105,11 +105,12 @@ $(window).resize(function() { mobil() })
     $.fn.tab = function(ayarlar){
         var obj = $.extend({
             "aktifSinifi" : "aktif",
+            "icerikSinifi" : "icerik",
             "aktifSekme" : 1,
-            "icerikSinifi" : "tr-icerik"
+            "tema" : ""
         }, ayarlar)
         return this.each(function() {
-            $(this).addClass("tr-tab")
+            $(this).addClass("tr-tab " + obj.tema)
             .find("nav a").eq(obj.aktifSekme - 1).addClass(obj.aktifSinifi)
             .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("tr-icerik gizle")
             .eq(obj.aktifSekme - 1).removeClass("gizle")
