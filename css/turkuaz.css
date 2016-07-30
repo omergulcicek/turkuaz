@@ -2161,7 +2161,7 @@ footer.tr-footer .detay {
 /* ============= 2.6 Kartlar */
 /* ============= 2.6.1 Kart Kodlari */
 
-.kart {
+.tr-kart {
     background-color: #FFF;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
@@ -2173,7 +2173,7 @@ footer.tr-footer .detay {
     width: 100%
 }
 
-.kart .resim {
+.tr-kart .resim {
     height: 400px;
     min-width: 100%;
     max-width: none;
@@ -2181,7 +2181,7 @@ footer.tr-footer .detay {
     vertical-align: middle
 }
 
-.kart .icerik {
+.tr-kart .icerik {
     background-color: #FFF;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     height: 175px;
@@ -2194,12 +2194,12 @@ footer.tr-footer .detay {
     width: 100%
 }
 
-.kart:hover .icerik {
+.tr-kart:hover .icerik {
     height: 60px;
     padding-top: 0
 }
 
-.kart .icerik .baslik {
+.tr-kart .icerik .baslik {
     font-size: 32px;
     overflow: hidden;
     padding: 0 5%;
@@ -2207,7 +2207,7 @@ footer.tr-footer .detay {
     white-space: nowrap
 }
 
-.kart .icerik .baslik::after {
+.tr-kart .icerik .baslik::after {
     background-color: rgba(0,0,0,.25);
     content: "";
     display: block;
@@ -2217,18 +2217,18 @@ footer.tr-footer .detay {
     width: 75px
 }
 
-.kart:hover .icerik .baslik::after {
+.tr-kart:hover .icerik .baslik::after {
     height: 0
 }
 
-.kart .icerik p {
+.tr-kart .icerik p {
     color: #555;
     font-size: 13px;
     line-height: 1.5;
     padding: 0 10% 5% 10%
 }
 
-.kart a.buton {
+.tr-kart a.buton {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -2236,96 +2236,96 @@ footer.tr-footer .detay {
     width: 100%
 }
 
-.kart:hover a.buton {
+.tr-kart:hover a.buton {
     transform: translateY(0);
 }
 
 /* ============= 2.6.2 Kart Efektleri */
 
 /* Yakinlastirma */
-.kart.efekt1 > img {
+.tr-kart.efekt1 > img {
     transform: scale(1)
 }
 
-.kart.efekt1:hover > img {
+.tr-kart.efekt1:hover > img {
     transform: scale(1.1)
 }
 
 /* Uzaklastirma */
-.kart.efekt2 > img {
+.tr-kart.efekt2 > img {
     transform: scale(1.1)
 }
 
-.kart.efekt2:hover > img {
+.tr-kart.efekt2:hover > img {
     transform: scale(1)
 }
 
 /* Sola Gecer */
-.kart.efekt3 img {
+.tr-kart.efekt3 img {
     margin-left: 30px;
     transform: scale(1.1)
 }
 
-.kart.efekt3:hover > img {
+.tr-kart.efekt3:hover > img {
     margin-left: 0
 }
 
 /* Saga Gecer */
-.kart.efekt4 > img {
+.tr-kart.efekt4 > img {
     margin-left: -30px;
     transform: scale(1.1)
 }
 
-.kart.efekt4:hover > img {
+.tr-kart.efekt4:hover > img {
     margin-left: 0
 }
 
 /* Capraz Yakinlastirir */
-.kart.efekt5 > img {
+.tr-kart.efekt5 > img {
     transform: rotate(0) scale(1)
 }
 
-.kart.efekt5:hover > img {
+.tr-kart.efekt5:hover > img {
     transform: rotate(5deg) scale(1.1)
 }
 
 /* Siyah Beyaz */
-.kart.efekt6 > img {
+.tr-kart.efekt6 > img {
     opacity: .95;
     -webkit-filter: grayscale(100%)
 }
 
-.kart.efekt6:hover > img {
+.tr-kart.efekt6:hover > img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
 
 /* Renklendirir */
-.kart.efekt7 > img {
+.tr-kart.efekt7 > img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
 
-.kart.efekt7:hover > img {
+.tr-kart.efekt7:hover > img {
     opacity: .95;
     -webkit-filter: grayscale(100%)
 }
 
 /* Bulaniklastirir */
-.kart.efekt8 > img {
+.tr-kart.efekt8 > img {
     -webkit-filter: blur(1px)
 }
 
-.kart.efekt8:hover > img {
+.tr-kart.efekt8:hover > img {
     -webkit-filter: blur(0)
 }
 
 /* Netlestirir */
-.kart.efekt9 > img {
+.tr-kart.efekt9 > img {
     -webkit-filter: blur(0)
 }
 
-.kart.efekt9:hover > img {
+.tr-kart.efekt9:hover > img {
     -webkit-filter: blur(1px)
 }
 
