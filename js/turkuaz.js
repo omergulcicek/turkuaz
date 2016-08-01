@@ -184,3 +184,83 @@ $(".tr-not").on("click", "span.kaldir", function(){
 /* ============= 5. Sayfa Konumu */
 
 $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() })
+
+/* ============= Modal */
+
+ (function($) {
+   $.fn.modal = function(ayarlar) {
+     var obj = $.extend({
+       "linkClass": "modal-link",
+       "modalIcClass": "modal-inner",
+       "opak": 5,
+       "kapatIcon": true,
+       "modalSize": "buyuk",
+       "modalEfekt": "efekt-4",
+       "delay": 0,
+     }, ayarlar)
+
+     return this.each(function() {
+       var $modal = $(this);
+
+       if (obj.modalSize == "buyuk") {
+         $modal.find("." + obj.modalIcClass).css({
+           "width": "80%"
+         });
+       } else if (obj.modalSize == "orta") {
+         $modal.find("." + obj.modalIcClass).css({
+           "width": "65%"
+         });
+       } else if (obj.modalSize == "kucuk") {
+         $modal.find("." + obj.modalIcClass).css({
+           "width": "45%"
+         });
+       }
+
+       function modalfonk() {
+
+         if ($modal.has(".tr-karart")) {
+           $modal.find(".tr-karart").remove();
+         }
+
+         if ($modal.find("." + obj.modalIcClass).hasClass("anim " + obj.modalEfekt)) {
+           $modal.find("." + obj.modalIcClass).removeClass("anim " + obj.modalEfekt);
+         }
+
+         $modal.find("." + obj.modalIcClass).fadeIn(obj.delay).addClass("anim " + obj.modalEfekt);
+         $modal.append("<div class='tr-karart'></div>")
+           .find('.tr-karart').css({
+             "background-color": "rgba(0,0,0,." + obj.opak + ")",
+             "height": "100%",
+             "left": "0",
+             "position": "fixed",
+             "top": "0",
+             "width": "100%",
+             "z-index": "999"
+           }).hide().fadeIn(obj.delay);
+         $("body").css({
+           "overflow": "hidden"
+         });
+         if (obj.kapatIcon) {
+           $modal.append("<button class='modal-kapat-icon'></button>");
+         }
+       }
+       if ($modal.hasClass("modal-acik")) {
+         modalfonk();
+       }
+       $modal.find("." + obj.linkClass).on("click", function(e) {
+         e.preventDefault();
+         modalfonk();
+       });
+       $("body").on("click", ".tr-karart, .modal-kapat-icon, .modal-kapat", function(e) {
+         e.preventDefault();
+         $modal.find(".modal-inner").scrollTop(0);
+         $modal.find(".modal-kapat-icon").remove();
+         $("." + obj.modalIcClass).fadeOut(obj.delay);
+         $modal.find(".tr-karart").fadeOut(obj.delay);
+         $("body").css({
+           "overflow": "auto"
+         });
+       });
+     });
+   }
+ })(jQuery);
