@@ -190,26 +190,31 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
 ;(function($) {
     $.fn.modal = function(ayarlar) {
         var obj = $.extend({
-            "trigger": "modal-trigger",
-            "modalIcerik": "modal-icerik",
-            "boyut": "orta",
-            "modalEfekt": "efekt1",
-            "opak": .75,
-            "kapatButon": true
+            "modalSinif" : "modal",
+            "opacity" : .1,
+            "overlay" : "tr-modal-karart",
+            "openTime" : 500,
+            "closeTime" : 250,
+            "close" : true,
+            "closeConnent" : "&times",
+            "size" : "orta"
         }, ayarlar)
         return this.each(function() {
-            $modal = $(this);
-            $modal.find("." + obj.modalIcerik).addClass(obj.modalEfekt + " " + obj.boyut + " gizle")
-            $modal.find("." + obj.trigger).click(function(e){
-                $modal.find("." + obj.modalIcerik).removeClass("gizle")
-                .end().append('<div class=tr-modal-karart></div>').find(".tr-modal-karart").css({ "background-color": "rgba(0,0,0," + obj.opak + ")",
-                "height": "100%", "left": "0", "position": "fixed", "top": "0", "width": "100%", "z-index": "1000" })
-                if (obj.kapatButon) { $modal.append("<span class=modal-kapat>&times</span>") }
-            });
-            $("body").on("click", ".tr-modal-karart, .modal-kapat", function(e) {
+            $("body").find('[data-modal]').hide()
+            $("body").on("click", "a.modal", function(e) {
                 e.preventDefault();
-                $modal.find("span.modal-kapat,.tr-modal-karart").remove()
-                .end().find("." + obj.modalIcerik).addClass("gizle").scrollTop(0)
+                var modal = $(this).attr("href");
+                $("body").find('[data-modal=' + modal + ']').addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
+                .end().append('<div class=' + obj.overlay + '></div>')
+                .find("." + obj.overlay).css({ "background-color": "rgba(0,0,0," + obj.opacity + ")", "height": "100%", "left": "0",
+                "position": "fixed", "top": "0", "width": "100%", "z-index": "1000" })
+                if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
+
+                $("body").on("click", ".modal-kapat, ." + obj.overlay + ", .kapatButon", function(e) {
+                    e.preventDefault();
+                    $("body").find('[data-modal=' + modal + ']').fadeOut(obj.closeTime)
+                    .end().find("." + obj.overlay + ", .kapatButon").remove()
+                });
             });
         });
     }
