@@ -193,26 +193,29 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
             "modalSinif" : "modal",
             "opacity" : .1,
             "overlay" : "tr-modal-karart",
-            "openTime" : 500,
+            "openTime" : 250,
             "closeTime" : 250,
-            "close" : true,
+            "close" : false,
             "closeConnent" : "&times",
-            "size" : "orta"
+            "size" : "orta",
+            "autofocus" : true
         }, ayarlar)
         return this.each(function() {
             $("body").find('[data-modal]').hide()
             $("body").on("click", "a.modal", function(e) {
                 e.preventDefault();
-                var modal = $(this).attr("href");
-                $("body").find('[data-modal=' + modal + ']').addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
+                var href = $(this).attr("href");
+                var modal = $("body").find('[data-modal=' + href + ']')
+                modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
                 .end().append('<div class=' + obj.overlay + '></div>')
                 .find("." + obj.overlay).css({ "background-color": "rgba(0,0,0," + obj.opacity + ")", "height": "100%", "left": "0",
                 "position": "fixed", "top": "0", "width": "100%", "z-index": "1000" })
                 if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
+                if (obj.autofocus) { modal.find(".tr-input:visible:first").focus() }
 
                 $("body").on("click", ".modal-kapat, ." + obj.overlay + ", .kapatButon", function(e) {
                     e.preventDefault();
-                    $("body").find('[data-modal=' + modal + ']').fadeOut(obj.closeTime)
+                    modal.fadeOut(obj.closeTime)
                     .end().find("." + obj.overlay + ", .kapatButon").remove()
                 });
             });
