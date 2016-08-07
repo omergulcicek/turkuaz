@@ -1413,6 +1413,17 @@ table.tr-tablo::-webkit-scrollbar-thumb {
 /* ============= 2. Bilesenler */
 /* ============= 2.1 Arkaplanlar */
 
+.tr-karart {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
 .desen,
 .desen1 {
     background-image: url("../img/desen/desen.png")
@@ -3549,7 +3560,7 @@ div.modal {
     max-height: 750px;
     left: 50%;
     overflow: auto;
-    padding: 10px 25px 25px 25px;
+    padding: 25px;
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);

@@ -60,12 +60,11 @@ function placeholder(){
 $("nav.menu.mobil").on("click", "img.logo", function(){
     $(this).hide()
     .parents("nav.menu.mobil").animate({left:"0"})
-    $("body").append("<div class='tr-karart'></div>")
-    .end().find(".tr-karart").css({ "background-color": "rgba(0,0,0,.85)", "height": "100%",
-    "left": "0", "position": "fixed", "top": "0", "width": "100%", "z-index": "999" })
+    var overlay = $("<div></div>").addClass("tr-karart menu")
+    $("body").append(overlay)
 })
 
-$("body").on("click", ".tr-karart", function(){
+$("body").on("click", ".tr-karart.menu", function(){
     $(this).remove()
     $("nav.menu.mobil").animate({left:"-240px"})
     .find("img.logo").delay(400).fadeIn()
@@ -86,11 +85,11 @@ $("body").on("click", "nav.menu.mobil ul li.acilir", function(){
 function mobil(){
     if ($(window).width() <= 1000) {
         $("nav.menu.mobil").addClass("mobilmenu")
-        $(".tr-karart").removeClass("gizle")
+        $(".tr-karart.menu").removeClass("gizle")
     }
     else {
         $("nav.menu.mobil").removeClass("mobilmenu")
-        $(".tr-karart").addClass("gizle")
+        $(".tr-karart.menu").addClass("gizle")
     }
     $("nav.menu ul li.acilir ul").each(function(){
         $(this).hide("600")
@@ -190,15 +189,15 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
 ;(function($) {
     $.fn.modal = function(ayarlar) {
         var obj = $.extend({
-            "modalSinif" : "modal",
+            "autofocus" : true,
+            "backgroundcolor" : "#000",
+            "close" : false,
+            "closeConnent" : "&times",
+            "closeTime" : 250,
             "opacity" : .1,
             "overlay" : "tr-modal-karart",
             "openTime" : 250,
-            "closeTime" : 250,
-            "close" : false,
-            "closeConnent" : "&times",
-            "size" : "orta",
-            "autofocus" : true
+            "size" : "orta"
         }, ayarlar)
         return this.each(function() {
             $("body").find('[data-modal]').hide()
@@ -206,14 +205,13 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
                 e.preventDefault();
                 var href = $(this).attr("href");
                 var modal = $("body").find('[data-modal=' + href + ']')
+                var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
+                overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
                 modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
-                .end().append('<div class=' + obj.overlay + '></div>')
-                .find("." + obj.overlay).css({ "background-color": "rgba(0,0,0," + obj.opacity + ")", "height": "100%", "left": "0",
-                "position": "fixed", "top": "0", "width": "100%", "z-index": "1000" })
+                .end().append(overlay)
                 if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
                 if (obj.autofocus) { modal.find(".tr-input:visible:first").focus() }
-
-                $("body").on("click", ".modal-kapat, ." + obj.overlay + ", .kapatButon", function(e) {
+                $("body").on("click", ".modal-kapat, .tr-karart." + obj.overlay + ", .kapatButon", function(e) {
                     e.preventDefault();
                     modal.fadeOut(obj.closeTime)
                     .end().find("." + obj.overlay + ", .kapatButon").remove()
