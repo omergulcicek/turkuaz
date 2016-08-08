@@ -202,8 +202,8 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
         return this.each(function() {
             $("body").find('[data-modal]').hide()
             $("body").on("click", "a.modal", function(e) {
-                e.preventDefault();
-                var href = $(this).attr("href");
+                e.preventDefault()
+                var href = $(this).attr("href")
                 var modal = $("body").find('[data-modal=' + href + ']')
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
                 overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
@@ -212,11 +212,11 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
                 if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
                 if (obj.autofocus) { modal.find(".tr-input:visible:first").focus() }
                 $("body").on("click", ".modal-kapat, .tr-karart." + obj.overlay + ", .kapatButon", function(e) {
-                    e.preventDefault();
+                    e.preventDefault()
                     modal.fadeOut(obj.closeTime)
                     .end().find("." + obj.overlay + ", .kapatButon").remove()
-                });
-            });
-        });
+                })
+            })
+        })
     }
-})(jQuery);
+})(jQuery)
