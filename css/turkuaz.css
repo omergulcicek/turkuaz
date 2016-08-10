@@ -56,14 +56,14 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
 
 body {
-  margin: 0
+    margin: 0
 }
 
 article,
@@ -78,114 +78,114 @@ menu,
 nav,
 section,
 summary {
-  display: block
+    display: block
 }
 
 audio,
 canvas,
 progress,
 video {
-  display: inline-block
+    display: inline-block
 }
 
 audio:not([controls]) {
-  display: none;
-  height: 0
+    display: none;
+    height: 0
 }
 
 progress {
-  vertical-align: baseline
+    vertical-align: baseline
 }
 
 template,
 [hidden] {
-  display: none
+    display: none
 }
 
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
 }
 
 a:active,
 a:hover {
-  outline-width: 0
+    outline-width: 0
 }
 
 abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
 }
 
 b,
 strong {
-  font-weight: inherit
+    font-weight: inherit
 }
 
 b,
 strong {
-  font-weight: bolder
+    font-weight: bolder
 }
 
 dfn {
-  font-style: italic
+    font-style: italic
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0
+    font-size: 2em;
+    margin: 0.67em 0
 }
 
 mark {
-  background-color: #ff0;
-  color: #000
+    background-color: #ff0;
+    color: #000
 }
 
 small {
-  font-size: 80%
+    font-size: 80%
 }
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
 }
 
 sub {
-  bottom: -0.25em
+    bottom: -0.25em
 }
 
 sup {
-  top: -0.5em
+    top: -0.5em
 }
 
 img {
-  border-style: none
+    border-style: none
 }
 
 svg:not(:root) {
-  overflow: hidden
+    overflow: hidden
 }
 
 code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
-  font-size: 1em
+    font-family: monospace, monospace;
+    font-size: 1em
 }
 
 figure {
-  margin: 1em 40px
+    margin: 1em 40px
 }
 
 hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
 }
 
 button,
@@ -193,94 +193,94 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit;
-  margin: 0
+    font: inherit;
+    margin: 0
 }
 
 optgroup {
-  font-weight: bold
+    font-weight: bold
 }
 
 button,
 input {
-  overflow: visible
+    overflow: visible
 }
 
 button,
 select {
-  text-transform: none
+    text-transform: none
 }
 
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button
+    -webkit-appearance: button
 }
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0
+    border-style: none;
+    padding: 0
 }
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText
+    outline: 1px dotted ButtonText
 }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
 }
 
 legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
 }
 
 textarea {
-  overflow: auto
+    overflow: auto
 }
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
-  padding: 0
+    box-sizing: border-box;
+    padding: 0
 }
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto
+    height: auto
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px
+    -webkit-appearance: textfield;
+    outline-offset: -2px
 }
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none
+    -webkit-appearance: none
 }
 
 ::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54
+    color: inherit;
+    opacity: 0.54
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit
+    -webkit-appearance: button;
+    font: inherit
 }
 
 /* ============= 1. Css  */
@@ -304,7 +304,6 @@ body {
     background-color: #FFF;
     font-family: "Noto Sans", sans-serif;
     font-size: 13px;
-    margin: 0;
     letter-spacing: .3px
 }
 
@@ -343,7 +342,6 @@ menu,
 nav,
 section,
 summary {
-    display: block;
     margin: 0;
     padding: 0
 }
@@ -382,7 +380,6 @@ h6 {
 }
 
 a {
-    background-color: transparent;
     color: #2196F3;
     text-decoration: none;
     transition: .1s
@@ -423,7 +420,6 @@ li {
 }
 
 img {
-    border: 0;
     max-width: 100%
 }
 
