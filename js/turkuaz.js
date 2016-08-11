@@ -12,6 +12,8 @@
 *   3. Menu
 *   4. Notlar
 *   5. Sayfa Konumu
+*   6. Modal
+*   7. Medya Modal
 *
 */
 
@@ -184,7 +186,7 @@ $(".tr-not").on("click", "span.kaldir", function(){
 
 $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() })
 
-/* ============= Modal */
+/* ============= 6. Modal */
 
 ;(function($) {
     $.fn.modal = function(ayarlar) {
@@ -215,6 +217,39 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
                     e.preventDefault()
                     modal.fadeOut(obj.closeTime)
                     .end().find("." + obj.overlay + ", .kapatButon").remove()
+                })
+            })
+        })
+    }
+})(jQuery)
+
+
+/* ============= 7. Medya Modal */
+
+;(function($) {
+    $.fn.medya = function(ayarlar) {
+        var obj = $.extend({
+            "backgroundcolor" : "#333",
+            "height" : "80vh",
+            "opacity" : 1,
+            "overlay" : "tr-medya-karart"
+        }, ayarlar)
+        return this.each(function() {
+            $("body").on("click", ".tr-medya", function(e) {
+                e.preventDefault()
+                $(this).addClass("aktif")
+                .css({ "max-height": obj.height, "height": obj.height,
+                "left": "50%", "position": "fixed", "top": "50%", "transform": "translate(-50%, -50%)", "z-index": "1001" })
+                var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
+                overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
+                $("body").append(overlay)
+                .end().find("nav.menu.mobil > img.logo").addClass("gizle")
+                $("body").on("click", ".tr-medya.aktif", function(e) {
+                    e.preventDefault()
+                    $(this).removeClass("aktif")
+                    .css({ "height": "", "left": "", "max-height": "", "max-width": "", "position": "", "top": "", "transform": "", "z-index": "" })
+                    $("body").find(".tr-karart." + obj.overlay).remove()
+                    .end().find("nav.menu.mobil > img.logo").removeClass("gizle")
                 })
             })
         })
