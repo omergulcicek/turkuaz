@@ -195,10 +195,10 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
             "backgroundcolor" : "#000",
             "close" : false,
             "closeConnent" : "&times",
-            "closeTime" : 250,
-            "opacity" : .1,
+            "closeTime" : 100,
+            "opacity" : .5,
             "overlay" : "tr-modal-karart",
-            "openTime" : 250,
+            "openTime" : 500,
             "size" : "orta"
         }, ayarlar)
         return this.each(function() {
@@ -210,7 +210,7 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
                 overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
                 modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
-                .end().append(overlay)
+                if ($(".tr-karart." + obj.overlay).length == 0) { $("body").append(overlay) }
                 if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
                 if (obj.autofocus) { modal.find(".tr-input:visible:first").focus() }
                 $("body").on("click", ".modal-kapat, .tr-karart." + obj.overlay + ", .kapatButon", function(e) {
@@ -230,28 +230,36 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
     $.fn.medya = function(ayarlar) {
         var obj = $.extend({
             "backgroundcolor" : "#333",
-            "height" : "80vh",
+            "height" : "90vh",
             "opacity" : 1,
             "overlay" : "tr-medya-karart"
         }, ayarlar)
-        return this.each(function() {
+        return this.each(function(e,index) {
+            $(this).addClass("tr-medya")
+            $(window).scroll(function() { medyaKapat() })
+            $(document).keyup(function(e) { if (e.keyCode === 27) { medyaKapat() } })
+            if ($(index).hasClass("aktif")) { medyaKapat() }
             $("body").on("click", ".tr-medya", function(e) {
                 e.preventDefault()
                 $(this).addClass("aktif")
-                .css({ "max-height": obj.height, "height": obj.height,
+                .css({ "max-height": obj.height,
                 "left": "50%", "position": "fixed", "top": "50%", "transform": "translate(-50%, -50%)", "z-index": "1001" })
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
                 overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
-                $("body").append(overlay)
-                .end().find("nav.menu.mobil > img.logo").addClass("gizle")
-                $("body").on("click", ".tr-medya.aktif", function(e) {
-                    e.preventDefault()
-                    $(this).removeClass("aktif")
-                    .css({ "height": "", "left": "", "max-height": "", "max-width": "", "position": "", "top": "", "transform": "", "z-index": "" })
-                    $("body").find(".tr-karart." + obj.overlay).remove()
-                    .end().find("nav.menu.mobil > img.logo").removeClass("gizle")
-                })
+                if ($(".tr-karart." + obj.overlay).length == 0) {
+                    $("body").append(overlay)
+                    .end().find("nav.menu.mobil > img.logo").addClass("gizle")
+                }
             })
         })
     }
 })(jQuery)
+
+function medyaKapat() {
+    $(".tr-medya.aktif").removeClass("aktif")
+    .css({ "height": "", "left": "", "max-height": "", "max-width": "", "position": "", "top": "", "transform": "", "z-index": "" })
+    $("body").find(".tr-karart").remove()
+    .end().find("nav.menu.mobil > img.logo").removeClass("gizle")
+}
+
+$(".tr-medya").medya()
