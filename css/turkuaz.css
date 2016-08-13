@@ -3937,10 +3937,20 @@ span.kapatButon {
 }
 
 .tr-progress.cizgili .tr-yuzde {
-    background-image: -webkit-linear-gradient(-45deg,rgba(255,255,255,.25) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.25) 50%, rgba(255,255,255,.25) 75%, transparent 75%, transparent);
-    background-size: 30px 30px
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-repeat: repeat-x;
+    background-size: 50px 50px
 }
 
 .tr-progress.animasyon .tr-yuzde {
+    animation: tr-progress .5s linear infinite;
+    background-color: #1AC5B8;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-repeat: repeat-x
+}
 
+@keyframes tr-progress {
+    to {
+        background-position: 50px 0
+    }
 }
