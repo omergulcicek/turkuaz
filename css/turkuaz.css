@@ -3913,3 +3913,34 @@ span.kapatButon {
     border: 1px solid rgba(0,0,0,.1);
     border-top: 0
 }
+
+.tr-progress {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+    width: 100%
+}
+
+.tr-progress .tr-yuzde {
+    background-color: #1AC5B8;
+    display: block;
+    height: 8px
+}
+
+.tr-progress.kucuk .tr-yuzde {
+    height: 4px
+}
+
+.tr-progress.buyuk .tr-yuzde {
+    height: 12px
+}
+
+.tr-progress.cizgili .tr-yuzde {
+    background-image: -webkit-linear-gradient(-45deg,rgba(255,255,255,.25) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.25) 50%, rgba(255,255,255,.25) 75%, transparent 75%, transparent);
+    background-size: 30px 30px
+}
+
+.tr-progress.animasyon .tr-yuzde {
+
+}
