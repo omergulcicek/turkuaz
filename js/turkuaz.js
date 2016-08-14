@@ -208,7 +208,10 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
                 var href = $(this).attr("href")
                 var modal = $("body").find('[data-modal=' + href + ']')
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
-                overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
+                overlay.css({
+                    "background-color": obj.backgroundcolor,
+                    "opacity": obj.opacity
+                })
                 modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
                 if ($(".tr-karart." + obj.overlay).length == 0) { $("body").append(overlay) }
                 if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
@@ -234,18 +237,27 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
             "opacity" : 1,
             "overlay" : "tr-medya-karart"
         }, ayarlar)
-        return this.each(function(e,index) {
+        return this.each(function(index,item) {
             $(this).addClass("tr-medya")
             $(window).scroll(function() { medyaKapat() })
             $(document).keyup(function(e) { if (e.keyCode === 27) { medyaKapat() } })
-            if ($(index).hasClass("aktif")) { medyaKapat() }
+            if ($(this).hasClass("aktif")) { medyaKapat() }
             $("body").on("click", ".tr-medya", function(e) {
                 e.preventDefault()
                 $(this).addClass("aktif")
-                .css({ "max-height": obj.height,
-                "left": "50%", "position": "fixed", "top": "50%", "transform": "translate(-50%, -50%)", "z-index": "1001" })
+                .css({
+                    "max-height": obj.height,
+                    "left": "50%",
+                    "position": "fixed",
+                    "top": "50%",
+                    "transform": "translate(-50%, -50%)",
+                    "z-index": "1001"
+                })
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
-                overlay.css({ "background-color": obj.backgroundcolor, "opacity": obj.opacity })
+                overlay.css({
+                    "background-color": obj.backgroundcolor,
+                    "opacity": obj.opacity
+                })
                 if ($(".tr-karart." + obj.overlay).length == 0) {
                     $("body").append(overlay)
                     .end().find("nav.menu.mobil > img.logo").addClass("gizle")
@@ -257,7 +269,16 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
 
 function medyaKapat() {
     $(".tr-medya.aktif").removeClass("aktif")
-    .css({ "height": "", "left": "", "max-height": "", "max-width": "", "position": "", "top": "", "transform": "", "z-index": "" })
+    .css({
+        "height": "",
+        "left": "",
+        "max-height": "",
+        "max-width": "",
+        "position": "",
+        "top": "",
+        "transform": "",
+        "z-index": ""
+    })
     $("body").find(".tr-karart").remove()
     .end().find("nav.menu.mobil > img.logo").removeClass("gizle")
 }
