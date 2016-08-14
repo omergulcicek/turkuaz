@@ -192,7 +192,7 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
     $.fn.modal = function(ayarlar) {
         var obj = $.extend({
             "autofocus" : true,
-            "backgroundcolor" : "#000",
+            "backgroundColor" : "#000",
             "close" : false,
             "closeConnent" : "&times",
             "closeTime" : 100,
@@ -209,7 +209,7 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
                 var modal = $("body").find('[data-modal=' + href + ']')
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
                 overlay.css({
-                    "background-color": obj.backgroundcolor,
+                    "background-color": obj.backgroundColor,
                     "opacity": obj.opacity
                 })
                 modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
@@ -232,30 +232,62 @@ $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() }
 ;(function($) {
     $.fn.medya = function(ayarlar) {
         var obj = $.extend({
-            "backgroundcolor" : "#333",
-            "height" : "90vh",
+            "backgroundColor" : "#333",
+            "fontSize" : "20px",
+            "height" : "70vh",
             "opacity" : 1,
-            "overlay" : "tr-medya-karart"
+            "overlay" : "tr-medya-karart",
+            "textColor" : "#FFF"
         }, ayarlar)
         return this.each(function(index,item) {
             $(this).addClass("tr-medya")
             $(window).scroll(function() { medyaKapat() })
             $(document).keyup(function(e) { if (e.keyCode === 27) { medyaKapat() } })
             if ($(this).hasClass("aktif")) { medyaKapat() }
-            $("body").on("click", ".tr-medya", function(e) {
+            $(this).on("click", item, function(e) {
                 e.preventDefault()
+                var yazi = $(this).data("yazi")
+                var text = $("<div></div>").addClass("tr-modal-yazi")
+                .html("<span class='tr-modal-span'>" + yazi + "</span>")
+                if (yazi) {
+                    $(this).css({
+                        "max-height": "85vh",
+                        "top": "47%"
+                    })
+                    text.css({
+                        "bottom": "-5px",
+                        "color": obj.textColor,
+                        "font-size": obj.fontSize,
+                        "height": "60px",
+                        "left": "50%",
+                        "line-height": "60px",
+                        "overflow": "hidden",
+                        "position": "fixed",
+                        "text-align": "center",
+                        "transform": "translate(-50%, -50%)",
+                        "width": "75%",
+                        "z-index": "998"
+                    })
+                    if ($(".tr-modal-yazi").length == 0) {
+                        $("body").append(text)
+                    }
+                }
+                else {
+                    $(this).css({
+                        "max-height": obj.height,
+                        "top": "50%"
+                    })
+                }
                 $(this).addClass("aktif")
                 .css({
-                    "max-height": obj.height,
                     "left": "50%",
                     "position": "fixed",
-                    "top": "50%",
                     "transform": "translate(-50%, -50%)",
                     "z-index": "1001"
                 })
                 var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
                 overlay.css({
-                    "background-color": obj.backgroundcolor,
+                    "background-color": obj.backgroundColor,
                     "opacity": obj.opacity
                 })
                 if ($(".tr-karart." + obj.overlay).length == 0) {
@@ -280,6 +312,7 @@ function medyaKapat() {
         "z-index": ""
     })
     $("body").find(".tr-karart").remove()
+    .end().find(".tr-modal-yazi").remove()
     .end().find("nav.menu.mobil > img.logo").removeClass("gizle")
 }
 

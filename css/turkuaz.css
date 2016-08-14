@@ -1617,6 +1617,12 @@ table.tr-tablo::-webkit-scrollbar-thumb {
     clear: both
 }
 
+span.tr-modal-span {
+     display: inline-block;
+     vertical-align: middle;
+     line-height: normal
+ }
+
 /* ============= 1.5 Yazi Ayarlari */
 
 @font-face {
