@@ -3801,7 +3801,7 @@ nav.menu ul li ul li:hover a {
 
 /* ============= 3.4 Modal */
 
-div.modal {
+.tr-modal {
     background-color: #FFF;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
@@ -3815,16 +3815,16 @@ div.modal {
     z-index: 999
 }
 
-.modal.kucuk {
+.tr-modal.kucuk {
     width: 300px
 }
 
-.modal.orta {
+.tr-modal.orta {
     max-width: 1250px;
     width: 50%
 }
 
-.modal.buyuk {
+.tr-modal.buyuk {
     max-width: 1500px;
     width: 80%
 }
@@ -3841,9 +3841,9 @@ span.kapatButon {
 }
 
 @media screen and (max-width: 800px) {
-    .modal.kucuk,
-    .modal.orta,
-    .modal.buyuk {
+    .tr-modal.kucuk,
+    .tr-modal.orta,
+    .tr-modal.buyuk {
         width: 90%
     }
     span.kapatButon {
