@@ -14,10 +14,10 @@ Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn
 Turkuaz Css hakkında yardım, eleştiri yada hata bildirimi için iletisim@turkuazcss.com adresi üzerinden bize ulaşabilirsiniz.
 
 Sosyal ağ hesaplarımızı takip ederek yeniliklerden haberdar olabilirsiniz.
-- [facebook.com/TurkuazCss](http://facebook.com/TurkuazCss)
-- [twitter.com/TurkuazCss](http://twitter.com/TurkuazCss)
-- [instagram.com/TurkuazCss](http://instagram.com/TurkuazCss)
-- [github.com/TurkuazCss](http://github.com/TurkuazCss)
+- [facebook.com/turkuazcss](http://facebook.com/turkuazcss)
+- [twitter.com/turkuazcss](http://twitter.com/turkuazcss)
+- [instagram.com/turkuazcss](http://instagram.com/turkuazcss)
+- [github.com/turkuazcss](http://github.com/turkuazcss)
 
 # Lisans
-Turkuaz Css, [MIT Lisansı](https://github.com/TurkuazCss/Framework/blob/master/LICENSE) ile lisanslanmıştır.
+Turkuaz Css, [MIT Lisansı](https://github.com/turkuazcss/Framework/blob/master/LICENSE) ile lisanslanmıştır.
