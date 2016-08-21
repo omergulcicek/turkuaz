@@ -3051,11 +3051,14 @@ nav.menu ul li ul li:hover a {
 
 .yazi-kalin,
 .yazi-kalin a {
-    font-weight: bold !important
+    font-family: "Noto Sans Bold";
+    font-weight: 700 !important
 }
 
 .yazi-ince,
 .yazi-ince a {
+    font-family: "Noto Sans Italic";
+    font-style: italic;
     font-weight: 100 !important
 }
 
@@ -3670,6 +3673,7 @@ nav.menu ul li ul li:hover a {
     margin-bottom: 2px;
     padding: 10px 15px;
     position: relative;
+    text-align: left;
     transition: .3s
 }
 

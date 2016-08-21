@@ -140,7 +140,7 @@ $(".tr-filtre").on("click", "nav a", function(){
     }
 })
 
-// Akordiyon MenuWW
+// Akordiyon Menu
 ;(function($){
     $.fn.akordiyon = function(ayarlar){
         var obj = $.extend({
