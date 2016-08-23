@@ -1036,6 +1036,43 @@ form {
     background-color: #E65100 !important
 }
 
+.koyu-turuncu,
+.koyu-turuncu6 {
+    background-color: #FF5722 !important
+}
+
+.koyu-turuncu2 {
+    background-color: #FFCCBC !important
+}
+
+.koyu-turuncu3 {
+    background-color: #FFAB91 !important
+}
+
+.koyu-turuncu4 {
+    background-color: #FF8A65 !important
+}
+
+.koyu-turuncu5 {
+    background-color: #FF7043 !important
+}
+
+.koyu-turuncu7 {
+    background-color: #F4511E !important
+}
+
+.koyu-turuncu8 {
+    background-color: #E64A19 !important
+}
+
+.koyu-turuncu9 {
+    background-color: #D84315 !important
+}
+
+.koyu-turuncu10 {
+    background-color: #BF360C !important
+}
+
 .kirmizi,
 .kirmizi6 {
     background-color: #F44336 !important
@@ -1147,6 +1184,43 @@ form {
     background-color: #4A148C !important
 }
 
+.koyu-mor,
+.koyu-mor6 {
+    background-color: #673AB7 !important
+}
+
+.koyu-mor2 {
+    background-color: #D1C4E9 !important
+}
+
+.koyu-mor3 {
+    background-color: #B39DDB !important
+}
+
+.koyu-mor4 {
+    background-color: #9575CD !important
+}
+
+.koyu-mor5 {
+    background-color: #7E57C2 !important
+}
+
+.koyu-mor7 {
+    background-color: #5E35B1 !important
+}
+
+.koyu-mor8 {
+    background-color: #512DA8 !important
+}
+
+.koyu-mor9 {
+    background-color: #4527A0 !important
+}
+
+.koyu-mor10 {
+    background-color: #311B92 !important
+}
+
 .mavi,
 .mavi6 {
     background-color: #2196F3 !important
@@ -1182,6 +1256,43 @@ form {
 
 .mavi10 {
     background-color: #0D47A1 !important
+}
+
+.acik-mavi,
+.acik-mavi6 {
+    background-color: #03A9F4 !important
+}
+
+.acik-mavi2 {
+    background-color: #B3E5FC !important
+}
+
+.acik-mavi3 {
+    background-color: #81D4FA !important
+}
+
+.acik-mavi4 {
+    background-color: #4FC3F7 !important
+}
+
+.acik-mavi5 {
+    background-color: #29B6F6 !important
+}
+
+.acik-mavi7 {
+    background-color: #039BE5 !important
+}
+
+.acik-mavi8 {
+    background-color: #0288D1 !important
+}
+
+.acik-mavi9 {
+    background-color: #0277BD !important
+}
+
+.acik-mavi10 {
+    background-color: #01579B !important
 }
 
 .turkuaz,
@@ -1256,6 +1367,43 @@ form {
 
 .yesil10 {
     background-color: #1B5E20 !important
+}
+
+.acik-yesil,
+.acik-yesil6  {
+    background-color: #8BC34A !important
+}
+
+.acik-yesil2 {
+    background-color: #DCEDC8 !important
+}
+
+.acik-yesil3 {
+    background-color: #C5E1A5 !important
+}
+
+.acik-yesil4 {
+    background-color: #AED581 !important
+}
+
+.acik-yesil5 {
+    background-color: #9CCC65 !important
+}
+
+.acik-yesil7 {
+    background-color: #7CB342 !important
+}
+
+.acik-yesil8 {
+    background-color: #689F38 !important
+}
+
+.acik-yesil9 {
+    background-color: #558B2F !important
+}
+
+.acik-yesil10 {
+    background-color: #33691E !important
 }
 
 .kahverengi,
@@ -3226,6 +3374,43 @@ nav.menu ul li ul li:hover a {
     color: #E65100 !important
 }
 
+.yazi-koyu-turuncu,
+.yazi-koyu-turuncu6 {
+    background-color: #FF5722 !important
+}
+
+.yazi-koyu-turuncu2 {
+    background-color: #FFCCBC !important
+}
+
+.yazi-koyu-turuncu3 {
+    background-color: #FFAB91 !important
+}
+
+.yazi-koyu-turuncu4 {
+    background-color: #FF8A65 !important
+}
+
+.yazi-koyu-turuncu5 {
+    background-color: #FF7043 !important
+}
+
+.yazi-koyu-turuncu7 {
+    background-color: #F4511E !important
+}
+
+.yazi-koyu-turuncu8 {
+    background-color: #E64A19 !important
+}
+
+.yazi-koyu-turuncu9 {
+    background-color: #D84315 !important
+}
+
+.yazi-koyu-turuncu10 {
+    background-color: #BF360C !important
+}
+
 .yazi-kirmizi,
 .yazi-kirmizi a,
 .yazi-kirmizi6,
@@ -3370,6 +3555,43 @@ nav.menu ul li ul li:hover a {
     color: #4A148C !important
 }
 
+.yazi-koyu-mor,
+.yazi-koyu-mor6 {
+    background-color: #673AB7 !important
+}
+
+.yazi-koyu-mor2 {
+    background-color: #D1C4E9 !important
+}
+
+.yazi-koyu-mor3 {
+    background-color: #B39DDB !important
+}
+
+.yazi-koyu-mor4 {
+    background-color: #9575CD !important
+}
+
+.yazi-koyu-mor5 {
+    background-color: #7E57C2 !important
+}
+
+.yazi-koyu-mor7 {
+    background-color: #5E35B1 !important
+}
+
+.yazi-koyu-mor8 {
+    background-color: #512DA8 !important
+}
+
+.yazi-koyu-mor9 {
+    background-color: #4527A0 !important
+}
+
+.yazi-koyu-mor10 {
+    background-color: #311B92 !important
+}
+
 .yazi-mavi,
 .yazi-mavi a,
 .yazi-mavi6,
@@ -3415,6 +3637,43 @@ nav.menu ul li ul li:hover a {
 .yazi-mavi10,
 .yazi-mavi10 a {
     color: #0D47A1 !important
+}
+
+.yazi-acik-mavi,
+.yazi-acik-mavi6 {
+    background-color: #03A9F4 !important
+}
+
+.yazi-acik-mavi2 {
+    background-color: #B3E5FC !important
+}
+
+.yazi-acik-mavi3 {
+    background-color: #81D4FA !important
+}
+
+.yazi-acik-mavi4 {
+    background-color: #4FC3F7 !important
+}
+
+.yazi-acik-mavi5 {
+    background-color: #29B6F6 !important
+}
+
+.yazi-acik-mavi7 {
+    background-color: #039BE5 !important
+}
+
+.yazi-acik-mavi8 {
+    background-color: #0288D1 !important
+}
+
+.yazi-acik-mavi9 {
+    background-color: #0277BD !important
+}
+
+.yazi-acik-mavi10 {
+    background-color: #01579B !important
 }
 
 .yazi-turkuaz,
@@ -3509,6 +3768,43 @@ nav.menu ul li ul li:hover a {
 .yazi-yesil10,
 .yazi-yesil10 a {
     color: #1B5E20 !important
+}
+
+.yazi-acik-yesil,
+.yazi-acik-yesil6  {
+    background-color: #8BC34A !important
+}
+
+.yazi-acik-yesil2 {
+    background-color: #DCEDC8 !important
+}
+
+.yazi-acik-yesil3 {
+    background-color: #C5E1A5 !important
+}
+
+.yazi-acik-yesil4 {
+    background-color: #AED581 !important
+}
+
+.yazi-acik-yesil5 {
+    background-color: #9CCC65 !important
+}
+
+.yazi-acik-yesil7 {
+    background-color: #7CB342 !important
+}
+
+.yazi-acik-yesil8 {
+    background-color: #689F38 !important
+}
+
+.yazi-acik-yesil9 {
+    background-color: #558B2F !important
+}
+
+.yazi-acik-yesil10 {
+    background-color: #33691E !important
 }
 
 .yazi-kahverengi,
@@ -3648,6 +3944,94 @@ nav.menu ul li ul li:hover a {
 .yazi-siyah9,
 .yazi-siyah9 a {
     color: #050505 !important
+}
+
+.yazi-blogger {
+    color: #F87F14 !important
+}
+
+.yazi-codepen {
+    color: #1B1C1B !important
+}
+
+.yazi-dribbble {
+    color: #EC4A89 !important
+}
+
+.yazi-facebook {
+    color: #3B5998 !important
+}
+
+.yazi-flickr {
+    color: #FF0084 !important
+}
+
+.yazi-foursquare {
+    color: #F94877 !important
+}
+
+.yazi-github {
+    color: #323131 !important
+}
+
+.yazi-google {
+    color: #DC483B !important
+}
+
+.yazi-instagram {
+    color: #4E433C !important
+}
+
+.yazi-linkedin {
+    color: #007AB5 !important
+}
+
+.yazi-periscope {
+    color: #30A4C6 !important
+}
+
+.yazi-pinterest {
+    color: #CB2027 !important
+}
+
+.yazi-scorp {
+    color: #DE2228 !important
+}
+
+.yazi-snapchat {
+    color: #FFFC01 !important
+}
+
+.yazi-skype {
+    color: #00ADED !important
+}
+
+.yazi-yazi-swarm {
+    color: #FFA633 !important
+}
+
+.yazi-tumblr {
+    color: #2C4762 !important
+}
+
+.yazi-twitter {
+    color: #5EA9DD !important
+}
+
+.yazi-vine {
+    color: #00B489 !important
+}
+
+.yazi-vimeo {
+    color: #1AB7EA !important
+}
+
+.yazi-wordpress {
+    color: #00749A !important
+}
+
+.yazi-youtube {
+    color: #EE1C1B !important
 }
 
 /* ============= 3. JavaScript */
