@@ -3730,11 +3730,11 @@ nav.menu ul li ul li:hover a {
     transform: rotate(0deg)
 }
 
-.tr-akordiyon .icerik {
+.tr-akordiyon .tr-akordiyon-icerik {
     padding: 10px 20px
 }
 
-.tr-akordiyon .icerik p {
+.tr-akordiyon .tr-akordiyon-icerik p {
     margin-bottom: 0
 }
 
@@ -3914,12 +3914,12 @@ span.kapatButon {
     text-decoration: none
 }
 
-.tr-tab .tr-icerik {
+.tr-tab .tr-tab-icerik {
     border-top: 0;
     padding-top: 15px
 }
 
-.tr-tab.tema3 .tr-icerik {
+.tr-tab.tema3 .tr-tab-icerik {
     border: 1px solid rgba(0,0,0,.1);
     border-top: 0
 }

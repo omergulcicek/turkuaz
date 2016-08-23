@@ -106,14 +106,14 @@ $(window).resize(function() { mobil() })
     $.fn.tab = function(ayarlar){
         var obj = $.extend({
             "aktifSinifi" : "aktif",
-            "icerikSinifi" : "icerik",
+            "icerikSinifi" : "tr-tab-icerik",
             "aktifSekme" : 1,
             "tema" : ""
         }, ayarlar)
         return this.each(function() {
             $(this).addClass("tr-tab " + obj.tema)
             .find("nav a").eq(obj.aktifSekme - 1).addClass(obj.aktifSinifi)
-            .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("tr-icerik gizle")
+            .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("tr-tab-icerik gizle")
             .eq(obj.aktifSekme - 1).removeClass("gizle")
             $(this).find("nav a").click(function(){
                 var index = $(this).index()
@@ -146,7 +146,7 @@ $(".tr-filtre").on("click", "nav a", function(){
         var obj = $.extend({
             "aktifSinifi" : "aktif",
             "baslikSinifi" : "baslik",
-            "icerikSinifi" : "icerik",
+            "icerikSinifi" : "tr-akordiyon-icerik",
             "aktifSekme" : 1,
             "sure" : 200,
             "gecikme" : 0,
@@ -158,7 +158,7 @@ $(".tr-filtre").on("click", "nav a", function(){
                 obj.aktifSekme = $sekmeSayisi
             }
             $(this).addClass("tr-akordiyon " + obj.tema)
-            .find("." + obj.icerikSinifi).delay(obj.gecikme).slideUp(obj.sure)
+            .find("." + obj.icerikSinifi).addClass("tr-akordiyon-icerik").delay(obj.gecikme).slideUp(obj.sure)
             .eq(obj.aktifSekme-1).slideDown(obj.sure)
             .end().end().find("." + obj.baslikSinifi).eq(obj.aktifSekme-1).addClass("aktif")
             $(this).find("." + obj.baslikSinifi).click(function(e){
