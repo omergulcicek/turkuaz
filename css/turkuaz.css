@@ -4067,6 +4067,13 @@ nav.menu ul li ul li:hover a {
     margin-bottom: 0
 }
 
+.tr-akordiyon.tema3 .baslik {
+    background-color: transparent;
+    border-left-width: 0;
+    border-bottom: 0;
+    margin-bottom: 0
+}
+
 .tr-akordiyon.tema2 .baslik:last-of-type {
     border-bottom-width: 0
 }
@@ -4082,6 +4089,11 @@ nav.menu ul li ul li:hover a {
     border-left-width: 0
 }
 
+.tr-akordiyon.tema3 .baslik:hover {
+    background-color: transparent;
+    border-left-width: 0
+}
+
 .tr-akordiyon .baslik::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -4091,7 +4103,12 @@ nav.menu ul li ul li:hover a {
     right: 20px;
     transform: rotate(-90deg);
     transition: .3s;
-    top: 18px
+    top: 16px
+}
+
+.tr-akordiyon.tema3 .baslik::after {
+    left: 1px;
+    right: auto;
 }
 
 .tr-akordiyon .baslik:hover::after {
@@ -4106,6 +4123,11 @@ nav.menu ul li ul li:hover a {
 
 .tr-akordiyon.tema2 .baslik.aktif {
     background-color: rgba(0,0,0,.05);
+    border-left-width: 0
+}
+
+.tr-akordiyon.tema3 .baslik.aktif {
+    background-color: transparent;
     border-left-width: 0
 }
 
