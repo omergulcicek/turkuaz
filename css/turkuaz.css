@@ -4043,18 +4043,18 @@ nav.menu ul li ul li:hover a {
     width: 100%
 }
 
-.tr-akordiyon.tema2 {
-    border: 1px solid rgba(0,0,0,.05)
+.tr-akordiyon.tema2,
+.tr-akordiyon.tema3 {
+    border: 1px solid rgba(0,0,0,.05);
+    border-radius: 3px
 }
 
 .tr-akordiyon .baslik {
-    background-color: rgba(0,0,0,.025);
-    border-left: 5px solid transparent;
+    background-color: transparent;
     color: #000;
     display: block;
     font-size: 14px;
     letter-spacing: .5px;
-    margin-bottom: 2px;
     padding: 10px 15px;
     position: relative;
     text-align: left;
@@ -4062,36 +4062,39 @@ nav.menu ul li ul li:hover a {
 }
 
 .tr-akordiyon.tema2 .baslik {
-    border-left-width: 0;
     border-bottom: 1px solid rgba(0,0,0,.05);
-    margin-bottom: 0
-}
-
-.tr-akordiyon.tema3 .baslik {
-    background-color: transparent;
-    border-left-width: 0;
-    border-bottom: 0;
-    margin-bottom: 0
+    color: #b4b4b4;
+    padding-left:  25px
 }
 
 .tr-akordiyon.tema2 .baslik:last-of-type {
-    border-bottom-width: 0
+    border-bottom: 0
+}
+
+.tr-akordiyon.tema3 .baslik {
+    background-color: rgba(0,0,0,.025)
+}
+
+.tr-akordiyon.tema4 .baslik {
+    background-color: rgba(0,0,0,.025);
+    border-left: 5px solid transparent;
+    margin-bottom: 2px
 }
 
 .tr-akordiyon .baslik:hover {
-    background-color: rgba(0,0,0,.025);
-    border-left: 5px solid #1AC5B8;
     text-decoration: none
 }
 
 .tr-akordiyon.tema2 .baslik:hover {
-    background-color: rgba(0,0,0,.05);
-    border-left-width: 0
+    color: #000
 }
 
 .tr-akordiyon.tema3 .baslik:hover {
-    background-color: transparent;
-    border-left-width: 0
+    background-color: rgba(0,0,0,.05)
+}
+
+.tr-akordiyon.tema4 .baslik:hover {
+    border-left-color: #1AC5B8
 }
 
 .tr-akordiyon .baslik::after {
@@ -4099,16 +4102,22 @@ nav.menu ul li ul li:hover a {
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0,0,0,.1);
     content: "";
+    left: 0;
     position: absolute;
-    right: 20px;
+    right: auto;
     transform: rotate(-90deg);
     transition: .3s;
     top: 16px
 }
 
-.tr-akordiyon.tema3 .baslik::after {
-    left: 1px;
-    right: auto;
+.tr-akordiyon.tema2 .baslik::after {
+    left: 10px
+}
+
+.tr-akordiyon.tema3 .baslik::after,
+.tr-akordiyon.tema4 .baslik::after {
+    left: auto;
+    right: 20px
 }
 
 .tr-akordiyon .baslik:hover::after {
@@ -4116,19 +4125,15 @@ nav.menu ul li ul li:hover a {
 }
 
 .tr-akordiyon .baslik.aktif {
-    background-color: rgba(0,0,0,.025);
-    border-left: 5px solid #1AC5B8;
     color: #000
 }
 
-.tr-akordiyon.tema2 .baslik.aktif {
-    background-color: rgba(0,0,0,.05);
-    border-left-width: 0
+.tr-akordiyon.tema3 .baslik.aktif {
+    background-color: rgba(0,0,0,.05)
 }
 
-.tr-akordiyon.tema3 .baslik.aktif {
-    background-color: transparent;
-    border-left-width: 0
+.tr-akordiyon.tema4 .baslik.aktif {
+    border-left-color: #1AC5B8
 }
 
 .tr-akordiyon .baslik.aktif::after {
