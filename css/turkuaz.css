@@ -1814,9 +1814,8 @@ button {
     font-family: "Noto Sans";
     font-size: 13px;
     font-weight: normal;
-    height: 40px;
     letter-spacing: 1.5px;
-    line-height: 40px;
+    line-height: 3;
     outline: 0;
     overflow: hidden;
     padding: 0 25px !important;
@@ -1828,14 +1827,12 @@ button {
 }
 
 a.buton.kucuk {
-    height: 30px;
-    line-height: 30px;
-    padding: 10px 15px
+    line-height: 2
 }
 
 a.buton.buyuk {
-    height: 60px;
-    line-height: 60px
+    font-size: 14px;
+    line-height: 4
 }
 
 a.buton:hover,
@@ -1843,6 +1840,11 @@ button:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15);
     color: #FFF;
     text-decoration: none
+}
+
+a.buton:active,
+button:active {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15), inset 0 0 100px rgba(0,0,0,.15)
 }
 
 a.buton.saydam,
@@ -1956,7 +1958,11 @@ button.kare i.fa {
 }
 
 .butonlar a.buton:hover {
-    box-shadow: inset 0 0 100px rgba(0,0,0,.1)
+    box-shadow: inset 0 0 100px rgba(0,0,0,.15)
+}
+
+.butonlar a.buton:active {
+    box-shadow: inset 0 0 100px rgba(0,0,0,.25)
 }
 
 .butonlar.dikey {
