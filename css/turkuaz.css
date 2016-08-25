@@ -15,31 +15,31 @@
 *      1.4     Yardimci Kodlar
 *      1.5     Yazi Stili
 *    2.     Bilesenler
-*      2.1     Arkaplanlar
-*      2.2     Butonlar
-*        2.2.1    Buton Ayarlari
-*        2.2.2    Buton Efektleri
-*      2.3     Etiketler
-*      2.4     Form Elemanlari
-*        2.4.1    Anahtarlar
-*        2.4.2    Checkbox
-*        2.4.3    Dosya Secici
-*        2.4.4    Input
-*        2.4.5    Radio Buton
-*        2.4.6    Select
-*        2.4.7    Tarih Secici
-*        2.4.8    Textarea
-*      2.5     Footer
-*      2.6     Kartlar
-*        2.6.1    Kart Kodlari
-*        2.6.2    Kart Efektleri
-*      2.7     Koleksiyonlar
-*      2.8     Menu
-*      2.9     Notlar
-*      2.10    Pano
+*      2.1     Buton
+*        2.1.1    Buton Ayarlari
+*        2.1.2    Buton Efektleri
+*      2.2     Etiket
+*      2.2     Form Elemanlari
+*        2.2.1    Anahtarlar
+*        2.2.2    Checkbox
+*        2.2.3    Dosya Secici
+*        2.2.4    Input
+*        2.2.5    Radio Buton
+*        2.2.6    Select
+*        2.2.7    Tarih Secici
+*        2.3.8    Textarea
+*      2.4     Footer
+*      2.5     Kart
+*        2.5.1    Kart Kodlari
+*        2.5.2    Kart Efektleri
+*      2.6     Koleksiyon
+*      2.7     Menu
+*      2.8     Not
+*      2.9     Pano
+*      2.10    Progress
 *      2.11    Sayfa Konumu
 *      2.12    Sayfa Numaralandirma
-*      2.13    Yazilar
+*      2.13    Yazi
 *        2.13.1   Yazi Ayarlari
 *        2.13.2   Yazi Boyutlari
 *        2.13.3   Yazi Renkleri
@@ -48,8 +48,7 @@
 *      3.2     Filtre Menu
 *      3.3     Medya
 *      3.4     Modal
-*      3.5     Slider
-*      3.6     Tab Menu
+*      3.5     Tab Menu
 *
 */
 
@@ -1766,12 +1765,23 @@ table.tr-tablo::-webkit-scrollbar-thumb {
 }
 
 span.tr-modal-span {
-     display: inline-block;
-     vertical-align: middle;
-     line-height: normal
- }
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal
+}
 
-/* ============= 1.5 Yazi Ayarlari */
+.tr-karart {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 997
+}
+
+/* ============= 1.5 Yazi Stili */
 
 @font-face {
     font-family: "Noto Sans";
@@ -1789,118 +1799,8 @@ span.tr-modal-span {
 }
 
 /* ============= 2. Bilesenler */
-/* ============= 2.1 Arkaplanlar */
-
-.tr-karart {
-    background-color: #000;
-    height: 100%;
-    left: 0;
-    opacity: .5;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 997
-}
-
-.desen,
-.desen1 {
-    background-image: url("../img/desen/desen.png")
-}
-
-.desen2 {
-    background-image: url("../img/desen/desen2.png")
-}
-
-.desen3 {
-    background-image: url("../img/desen/desen3.png")
-}
-
-.desen4 {
-    background-image: url("../img/desen/desen4.png")
-}
-
-.desen5 {
-    background-image: url("../img/desen/desen5.png")
-}
-
-.desen6 {
-    background-image: url("../img/desen/desen6.png")
-}
-
-.desen7 {
-    background-image: url("../img/desen/desen7.png")
-}
-
-.desen8 {
-    background-image: url("../img/desen/desen8.png")
-}
-
-.desen9 {
-    background-image: url("../img/desen/desen9.png")
-}
-
-.desen10 {
-    background-image: url("../img/desen/desen10.png")
-}
-
-.desen11 {
-    background-image: url("../img/desen/desen11.png")
-}
-
-.desen12 {
-    background-image: url("../img/desen/desen12.png")
-}
-
-.desen13 {
-    background-image: url("../img/desen/desen13.png")
-}
-
-.desen14 {
-    background-image: url("../img/desen/desen14.png")
-}
-
-.desen15 {
-    background-image: url("../img/desen/desen15.png")
-}
-
-.desen16 {
-    background-image: url("../img/desen/desen16.png")
-}
-
-.desen17 {
-    background-image: url("../img/desen/desen17.png")
-}
-
-.desen18 {
-    background-image: url("../img/desen/desen18.png")
-}
-
-.desen19 {
-    background-image: url("../img/desen/desen19.png")
-}
-
-.desen20 {
-    background-image: url("../img/desen/desen20.png")
-}
-
-.desen21 {
-    background-image: url("../img/desen/desen21.png")
-}
-
-.desen22 {
-    background-image: url("../img/desen/desen23.png")
-}
-
-.desen24 {
-    background-image: url("../img/desen/desen24.png")
-}
-
-.desen25 {
-    background-image: url("../img/desen/desen25.png")
-}
-
-/* ============= 2.2 Buton */
-/* ============= 2.2.1 Buton Ayarlari */
+/* ============= 2.1 Buton */
+/* ============= 2.1.1 Buton Ayarlari */
 
 a.buton,
 button {
@@ -2076,7 +1976,7 @@ button.kare i.fa {
     border-radius: 0 0 3px 3px
 }
 
-/* ============= 2.2.2 Buton Efektleri */
+/* ============= 2.1.2 Buton Efektleri */
 
 a.buton[class*="efekt"] {
     overflow: hidden;
@@ -2162,7 +2062,7 @@ a.buton.efekt6:hover:before {
     height: 100%
 }
 
-/* ============= 2.3 Etiketler */
+/* ============= 2.2 Etiketler */
 
 a.etiket {
     background-color: rgba(0,0,0,.1);
@@ -2227,7 +2127,7 @@ a.etiket.kapat:hover span.kaldir {
     opacity: 1
 }
 
-/* ============= 2.4 Form Elemanlari */
+/* ============= 2.3 Form Elemanlari */
 
 form.tr-form {
     background-color: #FFF;
@@ -2235,7 +2135,7 @@ form.tr-form {
     padding: 30px
 }
 
-/* ============= 2.4.1 Anahtarlar */
+/* ============= 2.3.1 Anahtarlar */
 
 input.tr-anahtar:not(:checked), .tr-anahtar:checked {
     left: -9999px;
@@ -2284,7 +2184,7 @@ input:checked.tr-anahtar + label:after {
     margin-left: -27px
 }
 
-/* ============= 2.4.2 Checkbox */
+/* ============= 2.3.2 Checkbox */
 
 input.tr-checkbox:not(:checked), .tr-checkbox:checked {
     left: -9999px;
@@ -2344,9 +2244,9 @@ input.tr-checkbox:not(.filled-in) + label:after {
     transform: scale(0)
 }
 
-/* ============= 2.4.3 Dosya Secici */
+/* ============= 2.3.3 Dosya Secici */
 
-/* ============= 2.4.4 Input */
+/* ============= 2.3.4 Input */
 
 input.tr-input {
     background-color: transparent;
@@ -2393,7 +2293,7 @@ input.tr-input.dolu + label {
     transform: translateY(-55px) scale(.75) !important
 }
 
-/* ============= 2.4.5 Radio Buton */
+/* ============= 2.3.5 Radio Buton */
 
 input.tr-radio {
     box-sizing: border-box;
@@ -2450,7 +2350,7 @@ input.tr-radio:not(.filled-in) + label:after {
     transform: scale(0)
 }
 
-/* ============= 2.4.6 Select */
+/* ============= 2.3.6 Select */
 
 select {
     background-color: rgba(255,255,255,.85);
@@ -2465,7 +2365,7 @@ select {
     width: 100%
 }
 
-/* ============= 2.4.7 Tarih Secici */
+/* ============= 2.3.7 Tarih Secici */
 
 input[type="date"].tr-input {
     line-height: 20px
@@ -2475,7 +2375,7 @@ input[type="date"].tr-input + label {
     transform: translateY(-60px) scale(.75) !important
 }
 
-/* ============= 2.4.8 Textarea */
+/* ============= 2.3.8 Textarea */
 
 textarea.tr-textarea {
     background-color: transparent;
@@ -2523,7 +2423,7 @@ textarea.tr-textarea.dolu + label {
     transform: translateY(-80px) scale(.75) !important
 }
 
-/* ============= 2.5 Footer */
+/* ============= 2.4 Footer */
 
 footer.tr-footer {
     background-color: #FFF;
@@ -2547,8 +2447,8 @@ footer.tr-footer .detay {
     width: 100%
 }
 
-/* ============= 2.6 Kartlar */
-/* ============= 2.6.1 Kart Kodlari */
+/* ============= 2.5 Kartlar */
+/* ============= 2.5.1 Kart Kodlari */
 
 .tr-kart {
     background-color: #FFF;
@@ -2629,7 +2529,7 @@ footer.tr-footer .detay {
     transform: translateY(0);
 }
 
-/* ============= 2.6.2 Kart Efektleri */
+/* ============= 2.5.2 Kart Efektleri */
 
 /* Yakinlastirma */
 .tr-kart.efekt1 > img {
@@ -2718,7 +2618,7 @@ footer.tr-footer .detay {
     -webkit-filter: blur(1px)
 }
 
-/* ============= 2.7 Koleksiyonlar */
+/* ============= 2.6 Koleksiyonlar */
 
 nav.koleksiyon {
     background-color: #FFF;
@@ -2775,7 +2675,7 @@ nav.koleksiyon.saydam a {
     border-bottom: 0
 }
 
-/* ============= 2.8 Menu */
+/* ============= 2.7 Menu */
 
 nav.menu {
     background-color: #1AC5B8;
@@ -2966,7 +2866,7 @@ nav.menu ul li ul li:hover a {
     }
 }
 
-/* ============= 2.9 Notlar */
+/* ============= 2.8 Notlar */
 
 .tr-not {
     background-color: #1AC5B8;
@@ -3013,7 +2913,7 @@ nav.menu ul li ul li:hover a {
 }
 
 
-/* ============= 2.10 Pano */
+/* ============= 2.9 Pano */
 
 .tr-pano {
     background-color: #1AC5B8;
@@ -3052,6 +2952,49 @@ nav.menu ul li ul li:hover a {
 
 .tr-pano .icerik p {
     margin: 0
+}
+
+/* ============= 2.10 Progress */
+
+.tr-progress {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+    width: 100%
+}
+
+.tr-progress .tr-yuzde {
+    background-color: #1AC5B8;
+    display: block;
+    height: 8px
+}
+
+.tr-progress.kucuk .tr-yuzde {
+    height: 4px
+}
+
+.tr-progress.buyuk .tr-yuzde {
+    height: 12px
+}
+
+.tr-progress.cizgili .tr-yuzde {
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-repeat: repeat-x;
+    background-size: 50px 50px
+}
+
+.tr-progress.animasyon .tr-yuzde {
+    animation: tr-progress .5s linear infinite;
+    background-color: #1AC5B8;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-repeat: repeat-x
+}
+
+@keyframes tr-progress {
+    to {
+        background-position: 50px 0
+    }
 }
 
 /* ============= 2.11 Sayfa Konumu */
@@ -3174,7 +3117,7 @@ nav.menu ul li ul li:hover a {
     padding: 10px 15px
 }
 
-/* ============= 2.13. Yazi */
+/* ============= 2.13 Yazi */
 /* ============= 2.13.1 Yazi Ayarlari */
 
 .yazi-sol {
@@ -4058,7 +4001,7 @@ nav.menu ul li ul li:hover a {
     padding: 10px 15px;
     position: relative;
     text-align: left;
-    transition: .3s
+    transition: color .3s
 }
 
 .tr-akordiyon.tema2 .baslik {
@@ -4128,6 +4071,10 @@ nav.menu ul li ul li:hover a {
     color: #000
 }
 
+.tr-akordiyon.tema2 .baslik.aktif {
+    border-bottom: 0
+}
+
 .tr-akordiyon.tema3 .baslik.aktif {
     background-color: rgba(0,0,0,.05)
 }
@@ -4143,6 +4090,10 @@ nav.menu ul li ul li:hover a {
 
 .tr-akordiyon .tr-akordiyon-icerik {
     padding: 10px 20px
+}
+
+.tr-akordiyon.tema2 .tr-akordiyon-icerik {
+    border-bottom: 1px solid rgba(0,0,0,.05)
 }
 
 .tr-akordiyon .tr-akordiyon-icerik p {
@@ -4268,9 +4219,7 @@ span.kapatButon {
     }
 }
 
-/* ============= 3.5 Slider */
-
-/* ============= 3.6 Tab Menu */
+/* ============= 3.5 Tab Menu */
 
 .tr-tab {
     background-color: #FFF
@@ -4333,45 +4282,4 @@ span.kapatButon {
 .tr-tab.tema3 .tr-tab-icerik {
     border: 1px solid rgba(0,0,0,.1);
     border-top: 0
-}
-
-.tr-progress {
-    background-color: rgba(0,0,0,.05);
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 5px 0;
-    width: 100%
-}
-
-.tr-progress .tr-yuzde {
-    background-color: #1AC5B8;
-    display: block;
-    height: 8px
-}
-
-.tr-progress.kucuk .tr-yuzde {
-    height: 4px
-}
-
-.tr-progress.buyuk .tr-yuzde {
-    height: 12px
-}
-
-.tr-progress.cizgili .tr-yuzde {
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-repeat: repeat-x;
-    background-size: 50px 50px
-}
-
-.tr-progress.animasyon .tr-yuzde {
-    animation: tr-progress .5s linear infinite;
-    background-color: #1AC5B8;
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-repeat: repeat-x
-}
-
-@keyframes tr-progress {
-    to {
-        background-position: 50px 0
-    }
 }

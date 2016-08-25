@@ -10,10 +10,10 @@
 *   1. Etiket
 *   2. Form
 *   3. Menu
-*   4. Notlar
+*   4. Not
 *   5. Sayfa Konumu
-*   6. Modal
-*   7. Medya Modal
+*   6. Medya
+*   7. Modal
 *
 */
 
@@ -27,8 +27,6 @@ $("a.etiket.kapat").append("<span class=kaldir>&times</span>")
 .find("span.kaldir").click(function(){
     $(this).parents("a.etiket.kapat").addClass("gizle")
 })
-
-
 
 /* ============= 2. Form */
 
@@ -172,7 +170,6 @@ $(".tr-filtre").on("click", "nav a", function(){
     }
 })(jQuery)
 
-
 /* ============= 4. Notlar */
 
 $(".tr-not").append("<span class=kaldir>&times</span>")
@@ -181,53 +178,11 @@ $(".tr-not").on("click", "span.kaldir", function(){
     $(this).parents(".tr-not").addClass("gizle")
 })
 
-
 /* ============= 5. Sayfa Konumu */
 
 $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() })
 
-/* ============= 6. Modal */
-
-;(function($) {
-    $.fn.modal = function(ayarlar) {
-        var obj = $.extend({
-            "autofocus" : true,
-            "backgroundColor" : "#000",
-            "close" : false,
-            "closeConnent" : "&times",
-            "closeTime" : 100,
-            "opacity" : .5,
-            "overlay" : "tr-modal-karart",
-            "openTime" : 500,
-            "size" : "orta"
-        }, ayarlar)
-        return this.each(function() {
-            $("body").find('[data-modal]').hide()
-            $("body").on("click", "a.modal", function(e) {
-                e.preventDefault()
-                var href = $(this).attr("href")
-                var modal = $("body").find('[data-modal=' + href + ']')
-                var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
-                overlay.css({
-                    "background-color": obj.backgroundColor,
-                    "opacity": obj.opacity
-                })
-                modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
-                if ($(".tr-karart." + obj.overlay).length == 0) { $("body").append(overlay) }
-                if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
-                if (obj.autofocus) { modal.find(".tr-input:visible:first").focus() }
-                $("body").on("click", ".modal-kapat, .tr-karart." + obj.overlay + ", .kapatButon", function(e) {
-                    e.preventDefault()
-                    modal.fadeOut(obj.closeTime)
-                    .end().find("." + obj.overlay + ", .kapatButon").remove()
-                })
-            })
-        })
-    }
-})(jQuery)
-
-
-/* ============= 7. Medya Modal */
+/* ============= 6. Medya */
 
 ;(function($) {
     $.fn.medya = function(ayarlar) {
@@ -321,3 +276,45 @@ function medyaKapat() {
 }
 
 $(".tr-medya").medya()
+
+/* ============= 7. Modal */
+
+;(function($) {
+    $.fn.modal = function(ayarlar) {
+        var obj = $.extend({
+            "autofocus" : true,
+            "backgroundColor" : "#000",
+            "close" : false,
+            "closeConnent" : "&times",
+            "closeTime" : 100,
+            "opacity" : .5,
+            "overlay" : "tr-modal-karart",
+            "openTime" : 500,
+            "size" : "orta"
+        }, ayarlar)
+        return this.each(function() {
+            $("body").find('[data-modal]').hide()
+            $("body").on("click", "a.modal", function(e) {
+                e.preventDefault()
+                var href = $(this).attr("href")
+                var modal = $("body").find('[data-modal=' + href + ']')
+                var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
+                overlay.css({
+                    "background-color": obj.backgroundColor,
+                    "opacity": obj.opacity
+                })
+                modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
+                if ($(".tr-karart." + obj.overlay).length == 0) { $("body").append(overlay) }
+                if (obj.close) { $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>") }
+                if (obj.autofocus) { modal.find(".tr-input:visible:first").focus() }
+                $("body").on("click", ".modal-kapat, .tr-karart." + obj.overlay + ", .kapatButon", function(e) {
+                    e.preventDefault()
+                    modal.fadeOut(obj.closeTime)
+                    .end().find("." + obj.overlay + ", .kapatButon").remove()
+                })
+            })
+        })
+    }
+})(jQuery)
+
+$(".tr-modal").modal()
