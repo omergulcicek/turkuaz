@@ -125,15 +125,15 @@ $(window).resize(function() { mobil() })
 })(jQuery)
 
 // Filtre Menu
-$(".tr-filtre [data-target=hepsi]").addClass("aktif")
+$(".tr-filtre [data-source=hepsi]").addClass("aktif")
 $(".tr-filtre").on("click", "nav a", function(){
-    var target = $(this).data("target")
+    var source = $(this).data("source")
     $(this).addClass("aktif")
     .siblings().removeClass("aktif")
     .end()
     .parents(".tr-filtre").find(".tr.icerik").removeClass("gizle")
-    .not("." + target).addClass("gizle")
-    if(target == "hepsi" || target == "hepsi aktif") {
+    .not("[data-target^=" + source + "]").addClass("gizle")
+    if(source == "hepsi" || source == "hepsi aktif") {
         $(this).parents(".tr-filtre").find(".icerik").removeClass("gizle")
     }
 })
