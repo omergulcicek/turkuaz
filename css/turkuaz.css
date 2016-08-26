@@ -2256,6 +2256,55 @@ input.tr-checkbox:not(.filled-in) + label:after {
 
 /* ============= 2.3.3 Dosya Secici */
 
+input.tr-dosya {
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+    height: 38px;
+    outline: none
+}
+
+input.tr-dosya::-webkit-file-upload-button {
+    visibility: hidden
+}
+
+input.tr-dosya::before {
+    background-color: #1AC5B8;
+    border: none;
+    border-radius: 3px;
+    bottom: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    color: #FFF;
+    content: "Seç";
+    display: inline-block;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    line-height: 3;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 25px !important;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s ease-out
+}
+
+input.tr-dosya:hover::before {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15);
+    color: #FFF;
+    text-decoration: none
+}
+
+input.tr-dosya:active {
+    outline: 0
+}
+
+input.tr-dosya:active::before {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15), inset 0 0 250px rgba(0,0,0,.15)
+}
+
 /* ============= 2.3.4 Input */
 
 input.tr-input {
