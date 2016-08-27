@@ -1749,8 +1749,18 @@ table.tr-tablo::-webkit-scrollbar {
     position: relative
 }
 
-.temizle {
+.temizle:before,
+.temizle:after {
+    content: " ";
+    display: table
+}
+
+.temizle:after {
     clear: both
+}
+
+.temizle {
+    *zoom: 1
 }
 
 span.tr-modal-span {
