@@ -2345,6 +2345,32 @@ input.tr-input.dolu + label {
     transform: translateY(-55px) scale(.75) !important
 }
 
+nav.menu input.tr-input {
+    border-bottom-color: rgba(255,255,255,.45);
+    color: #FFF;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    top: 5px;
+    width: 20%
+}
+
+nav.menu.mobilmenu input.tr-input {
+    display: block;
+    float: none !important;
+    margin: 10px auto;
+    width: 80%
+}
+
+nav.menu input.tr-input.aktif {
+    border-bottom-color: rgba(255,255,255,.9)
+}
+
+nav.menu.mobilmenu input.tr-input.aktif {
+    width: 90%
+}
+
 /* ============= 2.3.5 Radio Buton */
 
 input.tr-radio {
@@ -2701,16 +2727,16 @@ nav.koleksiyon a:last-child {
 }
 
 nav.koleksiyon a:hover {
-    background-color: rgba(0,0,0,.04);
+    box-shadow: inset 0 0 250px rgba(0,0,0,.03);
     text-decoration: none
+}
+
+nav.koleksiyon a:active {
+    box-shadow: inset 0 0 250px rgba(0,0,0,.06);
 }
 
 nav.koleksiyon.renkli a:nth-of-type(odd) {
     background-color: rgba(0,0,0,.02)
-}
-
-nav.koleksiyon.renkli a:nth-of-type(odd):hover {
-    background-color: rgba(0,0,0,.04)
 }
 
 nav.koleksiyon.saydam {
@@ -2721,6 +2747,7 @@ nav.koleksiyon.saydam {
 
 nav.koleksiyon.saydam a:hover {
     background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
     text-decoration: underline
 }
 
@@ -2778,6 +2805,7 @@ nav.menu.saydam {
 }
 
 nav.menu ul {
+    display: table;
     height: 50px
 }
 
@@ -3084,7 +3112,7 @@ nav.menu ul li ul li:hover a {
 
 .tr-konum a {
     color: rgba(255,255,255,.6);
-    margin-right: 10px
+    margin-right: 5px
 }
 
 .tr-konum a:last-of-type {
@@ -3092,8 +3120,8 @@ nav.menu ul li ul li:hover a {
 }
 
 .tr-konum a::after {
-    content: ">";
-    margin-left: 10px
+    content: "/";
+    margin-left: 5px
 }
 
 .tr-konum a:last-of-type::after {
