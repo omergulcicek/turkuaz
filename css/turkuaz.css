@@ -3141,45 +3141,41 @@ nav.menu ul li ul li:hover a {
 
 /* ============= 2.10 Progress */
 
-.tr-progress {
-    background-color: rgba(0,0,0,.05);
-    border-radius: 5px;
-    overflow: hidden;
+progress.tr-progress {
+    border-radius: 3px;
+    height: 15px;
     margin: 5px 0;
+    overflow: hidden;
+    position: relative;
     width: 100%
 }
 
-.tr-progress .tr-yuzde {
-    background-color: #1AC5B8;
-    display: block;
-    height: 8px
+progress.tr-progress.kucuk {
+    height: 10px
 }
 
-.tr-progress.kucuk .tr-yuzde {
-    height: 4px
+progress.tr-progress.buyuk {
+    height: 20px
 }
 
-.tr-progress.buyuk .tr-yuzde {
-    height: 12px
+progress.tr-progress::-webkit-progress-bar {
+    background-color: #EEE
 }
 
-.tr-progress.cizgili .tr-yuzde {
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-repeat: repeat-x;
-    background-size: 50px 50px
+progress.tr-progress::-webkit-progress-value {
+    background-color: #1AC5B8
 }
 
-.tr-progress.animasyon .tr-yuzde {
-    animation: tr-progress .5s linear infinite;
-    background-color: #1AC5B8;
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-repeat: repeat-x
+progress.tr-progress.sari::-webkit-progress-value {
+    background-color: #FFEB3B !important
 }
 
-@keyframes tr-progress {
-    to {
-        background-position: 50px 0
-    }
+progress.tr-progress.kirmizi::-webkit-progress-value {
+    background-color: #F44336 !important
+}
+
+progress.tr-progress.yesil::-webkit-progress-value {
+    background-color: #4CAF50 !important
 }
 
 /* ============= 2.11 Sayfa Konumu */
