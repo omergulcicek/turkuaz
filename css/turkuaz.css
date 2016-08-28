@@ -1745,6 +1745,20 @@ table.tr-tablo::-webkit-scrollbar {
 .ml4 { margin-left: 4rem !important }
 .ml5 { margin-left: 5rem !important }
 
+/* margin-x */
+.mx1 { margin-left: 1rem !important; margin-right: 1rem !important }
+.mx2 { margin-left: 2rem !important; margin-right: 2rem !important }
+.mx3 { margin-left: 3rem !important; margin-right: 3rem !important }
+.mx4 { margin-left: 4rem !important; margin-right: 4rem !important }
+.mx5 { margin-left: 5rem !important; margin-right: 5rem !important }
+
+/* margin-y */
+.my1 { margin-bottom: 1rem !important; margin-top: 1rem !important }
+.my2 { margin-bottom: 2rem !important; margin-top: 2rem !important }
+.my3 { margin-bottom: 3rem !important; margin-top: 3rem !important }
+.my4 { margin-bottom: 4rem !important; margin-top: 4rem !important }
+.my5 { margin-bottom: 5rem !important; margin-top: 5rem !important }
+
 /* padding-top */
 .pt1 { padding-top: 1rem !important }
 .pt2 { padding-top: 2rem !important }
@@ -1772,6 +1786,20 @@ table.tr-tablo::-webkit-scrollbar {
 .pl3 { padding-left: 3rem !important }
 .pl4 { padding-left: 4rem !important }
 .pl5 { padding-left: 5rem !important }
+
+/* padding-x */
+.px1 { padding-left: 1rem !important; padding-right: 1rem !important }
+.px2 { padding-left: 2rem !important; padding-right: 2rem !important }
+.px3 { padding-left: 3rem !important; padding-right: 3rem !important }
+.px4 { padding-left: 4rem !important; padding-right: 4rem !important }
+.px5 { padding-left: 5rem !important; padding-right: 5rem !important }
+
+/* padding-y */
+.py1 { padding-bottom: 1rem !important; padding-top: 1rem !important }
+.py2 { padding-bottom: 2rem !important; padding-top: 2rem !important }
+.py3 { padding-bottom: 3rem !important; padding-top: 3rem !important }
+.py4 { padding-bottom: 4rem !important; padding-top: 4rem !important }
+.py5 { padding-bottom: 5rem !important; padding-top: 5rem !important }
 
 .cizgi {
     background-color: #eee;
