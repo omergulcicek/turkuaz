@@ -1893,7 +1893,7 @@ span.tr-modal-span {
 
 a.buton,
 button {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     border: none;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
@@ -2280,7 +2280,7 @@ input.tr-anahtar + label:after {
 }
 
 input:checked.tr-anahtar + label:before {
-    background-color: #1AC5B8
+    background-color: #0CAB9E
 }
 
 input:checked.tr-anahtar + label:after {
@@ -2317,7 +2317,7 @@ input.tr-checkbox:last-of-type + label {
 
 input.tr-checkbox:checked + label:before {
     backface-visibility: hidden;
-    border-color: #1AC5B8;
+    border-color: #0CAB9E;
     border-top-color: transparent;
     border-left-color: transparent;
     height: 22px;
@@ -2361,7 +2361,7 @@ input.tr-dosya::-webkit-file-upload-button {
 }
 
 input.tr-dosya::before {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     border: none;
     border-radius: 3px;
     bottom: 2px;
@@ -2419,11 +2419,11 @@ input.tr-input {
 }
 
 input.tr-input.aktif {
-    border-bottom: 2px solid #1AC5B8
+    border-bottom: 2px solid #0CAB9E
 }
 
 input.tr-input + label {
-    color: #1AC5B8;
+    color: #0CAB9E;
     cursor: auto;
     display: block;
     font-weight: 400;
@@ -2501,7 +2501,7 @@ input.tr-radio:last-of-type + label {
 
 input.tr-radio:checked + label:before {
     backface-visibility: hidden;
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     height: 18px;
     left: 0;
     top: 0;
@@ -2575,11 +2575,11 @@ textarea.tr-textarea {
 }
 
 textarea.tr-textarea.aktif {
-    border-bottom: 2px solid #1AC5B8
+    border-bottom: 2px solid #0CAB9E
 }
 
 textarea.tr-textarea + label {
-    color: #1AC5B8;
+    color: #0CAB9E;
     cursor: auto;
     display: block;
     font-weight: 400;
@@ -2862,7 +2862,7 @@ nav.koleksiyon.saydam a {
 /* ============= 2.7 Menu */
 
 nav.menu {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     display: block;
     height: 45px;
@@ -2998,10 +2998,9 @@ nav.menu ul li ul li:hover a {
 
 @media only screen and (max-width: 999px) {
     nav.menu.mobil {
-        background-color: #1AC5B8;
+        background-color: #0CAB9E;
         height: 100%;
         left: -240px;
-        overflow-y: auto;
         position: fixed;
         width: 240px
     }
@@ -3054,7 +3053,7 @@ nav.menu ul li ul li:hover a {
 /* ============= 2.8 Notlar */
 
 .tr-not {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     box-shadow: 0 1px 6px rgba(0,0,0,.15);
     border-radius: 3px;
     color: #FFF;
@@ -3101,7 +3100,7 @@ nav.menu ul li ul li:hover a {
 /* ============= 2.9 Pano */
 
 .tr-pano {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     border-radius: 5px;
     box-shadow: 0 1px 6px rgba(0,0,0,.15);
     margin-bottom: 15px
@@ -3163,7 +3162,7 @@ progress.tr-progress::-webkit-progress-bar {
 }
 
 progress.tr-progress::-webkit-progress-value {
-    background-color: #1AC5B8
+    background-color: #0CAB9E
 }
 
 progress.tr-progress.sari::-webkit-progress-value {
@@ -3181,7 +3180,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 2.11 Sayfa Konumu */
 
 .tr-konum {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: rgba(255,255,255,.6);
@@ -3271,7 +3270,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara a.aktif {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     border-color: transparent;
     color: #FFF;
     cursor: default
@@ -4222,7 +4221,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema4 .baslik:hover {
-    border-left-color: #1AC5B8
+    border-left-color: #0CAB9E
 }
 
 .tr-akordiyon .baslik::after {
@@ -4265,7 +4264,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema4 .baslik.aktif {
-    border-left-color: #1AC5B8
+    border-left-color: #0CAB9E
 }
 
 .tr-akordiyon .baslik.aktif::after {
@@ -4288,7 +4287,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 3.2 Filtre Menu */
 
 .tr-filtre nav {
-    background-color: #1AC5B8;
+    background-color: #0CAB9E;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     display: table;
