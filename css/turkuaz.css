@@ -4394,7 +4394,8 @@ span.kapatButon {
 }
 
 .tr-tab nav {
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%
 }
 
@@ -4402,7 +4403,8 @@ span.kapatButon {
     border-bottom: 2px solid rgba(0,0,0,.1);
     color: rgba(0,0,0,.1);
     cursor: pointer;
-    display: table-cell;
+    flex-basis: 0;
+    flex-grow: 1;
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 30px;
