@@ -262,13 +262,10 @@ function medyaKapat() {
     $(".tr-medya.aktif").removeClass("aktif")
     .css({
         "height": "",
-        "left": "",
         "max-height": "",
         "max-width": "",
-        "position": "",
-        "top": "",
-        "transform": "",
-        "z-index": ""
+        "position": "static",
+        "transform": ""
     })
     $("body").find(".tr-karart").remove()
     .end().find(".tr-modal-yazi").remove()
