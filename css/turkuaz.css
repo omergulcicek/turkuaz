@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -41,8 +41,7 @@
 *      2.12    Sayfa Numaralandirma
 *      2.13    Yazi
 *        2.13.1   Yazi Ayarlari
-*        2.13.2   Yazi Boyutlari
-*        2.13.3   Yazi Renkleri
+*        2.13.2   Yazi Renkleri
 *    3.     JavaScript
 *      3.1     Akordiyon Menu
 *      3.2     Filtre Menu
@@ -112,7 +111,7 @@ menu,
 nav,
 section,
 summary {
-    display: block
+    display: block;
     margin: 0;
     padding: 0
 }
@@ -127,27 +126,48 @@ h6 {
 }
 
 h1 {
-    font-size: 42px
+    font-size: 2rem
 }
 
 h2 {
-    font-size: 32px
+    font-size: 1.8rem
 }
 
 h3 {
-    font-size: 24px
+    font-size: 1.6rem
 }
 
 h4 {
-    font-size: 18px
+    font-size: 1.4rem
 }
 
 h5 {
-    font-size: 14px
+    font-size: 1.2rem
 }
 
 h6 {
-    font-size: 12px
+    font-size: 1rem
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 4rem
+    }
+    h2 {
+        font-size: 3rem
+    }
+    h3 {
+        font-size: 2.5rem
+    }
+    h4 {
+        font-size: 2rem
+    }
+    h5 {
+        font-size: 1.5rem
+    }
+    h6 {
+        font-size: 1rem
+    }
 }
 
 a {
@@ -3296,6 +3316,30 @@ progress.tr-progress.yesil::-webkit-progress-value {
     text-align: center !important
 }
 
+@media only screen and (max-width: 400px) {
+    .yazi-ortala-ck {
+        text-align: center !important
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .yazi-ortala-k {
+        text-align: center !important
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .yazi-ortala-o {
+        text-align: center !important
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .yazi-ortala-b {
+        text-align: center !important
+    }
+}
+
 .yazi-yay {
     text-align: justify !important
 }
@@ -3344,47 +3388,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     white-space: nowrap
 }
 
-/* ============= 2.13.2 Yazi Boyutlari */
-
-.yazi-cokbuyuk {
-    font-size: 40px
-}
-
-.yazi-buyuk {
-    font-size: 35px
-}
-
-.yazi-orta {
-    font-size: 30px
-}
-
-.yazi-kucuk {
-    font-size: 25px
-}
-
-.yazi-cokkucuk {
-    font-size: 13px
-}
-
-@media only screen and (min-width: 1000px) {
-    .yazi-cokbuyuk {
-        font-size: 100px
-    }
-    .yazi-buyuk {
-        font-size: 75px
-    }
-    .yazi-orta {
-        font-size: 50px
-    }
-    .yazi-kucuk {
-        font-size: 25px
-    }
-    .yazi-cokkucuk {
-        font-size: 17px
-    }
-}
-
-/* ============= 2.13.3 Yazi Renkleri */
+/* ============= 2.13.2 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a {
@@ -4393,13 +4397,13 @@ span.kapatButon {
     background-color: #FFF
 }
 
-.tr-tab nav {
+.tr-tab>nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%
 }
 
-.tr-tab nav a {
+.tr-tab>nav a {
     border-bottom: 2px solid rgba(0,0,0,.1);
     color: rgba(0,0,0,.1);
     cursor: pointer;
