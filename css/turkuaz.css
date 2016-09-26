@@ -1721,7 +1721,24 @@ table.tr-tablo::-webkit-scrollbar {
 .d-inline-block { display: inline-block }
 .d-table { display: table }
 
+/* margin */
+.m0 { margin: 0 !important }
+.m1 { margin: 1rem !important }
+.m2 { margin: 2rem !important }
+.m3 { margin: 3rem !important }
+.m4 { margin: 4rem !important }
+.m5 { margin: 5rem !important }
+
+/* padding */
+.p0 { padding: 0 !important }
+.p1 { padding: 1rem !important }
+.p2 { padding: 2rem !important }
+.p3 { padding: 3rem !important }
+.p4 { padding: 4rem !important }
+.p5 { padding: 5rem !important }
+
 /* margin-top */
+.mt0 { margin-top: 0 !important }
 .mt1 { margin-top: 1rem !important }
 .mt2 { margin-top: 2rem !important }
 .mt3 { margin-top: 3rem !important }
@@ -1729,6 +1746,7 @@ table.tr-tablo::-webkit-scrollbar {
 .mt5 { margin-top: 5rem !important }
 
 /* margin-bottom */
+.mb0 { margin-bottom: 0 !important }
 .mb1 { margin-bottom: 1rem !important }
 .mb2 { margin-bottom: 2rem !important }
 .mb3 { margin-bottom: 3rem !important }
@@ -1736,6 +1754,7 @@ table.tr-tablo::-webkit-scrollbar {
 .mb5 { margin-bottom: 5rem !important }
 
 /* margin-right */
+.mr0 { margin-right: 0 !important }
 .mr1 { margin-right: 1rem !important }
 .mr2 { margin-right: 2rem !important }
 .mr3 { margin-right: 3rem !important }
@@ -1743,6 +1762,7 @@ table.tr-tablo::-webkit-scrollbar {
 .mr5 { margin-right: 5rem !important }
 
 /* margin-left */
+.ml0 { margin-left: 0 !important }
 .ml1 { margin-left: 1rem !important }
 .ml2 { margin-left: 2rem !important }
 .ml3 { margin-left: 3rem !important }
@@ -1750,6 +1770,7 @@ table.tr-tablo::-webkit-scrollbar {
 .ml5 { margin-left: 5rem !important }
 
 /* margin-x */
+.mx0 { margin-left: 0 !important; margin-right: 0 !important }
 .mx1 { margin-left: 1rem !important; margin-right: 1rem !important }
 .mx2 { margin-left: 2rem !important; margin-right: 2rem !important }
 .mx3 { margin-left: 3rem !important; margin-right: 3rem !important }
@@ -1757,6 +1778,7 @@ table.tr-tablo::-webkit-scrollbar {
 .mx5 { margin-left: 5rem !important; margin-right: 5rem !important }
 
 /* margin-y */
+.my0 { margin-bottom: 0 !important; margin-top: 0 !important }
 .my1 { margin-bottom: 1rem !important; margin-top: 1rem !important }
 .my2 { margin-bottom: 2rem !important; margin-top: 2rem !important }
 .my3 { margin-bottom: 3rem !important; margin-top: 3rem !important }
@@ -1764,6 +1786,7 @@ table.tr-tablo::-webkit-scrollbar {
 .my5 { margin-bottom: 5rem !important; margin-top: 5rem !important }
 
 /* padding-top */
+.pt0 { padding-top: 0 !important }
 .pt1 { padding-top: 1rem !important }
 .pt2 { padding-top: 2rem !important }
 .pt3 { padding-top: 3rem !important }
@@ -1771,6 +1794,7 @@ table.tr-tablo::-webkit-scrollbar {
 .pt5 { padding-top: 5rem !important }
 
 /* padding-bottom */
+.pb0 { padding-bottom: 0 !important }
 .pb1 { padding-bottom: 1rem !important }
 .pb2 { padding-bottom: 2rem !important }
 .pb3 { padding-bottom: 3rem !important }
@@ -1778,6 +1802,7 @@ table.tr-tablo::-webkit-scrollbar {
 .pb5 { padding-bottom: 5rem !important }
 
 /* padding-right */
+.pr0 { padding-right: 0 !important }
 .pr1 { padding-right: 1rem !important }
 .pr2 { padding-right: 2rem !important }
 .pr3 { padding-right: 3rem !important }
@@ -1785,6 +1810,7 @@ table.tr-tablo::-webkit-scrollbar {
 .pr5 { padding-right: 5rem !important }
 
 /* padding-left */
+.pl0 { padding-left: 0 !important }
 .pl1 { padding-left: 1rem !important }
 .pl2 { padding-left: 2rem !important }
 .pl3 { padding-left: 3rem !important }
@@ -1792,6 +1818,7 @@ table.tr-tablo::-webkit-scrollbar {
 .pl5 { padding-left: 5rem !important }
 
 /* padding-x */
+.px0 { padding-left: 0 !important; padding-right: 0 !important }
 .px1 { padding-left: 1rem !important; padding-right: 1rem !important }
 .px2 { padding-left: 2rem !important; padding-right: 2rem !important }
 .px3 { padding-left: 3rem !important; padding-right: 3rem !important }
@@ -1799,6 +1826,7 @@ table.tr-tablo::-webkit-scrollbar {
 .px5 { padding-left: 5rem !important; padding-right: 5rem !important }
 
 /* padding-y */
+.py0 { padding-bottom: 0 !important; padding-top: 0 !important }
 .py1 { padding-bottom: 1rem !important; padding-top: 1rem !important }
 .py2 { padding-bottom: 2rem !important; padding-top: 2rem !important }
 .py3 { padding-bottom: 3rem !important; padding-top: 3rem !important }
