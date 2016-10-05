@@ -1613,6 +1613,7 @@ table.tr-tablo {
     background-color: #FFF;
     border-collapse: collapse;
     border-spacing: 0;
+    cursor: default;
     display: block;
     font-size: 13px;
     margin: 10px 0;
@@ -2385,7 +2386,8 @@ input.tr-dosya {
     border-bottom: 2px solid #eee;
     cursor: pointer;
     height: 38px;
-    outline: none
+    outline: none;
+    padding: 8px 10px 0 0
 }
 
 input.tr-dosya::-webkit-file-upload-button {
@@ -2396,7 +2398,7 @@ input.tr-dosya::before {
     background-color: #0CAB9E;
     border: none;
     border-radius: 3px;
-    bottom: 2px;
+    bottom: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
     color: #FFF;
     content: "Seç";
@@ -2582,7 +2584,7 @@ input[type="date"].tr-input {
 }
 
 input[type="date"].tr-input + label {
-    transform: translateY(-60px) scale(.75) !important
+    transform: translateY(-55px) scale(.75) !important
 }
 
 /* ============= 2.3.8 Textarea */
@@ -2597,7 +2599,7 @@ textarea.tr-textarea {
     font-size: 16px;
     letter-spacing: .5px;
     line-height: 16px;
-    margin-bottom: 5px;
+    margin: 20px 0 5px 0;
     min-height: 50px;
     outline: none;
     position: relative;
@@ -3055,8 +3057,7 @@ nav.menu ul li ul li:hover a {
     nav.menu.mobil .container-buyuk {
         width: 100% !important
     }
-    nav.menu ul.sag,
-    nav.menu ul.sol {
+    nav.menu ul {
         width: 100%
     }
     nav.menu.mobil ul li {
@@ -3388,14 +3389,30 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .yazi-ince,
 .yazi-ince a {
-    font-family: "Noto Sans Italic";
-    font-style: italic;
     font-weight: 100 !important
 }
 
 .yazi-yatay,
 .yazi-yatay a {
+    font-family: "Noto Sans Italic";
     font-style: italic
+}
+
+.yazi-cizgi,
+.yazi-cizgi a,
+.yazi-cizgi-alt,
+.yazi-cizgi-alt a {
+    text-decoration: underline
+}
+
+.yazi-cizgi-orta,
+.yazi-cizgi-orta a {
+    text-decoration: line-through
+}
+
+.yazi-cizgi-ust,
+.yazi-cizgi-ust a {
+    text-decoration: overline
 }
 
 .yazi-buyukharf {

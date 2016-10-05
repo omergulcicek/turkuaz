@@ -10,10 +10,9 @@
 *   1. Etiket
 *   2. Form
 *   3. Menu
-*   4. Not
-*   5. Sayfa Konumu
-*   6. Medya
-*   7. Modal
+*   4. Sayfa Konumu
+*   5. Medya
+*   6. Modal
 *
 */
 
@@ -170,19 +169,11 @@ $(".tr-filtre").on("click", "nav a", function(){
     }
 })(jQuery)
 
-/* ============= 4. Notlar */
-
-$(".tr-not").append("<span class=kaldir>&times</span>")
-
-$(".tr-not").on("click", "span.kaldir", function(){
-    $(this).parents(".tr-not").addClass("gizle")
-})
-
-/* ============= 5. Sayfa Konumu */
+/* ============= 4. Sayfa Konumu */
 
 $(".tr-numara").on("click", "a.pasif,a.aktif", function(e){ e.preventDefault() })
 
-/* ============= 6. Medya */
+/* ============= 5. Medya */
 
 ;(function($) {
     $.fn.medya = function(ayarlar) {
@@ -274,7 +265,7 @@ function medyaKapat() {
 
 $(".tr-medya").medya()
 
-/* ============= 7. Modal */
+/* ============= 6. Modal */
 
 ;(function($) {
     $.fn.modal = function(ayarlar) {
