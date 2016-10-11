@@ -5,6 +5,7 @@
 * Noto Sans Yazi Stili (https://fonts.google.com/specimen/Noto+Sans)
 */
 
+
 /*!
 *    Turkuaz Css - Kod Duzeni
 *
@@ -51,15 +52,14 @@
 *
 */
 
+
 /* ============= 1. Css  */
 
 html {
     box-sizing: border-box
 }
 
-*,
-:before,
-:after {
+*, :before, :after {
     box-sizing: inherit
 }
 
@@ -100,28 +100,13 @@ body {
     }
 }
 
-article,
-aside,
-details,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figure, footer, header, main, menu, nav, section, summary {
     display: block;
     margin: 0;
     padding: 0
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 10px 0
 }
 
@@ -188,14 +173,12 @@ a:active {
     outline-width: 0
 }
 
-b,
-strong {
+b, strong {
     font-family: "Noto Sans Bold";
     font-weight: 700
 }
 
-i,
-em {
+i, em {
     font-family: "Noto Sans Italic";
     font-style: italic
 }
@@ -220,22 +203,18 @@ img {
     max-width: 100%
 }
 
-input,
-button,
-select,
-textarea {
+input, button, select, textarea {
     margin: 0
 }
 
-pre,
-code {
+pre, code {
     margin: 0;
     padding: 10px 20px
 }
 
 pre {
     background-color: #f5f2f0;
-    border:1px solid rgba(0,0,0,.12);
+    border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 3px;
     display: inline-block;
     overflow-y: auto;
@@ -255,8 +234,7 @@ progress {
     vertical-align: baseline
 }
 
-sub,
-sup {
+sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -271,16 +249,17 @@ sup {
     top: -0.5em
 }
 
+
 /* ============= 1.1 Grid Sistemi  */
 
-.container,
-.container-kucuk,
-.container-buyuk {
+.container, .container-kucuk, .container-buyuk {
     display: block;
     margin: 0 auto
 }
 
+
 /* Mobil Cihazlar */
+
 .container {
     width: 85%
 }
@@ -293,7 +272,9 @@ sup {
     width: 100%
 }
 
+
 /* Mini Tabletler */
+
 @media only screen and (min-width: 400px) {
     .container {
         width: 80%
@@ -306,7 +287,9 @@ sup {
     }
 }
 
+
 /* Tabletler */
+
 @media only screen and (min-width: 800px) {
     .container {
         width: 75%
@@ -319,7 +302,9 @@ sup {
     }
 }
 
+
 /* Bilgisayarlar */
+
 @media only screen and (min-width: 1000px) {
     .container {
         width: 70%
@@ -332,7 +317,9 @@ sup {
     }
 }
 
+
 /* Yuksek Cozunurlukler */
+
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1250px;
@@ -348,12 +335,7 @@ sup {
     }
 }
 
-.container:before,
-.container:after,
-.container-kucuk:before,
-.container-kucuk:after,
-.container-buyuk:before,
-.container-buyuk:after {
+.container:before, .container:after, .container-kucuk:before, .container-kucuk:after, .container-buyuk:before, .container-buyuk:after {
     content: " ";
     display: table
 }
@@ -362,16 +344,12 @@ sup {
     clear: both
 }
 
-.flex:before,
-.flex:after,
-.row:before,
-.row:after {
+.flex:before, .flex:after, .row:before, .row:after {
     content: " ";
     display: table
 }
 
-.flex:after,
-.row:after {
+.flex:after, .row:after {
     clear: both
 }
 
@@ -402,7 +380,9 @@ sup {
     position: relative
 }
 
+
 /* Mobil Cihazlar */
+
 .tr.ck1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
@@ -523,7 +503,9 @@ sup {
     margin-left: 100%
 }
 
+
 /* Mini Tabletler */
+
 @media only screen and (min-width: 400px) {
     .tr.k {
         flex-basis: 0;
@@ -631,7 +613,9 @@ sup {
     }
 }
 
+
 /* Tabletler */
+
 @media only screen and (min-width: 800px) {
     .tr.o {
         flex-basis: 0;
@@ -739,7 +723,9 @@ sup {
     }
 }
 
+
 /* Bilgisayarlar */
+
 @media only screen and (min-width: 1000px) {
     .tr.b {
         flex-basis: 0;
@@ -847,7 +833,9 @@ sup {
     }
 }
 
+
 /* Yuksek Cozunurlukler */
+
 @media only screen and (min-width: 1200px) {
     .tr.cb {
         flex-basis: 0;
@@ -955,6 +943,7 @@ sup {
     }
 }
 
+
 /* ============= 1.2 Renkler */
 
 .saydam {
@@ -965,8 +954,7 @@ sup {
     background-color: #FFF !important
 }
 
-.sari,
-.sari6 {
+.sari, .sari6 {
     background-color: #FFEB3B !important
 }
 
@@ -1002,8 +990,7 @@ sup {
     background-color: #F57F17 !important
 }
 
-.turuncu,
-.turuncu6 {
+.turuncu, .turuncu6 {
     background-color: #FF9800 !important
 }
 
@@ -1039,8 +1026,7 @@ sup {
     background-color: #E65100 !important
 }
 
-.koyu-turuncu,
-.koyu-turuncu6 {
+.koyu-turuncu, .koyu-turuncu6 {
     background-color: #FF5722 !important
 }
 
@@ -1076,8 +1062,7 @@ sup {
     background-color: #BF360C !important
 }
 
-.kirmizi,
-.kirmizi6 {
+.kirmizi, .kirmizi6 {
     background-color: #F44336 !important
 }
 
@@ -1113,8 +1098,7 @@ sup {
     background-color: #B71C1C !important
 }
 
-.pembe,
-.pembe6 {
+.pembe, .pembe6 {
     background-color: #E91E63 !important
 }
 
@@ -1150,8 +1134,7 @@ sup {
     background-color: #880E4F !important
 }
 
-.mor,
-.mor6 {
+.mor, .mor6 {
     background-color: #9C27B0 !important
 }
 
@@ -1187,8 +1170,7 @@ sup {
     background-color: #4A148C !important
 }
 
-.koyu-mor,
-.koyu-mor6 {
+.koyu-mor, .koyu-mor6 {
     background-color: #673AB7 !important
 }
 
@@ -1224,8 +1206,7 @@ sup {
     background-color: #311B92 !important
 }
 
-.mavi,
-.mavi6 {
+.mavi, .mavi6 {
     background-color: #2196F3 !important
 }
 
@@ -1261,8 +1242,7 @@ sup {
     background-color: #0D47A1 !important
 }
 
-.acik-mavi,
-.acik-mavi6 {
+.acik-mavi, .acik-mavi6 {
     background-color: #03A9F4 !important
 }
 
@@ -1298,8 +1278,7 @@ sup {
     background-color: #01579B !important
 }
 
-.turkuaz,
-.turkuaz6 {
+.turkuaz, .turkuaz6 {
     background-color: #1AC5B8 !important
 }
 
@@ -1335,8 +1314,7 @@ sup {
     background-color: #038075 !important
 }
 
-.yesil,
-.yesil6  {
+.yesil, .yesil6 {
     background-color: #4CAF50 !important
 }
 
@@ -1372,8 +1350,7 @@ sup {
     background-color: #1B5E20 !important
 }
 
-.acik-yesil,
-.acik-yesil6  {
+.acik-yesil, .acik-yesil6 {
     background-color: #8BC34A !important
 }
 
@@ -1409,8 +1386,7 @@ sup {
     background-color: #33691E !important
 }
 
-.kahverengi,
-.kahverengi6 {
+.kahverengi, .kahverengi6 {
     background-color: #795548 !important
 }
 
@@ -1446,8 +1422,7 @@ sup {
     background-color: #3E2723 !important
 }
 
-.gri,
-.gri6 {
+.gri, .gri6 {
     background-color: #9E9E9E !important
 }
 
@@ -1607,6 +1582,7 @@ sup {
     background-color: #EE1C1B !important
 }
 
+
 /* ============= 1.3 Tablolar */
 
 table.tr-tablo {
@@ -1624,30 +1600,30 @@ table.tr-tablo {
 }
 
 table.tr-tablo tr:last-of-type td {
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 
 table.tr-tablo tr td:last-of-type {
-    border-right: 1px solid rgba(0,0,0,.05);
+    border-right: 1px solid rgba(0, 0, 0, .05);
 }
 
 table.tr-tablo tr th {
-    background-color: rgba(0,0,0,.02);
+    background-color: rgba(0, 0, 0, .02);
     padding: 15px;
     text-align: left;
     width: 100vw
 }
 
 table.tr-tablo tr td {
-    border-left: 1px solid rgba(0,0,0,.05);
-    border-top: 1px solid rgba(0,0,0,.05);
+    border-left: 1px solid rgba(0, 0, 0, .05);
+    border-top: 1px solid rgba(0, 0, 0, .05);
     color: #212121;
     padding: 15px;
     width: 100vw
 }
 
 table.tr-tablo.renkli tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.02)
+    background-color: rgba(0, 0, 0, .02)
 }
 
 table.tr-tablo.renkli tr th {
@@ -1655,12 +1631,13 @@ table.tr-tablo.renkli tr th {
 }
 
 table.tr-tablo.vurgu tr:hover td {
-    background-color: rgba(0,0,0,.025)
+    background-color: rgba(0, 0, 0, .025)
 }
 
 table.tr-tablo::-webkit-scrollbar {
     display: none
 }
+
 
 /* ============= 1.4 Yardimci Kodlar */
 
@@ -1681,7 +1658,9 @@ table.tr-tablo::-webkit-scrollbar {
     border-radius: 50% !important
 }
 
+
 /* gizle */
+
 .gizle {
     display: none !important
 }
@@ -1716,123 +1695,426 @@ table.tr-tablo::-webkit-scrollbar {
     }
 }
 
+
 /* display */
-.d-inline { display: inline }
-.d-block { display: block }
-.d-inline-block { display: inline-block }
-.d-table { display: table }
+
+.d-inline {
+    display: inline
+}
+
+.d-block {
+    display: block
+}
+
+.d-inline-block {
+    display: inline-block
+}
+
+.d-table {
+    display: table
+}
+
 
 /* margin */
-.m0 { margin: 0 !important }
-.m1 { margin: 1rem !important }
-.m2 { margin: 2rem !important }
-.m3 { margin: 3rem !important }
-.m4 { margin: 4rem !important }
-.m5 { margin: 5rem !important }
+
+.m0 {
+    margin: 0 !important
+}
+
+.m1 {
+    margin: 1rem !important
+}
+
+.m2 {
+    margin: 2rem !important
+}
+
+.m3 {
+    margin: 3rem !important
+}
+
+.m4 {
+    margin: 4rem !important
+}
+
+.m5 {
+    margin: 5rem !important
+}
+
 
 /* padding */
-.p0 { padding: 0 !important }
-.p1 { padding: 1rem !important }
-.p2 { padding: 2rem !important }
-.p3 { padding: 3rem !important }
-.p4 { padding: 4rem !important }
-.p5 { padding: 5rem !important }
+
+.p0 {
+    padding: 0 !important
+}
+
+.p1 {
+    padding: 1rem !important
+}
+
+.p2 {
+    padding: 2rem !important
+}
+
+.p3 {
+    padding: 3rem !important
+}
+
+.p4 {
+    padding: 4rem !important
+}
+
+.p5 {
+    padding: 5rem !important
+}
+
 
 /* margin-top */
-.mt0 { margin-top: 0 !important }
-.mt1 { margin-top: 1rem !important }
-.mt2 { margin-top: 2rem !important }
-.mt3 { margin-top: 3rem !important }
-.mt4 { margin-top: 4rem !important }
-.mt5 { margin-top: 5rem !important }
+
+.mt0 {
+    margin-top: 0 !important
+}
+
+.mt1 {
+    margin-top: 1rem !important
+}
+
+.mt2 {
+    margin-top: 2rem !important
+}
+
+.mt3 {
+    margin-top: 3rem !important
+}
+
+.mt4 {
+    margin-top: 4rem !important
+}
+
+.mt5 {
+    margin-top: 5rem !important
+}
+
 
 /* margin-bottom */
-.mb0 { margin-bottom: 0 !important }
-.mb1 { margin-bottom: 1rem !important }
-.mb2 { margin-bottom: 2rem !important }
-.mb3 { margin-bottom: 3rem !important }
-.mb4 { margin-bottom: 4rem !important }
-.mb5 { margin-bottom: 5rem !important }
+
+.mb0 {
+    margin-bottom: 0 !important
+}
+
+.mb1 {
+    margin-bottom: 1rem !important
+}
+
+.mb2 {
+    margin-bottom: 2rem !important
+}
+
+.mb3 {
+    margin-bottom: 3rem !important
+}
+
+.mb4 {
+    margin-bottom: 4rem !important
+}
+
+.mb5 {
+    margin-bottom: 5rem !important
+}
+
 
 /* margin-right */
-.mr0 { margin-right: 0 !important }
-.mr1 { margin-right: 1rem !important }
-.mr2 { margin-right: 2rem !important }
-.mr3 { margin-right: 3rem !important }
-.mr4 { margin-right: 4rem !important }
-.mr5 { margin-right: 5rem !important }
+
+.mr0 {
+    margin-right: 0 !important
+}
+
+.mr1 {
+    margin-right: 1rem !important
+}
+
+.mr2 {
+    margin-right: 2rem !important
+}
+
+.mr3 {
+    margin-right: 3rem !important
+}
+
+.mr4 {
+    margin-right: 4rem !important
+}
+
+.mr5 {
+    margin-right: 5rem !important
+}
+
 
 /* margin-left */
-.ml0 { margin-left: 0 !important }
-.ml1 { margin-left: 1rem !important }
-.ml2 { margin-left: 2rem !important }
-.ml3 { margin-left: 3rem !important }
-.ml4 { margin-left: 4rem !important }
-.ml5 { margin-left: 5rem !important }
+
+.ml0 {
+    margin-left: 0 !important
+}
+
+.ml1 {
+    margin-left: 1rem !important
+}
+
+.ml2 {
+    margin-left: 2rem !important
+}
+
+.ml3 {
+    margin-left: 3rem !important
+}
+
+.ml4 {
+    margin-left: 4rem !important
+}
+
+.ml5 {
+    margin-left: 5rem !important
+}
+
 
 /* margin-x */
-.mx0 { margin-left: 0 !important; margin-right: 0 !important }
-.mx1 { margin-left: 1rem !important; margin-right: 1rem !important }
-.mx2 { margin-left: 2rem !important; margin-right: 2rem !important }
-.mx3 { margin-left: 3rem !important; margin-right: 3rem !important }
-.mx4 { margin-left: 4rem !important; margin-right: 4rem !important }
-.mx5 { margin-left: 5rem !important; margin-right: 5rem !important }
+
+.mx0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important
+}
+
+.mx1 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important
+}
+
+.mx2 {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important
+}
+
+.mx3 {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important
+}
+
+.mx4 {
+    margin-left: 4rem !important;
+    margin-right: 4rem !important
+}
+
+.mx5 {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important
+}
+
 
 /* margin-y */
-.my0 { margin-bottom: 0 !important; margin-top: 0 !important }
-.my1 { margin-bottom: 1rem !important; margin-top: 1rem !important }
-.my2 { margin-bottom: 2rem !important; margin-top: 2rem !important }
-.my3 { margin-bottom: 3rem !important; margin-top: 3rem !important }
-.my4 { margin-bottom: 4rem !important; margin-top: 4rem !important }
-.my5 { margin-bottom: 5rem !important; margin-top: 5rem !important }
+
+.my0 {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important
+}
+
+.my1 {
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important
+}
+
+.my2 {
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important
+}
+
+.my3 {
+    margin-bottom: 3rem !important;
+    margin-top: 3rem !important
+}
+
+.my4 {
+    margin-bottom: 4rem !important;
+    margin-top: 4rem !important
+}
+
+.my5 {
+    margin-bottom: 5rem !important;
+    margin-top: 5rem !important
+}
+
 
 /* padding-top */
-.pt0 { padding-top: 0 !important }
-.pt1 { padding-top: 1rem !important }
-.pt2 { padding-top: 2rem !important }
-.pt3 { padding-top: 3rem !important }
-.pt4 { padding-top: 4rem !important }
-.pt5 { padding-top: 5rem !important }
+
+.pt0 {
+    padding-top: 0 !important
+}
+
+.pt1 {
+    padding-top: 1rem !important
+}
+
+.pt2 {
+    padding-top: 2rem !important
+}
+
+.pt3 {
+    padding-top: 3rem !important
+}
+
+.pt4 {
+    padding-top: 4rem !important
+}
+
+.pt5 {
+    padding-top: 5rem !important
+}
+
 
 /* padding-bottom */
-.pb0 { padding-bottom: 0 !important }
-.pb1 { padding-bottom: 1rem !important }
-.pb2 { padding-bottom: 2rem !important }
-.pb3 { padding-bottom: 3rem !important }
-.pb4 { padding-bottom: 4rem !important }
-.pb5 { padding-bottom: 5rem !important }
+
+.pb0 {
+    padding-bottom: 0 !important
+}
+
+.pb1 {
+    padding-bottom: 1rem !important
+}
+
+.pb2 {
+    padding-bottom: 2rem !important
+}
+
+.pb3 {
+    padding-bottom: 3rem !important
+}
+
+.pb4 {
+    padding-bottom: 4rem !important
+}
+
+.pb5 {
+    padding-bottom: 5rem !important
+}
+
 
 /* padding-right */
-.pr0 { padding-right: 0 !important }
-.pr1 { padding-right: 1rem !important }
-.pr2 { padding-right: 2rem !important }
-.pr3 { padding-right: 3rem !important }
-.pr4 { padding-right: 4rem !important }
-.pr5 { padding-right: 5rem !important }
+
+.pr0 {
+    padding-right: 0 !important
+}
+
+.pr1 {
+    padding-right: 1rem !important
+}
+
+.pr2 {
+    padding-right: 2rem !important
+}
+
+.pr3 {
+    padding-right: 3rem !important
+}
+
+.pr4 {
+    padding-right: 4rem !important
+}
+
+.pr5 {
+    padding-right: 5rem !important
+}
+
 
 /* padding-left */
-.pl0 { padding-left: 0 !important }
-.pl1 { padding-left: 1rem !important }
-.pl2 { padding-left: 2rem !important }
-.pl3 { padding-left: 3rem !important }
-.pl4 { padding-left: 4rem !important }
-.pl5 { padding-left: 5rem !important }
+
+.pl0 {
+    padding-left: 0 !important
+}
+
+.pl1 {
+    padding-left: 1rem !important
+}
+
+.pl2 {
+    padding-left: 2rem !important
+}
+
+.pl3 {
+    padding-left: 3rem !important
+}
+
+.pl4 {
+    padding-left: 4rem !important
+}
+
+.pl5 {
+    padding-left: 5rem !important
+}
+
 
 /* padding-x */
-.px0 { padding-left: 0 !important; padding-right: 0 !important }
-.px1 { padding-left: 1rem !important; padding-right: 1rem !important }
-.px2 { padding-left: 2rem !important; padding-right: 2rem !important }
-.px3 { padding-left: 3rem !important; padding-right: 3rem !important }
-.px4 { padding-left: 4rem !important; padding-right: 4rem !important }
-.px5 { padding-left: 5rem !important; padding-right: 5rem !important }
+
+.px0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.px1 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important
+}
+
+.px2 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important
+}
+
+.px3 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important
+}
+
+.px4 {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important
+}
+
+.px5 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important
+}
+
 
 /* padding-y */
-.py0 { padding-bottom: 0 !important; padding-top: 0 !important }
-.py1 { padding-bottom: 1rem !important; padding-top: 1rem !important }
-.py2 { padding-bottom: 2rem !important; padding-top: 2rem !important }
-.py3 { padding-bottom: 3rem !important; padding-top: 3rem !important }
-.py4 { padding-bottom: 4rem !important; padding-top: 4rem !important }
-.py5 { padding-bottom: 5rem !important; padding-top: 5rem !important }
+
+.py0 {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important
+}
+
+.py1 {
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important
+}
+
+.py2 {
+    padding-bottom: 2rem !important;
+    padding-top: 2rem !important
+}
+
+.py3 {
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important
+}
+
+.py4 {
+    padding-bottom: 4rem !important;
+    padding-top: 4rem !important
+}
+
+.py5 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important
+}
 
 .cizgi {
     background-color: #eee;
@@ -1853,15 +2135,7 @@ table.tr-tablo::-webkit-scrollbar {
     width: auto
 }
 
-.cizgi a,
-.cizgi h1,
-.cizgi h2,
-.cizgi h3,
-.cizgi h4,
-.cizgi h5,
-.cizgi h6,
-.cizgi p,
-.cizgi span {
+.cizgi a, .cizgi h1, .cizgi h2, .cizgi h3, .cizgi h4, .cizgi h5, .cizgi h6, .cizgi p, .cizgi span {
     background-color: #FFF;
     bottom: 13px;
     color: #000;
@@ -1872,8 +2146,7 @@ table.tr-tablo::-webkit-scrollbar {
     position: relative
 }
 
-.temizle:before,
-.temizle:after {
+.temizle:before, .temizle:after {
     content: " ";
     display: table
 }
@@ -1903,6 +2176,7 @@ span.tr-modal-span {
     z-index: 997
 }
 
+
 /* ============= 1.5 Yazi Stili */
 
 @font-face {
@@ -1920,16 +2194,20 @@ span.tr-modal-span {
     src: url("../fonts/NotoSans-Bold.ttf")
 }
 
+
 /* ============= 2. Bilesenler */
+
+
 /* ============= 2.1 Buton */
+
+
 /* ============= 2.1.1 Buton Ayarlari */
 
-a.buton,
-button {
+a.buton, button {
     background-color: #0CAB9E;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     color: #FFF;
     cursor: pointer;
     display: inline-block;
@@ -1957,115 +2235,96 @@ a.buton.buyuk {
     line-height: 4
 }
 
-a.buton:hover,
-button:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15);
+a.buton:hover, button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
     color: #FFF;
     text-decoration: none
 }
 
-a.buton:active,
-button:active {
-    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15), inset 0 0 250px rgba(0,0,0,.15)
+a.buton:active, button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
 a.buton::selection {
     background-color: transparent
 }
 
-a.buton.saydam,
-button.saydam {
+a.buton.saydam, button.saydam {
     background-color: transparent !important;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: none !important;
     color: #000
 }
 
-a.buton.saydam:hover,
-button.saydam:hover {
+a.buton.saydam:hover, button.saydam:hover {
     box-shadow: inset 0 0 0 0 transparent !important;
-    border: 1px solid rgba(0,0,0,.3);
+    border: 1px solid rgba(0, 0, 0, .3);
     color: #000
 }
 
-a.buton.pasif,
-button.pasif {
+a.buton.pasif, button.pasif {
     background-color: #E6E6E6 !important;
     box-shadow: none;
-    color: rgba(0,0,0,.4) !important;
-    cursor:default
+    color: rgba(0, 0, 0, .4) !important;
+    cursor: default
 }
 
-a.buton.pasif:hover,
-button.pasif:hover {
+a.buton.pasif:hover, button.pasif:hover {
     background-color: #E6E6E6 important;
     box-shadow: inset 0 0 0 0 transparent !important;
-    color: rgba(0,0,0,.4) !important;
-    cursor:default
+    color: rgba(0, 0, 0, .4) !important;
+    cursor: default
 }
 
-a.buton.yuvarlak,
-button.yuvarlak,
-a.buton.kare,
-button.kare {
+a.buton.yuvarlak, button.yuvarlak, a.buton.kare, button.kare {
     height: 40px;
     line-height: 40px;
     padding: 0px !important;
     width: 40px
 }
 
-a.buton.yuvarlak.kucuk,
-button.yuvarlak.kucuk,
-a.buton.kare.kucuk,
-button.kare.kucuk {
+a.buton.yuvarlak.kucuk, button.yuvarlak.kucuk, a.buton.kare.kucuk, button.kare.kucuk {
     height: 30px;
     line-height: 30px;
     width: 30px
 }
 
-a.buton.yuvarlak.buyuk,
-button.yuvarlak.buyuk,
-a.buton.kare.buyuk,
-button.kare.buyuk {
+a.buton.yuvarlak.buyuk, button.yuvarlak.buyuk, a.buton.kare.buyuk, button.kare.buyuk {
     height: 60px;
     line-height: 60px;
     width: 60px
 }
 
-a.buton.yay,
-button.yay {
+a.buton.yay, button.yay {
     width: 100%;
 }
 
-a.buton i.fa,
-button i.fa {
+a.buton i.fa, button i.fa {
     margin-right: 7px;
     margin-top: -2px;
     opacity: .85;
     vertical-align: middle
 }
 
-a.buton.yuvarlak i.fa,
-button.yuvarlak i.fa {
+a.buton.yuvarlak i.fa, button.yuvarlak i.fa {
     margin-right: -2px;
     opacity: 1
 }
 
-a.buton.kare i.fa,
-button.kare i.fa {
+a.buton.kare i.fa, button.kare i.fa {
     margin-right: -2px;
     opacity: 1
 }
 
 .butonlar {
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     display: inline-flex;
     transition: .3s ease-out
 }
 
 .butonlar:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
 }
 
 .butonlar a.buton {
@@ -2084,11 +2343,11 @@ button.kare i.fa {
 }
 
 .butonlar a.buton:hover {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.15)
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
 .butonlar a.buton:active {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.25)
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .25)
 }
 
 .butonlar.dikey {
@@ -2108,6 +2367,7 @@ button.kare i.fa {
     border-radius: 0 0 3px 3px
 }
 
+
 /* ============= 2.1.2 Buton Efektleri */
 
 a.buton[class*="efekt"] {
@@ -2123,8 +2383,7 @@ a.buton[class*="efekt"]::before {
     transition: .3s
 }
 
-a.buton.efekt:before,
-a.buton.efekt1:before {
+a.buton.efekt:before, a.buton.efekt1:before {
     height: 150px;
     left: -70px;
     top: -40px;
@@ -2132,8 +2391,7 @@ a.buton.efekt1:before {
     width: 50px
 }
 
-a.buton.efekt:hover:before,
-a.buton.efekt1:hover:before {
+a.buton.efekt:hover:before, a.buton.efekt1:hover:before {
     left: 99%
 }
 
@@ -2194,10 +2452,11 @@ a.buton.efekt6:hover:before {
     height: 100%
 }
 
+
 /* ============= 2.2 Etiketler */
 
 a.etiket {
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
     border-radius: 3px;
     color: #333;
     cursor: pointer;
@@ -2212,16 +2471,17 @@ a.etiket {
 }
 
 a.etiket:hover {
-    box-shadow: inset 0 0 100px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
     color: #000;
     text-decoration: none
 }
 
 a.etiket:active {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.15)
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
 }
+
 a.etiket .detay {
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     border-radius: 0 3px 3px 0;
     display: inline-block;
     opacity: .8;
@@ -2244,7 +2504,7 @@ a.etiket.kapat {
 }
 
 a.etiket.kapat:hover {
-    box-shadow: inset 0 0 0 rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
 a.etiket.kapat span.kaldir {
@@ -2263,6 +2523,7 @@ a.etiket.kapat:hover span.kaldir {
     opacity: 1
 }
 
+
 /* ============= 2.3 Form Elemanlari */
 
 form.tr-form {
@@ -2270,6 +2531,7 @@ form.tr-form {
     border-radius: 5px;
     padding: 30px
 }
+
 
 /* ============= 2.3.1 Anahtarlar */
 
@@ -2279,14 +2541,14 @@ input.tr-anahtar:not(:checked), .tr-anahtar:checked {
     position: absolute
 }
 
-input.tr-anahtar + label {
+input.tr-anahtar+label {
     margin-left: 50px
 }
 
-input.tr-anahtar + label:before {
-    background: rgba(0,0,0,.1);
+input.tr-anahtar+label:before {
+    background: rgba(0, 0, 0, .1);
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     content: "";
     cursor: pointer;
     height: 20px;
@@ -2297,10 +2559,10 @@ input.tr-anahtar + label:before {
     z-index: 1
 }
 
-input.tr-anahtar + label:after {
+input.tr-anahtar+label:after {
     background: #FFF;
     border-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     content: "";
     cursor: pointer;
     height: 20px;
@@ -2312,13 +2574,14 @@ input.tr-anahtar + label:after {
     z-index: 2
 }
 
-input:checked.tr-anahtar + label:before {
+input:checked.tr-anahtar+label:before {
     background-color: #0CAB9E
 }
 
-input:checked.tr-anahtar + label:after {
+input:checked.tr-anahtar+label:after {
     margin-left: -27px
 }
+
 
 /* ============= 2.3.2 Checkbox */
 
@@ -2333,7 +2596,7 @@ input.tr-checkbox {
     padding: 0
 }
 
-input.tr-checkbox + label {
+input.tr-checkbox+label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -2344,11 +2607,11 @@ input.tr-checkbox + label {
     position: relative
 }
 
-input.tr-checkbox:last-of-type + label {
+input.tr-checkbox:last-of-type+label {
     margin-bottom: 15px
 }
 
-input.tr-checkbox:checked + label:before {
+input.tr-checkbox:checked+label:before {
     backface-visibility: hidden;
     border-color: #0CAB9E;
     border-top-color: transparent;
@@ -2361,8 +2624,8 @@ input.tr-checkbox:checked + label:before {
     width: 12px
 }
 
-input.tr-checkbox + label:before, .tr-checkbox:not(.filled-in) + label:after {
-    border: 2px solid rgba(0,0,0,.75);
+input.tr-checkbox+label:before, .tr-checkbox:not(.filled-in)+label:after {
+    border: 2px solid rgba(0, 0, 0, .75);
     border-radius: 2px;
     content: "";
     height: 18px;
@@ -2375,10 +2638,11 @@ input.tr-checkbox + label:before, .tr-checkbox:not(.filled-in) + label:after {
     z-index: 0
 }
 
-input.tr-checkbox:not(.filled-in) + label:after {
+input.tr-checkbox:not(.filled-in)+label:after {
     border: 0;
     transform: scale(0)
 }
+
 
 /* ============= 2.3.3 Dosya Secici */
 
@@ -2399,7 +2663,7 @@ input.tr-dosya::before {
     border: none;
     border-radius: 3px;
     bottom: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     color: #FFF;
     content: "Seç";
     display: inline-block;
@@ -2419,7 +2683,7 @@ input.tr-dosya::before {
 }
 
 input.tr-dosya:hover::before {
-    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
     color: #FFF;
     text-decoration: none
 }
@@ -2429,8 +2693,9 @@ input.tr-dosya:active {
 }
 
 input.tr-dosya:active::before {
-    box-shadow: 0 5px 10px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.15), inset 0 0 250px rgba(0,0,0,.15)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
+
 
 /* ============= 2.3.4 Input */
 
@@ -2456,7 +2721,7 @@ input.tr-input.aktif {
     border-bottom: 2px solid #0CAB9E
 }
 
-input.tr-input + label {
+input.tr-input+label {
     color: #0CAB9E;
     cursor: auto;
     display: block;
@@ -2471,16 +2736,16 @@ input.tr-input + label {
     transition: .3s
 }
 
-input.tr-input.aktif + label {
+input.tr-input.aktif+label {
     color: #057970
 }
 
-input.tr-input.dolu + label {
+input.tr-input.dolu+label {
     transform: translateY(-55px) scale(.75) !important
 }
 
 nav.menu input.tr-input {
-    border-bottom-color: rgba(255,255,255,.45);
+    border-bottom-color: rgba(255, 255, 255, .45);
     color: #FFF;
     display: inline-block;
     font-size: 13px;
@@ -2498,12 +2763,13 @@ nav.menu.mobilmenu input.tr-input {
 }
 
 nav.menu input.tr-input.aktif {
-    border-bottom-color: rgba(255,255,255,.9)
+    border-bottom-color: rgba(255, 255, 255, .9)
 }
 
 nav.menu.mobilmenu input.tr-input.aktif {
     width: 90%
 }
+
 
 /* ============= 2.3.5 Radio Buton */
 
@@ -2518,7 +2784,7 @@ input.tr-radio:not(:checked), .tr-radio:checked {
     position: absolute
 }
 
-input.tr-radio + label {
+input.tr-radio+label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -2529,11 +2795,11 @@ input.tr-radio + label {
     text-align: left !important
 }
 
-input.tr-radio:last-of-type + label {
+input.tr-radio:last-of-type+label {
     margin-bottom: 15px
 }
 
-input.tr-radio:checked + label:before {
+input.tr-radio:checked+label:before {
     backface-visibility: hidden;
     background-color: #0CAB9E;
     height: 18px;
@@ -2543,8 +2809,8 @@ input.tr-radio:checked + label:before {
     width: 18px
 }
 
-input.tr-radio + label:before, .tr-radio:not(.filled-in) + label:after {
-    border: 2px solid rgba(0,0,0,.75);
+input.tr-radio+label:before, .tr-radio:not(.filled-in)+label:after {
+    border: 2px solid rgba(0, 0, 0, .75);
     border-radius: 50%;
     content: "";
     height: 18px;
@@ -2557,16 +2823,17 @@ input.tr-radio + label:before, .tr-radio:not(.filled-in) + label:after {
     z-index: 0
 }
 
-input.tr-radio:not(.filled-in) + label:after {
+input.tr-radio:not(.filled-in)+label:after {
     border: 0;
     transform: scale(0)
 }
 
+
 /* ============= 2.3.6 Select */
 
 select {
-    background-color: rgba(255,255,255,.85);
-    border:1px solid #f2f2f2;
+    background-color: rgba(255, 255, 255, .85);
+    border: 1px solid #f2f2f2;
     border-radius: 3px;
     display: block;
     height: 40px;
@@ -2577,15 +2844,17 @@ select {
     width: 100%
 }
 
+
 /* ============= 2.3.7 Tarih Secici */
 
 input[type="date"].tr-input {
     line-height: 20px
 }
 
-input[type="date"].tr-input + label {
+input[type="date"].tr-input+label {
     transform: translateY(-55px) scale(.75) !important
 }
+
 
 /* ============= 2.3.8 Textarea */
 
@@ -2612,7 +2881,7 @@ textarea.tr-textarea.aktif {
     border-bottom: 2px solid #0CAB9E
 }
 
-textarea.tr-textarea + label {
+textarea.tr-textarea+label {
     color: #0CAB9E;
     cursor: auto;
     display: block;
@@ -2627,19 +2896,20 @@ textarea.tr-textarea + label {
     transition: .3s
 }
 
-textarea.tr-textarea.aktif + label {
+textarea.tr-textarea.aktif+label {
     color: #057970
 }
 
-textarea.tr-textarea.dolu + label {
+textarea.tr-textarea.dolu+label {
     transform: translateY(-80px) scale(.75) !important
 }
+
 
 /* ============= 2.4 Footer */
 
 footer.tr-footer {
     background-color: #FFF;
-    border-top: 1px solid rgba(0,0,0,.15);
+    border-top: 1px solid rgba(0, 0, 0, .15);
     color: #000;
     padding: 40px 0 30px 0;
     position: relative;
@@ -2651,7 +2921,7 @@ footer.tr-footer nav ul li a {
 }
 
 footer.tr-footer .detay {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
     margin-top: 10px;
     padding: 15px 0;
     position: relative;
@@ -2659,15 +2929,19 @@ footer.tr-footer .detay {
     width: 100%
 }
 
+
 /* ============= 2.5 Kartlar */
+
+
 /* ============= 2.5.1 Kart Kodlari */
 
 .tr-kart {
     background-color: #FFF;
     border-radius: 3px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     cursor: default;
     margin-bottom: 30px;
+    min-height: 175px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -2684,7 +2958,6 @@ footer.tr-footer .detay {
 
 .tr-kart .icerik {
     background-color: #FFF;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
     height: 175px;
     left: 0;
     overflow: hidden;
@@ -2709,7 +2982,7 @@ footer.tr-footer .detay {
 }
 
 .tr-kart .icerik .baslik::after {
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0, 0, 0, .25);
     content: "";
     display: block;
     height: 2px;
@@ -2731,6 +3004,7 @@ footer.tr-footer .detay {
 
 .tr-kart a.buton {
     bottom: 0;
+    border-radius: 0;
     left: 0;
     position: absolute;
     transform: translateY(60px);
@@ -2741,107 +3015,127 @@ footer.tr-footer .detay {
     transform: translateY(0);
 }
 
+
 /* ============= 2.5.2 Kart Efektleri */
 
+
 /* Yakinlastirma */
-.tr-kart.efekt1 > img {
+
+.tr-kart.efekt1>img {
     transform: scale(1)
 }
 
-.tr-kart.efekt1:hover > img {
+.tr-kart.efekt1:hover>img {
     transform: scale(1.1)
 }
+
 
 /* Uzaklastirma */
-.tr-kart.efekt2 > img {
+
+.tr-kart.efekt2>img {
     transform: scale(1.1)
 }
 
-.tr-kart.efekt2:hover > img {
+.tr-kart.efekt2:hover>img {
     transform: scale(1)
 }
 
+
 /* Sola Gecer */
+
 .tr-kart.efekt3 img {
     margin-left: 30px;
     transform: scale(1.1)
 }
 
-.tr-kart.efekt3:hover > img {
+.tr-kart.efekt3:hover>img {
     margin-left: 0
 }
 
+
 /* Saga Gecer */
-.tr-kart.efekt4 > img {
+
+.tr-kart.efekt4>img {
     margin-left: -30px;
     transform: scale(1.1)
 }
 
-.tr-kart.efekt4:hover > img {
+.tr-kart.efekt4:hover>img {
     margin-left: 0
 }
 
+
 /* Capraz Yakinlastirir */
-.tr-kart.efekt5 > img {
+
+.tr-kart.efekt5>img {
     transform: rotate(0) scale(1)
 }
 
-.tr-kart.efekt5:hover > img {
+.tr-kart.efekt5:hover>img {
     transform: rotate(5deg) scale(1.1)
 }
 
+
 /* Siyah Beyaz */
-.tr-kart.efekt6 > img {
+
+.tr-kart.efekt6>img {
     opacity: .95;
     -webkit-filter: grayscale(100%)
 }
 
-.tr-kart.efekt6:hover > img {
+.tr-kart.efekt6:hover>img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
+
 
 /* Renklendirir */
-.tr-kart.efekt7 > img {
+
+.tr-kart.efekt7>img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
 
-.tr-kart.efekt7:hover > img {
+.tr-kart.efekt7:hover>img {
     opacity: .95;
     -webkit-filter: grayscale(100%)
 }
 
+
 /* Bulaniklastirir */
-.tr-kart.efekt8 > img {
+
+.tr-kart.efekt8>img {
     -webkit-filter: blur(1px)
 }
 
-.tr-kart.efekt8:hover > img {
+.tr-kart.efekt8:hover>img {
     -webkit-filter: blur(0)
 }
+
 
 /* Netlestirir */
-.tr-kart.efekt9 > img {
+
+.tr-kart.efekt9>img {
     -webkit-filter: blur(0)
 }
 
-.tr-kart.efekt9:hover > img {
+.tr-kart.efekt9:hover>img {
     -webkit-filter: blur(1px)
 }
+
 
 /* ============= 2.6 Koleksiyonlar */
 
 nav.koleksiyon {
     background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     margin-bottom: 25px;
     position: relative
 }
 
 nav.koleksiyon .baslik {
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 15px 15px 15px 20px;
@@ -2849,7 +3143,7 @@ nav.koleksiyon .baslik {
 }
 
 nav.koleksiyon a {
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: #000;
     display: block;
     padding: 8px 10px 8px 15px;
@@ -2861,16 +3155,16 @@ nav.koleksiyon a:last-child {
 }
 
 nav.koleksiyon a:hover {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.03);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
     text-decoration: none
 }
 
 nav.koleksiyon a:active {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.06);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
 }
 
 nav.koleksiyon.renkli a:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.02)
+    background-color: rgba(0, 0, 0, .02)
 }
 
 nav.koleksiyon.saydam {
@@ -2893,11 +3187,12 @@ nav.koleksiyon.saydam a {
     border-bottom: 0
 }
 
+
 /* ============= 2.7 Menu */
 
 nav.menu {
     background-color: #0CAB9E;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     display: block;
     height: 45px;
     left: 0;
@@ -2935,7 +3230,7 @@ nav.menu.sabit {
 }
 
 nav.menu.saydam {
-    box-shadow: 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 nav.menu ul {
@@ -2958,16 +3253,16 @@ nav.menu ul li a {
     transition: .2s
 }
 
-nav.menu ul li:hover > a {
-    background-color: rgba(0,0,0,.1);
+nav.menu ul li:hover>a {
+    background-color: rgba(0, 0, 0, .1);
     color: #FFF;
     text-decoration: none
 }
 
-nav.menu ul li.acilir > a::after {
+nav.menu ul li.acilir>a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.2);
+    border-top: 4px solid rgba(0, 0, 0, .2);
     content: "";
     left: 8px;
     position: relative;
@@ -2975,7 +3270,7 @@ nav.menu ul li.acilir > a::after {
 }
 
 nav.menu ul li ul {
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     display: none;
     position: absolute !important;
     z-index: 998
@@ -2997,7 +3292,7 @@ nav.menu ul li ul li a {
 }
 
 nav.menu ul li ul li:hover a {
-    box-shadow: inset 0 0 250px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     color: #000;
     width: 100%
 }
@@ -3007,7 +3302,7 @@ nav.menu ul li ul li:hover a {
         left: 0 !important;
         z-index: 996
     }
-    nav.menu.mobil > img.logo {
+    nav.menu.mobil>img.logo {
         display: none
     }
     nav.menu img:not(.logo) {
@@ -3043,7 +3338,7 @@ nav.menu ul li ul li:hover a {
         margin: 15px 0 !important;
         text-align: center
     }
-    nav.menu.mobil > img.logo {
+    nav.menu.mobil>img.logo {
         cursor: pointer;
         display: block;
         height: 50px;
@@ -3052,9 +3347,7 @@ nav.menu ul li ul li:hover a {
         top: 20px;
         width: 50px
     }
-    nav.menu.mobil .container,
-    nav.menu.mobil .container-kucuk,
-    nav.menu.mobil .container-buyuk {
+    nav.menu.mobil .container, nav.menu.mobil .container-kucuk, nav.menu.mobil .container-buyuk {
         width: 100% !important
     }
     nav.menu ul {
@@ -3064,7 +3357,7 @@ nav.menu ul li ul li:hover a {
         float: none;
         position: relative
     }
-    nav.menu.mobil ul li.acilir > a::after {
+    nav.menu.mobil ul li.acilir>a::after {
         content: "";
         position: absolute;
         left: auto;
@@ -3072,7 +3365,7 @@ nav.menu ul li ul li:hover a {
         top: 23px
     }
     nav.menu.mobil ul li ul {
-        box-shadow: 0 0 0 rgba(0,0,0,0);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
         position: relative !important
     }
     nav.menu.mobil ul li:hover ul {
@@ -3083,11 +3376,12 @@ nav.menu ul li ul li:hover a {
     }
 }
 
+
 /* ============= 2.8 Notlar */
 
 .tr-not {
     background-color: #0CAB9E;
-    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     border-radius: 3px;
     color: #FFF;
     line-height: 1.6;
@@ -3117,7 +3411,7 @@ nav.menu ul li ul li:hover a {
 }
 
 .tr-not span.kaldir:hover {
-    text-shadow: 0 0 5px rgba(0,0,0,.5)
+    text-shadow: 0 0 5px rgba(0, 0, 0, .5)
 }
 
 .tr-not.saydam {
@@ -3135,7 +3429,7 @@ nav.menu ul li ul li:hover a {
 .tr-pano {
     background-color: #0CAB9E;
     border-radius: 5px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     margin-bottom: 15px
 }
 
@@ -3170,6 +3464,7 @@ nav.menu ul li ul li:hover a {
 .tr-pano .icerik p {
     margin: 0
 }
+
 
 /* ============= 2.10 Progress */
 
@@ -3210,13 +3505,14 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #4CAF50 !important
 }
 
+
 /* ============= 2.11 Sayfa Konumu */
 
 .tr-konum {
     background-color: #0CAB9E;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
     height: 50px;
     line-height: 50px;
     overflow-x: auto;
@@ -3239,7 +3535,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-konum a {
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
     margin-right: 5px
 }
 
@@ -3253,7 +3549,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-konum a:last-of-type::after {
-    content:""
+    content: ""
 }
 
 .tr-konum a:hover {
@@ -3265,12 +3561,13 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-konum.saydam a {
-    color: rgba(0,0,0,.6)
+    color: rgba(0, 0, 0, .6)
 }
 
 .tr-konum.saydam a:last-of-type {
     color: #000
 }
+
 
 /* ============= 2.12 Sayfa Numaralandirma */
 
@@ -3283,7 +3580,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-numara a {
     background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
     color: #000;
     cursor: pointer;
@@ -3298,7 +3595,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara a:hover {
-    border: 1px solid rgba(0,0,0,.3);
+    border: 1px solid rgba(0, 0, 0, .3);
     text-decoration: none
 }
 
@@ -3315,7 +3612,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara a.pasif:hover {
-    border-color: rgba(0,0,0,.1)
+    border-color: rgba(0, 0, 0, .1)
 }
 
 .tr-numara.kucuk a {
@@ -3330,7 +3627,10 @@ progress.tr-progress.yesil::-webkit-progress-value {
     padding: 10px 15px
 }
 
+
 /* ============= 2.13 Yazi */
+
+
 /* ============= 2.13.1 Yazi Ayarlari */
 
 .yazi-sol {
@@ -3374,44 +3674,36 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .yazi-golge {
-    text-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10)
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10)
 }
 
 .yazi-golge2 {
-    text-shadow: 4px 3px 0 rgba(0,0,0,.15), 9px 8px 0 rgba(0,0,0,.15)
+    text-shadow: 4px 3px 0 rgba(0, 0, 0, .15), 9px 8px 0 rgba(0, 0, 0, .15)
 }
 
-.yazi-kalin,
-.yazi-kalin a {
+.yazi-kalin, .yazi-kalin a {
     font-family: "Noto Sans Bold";
     font-weight: 700 !important
 }
 
-.yazi-ince,
-.yazi-ince a {
+.yazi-ince, .yazi-ince a {
     font-weight: 100 !important
 }
 
-.yazi-yatay,
-.yazi-yatay a {
+.yazi-yatay, .yazi-yatay a {
     font-family: "Noto Sans Italic";
     font-style: italic
 }
 
-.yazi-cizgi,
-.yazi-cizgi a,
-.yazi-cizgi-alt,
-.yazi-cizgi-alt a {
+.yazi-cizgi, .yazi-cizgi a, .yazi-cizgi-alt, .yazi-cizgi-alt a {
     text-decoration: underline
 }
 
-.yazi-cizgi-orta,
-.yazi-cizgi-orta a {
+.yazi-cizgi-orta, .yazi-cizgi-orta a {
     text-decoration: line-through
 }
 
-.yazi-cizgi-ust,
-.yazi-cizgi-ust a {
+.yazi-cizgi-ust, .yazi-cizgi-ust a {
     text-decoration: overline
 }
 
@@ -3433,109 +3725,86 @@ progress.tr-progress.yesil::-webkit-progress-value {
     white-space: nowrap
 }
 
+
 /* ============= 2.13.2 Yazi Renkleri */
 
-.yazi-beyaz,
-.yazi-beyaz a {
+.yazi-beyaz, .yazi-beyaz a {
     color: #FFF !important
 }
 
-.yazi-sari,
-.yazi-sari a,
-.yazi-sari6,
-.yazi-sari6 a {
+.yazi-sari, .yazi-sari a, .yazi-sari6, .yazi-sari6 a {
     color: #FFEB3B !important
 }
 
-.yazi-sari2,
-.yazi-sari2 a {
+.yazi-sari2, .yazi-sari2 a {
     color: #FFF9C4 !important
 }
 
-.yazi-sari3,
-.yazi-sari3 a {
+.yazi-sari3, .yazi-sari3 a {
     color: #FFF59D !important
 }
 
-.yazi-sari4,
-.yazi-sari4 a {
+.yazi-sari4, .yazi-sari4 a {
     color: #FFF176 !important
 }
 
-.yazi-sari5,
-.yazi-sari5 a {
+.yazi-sari5, .yazi-sari5 a {
     color: #FFEE58 !important
 }
 
-.yazi-sari7,
-.yazi-sari7 a {
+.yazi-sari7, .yazi-sari7 a {
     color: #FDD835 !important
 }
 
-.yazi-sari8,
-.yazi-sari8 a {
+.yazi-sari8, .yazi-sari8 a {
     color: #FBC02D !important
 }
 
-.yazi-sari9,
-.yazi-sari9 a {
+.yazi-sari9, .yazi-sari9 a {
     color: #F9A825 !important
 }
 
-.yazi-sari10,
-.yazi-sari10 a {
+.yazi-sari10, .yazi-sari10 a {
     color: #F57F17 !important
 }
 
-.yazi-turuncu,
-.yazi-turuncu a,
-.yazi-turuncu6,
-.yazi-turuncu6 a {
+.yazi-turuncu, .yazi-turuncu a, .yazi-turuncu6, .yazi-turuncu6 a {
     color: #FF9800 !important
 }
 
-.yazi-turuncu2,
-.yazi-turuncu2 a {
+.yazi-turuncu2, .yazi-turuncu2 a {
     color: #FFE0B2 !important
 }
 
-.yazi-turuncu3,
-.yazi-turuncu3 a {
+.yazi-turuncu3, .yazi-turuncu3 a {
     color: #FFCC80 !important
 }
 
-.yazi-turuncu4,
-.yazi-turuncu4 a {
+.yazi-turuncu4, .yazi-turuncu4 a {
     color: #FFB74D !important
 }
 
-.yazi-turuncu5,
-.yazi-turuncu5 a {
+.yazi-turuncu5, .yazi-turuncu5 a {
     color: #FFA726 !important
 }
 
-.yazi-turuncu7,
-.yazi-turuncu7 a {
+.yazi-turuncu7, .yazi-turuncu7 a {
     color: #FB8C00 !important
 }
 
-.yazi-turuncu8,
-.yazi-turuncu8 a {
+.yazi-turuncu8, .yazi-turuncu8 a {
     color: #F57C00 !important
 }
 
-.yazi-turuncu9,
-.yazi-turuncu9 a {
+.yazi-turuncu9, .yazi-turuncu9 a {
     color: #EF6C00 !important
 }
 
-.yazi-turuncu10,
-.yazi-turuncu10 a {
+.yazi-turuncu10, .yazi-turuncu10 a {
     color: #E65100 !important
 }
 
-.yazi-koyu-turuncu,
-.yazi-koyu-turuncu6 {
+.yazi-koyu-turuncu, .yazi-koyu-turuncu6 {
     background-color: #FF5722 !important
 }
 
@@ -3571,152 +3840,119 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #BF360C !important
 }
 
-.yazi-kirmizi,
-.yazi-kirmizi a,
-.yazi-kirmizi6,
-.yazi-kirmizi6 a {
+.yazi-kirmizi, .yazi-kirmizi a, .yazi-kirmizi6, .yazi-kirmizi6 a {
     color: #F44336 !important
 }
 
-.yazi-kirmizi2,
-.yazi-kirmizi2 a {
+.yazi-kirmizi2, .yazi-kirmizi2 a {
     color: #FFCDD2 !important
 }
 
-.yazi-kirmizi3,
-.yazi-kirmizi3 a {
+.yazi-kirmizi3, .yazi-kirmizi3 a {
     color: #EF9A9A !important
 }
 
-.yazi-kirmizi4,
-.yazi-kirmizi4 a {
+.yazi-kirmizi4, .yazi-kirmizi4 a {
     color: #E57373 !important
 }
 
-.yazi-kirmizi5,
-.yazi-kirmizi5 a {
+.yazi-kirmizi5, .yazi-kirmizi5 a {
     color: #EF5350 !important
 }
 
-.yazi-kirmizi7,
-.yazi-kirmizi7 a {
+.yazi-kirmizi7, .yazi-kirmizi7 a {
     color: #E53935 !important
 }
 
-.yazi-kirmizi8,
-.yazi-kirmizi8 a {
+.yazi-kirmizi8, .yazi-kirmizi8 a {
     color: #D32F2F !important
 }
 
-.yazi-kirmizi9,
-.yazi-kirmizi9 a {
+.yazi-kirmizi9, .yazi-kirmizi9 a {
     color: #C62828 !important
 }
 
-.yazi-kirmizi10,
-.yazi-kirmizi10 a {
+.yazi-kirmizi10, .yazi-kirmizi10 a {
     color: #B71C1C !important
 }
 
-.yazi-pembe,
-.yazi-pembe a,
-.yazi-pembe6,
-.yazi-pembe6 a {
+.yazi-pembe, .yazi-pembe a, .yazi-pembe6, .yazi-pembe6 a {
     color: #E91E63 !important
 }
 
-.yazi-pembe2,
-.yazi-pembe2 a {
+.yazi-pembe2, .yazi-pembe2 a {
     color: #F8BBD0 !important
 }
 
-.yazi-pembe3,
-.yazi-pembe3 a {
+.yazi-pembe3, .yazi-pembe3 a {
     color: #F48FB1 !important
 }
 
-.yazi-pembe4,
-.yazi-pembe4 a {
+.yazi-pembe4, .yazi-pembe4 a {
     color: #F06292 !important
 }
 
-.yazi-pembe5,
-.yazi-pembe5 a {
+.yazi-pembe5, .yazi-pembe5 a {
     color: #EC407A !important
 }
 
-.yazi-pembe7,
-.yazi-pembe7 a {
+.yazi-pembe7, .yazi-pembe7 a {
     color: #D81B60 !important
 }
 
-.yazi-pembe8,
-.yazi-pembe8 a {
+.yazi-pembe8, .yazi-pembe8 a {
     color: #C2185B !important
 }
 
-.yazi-pembe9,
-.yazi-pembe9 a {
+.yazi-pembe9, .yazi-pembe9 a {
     color: #AD1457 !important
 }
 
-.yazi-pembe10,
-.yazi-pembe10 a {
+.yazi-pembe10, .yazi-pembe10 a {
     color: #880E4F !important
 }
 
-.yazi-mor,
-.yazi-mor a {
+.yazi-mor, .yazi-mor a {
     color: # !important
 }
 
-.yazi-mor2,
-.yazi-mor2 a {
+.yazi-mor2, .yazi-mor2 a {
     color: #9C27B0 !important
 }
 
-.yazi-mor3,
-.yazi-mor3 a {
+.yazi-mor3, .yazi-mor3 a {
     color: #E1BEE7 !important
 }
 
-.yazi-mor4,
-.yazi-mor4 a {
+.yazi-mor4, .yazi-mor4 a {
     color: #CE93D8 !important
 }
 
-.yazi-mor5,
-.yazi-mor5 a {
+.yazi-mor5, .yazi-mor5 a {
     color: #BA68C8 !important
 }
 
-.yazi-mor6,
-.yazi-mor6 a {
+.yazi-mor6, .yazi-mor6 a {
     color: #AB47BC !important
 }
 
-.yazi-mor7,
-.yazi-mor7 a {
+.yazi-mor7, .yazi-mor7 a {
     color: #8E24AA !important
 }
 
-.yazi-mor8,
-.yazi-mor8 a {
+.yazi-mor8, .yazi-mor8 a {
     color: #7B1FA2 !important
 }
 
-.yazi-mor9,
-.yazi-mor9 a {
+.yazi-mor9, .yazi-mor9 a {
     color: #6A1B9A !important
 }
 
-.yazi-mor10,
-.yazi-mor10 a {
+.yazi-mor10, .yazi-mor10 a {
     color: #4A148C !important
 }
 
-.yazi-koyu-mor,
-.yazi-koyu-mor6 {
+.yazi-koyu-mor, .yazi-koyu-mor6 {
     background-color: #673AB7 !important
 }
 
@@ -3752,55 +3988,43 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #311B92 !important
 }
 
-.yazi-mavi,
-.yazi-mavi a,
-.yazi-mavi6,
-.yazi-mavi6 a {
+.yazi-mavi, .yazi-mavi a, .yazi-mavi6, .yazi-mavi6 a {
     color: #2196F3 !important
 }
 
-.yazi-mavi2,
-.yazi-mavi2 a {
+.yazi-mavi2, .yazi-mavi2 a {
     color: #BBDEFB !important
 }
 
-.yazi-mavi3,
-.yazi-mavi3 a {
+.yazi-mavi3, .yazi-mavi3 a {
     color: #90CAF9 !important
 }
 
-.yazi-mavi4,
-.yazi-mavi4 a {
+.yazi-mavi4, .yazi-mavi4 a {
     color: #64B5F6 !important
 }
 
-.yazi-mavi5,
-.yazi-mavi5 a {
+.yazi-mavi5, .yazi-mavi5 a {
     color: #42A5F5 !important
 }
 
-.yazi-mavi7,
-.yazi-mavi7 a {
+.yazi-mavi7, .yazi-mavi7 a {
     color: #1E88E5 !important
 }
 
-.yazi-mavi8,
-.yazi-mavi8 a {
+.yazi-mavi8, .yazi-mavi8 a {
     color: #1976D2 !important
 }
 
-.yazi-mavi9,
-.yazi-mavi9 a {
+.yazi-mavi9, .yazi-mavi9 a {
     color: #1565C0 !important
 }
 
-.yazi-mavi10,
-.yazi-mavi10 a {
+.yazi-mavi10, .yazi-mavi10 a {
     color: #0D47A1 !important
 }
 
-.yazi-acik-mavi,
-.yazi-acik-mavi6 {
+.yazi-acik-mavi, .yazi-acik-mavi6 {
     background-color: #03A9F4 !important
 }
 
@@ -3836,102 +4060,79 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #01579B !important
 }
 
-.yazi-turkuaz,
-.yazi-turkuaz a,
-.yazi-turkuaz6,
-.yazi-turkuaz6 a {
+.yazi-turkuaz, .yazi-turkuaz a, .yazi-turkuaz6, .yazi-turkuaz6 a {
     color: #1AC5B8 !important
 }
 
-.yazi-turkuaz2,
-.yazi-turkuaz2 a {
+.yazi-turkuaz2, .yazi-turkuaz2 a {
     color: #C1FDF8 !important
 }
 
-.yazi-turkuaz3,
-.yazi-turkuaz3 a {
+.yazi-turkuaz3, .yazi-turkuaz3 a {
     color: #56F7EB !important
 }
 
-.yazi-turkuaz4,
-.yazi-turkuaz4 a {
+.yazi-turkuaz4, .yazi-turkuaz4 a {
     color: #36EADD !important
 }
 
-.yazi-turkuaz5,
-.yazi-turkuaz5 a {
+.yazi-turkuaz5, .yazi-turkuaz5 a {
     color: #2ED8CB !important
 }
 
-.yazi-turkuaz7,
-.yazi-turkuaz7 a {
+.yazi-turkuaz7, .yazi-turkuaz7 a {
     color: #12B9AC !important
 }
 
-.yazi-turkuaz8,
-.yazi-turkuaz8 a {
+.yazi-turkuaz8, .yazi-turkuaz8 a {
     color: #0CAB9E !important
 }
 
-.yazi-turkuaz9,
-.yazi-turkuaz9 a {
+.yazi-turkuaz9, .yazi-turkuaz9 a {
     color: #03968A !important
 }
 
-.yazi-turkuaz10,
-.yazi-turkuaz10 a {
+.yazi-turkuaz10, .yazi-turkuaz10 a {
     color: #038075 !important
 }
 
-.yazi-yesil,
-.yazi-yesil a,
-.yazi-yesil6,
-.yazi-yesil6 a {
+.yazi-yesil, .yazi-yesil a, .yazi-yesil6, .yazi-yesil6 a {
     color: #4CAF50 !important
 }
 
-.yazi-yesil2,
-.yazi-yesil2 a {
+.yazi-yesil2, .yazi-yesil2 a {
     color: #C8E6C9 !important
 }
 
-.yazi-yesil3,
-.yazi-yesil3 a {
+.yazi-yesil3, .yazi-yesil3 a {
     color: #A5D6A7 !important
 }
 
-.yazi-yesil4,
-.yazi-yesil4 a {
+.yazi-yesil4, .yazi-yesil4 a {
     color: #81C784 !important
 }
 
-.yazi-yesil5,
-.yazi-yesil5 a {
+.yazi-yesil5, .yazi-yesil5 a {
     color: #66BB6A !important
 }
 
-.yazi-yesil7,
-.yazi-yesil7 a {
+.yazi-yesil7, .yazi-yesil7 a {
     color: #43A047 !important
 }
 
-.yazi-yesil8,
-.yazi-yesil8 a {
+.yazi-yesil8, .yazi-yesil8 a {
     color: #388E3C !important
 }
 
-.yazi-yesil9,
-.yazi-yesil9 a {
+.yazi-yesil9, .yazi-yesil9 a {
     color: #2E7D32 !important
 }
 
-.yazi-yesil10,
-.yazi-yesil10 a {
+.yazi-yesil10, .yazi-yesil10 a {
     color: #1B5E20 !important
 }
 
-.yazi-acik-yesil,
-.yazi-acik-yesil6  {
+.yazi-acik-yesil, .yazi-acik-yesil6 {
     background-color: #8BC34A !important
 }
 
@@ -3967,142 +4168,111 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #33691E !important
 }
 
-.yazi-kahverengi,
-.yazi-kahverengi a,
-.yazi-kahverengi6,
-.yazi-kahverengi6 a {
+.yazi-kahverengi, .yazi-kahverengi a, .yazi-kahverengi6, .yazi-kahverengi6 a {
     color: #795548 !important
 }
 
-.yazi-kahverengi2,
-.yazi-kahverengi2 a {
+.yazi-kahverengi2, .yazi-kahverengi2 a {
     color: #D7CCC8 !important
 }
 
-.yazi-kahverengi3,
-.yazi-kahverengi3 a {
+.yazi-kahverengi3, .yazi-kahverengi3 a {
     color: #BCAAA4 !important
 }
 
-.yazi-kahverengi4,
-.yazi-kahverengi4 a {
+.yazi-kahverengi4, .yazi-kahverengi4 a {
     color: #A1887F !important
 }
 
-.yazi-kahverengi5,
-.yazi-kahverengi5 a {
+.yazi-kahverengi5, .yazi-kahverengi5 a {
     color: #8D6E63 !important
 }
 
-.yazi-kahverengi7,
-.yazi-kahverengi7 a {
+.yazi-kahverengi7, .yazi-kahverengi7 a {
     color: #6D4C41 !important
 }
 
-.yazi-kahverengi8,
-.yazi-kahverengi8 a {
+.yazi-kahverengi8, .yazi-kahverengi8 a {
     color: #5D4037 !important
 }
 
-.yazi-kahverengi9,
-.yazi-kahverengi9 a {
+.yazi-kahverengi9, .yazi-kahverengi9 a {
     color: #4E342E !important
 }
 
-.yazi-kahverengi10,
-.yazi-kahverengi10 a {
+.yazi-kahverengi10, .yazi-kahverengi10 a {
     color: #3E2723 !important
 }
 
-.yazi-gri,
-.yazi-gri a,
-.yazi-gri6,
-.yazi-gri6 a {
+.yazi-gri, .yazi-gri a, .yazi-gri6, .yazi-gri6 a {
     color: #9E9E9E !important
 }
 
-.yazi-gri2,
-.yazi-gri2 a {
+.yazi-gri2, .yazi-gri2 a {
     color: #F5F5F5 !important
 }
 
-.yazi-gri3,
-.yazi-gri3 a {
+.yazi-gri3, .yazi-gri3 a {
     color: #EEEEEE !important
 }
 
-.yazi-gri4,
-.yazi-gri4 a {
+.yazi-gri4, .yazi-gri4 a {
     color: #E0E0E0 !important
 }
 
-.yazi-gri5,
-.yazi-gri5 a {
+.yazi-gri5, .yazi-gri5 a {
     color: #BDBDBD !important
 }
 
-.yazi-gri7,
-.yazi-gri7 a {
+.yazi-gri7, .yazi-gri7 a {
     color: #757575 !important
 }
 
-.yazi-gri8,
-.yazi-gri8 a {
+.yazi-gri8, .yazi-gri8 a {
     color: #616161 !important
 }
 
-.yazi-gri9,
-.yazi-gri9 a {
+.yazi-gri9, .yazi-gri9 a {
     color: #4E4E4E !important
 }
 
-.yazi-gri10,
-.yazi-gri10 a {
+.yazi-gri10, .yazi-gri10 a {
     color: #424040 !important
 }
 
-.yazi-siyah,
-.yazi-siyah a {
+.yazi-siyah, .yazi-siyah a {
     color: #000 !important
 }
 
-.yazi-siyah2,
-.yazi-siyah2 a {
+.yazi-siyah2, .yazi-siyah2 a {
     color: #404040 !important
 }
 
-.yazi-siyah3,
-.yazi-siyah3 a {
+.yazi-siyah3, .yazi-siyah3 a {
     color: #353535 !important
 }
 
-.yazi-siyah4,
-.yazi-siyah4 a {
+.yazi-siyah4, .yazi-siyah4 a {
     color: #303030 !important
 }
 
-.yazi-siyah5,
-.yazi-siyah5 a {
+.yazi-siyah5, .yazi-siyah5 a {
     color: #252525 !important
 }
 
-.yazi-siyah6,
-.yazi-siyah6 a {
+.yazi-siyah6, .yazi-siyah6 a {
     color: #202020 !important
 }
 
-.yazi-siyah7,
-.yazi-siyah7 a {
+.yazi-siyah7, .yazi-siyah7 a {
     color: #151515 !important
 }
 
-.yazi-siyah8,
-.yazi-siyah8 a {
+.yazi-siyah8, .yazi-siyah8 a {
     color: #101010 !important
 }
 
-.yazi-siyah9,
-.yazi-siyah9 a {
+.yazi-siyah9, .yazi-siyah9 a {
     color: #050505 !important
 }
 
@@ -4194,7 +4364,10 @@ progress.tr-progress.yesil::-webkit-progress-value {
     color: #EE1C1B !important
 }
 
+
 /* ============= 3. JavaScript */
+
+
 /* ============= 3.1 Akordiyon Menu */
 
 .tr-akordiyon {
@@ -4203,9 +4376,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
     width: 100%
 }
 
-.tr-akordiyon.tema2,
-.tr-akordiyon.tema3 {
-    border: 1px solid rgba(0,0,0,.05);
+.tr-akordiyon.tema2, .tr-akordiyon.tema3 {
+    border: 1px solid rgba(0, 0, 0, .05);
     border-radius: 3px
 }
 
@@ -4222,9 +4394,9 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema2 .baslik {
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
     color: #b4b4b4;
-    padding-left:  25px
+    padding-left: 25px
 }
 
 .tr-akordiyon.tema2 .baslik:last-of-type {
@@ -4232,11 +4404,11 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema3 .baslik {
-    background-color: rgba(0,0,0,.025)
+    background-color: rgba(0, 0, 0, .025)
 }
 
 .tr-akordiyon.tema4 .baslik {
-    background-color: rgba(0,0,0,.025);
+    background-color: rgba(0, 0, 0, .025);
     border-left: 5px solid transparent;
     margin-bottom: 2px
 }
@@ -4250,7 +4422,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema3 .baslik:hover {
-    background-color: rgba(0,0,0,.05)
+    background-color: rgba(0, 0, 0, .05)
 }
 
 .tr-akordiyon.tema4 .baslik:hover {
@@ -4260,7 +4432,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-akordiyon .baslik::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid rgba(0,0,0,.1);
+    border-top: 4px solid rgba(0, 0, 0, .1);
     content: "";
     left: 0;
     position: absolute;
@@ -4274,14 +4446,13 @@ progress.tr-progress.yesil::-webkit-progress-value {
     left: 10px
 }
 
-.tr-akordiyon.tema3 .baslik::after,
-.tr-akordiyon.tema4 .baslik::after {
+.tr-akordiyon.tema3 .baslik::after, .tr-akordiyon.tema4 .baslik::after {
     left: auto;
     right: 20px
 }
 
 .tr-akordiyon .baslik:hover::after {
-    border-top-color: rgba(0,0,0,1)
+    border-top-color: rgba(0, 0, 0, 1)
 }
 
 .tr-akordiyon .baslik.aktif {
@@ -4293,7 +4464,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema3 .baslik.aktif {
-    background-color: rgba(0,0,0,.05)
+    background-color: rgba(0, 0, 0, .05)
 }
 
 .tr-akordiyon.tema4 .baslik.aktif {
@@ -4301,7 +4472,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon .baslik.aktif::after {
-    border-top-color: rgba(0,0,0,1);
+    border-top-color: rgba(0, 0, 0, 1);
     transform: rotate(0deg)
 }
 
@@ -4310,19 +4481,20 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema2 .tr-akordiyon-icerik {
-    border-bottom: 1px solid rgba(0,0,0,.05)
+    border-bottom: 1px solid rgba(0, 0, 0, .05)
 }
 
 .tr-akordiyon .tr-akordiyon-icerik p {
     margin-bottom: 0
 }
 
+
 /* ============= 3.2 Filtre Menu */
 
 .tr-filtre nav {
     background-color: #0CAB9E;
     border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     display: table;
     margin: 0 auto 20px auto
 }
@@ -4352,7 +4524,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-filtre nav a.aktif {
     background-color: #FFF;
     border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     color: #000;
     opacity: 1
 }
@@ -4362,6 +4534,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     -webkit-animation: opac 5s;
     background-color: #FFF
 }
+
 
 /* ============= 3.3 Medya */
 
@@ -4382,12 +4555,13 @@ progress.tr-progress.yesil::-webkit-progress-value {
     opacity: 1
 }
 
+
 /* ============= 3.4 Modal */
 
 .tr-modal {
     background-color: #FFF;
     border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.15), 0 2px 10px rgba(0,0,0,.10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     max-height: 750px;
     left: 50%;
     overflow: auto;
@@ -4413,7 +4587,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 span.kapatButon {
-    box-shadow: 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     color: #FFF;
     cursor: pointer;
     font-size: 50px;
@@ -4424,9 +4598,7 @@ span.kapatButon {
 }
 
 @media screen and (max-width: 800px) {
-    .tr-modal.kucuk,
-    .tr-modal.orta,
-    .tr-modal.buyuk {
+    .tr-modal.kucuk, .tr-modal.orta, .tr-modal.buyuk {
         width: 90%
     }
     span.kapatButon {
@@ -4435,6 +4607,7 @@ span.kapatButon {
         top: 15px
     }
 }
+
 
 /* ============= 3.5 Tab Menu */
 
@@ -4449,8 +4622,8 @@ span.kapatButon {
 }
 
 .tr-tab>nav a {
-    border-bottom: 2px solid rgba(0,0,0,.1);
-    color: rgba(0,0,0,.1);
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .1);
     cursor: pointer;
     flex-basis: 0;
     flex-grow: 1;
@@ -4462,15 +4635,15 @@ span.kapatButon {
 }
 
 .tr-tab.tema2 nav a {
-    background-color: rgba(0,0,0,.02);
+    background-color: rgba(0, 0, 0, .02);
     border-bottom: 0;
-    color: rgba(0,0,0,.25);
+    color: rgba(0, 0, 0, .25);
 }
 
 .tr-tab.tema3 nav a {
-    border: 1px solid rgba(0,0,0,0);
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    color: rgba(0,0,0,.25)
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .25)
 }
 
 .tr-tab nav a.aktif {
@@ -4480,13 +4653,13 @@ span.kapatButon {
 }
 
 .tr-tab.tema2 nav a.aktif {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, .04);
     border-bottom: 0
 }
 
 .tr-tab.tema3 nav a.aktif {
-    border: 1px solid rgba(0,0,0,.1);
-    border-bottom: 1px solid rgba(0,0,0,0)
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0)
 }
 
 .tr-tab nav a:hover {
@@ -4499,6 +4672,6 @@ span.kapatButon {
 }
 
 .tr-tab.tema3 .tr-tab-icerik {
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-top: 0
 }
