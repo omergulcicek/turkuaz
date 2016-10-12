@@ -3144,7 +3144,7 @@ nav.koleksiyon .baslik {
 
 nav.koleksiyon a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    color: #000;
+    color: rgba(0, 0, 0, .7);
     display: block;
     padding: 8px 10px 8px 15px;
     transition: .3s
@@ -3156,6 +3156,7 @@ nav.koleksiyon a:last-child {
 
 nav.koleksiyon a:hover {
     box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
+    color: #000;
     text-decoration: none
 }
 
