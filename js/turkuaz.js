@@ -9,8 +9,8 @@
  *
  *   1. Etiket
  *   2. Form
- *   3. Menu
- *   4. Sayfa Konumu
+ *   3. Link
+ *   4. Menu
  *   5. Medya
  *   6. Modal
  *
@@ -55,7 +55,13 @@ function placeholder() {
     })
 }
 
-/* ============= 3. Menu */
+/* ============= 3. Linkler */
+
+$("body").on("click", "a.pasif,a.aktif", function(e) {
+    e.preventDefault()
+})
+
+/* ============= 4. Menu */
 
 //Mobil Menu
 $("nav.menu.mobil").on("click", "img.logo", function() {
@@ -179,12 +185,6 @@ $(".tr-filtre").on("click", "nav a", function() {
         })
     }
 })(jQuery)
-
-/* ============= 4. Sayfa Konumu */
-
-$(".tr-numara").on("click", "a.pasif,a.aktif", function(e) {
-    e.preventDefault()
-})
 
 /* ============= 5. Medya */
 
