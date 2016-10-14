@@ -63,6 +63,11 @@ html {
     box-sizing: inherit
 }
 
+::-moz-selection {
+    background-color: #050505;
+    color: #FFF
+}
+
 ::selection {
     background-color: #050505;
     color: #FFF
@@ -159,6 +164,7 @@ a {
     background-color: transparent;
     color: #2196F3;
     text-decoration: none;
+    -webkit-transition: .1s;
     transition: .1s
 }
 
@@ -323,7 +329,7 @@ sup {
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1250px;
-        width: 65%
+        width: 50%
     }
     .container-kucuk {
         max-width: 1000px;
@@ -362,7 +368,10 @@ sup {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap
 }
 
@@ -372,7 +381,10 @@ sup {
 }
 
 .tr.ck {
+    -ms-flex-preferred-size: 0;
     flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
     min-height: 1px;
@@ -384,72 +396,96 @@ sup {
 /* Mobil Cihazlar */
 
 .tr.ck1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
     width: 8.333333%
 }
 
 .tr.ck2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
     width: 16.666667%
 }
 
 .tr.ck3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
     width: 25%
 }
 
 .tr.ck4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     width: 33.333333%
 }
 
 .tr.ck5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
     width: 41.666667%
 }
 
 .tr.ck6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
     width: 50%
 }
 
 .tr.ck7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.333333%;
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
     width: 58.333333%
 }
 
 .tr.ck8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
     width: 66.666667%
 }
 
 .tr.ck9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
     width: 75%
 }
 
 .tr.ck10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
     width: 83.333333%
 }
 
 .tr.ck11 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 91.666667%;
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
     width: 91.666667%
 }
 
 .tr.ck12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%
@@ -508,7 +544,10 @@ sup {
 
 @media only screen and (min-width: 400px) {
     .tr.k {
+        -ms-flex-preferred-size: 0;
         flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%;
         min-height: 1px;
@@ -516,61 +555,85 @@ sup {
         position: relative
     }
     .tr.k1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.333333%;
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
         width: 8.333333%
     }
     .tr.k2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
         width: 16.666667%
     }
     .tr.k3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
         width: 25%
     }
     .tr.k4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
         width: 33.333333%
     }
     .tr.k5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
         width: 41.666667%
     }
     .tr.k6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
         width: 50%
     }
     .tr.k7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
         width: 58.333333%
     }
     .tr.k8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
         width: 66.666667%
     }
     .tr.k9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
         flex: 0 0 75%;
         max-width: 75%;
         width: 75%
     }
     .tr.k10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
         width: 83.333333%
     }
     .tr.k11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.666667%;
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
         width: 91.666667%
     }
     .tr.k12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
         width: 100%
@@ -618,7 +681,10 @@ sup {
 
 @media only screen and (min-width: 800px) {
     .tr.o {
+        -ms-flex-preferred-size: 0;
         flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%;
         min-height: 1px;
@@ -626,61 +692,85 @@ sup {
         position: relative
     }
     .tr.o1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.333333%;
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
         width: 8.333333%
     }
     .tr.o2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
         width: 16.666667%
     }
     .tr.o3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
         width: 25%
     }
     .tr.o4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
         width: 33.333333%
     }
     .tr.o5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
         width: 41.666667%
     }
     .tr.o6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
         width: 50%
     }
     .tr.o7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
         width: 58.333333%
     }
     .tr.o8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
         width: 66.666667%
     }
     .tr.o9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
         flex: 0 0 75%;
         max-width: 75%;
         width: 75%
     }
     .tr.o10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
         width: 83.333333%
     }
     .tr.o11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.666667%;
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
         width: 91.666667%
     }
     .tr.o12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
         width: 100%
@@ -728,7 +818,10 @@ sup {
 
 @media only screen and (min-width: 1000px) {
     .tr.b {
+        -ms-flex-preferred-size: 0;
         flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%;
         min-height: 1px;
@@ -736,61 +829,85 @@ sup {
         position: relative
     }
     .tr.b1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.333333%;
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
         width: 8.333333%
     }
     .tr.b2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
         width: 16.666667%
     }
     .tr.b3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
         width: 25%
     }
     .tr.b4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
         width: 33.333333%
     }
     .tr.b5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
         width: 41.666667%
     }
     .tr.b6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
         width: 50%
     }
     .tr.b7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
         width: 58.333333%
     }
     .tr.b8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
         width: 66.666667%
     }
     .tr.b9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
         flex: 0 0 75%;
         max-width: 75%;
         width: 75%
     }
     .tr.b10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
         width: 83.333333%
     }
     .tr.b11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.666667%;
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
         width: 91.666667%
     }
     .tr.b12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
         width: 100%
@@ -838,7 +955,10 @@ sup {
 
 @media only screen and (min-width: 1200px) {
     .tr.cb {
+        -ms-flex-preferred-size: 0;
         flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%;
         min-height: 1px;
@@ -846,61 +966,85 @@ sup {
         position: relative
     }
     .tr.cb1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 8.333333%;
         flex: 0 0 8.333333%;
         max-width: 8.333333%;
         width: 8.333333%
     }
     .tr.cb2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
         flex: 0 0 16.666667%;
         max-width: 16.666667%;
         width: 16.666667%
     }
     .tr.cb3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
         width: 25%
     }
     .tr.cb4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
         width: 33.333333%
     }
     .tr.cb5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
         width: 41.666667%
     }
     .tr.cb6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
         width: 50%
     }
     .tr.cb7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
         width: 58.333333%
     }
     .tr.cb8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
         width: 66.666667%
     }
     .tr.cb9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
         flex: 0 0 75%;
         max-width: 75%;
         width: 75%
     }
     .tr.cb10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.333333%;
         flex: 0 0 83.333333%;
         max-width: 83.333333%;
         width: 83.333333%
     }
     .tr.cb11 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 91.666667%;
         flex: 0 0 91.666667%;
         max-width: 91.666667%;
         width: 91.666667%
     }
     .tr.cb12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
         width: 100%
@@ -2223,6 +2367,7 @@ a.buton, button {
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
+    -webkit-transition: .3s ease-out;
     transition: .3s ease-out
 }
 
@@ -2243,6 +2388,10 @@ a.buton:hover, button:hover {
 
 a.buton:active, button:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
+}
+
+a.buton::-moz-selection {
+    background-color: transparent
 }
 
 a.buton::selection {
@@ -2319,7 +2468,10 @@ a.buton.kare i.fa, button.kare i.fa {
 .butonlar {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-transition: .3s ease-out;
     transition: .3s ease-out
 }
 
@@ -2380,6 +2532,7 @@ a.buton[class*="efekt"]::before {
     content: "";
     opacity: .25;
     position: absolute;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -2387,6 +2540,7 @@ a.buton.efekt:before, a.buton.efekt1:before {
     height: 150px;
     left: -70px;
     top: -40px;
+    -webkit-transform: rotate(37deg);
     transform: rotate(37deg);
     width: 50px
 }
@@ -2399,6 +2553,7 @@ a.buton.efekt2:before {
     height: 150px;
     left: 99%;
     top: -40px;
+    -webkit-transform: rotate(37deg);
     transform: rotate(37deg);
     width: 50px
 }
@@ -2467,6 +2622,7 @@ a.etiket {
     margin: 0 1px 5px 0;
     outline: none;
     padding: 7px;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -2516,6 +2672,7 @@ a.etiket.kapat span.kaldir {
     line-height: 0;
     position: relative;
     top: 2px;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -2569,6 +2726,7 @@ input.tr-anahtar+label:after {
     margin-left: -47px;
     margin-top: 4px;
     position: absolute;
+    -webkit-transition: all .3s;
     transition: all .3s;
     width: 20px;
     z-index: 2
@@ -2612,6 +2770,7 @@ input.tr-checkbox:last-of-type+label {
 }
 
 input.tr-checkbox:checked+label:before {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-color: #0CAB9E;
     border-top-color: transparent;
@@ -2619,7 +2778,9 @@ input.tr-checkbox:checked+label:before {
     height: 22px;
     left: -5px;
     top: -4px;
+    -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
+    -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     width: 12px
 }
@@ -2633,6 +2794,7 @@ input.tr-checkbox+label:before, .tr-checkbox:not(.filled-in)+label:after {
     left: 0;
     position: absolute;
     top: 0;
+    -webkit-transition: .1s;
     transition: .1s;
     width: 18px;
     z-index: 0
@@ -2640,6 +2802,7 @@ input.tr-checkbox+label:before, .tr-checkbox:not(.filled-in)+label:after {
 
 input.tr-checkbox:not(.filled-in)+label:after {
     border: 0;
+    -webkit-transform: scale(0);
     transform: scale(0)
 }
 
@@ -2665,7 +2828,7 @@ input.tr-dosya::before {
     bottom: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     color: #FFF;
-    content: "Seç";
+    content: "SeÃ§";
     display: inline-block;
     font-family: "Noto Sans";
     font-size: 13px;
@@ -2679,6 +2842,7 @@ input.tr-dosya::before {
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
+    -webkit-transition: .3s ease-out;
     transition: .3s ease-out
 }
 
@@ -2713,6 +2877,7 @@ input.tr-input {
     margin-bottom: 5px;
     outline: none;
     position: relative;
+    -webkit-transition: .3s;
     transition: .3s;
     width: 100%
 }
@@ -2731,8 +2896,11 @@ input.tr-input+label {
     pointer-events: none;
     position: relative;
     text-align: left !important;
+    -webkit-transform: translateY(-35px);
     transform: translateY(-35px);
+    -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -2741,6 +2909,7 @@ input.tr-input.aktif+label {
 }
 
 input.tr-input.dolu+label {
+    -webkit-transform: translateY(-55px) scale(.75) !important;
     transform: translateY(-55px) scale(.75) !important
 }
 
@@ -2800,11 +2969,13 @@ input.tr-radio:last-of-type+label {
 }
 
 input.tr-radio:checked+label:before {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-color: #0CAB9E;
     height: 18px;
     left: 0;
     top: 0;
+    -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     width: 18px
 }
@@ -2818,6 +2989,7 @@ input.tr-radio+label:before, .tr-radio:not(.filled-in)+label:after {
     left: 0;
     position: absolute;
     top: 0;
+    -webkit-transition: .3s;
     transition: .3s;
     width: 18px;
     z-index: 0
@@ -2825,6 +2997,7 @@ input.tr-radio+label:before, .tr-radio:not(.filled-in)+label:after {
 
 input.tr-radio:not(.filled-in)+label:after {
     border: 0;
+    -webkit-transform: scale(0);
     transform: scale(0)
 }
 
@@ -2852,6 +3025,7 @@ input[type="date"].tr-input {
 }
 
 input[type="date"].tr-input+label {
+    -webkit-transform: translateY(-55px) scale(.75) !important;
     transform: translateY(-55px) scale(.75) !important
 }
 
@@ -2873,6 +3047,7 @@ textarea.tr-textarea {
     outline: none;
     position: relative;
     resize: none;
+    -webkit-transition: .3s;
     transition: .3s;
     width: 100%
 }
@@ -2890,9 +3065,12 @@ textarea.tr-textarea+label {
     margin: 0;
     pointer-events: none;
     position: relative;
+    -webkit-transform: translateY(-60px);
     transform: translateY(-60px);
     text-align: left !important;
+    -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -2901,6 +3079,7 @@ textarea.tr-textarea.aktif+label {
 }
 
 textarea.tr-textarea.dolu+label {
+    -webkit-transform: translateY(-80px) scale(.75) !important;
     transform: translateY(-80px) scale(.75) !important
 }
 
@@ -2952,6 +3131,7 @@ footer.tr-footer .detay {
     height: 400px;
     min-width: 100%;
     max-width: none;
+    -webkit-transition: .3s;
     transition: .3s;
     vertical-align: middle
 }
@@ -2964,6 +3144,7 @@ footer.tr-footer .detay {
     padding-top: 10px;
     position: absolute;
     top: 0;
+    -webkit-transition: .3s;
     transition: .3s;
     width: 100%
 }
@@ -2987,6 +3168,7 @@ footer.tr-footer .detay {
     display: block;
     height: 2px;
     margin: 10px auto;
+    -webkit-transition: .15s;
     transition: .15s;
     width: 75px
 }
@@ -3007,11 +3189,13 @@ footer.tr-footer .detay {
     border-radius: 0;
     left: 0;
     position: absolute;
+    -webkit-transform: translateY(60px);
     transform: translateY(60px);
     width: 100%
 }
 
 .tr-kart:hover a.buton {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
@@ -3022,10 +3206,12 @@ footer.tr-footer .detay {
 /* Yakinlastirma */
 
 .tr-kart.efekt1>img {
+    -webkit-transform: scale(1);
     transform: scale(1)
 }
 
 .tr-kart.efekt1:hover>img {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -3033,10 +3219,12 @@ footer.tr-footer .detay {
 /* Uzaklastirma */
 
 .tr-kart.efekt2>img {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
 .tr-kart.efekt2:hover>img {
+    -webkit-transform: scale(1);
     transform: scale(1)
 }
 
@@ -3045,6 +3233,7 @@ footer.tr-footer .detay {
 
 .tr-kart.efekt3 img {
     margin-left: 30px;
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -3057,6 +3246,7 @@ footer.tr-footer .detay {
 
 .tr-kart.efekt4>img {
     margin-left: -30px;
+    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 
@@ -3068,10 +3258,12 @@ footer.tr-footer .detay {
 /* Capraz Yakinlastirir */
 
 .tr-kart.efekt5>img {
+    -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1)
 }
 
 .tr-kart.efekt5:hover>img {
+    -webkit-transform: rotate(5deg) scale(1.1);
     transform: rotate(5deg) scale(1.1)
 }
 
@@ -3147,6 +3339,7 @@ nav.koleksiyon a {
     color: rgba(0, 0, 0, .7);
     display: block;
     padding: 8px 10px 8px 15px;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -3251,6 +3444,7 @@ nav.menu ul li a {
     letter-spacing: .5px;
     line-height: 45px;
     padding: 0 15px;
+    -webkit-transition: .2s;
     transition: .2s
 }
 
@@ -3403,6 +3597,7 @@ nav.menu ul li ul li:hover a {
     font-size: 25px;
     position: absolute;
     right: 20px;
+    -webkit-transition: .3s;
     transition: .3s;
     top: 11px
 }
@@ -3588,6 +3783,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     font-size: 13px;
     margin-left: 2px;
     padding: 8px 13px;
+    -webkit-transition: .15s;
     transition: .15s
 }
 
@@ -4391,6 +4587,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     padding: 10px 15px;
     position: relative;
     text-align: left;
+    -webkit-transition: color .3s;
     transition: color .3s
 }
 
@@ -4438,7 +4635,9 @@ progress.tr-progress.yesil::-webkit-progress-value {
     left: 0;
     position: absolute;
     right: auto;
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
+    -webkit-transition: .3s;
     transition: .3s;
     top: 16px
 }
@@ -4474,6 +4673,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-akordiyon .baslik.aktif::after {
     border-top-color: rgba(0, 0, 0, 1);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg)
 }
 
@@ -4511,6 +4711,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     line-height: 1.7;
     padding: 5px 13px;
     text-align: center;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -4541,6 +4742,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-medya {
     cursor: zoom-in;
+    -webkit-transition: opacity .3s;
     transition: opacity .3s
 }
 
@@ -4569,6 +4771,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     padding: 25px;
     position: fixed;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 999
 }
@@ -4617,7 +4820,10 @@ span.kapatButon {
 }
 
 .tr-tab>nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%
 }
@@ -4626,7 +4832,10 @@ span.kapatButon {
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .1);
     cursor: pointer;
+    -ms-flex-preferred-size: 0;
     flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     font-weight: bold;
     letter-spacing: 1px;
