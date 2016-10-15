@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -81,25 +81,25 @@ body {
     margin: 0
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 360px) {
     body {
         font-size: 13.5px
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
     body {
         font-size: 14px
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     body {
         font-size: 14.5px
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
     body {
         font-size: 15px
     }
@@ -267,11 +267,7 @@ sup {
 /* Mobil Cihazlar */
 
 .container {
-    width: 85%
-}
-
-.container-kucuk {
-    width: 70%
+    width: 90%
 }
 
 .container-buyuk {
@@ -281,12 +277,9 @@ sup {
 
 /* Mini Tabletler */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 360px) {
     .container {
         width: 80%
-    }
-    .container-kucuk {
-        width: 60%
     }
     .container-buyuk {
         width: 95%
@@ -296,12 +289,9 @@ sup {
 
 /* Tabletler */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
     .container {
-        width: 75%
-    }
-    .container-kucuk {
-        width: 50%
+        width: 70%
     }
     .container-buyuk {
         width: 90%
@@ -311,12 +301,9 @@ sup {
 
 /* Bilgisayarlar */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     .container {
-        width: 70%
-    }
-    .container-kucuk {
-        width: 40%
+        width: 60%
     }
     .container-buyuk {
         width: 85%
@@ -326,17 +313,13 @@ sup {
 
 /* Yuksek Cozunurlukler */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1250px;
+        /*max-width: 1250px;*/
         width: 50%
     }
-    .container-kucuk {
-        max-width: 1000px;
-        width: 30%
-    }
     .container-buyuk {
-        max-width: 1500px;
+        /*max-width: 1500px;*/
         width: 80%
     }
 }
@@ -542,7 +525,7 @@ sup {
 
 /* Mini Tabletler */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 360px) {
     .tr.k {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -679,7 +662,7 @@ sup {
 
 /* Tabletler */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 720px) {
     .tr.o {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -816,7 +799,7 @@ sup {
 
 /* Bilgisayarlar */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     .tr.b {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -953,7 +936,7 @@ sup {
 
 /* Yuksek Cozunurlukler */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
     .tr.cb {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1809,31 +1792,31 @@ table.tr-tablo::-webkit-scrollbar {
     display: none !important
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 360px) {
     .gizle-ck {
         display: none
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 800px) {
+@media only screen and (min-width: 360px) and (max-width: 720px) {
     .gizle-k {
         display: none
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
     .gizle-o {
         display: none
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .gizle-b {
         display: none
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
     .gizle-cb {
         display: none
     }
@@ -3492,7 +3475,7 @@ nav.menu ul li ul li:hover a {
     width: 100%
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
     nav.menu.mobil {
         left: 0 !important;
         z-index: 996
@@ -3520,7 +3503,7 @@ nav.menu ul li ul li:hover a {
     }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1439px) {
     nav.menu.mobil {
         background-color: #0CAB9E;
         height: 100%;
