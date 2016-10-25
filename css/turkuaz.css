@@ -2330,8 +2330,8 @@ span.tr-modal-span {
 
 /* ============= 2.1.1 Buton Ayarlari */
 
-a.buton, button {
-    background-color: #0CAB9E;
+a.buton, button, input[type="submit"].buton, input[type="reset"].buton {
+    background-color: #03968A;
     border: none;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
@@ -2354,22 +2354,22 @@ a.buton, button {
     transition: .3s ease-out
 }
 
-a.buton.kucuk {
+a.buton.kucuk, input[type="submit"].buton.kucuk, input[type="reset"].buton.kucuk {
     line-height: 2
 }
 
-a.buton.buyuk {
+a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk {
     font-size: 14px;
     line-height: 4
 }
 
-a.buton:hover, button:hover {
+a.buton:hover, button:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
     color: #FFF;
     text-decoration: none
 }
 
-a.buton:active, button:active {
+a.buton:active, button:active, input[type="submit"].buton:active, input[type="reset"].buton:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
@@ -2381,53 +2381,53 @@ a.buton::selection {
     background-color: transparent
 }
 
-a.buton.saydam, button.saydam {
+a.buton.saydam, button.saydam, input[type="submit"].buton.saydam, input[type="reset"].buton.saydam {
     background-color: transparent !important;
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: none !important;
     color: #000
 }
 
-a.buton.saydam:hover, button.saydam:hover {
+a.buton.saydam:hover, button.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover {
     box-shadow: inset 0 0 0 0 transparent !important;
     border: 1px solid rgba(0, 0, 0, .3);
     color: #000
 }
 
-a.buton.pasif, button.pasif {
+a.buton.pasif, button.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif {
     background-color: #E6E6E6 !important;
     box-shadow: none;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default
 }
 
-a.buton.pasif:hover, button.pasif:hover {
+a.buton.pasif:hover, button.pasif:hover, input[type="submit"].buton.pasif:hover, input[type="reset"].buton.pasif:hover {
     background-color: #E6E6E6 important;
     box-shadow: inset 0 0 0 0 transparent !important;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default
 }
 
-a.buton.yuvarlak, button.yuvarlak, a.buton.kare, button.kare {
+a.buton.yuvarlak, button.yuvarlak, a.buton.kare, button.kare, input[type="submit"].buton.kare, input[type="reset"].buton.kare {
     height: 40px;
     line-height: 40px;
     padding: 0px !important;
     width: 40px
 }
 
-a.buton.yuvarlak.kucuk, button.yuvarlak.kucuk, a.buton.kare.kucuk, button.kare.kucuk {
+a.buton.yuvarlak.kucuk, button.yuvarlak.kucuk, input[type="submit"].buton.yuvarlak.kucuk, input[type="reset"].buton.yuvarlak.kucuk, a.buton.kare.kucuk, button.kare.kucuk, input[type="submit"].buton.kare.kucuk, input[type="reset"].buton.kare.kucuk {
     height: 30px;
     line-height: 30px;
     width: 30px
 }
 
-a.buton.yuvarlak.buyuk, button.yuvarlak.buyuk, a.buton.kare.buyuk, button.kare.buyuk {
+a.buton.yuvarlak.buyuk, button.yuvarlak.buyuk, input[type="submit"].buton.yuvarlak.buyuk, input[type="reset"].buton.yuvarlak.buyuk, a.buton.kare.buyuk, button.kare.buyuk, input[type="submit"].buton.kare.buyuk, input[type="reset"].buton.kare.buyuk {
     height: 60px;
     line-height: 60px;
     width: 60px
 }
 
-a.buton.yay, button.yay {
+a.buton.yay, button.yay, input[type="submit"].buton.yay, input[type="reset"].buton.yay {
     width: 100%;
 }
 
@@ -2716,7 +2716,7 @@ input.tr-anahtar+label:after {
 }
 
 input:checked.tr-anahtar+label:before {
-    background-color: #0CAB9E
+    background-color: #03968A
 }
 
 input:checked.tr-anahtar+label:after {
@@ -2755,7 +2755,7 @@ input.tr-checkbox:last-of-type+label {
 input.tr-checkbox:checked+label:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-color: #0CAB9E;
+    border-color: #03968A;
     border-top-color: transparent;
     border-left-color: transparent;
     height: 22px;
@@ -2805,7 +2805,7 @@ input.tr-dosya::-webkit-file-upload-button {
 }
 
 input.tr-dosya::before {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     border: none;
     border-radius: 3px;
     bottom: 8px;
@@ -2866,11 +2866,11 @@ input.tr-input {
 }
 
 input.tr-input.aktif {
-    border-bottom: 2px solid #0CAB9E
+    border-bottom: 2px solid #03968A
 }
 
 input.tr-input+label {
-    color: #0CAB9E;
+    color: #03968A;
     cursor: auto;
     display: block;
     font-weight: 400;
@@ -2954,7 +2954,7 @@ input.tr-radio:last-of-type+label {
 input.tr-radio:checked+label:before {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: #0CAB9E;
+    background-color: #03968A;
     height: 18px;
     left: 0;
     top: 0;
@@ -3036,11 +3036,11 @@ textarea.tr-textarea {
 }
 
 textarea.tr-textarea.aktif {
-    border-bottom: 2px solid #0CAB9E
+    border-bottom: 2px solid #03968A
 }
 
 textarea.tr-textarea+label {
-    color: #0CAB9E;
+    color: #03968A;
     cursor: auto;
     display: block;
     font-weight: 400;
@@ -3068,10 +3068,16 @@ textarea.tr-textarea.dolu+label {
 
 
 /* ============= 2.4 Footer */
-
+html,
+body {
+   margin:0;
+   padding:0;
+   min-height:100%;
+}
 footer.tr-footer {
     background-color: #FFF;
     border-top: 1px solid rgba(0, 0, 0, .15);
+    bottom: 0;
     color: #000;
     padding: 40px 0 30px 0;
     position: relative;
@@ -3368,7 +3374,7 @@ nav.koleksiyon.saydam a {
 /* ============= 2.7 Menu */
 
 nav.menu {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     display: block;
     height: 45px;
@@ -3505,7 +3511,7 @@ nav.menu ul li ul li:hover a {
 
 @media only screen and (max-width: 1439px) {
     nav.menu.mobil {
-        background-color: #0CAB9E;
+        background-color: #03968A;
         height: 100%;
         left: -240px;
         position: fixed;
@@ -3558,7 +3564,7 @@ nav.menu ul li ul li:hover a {
 /* ============= 2.8 Notlar */
 
 .tr-not {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     border-radius: 3px;
     color: #FFF;
@@ -3606,7 +3612,7 @@ nav.menu ul li ul li:hover a {
 /* ============= 2.9 Pano */
 
 .tr-pano {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     border-radius: 3px;
     box-shadow: 0 6px 6px rgba(0, 0, 0, .15);
     margin-bottom: 15px
@@ -3648,7 +3654,7 @@ progress.tr-progress::-webkit-progress-bar {
 }
 
 progress.tr-progress::-webkit-progress-value {
-    background-color: #0CAB9E
+    background-color: #03968A
 }
 
 progress.tr-progress.sari::-webkit-progress-value {
@@ -3667,7 +3673,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 2.11 Sayfa Konumu */
 
 .tr-konum {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: rgba(255, 255, 255, .6);
@@ -3759,7 +3765,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara a.aktif {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     border-color: transparent;
     color: #FFF;
     cursor: default
@@ -4586,7 +4592,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema4 .baslik:hover {
-    border-left-color: #0CAB9E
+    border-left-color: #03968A
 }
 
 .tr-akordiyon .baslik::after {
@@ -4630,7 +4636,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema4 .baslik.aktif {
-    border-left-color: #0CAB9E
+    border-left-color: #03968A
 }
 
 .tr-akordiyon .baslik.aktif::after {
@@ -4655,7 +4661,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 3.2 Filtre Menu */
 
 .tr-filtre nav {
-    background-color: #0CAB9E;
+    background-color: #03968A;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     display: table;
