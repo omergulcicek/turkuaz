@@ -23,6 +23,7 @@
 $("a.etiket.kapat").click(function(e) {
     e.preventDefault()
 })
+
 $("a.etiket.kapat").append("<span class=kaldir>&times</span>")
     .end()
     .find("span.kaldir").click(function() {
@@ -37,20 +38,22 @@ $placeholder = ".tr-input,.tr-textarea"
 placeholder()
 
 $($formEtiketleri).focus(function() {
-    $(this).addClass("aktif dolu")
+    var inputId = $(this).attr("id");
+    $("body").find("[for='" + inputId + "']").addClass("dolu");
 }).focusout(function() {
+    var inputId = $(this).attr("id");
     if ($(this).val() == "") {
-        $(this).removeClass("dolu")
+        $("body").find("[for='" + inputId + "']").removeClass("dolu");
     }
     placeholder()
-    $(this).removeClass("aktif")
 })
 
 function placeholder() {
     $($placeholder).each(function() {
         var placeholder = $(this).attr("placeholder")
         if (placeholder !== undefined && placeholder !== "") {
-            $(this).addClass("dolu")
+            var inputId = $(this).attr("id");
+            $("body").find("[for='" + inputId + "']").addClass("dolu")
         }
     })
 }
@@ -233,7 +236,7 @@ $(".tr-filtre").on("click", "nav a", function() {
                             "position": "fixed",
                             "text-align": "center",
                             "transform": "translate(-50%, -50%)",
-                            "width": "75%",
+                            "max-width": "75%",
                             "z-index": "998"
                         })
                         if ($(".tr-modal-yazi").length == 0) {

@@ -1744,7 +1744,6 @@ table.tr-tablo tr th {
 table.tr-tablo tr td {
     border-left: 1px solid rgba(0, 0, 0, .05);
     border-top: 1px solid rgba(0, 0, 0, .05);
-    color: #212121;
     padding: 15px;
     width: 100vw
 }
@@ -2669,7 +2668,7 @@ a.etiket.kapat:hover span.kaldir {
 form.tr-form {
     background-color: #FFF;
     border-radius: 5px;
-    padding: 30px
+    padding: 10px 30px 30px 30px
 }
 
 
@@ -2865,11 +2864,11 @@ input.tr-input {
     width: 100%
 }
 
-input.tr-input.aktif {
+input.tr-input:focus {
     border-bottom: 2px solid #03968A
 }
 
-input.tr-input+label {
+label.tr-label {
     color: #03968A;
     cursor: auto;
     display: block;
@@ -2879,21 +2878,18 @@ input.tr-input+label {
     pointer-events: none;
     position: relative;
     text-align: left !important;
-    -webkit-transform: translateY(-35px);
-    transform: translateY(-35px);
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
     -webkit-transition: .3s;
     transition: .3s
 }
 
-input.tr-input.aktif+label {
-    color: #057970
-}
-
-input.tr-input.dolu+label {
-    -webkit-transform: translateY(-55px) scale(.75) !important;
-    transform: translateY(-55px) scale(.75) !important
+label.tr-label.dolu {
+    color: #057970;
+    -webkit-transform: translateY(0px) scale(.75) !important;
+    transform: translateY(0px) scale(.75) !important
 }
 
 nav.menu input.tr-input {
