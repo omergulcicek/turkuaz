@@ -2868,6 +2868,10 @@ input.tr-input:focus {
     border-bottom: 2px solid #03968A
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 1000px #FFF
+}
+
 label.tr-label {
     color: #03968A;
     cursor: auto;
