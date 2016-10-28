@@ -1,4 +1,4 @@
-﻿/*!
+﻿﻿/*!
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -180,16 +180,16 @@ a:active {
 }
 
 b, strong {
-    font-family: "Noto Sans Bold";
-    font-weight: 700
+    font-weight: bold
 }
 
 i, em {
-    font-family: "Noto Sans Italic";
     font-style: italic
 }
 
 p {
+    font-style: normal;
+    font-weight: normal;
     line-height: 1.75;
     margin-bottom: 10px;
     margin-top: 0
@@ -2307,16 +2307,22 @@ span.tr-modal-span {
 
 @font-face {
     font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: normal;
     src: url(../fonts/NotoSans.ttf)
 }
 
 @font-face {
-    font-family: "Noto Sans Italic";
+    font-family: "Noto Sans";
+    font-style: italic;
+    font-weight: normal;
     src: url("../fonts/NotoSans-Italic.ttf")
 }
 
 @font-face {
-    font-family: "Noto Sans Bold";
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: bold;
     src: url("../fonts/NotoSans-Bold.ttf")
 }
 
@@ -3847,8 +3853,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .yazi-kalin, .yazi-kalin a {
-    font-family: "Noto Sans Bold";
-    font-weight: 700 !important
+    font-weight: bold
 }
 
 .yazi-ince, .yazi-ince a {
@@ -3856,7 +3861,6 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .yazi-yatay, .yazi-yatay a {
-    font-family: "Noto Sans Italic";
     font-style: italic
 }
 
