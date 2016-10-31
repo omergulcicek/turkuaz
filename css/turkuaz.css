@@ -1,4 +1,4 @@
-﻿﻿/*!
+﻿/*!
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -315,11 +315,11 @@ sup {
 
 @media only screen and (min-width: 1440px) {
     .container {
-        /*max-width: 1250px;*/
+        max-width: 1600px;
         width: 50%
     }
     .container-buyuk {
-        /*max-width: 1500px;*/
+        max-width: 1600px;
         width: 80%
     }
 }
@@ -4737,7 +4737,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #FFF;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    max-height: 750px;
+    max-height: 75vh;
     left: 50%;
     overflow: auto;
     padding: 25px;
