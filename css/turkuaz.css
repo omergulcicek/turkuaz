@@ -1,4 +1,4 @@
-﻿/*!
+﻿﻿/*!
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -2347,10 +2347,10 @@ a.buton, button, input[type="submit"].buton, input[type="reset"].buton {
     font-size: 13px;
     font-weight: normal;
     letter-spacing: 1.5px;
-    line-height: 3;
+    line-height: 2;
     outline: 0;
     overflow: hidden;
-    padding: 0 25px !important;
+    padding: 7px 25px !important;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -2360,12 +2360,12 @@ a.buton, button, input[type="submit"].buton, input[type="reset"].buton {
 }
 
 a.buton.kucuk, input[type="submit"].buton.kucuk, input[type="reset"].buton.kucuk {
-    line-height: 2
+    padding: 0 25px !important
 }
 
 a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk {
     font-size: 14px;
-    line-height: 4
+    padding: 14px 25px !important
 }
 
 a.buton:hover, button:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
@@ -3041,11 +3041,11 @@ textarea.tr-textarea {
     width: 100%
 }
 
-textarea.tr-textarea.aktif {
+textarea.tr-textarea:focus {
     border-bottom: 2px solid #03968A
 }
 
-textarea.tr-textarea+label {
+textarea.tr-textarea+label.tr-label {
     color: #03968A;
     cursor: auto;
     display: block;
@@ -3063,11 +3063,11 @@ textarea.tr-textarea+label {
     transition: .3s
 }
 
-textarea.tr-textarea.aktif+label {
+textarea.tr-textarea+label.tr-label {
     color: #057970
 }
 
-textarea.tr-textarea.dolu+label {
+textarea.tr-textarea+label.tr-label.dolu {
     -webkit-transform: translateY(-80px) scale(.75) !important;
     transform: translateY(-80px) scale(.75) !important
 }
