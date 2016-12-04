@@ -2244,7 +2244,7 @@ table.tr-tablo::-webkit-scrollbar {
 
 .cizgi {
     background-color: #eee;
-    display: table;
+    display: inline-block;
     height: 1px;
     margin: 10px auto;
     position: relative;
@@ -3396,24 +3396,122 @@ nav.koleksiyon.saydam a {
 
 /* ============= 2.7 Menu */
 
-nav.menu.mobil {
-    background-color: #364760;
+
+nav.menu {
+    background-color: #03968A;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    height: 50px;
+    left: 0;
+    line-height: 48px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+nav.menu::-webkit-scrollbar {
+    width: 0px
+}
+
+nav.menu .baslik {
+    background-color: rgba(0, 0, 0, .1);
+    margin: 0 30px 0 0;
+    display: block;
+    float: left;
+    font-size: 25px;
+    line-height: 70px;
+    padding: 0 10px;
+    opacity: .8;
+    text-align: center;
+    transition: opacity .2s
+}
+
+nav.menu:hover .baslik {
+    opacity: 1
+}
+
+nav.menu a i {
+    margin-right: 7px
+}
+
+nav.menu li {
+    float: left
+}
+
+nav.menu a {
+    border-top: 2px solid transparent;
+    color: #FFF;
+    display: block;
+    line-height: 47px;
+    padding: 0 15px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .15s, color .15s
+}
+
+nav.menu li:hover>a {
+    background-color: rgba(0, 0, 0, .1);
+    border-top: 2px solid #FFF;
+    color: #FFF
+}
+
+nav.menu ul li.acilir>a::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgba(0, 0, 0, .2);
+    content: "";
+    margin: 0 5px;
+    position: relative;
+    right: -7px;
+    top: 11px
+}
+
+nav.menu li ul {
+    background-color: #FFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    position: absolute
+}
+
+nav.menu li:hover ul {
+    border-radius: 3px;
+    display: block !important
+}
+
+nav.menu li li {
+    float: none
+}
+
+nav.menu li li a {
+    color: rgba(0,0,0,.75)
+}
+
+nav.menu li li:hover a {
+    border-top-color: transparent;
+    background-color: transparent;
+    color: #000
+}
+
+/**/
+
+nav.mobil {
+    background-color: #03968A;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     height: 100%;
     line-height: 40px;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-bottom: 150px;
     position: fixed;
     top: 0;
     width: 250px;
-    z-index: 999
+    z-index: 997
 }
 
-nav.menu.mobil::-webkit-scrollbar {
+nav.mobil::-webkit-scrollbar {
     width: 0px
 }
 
-nav.menu.mobil .baslik {
+nav.mobil .baslik {
     background-color: rgba(0, 0, 0, .1);
     margin: 0 0 15px 0;
     display: block;
@@ -3425,23 +3523,23 @@ nav.menu.mobil .baslik {
     width: 250px
 }
 
-nav.menu.mobil:hover .baslik {
+nav.mobil:hover .baslik {
     opacity: 1
 }
 
-nav.menu.mobil .baslik a {
+nav.mobil .baslik a {
     border-left-width: 0;
     padding: 15px
 }
 
-nav.menu.mobil a i {
+nav.mobil a i {
     margin-right: 7px
 }
 
-nav.menu.mobil a {
+nav.mobil a {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    color: #F0F4F6;
+    color: #FFF;
     display: block;
     margin: 0 3px;
     line-height: 2;
@@ -3451,13 +3549,13 @@ nav.menu.mobil a {
     transition: background-color .15s, color .15s
 }
 
-nav.menu.mobil li:hover>a {
+nav.mobil li:hover>a {
     background-color: rgba(0, 0, 0, .1);
     border-left: 3px solid #FFF;
     color: #FFF
 }
 
-nav.menu.mobil ul li.acilir>a::after {
+nav.mobil ul li.acilir>a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0, 0, 0, .2);
@@ -3467,17 +3565,16 @@ nav.menu.mobil ul li.acilir>a::after {
     top: 23px
 }
 
-nav.menu.mobil li li a {
-    color: #d1d1d1;
+nav.mobil li li a {
+    color: rgba(255,255,255,.75);
     margin-left: 10px;
     padding: 7px 15px
 }
 
-nav.menu.mobil li li:hover a {
+nav.mobil li li:hover a {
     border-left-color: transparent;
     background-color: transparent
 }
-
 
 /* ============= 2.8 Notlar */
 
