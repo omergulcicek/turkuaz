@@ -1,4 +1,4 @@
-﻿﻿/*!
+﻿/*!
 * Turkuaz Css v1.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -486,7 +486,7 @@ sup {
     margin-left: 25%
 }
 
-.row .tr.ck-4 {
+.tr.ck-4 {
     margin-left: 33.333333%
 }
 
@@ -1793,31 +1793,31 @@ table.tr-tablo::-webkit-scrollbar {
 
 @media only screen and (max-width: 360px) {
     .gizle-ck {
-        display: none
+        display: none !important
     }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 720px) {
     .gizle-k {
-        display: none
+        display: none !important
     }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
     .gizle-o {
-        display: none
+        display: none !important
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .gizle-b {
-        display: none
+        display: none !important
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .gizle-cb {
-        display: none
+        display: none !important
     }
 }
 
@@ -2244,7 +2244,7 @@ table.tr-tablo::-webkit-scrollbar {
 
 .cizgi {
     background-color: #eee;
-    display: inline-block;
+    display: table;
     height: 1px;
     margin: 10px auto;
     position: relative;
@@ -2356,7 +2356,8 @@ a.buton, button, input[type="submit"].buton, input[type="reset"].buton {
     text-decoration: none;
     text-transform: capitalize;
     -webkit-transition: .3s ease-out;
-    transition: .3s ease-out
+    transition: .3s ease-out;
+    user-select: none
 }
 
 a.buton.kucuk, input[type="submit"].buton.kucuk, input[type="reset"].buton.kucuk {
@@ -2599,7 +2600,7 @@ a.buton.efekt6:hover:before {
 /* ============= 2.2 Etiketler */
 
 a.etiket {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: #E0E0E0;
     border-radius: 3px;
     color: #333;
     cursor: pointer;
@@ -2622,6 +2623,20 @@ a.etiket:hover {
 
 a.etiket:active {
     box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
+}
+
+a.etiket.pasif {
+    background-color: #E6E6E6 !important;
+    box-shadow: none;
+    color: rgba(0, 0, 0, .4) !important;
+    cursor: default
+}
+
+a.etiket.pasif:hover {
+    background-color: #E6E6E6 important;
+    box-shadow: inset 0 0 0 0 transparent !important;
+    color: rgba(0, 0, 0, .4) !important;
+    cursor: default
 }
 
 a.etiket .detay {
@@ -2742,7 +2757,7 @@ input.tr-checkbox {
     padding: 0
 }
 
-input.tr-checkbox+label {
+input.tr-checkbox+label.tr-label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -2893,7 +2908,8 @@ label.tr-label {
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
     -webkit-transition: .3s;
-    transition: .3s
+    transition: .3s;
+    user-select: none
 }
 
 label.tr-label.dolu {
@@ -2942,7 +2958,7 @@ input.tr-radio:not(:checked), .tr-radio:checked {
     position: absolute
 }
 
-input.tr-radio+label {
+input.tr-radio+label.tr-label {
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -3074,12 +3090,13 @@ textarea.tr-textarea+label.tr-label.dolu {
 
 
 /* ============= 2.4 Footer */
-html,
-body {
-   margin:0;
-   padding:0;
-   min-height:100%;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
+
 footer.tr-footer {
     background-color: #FFF;
     border-top: 1px solid rgba(0, 0, 0, .15);
@@ -3379,191 +3396,86 @@ nav.koleksiyon.saydam a {
 
 /* ============= 2.7 Menu */
 
-nav.menu {
-    background-color: #03968A;
+nav.menu.mobil {
+    background-color: #364760;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    display: block;
-    height: 45px;
-    left: 0;
-    position: relative;
+    height: 100%;
+    line-height: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 998
+    width: 250px;
+    z-index: 999
 }
 
-nav.menu img:not(.logo) {
-    height: 40px;
-    display: block;
-    float: none !important;
-    margin: 15px auto
+nav.menu.mobil::-webkit-scrollbar {
+    width: 0px
 }
 
-nav.menu .baslik {
-    line-height: 25px;
-    float: left;
-    font-size: 25px;
-    margin-right: 10px
-}
-
-nav.menu a:hover {
-    text-decoration: none
-}
-
-nav.menu .baslik.sag {
-    margin-left: 10px;
-    margin-right: 0
-}
-
-nav.menu.sabit {
-    position: fixed
-}
-
-nav.menu.saydam {
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-}
-
-nav.menu ul {
-    display: table;
-    height: 50px
-}
-
-nav.menu ul li {
-    float: left
-}
-
-nav.menu ul li a {
-    color: #FFF;
-    cursor: pointer;
-    display: block;
-    font-size: 14px;
-    letter-spacing: .5px;
-    line-height: 45px;
-    padding: 0 15px;
-    -webkit-transition: .2s;
-    transition: .2s
-}
-
-nav.menu ul li:hover>a {
+nav.menu.mobil .baslik {
     background-color: rgba(0, 0, 0, .1);
-    color: #FFF;
-    text-decoration: none
+    margin: 0 0 15px 0;
+    display: block;
+    font-size: 25px;
+    line-height: 70px;
+    opacity: .8;
+    text-align: center;
+    transition: opacity .2s;
+    width: 250px
 }
 
-nav.menu ul li.acilir>a::after {
+nav.menu.mobil:hover .baslik {
+    opacity: 1
+}
+
+nav.menu.mobil .baslik a {
+    border-left-width: 0;
+    padding: 15px
+}
+
+nav.menu.mobil a i {
+    margin-right: 7px
+}
+
+nav.menu.mobil a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    color: #F0F4F6;
+    display: block;
+    margin: 0 3px;
+    line-height: 2;
+    padding: 11px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .15s, color .15s
+}
+
+nav.menu.mobil li:hover>a {
+    background-color: rgba(0, 0, 0, .1);
+    border-left: 3px solid #FFF;
+    color: #FFF
+}
+
+nav.menu.mobil ul li.acilir>a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0, 0, 0, .2);
     content: "";
-    left: 8px;
-    position: relative;
-    top: 10px
+    position: absolute;
+    right: 23px;
+    top: 23px
 }
 
-nav.menu ul li ul {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    display: none;
-    position: absolute !important;
-    z-index: 998
+nav.menu.mobil li li a {
+    color: #d1d1d1;
+    margin-left: 10px;
+    padding: 7px 15px
 }
 
-nav.menu ul li ul li {
-    float: none
-}
-
-nav.menu ul li ul li:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    overflow: hidden
-}
-
-nav.menu ul li ul li a {
-    background-color: #FFF !important;
-    color: #000
-}
-
-nav.menu ul li ul li:hover a {
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-    color: #000;
-    width: 100%
-}
-
-@media only screen and (min-width: 1440px) {
-    nav.menu.mobil {
-        left: 0 !important;
-        z-index: 996
-    }
-    nav.menu.mobil>img.logo {
-        display: none
-    }
-    nav.menu img:not(.logo) {
-        height: 35px;
-        float: left !important;
-        margin: 5px 15px 5px 0
-    }
-    nav.menu img.sag:not(.logo) {
-        float: right !important
-    }
-    nav.menu img.sol:not(.logo) {
-        float: left !important
-    }
-    nav.menu img.sag:not(.logo) {
-        margin-left: 15px;
-        margin-right: 0
-    }
-    nav.menu ul li:hover ul {
-        display: table !important
-    }
-}
-
-@media only screen and (max-width: 1439px) {
-    nav.menu.mobil {
-        background-color: #03968A;
-        height: 100%;
-        left: -240px;
-        position: fixed;
-        width: 240px
-    }
-    nav.menu .baslik {
-        float: none !important;
-        margin: 15px 0 !important;
-        text-align: center
-    }
-    nav.menu.mobil>img.logo {
-        cursor: pointer;
-        display: block;
-        height: 50px;
-        position: fixed;
-        left: 40px;
-        top: 20px;
-        width: 50px
-    }
-    nav.menu.mobil .container, nav.menu.mobil .container-kucuk, nav.menu.mobil .container-buyuk {
-        width: 100% !important
-    }
-    nav.menu ul {
-        width: 100%
-    }
-    nav.menu.mobil ul li {
-        float: none;
-        position: relative
-    }
-    nav.menu.mobil ul li.acilir>a::after {
-        content: "";
-        position: absolute;
-        left: auto;
-        right: 23px;
-        top: 23px
-    }
-    nav.menu.mobil ul li ul {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        position: relative !important
-    }
-    nav.menu.mobil ul li:hover ul {
-        display: none
-    }
-    nav.menu.mobil ul li ul li a {
-        padding-left: 30px
-    }
+nav.menu.mobil li li:hover a {
+    border-left-color: transparent;
+    background-color: transparent
 }
 
 
@@ -3576,7 +3488,7 @@ nav.menu ul li ul li:hover a {
     color: #FFF;
     line-height: 1.6;
     margin-bottom: 15px;
-    padding: 20px 50px 20px 20px;
+    padding: 20px;
     position: relative;
     width: 100%
 }
@@ -3766,11 +3678,11 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara a:hover {
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 1px solid rgba(0, 0, 0, 0, .3);
     text-decoration: none
 }
 
-.tr-numara a.aktif {
+.tr-numaramara a.aktif {
     background-color: #03968A;
     border-color: transparent;
     color: #FFF;
@@ -3786,7 +3698,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border-color: rgba(0, 0, 0, .1)
 }
 
-.tr-numara.kucuk a {
+.tr-numara.kuc {
     font-size: 11px;
     margin-left: 2px;
     padding: 5px 8px
@@ -3795,7 +3707,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-numara.buyuk a {
     font-size: 15px;
     margin-left: 2px;
-    padding: 10px 15px
+    padding: 10px 1x
 }
 
 

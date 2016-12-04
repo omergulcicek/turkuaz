@@ -79,7 +79,7 @@ $("nav.menu.mobil").on("click", "img.logo", function() {
 $("body").on("click", ".tr-karart.menu", function() {
     $(this).remove()
     $("nav.menu.mobil").animate({
-            left: "-240px"
+            left: "-270px"
         })
         .find("img.logo").delay(400).fadeIn()
 })
@@ -87,7 +87,7 @@ $("body").on("click", ".tr-karart.menu", function() {
 $("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir")
 
 $("body").on("click", "nav.menu.mobil ul li.acilir", function() {
-    var yukseklik = $(this).find("li").length * 45
+    var yukseklik = $(this).find("li").length * 44
     $(this).find("ul").css({
             "height": yukseklik + "px"
         })
