@@ -67,51 +67,11 @@ $("body").on("click", "a.pasif,a.aktif", function(e) {
 /* ============= 4. Menu */
 
 //Mobil Menu
-$("nav.menu.mobil").on("click", "img.logo", function() {
-    $(this).hide()
-        .parents("nav.menu.mobil").animate({
-            left: "0"
-        })
-    var overlay = $("<div></div>").addClass("tr-karart menu")
-    $("body").append(overlay)
-})
 
-$("body").on("click", ".tr-karart.menu", function() {
-    $(this).remove()
-    $("nav.menu.mobil").animate({
-            left: "-270px"
-        })
-        .find("img.logo").delay(400).fadeIn()
-})
-
-$("nav.menu ul li").find("ul li a").parent().parent().parent().addClass("acilir")
-
-$("body").on("click", "nav.menu.mobil ul li.acilir", function() {
-    var yukseklik = $(this).find("li").length * 44
-    $(this).find("ul").css({
-            "height": yukseklik + "px"
-        })
-        .slideToggle("500")
-        .parent().siblings(".acilir")
-        .find("ul:visible").slideToggle("500")
-})
-
-function mobil() {
-    if ($(window).width() <= 1000) {
-        $("nav.menu.mobil").addClass("mobilmenu")
-        $(".tr-karart.menu").removeClass("gizle")
-    } else {
-        $("nav.menu.mobil").removeClass("mobilmenu")
-        $(".tr-karart.menu").addClass("gizle")
-    }
-    $("nav.menu ul li.acilir ul").each(function() {
-        $(this).hide("600")
-    })
-}
-
-mobil()
-$(window).resize(function() {
-    mobil()
+$("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
+$("nav.mobil li.acilir ul, nav.menu li.acilir ul").hide();
+$("nav.mobil").on("click", "li.acilir>a", function() {
+    $(this).parents("li.acilir:first").find("ul:first").slideToggle();
 })
 
 // Tab Menu
@@ -262,7 +222,7 @@ $(".tr-filtre").on("click", "nav a", function() {
                     })
                     if ($(".tr-karart." + obj.overlay).length == 0) {
                         $("body").append(overlay)
-                            .end().find("nav.menu.mobil > img.logo").addClass("gizle")
+                            .end().find("nav.mobil > img.logo").addClass("gizle")
                     }
                 }
             })
@@ -281,7 +241,7 @@ function medyaKapat() {
         })
     $("body").find(".tr-karart").remove()
         .end().find(".tr-modal-yazi").remove()
-        .end().find("nav.menu.mobil > img.logo").removeClass("gizle")
+        .end().find("nav.mobil > img.logo").removeClass("gizle")
 }
 
 $(".tr-medya").medya()

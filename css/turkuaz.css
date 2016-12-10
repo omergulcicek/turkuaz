@@ -3442,11 +3442,23 @@ nav.menu a {
     border-top: 2px solid transparent;
     color: #FFF;
     display: block;
-    line-height: 47px;
+    line-height: 48px;
     padding: 0 15px;
     position: relative;
     text-decoration: none;
-    transition: background-color .15s, color .15s
+    transition: background-color .15s, color .15s, text-shadow .15s
+}
+
+nav.menu img.logo {
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    opacity: .8;
+    transition: .15s
+}
+
+nav.menu:hover img.logo {
+    opacity: 1
 }
 
 nav.menu li:hover>a {
@@ -3472,26 +3484,65 @@ nav.menu li ul {
     position: absolute
 }
 
-nav.menu li:hover ul {
-    border-radius: 3px;
-    display: block !important
+nav.menu li:hover>ul {
+    border-radius: 0  0 4px 4px;
+    display: table !important
+}
+
+nav.menu li:hover ul a {
+    color: #000
+}
+
+nav.menu li ul a:hover {
+    text-shadow: 0 0 1px rgba(0,0,0,.3)
 }
 
 nav.menu li li {
     float: none
 }
 
-nav.menu li li a {
-    color: rgba(0,0,0,.75)
-}
-
-nav.menu li li:hover a {
+nav.menu li li:hover>a {
     border-top-color: transparent;
-    background-color: transparent;
-    color: #000
+    background-color: transparent
 }
 
-/**/
+nav.menu ul ul li.acilir>a::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    transform: rotate(-90deg);
+    top: 20px
+}
+
+nav.menu ul ul ul {
+    display: table;
+    left: 100%;
+    margin-top: -49px
+}
+
+nav.menu.sabit {
+    position: fixed
+}
+
+nav.menu.saydam {
+    box-shadow: 0 0 0 0 transparent
+}
+
+nav.menu.saydam li>a {
+    border-top-width: 0;
+    color: #000 !important
+}
+
+nav.menu.saydam li:hover>a {
+    background-color: rgba(0, 0, 0, .05);
+    border-top-width: 0
+}
+
+nav.menu.saydam li li:hover>a {
+    background-color: transparent
+}
+
+/* Mobil Menü */
 
 nav.mobil {
     background-color: #03968A;
@@ -3549,6 +3600,19 @@ nav.mobil a {
     transition: background-color .15s, color .15s
 }
 
+
+nav.mobil img.logo {
+    cursor: pointer;
+    display: block;
+    opacity: .8;
+    transition: .15s;
+    width: 100%
+}
+
+nav.mobil:hover img.logo {
+    opacity: 1
+}
+
 nav.mobil li:hover>a {
     background-color: rgba(0, 0, 0, .1);
     border-left: 3px solid #FFF;
@@ -3565,10 +3629,18 @@ nav.mobil ul li.acilir>a::after {
     top: 23px
 }
 
+nav.mobil ul ul li.acilir>a {
+    color: #FFF
+}
+
 nav.mobil li li a {
     color: rgba(255,255,255,.75);
     margin-left: 10px;
     padding: 7px 15px
+}
+
+nav.mobil li li li a {
+    padding-left: 30px
 }
 
 nav.mobil li li:hover a {
