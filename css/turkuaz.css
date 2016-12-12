@@ -3406,7 +3406,7 @@ nav.menu {
     position: relative;
     top: 0;
     width: 100%;
-    z-index: 999
+    z-index: 996
 }
 
 nav.menu::-webkit-scrollbar {
@@ -3548,6 +3548,7 @@ nav.mobil {
     background-color: #03968A;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     height: 100%;
+    left: -250px;
     line-height: 40px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -3555,7 +3556,7 @@ nav.mobil {
     position: fixed;
     top: 0;
     width: 250px;
-    z-index: 997
+    z-index: 999
 }
 
 nav.mobil::-webkit-scrollbar {
@@ -3589,17 +3590,15 @@ nav.mobil a i {
 
 nav.mobil a {
     border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
     color: #FFF;
     display: block;
-    margin: 0 3px;
+    margin-left: 3px;
     line-height: 2;
     padding: 11px 15px;
     position: relative;
     text-decoration: none;
     transition: background-color .15s, color .15s
 }
-
 
 nav.mobil img.logo {
     cursor: pointer;
@@ -3646,6 +3645,26 @@ nav.mobil li li li a {
 nav.mobil li li:hover a {
     border-left-color: transparent;
     background-color: transparent
+}
+
+nav.mobil.sag {
+    right: 0
+}
+
+nav.mobil.sabit {
+    left: 0
+}
+
+img.mobil {
+    border-radius: 3px;
+    cursor: pointer;
+    height: 40px;
+    left: 75px;
+    position: absolute;
+    top: 5px;
+    transition: .3s;
+    width: 40px;
+    z-index: 999
 }
 
 /* ============= 2.8 Notlar */

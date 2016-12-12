@@ -73,6 +73,14 @@ $("nav.mobil li.acilir ul, nav.menu li.acilir ul").hide();
 $("nav.mobil").on("click", "li.acilir>a", function() {
     $(this).parents("li.acilir:first").find("ul:first").slideToggle();
 })
+$("body").on("click", "img.mobil", function() {
+    $(this).hide().parents("body").append("<div class='tr-karart menu'></div>").find("nav.mobil").scrollTop(0).animate({ left: "0" });
+})
+$("body").on("click", ".tr-karart.menu", function() {
+    $(this).remove();
+    $("img.mobil").delay(400).fadeIn();
+    $("nav.mobil").animate({ left: "-250px" });
+})
 
 // Tab Menu
 ;
