@@ -3647,12 +3647,13 @@ nav.mobil li li:hover a {
     background-color: transparent
 }
 
-nav.mobil.sag {
-    right: 0
-}
-
 nav.mobil.sabit {
     left: 0
+}
+
+nav.mobil.sag {
+    left: auto;
+    right: 0
 }
 
 img.mobil {
