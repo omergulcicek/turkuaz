@@ -1074,7 +1074,8 @@ sup {
 /* ============= 1.2 Renkler */
 
 .saydam {
-    background-color: transparent !important
+    background-color: transparent !important;
+    box-shadow: 0px 0px 0px transparent !important
 }
 
 .beyaz {
@@ -2295,13 +2296,12 @@ span.tr-modal-span {
     background-color: #000;
     height: 100%;
     left: 0;
-    opacity: .5;
+    opacity: .8;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 997
 }
-
 
 /* ============= 1.5 Yazi Stili */
 
@@ -2335,7 +2335,7 @@ span.tr-modal-span {
 
 /* ============= 2.1.1 Buton Ayarlari */
 
-a.buton, button, input[type="submit"].buton, input[type="reset"].buton {
+a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     background-color: #03968A;
     border: none;
     border-radius: 3px;
@@ -2369,13 +2369,13 @@ a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk
     padding: 14px 25px !important
 }
 
-a.buton:hover, button:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
+a.buton:hover, button.buton:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
     color: #FFF;
     text-decoration: none
 }
 
-a.buton:active, button:active, input[type="submit"].buton:active, input[type="reset"].buton:active {
+a.buton:active, button.buton:active, input[type="submit"].buton:active, input[type="reset"].buton:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
@@ -2387,69 +2387,69 @@ a.buton::selection {
     background-color: transparent
 }
 
-a.buton.saydam, button.saydam, input[type="submit"].buton.saydam, input[type="reset"].buton.saydam {
+a.buton.saydam, button.buton.saydam, input[type="submit"].buton.saydam, input[type="reset"].buton.saydam {
     background-color: transparent !important;
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: none !important;
     color: #000
 }
 
-a.buton.saydam:hover, button.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover {
+a.buton.saydam:hover, button.buton.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover {
     box-shadow: inset 0 0 0 0 transparent !important;
     border: 1px solid rgba(0, 0, 0, .3);
     color: #000
 }
 
-a.buton.pasif, button.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif {
+a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif {
     background-color: #E6E6E6 !important;
     box-shadow: none;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default
 }
 
-a.buton.pasif:hover, button.pasif:hover, input[type="submit"].buton.pasif:hover, input[type="reset"].buton.pasif:hover {
+a.buton.pasif:hover, button.buton.pasif:hover, input[type="submit"].buton.pasif:hover, input[type="reset"].buton.pasif:hover {
     background-color: #E6E6E6 important;
     box-shadow: inset 0 0 0 0 transparent !important;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default
 }
 
-a.buton.yuvarlak, button.yuvarlak, a.buton.kare, button.kare, input[type="submit"].buton.kare, input[type="reset"].buton.kare {
+a.buton.yuvarlak, button.buton.yuvarlak, a.buton.kare, button.buton.kare, input[type="submit"].buton.kare, input[type="reset"].buton.kare {
     height: 40px;
     line-height: 40px;
     padding: 0px !important;
     width: 40px
 }
 
-a.buton.yuvarlak.kucuk, button.yuvarlak.kucuk, input[type="submit"].buton.yuvarlak.kucuk, input[type="reset"].buton.yuvarlak.kucuk, a.buton.kare.kucuk, button.kare.kucuk, input[type="submit"].buton.kare.kucuk, input[type="reset"].buton.kare.kucuk {
+a.buton.yuvarlak.kucuk, button.buton.yuvarlak.kucuk, input[type="submit"].buton.yuvarlak.kucuk, input[type="reset"].buton.yuvarlak.kucuk, a.buton.kare.kucuk, button.buton.kare.kucuk, input[type="submit"].buton.kare.kucuk, input[type="reset"].buton.kare.kucuk {
     height: 30px;
     line-height: 30px;
     width: 30px
 }
 
-a.buton.yuvarlak.buyuk, button.yuvarlak.buyuk, input[type="submit"].buton.yuvarlak.buyuk, input[type="reset"].buton.yuvarlak.buyuk, a.buton.kare.buyuk, button.kare.buyuk, input[type="submit"].buton.kare.buyuk, input[type="reset"].buton.kare.buyuk {
+a.buton.yuvarlak.buyuk, button.buton.yuvarlak.buyuk, input[type="submit"].buton.yuvarlak.buyuk, input[type="reset"].buton.yuvarlak.buyuk, a.buton.kare.buyuk, button.buton.kare.buyuk, input[type="submit"].buton.kare.buyuk, input[type="reset"].buton.kare.buyuk {
     height: 60px;
     line-height: 60px;
     width: 60px
 }
 
-a.buton.yay, button.yay, input[type="submit"].buton.yay, input[type="reset"].buton.yay {
+a.buton.yay, button.buton.yay, input[type="submit"].buton.yay, input[type="reset"].buton.yay {
     width: 100%;
 }
 
-a.buton i.fa, button i.fa {
+a.buton i.fa, button.buton i.fa {
     margin-right: 7px;
     margin-top: -2px;
     opacity: .85;
     vertical-align: middle
 }
 
-a.buton.yuvarlak i.fa, button.yuvarlak i.fa {
+a.buton.yuvarlak i.fa, button.buton.yuvarlak i.fa {
     margin-right: -2px;
     opacity: 1
 }
 
-a.buton.kare i.fa, button.kare i.fa {
+a.buton.kare i.fa, button.buton.kare i.fa {
     margin-right: -2px;
     opacity: 1
 }
@@ -3594,7 +3594,7 @@ nav.mobil a {
     display: block;
     margin-left: 3px;
     line-height: 2;
-    padding: 11px 15px;
+    padding: 11px 40px 11px 15px;
     position: relative;
     text-decoration: none;
     transition: background-color .15s, color .15s
@@ -4835,56 +4835,91 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 3.4 Modal */
 
 .tr-modal {
-    background-color: #FFF;
-    border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    max-height: 75vh;
+    background-color: #03968A;
+    color: #FFF;
+    height: auto;
     left: 50%;
-    overflow: auto;
-    padding: 25px;
+    max-height: 75vh;
+    max-width: 630px;
+    min-width: 250px;
+    opacity: 0;
+    overflow-y: auto;
     position: fixed;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%) translateY(-50%) scale(0.7);
+    transition: all 0.3s;
+    visibility: hidden;
+    width: 75%;
     z-index: 999
 }
 
-.tr-modal.kucuk {
-    width: 300px
+.tr-modal.goster {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    visibility: visible
 }
 
-.tr-modal.orta {
-    max-width: 1250px;
-    width: 50%
+.tr-modal .tr-icerik {
+    border-radius: 3px;
+    display: table;
+    margin: 0 auto;
+    position: relative
 }
 
-.tr-modal.buyuk {
-    max-width: 1500px;
-    width: 80%
+.tr-modal .tr-icerik .baslik {
+    background: rgba(0,0,0,0.15);
+    border-radius: 3px 3px 0 0;
+    font-weight: 300;
+    margin: 0;
+    opacity: .8;
+    padding: .5em;
+    position: relative;
+    text-align: center;
+    width: 100%
 }
 
-span.kapatButon {
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    color: #FFF;
-    cursor: pointer;
-    font-size: 50px;
-    position: fixed;
-    right: 50px;
-    top: 30px;
-    z-index: 999
+.tr-modal .tr-icerik > div {
+    font-size: 1rem;
+    padding: 30px 40px
 }
 
-@media screen and (max-width: 800px) {
-    .tr-modal.kucuk, .tr-modal.orta, .tr-modal.buyuk {
-        width: 90%
-    }
-    span.kapatButon {
-        font-size: 30px;
-        right: 25px;
-        top: 15px
-    }
+.tr-modal .tr-icerik a.buton {
+    display: table;
+    margin: auto;
+    transition: 0s
 }
 
+.tr-modal.efekt2 {
+    transform: translateX(-50%) translateY(-50%) scale(1.4)
+}
+
+.tr-modal.efekt2.goster {
+    transform: translateX(-50%) translateY(-50%) scale(1)
+}
+
+.tr-modal.efekt3 {
+    transform: translateX(-50%) translateY(-20%)
+}
+
+.tr-modal.efekt3.goster {
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.tr-modal.efekt4 {
+    transform: translateX(-20%) translateY(-50%)
+}
+
+.tr-modal.efekt4.goster {
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.tr-modal.efekt5 {
+    transform: translateX(-70%) translateY(-50%)
+}
+
+.tr-modal.efekt5.goster {
+    transform: translateX(-50%) translateY(-50%)
+}
 
 /* ============= 3.5 Tab Menu */
 

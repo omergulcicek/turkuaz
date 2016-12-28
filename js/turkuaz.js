@@ -256,49 +256,18 @@ $(".tr-medya").medya()
 
 /* ============= 6. Modal */
 
-;
-(function($) {
-    $.fn.modal = function(ayarlar) {
-        var obj = $.extend({
-            "autofocus": true,
-            "backgroundColor": "#000",
-            "close": false,
-            "closeConnent": "&times",
-            "closeTime": 100,
-            "opacity": .5,
-            "overlay": "tr-modal-karart",
-            "openTime": 500,
-            "size": "orta"
-        }, ayarlar)
-        return this.each(function() {
-            $("body").find('[data-modal]').hide()
-            $("body").on("click", "a.modal", function(e) {
-                e.preventDefault()
-                var href = $(this).attr("href")
-                var modal = $("body").find('[data-modal=' + href + ']')
-                var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
-                overlay.css({
-                    "background-color": obj.backgroundColor,
-                    "opacity": obj.opacity
-                })
-                modal.addClass(obj.size).fadeIn(obj.openTime).scrollTop(0)
-                if ($(".tr-karart." + obj.overlay).length == 0) {
-                    $("body").append(overlay)
-                }
-                if (obj.close) {
-                    $("body").append("<span class=kapatButon>" + obj.closeConnent + "</span>")
-                }
-                if (obj.autofocus) {
-                    modal.find(".tr-input:visible:first").focus()
-                }
-                $("body").on("click", ".modal-kapat, .tr-karart." + obj.overlay + ", .kapatButon", function(e) {
-                    e.preventDefault()
-                    modal.fadeOut(obj.closeTime)
-                        .end().find("." + obj.overlay + ", .kapatButon").remove()
-                })
-            })
-        })
+$("body").on("click", "a.modal", function(e) {
+    e.preventDefault();
+    var href = $(this).attr("href");
+    var modal = $("#" + href);
+    var overlay = $("<div class='tr-karart'></div>");
+    modal.addClass("goster").scrollTop(0);
+    if ($(".tr-karart").length == 0) {
+        $("body").append(overlay)
     }
-})(jQuery)
+})
 
-$(".tr-modal").modal()
+$("body").on("click", "a.kapat,.tr-karart", function(e) {
+    $(".tr-modal").removeClass("goster");
+    $(".tr-karart").remove();
+})
