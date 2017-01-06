@@ -258,11 +258,10 @@ sup {
 
 /* ============= 1.1 Grid Sistemi  */
 
-.container, .container-kucuk, .container-buyuk {
+.container, .container-buyuk {
     display: block;
     margin: 0 auto
 }
-
 
 /* Mobil Cihazlar */
 
@@ -324,43 +323,24 @@ sup {
     }
 }
 
-.container:before, .container:after, .container-kucuk:before, .container-kucuk:after, .container-buyuk:before, .container-buyuk:after {
-    content: " ";
-    display: table
-}
-
-.container:after {
-    clear: both
-}
-
-.flex:before, .flex:after, .row:before, .row:after {
-    content: " ";
-    display: table
-}
-
-.flex:after, .row:after {
-    clear: both
-}
-
-.row .tr {
-    box-sizing: border-box;
-    float: left;
-    min-height: 1px;
-    padding: 0 15px;
-    position: relative
-}
-
 .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
 }
 
 .flex .tr {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
     min-height: 1px;
     padding: 0 15px
+}
+
+.flex .tr-otomatik {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: auto
 }
 
 .tr.ck {
@@ -369,10 +349,7 @@ sup {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    max-width: 100%;
-    min-height: 1px;
-    padding: 0 15px;
-    position: relative
+    max-width: 100%
 }
 
 
@@ -2286,12 +2263,6 @@ table.tr-tablo::-webkit-scrollbar {
     *zoom: 1
 }
 
-span.tr-modal-span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal
-}
-
 .tr-karart {
     background-color: #000;
     height: 100%;
@@ -2506,6 +2477,10 @@ a.buton.kare i.fa, button.buton.kare i.fa {
 
 .butonlar.dikey a.buton:last-of-type {
     border-radius: 0 0 3px 3px
+}
+
+a.buton.beyaz, button.buton.beyaz {
+    color: #000
 }
 
 
@@ -3462,7 +3437,7 @@ nav.menu:hover img.logo {
 }
 
 nav.menu li:hover>a {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .05);
     border-top: 2px solid #FFF;
     color: #FFF
 }
@@ -3600,7 +3575,7 @@ nav.mobil a {
     transition: background-color .15s, color .15s
 }
 
-nav.mobil img.logo {
+nav.mobil .menuac {
     cursor: pointer;
     display: block;
     opacity: .8;
@@ -3608,12 +3583,12 @@ nav.mobil img.logo {
     width: 100%
 }
 
-nav.mobil:hover img.logo {
+nav.mobil:hover .menuac {
     opacity: 1
 }
 
 nav.mobil li:hover>a {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .05);
     border-left: 3px solid #FFF;
     color: #FFF
 }
@@ -3656,16 +3631,16 @@ nav.mobil.sag {
     right: 0
 }
 
-img.mobil {
+.menuac {
     border-radius: 3px;
     cursor: pointer;
     height: 40px;
     left: 75px;
-    position: absolute;
+    position: fixed;
     top: 5px;
     transition: .3s;
     width: 40px;
-    z-index: 999
+    z-index: 997
 }
 
 /* ============= 2.8 Notlar */
@@ -4845,6 +4820,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     opacity: 0;
     overflow-y: auto;
     position: fixed;
+    text-align: left;
     top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.7);
     transition: all 0.3s;
@@ -4859,9 +4835,17 @@ progress.tr-progress.yesil::-webkit-progress-value {
     visibility: visible
 }
 
+div.tr-modal::-webkit-scrollbar {
+    background-color: rgba(0,0,0,.05);
+    width: 5px
+}
+
+div.tr-modal::-webkit-scrollbar-thumb {
+    background-color: #000
+}
+
 .tr-modal .tr-icerik {
     border-radius: 3px;
-    display: table;
     margin: 0 auto;
     position: relative
 }
@@ -4883,10 +4867,9 @@ progress.tr-progress.yesil::-webkit-progress-value {
     padding: 30px 40px
 }
 
-.tr-modal .tr-icerik a.buton {
+.tr-modal .tr-icerik a.buton.kapat {
     display: table;
-    margin: auto;
-    transition: 0s
+    margin: 30px auto 0 auto
 }
 
 .tr-modal.efekt2 {
