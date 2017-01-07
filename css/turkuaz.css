@@ -1047,6 +1047,41 @@ sup {
     }
 }
 
+.flex-bas {
+    -ms-flex-pack: start !important;
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.flex-son {
+    -ms-flex-pack: end !important;
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    justify-content: flex-end !important;
+}
+
+.flex-orta {
+    -ms-flex-pack: center !important;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    justify-content: center !important;
+}
+
+.flex-aralik {
+    -ms-flex-pack: justify !important;
+    -webkit-box-pack: justify !important;
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.flex-aralik2 {
+    -ms-flex-pack: distribute !important;
+    -webkit-justify-content: space-around !important;
+    justify-content: space-around !important;
+}
+
 
 /* ============= 1.2 Renkler */
 
