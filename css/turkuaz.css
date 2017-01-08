@@ -255,7 +255,6 @@ sup {
     top: -0.5em
 }
 
-
 /* ============= 1.1 Grid Sistemi  */
 
 .container, .container-buyuk {
@@ -2302,7 +2301,7 @@ table.tr-tablo::-webkit-scrollbar {
     background-color: #000;
     height: 100%;
     left: 0;
-    opacity: .8;
+    opacity: .5;
     position: fixed;
     top: 0;
     width: 100%;
@@ -2507,6 +2506,7 @@ a.buton.kare i.fa, button.buton.kare i.fa {
 }
 
 .butonlar.dikey a.buton {
+    margin-top: -1px;
     display: block;
     margin-left: 0
 }
@@ -3055,16 +3055,18 @@ input[type="date"].tr-input+label {
 textarea.tr-textarea {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #EEE;
     box-sizing: content-box;
     display: block;
     font-family: "Noto Sans";
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: .5px;
-    line-height: 16px;
+    line-height: 20px;
     margin: 20px 0 5px 0;
-    min-height: 50px;
+    min-height: 100px;
     outline: none;
+    overflow: hidden;
+    padding-top: 10px;
     position: relative;
     resize: none;
     -webkit-transition: .3s;

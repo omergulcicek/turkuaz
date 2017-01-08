@@ -58,9 +58,20 @@ function placeholder() {
     })
 }
 
+$(".tr-textarea").on("keydown focusout", function(e) {
+    var t = $(this);
+    var line = t.val().split("\n").length * 20;
+    if (line > 100) {
+        t.css("height", line);
+    }
+    else {
+        t.css("height", 100);
+    }
+});
+
 /* ============= 3. Linkler */
 
-$("body").on("click", "a.pasif,a.aktif", function(e) {
+$("body").on("click", "a.pasif,a.aktif,.butonlar.pasif a.buton", function(e) {
     e.preventDefault()
 })
 
@@ -73,12 +84,12 @@ $("nav.mobil li.acilir ul, nav.menu li.acilir ul").hide();
 $("nav.mobil").on("click", "li.acilir>a", function() {
     $(this).parents("li.acilir:first").find("ul:first").slideToggle();
 })
-$("body").on("click", "img.mobil", function() {
+$("body").on("click", ".menuac", function() {
     $(this).animate({ opacity: "0" }, 10).parents("body").append("<div class='tr-karart menu'></div>").find("nav.mobil").scrollTop(0).animate({ left: "0" });
 })
 $("body").on("click", ".tr-karart.menu", function() {
     $(this).remove();
-    $("img.mobil").delay(400).animate({ opacity: "1" }, 250);
+    $(".menuac").delay(400).animate({ opacity: "1" }, 250);
     $("nav.mobil").animate({ left: "-250px" });
 })
 
@@ -268,6 +279,7 @@ $("body").on("click", "a.modal", function(e) {
 })
 
 $("body").on("click", "a.kapat,.tr-karart", function(e) {
+    e.preventDefault();
     $(".tr-modal").removeClass("goster");
     $(".tr-karart").remove();
 })
