@@ -1,5 +1,4 @@
-
-![Turkuaz logo](http://turkuazcss.com/img/favicon.png)
+<p align="center"><img src="http://turkuazcss.com/public/img/turkuazcss-github.png"/></p>
 
 Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn edilmiştir. Türkçe isimlendirme ve çeşitli seçenekleri ile kolayca kod yazmanızı sağlar. Mobil öncelikli olarak, 5 farklı çözünürlükte grid sistemi vardır. 100'den fazla renk seçeneği,  arkaplan desenleri ve örneklendirilmiş anlatımı ile kısa sürede şık siteler tasarlayabilirsiniz. Hazır şablon olarak paylaşılan siteleri önizleme yapabilir ve ücretsiz olarak kullanabilirsiniz.
 
