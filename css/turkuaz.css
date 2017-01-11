@@ -1,5 +1,5 @@
 ﻿/*!
-* Turkuaz Css v1.0
+* Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
 * Noto Sans Yazi Stili (https://fonts.google.com/specimen/Noto+Sans)
@@ -21,7 +21,7 @@
 *        2.1.2    Buton Efektleri
 *      2.2     Etiket
 *      2.2     Form Elemanlari
-*        2.2.1    Anahtarlar
+*        2.2.1    Anahtar
 *        2.2.2    Checkbox
 *        2.2.3    Dosya Secici
 *        2.2.4    Input
@@ -1722,7 +1722,7 @@ sup {
 }
 
 
-/* ============= 1.3 Tablolar */
+/* ============= 1.3 Tablo */
 
 table.tr-tablo {
     background-color: #FFF;
@@ -2359,7 +2359,6 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     position: relative;
     text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
     -webkit-transition: .3s ease-out;
     transition: .3s ease-out;
     user-select: none
@@ -2612,7 +2611,7 @@ a.buton.efekt6:hover:before {
 }
 
 
-/* ============= 2.2 Etiketler */
+/* ============= 2.2 Etiket */
 
 a.etiket {
     background-color: #E0E0E0;
@@ -2708,7 +2707,7 @@ form.tr-form {
 }
 
 
-/* ============= 2.3.1 Anahtarlar */
+/* ============= 2.3.1 Anahtar */
 
 input.tr-anahtar:not(:checked), .tr-anahtar:checked {
     left: -9999px;
@@ -3617,18 +3616,6 @@ nav.mobil a {
     transition: background-color .15s, color .15s
 }
 
-nav.mobil .menuac {
-    cursor: pointer;
-    display: block;
-    opacity: .8;
-    transition: .15s;
-    width: 100%
-}
-
-nav.mobil:hover .menuac {
-    opacity: 1
-}
-
 nav.mobil li:hover>a {
     background-color: rgba(0, 0, 0, .05);
     border-left: 3px solid #FFF;
@@ -3675,14 +3662,19 @@ nav.mobil.sag {
 
 .menuac {
     border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     cursor: pointer;
     height: 40px;
-    left: 75px;
+    left: 60px;
     position: fixed;
-    top: 5px;
+    top: 40px;
     transition: .3s;
     width: 40px;
     z-index: 997
+}
+
+.menuac:hover  {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
 }
 
 /* ============= 2.8 Notlar */
