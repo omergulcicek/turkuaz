@@ -3905,7 +3905,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-numara.buyuk a {
     font-size: 15px;
     margin-left: 2px;
-    padding: 10px 1x
+    padding: 10px 1px
 }
 
 
@@ -4192,11 +4192,11 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .yazi-mor, .yazi-mor a {
-    color: # !important
+    color: #9C27B0 !important
 }
 
 .yazi-mor2, .yazi-mor2 a {
-    color: #9C27B0 !important
+    color: #E1BEE7 !important
 }
 
 .yazi-mor3, .yazi-mor3 a {
