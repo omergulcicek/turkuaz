@@ -21,41 +21,41 @@
 /* ============= 1. Etiket */
 
 $("a.etiket.kapat").click(function(e) {
-    e.preventDefault()
-})
+    e.preventDefault();
+});
 
 $("a.etiket.kapat").append("<span class=kaldir>&times</span>")
     .end()
     .find("span.kaldir").click(function() {
-        $(this).parents("a.etiket.kapat").addClass("gizle")
-    })
+        $(this).parents("a.etiket.kapat").addClass("gizle");
+    });
 
 /* ============= 2. Form */
 
-$formEtiketleri = ".tr-input,.tr-checkbox,.tr-radio,.tr-textarea"
-$placeholder = ".tr-input,.tr-textarea"
+$formEtiketleri = ".tr-input,.tr-checkbox,.tr-radio,.tr-textarea";
+$placeholder = ".tr-input,.tr-textarea";
 
-placeholder()
+placeholder();
 
 $($formEtiketleri).focus(function() {
     var inputId = $(this).attr("id");
     $("body").find("[for='" + inputId + "']").addClass("dolu");
 }).focusout(function() {
     var inputId = $(this).attr("id");
-    if ($(this).val() == "") {
+    if (!$(this).val()) {
         $("body").find("[for='" + inputId + "']").removeClass("dolu");
     }
-    placeholder()
-})
+    placeholder();
+});
 
 function placeholder() {
     $($placeholder).each(function() {
-        var placeholder = $(this).attr("placeholder")
+        var placeholder = $(this).attr("placeholder");
         if (placeholder !== undefined && placeholder !== "") {
             var inputId = $(this).attr("id");
-            $("body").find("[for='" + inputId + "']").addClass("dolu")
+            $("body").find("[for='" + inputId + "']").addClass("dolu");
         }
-    })
+    });
 }
 
 $(".tr-textarea").on("keydown focusout", function(e) {
@@ -72,8 +72,8 @@ $(".tr-textarea").on("keydown focusout", function(e) {
 /* ============= 3. Linkler */
 
 $("body").on("click", "a.pasif,a.aktif,.butonlar.pasif a.buton", function(e) {
-    e.preventDefault()
-})
+    e.preventDefault();
+});
 
 /* ============= 4. Menu */
 
@@ -83,10 +83,10 @@ $("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
 $("nav.mobil li.acilir ul, nav.menu li.acilir ul").hide();
 $("nav.mobil").on("click", "li.acilir>a", function() {
     $(this).parents("li.acilir:first").find("ul:first").slideToggle();
-})
+});
 $("body").on("click", ".menuac", function() {
     $(this).animate({ opacity: "0" }, 10).parents("body").append("<div class='tr-karart menu'></div>").find("nav.mobil").scrollTop(0).animate({ left: "0" });
-})
+});
 $("body").on("click", ".tr-karart.menu", function() {
     $(this).remove();
     $(".menuac").delay(400).animate({ opacity: "1" }, 250);
@@ -102,36 +102,36 @@ $("body").on("click", ".tr-karart.menu", function() {
             "icerikSinifi": "tr-tab-icerik",
             "aktifSekme": 1,
             "tema": ""
-        }, ayarlar)
+        }, ayarlar);
         return this.each(function() {
             $(this).addClass("tr-tab " + obj.tema)
                 .find("nav a").eq(obj.aktifSekme - 1).addClass(obj.aktifSinifi)
                 .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("tr-tab-icerik gizle")
-                .eq(obj.aktifSekme - 1).removeClass("gizle")
+                .eq(obj.aktifSekme - 1).removeClass("gizle");
             $(this).find("nav a").click(function() {
-                var index = $(this).index()
+                var index = $(this).index();
                 $(this).addClass(obj.aktifSinifi)
                     .siblings().removeClass(obj.aktifSinifi)
                     .parents(".tr-tab").find("." + obj.icerikSinifi).addClass("gizle")
-                    .eq(index).removeClass("gizle")
-            })
-        })
-    }
-})(jQuery)
+                    .eq(index).removeClass("gizle");
+            });
+        });
+    };
+})(jQuery);
 
-$(".tr-tab").tab()
+$(".tr-tab").tab();
 
 // Filtre Menu
-$(".tr-filtre [data-source=hepsi]").addClass("aktif")
+$(".tr-filtre [data-source=hepsi]").addClass("aktif");
 $(".tr-filtre").on("click", "nav a", function() {
-    var source = $(this).data("source")
+    var source = $(this).data("source");
     $(this).addClass("aktif")
         .siblings().removeClass("aktif")
         .end()
         .parents(".tr-filtre").find(".tr.icerik").removeClass("gizle")
-        .not("[data-target^=" + source + "]").addClass("gizle")
+        .not("[data-target^=" + source + "]").addClass("gizle");
     if (source == "hepsi" || source == "hepsi aktif") {
-        $(this).parents(".tr-filtre").find(".icerik").removeClass("gizle")
+        $(this).parents(".tr-filtre").find(".icerik").removeClass("gizle");
     }
 })
 
@@ -147,123 +147,28 @@ $(".tr-filtre").on("click", "nav a", function() {
             "sure": 200,
             "gecikme": 0,
             "tema": ""
-        }, ayarlar)
+        }, ayarlar);
         return this.each(function() {
-            $sekmeSayisi = $("." + obj.baslikSinifi, this).length
+            $sekmeSayisi = $("." + obj.baslikSinifi, this).length;
             if (Math.abs(obj.aktifSekme) > $sekmeSayisi) {
-                obj.aktifSekme = $sekmeSayisi
+                obj.aktifSekme = $sekmeSayisi;
             }
             $(this).addClass("tr-akordiyon " + obj.tema)
                 .find("." + obj.icerikSinifi).addClass("tr-akordiyon-icerik").delay(obj.gecikme).slideUp(obj.sure)
                 .eq(obj.aktifSekme - 1).slideDown(obj.sure)
-                .end().end().find("." + obj.baslikSinifi).eq(obj.aktifSekme - 1).addClass("aktif")
+                .end().end().find("." + obj.baslikSinifi).eq(obj.aktifSekme - 1).addClass("aktif");
             $(this).find("." + obj.baslikSinifi).click(function(e) {
-                e.preventDefault()
-                var index = $(this).index("." + obj.baslikSinifi)
+                e.preventDefault();
                 $(this).toggleClass(obj.aktifSinifi).siblings("." + obj.baslikSinifi).removeClass(obj.aktifSinifi)
                     .end().next().delay(obj.gecikme).slideToggle(obj.sure)
-                    .end().next().delay(obj.gecikme).siblings("." + obj.icerikSinifi).slideUp(obj.sure)
-            })
-        })
-    }
-})(jQuery)
+                    .end().next().delay(obj.gecikme).siblings("." + obj.icerikSinifi).slideUp(obj.sure);
+            });
+        });
+    };
+})(jQuery);
 
 /* ============= 5. Medya */
 
-;
-(function($) {
-    $.fn.medya = function(ayarlar) {
-        var obj = $.extend({
-            "backgroundColor": "#333",
-            "fontSize": "20px",
-            "height": "90vh",
-            "opacity": 1,
-            "overlay": "tr-medya-karart",
-            "textColor": "#FFF"
-        }, ayarlar)
-        return this.each(function(index, item) {
-            $(this).addClass("tr-medya")
-            $(window).scroll(function() {
-                medyaKapat()
-            })
-            $(document).keyup(function(e) {
-                if (e.keyCode === 27) {
-                    medyaKapat()
-                }
-            })
-            $(this).on("click", item, function(e) {
-                e.preventDefault()
-                if ($(item).hasClass("aktif")) {
-                    medyaKapat()
-                } else {
-                    var yazi = $(this).data("yazi")
-                    var text = $("<div></div>").addClass("tr-modal-yazi")
-                        .html("<span class='tr-modal-span'>" + yazi + "</span>")
-                    if (yazi) {
-                        $(this).css({
-                            "max-height": "85vh",
-                            "top": "47%"
-                        })
-                        text.css({
-                            "bottom": "-5px",
-                            "color": obj.textColor,
-                            "font-size": obj.fontSize,
-                            "height": "60px",
-                            "left": "50%",
-                            "line-height": "60px",
-                            "overflow": "hidden",
-                            "position": "fixed",
-                            "text-align": "center",
-                            "transform": "translate(-50%, -50%)",
-                            "max-width": "75%",
-                            "z-index": "998"
-                        })
-                        if ($(".tr-modal-yazi").length == 0) {
-                            $("body").append(text)
-                        }
-                    } else {
-                        $(this).css({
-                            "max-height": obj.height,
-                            "top": "50%"
-                        })
-                    }
-                    $(this).addClass("aktif")
-                        .css({
-                            "left": "50%",
-                            "position": "fixed",
-                            "transform": "translate(-50%, -50%)",
-                            "z-index": "1001"
-                        })
-                    var overlay = $("<div></div>").addClass("tr-karart " + obj.overlay)
-                    overlay.css({
-                        "background-color": obj.backgroundColor,
-                        "opacity": obj.opacity
-                    })
-                    if ($(".tr-karart." + obj.overlay).length == 0) {
-                        $("body").append(overlay)
-                            .end().find("nav.mobil > img.logo").addClass("gizle")
-                    }
-                }
-            })
-        })
-    }
-})(jQuery)
-
-function medyaKapat() {
-    $(".tr-medya.aktif").removeClass("aktif")
-        .css({
-            "height": "",
-            "max-height": "",
-            "max-width": "",
-            "position": "static",
-            "transform": ""
-        })
-    $("body").find(".tr-karart").remove()
-        .end().find(".tr-modal-yazi").remove()
-        .end().find("nav.mobil > img.logo").removeClass("gizle")
-}
-
-$(".tr-medya").medya()
 
 /* ============= 6. Modal */
 
@@ -273,13 +178,13 @@ $("body").on("click", "a.modal", function(e) {
     var modal = $("#" + href);
     var overlay = $("<div class='tr-karart'></div>");
     modal.addClass("goster").scrollTop(0);
-    if ($(".tr-karart").length == 0) {
-        $("body").append(overlay)
+    if (!$(".tr-karart").length) {
+        $("body").append(overlay);
     }
-})
+});
 
 $("body").on("click", "a.kapat,.tr-karart", function(e) {
     e.preventDefault();
     $(".tr-modal").removeClass("goster");
     $(".tr-karart").remove();
-})
+});
