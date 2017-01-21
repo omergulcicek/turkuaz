@@ -3248,6 +3248,15 @@ footer.tr-footer nav a {
 
 /* ============= 2.5 Kartlar */
 
+.tr-kutu {
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
+    display: flex;
+    min-height: 1px;
+    margin-bottom: 1rem;
+    padding: 1rem
+}
 
 /* ============= 2.5.1 Kart Kodlari */
 
@@ -3563,12 +3572,12 @@ nav.menu li {
 }
 
 nav.menu a {
+    align-items: center;
     border-top: 2px solid transparent;
     color: #FFF;
     display: flex;
     line-height: 48px;
     padding: 0 1rem;
-    position: relative;
     text-decoration: none;
     transition: background-color .15s, color .15s, text-shadow .15s
 }
@@ -3591,15 +3600,16 @@ nav.menu li:hover>a {
     color: #FFF
 }
 
+nav.menu ul li.acilir a {
+    padding-right: .5rem;
+}
+
 nav.menu ul li.acilir>a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0, 0, 0, .2);
     content: "";
-    margin: 0 5px;
-    position: relative;
-    right: -7px;
-    top: 11px
+    margin-left: .5rem;
 }
 
 nav.menu li ul {
@@ -3619,6 +3629,10 @@ nav.menu li:hover ul a {
 
 nav.menu li ul a:hover {
     text-shadow: 0 0 1px rgba(0,0,0,.3)
+}
+
+nav.menu ul ul {
+    display: none
 }
 
 nav.menu li li {
