@@ -9,10 +9,9 @@
  *
  *   1. Etiket
  *   2. Form
- *   3. Link
- *   4. Menu
- *   5. Medya
- *   6. Modal
+ *   3. Menu
+ *   4. Medya
+ *   5. Modal
  *
  */
 
@@ -32,7 +31,7 @@ $("a.etiket.kapat").append("<span class=kaldir>&times</span>")
 
 /* ============= 2. Form */
 
-$formEtiketleri = ".tr-input,.tr-checkbox,.tr-radio,.tr-textarea";
+$formEtiketleri = ".tr-input,.tr-search,.tr-checkbox,.tr-radio,.tr-textarea";
 $placeholder = ".tr-input,.tr-textarea";
 
 placeholder();
@@ -69,13 +68,7 @@ $(".tr-textarea").on("keydown focusout", function(e) {
     }
 });
 
-/* ============= 3. Linkler */
-
-$("body").on("click", "a.pasif,a.aktif,.butonlar.pasif a.buton", function(e) {
-    e.preventDefault();
-});
-
-/* ============= 4. Menu */
+/* ============= 3. Menu */
 
 //Mobil Menu
 
@@ -136,41 +129,26 @@ $(".tr-filtre").on("click", "nav a", function() {
 })
 
 // Akordiyon Menu
-;
-(function($) {
-    $.fn.akordiyon = function(ayarlar) {
-        var obj = $.extend({
-            "aktifSinifi": "aktif",
-            "baslikSinifi": "baslik",
-            "icerikSinifi": "tr-akordiyon-icerik",
-            "aktifSekme": 1,
-            "sure": 200,
-            "gecikme": 0,
-            "tema": ""
-        }, ayarlar);
-        return this.each(function() {
-            $sekmeSayisi = $("." + obj.baslikSinifi, this).length;
-            if (Math.abs(obj.aktifSekme) > $sekmeSayisi) {
-                obj.aktifSekme = $sekmeSayisi;
-            }
-            $(this).addClass("tr-akordiyon " + obj.tema)
-                .find("." + obj.icerikSinifi).addClass("tr-akordiyon-icerik").delay(obj.gecikme).slideUp(obj.sure)
-                .eq(obj.aktifSekme - 1).slideDown(obj.sure)
-                .end().end().find("." + obj.baslikSinifi).eq(obj.aktifSekme - 1).addClass("aktif");
-            $(this).find("." + obj.baslikSinifi).click(function(e) {
-                e.preventDefault();
-                $(this).toggleClass(obj.aktifSinifi).siblings("." + obj.baslikSinifi).removeClass(obj.aktifSinifi)
-                    .end().next().delay(obj.gecikme).slideToggle(obj.sure)
-                    .end().next().delay(obj.gecikme).siblings("." + obj.icerikSinifi).slideUp(obj.sure);
-            });
-        });
-    };
-})(jQuery);
+$(".tr-akordiyon-icerik").hide();
+$(".tr-akordiyon > a.baslik").on("click", function() {
+    var t = $(this);
+    var i = t.closest(".tr-akordiyon").children("a.baslik").index(t);
+    if(t.hasClass("aktif")) {
+        t.removeClass("aktif")
+        .closest(".tr-akordiyon").children(".tr-akordiyon-icerik").slideUp(250);
+    }
+    else {
+        t.siblings().removeClass("aktif")
+        .end().addClass("aktif")
+        .closest(".tr-akordiyon").children(".tr-akordiyon-icerik").eq(i).slideDown(250)
+        .siblings(".tr-akordiyon-icerik").slideUp(250);
+    }
+})
 
-/* ============= 5. Medya */
+/* ============= 4. Medya */
 
 
-/* ============= 6. Modal */
+/* ============= 5. Modal */
 
 $("body").on("click", "a.modal", function(e) {
     e.preventDefault();
