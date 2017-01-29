@@ -2734,7 +2734,7 @@ a.buton.efekt6:hover:before {
 
 a.etiket {
     align-items: center;
-    background-color: #E0E0E0;
+    background-color: rgba(0, 0, 0, .1);
     border-radius: 3px;
     color: #333;
     cursor: pointer;
@@ -2762,14 +2762,8 @@ a.etiket.pasif {
     background-color: #E6E6E6 !important;
     box-shadow: none;
     color: rgba(0, 0, 0, .4) !important;
-    cursor: default
-}
-
-a.etiket.pasif:hover {
-    background-color: #E6E6E6 important;
-    box-shadow: inset 0 0 0 0 transparent !important;
-    color: rgba(0, 0, 0, .4) !important;
-    cursor: default
+    cursor: default;
+    pointer-events: none
 }
 
 a.etiket.kapat {
@@ -3567,6 +3561,10 @@ nav.menu a i {
     margin-right: 7px
 }
 
+nav.menu ul:hover a {
+    color: rgba(255,255,255,.7)
+}
+
 nav.menu li {
     float: left
 }
@@ -3595,7 +3593,6 @@ nav.menu:hover img.logo {
 }
 
 nav.menu li:hover>a {
-    background-color: rgba(0, 0, 0, .05);
     border-top: 2px solid #FFF;
     color: #FFF
 }
@@ -3738,8 +3735,16 @@ nav.mobil a {
     transition: background-color .15s, color .15s
 }
 
+nav.mobil ul {
+    display: flex;
+    flex-direction: column
+}
+
+nav.mobil ul:hover a {
+    color: rgba(255,255,255,.7)
+}
+
 nav.mobil li:hover>a {
-    background-color: rgba(0, 0, 0, .05);
     border-left: 3px solid #FFF;
     color: #FFF
 }
@@ -4746,6 +4751,11 @@ progress.tr-progress.yesil::-webkit-progress-value {
     flex-direction: column;
     width: 100%
 }
+
+.tr-akordiyon .tr-akordiyon {
+    margin-bottom: 1rem
+}
+
 
 .tr-akordiyon.tema2, .tr-akordiyon.tema3 {
     border: 1px solid rgba(0, 0, 0, .05);
