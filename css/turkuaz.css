@@ -3522,137 +3522,76 @@ nav.koleksiyon.saydam a {
 
 /* ============= 2.7 Menu */
 
-
 nav.menu {
     background-color: #03968A;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    height: 50px;
-    left: 0;
-    line-height: 48px;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 996
+    color: rgba(255,255,255,.7);
+    width: 100%
 }
 
-nav.menu::-webkit-scrollbar {
-    width: 0px
+nav.menu ul {
+    overflow: auto;
+    white-space: nowrap
 }
 
-nav.menu .baslik {
-    background-color: rgba(0, 0, 0, .1);
-    margin: 0 30px 0 0;
-    display: flex;
-    float: left;
-    font-size: 1.5rem;
-    padding: 0 .7rem;
-    opacity: .8;
-    text-align: center;
-    transition: opacity .2s
-}
-
-nav.menu:hover .baslik {
-    opacity: 1
-}
-
-nav.menu a i {
-    align-items: center;
-    display: flex;
-    margin-right: 7px
-}
-
-nav.menu ul:hover a {
-    color: rgba(255,255,255,.7)
+nav.menu ul::-webkit-scrollbar {
+    display: none
 }
 
 nav.menu li {
-    float: left
+    display: inline-block
 }
 
 nav.menu a {
     align-items: center;
-    border-top: 2px solid transparent;
-    color: #FFF;
+    color: rgba(255,255,255,.7);
     display: flex;
-    line-height: 48px;
-    padding: 0 1rem;
-    text-decoration: none;
-    transition: background-color .15s, color .15s, text-shadow .15s
+    margin: 1rem .6rem 1rem .6rem
 }
 
-nav.menu img.logo {
-    cursor: pointer;
-    float: left;
-    height: 50px;
-    opacity: .8;
-    transition: .15s
+nav.menu a:hover {
+    color: #FFF;
+    opacity: 1;
+    text-decoration: none
 }
 
-nav.menu:hover img.logo {
-    opacity: 1
-}
-
-nav.menu li:hover>a {
-    border-top: 2px solid #FFF;
-    color: #FFF
-}
-
-nav.menu ul li.acilir a {
-    padding-right: .5rem;
-}
-
-nav.menu ul li.acilir>a::after {
+nav.menu li.acilir > a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0, 0, 0, .2);
     content: "";
-    margin-left: .5rem;
+    margin-left: .5rem
+}
+
+nav.menu a i {
+    margin-right: .3rem
 }
 
 nav.menu li ul {
     background-color: #FFF;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0 0 3px 3px;
+    display: none;
+    flex-direction: column;
+    padding: .3rem .6rem .3rem .3rem;
     position: absolute
 }
 
-nav.menu li:hover>ul {
-    border-radius: 0  0 4px 4px;
-    display: table !important
-}
-
-nav.menu li:hover ul a {
-    color: #000
-}
-
-nav.menu li ul a:hover {
-    text-shadow: 0 0 1px rgba(0,0,0,.3)
-}
-
-nav.menu ul ul {
-    display: none
+nav.menu li:hover ul {
+    display: table
 }
 
 nav.menu li li {
-    float: none
+    display: inherit
 }
 
-nav.menu li li:hover>a {
-    border-top-color: transparent;
-    background-color: transparent
+nav.menu li li a {
+    color: #000;
+    margin: .6rem
 }
 
-nav.menu ul ul li.acilir>a::after {
-    content: "";
-    position: absolute;
-    right: 5px;
-    transform: rotate(-90deg);
-    top: 20px
-}
-
-nav.menu ul ul ul {
-    display: table;
-    left: 100%;
-    margin-top: -49px
+nav.menu li li a:hover {
+    color: #000;
+    text-decoration: underline
 }
 
 nav.menu.sabit {
@@ -3660,21 +3599,15 @@ nav.menu.sabit {
 }
 
 nav.menu.saydam {
-    box-shadow: 0 0 0 0 transparent
+    color: rgba(0,0,0,.7)
 }
 
-nav.menu.saydam li>a {
-    border-top-width: 0;
-    color: #000 !important
+nav.menu.saydam a {
+    color: #000
 }
 
-nav.menu.saydam li:hover>a {
-    background-color: rgba(0, 0, 0, .05);
-    border-top-width: 0
-}
-
-nav.menu.saydam li li:hover>a {
-    background-color: transparent
+nav.menu.saydam a:hover {
+    text-decoration: underline
 }
 
 /* Mobil Menü */
