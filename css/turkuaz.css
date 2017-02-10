@@ -1,8 +1,8 @@
-﻿/*!
+/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
-* Noto Sans Yazi Stili (https://fonts.google.com/specimen/Noto+Sans)
+* Roboto Yazi Stili (https://fonts.google.com/specimen/Roboto)
 */
 
 
@@ -76,7 +76,7 @@ body {
     background-color: #FFF;
     display: flex;
     flex-direction: column;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 13px;
     letter-spacing: .3px;
     margin: 0;
@@ -197,6 +197,7 @@ i, em {
 p {
     font-style: normal;
     font-weight: normal;
+    letter-spacing: .5px;
     line-height: 1.75;
     margin-bottom: .5rem;
     margin-top: .5rem
@@ -1984,9 +1985,13 @@ sup {
 }
 
 .d-flex {
-    display: flex
+    display: flex;
+    overflow: auto
 }
 
+.d-flex::-webkit-scrollbar {
+    display: none
+}
 
 /* margin */
 
@@ -2438,26 +2443,46 @@ sup {
 /* ============= 1.5 Yazi Stili */
 
 @font-face {
-    font-family: "Noto Sans";
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: normal;
-    src: url(../fonts/NotoSans.ttf)
+    font-weight: 100;
+    src: url("../fonts/Roboto-Light.ttf")
 }
 
 @font-face {
-    font-family: "Noto Sans";
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 100;
+    src: url("../fonts/Roboto-LightItalic.ttf")
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Roboto-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Roboto";
     font-style: italic;
     font-weight: normal;
-    src: url("../fonts/NotoSans-Italic.ttf")
+    src: url("../fonts/Roboto-Italic.ttf")
 }
 
 @font-face {
-    font-family: "Noto Sans";
+    font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
-    src: url("../fonts/NotoSans-Bold.ttf")
+    src: url("../fonts/Roboto-Bold.ttf")
 }
 
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+    src: url("../fonts/Roboto-BoldItalic.ttf")
+}
 
 /* ============= 2. Bilesenler */
 
@@ -2478,7 +2503,7 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     color: #FFF;
     cursor: pointer;
     display: inline-flex;
-    font-family: "Noto Sans";
+    font-family: "Roboto";
     font-weight: normal;
     justify-content: flex-start;
     letter-spacing: 1.5px;
@@ -2739,6 +2764,7 @@ a.etiket {
     color: #333;
     cursor: pointer;
     display: inline-flex;
+    font-size: 90%;
     letter-spacing: 1px;
     line-height: 1;
     margin: 0 1px 5px 0;
@@ -2956,7 +2982,7 @@ input[type="file"].tr-dosya::before {
     color: #FFF;
     content: "Seç";
     display: inline-flex;
-    font-family: "Noto Sans";
+    font-family: "Roboto";
     font-weight: normal;
     letter-spacing: 1.5px;
     line-height: 3;
@@ -3001,7 +3027,7 @@ input[type="date"].tr-date {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    font-family: "Noto Sans";
+    font-family: "Roboto";
     font-size: 1rem;
     height: 32px;
     justify-content: flex-start;
@@ -3172,7 +3198,7 @@ textarea.tr-textarea {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    font-family: "Noto Sans";
+    font-family: "Roboto";
     font-size: 15px;
     letter-spacing: .5px;
     line-height: 20px;
@@ -3524,32 +3550,27 @@ nav.koleksiyon.saydam a {
 
 nav.menu {
     background-color: #03968A;
-    color: rgba(255,255,255,.7);
+    overflow: auto;
+    white-space: nowrap;
     width: 100%
 }
 
-nav.menu ul {
-    overflow: auto;
-    white-space: nowrap
-}
-
-nav.menu ul::-webkit-scrollbar {
+nav.menu::-webkit-scrollbar {
     display: none
-}
-
-nav.menu li {
-    display: inline-block
 }
 
 nav.menu a {
     align-items: center;
-    color: rgba(255,255,255,.7);
-    display: flex;
-    margin: 1rem .6rem 1rem .6rem
+    color: #FFF;
+    display: inline-flex;
+    letter-spacing: 1px;
+    line-height: 3.5;
+    margin: 0 .5rem;
+    opacity: .7;
+    transition: .3s
 }
 
 nav.menu a:hover {
-    color: #FFF;
     opacity: 1;
     text-decoration: none
 }
@@ -3577,7 +3598,7 @@ nav.menu li ul {
 }
 
 nav.menu li:hover ul {
-    display: table
+    display: inherit
 }
 
 nav.menu li li {
@@ -3586,7 +3607,7 @@ nav.menu li li {
 
 nav.menu li li a {
     color: #000;
-    margin: .6rem
+    line-height: 3
 }
 
 nav.menu li li a:hover {
@@ -3996,7 +4017,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .yazi-ince, .yazi-ince a {
-    font-weight: 100 !important
+    font-weight: 100
 }
 
 .yazi-yatay, .yazi-yatay a {
@@ -4016,15 +4037,15 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .yazi-buyukharf {
-    text-transform: uppercase !important
+    text-transform: uppercase
 }
 
 .yazi-kucukharf {
-    text-transform: lowercase !important
+    text-transform: lowercase
 }
 
 .yazi-basharfbuyuk {
-    text-transform: capitalize !important
+    text-transform: capitalize
 }
 
 .yazi-kes {
