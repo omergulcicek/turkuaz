@@ -416,7 +416,7 @@ sup {
 }
 
 .ck5 {
-    flex-basis: 0 0 41.666667%;
+    flex-basis: 41.666667%;
     max-width: 41.666667%
 }
 
@@ -1864,7 +1864,6 @@ sup {
     border-collapse: collapse;
     border-spacing: 0;
     cursor: default;
-    display: flex;
     margin: 1rem 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1991,6 +1990,10 @@ sup {
 
 .d-flex::-webkit-scrollbar {
     display: none
+}
+
+.d-inline-flex {
+    display: inline-flex
 }
 
 /* margin */
@@ -2517,7 +2520,7 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     -webkit-transition: .3s ease-out;
     transition: .3s ease-out;
     user-select: none;
-    vertical-align: top;
+    vertical-align: text-bottom;
     white-space: nowrap
 }
 
@@ -2666,6 +2669,14 @@ a.buton.beyaz, button.buton.beyaz {
     color: #000
 }
 
+a.buton i.fa, button i.fa {
+    margin-right: 7px;
+    opacity: .85
+}
+
+a.buton.yuvarlak i.fa, button.yuvarlak i.fa, a.buton.kare i.fa, button.kare i.fa {
+    margin-right: 0
+}
 
 /* ============= 2.1.2 Buton Efektleri */
 
@@ -2823,7 +2834,7 @@ a.etiket .detay {
     display: inline-flex;
     opacity: .8;
     padding: .5rem;
-    margin: -7px -7px -7px 2px
+    margin: -.5rem -.5rem -.5rem .5rem
 }
 
 a.etiket.kapat .detay {
