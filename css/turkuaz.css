@@ -1864,6 +1864,7 @@ sup {
     border-collapse: collapse;
     border-spacing: 0;
     cursor: default;
+    display: block;
     margin: 1rem 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1935,35 +1936,34 @@ sup {
 }
 
 @media only screen and (max-width: 360px) {
-    .gizle-ck {
+    .gizle-ck, .gizle-cb-alt, .gizle-b-alt, .gizle-o-alt, .gizle-k-alt {
         display: none !important
     }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 720px) {
-    .gizle-k {
+    .gizle-k, .gizle-ck-ust, .gizle-cb-alt, .gizle-b-alt, .gizle-o-alt {
         display: none !important
     }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
-    .gizle-o {
+    .gizle-o, .gizle-ck-ust, .gizle-k-ust, .gizle-cb-alt, .gizle-b-alt {
         display: none !important
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-    .gizle-b {
+    .gizle-b, .gizle-ck-ust, .gizle-k-ust, .gizle-o-ust, .gizle-cb-alt {
         display: none !important
     }
 }
 
 @media only screen and (min-width: 1440px) {
-    .gizle-cb {
+    .gizle-cb, .gizle-ck-ust, .gizle-k-ust, .gizle-o-ust, .gizle-b-ust {
         display: none !important
     }
 }
-
 
 /* display */
 
@@ -3268,6 +3268,7 @@ footer.tr-footer {
     border-top: 1px solid rgba(0, 0, 0, .15);
     color: #000;
     display: flex;
+    flex-direction: column;
     padding: 3rem 0 2rem 0;
     width: 100%
 }
@@ -3276,6 +3277,14 @@ footer.tr-footer nav a {
     line-height: 1.5rem
 }
 
+footer.tr-footer .tr-footer-detay {
+    background-color: rgba(0,0,0,.05);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    position: relative;
+    top: 30px;
+    width: 100%
+}
 
 /* ============= 2.5 Kartlar */
 
@@ -3313,7 +3322,7 @@ footer.tr-footer nav a {
     vertical-align: middle
 }
 
-.tr-kart .icerik {
+.tr-kart .kart-icerik {
     background-color: #FFF;
     height: 175px;
     left: 0;
@@ -3326,12 +3335,12 @@ footer.tr-footer nav a {
     width: 100%
 }
 
-.tr-kart:hover .icerik {
+.tr-kart:hover .kart-icerik {
     height: 60px;
     padding-top: 0
 }
 
-.tr-kart .icerik .baslik {
+.tr-kart .kart-icerik .baslik {
     font-size: 32px;
     overflow: hidden;
     padding: 0 5%;
@@ -3339,7 +3348,7 @@ footer.tr-footer nav a {
     white-space: nowrap
 }
 
-.tr-kart .icerik .baslik::after {
+.tr-kart .kart-icerik .baslik::after {
     background-color: rgba(0, 0, 0, .25);
     content: "";
     display: block;
@@ -3350,11 +3359,11 @@ footer.tr-footer nav a {
     width: 75px
 }
 
-.tr-kart:hover .icerik .baslik::after {
+.tr-kart:hover .kart-icerik .baslik::after {
     height: 0
 }
 
-.tr-kart .icerik p {
+.tr-kart .kart-icerik p {
     color: #555;
     font-size: 13px;
     line-height: 1.5;
@@ -3788,15 +3797,21 @@ nav.mobil.sag {
 .tr-pano {
     background-color: #03968A;
     border-radius: 3px;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
     margin-bottom: 1rem
 }
 
-.tr-pano .icerik {
+.tr-pano .baslik {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 1rem
+}
+
+.tr-pano .pano-icerik {
     background-color: #FFF;
-    padding: 1rem;
-    position: relative;
-    top: 4px;
+    padding: 1rem
 }
 
 
@@ -3849,6 +3864,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     color: rgba(255, 255, 255, .6);
     display: flex;
     height: 50px;
+    letter-spacing: .5px;
     line-height: 50px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -3966,7 +3982,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara.buyuk a {
-    padding: .7rem 1.1rem
+    padding: .7rem 1rem
 }
 
 
@@ -4825,11 +4841,11 @@ progress.tr-progress.yesil::-webkit-progress-value {
     transform: rotate(0deg)
 }
 
-.tr-akordiyon .tr-akordiyon-icerik {
+.tr-akordiyon .akordiyon-icerik {
     padding-left: 1rem
 }
 
-.tr-akordiyon.tema2 .tr-akordiyon-icerik {
+.tr-akordiyon.tema2 .akordiyon-icerik {
     border-bottom: 1px solid rgba(0, 0, 0, .05)
 }
 
@@ -4875,7 +4891,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     opacity: 1
 }
 
-.tr-filtre .icerik {
+.tr-filtre .filtre-icerik {
     animation: opac 5s;
     -webkit-animation: opac 5s;
     background-color: #FFF
@@ -4940,13 +4956,13 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #000
 }
 
-.tr-modal .tr-icerik {
+.tr-modal .modal-icerik {
     border-radius: 3px;
     margin: 0 auto;
     position: relative
 }
 
-.tr-modal .tr-icerik .baslik {
+.tr-modal .modal-icerik .baslik {
     background: rgba(0,0,0,0.15);
     border-radius: 3px 3px 0 0;
     font-weight: 300;
@@ -4958,12 +4974,12 @@ progress.tr-progress.yesil::-webkit-progress-value {
     width: 100%
 }
 
-.tr-modal .tr-icerik > div {
+.tr-modal .modal-icerik > div {
     font-size: 1rem;
     padding: 30px 40px
 }
 
-.tr-modal .tr-icerik a.buton.kapat {
+.tr-modal .modal-icerik a.buton.kapat {
     display: table;
     margin: 30px auto 0 auto
 }
@@ -5065,7 +5081,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     text-decoration: none
 }
 
-.tr-tab.tema3 .tr-tab-icerik {
+.tr-tab.tema3 .tab-icerik {
     border: 1px solid rgba(0, 0, 0, .1);
     border-top: 0;
     padding-top: 1px
