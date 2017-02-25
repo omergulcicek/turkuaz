@@ -217,20 +217,14 @@ img {
     max-width: 100%
 }
 
-input, button, select, textarea {
+input, button, select, textarea, pre, code {
     margin: 0
-}
-
-pre, code {
-    margin: 0;
-    padding: 10px 20px
 }
 
 pre {
     background-color: #f5f2f0;
     border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 3px;
-    display: inline-flex;
     overflow-y: auto;
     width: 100%
 }
@@ -509,8 +503,7 @@ sup {
 .ck-merkez {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center
+    justify-content: center
 }
 
 .ck-son {
@@ -680,8 +673,7 @@ sup {
     .k-merkez {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center
+        justify-content: center
     }
     .k-son {
         -webkit-box-pack: end;
@@ -847,8 +839,7 @@ sup {
     .o-merkez {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center
+        justify-content: center
     }
     .o-son {
         -webkit-box-pack: end;
@@ -1014,8 +1005,7 @@ sup {
     .b-merkez {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center
+        justify-content: center
     }
     .b-son {
         -webkit-box-pack: end;
@@ -1181,8 +1171,7 @@ sup {
     .cb-merkez {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center
+        justify-content: center
     }
     .cb-son {
         -webkit-box-pack: end;
@@ -2508,7 +2497,7 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     display: inline-flex;
     font-family: "Roboto";
     font-weight: normal;
-    justify-content: flex-start;
+    justify-content: center;
     letter-spacing: 1.5px;
     line-height: 2;
     outline: 0;
@@ -2675,7 +2664,7 @@ a.buton i.fa, button i.fa {
 }
 
 a.buton.yuvarlak i.fa, button.yuvarlak i.fa, a.buton.kare i.fa, button.kare i.fa {
-    margin-right: 0
+    margin-right: -2px
 }
 
 /* ============= 2.1.2 Buton Efektleri */
@@ -3504,17 +3493,16 @@ footer.tr-footer .tr-footer-detay {
 
 /* ============= 2.6 Koleksiyonlar */
 
-nav.koleksiyon {
+nav.tr-koleksiyon {
     background-color: #FFF;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
     position: relative
 }
 
-nav.koleksiyon .baslik {
+nav.tr-koleksiyon .baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -3522,7 +3510,7 @@ nav.koleksiyon .baslik {
     margin: 0
 }
 
-nav.koleksiyon a {
+nav.tr-koleksiyon a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .7);
     padding: .5rem 1rem;
@@ -3530,38 +3518,38 @@ nav.koleksiyon a {
     transition: .3s
 }
 
-nav.koleksiyon a:last-child {
+nav.tr-koleksiyon a:last-child {
     border-bottom: 0
 }
 
-nav.koleksiyon a:hover {
+nav.tr-koleksiyon a:hover {
     box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
     color: #000;
     text-decoration: none
 }
 
-nav.koleksiyon a:active {
+nav.tr-koleksiyon a:active {
     box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
 }
 
-nav.koleksiyon.renkli a:nth-of-type(odd) {
+nav.tr-koleksiyon.renkli a:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, .02)
 }
 
-nav.koleksiyon.saydam {
+nav.tr-koleksiyon.saydam {
     background-color: transparent;
     border: 0;
     box-shadow: 0 0 0 0 transparent
 }
 
-nav.koleksiyon.saydam a:hover {
+nav.tr-koleksiyon.saydam a:hover {
     background-color: transparent;
     box-shadow: 0 0 0 0 transparent;
     text-decoration: underline
 }
 
-nav.koleksiyon.saydam .baslik,
-nav.koleksiyon.saydam a {
+nav.tr-koleksiyon.saydam .baslik,
+nav.tr-koleksiyon.saydam a {
     border-bottom: 0
 }
 
@@ -3579,18 +3567,20 @@ nav.menu::-webkit-scrollbar {
     display: none
 }
 
-nav.menu a {
+nav.menu a, nav.mobil a {
     align-items: center;
     color: #FFF;
     display: inline-flex;
     letter-spacing: 1px;
-    line-height: 3.5;
+    line-height: 1.5;
     margin: 0 .5rem;
     opacity: .7;
+    padding: .9rem 0;
+    position: relative;
     transition: .3s
 }
 
-nav.menu a:hover {
+nav.menu a:hover, nav.mobil a:hover {
     opacity: 1;
     text-decoration: none
 }
@@ -3636,7 +3626,9 @@ nav.menu li li a:hover {
 }
 
 nav.menu.sabit {
-    position: fixed
+    left: 0;
+    position: fixed;
+    top: 0
 }
 
 nav.menu.saydam {
@@ -3651,7 +3643,7 @@ nav.menu.saydam a:hover {
     text-decoration: underline
 }
 
-/* Mobil Menü */
+/* Mobil Menu */
 
 nav.mobil {
     background-color: #03968A;
@@ -3674,56 +3666,38 @@ nav.mobil::-webkit-scrollbar {
 
 nav.mobil .baslik {
     background-color: rgba(0, 0, 0, .1);
-    margin: 0 0 15px 0;
-    display: block;
-    font-size: 25px;
-    line-height: 70px;
-    opacity: .8;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
     text-align: center;
-    transition: opacity .2s;
-    width: 250px
-}
-
-nav.mobil:hover .baslik {
-    opacity: 1
+    width: 100%
 }
 
 nav.mobil .baslik a {
-    border-left-width: 0;
-    padding: 15px
-}
-
-nav.mobil a i {
-    margin-right: 7px
+    border-left: 0;
+    padding-left: 0;
+    opacity: 1 !important
 }
 
 nav.mobil a {
     border-left: 3px solid transparent;
     color: #FFF;
     display: block;
-    margin-left: 3px;
-    line-height: 2;
-    padding: 11px 40px 11px 15px;
-    position: relative;
-    text-decoration: none;
-    transition: background-color .15s, color .15s
+    margin: 0 .25rem;
+    padding-left: 1rem;
+    opacity: 1
 }
 
-nav.mobil ul {
-    display: flex;
-    flex-direction: column
+nav.mobil:hover a  {
+    opacity: .7
 }
 
-nav.mobil ul:hover a {
-    color: rgba(255,255,255,.7)
+nav.mobil a:hover {
+    border-left-color: #FFF;
+    opacity: 1
 }
 
-nav.mobil li:hover>a {
-    border-left: 3px solid #FFF;
-    color: #FFF
-}
-
-nav.mobil ul li.acilir>a::after {
+nav.mobil li.acilir>a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0, 0, 0, .2);
@@ -3733,32 +3707,18 @@ nav.mobil ul li.acilir>a::after {
     top: 23px
 }
 
-nav.mobil ul ul li.acilir>a {
-    color: #FFF
-}
-
 nav.mobil li li a {
-    color: rgba(255,255,255,.75);
-    margin-left: 10px;
-    padding: 7px 15px
+    opacity: .7;
+    padding: .7rem 0 .7rem 2rem
 }
 
-nav.mobil li li li a {
-    padding-left: 30px
-}
-
-nav.mobil li li:hover a {
-    border-left-color: transparent;
-    background-color: transparent
-}
-
-nav.mobil.sabit {
-    left: 0
+nav.mobil a i {
+    margin-right: 7px
 }
 
 nav.mobil.sag {
     left: auto;
-    right: 0
+    right: -250px
 }
 
 .menuac {
@@ -3776,6 +3736,11 @@ nav.mobil.sag {
 
 .menuac:hover  {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
+}
+
+.menuac.sag {
+    left: auto;
+    right: 60px
 }
 
 /* ============= 2.8 Notlar */
@@ -4728,7 +4693,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-akordiyon {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     flex-direction: column;
     width: 100%
 }
