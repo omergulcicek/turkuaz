@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -3336,167 +3336,82 @@ footer.tr-footer .tr-footer-detay {
 /* ============= 2.5.1 Kart Kodlari */
 
 .tr-kart {
-    background-color: #FFF;
-    border-radius: 3px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    cursor: default;
-    margin-bottom: 30px;
-    min-height: 175px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%
+    border-radius: 30px;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,.1));
+    margin-bottom: 2rem;
+    text-align: center
 }
 
 .tr-kart .resim {
-    height: 400px;
-    min-width: 100%;
-    max-width: none;
-    -webkit-transition: .3s;
-    transition: .3s;
-    vertical-align: middle
+    background: linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%);
+    border-radius: 25px 25px 0 0
 }
 
-.tr-kart .kart-icerik {
+.tr-kart .resim img {
+    border-radius: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+    margin: 3rem 0;
+    transition: .3s;
+    width: 40%
+}
+
+.tr-kart .icerik {
     background-color: #FFF;
-    height: 175px;
-    left: 0;
-    overflow: hidden;
-    padding-top: 10px;
-    position: absolute;
-    top: 0;
-    -webkit-transition: .3s;
-    transition: .3s;
-    width: 100%
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 1rem 2.5rem
 }
-
-.tr-kart:hover .kart-icerik {
-    height: 60px;
-    padding-top: 0
-}
-
-.tr-kart .kart-icerik .baslik {
-    font-size: 32px;
-    overflow: hidden;
-    padding: 0 5%;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.tr-kart .kart-icerik .baslik::after {
-    background-color: rgba(0, 0, 0, .25);
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 10px auto;
-    -webkit-transition: .15s;
-    transition: .15s;
-    width: 75px
-}
-
-.tr-kart:hover .kart-icerik .baslik::after {
-    height: 0
-}
-
-.tr-kart .kart-icerik p {
-    color: #555;
-    font-size: 13px;
-    line-height: 1.5;
-    padding: 0 10% 5% 10%
-}
-
-.tr-kart a.buton {
-    bottom: 0;
-    border-radius: 0;
-    left: 0;
-    position: absolute;
-    -webkit-transform: translateY(60px);
-    transform: translateY(60px);
-    width: 100%
-}
-
-.tr-kart:hover a.buton {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
 
 /* ============= 2.5.2 Kart Efektleri */
 
 
 /* Yakinlastirma */
 
-.tr-kart.efekt1>img {
+.tr-kart.efekt1 .resim img {
     -webkit-transform: scale(1);
     transform: scale(1)
 }
 
-.tr-kart.efekt1:hover>img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
+.tr-kart.efekt1:hover .resim img {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25)
 }
 
 
 /* Uzaklastirma */
 
-.tr-kart.efekt2>img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
+.tr-kart.efekt2 .resim img {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25)
 }
 
-.tr-kart.efekt2:hover>img {
+.tr-kart.efekt2:hover .resim img {
     -webkit-transform: scale(1);
     transform: scale(1)
 }
 
 
-/* Sola Gecer */
-
-.tr-kart.efekt3 img {
-    margin-left: 30px;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
-}
-
-.tr-kart.efekt3:hover>img {
-    margin-left: 0
-}
-
-
-/* Saga Gecer */
-
-.tr-kart.efekt4>img {
-    margin-left: -30px;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1)
-}
-
-.tr-kart.efekt4:hover>img {
-    margin-left: 0
-}
-
-
 /* Capraz Yakinlastirir */
 
-.tr-kart.efekt5>img {
-    -webkit-transform: rotate(0) scale(1);
-    transform: rotate(0) scale(1)
+.tr-kart.efekt3 .resim img {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
 }
 
-.tr-kart.efekt5:hover>img {
-    -webkit-transform: rotate(5deg) scale(1.1);
-    transform: rotate(5deg) scale(1.1)
+.tr-kart.efekt3:hover .resim img {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg)
 }
 
 
 /* Siyah Beyaz */
 
-.tr-kart.efekt6>img {
-    opacity: .95;
+.tr-kart.efekt4 .resim img {
+    opacity: .9;
     -webkit-filter: grayscale(100%)
 }
 
-.tr-kart.efekt6:hover>img {
+.tr-kart.efekt4:hover .resim img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
@@ -3504,36 +3419,25 @@ footer.tr-footer .tr-footer-detay {
 
 /* Renklendirir */
 
-.tr-kart.efekt7>img {
+.tr-kart.efekt5 .resim img {
     opacity: 1;
     -webkit-filter: grayscale(0%)
 }
 
-.tr-kart.efekt7:hover>img {
-    opacity: .95;
+.tr-kart.efekt5:hover .resim img {
+    opacity: .9;
     -webkit-filter: grayscale(100%)
 }
 
 
 /* Bulaniklastirir */
 
-.tr-kart.efekt8>img {
+.tr-kart.efekt6 .resim img {
     -webkit-filter: blur(1px)
 }
 
-.tr-kart.efekt8:hover>img {
+.tr-kart.efekt6:hover .resim img {
     -webkit-filter: blur(0)
-}
-
-
-/* Netlestirir */
-
-.tr-kart.efekt9>img {
-    -webkit-filter: blur(0)
-}
-
-.tr-kart.efekt9:hover>img {
-    -webkit-filter: blur(1px)
 }
 
 
