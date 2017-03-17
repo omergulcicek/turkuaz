@@ -30,8 +30,6 @@
 *        2.3.7    Textarea
 *      2.4     Footer
 *      2.5     Kart
-*        2.5.1    Kart Kodlari
-*        2.5.2    Kart Efektleri
 *      2.6     Koleksiyon
 *      2.7     Menu
 *      2.8     Not
@@ -2646,6 +2644,10 @@ button.buton.kare {
     flex-direction: column
 }
 
+.butonlar.dikey a.buton {
+    width: 100%
+}
+
 .butonlar.dikey a.buton:first-of-type {
     border-radius: 3px 3px 0 0
 }
@@ -2774,6 +2776,15 @@ a.etiket {
     transition: .3s
 }
 
+a.etiket.kucuk {
+    font-size: 85%;
+    padding: .25rem
+}
+
+a.etiket.buyuk {
+    padding: 1rem
+}
+
 a.etiket:hover {
     box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
     color: #000;
@@ -2824,6 +2835,16 @@ a.etiket .detay {
     opacity: .8;
     padding: .5rem;
     margin: -.5rem -.5rem -.5rem .5rem
+}
+
+a.etiket.kucuk .detay {
+    margin: -.25rem -.25rem -.25rem .5rem;
+    padding: .25rem
+}
+
+a.etiket.buyuk .detay {
+    margin: -1rem -1rem -1rem .5rem;
+    padding: 1rem;
 }
 
 a.etiket.kapat .detay {
@@ -3150,7 +3171,7 @@ input[type="radio"].tr-radio:checked + label.tr-label:before {
 }
 
 input[type="radio"].tr-radio + label.tr-label:before, input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
-    border: 2px solid #000;
+    border: 2px solid #038075;
     border-radius: 50%;
     content: "";
     height: 18px;
@@ -3336,18 +3357,17 @@ footer.tr-footer .tr-footer-detay {
 /* ============= 2.5.1 Kart Kodlari */
 
 .tr-kart {
-    border-radius: 30px;
-    filter: drop-shadow(0px 5px 5px rgba(0,0,0,.1));
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.15);
     margin-bottom: 2rem;
-    text-align: center
+    overflow: hidden
 }
 
-.tr-kart .resim {
-    background: linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%);
-    border-radius: 25px 25px 0 0
+.tr-kart .kart-resim {
+    background: linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%)
 }
 
-.tr-kart .resim img {
+.tr-kart .kart-resim img {
     border-radius: 100%;
     box-shadow: 0px 5px 5px rgba(0,0,0,.1);
     margin: 3rem 0;
@@ -3355,91 +3375,10 @@ footer.tr-footer .tr-footer-detay {
     width: 40%
 }
 
-.tr-kart .icerik {
+.tr-kart .kart-icerik {
     background-color: #FFF;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     padding: 1rem 2.5rem
 }
-
-/* ============= 2.5.2 Kart Efektleri */
-
-
-/* Yakinlastirma */
-
-.tr-kart.efekt1 .resim img {
-    -webkit-transform: scale(1);
-    transform: scale(1)
-}
-
-.tr-kart.efekt1:hover .resim img {
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25)
-}
-
-
-/* Uzaklastirma */
-
-.tr-kart.efekt2 .resim img {
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25)
-}
-
-.tr-kart.efekt2:hover .resim img {
-    -webkit-transform: scale(1);
-    transform: scale(1)
-}
-
-
-/* Capraz Yakinlastirir */
-
-.tr-kart.efekt3 .resim img {
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
-}
-
-.tr-kart.efekt3:hover .resim img {
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg)
-}
-
-
-/* Siyah Beyaz */
-
-.tr-kart.efekt4 .resim img {
-    opacity: .9;
-    -webkit-filter: grayscale(100%)
-}
-
-.tr-kart.efekt4:hover .resim img {
-    opacity: 1;
-    -webkit-filter: grayscale(0%)
-}
-
-
-/* Renklendirir */
-
-.tr-kart.efekt5 .resim img {
-    opacity: 1;
-    -webkit-filter: grayscale(0%)
-}
-
-.tr-kart.efekt5:hover .resim img {
-    opacity: .9;
-    -webkit-filter: grayscale(100%)
-}
-
-
-/* Bulaniklastirir */
-
-.tr-kart.efekt6 .resim img {
-    -webkit-filter: blur(1px)
-}
-
-.tr-kart.efekt6:hover .resim img {
-    -webkit-filter: blur(0)
-}
-
 
 /* ============= 2.6 Koleksiyonlar */
 
@@ -3596,7 +3535,7 @@ nav.menu.saydam {
 }
 
 nav.menu.saydam a {
-    color: #000
+    color: #000 !important
 }
 
 nav.menu.saydam a:hover {
@@ -4674,7 +4613,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     cursor: pointer;
     font-size: 1rem;
     letter-spacing: .5px;
-    padding: .5rem 1rem;
+    padding: .5rem 1rem .5rem 1.5rem;
     position: relative;
     text-align: left;
     -webkit-transition: color .3s;
@@ -4684,7 +4623,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-akordiyon.tema2 .baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     color: #b4b4b4;
-    padding-left: 1.5rem
+    padding: .5rem 1rem .5rem 1.5rem
 }
 
 .tr-akordiyon.tema2 .baslik:last-of-type {
@@ -4692,13 +4631,15 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon.tema3 .baslik {
-    background-color: rgba(0, 0, 0, .025)
+    background-color: rgba(0, 0, 0, .025);
+    padding: .5rem 2.5rem .5rem 1rem
 }
 
 .tr-akordiyon.tema4 .baslik {
     background-color: rgba(0, 0, 0, .025);
     border-left: 5px solid transparent;
-    margin-bottom: 2px
+    margin-bottom: 2px;
+    padding: .5rem 2.5rem .5rem 1rem
 }
 
 .tr-akordiyon .baslik:hover {
@@ -4765,6 +4706,10 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border-top-color: rgba(0, 0, 0, 1);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg)
+}
+
+.tr-akordiyon .baslik a {
+    margin-bottom: 0;
 }
 
 .tr-akordiyon .akordiyon-icerik {
