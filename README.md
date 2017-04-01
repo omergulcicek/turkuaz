@@ -7,7 +7,7 @@ Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn
 *Destekleri için [Yasin Softaoğlu](https://github.com/ysoftaoglu) kardeşime ve [Bilal Çınarlı](https://github.com/bcinarli) abime çok teşekkür ederim.*
 
 # Sürümler
-> **Mevcut Sürüm : v1.0** - Turkuaz Css yayınlandı.
+> **Mevcut Sürüm : v1.0.0** - Turkuaz Css yayınlandı.
 
 # İletişim
 Turkuaz Css hakkında yardım, eleştiri yada hata bildirimi için iletisim@turkuazcss.com adresi üzerinden bize ulaşabilirsiniz.
