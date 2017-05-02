@@ -1,6 +1,3 @@
-$("a.etiket.kapat").click(function(e) {
-    e.preventDefault();
-});
 $("a.etiket.kapat").append("<span class=kaldir>&times</span>").end().find("span.kaldir").click(function() {
     $(this).parents("a.etiket.kapat").addClass("gizle");
 });
