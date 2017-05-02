@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -232,7 +232,6 @@ code {
 }
 
 form {
-    display: flex;
     width: 100%
 }
 
@@ -2507,7 +2506,6 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     -webkit-transition: .3s ease-out;
     transition: .3s ease-out;
     user-select: none;
-    vertical-align: text-bottom;
     white-space: nowrap
 }
 
@@ -2667,6 +2665,10 @@ a.buton i.fa, button i.fa {
 
 a.buton.yuvarlak i.fa, button.yuvarlak i.fa, a.buton.kare i.fa, button.kare i.fa {
     margin-right: -2px
+}
+
+table a.buton {
+    display: inline-block
 }
 
 /* ============= 2.1.2 Buton Efektleri */
@@ -3036,6 +3038,7 @@ input[type="file"].tr-dosya:active::before {
 /* ============= 2.3.4 Input */
 
 input[type="text"].tr-input,
+input[type="password"].tr-input,
 input[type="search"].tr-search,
 input[type="date"].tr-date {
     align-items: center;
@@ -3065,21 +3068,25 @@ input[type="date"].tr-date {
 }
 
 input[type="text"].tr-input:focus,
+input[type="password"].tr-input:focus,
 input[type="search"].tr-search:focus {
     border-bottom: 2px solid #03968A
 }
 
 input[type="text"].tr-input:-webkit-autofill,
+input[type="password"].tr-input:-webkit-autofill,
 input[type="search"].tr-search:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0 1000px #FFF
 }
 
 input[type="text"].tr-input[disabled],
+input[type="password"].tr-input[disabled],
 input[type="search"].tr-search[disabled] {
     pointer-events: none
 }
 
-input[type="text"].tr-input + label.tr-label {
+input[type="text"].tr-input + label.tr-label,
+input[type="password"].tr-input + label.tr-label {
     color: #03968A;
     cursor: auto;
     display: -webkit-box;
@@ -3102,7 +3109,8 @@ input[type="text"].tr-input + label.tr-label {
     user-select: none
 }
 
-input[type="text"].tr-input + label.tr-label.dolu {
+input[type="text"].tr-input + label.tr-label.dolu,
+input[type="password"].tr-input + label.tr-label.dolu {
     color: #057970;
     -webkit-transform: translateY(-50px) scale(.75) !important;
     transform: translateY(-50px) scale(.75) !important
@@ -3587,11 +3595,20 @@ nav.mobil a {
     opacity: 1
 }
 
+nav.mobil a:not(.buton):not(.etiket) {
+    display: block;
+    margin: 0 1rem
+}
+
+nav.mobil li ul a:not(.buton):not(.etiket) {
+    padding-left: 1rem
+}
+
 nav.mobil:hover a  {
     opacity: .7
 }
 
-nav.mobil a:hover {
+nav.mobil ul ul a:hover {
     border-left-color: #FFF;
     opacity: 1
 }
@@ -3602,7 +3619,7 @@ nav.mobil li.acilir>a::after {
     border-top: 4px solid rgba(0, 0, 0, .2);
     content: "";
     position: absolute;
-    right: 23px;
+    right: 0;
     top: 23px
 }
 
