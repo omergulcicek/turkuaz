@@ -51,11 +51,13 @@
 /* ============= 1. Css  */
 
 html {
-    box-sizing: border-box
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
 }
 
 *, :before, :after {
-    box-sizing: inherit
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit
 }
 
 ::-moz-selection {
@@ -70,8 +72,13 @@ html {
 
 body {
     background-color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     letter-spacing: .3px;
@@ -108,7 +115,9 @@ article, aside, details, figure, footer, header, main, menu, nav, section, summa
 }
 
 main {
-    flex: 1
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -320,7 +329,8 @@ sup {
 }
 
 .flex {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -366,7 +376,8 @@ sup {
 .ck-9,
 .ck-10,
 .ck-11 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -385,62 +396,74 @@ sup {
 }
 
 .ck1 {
-    flex-basis: 8.333333%;
+    -ms-flex-preferred-size: 8.333333%;
+        flex-basis: 8.333333%;
     max-width: 8.333333%
 }
 
 .ck2 {
-    flex-basis: 16.666667%;
+    -ms-flex-preferred-size: 16.666667%;
+        flex-basis: 16.666667%;
     max-width: 16.666667%
 }
 
 .ck3 {
-    flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
     max-width: 25%
 }
 
 .ck4 {
-    flex-basis: 33.333333%;
+    -ms-flex-preferred-size: 33.333333%;
+        flex-basis: 33.333333%;
     max-width: 33.333333%
 }
 
 .ck5 {
-    flex-basis: 41.666667%;
+    -ms-flex-preferred-size: 41.666667%;
+        flex-basis: 41.666667%;
     max-width: 41.666667%
 }
 
 .ck6 {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     max-width: 50%
 }
 
 .ck7 {
-    flex-basis: 58.333333%;
+    -ms-flex-preferred-size: 58.333333%;
+        flex-basis: 58.333333%;
     max-width: 58.333333%
 }
 
 .ck8 {
-    flex-basis: 66.666667%;
+    -ms-flex-preferred-size: 66.666667%;
+        flex-basis: 66.666667%;
     max-width: 66.666667%
 }
 
 .ck9 {
-    flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
     max-width: 75%
 }
 
 .ck10 {
-    flex-basis: 83.333333%;
+    -ms-flex-preferred-size: 83.333333%;
+        flex-basis: 83.333333%;
     max-width: 83.333333%
 }
 
 .ck11 {
-    flex-basis: 91.666667%;
+    -ms-flex-preferred-size: 91.666667%;
+        flex-basis: 91.666667%;
     max-width: 91.666667%
 }
 
 .ck12 {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     max-width: 100%
 }
 
@@ -564,7 +587,8 @@ sup {
     .k-9,
     .k-10,
     .k-11 {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -579,51 +603,63 @@ sup {
         max-width: 100%
     }
     .k1 {
-        flex-basis: 8.333333%;
+        -ms-flex-preferred-size: 8.333333%;
+            flex-basis: 8.333333%;
         max-width: 8.333333%
     }
     .k2 {
-        flex-basis: 16.666667%;
+        -ms-flex-preferred-size: 16.666667%;
+            flex-basis: 16.666667%;
         max-width: 16.666667%
     }
     .k3 {
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
         max-width: 25%
     }
     .k4 {
-        flex-basis: 33.333333%;
+        -ms-flex-preferred-size: 33.333333%;
+            flex-basis: 33.333333%;
         max-width: 33.333333%
     }
     .k5 {
-        flex-basis: 41.666667%;
+        -ms-flex-preferred-size: 41.666667%;
+            flex-basis: 41.666667%;
         max-width: 41.666667%
     }
     .k6 {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         max-width: 50%
     }
     .k7 {
-        flex-basis: 58.333333%;
+        -ms-flex-preferred-size: 58.333333%;
+            flex-basis: 58.333333%;
         max-width: 58.333333%
     }
     .k8 {
-        flex-basis: 66.666667%;
+        -ms-flex-preferred-size: 66.666667%;
+            flex-basis: 66.666667%;
         max-width: 66.666667%
     }
     .k9 {
-        flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
         max-width: 75%
     }
     .k10 {
-        flex-basis: 83.333333%;
+        -ms-flex-preferred-size: 83.333333%;
+            flex-basis: 83.333333%;
         max-width: 83.333333%
     }
     .k11 {
-        flex-basis: 91.666667%;
+        -ms-flex-preferred-size: 91.666667%;
+            flex-basis: 91.666667%;
         max-width: 91.666667%
     }
     .k12 {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         max-width: 100%
     }
     .k-1 {
@@ -730,7 +766,8 @@ sup {
     .o-9,
     .o-10,
     .o-11 {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -745,51 +782,63 @@ sup {
         max-width: 100%
     }
     .o1 {
-        flex-basis: 0 0 8.333333%;
+        -ms-flex-preferred-size: 0 0 8.333333%;
+            flex-basis: 0 0 8.333333%;
         max-width: 8.333333%
     }
     .o2 {
-        flex-basis: 16.666667%;
+        -ms-flex-preferred-size: 16.666667%;
+            flex-basis: 16.666667%;
         max-width: 16.666667%
     }
     .o3 {
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
         max-width: 25%
     }
     .o4 {
-        flex-basis: 33.333333%;
+        -ms-flex-preferred-size: 33.333333%;
+            flex-basis: 33.333333%;
         max-width: 33.333333%
     }
     .o5 {
-        flex-basis: 41.666667%;
+        -ms-flex-preferred-size: 41.666667%;
+            flex-basis: 41.666667%;
         max-width: 41.666667%
     }
     .o6 {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         max-width: 50%
     }
     .o7 {
-        flex-basis: 58.333333%;
+        -ms-flex-preferred-size: 58.333333%;
+            flex-basis: 58.333333%;
         max-width: 58.333333%
     }
     .o8 {
-        flex-basis: 66.666667%;
+        -ms-flex-preferred-size: 66.666667%;
+            flex-basis: 66.666667%;
         max-width: 66.666667%
     }
     .o9 {
-        flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
         max-width: 75%
     }
     .o10 {
-        flex-basis: 83.333333%;
+        -ms-flex-preferred-size: 83.333333%;
+            flex-basis: 83.333333%;
         max-width: 83.333333%
     }
     .o11 {
-        flex-basis: 91.666667%;
+        -ms-flex-preferred-size: 91.666667%;
+            flex-basis: 91.666667%;
         max-width: 91.666667%
     }
     .o12 {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         max-width: 100%
     }
     .o-1 {
@@ -896,7 +945,8 @@ sup {
     .b-9,
     .b-10,
     .b-11 {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -911,51 +961,63 @@ sup {
         max-width: 100%
     }
     .b1 {
-        flex-basis: 8.333333%;
+        -ms-flex-preferred-size: 8.333333%;
+            flex-basis: 8.333333%;
         max-width: 8.333333%
     }
     .b2 {
-        flex-basis: 16.666667%;
+        -ms-flex-preferred-size: 16.666667%;
+            flex-basis: 16.666667%;
         max-width: 16.666667%
     }
     .b3 {
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
         max-width: 25%
     }
     .b4 {
-        flex-basis: 33.333333%;
+        -ms-flex-preferred-size: 33.333333%;
+            flex-basis: 33.333333%;
         max-width: 33.333333%
     }
     .b5 {
-        flex-basis: 41.666667%;
+        -ms-flex-preferred-size: 41.666667%;
+            flex-basis: 41.666667%;
         max-width: 41.666667%
     }
     .b6 {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         max-width: 50%
     }
     .b7 {
-        flex-basis: 58.333333%;
+        -ms-flex-preferred-size: 58.333333%;
+            flex-basis: 58.333333%;
         max-width: 58.333333%
     }
     .b8 {
-        flex-basis: 66.666667%;
+        -ms-flex-preferred-size: 66.666667%;
+            flex-basis: 66.666667%;
         max-width: 66.666667%
     }
     .b9 {
-        flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
         max-width: 75%
     }
     .b10 {
-        flex-basis: 83.333333%;
+        -ms-flex-preferred-size: 83.333333%;
+            flex-basis: 83.333333%;
         max-width: 83.333333%
     }
     .b11 {
-        flex-basis: 91.666667%;
+        -ms-flex-preferred-size: 91.666667%;
+            flex-basis: 91.666667%;
         max-width: 91.666667%
     }
     .b12 {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         max-width: 100%
     }
     .b-1 {
@@ -1062,7 +1124,8 @@ sup {
     .cb-9,
     .cb-10,
     .cb-11 {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -1077,51 +1140,63 @@ sup {
         max-width: 100%
     }
     .cb1 {
-        flex-basis: 8.333333%;
+        -ms-flex-preferred-size: 8.333333%;
+            flex-basis: 8.333333%;
         max-width: 8.333333%
     }
     .cb2 {
-        flex-basis: 16.666667%;
+        -ms-flex-preferred-size: 16.666667%;
+            flex-basis: 16.666667%;
         max-width: 16.666667%
     }
     .cb3 {
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
         max-width: 25%
     }
     .cb4 {
-        flex-basis: 33.333333%;
+        -ms-flex-preferred-size: 33.333333%;
+            flex-basis: 33.333333%;
         max-width: 33.333333%
     }
     .cb5 {
-        flex-basis: 41.666667%;
+        -ms-flex-preferred-size: 41.666667%;
+            flex-basis: 41.666667%;
         max-width: 41.666667%
     }
     .cb6 {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         max-width: 50%
     }
     .cb7 {
-        flex-basis: 58.333333%;
+        -ms-flex-preferred-size: 58.333333%;
+            flex-basis: 58.333333%;
         max-width: 58.333333%
     }
     .cb8 {
-        flex-basis: 66.666667%;
+        -ms-flex-preferred-size: 66.666667%;
+            flex-basis: 66.666667%;
         max-width: 66.666667%
     }
     .cb9 {
-        flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
         max-width: 75%
     }
     .cb10 {
-        flex-basis: 83.333333%;
+        -ms-flex-preferred-size: 83.333333%;
+            flex-basis: 83.333333%;
         max-width: 83.333333%
     }
     .cb11 {
-        flex-basis: 91.666667%;
+        -ms-flex-preferred-size: 91.666667%;
+            flex-basis: 91.666667%;
         max-width: 91.666667%
     }
     .cb12 {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         max-width: 100%
     }
     .cb-1 {
@@ -1205,7 +1280,8 @@ sup {
 
 .saydam {
     background-color: transparent !important;
-    box-shadow: 0px 0px 0px transparent !important
+    -webkit-box-shadow: 0px 0px 0px transparent !important;
+            box-shadow: 0px 0px 0px transparent !important
 }
 
 .beyaz {
@@ -1968,6 +2044,8 @@ sup {
 }
 
 .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: auto
 }
@@ -1977,6 +2055,8 @@ sup {
 }
 
 .d-inline-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex
 }
 
@@ -2386,6 +2466,8 @@ sup {
     -ms-flex-align: center;
     align-items: center;
     background-color: #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 1px;
     -webkit-box-pack: center;
@@ -2479,22 +2561,19 @@ sup {
 
 /* ============= 2.1.1 Buton Ayarlari */
 
-a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, input[type="file"].tr-dosya::before {
     background-color: #03968A;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     color: #FFF;
     cursor: pointer;
-    display: inline-table;
+    display: inline-block;
     font-family: "Roboto";
     font-weight: normal;
-    justify-content: center;
     letter-spacing: 1.5px;
-    line-height: 2;
+    line-height: 1.75;
     outline: 0;
     overflow: hidden;
     padding: .5rem 1.5rem !important;
@@ -2503,7 +2582,10 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton {
     text-decoration: none;
     -webkit-transition: .3s ease-out;
     transition: .3s ease-out;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     white-space: nowrap
 }
 
@@ -2517,13 +2599,15 @@ a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk
 }
 
 a.buton:hover, button.buton:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
     color: #FFF;
     text-decoration: none
 }
 
 a.buton:active, button.buton:active, input[type="submit"].buton:active, input[type="reset"].buton:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
 a.buton::-moz-selection {
@@ -2537,19 +2621,22 @@ a.buton::selection {
 a.buton.saydam, button.buton.saydam, input[type="submit"].buton.saydam, input[type="reset"].buton.saydam, .butonlar.saydam a.buton {
     background-color: transparent !important;
     border: 1px solid rgba(0, 0, 0, .1);
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     color: #000
 }
 
 a.buton.saydam:hover, button.buton.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover, .butonlar.saydam a.buton:hover {
-    box-shadow: inset 0 0 0 0 transparent !important;
+    -webkit-box-shadow: inset 0 0 0 0 transparent !important;
+            box-shadow: inset 0 0 0 0 transparent !important;
     border: 1px solid rgba(0, 0, 0, .3);
     color: #000
 }
 
 a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif, .butonlar.pasif, .butonlar.pasif a.buton {
     background-color: #E6E6E6 !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default;
     pointer-events: none
@@ -2557,7 +2644,8 @@ a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type=
 
 a.buton.pasif:hover, button.buton.pasif:hover, input[type="submit"].buton.pasif:hover, input[type="reset"].buton.pasif:hover, .butonlar.pasif a.buton:hover {
     background-color: #E6E6E6 !important;
-    box-shadow: inset 0 0 0 0 transparent !important;
+    -webkit-box-shadow: inset 0 0 0 0 transparent !important;
+            box-shadow: inset 0 0 0 0 transparent !important;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default
 }
@@ -2582,74 +2670,7 @@ a.buton.yuvarlak.buyuk, button.buton.yuvarlak.buyuk, input[type="submit"].buton.
 }
 
 a.buton.yay, button.buton.yay, input[type="submit"].buton.yay, input[type="reset"].buton.yay {
-    width: 100%;
-}
-
-a.buton.yuvarlak,
-button.buton.yuvarlak,
-a.buton.kare,
-button.buton.kare {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center
-}
-
-.butonlar {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-transition: .3s ease-out;
-    transition: .3s ease-out
-}
-
-.butonlar:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
-}
-
-.butonlar a.buton {
-    border-radius: 0;
-    box-shadow: none
-}
-
-.butonlar a.buton:first-of-type {
-    border-radius: 3px 0 0 3px;
-    margin-left: 0
-}
-
-.butonlar a.buton:last-of-type {
-    border-radius: 0 3px 3px 0
-}
-
-.butonlar.buyuk a.buton {
-    font-size: 1rem;
-    padding: 1rem 1.5rem
-}
-
-.butonlar a.buton:hover {
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
-}
-
-.butonlar a.buton:active {
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .25)
-}
-
-.butonlar.dikey {
-    flex-direction: column
-}
-
-.butonlar.dikey a.buton {
     width: 100%
-}
-
-.butonlar.dikey a.buton:first-of-type {
-    border-radius: 3px 3px 0 0
-}
-
-.butonlar.dikey a.buton:last-of-type {
-    border-radius: 0 0 3px 3px
 }
 
 a.buton.beyaz, button.buton.beyaz {
@@ -2657,16 +2678,12 @@ a.buton.beyaz, button.buton.beyaz {
 }
 
 a.buton i.fa, button i.fa {
-    margin-right: 7px;
+    margin-right: .5rem;
     opacity: .85
 }
 
 a.buton.yuvarlak i.fa, button.yuvarlak i.fa, a.buton.kare i.fa, button.kare i.fa {
     margin-right: -2px
-}
-
-table a.buton {
-    display: inline-block
 }
 
 /* ============= 2.1.2 Buton Efektleri */
@@ -2760,12 +2777,11 @@ a.buton.efekt6:hover:before {
 /* ============= 2.2 Etiket */
 
 a.etiket {
-    align-items: center;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 3px;
     color: #333;
     cursor: pointer;
-    display: inline-flex;
+    display: inline-block;
     font-size: 90%;
     letter-spacing: 1px;
     line-height: 1;
@@ -2786,18 +2802,21 @@ a.etiket.buyuk {
 }
 
 a.etiket:hover {
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
     color: #000;
     text-decoration: none
 }
 
 a.etiket:active {
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .15);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
 a.etiket.pasif {
     background-color: #E6E6E6 !important;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default;
     pointer-events: none
@@ -2810,7 +2829,8 @@ a.etiket.kapat {
 }
 
 a.etiket.kapat:hover {
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
 a.etiket.kapat span.kaldir {
@@ -2833,7 +2853,7 @@ a.etiket.kapat:hover span.kaldir {
 a.etiket .detay {
     background: rgba(0, 0, 0, .1);
     border-radius: 0 3px 3px 0;
-    display: inline-flex;
+    display: inline-block;
     opacity: .8;
     padding: .5rem;
     margin: -.5rem -.5rem -.5rem .5rem
@@ -2879,7 +2899,8 @@ input.tr-anahtar+label {
 input.tr-anahtar+label:before {
     background: rgba(0, 0, 0, .1);
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     content: "";
     cursor: pointer;
     height: 20px;
@@ -2893,7 +2914,8 @@ input.tr-anahtar+label:before {
 input.tr-anahtar+label:after {
     background: #FFF;
     border-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     content: "";
     cursor: pointer;
     height: 20px;
@@ -2925,13 +2947,14 @@ input[type="checkbox"].tr-checkbox:checked {
 }
 
 input[type="checkbox"].tr-checkbox {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0
 }
 
 input[type="checkbox"].tr-checkbox + label.tr-label {
     cursor: pointer;
-    display: inline-flex;
+    display: inline-block;
     line-height: 25px;
     padding: 0 1.5rem;
     position: relative
@@ -2997,31 +3020,13 @@ input[type="file"].tr-dosya::-webkit-file-upload-button {
 }
 
 input[type="file"].tr-dosya::before {
-    background-color: #03968A;
-    border: none;
-    border-radius: 3px;
     bottom: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    color: #FFF;
     content: "Seç";
-    display: inline-flex;
-    font-family: "Roboto";
-    font-weight: normal;
-    letter-spacing: 1.5px;
-    line-height: 3;
-    outline: 0;
-    overflow: hidden;
-    padding: 0 1.5rem !important;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
-    -webkit-transition: .3s ease-out;
-    transition: .3s ease-out
 }
 
 input[type="file"].tr-dosya:hover::before {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
     color: #FFF;
     text-decoration: none
 }
@@ -3031,7 +3036,8 @@ input[type="file"].tr-dosya:active {
 }
 
 input[type="file"].tr-dosya:active::before {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
 
@@ -3041,27 +3047,22 @@ input[type="text"].tr-input,
 input[type="password"].tr-input,
 input[type="search"].tr-search,
 input[type="date"].tr-date {
-    align-items: center;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #eee;
-    box-sizing: content-box;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    display: inline-block;
     font-family: "Roboto";
     font-size: 1rem;
-    height: 32px;
-    justify-content: flex-start;
     letter-spacing: .5px;
-    line-height: 16px;
-    margin-bottom: 15px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
     outline: none;
     position: relative;
     -webkit-transition: .3s;
-    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
     transition: .3s;
     vertical-align: top;
     width: 100%
@@ -3089,35 +3090,36 @@ input[type="text"].tr-input + label.tr-label,
 input[type="password"].tr-input + label.tr-label {
     color: #03968A;
     cursor: auto;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    display: inline-block;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1rem;
     margin: 0;
     pointer-events: none;
     position: relative;
     text-align: left !important;
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
     -webkit-transition: .3s;
     transition: .3s;
-    user-select: none
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none
 }
 
 input[type="text"].tr-input + label.tr-label.dolu,
 input[type="password"].tr-input + label.tr-label.dolu {
     color: #057970;
-    -webkit-transform: translateY(-50px) scale(.75) !important;
-    transform: translateY(-50px) scale(.75) !important
+    -webkit-transform: translateY(-55px) scale(.75) !important;
+    transform: translateY(-55px) scale(.75) !important
 }
 
 nav.mobil input[type="search"].tr-search {
     color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto 25px auto;
     width: 80%
@@ -3144,7 +3146,8 @@ input[type="date"].tr-date + label.tr-label {
 /* ============= 2.3.5 Radio Buton */
 
 input[type="radio"].tr-radio {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0
 }
 
@@ -3156,7 +3159,7 @@ input[type="radio"].tr-radio:not(:checked), input[type="radio"].tr-radio:checked
 
 input[type="radio"].tr-radio + label.tr-label {
     cursor: pointer;
-    display: inline-flex;
+    display: inline-block;
     line-height: 25px;
     padding: 0 1.5rem;
     position: relative;
@@ -3221,7 +3224,7 @@ select {
     background-color: #FFF;
     bottom: 0;
     left: 0;
-    padding: .25rem 1rem;
+    padding: .3rem 1rem;
     position: relative;
     right: 0;
     top: 0
@@ -3232,7 +3235,7 @@ select {
     border: 5px solid transparent;
     border-color: #000 transparent transparent transparent;
     position: absolute;
-    top: 15px;
+    top: 17px;
     right: 15px
 }
 
@@ -3254,7 +3257,8 @@ select {
 }
 
 .tr-select li {
-    padding: .25rem 1rem;
+    padding: .3rem 1rem;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -3268,16 +3272,12 @@ textarea.tr-textarea {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #EEE;
-    box-sizing: content-box;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    display: inline-block;
     font-family: "Roboto";
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: .5px;
-    line-height: 20px;
     margin: 20px 0 5px 0;
     min-height: 100px;
     outline: none;
@@ -3301,14 +3301,13 @@ textarea[disabled].tr-textarea {
 textarea.tr-textarea + label.tr-label {
     color: #03968A;
     cursor: auto;
-    display: block;
+    display: inline-block;
     font-weight: 400;
-    line-height: 16px;
     margin: 0;
     pointer-events: none;
     position: relative;
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-115px);
+    transform: translateY(-115px);
     text-align: left !important;
     -webkit-transform-origin: 0 50%;
     transform-origin: 0 50%;
@@ -3321,8 +3320,8 @@ textarea.tr-textarea + label.tr-label {
 }
 
 textarea.tr-textarea + label.tr-label.dolu {
-    -webkit-transform: translateY(-130px) scale(.75) !important;
-    transform: translateY(-130px) scale(.75) !important
+    -webkit-transform: translateY(-140px) scale(.75) !important;
+    transform: translateY(-140px) scale(.75) !important
 }
 
 
@@ -3332,8 +3331,13 @@ footer.tr-footer {
     background-color: #FFF;
     border-top: 1px solid rgba(0, 0, 0, .15);
     color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 3rem 0 2rem 0;
     width: 100%
 }
@@ -3356,15 +3360,17 @@ footer.tr-footer .tr-footer-detay {
 .tr-kutu {
     background-color: #FFF;
     border-radius: 3px;
-    box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
+            box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
     min-height: 1px;
     margin-bottom: 1rem;
     padding: 1rem
 }
 
 .tr-kart {
-    border-radius: 25px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,.15);
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.15);
+            box-shadow: 0px 5px 15px rgba(0,0,0,.15);
     margin-bottom: 2rem;
     overflow: hidden
 }
@@ -3375,8 +3381,10 @@ footer.tr-footer .tr-footer-detay {
 
 .tr-kart .kart-resim img {
     border-radius: 100%;
-    box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+            box-shadow: 0px 5px 5px rgba(0,0,0,.1);
     margin: 3rem 0;
+    -webkit-transition: .3s;
     transition: .3s;
     width: 40%
 }
@@ -3392,8 +3400,7 @@ nav.tr-koleksiyon {
     background-color: #FFF;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
-    display: flex;
-    flex-direction: column;
+    display: block;
     position: relative
 }
 
@@ -3408,6 +3415,7 @@ nav.tr-koleksiyon .baslik {
 nav.tr-koleksiyon a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .7);
+    display: block;
     padding: .5rem 1rem;
     -webkit-transition: .3s;
     transition: .3s
@@ -3418,13 +3426,15 @@ nav.tr-koleksiyon a:last-child {
 }
 
 nav.tr-koleksiyon a:hover {
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
     color: #000;
     text-decoration: none
 }
 
 nav.tr-koleksiyon a:active {
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
 }
 
 nav.tr-koleksiyon.renkli a:nth-of-type(odd) {
@@ -3434,12 +3444,14 @@ nav.tr-koleksiyon.renkli a:nth-of-type(odd) {
 nav.tr-koleksiyon.saydam {
     background-color: transparent;
     border: 0;
-    box-shadow: 0 0 0 0 transparent
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent
 }
 
 nav.tr-koleksiyon.saydam a:hover {
     background-color: transparent;
-    box-shadow: 0 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
     text-decoration: underline
 }
 
@@ -3452,8 +3464,12 @@ nav.tr-koleksiyon.saydam a {
 /* ============= 2.7 Menu */
 
 nav.menu {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #03968A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: auto;
     white-space: nowrap;
@@ -3465,8 +3481,12 @@ nav.menu::-webkit-scrollbar {
 }
 
 nav.menu a:not(.buton):not(.etiket), nav.mobil a:not(.buton):not(.etiket) {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #FFF;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -3474,6 +3494,7 @@ nav.menu a:not(.buton):not(.etiket), nav.mobil a:not(.buton):not(.etiket) {
     opacity: .7;
     padding: .9rem 0;
     position: relative;
+    -webkit-transition: .3s;
     transition: .3s
 }
 
@@ -3507,7 +3528,10 @@ nav.menu li ul {
     border: 1px solid rgba(0,0,0,.1);
     border-radius: 0 0 3px 3px;
     display: none;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: .3rem .6rem .3rem .3rem;
     position: absolute
 }
@@ -3552,7 +3576,8 @@ nav.menu.saydam a:hover {
 
 nav.mobil {
     background-color: #03968A;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     height: 100%;
     left: -250px;
     line-height: 40px;
@@ -3637,19 +3662,22 @@ nav.mobil.sag {
 
 .menuac {
     border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     cursor: pointer;
     height: 40px;
     left: 60px;
     position: fixed;
     top: 40px;
+    -webkit-transition: .3s;
     transition: .3s;
     width: 40px;
     z-index: 997
 }
 
 .menuac:hover  {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
 }
 
 .menuac.sag {
@@ -3661,7 +3689,8 @@ nav.mobil.sag {
 
 .tr-not {
     background-color: #03968A;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     border-radius: 3px;
     color: #FFF;
     margin-bottom: 1rem;
@@ -3676,7 +3705,8 @@ nav.mobil.sag {
 .tr-pano {
     background-color: #03968A;
     border-radius: 3px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+            box-shadow: 0 1px 6px rgba(0,0,0,.15);
     margin-bottom: 1rem
 }
 
@@ -3698,7 +3728,7 @@ nav.mobil.sag {
 
 progress.tr-progress {
     border-radius: 3px;
-    height: 15px;
+    height: 1rem;
     margin: 5px 0;
     overflow: hidden;
     position: relative;
@@ -3741,7 +3771,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: rgba(255, 255, 255, .6);
-    display: flex;
+    display: block;
     height: 50px;
     letter-spacing: .5px;
     line-height: 50px;
@@ -3812,8 +3842,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-numara {
     border-radius: 5px;
     cursor: default;
-    display: flex;
-    margin: 10px 0;
+    display: block;
+    padding: 1rem 0;
 }
 
 .tr-numara a {
@@ -3823,14 +3853,9 @@ progress.tr-progress.yesil::-webkit-progress-value {
     color: #000;
     cursor: pointer;
     font-size: 13px;
-    margin-left: .4rem;
     padding: .5rem .8rem;
     -webkit-transition: .15s;
     transition: .15s
-}
-
-.tr-numara a:first-child {
-    margin-left: 0
 }
 
 .tr-numara a:hover {
@@ -4605,9 +4630,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 3.1 Akordiyon Menu */
 
 .tr-akordiyon {
-    display: flex;
+    display: block;
     margin-bottom: 1rem;
-    flex-direction: column;
     width: 100%
 }
 
@@ -4749,7 +4773,9 @@ progress.tr-progress.yesil::-webkit-progress-value {
     position: fixed;
     text-align: left;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%) scale(0.7);
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
+            transform: translateX(-50%) translateY(-50%) scale(0.7);
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     visibility: hidden;
     width: 75%;
@@ -4758,7 +4784,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-modal.goster {
     opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1);
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+            transform: translateX(-50%) translateY(-50%) scale(1);
     visibility: visible
 }
 
@@ -4800,35 +4827,43 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-modal.efekt2 {
-    transform: translateX(-50%) translateY(-50%) scale(1.4)
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.4);
+            transform: translateX(-50%) translateY(-50%) scale(1.4)
 }
 
 .tr-modal.efekt2.goster {
-    transform: translateX(-50%) translateY(-50%) scale(1)
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+            transform: translateX(-50%) translateY(-50%) scale(1)
 }
 
 .tr-modal.efekt3 {
-    transform: translateX(-50%) translateY(-20%)
+    -webkit-transform: translateX(-50%) translateY(-20%);
+            transform: translateX(-50%) translateY(-20%)
 }
 
 .tr-modal.efekt3.goster {
-    transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%)
 }
 
 .tr-modal.efekt4 {
-    transform: translateX(-20%) translateY(-50%)
+    -webkit-transform: translateX(-20%) translateY(-50%);
+            transform: translateX(-20%) translateY(-50%)
 }
 
 .tr-modal.efekt4.goster {
-    transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%)
 }
 
 .tr-modal.efekt5 {
-    transform: translateX(-70%) translateY(-50%)
+    -webkit-transform: translateX(-70%) translateY(-50%);
+            transform: translateX(-70%) translateY(-50%)
 }
 
 .tr-modal.efekt5.goster {
-    transform: translateX(-50%) translateY(-50%)
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%)
 }
 
 /* ============= 3.3 Tab Menu */
@@ -4838,30 +4873,20 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-tab>nav {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: table;
     width: 100%
 }
 
 .tr-tab>nav a {
-    align-items: flex-end;
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .1);
     cursor: pointer;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    display: table-cell;
     font-weight: bold;
     letter-spacing: 1px;
     padding: .7rem 1rem;
     text-align: center;
+    -webkit-transition: border-bottom .25s;
     transition: border-bottom .25s
 }
 
@@ -4869,6 +4894,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: rgba(0, 0, 0, .02);
     border-bottom: 0;
     color: rgba(0, 0, 0, .25);
+    -webkit-transition: none;
     transition: none
 }
 
@@ -4876,6 +4902,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border: 1px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .25);
+    -webkit-transition: none;
     transition: none
 }
 
