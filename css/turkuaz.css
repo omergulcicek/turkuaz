@@ -2576,7 +2576,7 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, in
     line-height: 1.75;
     outline: 0;
     overflow: hidden;
-    padding: .5rem 1.5rem !important;
+    padding: .5rem 1.2rem !important;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -2590,12 +2590,12 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, in
 }
 
 a.buton.kucuk, input[type="submit"].buton.kucuk, input[type="reset"].buton.kucuk, .butonlar.kucuk a.buton {
-    padding: .2rem 1.5rem !important
+    padding: .2rem 1rem !important
 }
 
 a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk, .butonlar.buyuk a.buton {
     font-size: 1rem;
-    padding: 1rem 1.5rem !important
+    padding: 1rem 1.4rem !important
 }
 
 a.buton:hover, button.buton:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
@@ -2623,14 +2623,14 @@ a.buton.saydam, button.buton.saydam, input[type="submit"].buton.saydam, input[ty
     border: 1px solid rgba(0, 0, 0, .1);
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    color: #000
+    opacity: .5
 }
 
 a.buton.saydam:hover, button.buton.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover, .butonlar.saydam a.buton:hover {
     -webkit-box-shadow: inset 0 0 0 0 transparent !important;
             box-shadow: inset 0 0 0 0 transparent !important;
     border: 1px solid rgba(0, 0, 0, .3);
-    color: #000
+    opacity: 1
 }
 
 a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif, .butonlar.pasif, .butonlar.pasif a.buton {
@@ -2677,12 +2677,12 @@ a.buton.beyaz, button.buton.beyaz {
     color: #000
 }
 
-a.buton i.fa, button i.fa {
+a.buton i, button i {
     margin-right: .5rem;
     opacity: .85
 }
 
-a.buton.yuvarlak i.fa, button.yuvarlak i.fa, a.buton.kare i.fa, button.kare i.fa {
+a.buton.yuvarlak i, button.yuvarlak i, a.buton.kare i, button.kare i {
     margin-right: -2px
 }
 
@@ -4791,6 +4791,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-modal::-webkit-scrollbar {
     background-color: rgba(0,0,0,.05);
+    display: block;
     width: 5px
 }
 
@@ -4817,8 +4818,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-modal .modal-icerik > div {
-    font-size: 1rem;
-    padding: 30px 40px
+    padding: 5%
 }
 
 .tr-modal .modal-icerik a.buton.kapat {
@@ -4890,7 +4890,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     transition: border-bottom .25s
 }
 
-.tr-tab.tema2 nav a {
+.tr-tab.tema2>nav a {
     background-color: rgba(0, 0, 0, .02);
     border-bottom: 0;
     color: rgba(0, 0, 0, .25);
@@ -4898,7 +4898,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     transition: none
 }
 
-.tr-tab.tema3 nav a {
+.tr-tab.tema3>nav a {
     border: 1px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .25);
@@ -4906,28 +4906,31 @@ progress.tr-progress.yesil::-webkit-progress-value {
     transition: none
 }
 
-.tr-tab nav a.aktif {
+.tr-tab>nav a.aktif {
     background-color: #FFF;
     border-bottom: 2px solid #000;
     color: #000
 }
 
-.tr-tab.tema2 nav a.aktif {
+.tr-tab.tema2>nav a.aktif {
     background-color: rgba(0, 0, 0, .04);
     border-bottom: 0
 }
 
-.tr-tab.tema3 nav a.aktif {
+.tr-tab.tema3>nav a.aktif {
     border: 1px solid rgba(0, 0, 0, .1);
     border-bottom: 1px solid rgba(0, 0, 0, 0)
 }
 
-.tr-tab nav a:hover {
+.tr-tab>nav a:hover {
     text-decoration: none
 }
 
-.tr-tab.tema3 .tab-icerik {
+.tr-tab .tab-icerik {
+    padding-top: 1rem
+}
+
+.tr-tab.tema3 .tab-icerikler>.tab-icerik {
     border: 1px solid rgba(0, 0, 0, .1);
-    border-top: 0;
-    padding-top: 1px
+    border-top: 0
 }
