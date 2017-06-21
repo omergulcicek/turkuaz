@@ -66,11 +66,11 @@ $(".tr-textarea").on("keydown focusout", function(e) {
     var line = t.val().split("\n").length * 20;
     if (line > 100) {
         t.css("height", line);
-        l.attr('style', 'transform: translateY(-' + (line+30) + 'px) scale(.75) !important');
+        l.attr('style', 'transform: translateY(-' + (line+40) + 'px) scale(.75) !important');
     } else {
         t.css("height", 100);
         if (l.hasClass("dolu")) {
-            l.attr('style', 'transform: translateY(-130px) scale(.75) !important');
+            l.attr('style', 'transform: translateY(-140px) scale(.75) !important');
         }
         else {
             l.attr('style', '');
@@ -113,25 +113,17 @@ $("body").on("click", ".tr-karart.menu", function() {
         });
     }
 });
-(function($) {
-    $.fn.tab = function(ayarlar) {
-        var obj = $.extend({
-            "aktifSinifi": "aktif",
-            "icerikSinifi": "tab-icerik",
-            "aktifSekme": 1,
-            "tema": ""
-        }, ayarlar);
-        return this.each(function() {
-            $(this).addClass("tr-tab " + obj.tema).find("nav a").eq(obj.aktifSekme - 1).addClass(obj.aktifSinifi).parents(".tr-tab").find("." + obj.icerikSinifi).addClass("tab-icerik gizle").eq(obj.aktifSekme - 1).removeClass("gizle");
-            $(this).find("nav a").click(function() {
-                var index = $(this).index();
-                $(this).addClass(obj.aktifSinifi).siblings().removeClass(obj.aktifSinifi).parents(".tr-tab").find("." + obj.icerikSinifi).addClass("gizle").eq(index).removeClass("gizle");
-            });
-        });
-    };
-})(jQuery);
-$(".tr-tab").tab();
-
+$(".tr-tab").each(function(){
+    $(this).find(".tab-icerik:not(:first-child)").addClass("gizle")
+            .end()
+            .find("nav>a:first").addClass("aktif");
+});
+$(".tr-tab").on("click", "nav>a", function(e) {
+    var index = $(this).index();
+    $(this).addClass("aktif").siblings().removeClass("aktif")
+            .end().closest(".tr-tab")
+            .find(".tab-icerikler").children().filter(".tab-icerik").eq(index).removeClass("gizle").siblings().addClass("gizle");
+});
 
 $(".tr-filtre [data-source='hepsi'], .filtre-icerik").addClass("aktif");
 $(".tr-filtre").on("click", "nav a", function() {
