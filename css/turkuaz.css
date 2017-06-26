@@ -86,25 +86,7 @@ body {
     min-height: 100vh
 }
 
-@media only screen and (min-width: 360px) {
-    body {
-        font-size: 14.5px
-    }
-}
-
-@media only screen and (min-width: 720px) {
-    body {
-        font-size: 15px
-    }
-}
-
 @media only screen and (min-width: 1024px) {
-    body {
-        font-size: 15.5px
-    }
-}
-
-@media only screen and (min-width: 1440px) {
     body {
         font-size: 16px
     }
@@ -2564,7 +2546,6 @@ sup {
 a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, input[type="file"].tr-dosya::before {
     align-items: center;
     background-color: #03968A;
-    border: 1px solid transparent;
     border-radius: 3px;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
             box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
@@ -2576,16 +2557,16 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, in
     font-weight: normal;
     justify-content: center;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 2;
     margin-bottom: .3em;
     outline: 0;
     overflow: hidden;
-    padding: .375em .75em;
+    padding: .25em .75em;
     position: relative;
     text-align: center;
     text-decoration: none;
-    -webkit-transition: box-shadow .3s ease-out;
-    transition: box-shadow .3s ease-out;
+    -webkit-transition: box-shadow .1s ease-out;
+    transition: box-shadow .1s ease-out;
     user-select: none;
     vertical-align: top;
     -webkit-user-select: none;
@@ -2610,29 +2591,24 @@ a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk
 a.buton:hover, button.buton:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
             box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
-    color: #FFF;
     text-decoration: none
 }
 
 a.buton:active, button.buton:active, input[type="submit"].buton:active, input[type="reset"].buton:active {
-    border-color: rgba(0, 0, 0, .15);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15);
             box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
 }
 
 a.buton.saydam, button.buton.saydam, input[type="submit"].buton.saydam, input[type="reset"].buton.saydam, .butonlar.saydam a.buton {
-    background-color: transparent ;
-    border: 1px solid rgba(0, 0, 0, .1);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    color: rgba(0, 0, 0, .7)
+    background-color: transparent;
+    -webkit-box-shadow: inset 0px 0px 1px rgba(0,0,0,.5) !important;
+            box-shadow: inset 0px 0px 1px rgba(0,0,0,.5) !important;
+    color: #000
 }
 
 a.buton.saydam:hover, button.buton.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover, .butonlar.saydam a.buton:hover {
-    -webkit-box-shadow: inset 0 0 0 0 transparent;
-            box-shadow: inset 0 0 0 0 transparent;
-    border: 1px solid rgba(0, 0, 0, .3);
-    color: #000
+    -webkit-box-shadow: inset 0px 0px 2px rgba(0,0,0,1) !important;
+            box-shadow: inset 0px 0px 2px rgba(0,0,0,1) !important
 }
 
 a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif, .butonlar.pasif, .butonlar.pasif a.buton {
@@ -2647,13 +2623,11 @@ a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type=
 a.buton.pasif:hover, button.buton.pasif:hover, input[type="submit"].buton.pasif:hover, input[type="reset"].buton.pasif:hover, .butonlar.pasif a.buton:hover {
     background-color: #E6E6E6;
     -webkit-box-shadow: inset 0 0 0 0 transparent;
-            box-shadow: inset 0 0 0 0 transparent;
-    color: rgba(0, 0, 0, .4);
-    cursor: default
+            box-shadow: inset 0 0 0 0 transparent
 }
 
 a.buton.yuvarlak, button.buton.yuvarlak, a.buton.kare, button.buton.kare, input[type="submit"].buton.kare, input[type="reset"].buton.kare, .butonlar.kare a.buton {
-    height: 2.35em;
+    height: 40px;
     line-height: 2.35em;
     padding: 0px;
     width: 2.35em
@@ -2769,35 +2743,22 @@ a.buton.efekt6:hover:before {
 a.etiket {
     align-items: center;
     background-color: rgba(0, 0, 0, .1);
-    border: 1px solid transparent;
     border-radius: 3px;
     color: #333;
     cursor: pointer;
     display: inline-flex;
-    font-size: 1em;
+    font-size: 14px;
     justify-content: center;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1;
     margin: 0 1px 5px 0;
     outline: none;
-    padding: .375em;
+    padding: .5em;
     -webkit-transition: .3s;
     transition: .3s;
     user-select: none;
     vertical-align: top;
     white-space: nowrap
-}
-
-a.etiket.kucuk {
-    font-size: .75em
-}
-
-a.etiket.orta {
-    font-size: 1.25em
-}
-
-a.etiket.buyuk {
-    font-size: 1.5em
 }
 
 a.etiket:hover {
@@ -3171,7 +3132,7 @@ input[type="radio"].tr-radio:checked + label.tr-label:before {
 }
 
 input[type="radio"].tr-radio + label.tr-label:before, input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
-    border: 2px solid #038075;
+    border: 2px solid rgba(0, 0, 0, .75);
     border-radius: 50%;
     content: "";
     height: 18px;
@@ -3398,7 +3359,7 @@ nav.tr-koleksiyon .baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    padding: 1em;
+    padding: .75em;
     margin: 0
 }
 
@@ -3710,7 +3671,7 @@ nav.mobil.sag {
 
 .tr-pano .pano-icerik {
     background-color: #FFF;
-    padding: 1em
+    padding: .5em 1em
 }
 
 
@@ -3761,27 +3722,26 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: rgba(255, 255, 255, .6);
-    display: block;
-    height: 50px;
+    display: flex;
     letter-spacing: .5px;
-    line-height: 50px;
+    line-height: 2;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0 1.5em;
+    padding: .25em 1rem;
     white-space: nowrap;
     width: 100%
 }
 
 .tr-konum.kucuk {
-    font-size: .8em;
-    height: 30px;
-    line-height: 30px
+    font-size: .75em
+}
+
+.tr-konum.orta {
+    font-size: 1.25em;
 }
 
 .tr-konum.buyuk {
     font-size: 1.5em;
-    height: 70px;
-    line-height: 70px
 }
 
 .tr-konum a {
@@ -3830,15 +3790,14 @@ progress.tr-progress.yesil::-webkit-progress-value {
 /* ============= 2.12 Sayfa Numaralandirma */
 
 .tr-numara {
-    border-radius: 5px;
     cursor: default;
     margin: 1em 0;
 }
 
 .tr-numara a {
     background-color: #FFF;
-    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
+    box-shadow: inset 0px 0px 1px rgba(0,0,0,.5);
     color: #000;
     cursor: pointer;
     display: inline-flex;
@@ -3846,12 +3805,12 @@ progress.tr-progress.yesil::-webkit-progress-value {
     line-height: 1.5;
     padding: 6px 13.5px;
     -webkit-transition: .15s;
-    transition: .15s;
+    transition: .1s;
     user-select: none
 }
 
 .tr-numara a:hover {
-    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,1);
     text-decoration: none
 }
 
