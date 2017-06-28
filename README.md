@@ -16,6 +16,12 @@
     ·
     <a href="http://turkuazcss.com/temalar">Ücretsiz Tema</a>
   </p>
+  
+<p align="center">
+    <img src="http://turkuazcss.com/img/versiyon.png"/>
+    <img src="http://turkuazcss.com/img/lisans.png"/>
+    <a href="http://omergulcicek.com"><img src="http://turkuazcss.com/img/kurucu.png"/></a>
+</p>
 
 Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn edilmiştir. Türkçe isimlendirme ve çeşitli seçenekleri ile kolayca kod yazmanızı sağlar. Mobil öncelikli olarak, 5 farklı çözünürlükte grid sistemi vardır. 150'den fazla renk seçeneği ve örneklendirilmiş anlatımı ile kısa sürede şık siteler tasarlayabilirsiniz. Hazır şablon olarak paylaşılan siteleri önizleme yapabilir ve ücretsiz olarak kullanabilirsiniz.
 
