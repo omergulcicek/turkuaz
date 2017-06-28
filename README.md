@@ -18,8 +18,8 @@
   </p>
   
 <p align="center">
-    <img src="http://turkuazcss.com/img/g-versiyon.png"/>
-    <img src="http://turkuazcss.com/img/g-lisans.png"/>
+    <a href="http://turkuazcss.com/versiyonlar"><img src="http://turkuazcss.com/img/g-versiyon.png"/></a>
+    <a href="https://github.com/turkuazcss/Framework/blob/master/LICENSE"><img src="http://turkuazcss.com/img/g-lisans.png"/></a>
     <a href="http://omergulcicek.com"><img src="http://turkuazcss.com/img/g-kurucu.png"/></a>
 </p>
 
