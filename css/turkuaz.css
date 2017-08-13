@@ -209,9 +209,12 @@ input, button, select, textarea, pre, code {
 }
 
 pre {
-    background-color: #f5f2f0;
-    border: 1px solid rgba(0, 0, 0, .12);
+    background-color: #3E2723;
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
+    color: #EEEEEE;
+    font-size: .9em;
+    padding: 1em;
     overflow-y: auto;
     width: 100%
 }
@@ -2869,65 +2872,11 @@ a.etiket.beyaz {
 
 form.tr-form {
     background-color: #FFF;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 1rem
 }
 
-
-/* ============= 2.3.1 Anahtar */
-
-input.tr-anahtar:not(:checked), .tr-anahtar:checked {
-    left: -9999px;
-    opacity: 0;
-    position: absolute
-}
-
-input.tr-anahtar+label {
-    margin-left: 50px
-}
-
-input.tr-anahtar+label:before {
-    background: rgba(0, 0, 0, .1);
-    border-radius: 10px;
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    content: "";
-    cursor: pointer;
-    height: 20px;
-    margin-left: -47px;
-    margin-top: 4px;
-    position: absolute;
-    width: 40px;
-    z-index: 1
-}
-
-input.tr-anahtar+label:after {
-    background: #FFF;
-    border-radius: 100%;
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-    content: "";
-    cursor: pointer;
-    height: 20px;
-    margin-left: -47px;
-    margin-top: 4px;
-    position: absolute;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    width: 20px;
-    z-index: 2
-}
-
-input:checked.tr-anahtar+label:before {
-    background-color: #03968A
-}
-
-input:checked.tr-anahtar+label:after {
-    margin-left: -27px
-}
-
-
-/* ============= 2.3.2 Checkbox */
+/* ============= 2.3.1 Checkbox */
 
 input[type="checkbox"].tr-checkbox:not(:checked),
 input[type="checkbox"].tr-checkbox:checked {
@@ -2977,7 +2926,6 @@ input[type="checkbox"].tr-checkbox:checked + label.tr-label:before {
 input[type="checkbox"].tr-checkbox + label.tr-label:before,
 input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
     border: 2px solid rgba(0, 0, 0, .75);
-    border-radius: 2px;
     content: "";
     height: 18px;
     margin-top: 3px;
@@ -2997,7 +2945,7 @@ input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
 }
 
 
-/* ============= 2.3.3 Dosya Secici */
+/* ============= 2.3.2 Dosya Secici */
 
 input[type="file"].tr-dosya {
     border-bottom: 2px solid #eee;
@@ -3014,7 +2962,8 @@ input[type="file"].tr-dosya::-webkit-file-upload-button {
 }
 
 input[type="file"].tr-dosya::before {
-    content: "Seç";
+    bottom: 10px;
+    content: "Seç"
 }
 
 input[type="file"].tr-dosya:hover::before {
@@ -3034,7 +2983,7 @@ input[type="file"].tr-dosya:active::before {
 }
 
 
-/* ============= 2.3.4 Input */
+/* ============= 2.3.3 Input */
 
 input[type="text"].tr-input,
 input[type="password"].tr-input,
@@ -3136,7 +3085,7 @@ input[type="date"].tr-date + label.tr-label {
     transform: translateY(-55px) scale(.75) !important
 }
 
-/* ============= 2.3.5 Radio Buton */
+/* ============= 2.3.4 Radio Buton */
 
 input[type="radio"].tr-radio {
     -webkit-box-sizing: border-box;
@@ -3200,7 +3149,7 @@ input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
 }
 
 
-/* ============= 2.3.6 Select */
+/* ============= 2.3.5 Select */
 
 select {
     display:none
@@ -3214,7 +3163,7 @@ select {
     font-family: "Roboto";
     font-size: 1rem;
     position: relative;
-    width: 100
+    width: 100%
 }
 
 .tr-select-secili {
@@ -3250,7 +3199,7 @@ select {
     position: absolute;
     right: 0;
     top: 100%;
-    z-index: 999
+    z-index: 2
 }
 
 .tr-select li {
@@ -3263,7 +3212,7 @@ select {
     background-color: rgba(0,0,0,.05)
 }
 
-/* ============= 2.3.7 Textarea */
+/* ============= 2.3.6 Textarea */
 
 textarea.tr-textarea {
     background-color: transparent;
@@ -3461,6 +3410,10 @@ nav.tr-koleksiyon.saydam a {
 
 /* ============= 2.7 Menu */
 
+header {
+    z-index: 996
+}
+
 nav.menu {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3487,10 +3440,10 @@ nav.menu a:not(.buton):not(.etiket), nav.mobil a:not(.buton):not(.etiket) {
     display: -ms-inline-flexbox;
     display: inline-flex;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1;
     margin: 0 .5rem;
     opacity: .7;
-    padding: .9rem 0;
+    padding: 1rem 0;
     position: relative;
     -webkit-transition: .3s;
     transition: .3s
@@ -3521,6 +3474,10 @@ nav.menu a i {
     margin-right: .3rem
 }
 
+nav.menu ul {
+    display: inherit
+}
+
 nav.menu li ul {
     background-color: #FFF;
     border: 1px solid rgba(0,0,0,.1);
@@ -3530,12 +3487,13 @@ nav.menu li ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: .3rem .6rem .3rem .3rem;
-    position: absolute
+    padding: 0 .6rem 0 .3rem;
+    position: absolute;
+    z-index: 2
 }
 
 nav.menu li:hover ul {
-    display: inherit
+    display: flex
 }
 
 nav.menu li li {
@@ -3543,8 +3501,7 @@ nav.menu li li {
 }
 
 nav.menu li li a {
-    color: #000;
-    line-height: 3
+    color: #000 !important
 }
 
 nav.menu li li a:hover {
@@ -3608,7 +3565,6 @@ nav.mobil .baslik a {
 }
 
 nav.mobil a {
-    border-left: 3px solid transparent;
     color: #FFF;
     display: block;
     margin: 0 .25rem;
@@ -3630,7 +3586,6 @@ nav.mobil:hover a  {
 }
 
 nav.mobil ul ul a:hover {
-    border-left-color: #FFF;
     opacity: 1
 }
 
