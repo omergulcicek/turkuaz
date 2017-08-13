@@ -139,9 +139,9 @@ $(".tr-akordiyon > .baslik").on("click", function() {
     var t = $(this);
     var i = t.closest(".tr-akordiyon").children(".baslik").index(t);
     if (t.hasClass("aktif")) {
-        t.removeClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").slideUp(100);
+        t.removeClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").slideUp(250);
     } else {
-        t.siblings().removeClass("aktif").end().addClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").eq(i).slideDown(100).siblings(".akordiyon-icerik").slideUp(100);
+        t.siblings().removeClass("aktif").end().addClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").eq(i).slideDown(250).siblings(".akordiyon-icerik").slideUp(250);
     }
 })
 $("body").on("click", "a.modal", function(e) {
@@ -152,10 +152,13 @@ $("body").on("click", "a.modal", function(e) {
     modal.addClass("goster").scrollTop(0);
     if (!$(".tr-karart").length) {
         $("body").append(overlay);
+        overlay.animate({opacity: ".5"}, 250);
     }
 });
 $("body").on("click", "a.kapat,.tr-karart", function(e) {
     e.preventDefault();
     $(".tr-modal").removeClass("goster");
-    $(".tr-karart").remove();
+    $.when($(".tr-karart").fadeOut()).done(function() {
+        $(".tr-karart").remove();
+    });
 });

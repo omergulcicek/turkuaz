@@ -21,13 +21,12 @@
 *        2.1.2    Buton Efektleri
 *      2.2     Etiket
 *      2.3     Form Elemanlari
-*        2.3.1    Anahtar
-*        2.3.2    Checkbox
-*        2.3.3    Dosya Secici
-*        2.3.4    Input
-*        2.3.5    Radio Buton
-*        2.3.6    Select
-*        2.3.7    Textarea
+*        2.3.1    Checkbox
+*        2.3.2    Dosya Secici
+*        2.3.3    Input
+*        2.3.4    Radio Buton
+*        2.3.5    Select
+*        2.3.6    Textarea
 *      2.4     Footer
 *      2.5     Kart
 *      2.6     Koleksiyon
@@ -103,54 +102,54 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 .25rem 0
+    margin: 0 0 .25em 0
 }
 
 h1 {
-    font-size: 2rem
+    font-size: 2em
 }
 
 h2 {
-    font-size: 1.8rem
+    font-size: 1.8em
 }
 
 h3 {
-    font-size: 1.6rem
+    font-size: 1.6em
 }
 
 h4 {
-    font-size: 1.4rem
+    font-size: 1.4em
 }
 
 h5 {
-    font-size: 1.2rem
+    font-size: 1.2em
 }
 
 h6 {
-    font-size: 1rem
+    font-size: 1em
 }
 
 @media only screen and (min-width: 1000px) {
     h1, h2, h3, h4, h5, h6 {
-        margin-bottom: .5rem
+        margin-bottom: .5em
     }
     h1 {
-        font-size: 4rem
+        font-size: 4em
     }
     h2 {
-        font-size: 3rem
+        font-size: 3em
     }
     h3 {
-        font-size: 2.5rem
+        font-size: 2.5em
     }
     h4 {
-        font-size: 2rem
+        font-size: 2em
     }
     h5 {
-        font-size: 1.5rem
+        font-size: 1.5em
     }
     h6 {
-        font-size: 1rem
+        font-size: 1em
     }
 }
 
@@ -159,6 +158,7 @@ a {
     color: #2196F3;
     text-decoration: none;
     -webkit-transition: .1s;
+    -o-transition: .1s;
     transition: .1s
 }
 
@@ -186,8 +186,8 @@ p {
     font-weight: normal;
     letter-spacing: .5px;
     line-height: 1.75;
-    margin-bottom: .5rem;
-    margin-top: .5rem
+    margin-bottom: .5em;
+    margin-top: .5em
 }
 
 ul {
@@ -223,6 +223,14 @@ code {
     white-space: pre-wrap
 }
 
+kbd {
+    background-color: #050505;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 90%;
+    padding: .25em .4em
+}
+
 form {
     width: 100%
 }
@@ -239,11 +247,11 @@ sub, sup {
 }
 
 sub {
-    bottom: -0.25rem
+    bottom: -0.25em
 }
 
 sup {
-    top: -0.5rem
+    top: -0.5em
 }
 
 /* ============= 1.1 Grid Sistemi  */
@@ -366,7 +374,7 @@ sup {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding: 0 1rem
+    padding: 0 1em
 }
 
 /* Mobil Cihazlar */
@@ -756,7 +764,7 @@ sup {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        padding: 0 1rem
+        padding: 0 1em
     }
     .o {
         -webkit-box-flex: 1;
@@ -935,7 +943,7 @@ sup {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        padding: 0 1rem
+        padding: 0 1em
     }
     .b {
         -webkit-box-flex: 1;
@@ -1114,7 +1122,7 @@ sup {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        padding: 0 1rem
+        padding: 0 1em
     }
     .cb {
         -webkit-box-flex: 1;
@@ -1910,7 +1918,7 @@ sup {
     border-spacing: 0;
     cursor: default;
     display: block;
-    margin: 1rem 0;
+    margin: 1em 0;
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%
@@ -1923,8 +1931,13 @@ sup {
 .tr-tablo tr td,
 .tr-tablo tr th {
     border-top: 1px solid rgba(0, 0, 0, .05);
-    padding: .9rem;
+    padding: .9em;
     width: 100vw
+}
+
+.tr-tablo.kucuk tr td,
+.tr-tablo.kucuk tr th {
+    padding: .45em
 }
 
 .tr-tablo tr th {
@@ -2052,23 +2065,23 @@ sup {
 }
 
 .m1 {
-    margin: 1rem !important
+    margin: 1em !important
 }
 
 .m2 {
-    margin: 2rem !important
+    margin: 2em !important
 }
 
 .m3 {
-    margin: 3rem !important
+    margin: 3em !important
 }
 
 .m4 {
-    margin: 4rem !important
+    margin: 4em !important
 }
 
 .m5 {
-    margin: 5rem !important
+    margin: 5em !important
 }
 
 
@@ -2079,23 +2092,23 @@ sup {
 }
 
 .p1 {
-    padding: 1rem !important
+    padding: 1em !important
 }
 
 .p2 {
-    padding: 2rem !important
+    padding: 2em !important
 }
 
 .p3 {
-    padding: 3rem !important
+    padding: 3em !important
 }
 
 .p4 {
-    padding: 4rem !important
+    padding: 4em !important
 }
 
 .p5 {
-    padding: 5rem !important
+    padding: 5em !important
 }
 
 
@@ -2106,23 +2119,23 @@ sup {
 }
 
 .mt1 {
-    margin-top: 1rem !important
+    margin-top: 1em !important
 }
 
 .mt2 {
-    margin-top: 2rem !important
+    margin-top: 2em !important
 }
 
 .mt3 {
-    margin-top: 3rem !important
+    margin-top: 3em !important
 }
 
 .mt4 {
-    margin-top: 4rem !important
+    margin-top: 4em !important
 }
 
 .mt5 {
-    margin-top: 5rem !important
+    margin-top: 5em !important
 }
 
 
@@ -2133,23 +2146,23 @@ sup {
 }
 
 .mb1 {
-    margin-bottom: 1rem !important
+    margin-bottom: 1em !important
 }
 
 .mb2 {
-    margin-bottom: 2rem !important
+    margin-bottom: 2em !important
 }
 
 .mb3 {
-    margin-bottom: 3rem !important
+    margin-bottom: 3em !important
 }
 
 .mb4 {
-    margin-bottom: 4rem !important
+    margin-bottom: 4em !important
 }
 
 .mb5 {
-    margin-bottom: 5rem !important
+    margin-bottom: 5em !important
 }
 
 
@@ -2160,23 +2173,23 @@ sup {
 }
 
 .mr1 {
-    margin-right: 1rem !important
+    margin-right: 1em !important
 }
 
 .mr2 {
-    margin-right: 2rem !important
+    margin-right: 2em !important
 }
 
 .mr3 {
-    margin-right: 3rem !important
+    margin-right: 3em !important
 }
 
 .mr4 {
-    margin-right: 4rem !important
+    margin-right: 4em !important
 }
 
 .mr5 {
-    margin-right: 5rem !important
+    margin-right: 5em !important
 }
 
 
@@ -2187,23 +2200,23 @@ sup {
 }
 
 .ml1 {
-    margin-left: 1rem !important
+    margin-left: 1em !important
 }
 
 .ml2 {
-    margin-left: 2rem !important
+    margin-left: 2em !important
 }
 
 .ml3 {
-    margin-left: 3rem !important
+    margin-left: 3em !important
 }
 
 .ml4 {
-    margin-left: 4rem !important
+    margin-left: 4em !important
 }
 
 .ml5 {
-    margin-left: 5rem !important
+    margin-left: 5em !important
 }
 
 
@@ -2215,28 +2228,28 @@ sup {
 }
 
 .mx1 {
-    margin-left: 1rem !important;
-    margin-right: 1rem !important
+    margin-left: 1em !important;
+    margin-right: 1em !important
 }
 
 .mx2 {
-    margin-left: 2rem !important;
-    margin-right: 2rem !important
+    margin-left: 2em !important;
+    margin-right: 2em !important
 }
 
 .mx3 {
-    margin-left: 3rem !important;
-    margin-right: 3rem !important
+    margin-left: 3em !important;
+    margin-right: 3em !important
 }
 
 .mx4 {
-    margin-left: 4rem !important;
-    margin-right: 4rem !important
+    margin-left: 4em !important;
+    margin-right: 4em !important
 }
 
 .mx5 {
-    margin-left: 5rem !important;
-    margin-right: 5rem !important
+    margin-left: 5em !important;
+    margin-right: 5em !important
 }
 
 
@@ -2248,28 +2261,28 @@ sup {
 }
 
 .my1 {
-    margin-bottom: 1rem !important;
-    margin-top: 1rem !important
+    margin-bottom: 1em !important;
+    margin-top: 1em !important
 }
 
 .my2 {
-    margin-bottom: 2rem !important;
-    margin-top: 2rem !important
+    margin-bottom: 2em !important;
+    margin-top: 2em !important
 }
 
 .my3 {
-    margin-bottom: 3rem !important;
-    margin-top: 3rem !important
+    margin-bottom: 3em !important;
+    margin-top: 3em !important
 }
 
 .my4 {
-    margin-bottom: 4rem !important;
-    margin-top: 4rem !important
+    margin-bottom: 4em !important;
+    margin-top: 4em !important
 }
 
 .my5 {
-    margin-bottom: 5rem !important;
-    margin-top: 5rem !important
+    margin-bottom: 5em !important;
+    margin-top: 5em !important
 }
 
 
@@ -2280,23 +2293,23 @@ sup {
 }
 
 .pt1 {
-    padding-top: 1rem !important
+    padding-top: 1em !important
 }
 
 .pt2 {
-    padding-top: 2rem !important
+    padding-top: 2em !important
 }
 
 .pt3 {
-    padding-top: 3rem !important
+    padding-top: 3em !important
 }
 
 .pt4 {
-    padding-top: 4rem !important
+    padding-top: 4em !important
 }
 
 .pt5 {
-    padding-top: 5rem !important
+    padding-top: 5em !important
 }
 
 
@@ -2307,23 +2320,23 @@ sup {
 }
 
 .pb1 {
-    padding-bottom: 1rem !important
+    padding-bottom: 1em !important
 }
 
 .pb2 {
-    padding-bottom: 2rem !important
+    padding-bottom: 2em !important
 }
 
 .pb3 {
-    padding-bottom: 3rem !important
+    padding-bottom: 3em !important
 }
 
 .pb4 {
-    padding-bottom: 4rem !important
+    padding-bottom: 4em !important
 }
 
 .pb5 {
-    padding-bottom: 5rem !important
+    padding-bottom: 5em !important
 }
 
 
@@ -2334,23 +2347,23 @@ sup {
 }
 
 .pr1 {
-    padding-right: 1rem !important
+    padding-right: 1em !important
 }
 
 .pr2 {
-    padding-right: 2rem !important
+    padding-right: 2em !important
 }
 
 .pr3 {
-    padding-right: 3rem !important
+    padding-right: 3em !important
 }
 
 .pr4 {
-    padding-right: 4rem !important
+    padding-right: 4em !important
 }
 
 .pr5 {
-    padding-right: 5rem !important
+    padding-right: 5em !important
 }
 
 
@@ -2361,23 +2374,23 @@ sup {
 }
 
 .pl1 {
-    padding-left: 1rem !important
+    padding-left: 1em !important
 }
 
 .pl2 {
-    padding-left: 2rem !important
+    padding-left: 2em !important
 }
 
 .pl3 {
-    padding-left: 3rem !important
+    padding-left: 3em !important
 }
 
 .pl4 {
-    padding-left: 4rem !important
+    padding-left: 4em !important
 }
 
 .pl5 {
-    padding-left: 5rem !important
+    padding-left: 5em !important
 }
 
 
@@ -2389,28 +2402,28 @@ sup {
 }
 
 .px1 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important
+    padding-left: 1em !important;
+    padding-right: 1em !important
 }
 
 .px2 {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important
+    padding-left: 2em !important;
+    padding-right: 2em !important
 }
 
 .px3 {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important
+    padding-left: 3em !important;
+    padding-right: 3em !important
 }
 
 .px4 {
-    padding-left: 4rem !important;
-    padding-right: 4rem !important
+    padding-left: 4em !important;
+    padding-right: 4em !important
 }
 
 .px5 {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important
+    padding-left: 5em !important;
+    padding-right: 5em !important
 }
 
 
@@ -2422,28 +2435,28 @@ sup {
 }
 
 .py1 {
-    padding-bottom: 1rem !important;
-    padding-top: 1rem !important
+    padding-bottom: 1em !important;
+    padding-top: 1em !important
 }
 
 .py2 {
-    padding-bottom: 2rem !important;
-    padding-top: 2rem !important
+    padding-bottom: 2em !important;
+    padding-top: 2em !important
 }
 
 .py3 {
-    padding-bottom: 3rem !important;
-    padding-top: 3rem !important
+    padding-bottom: 3em !important;
+    padding-top: 3em !important
 }
 
 .py4 {
-    padding-bottom: 4rem !important;
-    padding-top: 4rem !important
+    padding-bottom: 4em !important;
+    padding-top: 4em !important
 }
 
 .py5 {
-    padding-bottom: 5rem !important;
-    padding-top: 5rem !important
+    padding-bottom: 5em !important;
+    padding-top: 5em !important
 }
 
 .cizgi {
@@ -2458,7 +2471,7 @@ sup {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 1.2rem auto;
+    margin: 1.2em auto;
     position: relative;
     text-align: center;
     width: 99%
@@ -2466,8 +2479,8 @@ sup {
 
 .cizgi img {
     background-color: #FFF;
-    height: 2rem;
-    padding: 0 1rem
+    height: 2em;
+    padding: 0 1em
 }
 
 .temizle:before, .temizle:after {
@@ -2487,7 +2500,7 @@ sup {
     background-color: #000;
     height: 100%;
     left: 0;
-    opacity: .5;
+    opacity: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -2552,33 +2565,26 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, in
             align-items: center;
     background-color: #03968A;
     border-radius: 3px;
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     color: #FFF;
     cursor: pointer;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     font-family: "Roboto";
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: normal;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     letter-spacing: 1px;
     line-height: 2.5;
-    margin-bottom: .3rem;
+    margin-bottom: .3em;
     outline: 0;
     overflow: hidden;
     padding: 0 10px;
     position: relative;
     text-align: center;
     text-decoration: none;
-    -webkit-transition: box-shadow .1s ease-out;
-    -webkit-transition: -webkit-box-shadow .1s ease-out;
-    transition: -webkit-box-shadow .1s ease-out;
-    transition: box-shadow .1s ease-out;
-    transition: box-shadow .1s ease-out, -webkit-box-shadow .1s ease-out;
     user-select: none;
     vertical-align: top;
     -webkit-user-select: none;
@@ -2589,26 +2595,26 @@ a.buton, button.buton, input[type="submit"].buton, input[type="reset"].buton, in
 }
 
 a.buton.kucuk, input[type="submit"].buton.kucuk, input[type="reset"].buton.kucuk {
-    font-size: .75rem
+    font-size: .75em
 }
 
 a.buton.orta, input[type="submit"].buton.orta, input[type="reset"].buton.orta {
-    font-size: 1.25rem
+    font-size: 1.25em
 }
 
 a.buton.buyuk, input[type="submit"].buton.buyuk, input[type="reset"].buton.buyuk {
-    font-size: 1.5rem
+    font-size: 1.5em
 }
 
 a.buton:hover, button.buton:hover, input[type="submit"].buton:hover, input[type="reset"].buton:hover {
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     text-decoration: none
 }
 
 a.buton:active, button.buton:active, input[type="submit"].buton:active, input[type="reset"].buton:active {
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
 
 a.buton.saydam, button.buton.saydam, input[type="submit"].buton.saydam, input[type="reset"].buton.saydam {
@@ -2619,14 +2625,17 @@ a.buton.saydam, button.buton.saydam, input[type="submit"].buton.saydam, input[ty
 }
 
 a.buton.saydam:hover, button.buton.saydam:hover, input[type="submit"].buton.saydam:hover, input[type="reset"].buton.saydam:hover {
-    -webkit-box-shadow: inset 0px 0px 2px rgba(0,0,0,1) !important;
-            box-shadow: inset 0px 0px 2px rgba(0,0,0,1) !important
+    -webkit-box-shadow: inset 0px 0px 2px #000 !important;
+            box-shadow: inset 0px 0px 2px #000 !important
+}
+
+a.buton.saydam:active, button.buton.saydam:active, input[type="submit"].buton.saydam:active, input[type="reset"].buton.saydam:active {
+    -webkit-box-shadow: inset 0px 0px 4px #000 !important;
+            box-shadow: inset 0px 0px 4px #000 !important
 }
 
 a.buton.pasif, button.buton.pasif, input[type="submit"].buton.pasif, input[type="reset"].buton.pasif, .butonlar.pasif {
     background-color: #E6E6E6;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     color: rgba(0, 0, 0, .4);
     cursor: default;
     pointer-events: none
@@ -2672,7 +2681,7 @@ a.buton.beyaz, button.buton.beyaz {
 }
 
 a.buton i, button i {
-    margin-right: .5rem;
+    margin-right: .5em;
     opacity: .85
 }
 
@@ -2693,6 +2702,7 @@ a.buton[class*="efekt"]::before {
     opacity: .25;
     position: absolute;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s
 }
 
@@ -2701,7 +2711,8 @@ a.buton.efekt:before, a.buton.efekt1:before {
     left: -70px;
     top: -40px;
     -webkit-transform: rotate(37deg);
-    transform: rotate(37deg);
+    -ms-transform: rotate(37deg);
+        transform: rotate(37deg);
     width: 50px
 }
 
@@ -2714,7 +2725,8 @@ a.buton.efekt2:before {
     left: 99%;
     top: -40px;
     -webkit-transform: rotate(37deg);
-    transform: rotate(37deg);
+    -ms-transform: rotate(37deg);
+        transform: rotate(37deg);
     width: 50px
 }
 
@@ -2791,6 +2803,7 @@ a.etiket {
     outline: none;
     padding: 0 10px;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -2836,11 +2849,12 @@ a.etiket.kapat span.kaldir {
     color: #000;
     cursor: pointer;
     opacity: .4;
-    font-size: 1.25rem;
-    margin-left: .25rem;
+    font-size: 1.25em;
+    margin-left: .25em;
     line-height: 0;
     pointer-events: initial;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s
 }
 
@@ -2855,7 +2869,7 @@ a.etiket .detay {
     display: -ms-inline-flexbox;
     display: inline-flex;
     opacity: .8;
-    padding: 0 .5rem;
+    padding: 0 .5em;
     margin: -5px -10px -5px 5px
 }
 
@@ -2873,7 +2887,7 @@ a.etiket.beyaz {
 form.tr-form {
     background-color: #FFF;
     border-radius: 3px;
-    padding: 1rem
+    padding: 1em
 }
 
 /* ============= 2.3.1 Checkbox */
@@ -2895,7 +2909,7 @@ input[type="checkbox"].tr-checkbox + label.tr-label {
     cursor: pointer;
     display: inline-block;
     line-height: 25px;
-    padding: 0 1.7rem;
+    padding: 0 1.7em;
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -2904,7 +2918,7 @@ input[type="checkbox"].tr-checkbox + label.tr-label {
 }
 
 input[type="checkbox"].tr-checkbox:last-of-type + label.tr-label {
-    margin-bottom: 1rem
+    margin-bottom: 1em
 }
 
 input[type="checkbox"].tr-checkbox:checked + label.tr-label:before {
@@ -2917,9 +2931,11 @@ input[type="checkbox"].tr-checkbox:checked + label.tr-label:before {
     left: -5px;
     top: -4px;
     -webkit-transform: rotate(40deg);
-    transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+        transform: rotate(40deg);
     -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
     width: 12px
 }
 
@@ -2933,6 +2949,7 @@ input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
     position: absolute;
     top: 0;
     -webkit-transition: .1s;
+    -o-transition: .1s;
     transition: .1s;
     width: 18px;
     z-index: 0
@@ -2941,7 +2958,8 @@ input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
 input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
     border: 0;
     -webkit-transform: scale(0);
-    transform: scale(0)
+    -ms-transform: scale(0);
+        transform: scale(0)
 }
 
 
@@ -2951,9 +2969,9 @@ input[type="file"].tr-dosya {
     border-bottom: 2px solid #eee;
     cursor: pointer;
     height: 38px;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     outline: none;
-    padding: .5rem .7rem 0 0;
+    padding: .5em .7em 0 0;
     width: 100%
 }
 
@@ -2967,8 +2985,8 @@ input[type="file"].tr-dosya::before {
 }
 
 input[type="file"].tr-dosya:hover::before {
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     color: #FFF;
     text-decoration: none
 }
@@ -2978,8 +2996,8 @@ input[type="file"].tr-dosya:active {
 }
 
 input[type="file"].tr-dosya:active::before {
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15), inset 0 0 250px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
 
 
@@ -2987,7 +3005,6 @@ input[type="file"].tr-dosya:active::before {
 
 input[type="text"].tr-input,
 input[type="password"].tr-input,
-input[type="search"].tr-search,
 input[type="date"].tr-date {
     background-color: transparent;
     border: none;
@@ -2996,35 +3013,34 @@ input[type="date"].tr-date {
             box-sizing: content-box;
     display: inline-block;
     font-family: "Roboto";
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: .5px;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
     outline: none;
     position: relative;
     -webkit-transition: .3s;
     -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+            -ms-transform: translateY(15px);
+        transform: translateY(15px);
+    -o-transition: .3s;
     transition: .3s;
     vertical-align: top;
     width: 100%
 }
 
 input[type="text"].tr-input:focus,
-input[type="password"].tr-input:focus,
-input[type="search"].tr-search:focus {
+input[type="password"].tr-input:focus {
     border-bottom: 2px solid #03968A
 }
 
 input[type="text"].tr-input:-webkit-autofill,
-input[type="password"].tr-input:-webkit-autofill,
-input[type="search"].tr-search:-webkit-autofill {
+input[type="password"].tr-input:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0 1000px #FFF
 }
 
 input[type="text"].tr-input[disabled],
-input[type="password"].tr-input[disabled],
-input[type="search"].tr-search[disabled] {
+input[type="password"].tr-input[disabled] {
     pointer-events: none
 }
 
@@ -3034,16 +3050,19 @@ input[type="password"].tr-input + label.tr-label {
     cursor: auto;
     display: inline-block;
     font-weight: 400;
-    line-height: 1rem;
+    line-height: 1em;
     margin: 0;
     pointer-events: none;
     position: relative;
     text-align: left;
     -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
     -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+        transform-origin: 0 50%;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -3055,25 +3074,8 @@ input[type="text"].tr-input + label.tr-label.dolu,
 input[type="password"].tr-input + label.tr-label.dolu {
     color: #057970;
     -webkit-transform: translateY(-50px) scale(.75) !important;
-    transform: translateY(-50px) scale(.75) !important
-}
-
-nav.mobil input[type="search"].tr-search {
-    color: #FFF;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto 25px auto;
-    width: 80%
-}
-
-nav.mobil input[type="search"].tr-search:focus {
-    border-bottom-color: #FFF;
-    width: 90%
-}
-
-input[type="search"].tr-search::-webkit-search-cancel-button {
-    display: none
+    -ms-transform: translateY(-50px) scale(.75) !important;
+        transform: translateY(-50px) scale(.75) !important
 }
 
 input[type="date"].tr-date {
@@ -3082,7 +3084,8 @@ input[type="date"].tr-date {
 
 input[type="date"].tr-date + label.tr-label {
     -webkit-transform: translateY(-55px) scale(.75) !important;
-    transform: translateY(-55px) scale(.75) !important
+    -ms-transform: translateY(-55px) scale(.75) !important;
+        transform: translateY(-55px) scale(.75) !important
 }
 
 /* ============= 2.3.4 Radio Buton */
@@ -3103,7 +3106,7 @@ input[type="radio"].tr-radio + label.tr-label {
     cursor: pointer;
     display: inline-block;
     line-height: 25px;
-    padding: 0 1.7rem;
+    padding: 0 1.7em;
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -3123,7 +3126,8 @@ input[type="radio"].tr-radio:checked + label.tr-label:before {
     left: 0;
     top: 0;
     -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
     width: 18px
 }
 
@@ -3137,6 +3141,7 @@ input[type="radio"].tr-radio + label.tr-label:before, input[type="radio"].tr-rad
     position: absolute;
     top: 0;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     width: 18px;
     z-index: 0
@@ -3145,15 +3150,12 @@ input[type="radio"].tr-radio + label.tr-label:before, input[type="radio"].tr-rad
 input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
     border: 0;
     -webkit-transform: scale(0);
-    transform: scale(0)
+    -ms-transform: scale(0);
+        transform: scale(0)
 }
 
 
 /* ============= 2.3.5 Select */
-
-select {
-    display:none
-}
 
 .select {
     border: 1px solid rgba(0,0,0,.05);
@@ -3161,7 +3163,7 @@ select {
     color: #000;
     cursor: pointer;
     font-family: "Roboto";
-    font-size: 1rem;
+    font-size: 1em;
     position: relative;
     width: 100%
 }
@@ -3170,7 +3172,7 @@ select {
     background-color: #FFF;
     bottom: 0;
     left: 0;
-    padding: .375rem 1rem;
+    padding: .375em 1em;
     position: relative;
     right: 0;
     top: 0
@@ -3203,8 +3205,9 @@ select {
 }
 
 .tr-select li {
-    padding: .3rem 1rem;
+    padding: .375em 1em;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s
 }
 
@@ -3222,7 +3225,7 @@ textarea.tr-textarea {
             box-sizing: content-box;
     display: inline-block;
     font-family: "Roboto";
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: .5px;
     margin: 20px 0 5px 0;
     min-height: 100px;
@@ -3232,6 +3235,7 @@ textarea.tr-textarea {
     position: relative;
     resize: none;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     width: 100%
 }
@@ -3253,11 +3257,14 @@ textarea.tr-textarea + label.tr-label {
     pointer-events: none;
     position: relative;
     -webkit-transform: translateY(-115px);
-    transform: translateY(-115px);
+    -ms-transform: translateY(-115px);
+        transform: translateY(-115px);
     text-align: left !important;
     -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+        transform-origin: 0 50%;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s
 }
 
@@ -3267,7 +3274,8 @@ textarea.tr-textarea + label.tr-label {
 
 textarea.tr-textarea + label.tr-label.dolu {
     -webkit-transform: translateY(-140px) scale(.75) !important;
-    transform: translateY(-140px) scale(.75) !important
+    -ms-transform: translateY(-140px) scale(.75) !important;
+        transform: translateY(-140px) scale(.75) !important
 }
 
 
@@ -3284,19 +3292,19 @@ footer.tr-footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: .9rem;
-    padding: 3rem 0 2rem 0;
+    font-size: .9em;
+    padding: 3em 0 2em 0;
     width: 100%
 }
 
 footer.tr-footer nav a {
-    line-height: 1.5rem
+    line-height: 1.5em
 }
 
 footer.tr-footer .tr-footer-detay {
     background-color: rgba(0,0,0,.05);
-    margin-top: 1rem;
-    padding: 1rem 0;
+    margin-top: 1em;
+    padding: 1em 0;
     position: relative;
     top: 30px;
     width: 100%
@@ -3310,19 +3318,21 @@ footer.tr-footer .tr-footer-detay {
     -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
             box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
     min-height: 1px;
-    margin-bottom: 1rem;
-    padding: 1rem
+    margin-bottom: 1em;
+    padding: 1em
 }
 
 .tr-kart {
     border-radius: 15px;
     -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.15);
             box-shadow: 0px 5px 15px rgba(0,0,0,.15);
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     overflow: hidden
 }
 
 .tr-kart .kart-resim {
+    background: -webkit-linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%);
     background: linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%)
 }
 
@@ -3330,15 +3340,16 @@ footer.tr-footer .tr-footer-detay {
     border-radius: 100%;
     -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.1);
             box-shadow: 0px 5px 5px rgba(0,0,0,.1);
-    margin: 3rem 0;
+    margin: 3em 0;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     width: 40%
 }
 
 .tr-kart .kart-icerik {
     background-color: #FFF;
-    padding: 1rem 2.5rem
+    padding: 1em 2.5em
 }
 
 /* ============= 2.6 Koleksiyonlar */
@@ -3355,7 +3366,7 @@ nav.tr-koleksiyon .baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    padding: .75rem;
+    padding: .75em;
     margin: 0
 }
 
@@ -3363,8 +3374,9 @@ nav.tr-koleksiyon a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .7);
     display: block;
-    padding: .5rem 1rem;
+    padding: .5em 1em;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s
 }
 
@@ -3431,7 +3443,7 @@ nav.menu::-webkit-scrollbar {
     display: none
 }
 
-nav.menu a:not(.buton):not(.etiket), nav.mobil a:not(.buton):not(.etiket) {
+nav.menu a, nav.mobil a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3441,23 +3453,16 @@ nav.menu a:not(.buton):not(.etiket), nav.mobil a:not(.buton):not(.etiket) {
     display: inline-flex;
     letter-spacing: 1px;
     line-height: 1;
-    margin: 0 .5rem;
+    margin: 0 .5em;
     opacity: .7;
-    padding: 1rem 0;
+    padding: 1em 0;
     position: relative;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s
 }
 
-nav.menu a.buton {
-    margin: 5px
-}
-
-nav.menu a.etiket {
-    margin: 0 3px
-}
-
-nav.menu a:not(.buton):not(.etiket):hover, nav.mobil a:not(.buton):not(.etiket):hover {
+nav.menu a:hover, nav.mobil a:hover {
     opacity: 1;
     text-decoration: none
 }
@@ -3467,11 +3472,11 @@ nav.menu li.acilir > a::after {
     border-right: 4px solid transparent;
     border-top: 4px solid rgba(0, 0, 0, .2);
     content: "";
-    margin-left: .5rem
+    margin-left: .5em
 }
 
 nav.menu a i {
-    margin-right: .3rem
+    margin-right: .3em
 }
 
 nav.menu ul {
@@ -3487,12 +3492,14 @@ nav.menu li ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 .6rem 0 .3rem;
+    padding: 0 .6em 0 .3em;
     position: absolute;
     z-index: 2
 }
 
 nav.menu li:hover ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex
 }
 
@@ -3513,6 +3520,11 @@ nav.menu.sabit {
     left: 0;
     position: fixed;
     top: 0
+}
+
+nav.menu.sabit.alt {
+    bottom: 0;
+    top: auto
 }
 
 nav.menu.saydam {
@@ -3551,9 +3563,9 @@ nav.mobil::-webkit-scrollbar {
 
 nav.mobil .baslik {
     background-color: rgba(0, 0, 0, .1);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding: 1rem 0;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    padding: 1em 0;
     text-align: center;
     width: 100%
 }
@@ -3567,18 +3579,18 @@ nav.mobil .baslik a {
 nav.mobil a {
     color: #FFF;
     display: block;
-    margin: 0 .25rem;
-    padding-left: 1rem;
+    margin: 0 .25em;
+    padding-left: 1em;
     opacity: 1
 }
 
 nav.mobil a:not(.buton):not(.etiket) {
     display: block;
-    margin: 0 1rem
+    margin: 0 1em
 }
 
 nav.mobil li ul a:not(.buton):not(.etiket) {
-    padding-left: 1rem
+    padding-left: 1em
 }
 
 nav.mobil:hover a  {
@@ -3601,7 +3613,7 @@ nav.mobil li.acilir>a::after {
 
 nav.mobil li li a {
     opacity: .7;
-    padding: .7rem 0 .7rem 2rem
+    padding: .7em 0 .7em 2em
 }
 
 nav.mobil a i {
@@ -3623,6 +3635,7 @@ nav.mobil.sag {
     position: fixed;
     top: 40px;
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     width: 40px;
     z-index: 997
@@ -3646,8 +3659,8 @@ nav.mobil.sag {
             box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     border-radius: 3px;
     color: #FFF;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
+    margin-bottom: 1em;
+    padding: 1em 1.5em;
     position: relative;
     width: 100%
 }
@@ -3660,20 +3673,20 @@ nav.mobil.sag {
     border-radius: 3px;
     -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
             box-shadow: 0 1px 6px rgba(0,0,0,.15);
-    margin-bottom: 1rem
+    margin-bottom: 1em
 }
 
 .tr-pano .baslik {
     color: #FFF;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 100;
     margin: 0;
-    padding: .75rem 1rem
+    padding: .75em 1em
 }
 
 .tr-pano .pano-icerik {
     background-color: #FFF;
-    padding: .5rem 1rem
+    padding: .5em 1em
 }
 
 
@@ -3681,7 +3694,7 @@ nav.mobil.sag {
 
 progress.tr-progress {
     border-radius: 3px;
-    height: 1rem;
+    height: 1em;
     margin: 5px 0;
     overflow: hidden;
     position: relative;
@@ -3716,6 +3729,11 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #4CAF50 !important
 }
 
+progress.tr-progress.cizgili::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1em 1em
+}
 
 /* ============= 2.11 Sayfa Konumu */
 
@@ -3731,36 +3749,36 @@ progress.tr-progress.yesil::-webkit-progress-value {
     line-height: 2.5;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0 1rem;
+    padding: 0 1em;
     white-space: nowrap;
     width: 100%
 }
 
 .tr-konum.kucuk {
-    font-size: .75rem
+    font-size: .75em
 }
 
 .tr-konum.orta {
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 .tr-konum.buyuk {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .tr-konum a {
     color: rgba(255, 255, 255, .6);
-    margin-right: .3rem
+    margin-right: .3em
 }
 
 .tr-konum a:last-of-type {
     color: #FFF;
-    padding-right: 1.3rem
+    padding-right: 1.3em
 }
 
 .tr-konum a::after {
     content: "/";
-    margin-left: .3rem
+    margin-left: .3em
 }
 
 .tr-konum a:last-of-type::after {
@@ -3795,7 +3813,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-numara {
     cursor: default;
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .tr-numara a {
@@ -3808,11 +3826,12 @@ progress.tr-progress.yesil::-webkit-progress-value {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 2;
     padding: 4px 16px;
     -webkit-transition: .15s;
     -webkit-transition: .1s;
+    -o-transition: .1s;
     transition: .1s;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -3821,8 +3840,14 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara a:hover {
-    -webkit-box-shadow: inset 0px 0px 2px rgba(0,0,0,1);
-            box-shadow: inset 0px 0px 2px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 0px 0px 2px #000;
+            box-shadow: inset 0px 0px 2px #000;
+    text-decoration: none
+}
+
+.tr-numara a:active {
+    -webkit-box-shadow: inset 0px 0px 5px #000;
+            box-shadow: inset 0px 0px 5px #000;
     text-decoration: none
 }
 
@@ -3845,17 +3870,17 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-numara.kucuk a {
-    font-size: .75rem;
+    font-size: .75em;
     padding: 3px 11px
 }
 
 .tr-numara.orta a {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     padding: 5px 19px;
 }
 
 .tr-numara.buyuk a {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-right: 5px;
     padding: 6px 23px
 }
@@ -3952,7 +3977,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .yazi-kes {
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     white-space: nowrap
 }
 
@@ -4602,12 +4628,12 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-akordiyon {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     width: 100%
 }
 
 .tr-akordiyon .tr-akordiyon {
-    margin-bottom: 1rem
+    margin-bottom: 1em
 }
 
 
@@ -4620,19 +4646,20 @@ progress.tr-progress.yesil::-webkit-progress-value {
     background-color: transparent;
     color: #000;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: .5px;
-    padding: .5rem 1rem .5rem 1.5rem;
+    padding: .5em 1em .5em 1.5em;
     position: relative;
     text-align: left;
     -webkit-transition: color .3s;
+    -o-transition: color .3s;
     transition: color .3s
 }
 
 .tr-akordiyon.tema2 .baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     color: #b4b4b4;
-    padding: .5rem 1rem .5rem 1.5rem
+    padding: .5em 1em .5em 1.5em
 }
 
 .tr-akordiyon.tema2 .baslik:last-of-type {
@@ -4641,14 +4668,14 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-akordiyon.tema3 .baslik {
     background-color: rgba(0, 0, 0, .025);
-    padding: .5rem 2.5rem .5rem 1rem
+    padding: .5em 2.5em .5em 1em
 }
 
 .tr-akordiyon.tema4 .baslik {
     background-color: rgba(0, 0, 0, .025);
     border-left: 5px solid transparent;
     margin-bottom: 2px;
-    padding: .5rem 2.5rem .5rem 1rem
+    padding: .5em 2.5em .5em 1em
 }
 
 .tr-akordiyon .baslik:hover {
@@ -4676,8 +4703,10 @@ progress.tr-progress.yesil::-webkit-progress-value {
     position: absolute;
     right: auto;
     -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
     -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     top: 16px
 }
@@ -4714,7 +4743,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-akordiyon .baslik.aktif::after {
     border-top-color: rgba(0, 0, 0, 1);
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg)
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg)
 }
 
 .tr-akordiyon .baslik a {
@@ -4722,7 +4752,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-akordiyon .akordiyon-icerik {
-    padding-left: 1rem
+    padding-left: 1em
 }
 
 .tr-akordiyon.tema2 .akordiyon-icerik {
@@ -4745,8 +4775,10 @@ progress.tr-progress.yesil::-webkit-progress-value {
     text-align: left;
     top: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
-            transform: translateX(-50%) translateY(-50%) scale(0.7);
+            -ms-transform: translateX(-50%) translateY(-50%) scale(0.7);
+        transform: translateX(-50%) translateY(-50%) scale(0.7);
     -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
     visibility: hidden;
     width: 75%;
@@ -4756,7 +4788,8 @@ progress.tr-progress.yesil::-webkit-progress-value {
 .tr-modal.goster {
     opacity: 1;
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-            transform: translateX(-50%) translateY(-50%) scale(1);
+            -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+        transform: translateX(-50%) translateY(-50%) scale(1);
     visibility: visible
 }
 
@@ -4782,7 +4815,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     font-weight: 300;
     margin: 0;
     opacity: .8;
-    padding: .5rem;
+    padding: .5em;
     position: relative;
     text-align: center;
     width: 100%
@@ -4799,42 +4832,50 @@ progress.tr-progress.yesil::-webkit-progress-value {
 
 .tr-modal.efekt2 {
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1.4);
-            transform: translateX(-50%) translateY(-50%) scale(1.4)
+            -ms-transform: translateX(-50%) translateY(-50%) scale(1.4);
+        transform: translateX(-50%) translateY(-50%) scale(1.4)
 }
 
 .tr-modal.efekt2.goster {
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-            transform: translateX(-50%) translateY(-50%) scale(1)
+            -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+        transform: translateX(-50%) translateY(-50%) scale(1)
 }
 
 .tr-modal.efekt3 {
     -webkit-transform: translateX(-50%) translateY(-20%);
-            transform: translateX(-50%) translateY(-20%)
+            -ms-transform: translateX(-50%) translateY(-20%);
+        transform: translateX(-50%) translateY(-20%)
 }
 
 .tr-modal.efekt3.goster {
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%)
+            -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%)
 }
 
 .tr-modal.efekt4 {
     -webkit-transform: translateX(-20%) translateY(-50%);
-            transform: translateX(-20%) translateY(-50%)
+            -ms-transform: translateX(-20%) translateY(-50%);
+        transform: translateX(-20%) translateY(-50%)
 }
 
 .tr-modal.efekt4.goster {
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%)
+            -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%)
 }
 
 .tr-modal.efekt5 {
     -webkit-transform: translateX(-70%) translateY(-50%);
-            transform: translateX(-70%) translateY(-50%)
+            -ms-transform: translateX(-70%) translateY(-50%);
+        transform: translateX(-70%) translateY(-50%)
 }
 
 .tr-modal.efekt5.goster {
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%)
+            -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%)
 }
 
 /* ============= 3.3 Tab Menu */
@@ -4855,9 +4896,10 @@ progress.tr-progress.yesil::-webkit-progress-value {
     display: table-cell;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: .7rem 1rem;
+    padding: .7em 1em;
     text-align: center;
     -webkit-transition: border-bottom .25s;
+    -o-transition: border-bottom .25s;
     transition: border-bottom .25s
 }
 
@@ -4866,6 +4908,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border-bottom: 0;
     color: rgba(0, 0, 0, .25);
     -webkit-transition: none;
+    -o-transition: none;
     transition: none
 }
 
@@ -4874,6 +4917,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .25);
     -webkit-transition: none;
+    -o-transition: none;
     transition: none
 }
 
@@ -4898,7 +4942,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 }
 
 .tr-tab .tab-icerik {
-    padding-top: 1rem
+    padding-top: 1em
 }
 
 .tr-tab.tema3 .tab-icerikler>.tab-icerik {
