@@ -2450,15 +2450,15 @@ sup {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 1.2em auto;
+    margin: 1em auto;
     position: relative;
     text-align: center;
-    width: 99%
+    width: 100%
 }
 
 .cizgi img {
     background-color: #FFF;
-    height: 2em;
+    height: 1.5em;
     padding: 0 1em
 }
 
@@ -2796,15 +2796,15 @@ a.etiket {
 
 a.etiket:hover {
     border-color: rgba(0, 0, 0, .075);
-    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
-            box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     color: #000;
     text-decoration: none
 }
 
 a.etiket:active {
-    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .15);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .15)
+    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
+            box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
 
 a.etiket.pasif {
@@ -2902,8 +2902,8 @@ input[type="checkbox"].tr-checkbox:checked + label.tr-label:before {
     border-color: #03968A;
     border-top-color: transparent;
     border-left-color: transparent;
-    height: 22px;
-    left: -5px;
+    height: 20px;
+    left: 0;
     top: -4px;
     -webkit-transform: rotate(40deg);
     -ms-transform: rotate(40deg);
@@ -2911,7 +2911,7 @@ input[type="checkbox"].tr-checkbox:checked + label.tr-label:before {
     -webkit-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
         transform-origin: 100% 100%;
-    width: 12px
+    width: 10px
 }
 
 input[type="checkbox"].tr-checkbox + label.tr-label:before,
@@ -3333,7 +3333,8 @@ nav.tr-koleksiyon {
     background-color: #FFF;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative
 }
 
@@ -3341,7 +3342,7 @@ nav.tr-koleksiyon .koleksiyon-baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    padding: .75em;
+    padding: .5em;
     margin: 0
 }
 
@@ -3649,7 +3650,7 @@ nav.mobil.sag {
     margin-bottom: 1em
 }
 
-.tr-pano .tr-pano-baslik {
+.tr-pano .pano-baslik {
     color: #FFF;
     font-size: 1em;
     font-weight: 100;
@@ -3657,7 +3658,7 @@ nav.mobil.sag {
     padding: .75em 1em
 }
 
-.tr-pano .tr-pano-icerik {
+.tr-pano .pano-icerik {
     background-color: #FFF;
     padding: .5em 1em
 }
@@ -4714,8 +4715,12 @@ progress.tr-progress.cizgili::-webkit-progress-value {
         transform: rotate(0deg)
 }
 
+.tr-akordiyon.tema4 .akordiyon-baslik::after {
+    content: none
+}
+
 .tr-akordiyon .akordiyon-baslik a {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .tr-akordiyon .akordiyon-icerik {
