@@ -2574,6 +2574,11 @@ sup {
     white-space: nowrap
 }
 
+.buton.minik {
+    font-size: .65em;
+    line-height: 2
+}
+
 .buton.kucuk {
     font-size: .75em
 }
@@ -2635,6 +2640,12 @@ sup {
     width: 40px
 }
 
+.buton.yuvarlak.minik, .buton.kare.minik {
+    height: 20px;
+    line-height: 20px;
+    width: 20px
+}
+
 .buton.yuvarlak.kucuk, .buton.kare.kucuk {
     height: 30px;
     line-height: 30px;
@@ -2659,11 +2670,6 @@ sup {
 
 .buton.beyaz {
     color: #000 !important
-}
-
-.buton i {
-    margin-right: .5em;
-    opacity: .85
 }
 
 .buton.yuvarlak i, .buton.kare i {
@@ -3727,6 +3733,11 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     width: 100%
 }
 
+.tr-konum.minik {
+    font-size: .65em;
+    line-height: 2
+}
+
 .tr-konum.kucuk {
     font-size: .75em
 }
@@ -3840,6 +3851,12 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 
 .tr-numara a.pasif:hover {
     border-color: rgba(0, 0, 0, .1)
+}
+
+.tr-numara.minik a {
+    font-size: .65em;
+    line-height: 2;
+    padding: 0 7px
 }
 
 .tr-numara.kucuk a {
