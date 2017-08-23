@@ -2984,90 +2984,57 @@ input[type="file"].tr-dosya:active::before {
 
 /* ============= 2.3.3 Input */
 
-input[type="text"].tr-input,
-input[type="password"].tr-input,
-input[type="date"].tr-date {
+.tr-alan {
+}
+
+input.tr-input,
+textarea.tr-textarea {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #eee;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    border-bottom: 2px solid #EEE;
     display: inline-block;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 1em;
     letter-spacing: .5px;
-    line-height: 1.5em;
-    margin-bottom: 1em;
     outline: none;
     position: relative;
     -webkit-transition: .3s;
-    -webkit-transform: translateY(15px);
-            -ms-transform: translateY(15px);
-        transform: translateY(15px);
     -o-transition: .3s;
     transition: .3s;
-    vertical-align: top;
     width: 100%
 }
 
-input[type="text"].tr-input:focus,
-input[type="password"].tr-input:focus {
+textarea.tr-textarea {
+    min-height: 6em;
+    overflow: hidden;
+    resize: none
+}
+
+input.tr-input:focus,
+textarea.tr-textarea:focus {
     border-bottom: 2px solid #03968A
 }
 
-input[type="text"].tr-input:-webkit-autofill,
-input[type="password"].tr-input:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0 1000px #FFF
 }
 
-input[type="text"].tr-input[disabled],
-input[type="password"].tr-input[disabled] {
-    pointer-events: none
 }
 
-input[type="text"].tr-input + label.tr-label,
-input[type="password"].tr-input + label.tr-label {
     color: #03968A;
     cursor: auto;
     display: inline-block;
     font-weight: 400;
-    line-height: 1em;
     margin: 0;
     pointer-events: none;
-    position: relative;
-    text-align: left;
-    -webkit-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-        transform: translateY(-30px);
-    -webkit-transform-origin: 0 50%;
-    -ms-transform-origin: 0 50%;
-        transform-origin: 0 50%;
+    position: absolute;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none
-}
-
-input[type="text"].tr-input + label.tr-label.dolu,
-input[type="password"].tr-input + label.tr-label.dolu {
-    color: #057970;
-    -webkit-transform: translateY(-50px) scale(.75) !important;
-    -ms-transform: translateY(-50px) scale(.75) !important;
-        transform: translateY(-50px) scale(.75) !important
 }
 
 input[type="date"].tr-date {
     line-height: 20px
 }
 
-input[type="date"].tr-date + label.tr-label {
-    -webkit-transform: translateY(-55px) scale(.75) !important;
-    -ms-transform: translateY(-55px) scale(.75) !important;
-        transform: translateY(-55px) scale(.75) !important
-}
 
 /* ============= 2.3.4 Radio Buton */
 
