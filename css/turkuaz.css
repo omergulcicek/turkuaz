@@ -23,10 +23,9 @@
 *      2.3     Form Elemanlari
 *        2.3.1    Checkbox
 *        2.3.2    Dosya Secici
-*        2.3.3    Input
+*        2.3.3    Input - Textarea
 *        2.3.4    Radio Buton
 *        2.3.5    Select
-*        2.3.6    Textarea
 *      2.4     Footer
 *      2.5     Kart
 *      2.6     Koleksiyon
@@ -2832,7 +2831,7 @@ a.etiket.kapat:hover {
             box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
-a.etiket.kapat span.kaldir {
+a.etiket.kapat .etiket-kaldir {
     color: #000;
     cursor: pointer;
     opacity: .4;
@@ -2845,7 +2844,7 @@ a.etiket.kapat span.kaldir {
     transition: .3s
 }
 
-a.etiket.kapat:hover span.kaldir {
+a.etiket.kapat:hover .etiket-kaldir {
     opacity: 1
 }
 
@@ -2982,9 +2981,12 @@ input[type="file"].tr-dosya:active::before {
 }
 
 
-/* ============= 2.3.3 Input */
+/* ============= 2.3.3 Input - Textarea */
 
 .tr-alan {
+	margin-bottom:1em;
+	padding-top: 1em;
+	position: relative
 }
 
 input.tr-input,
@@ -2996,6 +2998,7 @@ textarea.tr-textarea {
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     letter-spacing: .5px;
+	line-height: 1;
     outline: none;
     position: relative;
     -webkit-transition: .3s;
@@ -3005,8 +3008,10 @@ textarea.tr-textarea {
 }
 
 textarea.tr-textarea {
+    line-height:1.2em;
     min-height: 6em;
     overflow: hidden;
+	padding: 0;
     resize: none
 }
 
@@ -3015,26 +3020,32 @@ textarea.tr-textarea:focus {
     border-bottom: 2px solid #03968A
 }
 
-}
-
-}
-
+input.tr-input + label,
+textarea.tr-textarea + label.tr-label {
     color: #03968A;
     cursor: auto;
     display: inline-block;
     font-weight: 400;
+	left: 1px;
     margin: 0;
     pointer-events: none;
     position: absolute;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+	top: 1em
 }
 
-input[type="date"].tr-date {
-    line-height: 20px
+input.tr-input:valid + label.tr-label,
+textarea.tr-textarea:valid + label.tr-label {
+	color: #057970;
+	font-size: .75em;
+	top: 0
 }
 
+textarea[disabled].tr-textarea {
+    pointer-events: none
+}
 
 /* ============= 2.3.4 Radio Buton */
 
@@ -3162,70 +3173,6 @@ input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
 .tr-select li:hover {
     background-color: rgba(0,0,0,.05)
 }
-
-/* ============= 2.3.6 Textarea */
-
-textarea.tr-textarea {
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #EEE;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    display: inline-block;
-    font-family: "Roboto";
-    font-size: 1em;
-    letter-spacing: .5px;
-    margin: 20px 0 5px 0;
-    min-height: 100px;
-    outline: none;
-    overflow: hidden;
-    padding-top: 10px;
-    position: relative;
-    resize: none;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    width: 100%
-}
-
-textarea.tr-textarea:focus {
-    border-bottom: 2px solid #03968A
-}
-
-textarea[disabled].tr-textarea {
-    pointer-events: none
-}
-
-textarea.tr-textarea + label.tr-label {
-    color: #03968A;
-    cursor: auto;
-    display: inline-block;
-    font-weight: 400;
-    margin: 0;
-    pointer-events: none;
-    position: relative;
-    -webkit-transform: translateY(-115px);
-    -ms-transform: translateY(-115px);
-        transform: translateY(-115px);
-    text-align: left !important;
-    -webkit-transform-origin: 0 50%;
-    -ms-transform-origin: 0 50%;
-        transform-origin: 0 50%;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s
-}
-
-textarea.tr-textarea + label.tr-label {
-    color: #057970
-}
-
-textarea.tr-textarea + label.tr-label.dolu {
-    -webkit-transform: translateY(-140px) scale(.75) !important;
-    -ms-transform: translateY(-140px) scale(.75) !important;
-        transform: translateY(-140px) scale(.75) !important
-}
-
 
 /* ============= 2.4 Footer */
 

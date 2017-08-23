@@ -1,7 +1,13 @@
-$("a.etiket.kapat").append("<span class=kaldir>&times</span>").end().find("span.kaldir").click(function() {
-    $(this).parents("a.etiket.kapat").addClass("gizle");
+var tag = document.querySelectorAll("a.etiket.kapat");
+Array.prototype.forEach.call(tag, function(el, i) {
+    var tagSpan = document.createElement("span");
+    tagSpan.className += "etiket-kaldir";
+    tagSpan.innerHTML = "&times";
+    el.appendChild(tagSpan);
+    tag[i].addEventListener("click", function() {
+        el.remove();
+    }, false);
 });
-
 
 $("select.tr-select").each(function() {
     var optionLength = $(this).children("option").length;
@@ -37,46 +43,32 @@ $("select.tr-select").each(function() {
     });
 });
 
-$formEtiketleri = ".tr-input,.tr-search,.tr-checkbox,.tr-radio,.tr-textarea";
 $placeholder = ".tr-input,.tr-textarea";
 placeholder();
-$($formEtiketleri).focus(function() {
-    var inputId = $(this).attr("id");
-    $("body").find("[for='" + inputId + "']").addClass("dolu");
-}).focusout(function() {
-    var inputId = $(this).attr("id");
-    if (!$(this).val()) {
-        $("body").find("[for='" + inputId + "']").removeClass("dolu");
-    }
-    placeholder();
-});
 
 function placeholder() {
     $($placeholder).each(function() {
         var placeholder = $(this).attr("placeholder");
         if (placeholder !== undefined && placeholder !== "") {
             var inputId = $(this).attr("id");
-            $("body").find("[for='" + inputId + "']").addClass("dolu");
+            $("body").find("[for='" + inputId + "']").css({
+                "color": "#057970",
+                "font-size": ".75em",
+                "top": "0"
+            });
         }
     });
 }
-$(".tr-textarea").on("keydown focusout", function(e) {
-    var t = $(this);
-    var l = t.next("label.tr-label");
-    var line = t.val().split("\n").length * 20;
-    if (line > 100) {
-        t.css("height", line);
-        l.attr('style', 'transform: translateY(-' + (line+40) + 'px) scale(.75) !important');
-    } else {
-        t.css("height", 100);
-        if (l.hasClass("dolu")) {
-            l.attr('style', 'transform: translateY(-140px) scale(.75) !important');
-        }
-        else {
-            l.attr('style', '');
-        }
-    }
+
+var textarea = document.getElementsByClassName("tr-textarea");
+Array.prototype.forEach.call(textarea, function(el) {
+    el.addEventListener("keyup", function (e) {
+        var lineCount = el.value.split(/\r|\r\n|\n/).length;
+        var newHeight = ++lineCount * 1.2;
+        el.style.height = (lineCount > 4) ? newHeight.toString() + "em" : "6em";
+    }, false);
 });
+
 $("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
 $("nav.mobil li.acilir ul").hide();
 $("nav.mobil").on("click", "li.acilir>a", function() {
@@ -135,9 +127,9 @@ $(".tr-filtre").on("click", "nav a", function() {
 })
 
 $(".akordiyon-icerik").hide();
-$(".tr-akordiyon > .baslik").on("click", function() {
+$(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
     var t = $(this);
-    var i = t.closest(".tr-akordiyon").children(".baslik").index(t);
+    var i = t.closest(".tr-akordiyon").children(".akordiyon-baslik").index(t);
     if (t.hasClass("aktif")) {
         t.removeClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").slideUp(250);
     } else {
