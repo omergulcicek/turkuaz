@@ -2985,6 +2985,9 @@ input[type="file"].tr-dosya:active::before {
 /* ============= 2.3.3 Input */
 
 .tr-alan {
+    margin-bottom: 1em;
+    padding-top: 1em;
+    position: relative
 }
 
 input.tr-input,
@@ -2996,6 +2999,7 @@ textarea.tr-textarea {
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     letter-spacing: .5px;
+    line-height: 1;
     outline: none;
     position: relative;
     -webkit-transition: .3s;
@@ -3007,6 +3011,8 @@ textarea.tr-textarea {
 textarea.tr-textarea {
     min-height: 6em;
     overflow: hidden;
+    padding: 0;
+    line-height: 1.2em;
     resize: none
 }
 
@@ -3015,24 +3021,33 @@ textarea.tr-textarea:focus {
     border-bottom: 2px solid #03968A
 }
 
+input[type="text"].tr-input:valid+label.tr-label {
+    color: #057970;
+    top: 0;
+    font-size: .75em
 }
 
+input.tr-input:valid+label.tr-label,
+textarea.tr-textarea:valid+label.tr-label {
+    color: #057970;
+    top: 0;
+    font-size: .75em
 }
 
+input.tr-input+label,
+textarea.tr-textarea+label.tr-label {
     color: #03968A;
     cursor: auto;
     display: inline-block;
     font-weight: 400;
+    left: 1px;
     margin: 0;
     pointer-events: none;
     position: absolute;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-}
-
-input[type="date"].tr-date {
-    line-height: 20px
+    top: 1em
 }
 
 
