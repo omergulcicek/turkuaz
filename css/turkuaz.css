@@ -3130,70 +3130,69 @@ textarea[disabled].tr-textarea {
 
 /* ============= 2.3.4 Radio Buton */
 
-input[type="radio"].tr-radio {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 0
-}
-
-input[type="radio"].tr-radio:not(:checked), input[type="radio"].tr-radio:checked {
-    left: -9999px;
+.tr-radio {
     opacity: 0;
-    position: absolute
+    pointer-events: none;
+	position: absolute
 }
 
-input[type="radio"].tr-radio + label.tr-label {
+.tr-radio + .tr-label {
     cursor: pointer;
     display: inline-block;
+    font-size: 1rem;
+    height: 25px;
     line-height: 25px;
-    padding: 0 1.7em;
+    margin-right: 1.75em;
+    padding-left: 1.6em;
     position: relative;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none
-}
-
-input[type="radio"].tr-radio:last-of-type + label.tr-label {
-    margin-bottom: 15px
-}
-
-input[type="radio"].tr-radio:checked + label.tr-label:before {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background-color: #03968A;
-    height: 18px;
-    left: 0;
-    top: 0;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-        transform-origin: 100% 100%;
-    width: 18px
-}
-
-input[type="radio"].tr-radio + label.tr-label:before, input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
-    border: 2px solid rgba(0, 0, 0, .75);
-    border-radius: 50%;
-    content: "";
-    height: 18px;
-    margin-top: 3px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
     transition: .3s;
-    width: 18px;
-    z-index: 0
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
-input[type="radio"].tr-radio:not(.filled-in) + label.tr-label:after {
-    border: 0;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-        transform: scale(0)
+.tr-radio + .tr-label:before,
+.tr-radio + .tr-label:after {
+	border-radius: 50%;
+	content: "";
+	height: 16px;
+	left: 0;
+	margin: 4px;
+	position: absolute;
+	top: 0;
+	transition: .3s;
+	width: 16px;
+	z-index: 0
 }
 
+.tr-radio:not(:checked) + .tr-label:before,
+.tr-radio:not(:checked) + .tr-label:after {
+	border: 2px solid #303030
+}
+
+.tr-radio:not(:checked) + .tr-label:after {
+	-webkit-transform: scale(0);
+	transform: scale(0)
+}
+
+.tr-radio:checked + .tr-label:before {
+	border: 2px solid transparent
+}
+
+.tr-radio:checked + .tr-label:after,
+.tr-radio:checked + .tr-label:before {
+    border: 2px solid #03968A
+}
+
+.tr-radio:checked + .tr-label:after {
+	background-color: #03968A
+}
+
+.tr-radio:checked + .tr-label:after {
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5)
+}
 
 /* ============= 2.3.5 Select */
 
