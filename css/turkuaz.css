@@ -21,10 +21,9 @@
 *        2.1.2    Buton Efektleri
 *      2.2     Etiket
 *      2.3     Form Elemanlari
-*        2.3.1    Checkbox
+*        2.3.1    Checkbox - Radio Buton
 *        2.3.2    Dosya Secici
 *        2.3.3    Input - Textarea
-*        2.3.4    Radio Buton
 *        2.3.5    Select
 *      2.4     Footer
 *      2.5     Kart
@@ -2951,78 +2950,117 @@ a.etiket.beyaz {
 
 /* ============= 2.3 Form Elemanlari */
 
-/* ============= 2.3.1 Checkbox */
+/* ============= 2.3.1 Checkbox - Radio Buton */
 
-input[type="checkbox"].tr-checkbox:not(:checked),
-input[type="checkbox"].tr-checkbox:checked {
-    left: -9999px;
+.tr-checkbox,
+.tr-radio {
     opacity: 0;
+    pointer-events: none;
     position: absolute
 }
 
-input[type="checkbox"].tr-checkbox {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 0
-}
-
-input[type="checkbox"].tr-checkbox + label.tr-label {
+.tr-checkbox + .tr-label,
+.tr-radio + .tr-label {
     cursor: pointer;
     display: inline-block;
-    line-height: 25px;
-    padding: 0 1.7em;
+    font-size: 1rem;
+    height: 1.25em;
+    margin-right: 1.25em;
+    line-height: 1.25em;
+    padding-left: 1.75em;
     position: relative;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
-input[type="checkbox"].tr-checkbox:last-of-type + label.tr-label {
-    margin-bottom: 1em
-}
-
-input[type="checkbox"].tr-checkbox:checked + label.tr-label:before {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-color: #03968A;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    height: 20px;
-    left: 0;
-    top: -4px;
-    -webkit-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-        transform: rotate(40deg);
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-        transform-origin: 100% 100%;
-    width: 10px
-}
-
-input[type="checkbox"].tr-checkbox + label.tr-label:before,
-input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
-    border: 2px solid rgba(0, 0, 0, .75);
+.tr-checkbox + .tr-label:after,
+.tr-checkbox + .tr-label:before,
+.tr-radio + .tr-label:after,
+.tr-radio + .tr-label:before  {
     content: "";
-    height: 18px;
-    margin-top: 3px;
     left: 0;
     position: absolute;
+    transition: .25s;
+    z-index: 1
+}
+
+.tr-radio + .tr-label:after,
+.tr-radio + .tr-label:before {
+	border-radius: 50%;
+	height: 16px;
+	margin: 2px;
+	top: 0;
+	width: 16px;
+	z-index: 0
+}
+
+.tr-checkbox:not(:checked) + .tr-label:before {
+    border: 3px solid transparent;
+    height: 0;
+    left: 6px;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    top: 10px;
+    width: 0
+}
+
+.tr-checkbox:not(:checked) + .tr-label:after {
+    background-color: transparent;
+    border: 2px solid #5a5a5a;
+    height: 20px;
     top: 0;
-    -webkit-transition: .1s;
-    -o-transition: .1s;
-    transition: .1s;
-    width: 18px;
+    width: 20px;
     z-index: 0
 }
 
-input[type="checkbox"].tr-checkbox:not(.filled-in) + label.tr-label:after {
-    border: 0;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-        transform: scale(0)
+.tr-radio:not(:checked) + .tr-label:after,
+.tr-radio:not(:checked) + .tr-label:before {
+	border: 2px solid #303030
 }
 
+.tr-radio:not(:checked) + .tr-label:after {
+	-webkit-transform: scale(0);
+	transform: scale(0)
+}
+
+.tr-checkbox:checked + .tr-label:before {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-top: 2px solid transparent;
+    height: 14px;
+    left: 1px;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    top: 2px;
+    width: 7px
+}
+
+.tr-radio:checked + .tr-label:after,
+.tr-radio:checked + .tr-label:before {
+    border: 2px solid #03968A
+}
+
+.tr-checkbox:checked + .tr-label:after {
+    border: 2px solid #03968A;
+    background-color: #03968A;
+    height: 20px;
+    top: 0;
+    width: 20px;
+    z-index: 0
+}
+
+.tr-radio:checked + .tr-label:after {
+	background-color: #03968A;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5)
+}
 
 /* ============= 2.3.2 Dosya Secici */
 
@@ -3128,73 +3166,7 @@ textarea[disabled].tr-textarea {
     pointer-events: none
 }
 
-/* ============= 2.3.4 Radio Buton */
-
-.tr-radio {
-    opacity: 0;
-    pointer-events: none;
-	position: absolute
-}
-
-.tr-radio + .tr-label {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    height: 25px;
-    line-height: 25px;
-    margin-right: 1.75em;
-    padding-left: 1.6em;
-    position: relative;
-    transition: .3s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-.tr-radio + .tr-label:before,
-.tr-radio + .tr-label:after {
-	border-radius: 50%;
-	content: "";
-	height: 16px;
-	left: 0;
-	margin: 4px;
-	position: absolute;
-	top: 0;
-	transition: .3s;
-	width: 16px;
-	z-index: 0
-}
-
-.tr-radio:not(:checked) + .tr-label:before,
-.tr-radio:not(:checked) + .tr-label:after {
-	border: 2px solid #303030
-}
-
-.tr-radio:not(:checked) + .tr-label:after {
-	-webkit-transform: scale(0);
-	transform: scale(0)
-}
-
-.tr-radio:checked + .tr-label:before {
-	border: 2px solid transparent
-}
-
-.tr-radio:checked + .tr-label:after,
-.tr-radio:checked + .tr-label:before {
-    border: 2px solid #03968A
-}
-
-.tr-radio:checked + .tr-label:after {
-	background-color: #03968A
-}
-
-.tr-radio:checked + .tr-label:after {
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5)
-}
-
-/* ============= 2.3.5 Select */
+/* ============= 2.3.4 Select */
 
 .select {
     border: 1px solid rgba(0,0,0,.05);
