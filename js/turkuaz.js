@@ -43,23 +43,6 @@ $("select.tr-select").each(function() {
     });
 });
 
-$placeholder = ".tr-input,.tr-textarea";
-placeholder();
-
-function placeholder() {
-    $($placeholder).each(function() {
-        var placeholder = $(this).attr("placeholder");
-        if (placeholder !== undefined && placeholder !== "") {
-            var inputId = $(this).attr("id");
-            $("body").find("[for='" + inputId + "']").css({
-                "color": "#057970",
-                "font-size": ".75em",
-                "top": "0"
-            });
-        }
-    });
-}
-
 var textarea = document.getElementsByClassName("tr-textarea");
 Array.prototype.forEach.call(textarea, function(el) {
     el.addEventListener("keyup", function (e) {
