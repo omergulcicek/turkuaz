@@ -4,8 +4,6 @@
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
 * Roboto Yazi Stili (https://fonts.google.com/specimen/Roboto)
 */
-
-
 /*!
 *    Turkuaz Css - Kod Duzeni
 *
@@ -21,9 +19,10 @@
 *        2.1.2    Buton Efektleri
 *      2.2     Etiket
 *      2.3     Form Elemanlari
-*        2.3.1    Checkbox - Radio Buton
-*        2.3.2    Dosya Secici
-*        2.3.3    Input - Textarea
+*        2.3.1    Anahtar
+*        2.3.2    Checkbox - Radio Buton
+*        2.3.3    Dosya Secici
+*        2.3.4    Input - Textarea
 *        2.3.5    Select
 *      2.4     Footer
 *      2.5     Kart
@@ -43,29 +42,26 @@
 *      3.3     Tab Menu
 *
 */
-
 /* ============= 1. Css  */
 
 html {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box
+    box-sizing: border-box
 }
-
-*, :before, :after {
+*,
+:before,
+:after {
     -webkit-box-sizing: inherit;
-            box-sizing: inherit
+    box-sizing: inherit
 }
-
 ::-moz-selection {
     background-color: #050505;
     color: #FFF
 }
-
 ::selection {
     background-color: #050505;
     color: #FFF
 }
-
 body {
     background-color: #FFF;
     display: -webkit-box;
@@ -73,61 +69,70 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     letter-spacing: .3px;
     margin: 0;
     min-height: 100vh
 }
-
 @media only screen and (min-width: 1024px) {
     body {
         font-size: 16px
     }
 }
-
-article, aside, details, figure, footer, header, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
     display: block
 }
-
 main {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1
+    -ms-flex: 1;
+    flex: 1
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0 0 .25em 0
 }
-
 h1 {
     font-size: 2em
 }
-
 h2 {
     font-size: 1.8em
 }
-
 h3 {
     font-size: 1.6em
 }
-
 h4 {
     font-size: 1.4em
 }
-
 h5 {
     font-size: 1.2em
 }
-
 h6 {
     font-size: 1em
 }
-
 @media only screen and (min-width: 1024px) {
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-bottom: .5em
     }
     h1 {
@@ -149,7 +154,6 @@ h6 {
         font-size: 1em
     }
 }
-
 a {
     background-color: transparent;
     color: #2196F3;
@@ -158,26 +162,23 @@ a {
     -o-transition: .1s;
     transition: .1s
 }
-
 a:hover {
     color: #0D47A1;
     cursor: pointer;
     outline-width: 0;
     text-decoration: underline
 }
-
 a:active {
     outline-width: 0
 }
-
-b, strong {
+b,
+strong {
     font-weight: bold
 }
-
-i, em {
+i,
+em {
     font-style: italic
 }
-
 p {
     font-style: normal;
     font-weight: normal;
@@ -186,25 +187,25 @@ p {
     margin-bottom: .5em;
     margin-top: .5em
 }
-
 ul {
     margin: 0;
     padding: 0
 }
-
 li {
     list-style-type: none
 }
-
 img {
     border-style: none;
     max-width: 100%
 }
-
-input, button, select, textarea, pre, code {
+input,
+button,
+select,
+textarea,
+pre,
+code {
     margin: 0
 }
-
 pre {
     background-color: #3E2723;
     border: 1px solid rgba(0, 0, 0, .1);
@@ -215,11 +216,9 @@ pre {
     overflow-y: auto;
     width: 100%
 }
-
 code {
     white-space: pre-wrap
 }
-
 kbd {
     background-color: #050505;
     border-radius: 3px;
@@ -227,30 +226,25 @@ kbd {
     font-size: 90%;
     padding: .25em .4em
 }
-
 form {
     width: 100%
 }
-
 progress {
     vertical-align: baseline
 }
-
-sub, sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline
 }
-
 sub {
     bottom: -0.25em
 }
-
 sup {
     top: -0.5em
 }
-
 /* ============= 1.1 Grid Sistemi  */
 
 .container,
@@ -258,17 +252,16 @@ sup {
     margin-left: auto;
     margin-right: auto
 }
-
 .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -277,21 +270,17 @@ sup {
     margin-left: -.5rem;
     margin-right: -.5rem
 }
-
 .flex.ters {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse
 }
-
 .container {
     width: 90%
 }
-
 .container-buyuk {
     width: 100%
 }
-
 .ck,
 .ck-0,
 .ck-1,
@@ -319,206 +308,170 @@ sup {
 .ck11,
 .ck12 {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     padding-left: .5rem;
     padding-right: .5rem
 }
-
 .ck {
     -ms-flex-preferred-size: 0;
-        flex-basis: 0;
+    flex-basis: 0;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     max-width: 100%
 }
-
 .ck1 {
     -ms-flex-preferred-size: 8.33333333%;
     flex-basis: 8.33333333%;
     max-width: 8.33333333%
 }
-
 .ck2 {
     -ms-flex-preferred-size: 16.66666667%;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%
 }
-
 .ck3 {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%
 }
-
 .ck4 {
     -ms-flex-preferred-size: 33.33333333%;
     flex-basis: 33.33333333%;
     max-width: 33.33333333%
 }
-
 .ck5 {
     -ms-flex-preferred-size: 41.66666667%;
     flex-basis: 41.66666667%;
     max-width: 41.66666667%
 }
-
 .ck6 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%
 }
-
 .ck7 {
     -ms-flex-preferred-size: 58.33333333%;
     flex-basis: 58.33333333%;
     max-width: 58.33333333%
 }
-
 .ck8 {
     -ms-flex-preferred-size: 66.66666667%;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%
 }
-
 .ck9 {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
     max-width: 75%
 }
-
 .ck10 {
     -ms-flex-preferred-size: 83.33333333%;
     flex-basis: 83.33333333%;
     max-width: 83.33333333%
 }
-
 .ck11 {
     -ms-flex-preferred-size: 91.66666667%;
     flex-basis: 91.66666667%;
     max-width: 91.66666667%
 }
-
 .ck12 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%
 }
-
 .ck-0 {
     margin-left: 0
 }
-
 .ck-1 {
     margin-left: 8.33333333%
 }
-
 .ck-2 {
     margin-left: 16.66666667%
 }
-
 .ck-3 {
     margin-left: 25%
 }
-
 .ck-4 {
     margin-left: 33.33333333%
 }
-
 .ck-5 {
     margin-left: 41.66666667%
 }
-
 .ck-6 {
     margin-left: 50%
 }
-
 .ck-7 {
     margin-left: 58.33333333%
 }
-
 .ck-8 {
     margin-left: 66.66666667%
 }
-
 .ck-9 {
     margin-left: 75%
 }
-
 .ck-10 {
     margin-left: 83.33333333%
 }
-
 .ck-11 {
     margin-left: 91.66666667%
 }
-
 .ck-sol {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: start
 }
-
 .ck-orta {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center
 }
-
 .ck-sag {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: end
 }
-
 .ck-ust {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start
 }
-
 .ck-merkez {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
-
 .ck-alt {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end
 }
-
 .ck-aralik {
     -ms-flex-pack: distribute;
     justify-content: space-around
 }
-
 .ck-aralik2 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
 }
-
 .ck-bas {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1
 }
-
 .ck-son {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1
 }
-
-@media only screen and (min-width:360px) {
+@media only screen and (min-width: 360px) {
     .container {
         width: 80%
     }
@@ -552,7 +505,7 @@ sup {
     .k11,
     .k12 {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -561,10 +514,10 @@ sup {
     }
     .k {
         -ms-flex-preferred-size: 0;
-            flex-basis: 0;
+        flex-basis: 0;
         -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         max-width: 100%
     }
     .k1 {
@@ -716,8 +669,7 @@ sup {
         order: 1
     }
 }
-
-@media only screen and (min-width:720px) {
+@media only screen and (min-width: 720px) {
     .container {
         width: 70%
     }
@@ -751,7 +703,7 @@ sup {
     .o11,
     .o12 {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -760,10 +712,10 @@ sup {
     }
     .o {
         -ms-flex-preferred-size: 0;
-            flex-basis: 0;
+        flex-basis: 0;
         -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         max-width: 100%
     }
     .o1 {
@@ -915,8 +867,7 @@ sup {
         order: 1
     }
 }
-
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
     .container {
         width: 60%
     }
@@ -950,7 +901,7 @@ sup {
     .b11,
     .b12 {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -959,10 +910,10 @@ sup {
     }
     .b {
         -ms-flex-preferred-size: 0;
-            flex-basis: 0;
+        flex-basis: 0;
         -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         max-width: 100%
     }
     .b1 {
@@ -1114,8 +1065,7 @@ sup {
         order: 1
     }
 }
-
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width: 1440px) {
     .container {
         max-width: 1600px;
         width: 50%
@@ -1151,7 +1101,7 @@ sup {
     .cb11,
     .cb12 {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
@@ -1160,10 +1110,10 @@ sup {
     }
     .cb {
         -ms-flex-preferred-size: 0;
-            flex-basis: 0;
+        flex-basis: 0;
         -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         max-width: 100%
     }
     .cb1 {
@@ -1315,658 +1265,511 @@ sup {
         order: 1
     }
 }
-
 /* ============= 1.2 Renkler */
 
 .saydam {
     background-color: transparent !important;
     -webkit-box-shadow: 0px 0px 0px transparent !important;
-            box-shadow: 0px 0px 0px transparent !important
+    box-shadow: 0px 0px 0px transparent !important
 }
-
 .beyaz {
     background-color: #FFF !important
 }
-
-.sari, .sari6 {
+.sari,
+.sari6 {
     background-color: #FFEB3B !important
 }
-
 .sari2 {
     background-color: #FFF9C4 !important
 }
-
 .sari3 {
     background-color: #FFF59D !important
 }
-
 .sari4 {
     background-color: #FFF176 !important
 }
-
 .sari5 {
     background-color: #FFEE58 !important
 }
-
 .sari7 {
     background-color: #FDD835 !important
 }
-
 .sari8 {
     background-color: #FBC02D !important
 }
-
 .sari9 {
     background-color: #F9A825 !important
 }
-
 .sari10 {
     background-color: #F57F17 !important
 }
-
-.turuncu, .turuncu6 {
+.turuncu,
+.turuncu6 {
     background-color: #FF9800 !important
 }
-
 .turuncu2 {
     background-color: #FFE0B2 !important
 }
-
 .turuncu3 {
     background-color: #FFCC80 !important
 }
-
 .turuncu4 {
     background-color: #FFB74D !important
 }
-
 .turuncu5 {
     background-color: #FFA726 !important
 }
-
 .turuncu7 {
     background-color: #FB8C00 !important
 }
-
 .turuncu8 {
     background-color: #F57C00 !important
 }
-
 .turuncu9 {
     background-color: #EF6C00 !important
 }
-
 .turuncu10 {
     background-color: #E65100 !important
 }
-
-.koyu-turuncu, .koyu-turuncu6 {
+.koyu-turuncu,
+.koyu-turuncu6 {
     background-color: #FF5722 !important
 }
-
 .koyu-turuncu2 {
     background-color: #FFCCBC !important
 }
-
 .koyu-turuncu3 {
     background-color: #FFAB91 !important
 }
-
 .koyu-turuncu4 {
     background-color: #FF8A65 !important
 }
-
 .koyu-turuncu5 {
     background-color: #FF7043 !important
 }
-
 .koyu-turuncu7 {
     background-color: #F4511E !important
 }
-
 .koyu-turuncu8 {
     background-color: #E64A19 !important
 }
-
 .koyu-turuncu9 {
     background-color: #D84315 !important
 }
-
 .koyu-turuncu10 {
     background-color: #BF360C !important
 }
-
-.kirmizi, .kirmizi6 {
+.kirmizi,
+.kirmizi6 {
     background-color: #F44336 !important
 }
-
 .kirmizi2 {
     background-color: #FFCDD2 !important
 }
-
 .kirmizi3 {
     background-color: #EF9A9A !important
 }
-
 .kirmizi4 {
     background-color: #E57373 !important
 }
-
 .kirmizi5 {
     background-color: #EF5350 !important
 }
-
 .kirmizi7 {
     background-color: #E53935 !important
 }
-
 .kirmizi8 {
     background-color: #D32F2F !important
 }
-
 .kirmizi9 {
     background-color: #C62828 !important
 }
-
 .kirmizi10 {
     background-color: #B71C1C !important
 }
-
-.pembe, .pembe6 {
+.pembe,
+.pembe6 {
     background-color: #E91E63 !important
 }
-
 .pembe2 {
     background-color: #F8BBD0 !important
 }
-
 .pembe3 {
     background-color: #F48FB1 !important
 }
-
 .pembe4 {
     background-color: #F06292 !important
 }
-
 .pembe5 {
     background-color: #EC407A !important
 }
-
 .pembe7 {
     background-color: #D81B60 !important
 }
-
 .pembe8 {
     background-color: #C2185B !important
 }
-
 .pembe9 {
     background-color: #AD1457 !important
 }
-
 .pembe10 {
     background-color: #880E4F !important
 }
-
-.mor, .mor6 {
+.mor,
+.mor6 {
     background-color: #9C27B0 !important
 }
-
 .mor2 {
     background-color: #E1BEE7 !important
 }
-
 .mor3 {
     background-color: #CE93D8 !important
 }
-
 .mor4 {
     background-color: #BA68C8 !important
 }
-
 .mor5 {
     background-color: #AB47BC !important
 }
-
 .mor7 {
     background-color: #8E24AA !important
 }
-
 .mor8 {
     background-color: #7B1FA2 !important
 }
-
 .mor9 {
     background-color: #6A1B9A !important
 }
-
 .mor10 {
     background-color: #4A148C !important
 }
-
-.koyu-mor, .koyu-mor6 {
+.koyu-mor,
+.koyu-mor6 {
     background-color: #673AB7 !important
 }
-
 .koyu-mor2 {
     background-color: #D1C4E9 !important
 }
-
 .koyu-mor3 {
     background-color: #B39DDB !important
 }
-
 .koyu-mor4 {
     background-color: #9575CD !important
 }
-
 .koyu-mor5 {
     background-color: #7E57C2 !important
 }
-
 .koyu-mor7 {
     background-color: #5E35B1 !important
 }
-
 .koyu-mor8 {
     background-color: #512DA8 !important
 }
-
 .koyu-mor9 {
     background-color: #4527A0 !important
 }
-
 .koyu-mor10 {
     background-color: #311B92 !important
 }
-
-.mavi, .mavi6 {
+.mavi,
+.mavi6 {
     background-color: #2196F3 !important
 }
-
 .mavi2 {
     background-color: #BBDEFB !important
 }
-
 .mavi3 {
     background-color: #90CAF9 !important
 }
-
 .mavi4 {
     background-color: #64B5F6 !important
 }
-
 .mavi5 {
     background-color: #42A5F5 !important
 }
-
 .mavi7 {
     background-color: #1E88E5 !important
 }
-
 .mavi8 {
     background-color: #1976D2 !important
 }
-
 .mavi9 {
     background-color: #1565C0 !important
 }
-
 .mavi10 {
     background-color: #0D47A1 !important
 }
-
-.acik-mavi, .acik-mavi6 {
+.acik-mavi,
+.acik-mavi6 {
     background-color: #03A9F4 !important
 }
-
 .acik-mavi2 {
     background-color: #B3E5FC !important
 }
-
 .acik-mavi3 {
     background-color: #81D4FA !important
 }
-
 .acik-mavi4 {
     background-color: #4FC3F7 !important
 }
-
 .acik-mavi5 {
     background-color: #29B6F6 !important
 }
-
 .acik-mavi7 {
     background-color: #039BE5 !important
 }
-
 .acik-mavi8 {
     background-color: #0288D1 !important
 }
-
 .acik-mavi9 {
     background-color: #0277BD !important
 }
-
 .acik-mavi10 {
     background-color: #01579B !important
 }
-
-.turkuaz, .turkuaz6 {
+.turkuaz,
+.turkuaz6 {
     background-color: #1AC5B8 !important
 }
-
 .turkuaz2 {
     background-color: #C1FDF8 !important
 }
-
 .turkuaz3 {
     background-color: #56F7EB !important
 }
-
 .turkuaz4 {
     background-color: #36EADD !important
 }
-
 .turkuaz5 {
     background-color: #2ED8CB !important
 }
-
 .turkuaz7 {
     background-color: #12B9AC !important
 }
-
 .turkuaz8 {
     background-color: #0CAB9E !important
 }
-
 .turkuaz9 {
     background-color: #03968A !important
 }
-
 .turkuaz10 {
     background-color: #038075 !important
 }
-
-.yesil, .yesil6 {
+.yesil,
+.yesil6 {
     background-color: #4CAF50 !important
 }
-
 .yesil2 {
     background-color: #C8E6C9 !important
 }
-
 .yesil3 {
     background-color: #A5D6A7 !important
 }
-
 .yesil4 {
     background-color: #81C784 !important
 }
-
 .yesil5 {
     background-color: #66BB6A !important
 }
-
 .yesil7 {
     background-color: #43A047 !important
 }
-
 .yesil8 {
     background-color: #388E3C !important
 }
-
 .yesil9 {
     background-color: #2E7D32 !important
 }
-
 .yesil10 {
     background-color: #1B5E20 !important
 }
-
-.acik-yesil, .acik-yesil6 {
+.acik-yesil,
+.acik-yesil6 {
     background-color: #8BC34A !important
 }
-
 .acik-yesil2 {
     background-color: #DCEDC8 !important
 }
-
 .acik-yesil3 {
     background-color: #C5E1A5 !important
 }
-
 .acik-yesil4 {
     background-color: #AED581 !important
 }
-
 .acik-yesil5 {
     background-color: #9CCC65 !important
 }
-
 .acik-yesil7 {
     background-color: #7CB342 !important
 }
-
 .acik-yesil8 {
     background-color: #689F38 !important
 }
-
 .acik-yesil9 {
     background-color: #558B2F !important
 }
-
 .acik-yesil10 {
     background-color: #33691E !important
 }
-
-.kahverengi, .kahverengi6 {
+.kahverengi,
+.kahverengi6 {
     background-color: #795548 !important
 }
-
 .kahverengi2 {
     background-color: #D7CCC8 !important
 }
-
 .kahverengi3 {
     background-color: #BCAAA4 !important
 }
-
 .kahverengi4 {
     background-color: #A1887F !important
 }
-
 .kahverengi5 {
     background-color: #8D6E63 !important
 }
-
 .kahverengi7 {
     background-color: #6D4C41 !important
 }
-
 .kahverengi8 {
     background-color: #5D4037 !important
 }
-
 .kahverengi9 {
     background-color: #4E342E !important
 }
-
 .kahverengi10 {
     background-color: #3E2723 !important
 }
-
-.gri, .gri6 {
+.gri,
+.gri6 {
     background-color: #9E9E9E !important
 }
-
 .gri2 {
     background-color: #F5F5F5 !important
 }
-
 .gri3 {
     background-color: #EEEEEE !important
 }
-
 .gri4 {
     background-color: #E0E0E0 !important
 }
-
 .gri5 {
     background-color: #BDBDBD !important
 }
-
 .gri7 {
     background-color: #757575 !important
 }
-
 .gri8 {
     background-color: #616161 !important
 }
-
 .gri9 {
     background-color: #4E4E4E !important
 }
-
 .gri10 {
     background-color: #424040 !important
 }
-
 .siyah {
     background-color: #000 !important
 }
-
 .siyah2 {
     background-color: #404040 !important
 }
-
 .siyah3 {
     background-color: #353535 !important
 }
-
 .siyah4 {
     background-color: #303030 !important
 }
-
 .siyah5 {
     background-color: #252525 !important
 }
-
 .siyah6 {
     background-color: #202020 !important
 }
-
 .siyah7 {
     background-color: #151515 !important
 }
-
 .siyah8 {
     background-color: #101010 !important
 }
-
 .siyah9 {
     background-color: #050505 !important
 }
-
 .blogger {
     background-color: #F87F14 !important
 }
-
 .codepen {
     background-color: #1B1C1B !important
 }
-
 .dribbble {
     background-color: #EC4A89 !important
 }
-
 .facebook {
     background-color: #3B5998 !important
 }
-
 .flickr {
     background-color: #FF0084 !important
 }
-
 .foursquare {
     background-color: #F94877 !important
 }
-
 .github {
     background-color: #323131 !important
 }
-
 .google {
     background-color: #DC483B !important
 }
-
 .instagram {
     background-color: #4E433C !important
 }
-
 .linkedin {
     background-color: #007AB5 !important
 }
-
 .periscope {
     background-color: #30A4C6 !important
 }
-
 .pinterest {
     background-color: #CB2027 !important
 }
-
 .scode {
     background-color: #E33F30 !important
 }
-
 .scorp {
     background-color: #DE2228 !important
 }
-
 .snapchat {
     background-color: #FFFC01 !important
 }
-
 .skype {
     background-color: #00ADED !important
 }
-
 .swarm {
     background-color: #FFA633 !important
 }
-
 .tumblr {
     background-color: #2C4762 !important
 }
-
 .twitter {
     background-color: #5EA9DD !important
 }
-
 .vine {
     background-color: #00B489 !important
 }
-
 .vimeo {
     background-color: #1AB7EA !important
 }
-
 .wordpress {
     background-color: #00749A !important
 }
-
 .youtube {
     background-color: #EE1C1B !important
 }
-
 /* ============= 1.3 Tablo */
 
 .tr-tablo {
     background-color: #FFF;
     border-collapse: collapse;
     border-spacing: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     cursor: default;
     display: block;
     margin: 1em 0;
@@ -1974,530 +1777,439 @@ sup {
     overflow-y: hidden;
     width: 100%
 }
-
 .tr-tablo tr {
     border-right: 1px solid rgba(0, 0, 0, .05);
     border-left: 1px solid rgba(0, 0, 0, .05)
 }
-
 .tr-tablo tr td,
 .tr-tablo tr th {
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
     padding: .9em;
     width: 100vw
 }
-
 .tr-tablo.kucuk tr td,
 .tr-tablo.kucuk tr th {
     padding: .45em
 }
-
 .tr-tablo tr th {
     background-color: rgba(0, 0, 0, .02);
     text-align: left
 }
-
 .tr-tablo.yazi-ortala th {
     text-align: center
 }
-
 .tr-tablo.renkli tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, .02)
 }
-
 .tr-tablo.vurgu tr:hover td {
     background-color: rgba(0, 0, 0, .025)
 }
-
 .tr-tablo::-webkit-scrollbar {
     display: none
 }
-
 /* ============= 1.4 Yardimci Kodlar */
 
 .sol {
     float: left !important
 }
-
 .sag {
     float: right !important
 }
-
 .ortala {
     margin-left: auto !important;
     margin-right: auto !important
 }
-
 .yuvarlak {
     border-radius: 50% !important
 }
-
 /* gizle */
 
 .gizle {
     display: none !important
 }
-
 @media only screen and (max-width: 360px) {
-    .gizle-ck, .gizle-cb-alt, .gizle-b-alt, .gizle-o-alt, .gizle-k-alt {
+    .gizle-ck,
+    .gizle-cb-alt,
+    .gizle-b-alt,
+    .gizle-o-alt,
+    .gizle-k-alt {
         display: none !important
     }
 }
-
 @media only screen and (min-width: 360px) and (max-width: 720px) {
-    .gizle-k, .gizle-ck-ust, .gizle-cb-alt, .gizle-b-alt, .gizle-o-alt {
+    .gizle-k,
+    .gizle-ck-ust,
+    .gizle-cb-alt,
+    .gizle-b-alt,
+    .gizle-o-alt {
         display: none !important
     }
 }
-
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
-    .gizle-o, .gizle-ck-ust, .gizle-k-ust, .gizle-cb-alt, .gizle-b-alt {
+    .gizle-o,
+    .gizle-ck-ust,
+    .gizle-k-ust,
+    .gizle-cb-alt,
+    .gizle-b-alt {
         display: none !important
     }
 }
-
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-    .gizle-b, .gizle-ck-ust, .gizle-k-ust, .gizle-o-ust, .gizle-cb-alt {
+    .gizle-b,
+    .gizle-ck-ust,
+    .gizle-k-ust,
+    .gizle-o-ust,
+    .gizle-cb-alt {
         display: none !important
     }
 }
-
 @media only screen and (min-width: 1440px) {
-    .gizle-cb, .gizle-ck-ust, .gizle-k-ust, .gizle-o-ust, .gizle-b-ust {
+    .gizle-cb,
+    .gizle-ck-ust,
+    .gizle-k-ust,
+    .gizle-o-ust,
+    .gizle-b-ust {
         display: none !important
     }
 }
-
 /* display */
 
 .d-inline {
     display: inline
 }
-
 .d-block {
     display: block
 }
-
 .d-inline-block {
     display: inline-block
 }
-
 .d-table {
     display: table
 }
-
 .d-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     overflow: auto
 }
-
 .d-flex::-webkit-scrollbar {
     display: none
 }
-
 .d-inline-flex {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex
 }
-
 /* margin */
 
 .m0 {
     margin: 0 !important
 }
-
 .m1 {
     margin: 1em !important
 }
-
 .m2 {
     margin: 2em !important
 }
-
 .m3 {
     margin: 3em !important
 }
-
 .m4 {
     margin: 4em !important
 }
-
 .m5 {
     margin: 5em !important
 }
-
 /* padding */
 
 .p0 {
     padding: 0 !important
 }
-
 .p1 {
     padding: 1em !important
 }
-
 .p2 {
     padding: 2em !important
 }
-
 .p3 {
     padding: 3em !important
 }
-
 .p4 {
     padding: 4em !important
 }
-
 .p5 {
     padding: 5em !important
 }
-
 /* margin-top */
 
 .mt0 {
     margin-top: 0 !important
 }
-
 .mt1 {
     margin-top: 1em !important
 }
-
 .mt2 {
     margin-top: 2em !important
 }
-
 .mt3 {
     margin-top: 3em !important
 }
-
 .mt4 {
     margin-top: 4em !important
 }
-
 .mt5 {
     margin-top: 5em !important
 }
-
 /* margin-bottom */
 
 .mb0 {
     margin-bottom: 0 !important
 }
-
 .mb1 {
     margin-bottom: 1em !important
 }
-
 .mb2 {
     margin-bottom: 2em !important
 }
-
 .mb3 {
     margin-bottom: 3em !important
 }
-
 .mb4 {
     margin-bottom: 4em !important
 }
-
 .mb5 {
     margin-bottom: 5em !important
 }
-
 /* margin-right */
 
 .mr0 {
     margin-right: 0 !important
 }
-
 .mr1 {
     margin-right: 1em !important
 }
-
 .mr2 {
     margin-right: 2em !important
 }
-
 .mr3 {
     margin-right: 3em !important
 }
-
 .mr4 {
     margin-right: 4em !important
 }
-
 .mr5 {
     margin-right: 5em !important
 }
-
 /* margin-left */
 
 .ml0 {
     margin-left: 0 !important
 }
-
 .ml1 {
     margin-left: 1em !important
 }
-
 .ml2 {
     margin-left: 2em !important
 }
-
 .ml3 {
     margin-left: 3em !important
 }
-
 .ml4 {
     margin-left: 4em !important
 }
-
 .ml5 {
     margin-left: 5em !important
 }
-
 /* margin-x */
 
 .mx0 {
     margin-left: 0 !important;
     margin-right: 0 !important
 }
-
 .mx1 {
     margin-left: 1em !important;
     margin-right: 1em !important
 }
-
 .mx2 {
     margin-left: 2em !important;
     margin-right: 2em !important
 }
-
 .mx3 {
     margin-left: 3em !important;
     margin-right: 3em !important
 }
-
 .mx4 {
     margin-left: 4em !important;
     margin-right: 4em !important
 }
-
 .mx5 {
     margin-left: 5em !important;
     margin-right: 5em !important
 }
-
 /* margin-y */
 
 .my0 {
     margin-bottom: 0 !important;
     margin-top: 0 !important
 }
-
 .my1 {
     margin-bottom: 1em !important;
     margin-top: 1em !important
 }
-
 .my2 {
     margin-bottom: 2em !important;
     margin-top: 2em !important
 }
-
 .my3 {
     margin-bottom: 3em !important;
     margin-top: 3em !important
 }
-
 .my4 {
     margin-bottom: 4em !important;
     margin-top: 4em !important
 }
-
 .my5 {
     margin-bottom: 5em !important;
     margin-top: 5em !important
 }
-
 /* padding-top */
 
 .pt0 {
     padding-top: 0 !important
 }
-
 .pt1 {
     padding-top: 1em !important
 }
-
 .pt2 {
     padding-top: 2em !important
 }
-
 .pt3 {
     padding-top: 3em !important
 }
-
 .pt4 {
     padding-top: 4em !important
 }
-
 .pt5 {
     padding-top: 5em !important
 }
-
 /* padding-bottom */
 
 .pb0 {
     padding-bottom: 0 !important
 }
-
 .pb1 {
     padding-bottom: 1em !important
 }
-
 .pb2 {
     padding-bottom: 2em !important
 }
-
 .pb3 {
     padding-bottom: 3em !important
 }
-
 .pb4 {
     padding-bottom: 4em !important
 }
-
 .pb5 {
     padding-bottom: 5em !important
 }
-
 /* padding-right */
 
 .pr0 {
     padding-right: 0 !important
 }
-
 .pr1 {
     padding-right: 1em !important
 }
-
 .pr2 {
     padding-right: 2em !important
 }
-
 .pr3 {
     padding-right: 3em !important
 }
-
 .pr4 {
     padding-right: 4em !important
 }
-
 .pr5 {
     padding-right: 5em !important
 }
-
 /* padding-left */
 
 .pl0 {
     padding-left: 0 !important
 }
-
 .pl1 {
     padding-left: 1em !important
 }
-
 .pl2 {
     padding-left: 2em !important
 }
-
 .pl3 {
     padding-left: 3em !important
 }
-
 .pl4 {
     padding-left: 4em !important
 }
-
 .pl5 {
     padding-left: 5em !important
 }
-
 /* padding-x */
 
 .px0 {
     padding-left: 0 !important;
     padding-right: 0 !important
 }
-
 .px1 {
     padding-left: 1em !important;
     padding-right: 1em !important
 }
-
 .px2 {
     padding-left: 2em !important;
     padding-right: 2em !important
 }
-
 .px3 {
     padding-left: 3em !important;
     padding-right: 3em !important
 }
-
 .px4 {
     padding-left: 4em !important;
     padding-right: 4em !important
 }
-
 .px5 {
     padding-left: 5em !important;
     padding-right: 5em !important
 }
-
 /* padding-y */
 
 .py0 {
     padding-bottom: 0 !important;
     padding-top: 0 !important
 }
-
 .py1 {
     padding-bottom: 1em !important;
     padding-top: 1em !important
 }
-
 .py2 {
     padding-bottom: 2em !important;
     padding-top: 2em !important
 }
-
 .py3 {
     padding-bottom: 3em !important;
     padding-top: 3em !important
 }
-
 .py4 {
     padding-bottom: 4em !important;
     padding-top: 4em !important
 }
-
 .py5 {
     padding-bottom: 5em !important;
     padding-top: 5em !important
 }
-
 .tr-embed {
     height: 0;
     overflow: hidden;
     padding-bottom: 56%;
     position: relative
 }
-
 .tr-embed iframe {
     height: 100%;
     left: 0;
@@ -2505,23 +2217,20 @@ sup {
     top: 0;
     width: 100%
 }
-
 video {
     height: auto;
     max-width: 100%
 }
-
 blockquote {
     border-left: 5px solid rgba(0, 0, 0, .05);
     margin: 1em;
     padding-left: 1em
 }
-
 .cizgi {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2534,26 +2243,22 @@ blockquote {
     text-align: center;
     width: 100%
 }
-
 .cizgi img {
     background-color: #FFF;
     height: 1.5em;
     padding: 0 1em
 }
-
-.temizle:before, .temizle:after {
+.temizle:before,
+.temizle:after {
     content: " ";
     display: table
 }
-
 .temizle:after {
     clear: both
 }
-
 .temizle {
     *zoom: 1
 }
-
 .tr-karart {
     background-color: #000;
     height: 100%;
@@ -2564,7 +2269,6 @@ blockquote {
     width: 100%;
     z-index: 997
 }
-
 /* ============= 1.5 Yazi Stili */
 
 @font-face {
@@ -2573,54 +2277,44 @@ blockquote {
     font-weight: 100;
     src: url("../fonts/Roboto-Light.ttf")
 }
-
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
     src: url("../fonts/Roboto-LightItalic.ttf")
 }
-
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     src: url("../fonts/Roboto-Regular.ttf")
 }
-
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: normal;
     src: url("../fonts/Roboto-Italic.ttf")
 }
-
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     src: url("../fonts/Roboto-Bold.ttf")
 }
-
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: bold;
     src: url("../fonts/Roboto-BoldItalic.ttf")
 }
-
 /* ============= 2. Bilesenler */
-
-
 /* ============= 2.1 Buton */
-
-
 /* ============= 2.1.1 Buton Ayarlari */
 
 .buton {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: #03968A;
     border: 0;
     border-radius: 3px;
@@ -2633,8 +2327,8 @@ blockquote {
     font-size: 1em;
     font-weight: normal;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     letter-spacing: 1px;
     line-height: 2.5;
     margin-bottom: .3em;
@@ -2647,121 +2341,106 @@ blockquote {
     user-select: none;
     vertical-align: top;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     white-space: nowrap
 }
-
 .buton.minik {
     font-size: .65em;
     line-height: 2
 }
-
 .buton.kucuk {
     font-size: .75em
 }
-
 .buton.orta {
     font-size: 1.25em
 }
-
 .buton.buyuk {
     font-size: 1.5em
 }
-
 .buton:hover {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     color: #FFF;
     text-decoration: none
 }
-
 .buton:active {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
-
 .buton.saydam {
     background-color: transparent;
-    -webkit-box-shadow: inset 0px 0px 1px rgba(0,0,0,.5) !important;
-            box-shadow: inset 0px 0px 1px rgba(0,0,0,.5) !important;
+    -webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5) !important;
+    box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5) !important;
     color: #000
 }
-
 .buton.saydam:hover {
     -webkit-box-shadow: inset 0px 0px 2px #000 !important;
-            box-shadow: inset 0px 0px 2px #000 !important
+    box-shadow: inset 0px 0px 2px #000 !important
 }
-
 .buton.saydam:active {
     -webkit-box-shadow: inset 0px 0px 4px #000 !important;
-            box-shadow: inset 0px 0px 4px #000 !important
+    box-shadow: inset 0px 0px 4px #000 !important
 }
-
 .buton.pasif {
     background-color: #E6E6E6;
     color: rgba(0, 0, 0, .4);
     cursor: default;
     pointer-events: none
 }
-
 .buton.pasif:hover {
     background-color: #E6E6E6;
     -webkit-box-shadow: inset 0 0 0 0 transparent;
-            box-shadow: inset 0 0 0 0 transparent
+    box-shadow: inset 0 0 0 0 transparent
 }
-
-.buton.yuvarlak, .buton.kare {
+.buton.yuvarlak,
+.buton.kare {
     height: 40px;
     line-height: 40px;
     padding: 0px;
     width: 40px
 }
-
-.buton.yuvarlak.minik, .buton.kare.minik {
+.buton.yuvarlak.minik,
+.buton.kare.minik {
     height: 20px;
     line-height: 20px;
     width: 20px
 }
-
-.buton.yuvarlak.kucuk, .buton.kare.kucuk {
+.buton.yuvarlak.kucuk,
+.buton.kare.kucuk {
     height: 30px;
     line-height: 30px;
     width: 30px
 }
-
-.buton.yuvarlak.orta, .buton.kare.orta {
+.buton.yuvarlak.orta,
+.buton.kare.orta {
     height: 50px;
     line-height: 50px;
     width: 50px
 }
-
-.buton.yuvarlak.buyuk, .buton.kare.buyuk {
+.buton.yuvarlak.buyuk,
+.buton.kare.buyuk {
     height: 60px;
     line-height: 60px;
     width: 60px
 }
-
 .buton.yay {
     width: 100%
 }
-
 .buton.beyaz {
     color: #000 !important
 }
-
-.buton.yuvarlak i, .buton.kare i {
+.buton.yuvarlak i,
+.buton.kare i {
     margin-right: -1px
 }
-
 /* ============= 2.1.2 Buton Efektleri */
 
 .buton[class*="efekt"] {
     overflow: hidden;
     position: relative
 }
-
 .buton[class*="efekt"]::before {
     background: #fff;
     content: "";
@@ -2771,87 +2450,75 @@ blockquote {
     -o-transition: .3s;
     transition: .3s
 }
-
-.buton.efekt:before, a.buton.efekt1:before {
+.buton.efekt:before,
+a.buton.efekt1:before {
     height: 150px;
     left: -70px;
     top: -40px;
     -webkit-transform: rotate(37deg);
     -ms-transform: rotate(37deg);
-        transform: rotate(37deg);
+    transform: rotate(37deg);
     width: 50px
 }
-
-.buton.efekt:hover:before, a.buton.efekt1:hover:before {
+.buton.efekt:hover:before,
+a.buton.efekt1:hover:before {
     left: 99%
 }
-
 .buton.efekt2:before {
     height: 150px;
     left: 99%;
     top: -40px;
     -webkit-transform: rotate(37deg);
     -ms-transform: rotate(37deg);
-        transform: rotate(37deg);
+    transform: rotate(37deg);
     width: 50px
 }
-
 .buton.efekt2:hover:before {
     left: -72px
 }
-
 .buton.efekt3:before {
     bottom: 0;
     height: 100%;
     left: 0;
     width: 0
 }
-
 .buton.efekt3:hover:before {
     width: 100%
 }
-
 .buton.efekt4:before {
     bottom: 0;
     height: 100%;
     left: 100%;
     width: 0
 }
-
 .buton.efekt4:hover:before {
     left: 0;
     width: 100%
 }
-
 a.buton.efekt5:before {
     height: 0;
     left: 0;
     top: 0;
     width: 100%
 }
-
 a.buton.efekt5:hover:before {
     height: 100%
 }
-
 .buton.efekt6:before {
     bottom: 0;
     height: 0;
     left: 0;
     width: 100%
 }
-
 .buton.efekt6:hover:before {
     height: 100%
 }
-
-
 /* ============= 2.2 Etiket */
 
 a.etiket {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, .1);
     border-radius: 3px;
     color: #333;
@@ -2861,8 +2528,8 @@ a.etiket {
     display: inline-flex;
     font-size: 14px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     letter-spacing: 1px;
     line-height: 2;
     margin: 0 1px 5px 0;
@@ -2872,45 +2539,39 @@ a.etiket {
     -o-transition: .3s;
     transition: .3s;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     vertical-align: top;
     white-space: nowrap
 }
-
 a.etiket:hover {
     border-color: rgba(0, 0, 0, .075);
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     color: #000;
     text-decoration: none
 }
-
 a.etiket:active {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
-
 a.etiket.pasif {
     background-color: #E6E6E6 !important;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     color: rgba(0, 0, 0, .4) !important;
     cursor: default;
     pointer-events: none
 }
-
 a.etiket.kapat {
     color: #333;
     pointer-events: none
 }
-
 a.etiket.kapat:hover {
     -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
-            box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
-
 a.etiket.kapat .etiket-kaldir {
     color: #000;
     cursor: pointer;
@@ -2923,11 +2584,9 @@ a.etiket.kapat .etiket-kaldir {
     -o-transition: .3s;
     transition: .3s
 }
-
 a.etiket.kapat:hover .etiket-kaldir {
     opacity: 1
 }
-
 a.etiket .detay {
     background: rgba(0, 0, 0, .1);
     border-radius: 0 3px 3px 0;
@@ -2938,19 +2597,80 @@ a.etiket .detay {
     padding: 0 .5em;
     margin: -5px -10px -5px 5px
 }
-
 a.etiket.kapat .detay {
     border-radius: 0;
-    margin-right:  0
+    margin-right: 0
 }
-
 a.etiket.beyaz {
     color: #000 !important
 }
-
 /* ============= 2.3 Form Elemanlari */
 
-/* ============= 2.3.1 Checkbox - Radio Buton */
+.tr-alan {
+    margin-bottom: 1em;
+    padding-top: 1em;
+    position: relative
+}
+/* ============= 2.3.1 Anahtar */
+
+.tr-anahtar,
+.tr-anahtar * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tr-anahtar label {
+    cursor: pointer;
+}
+.tr-anahtar label input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+.tr-anahtar label input:checked + .anahtar {
+    background-color: rgba(0, 0, 0, .1);
+}
+.tr-anahtar label input:checked + .anahtar:after,
+.tr-anahtar label input:checked + .anahtar:before {
+    left: 1.25em
+}
+.tr-anahtar label input:checked + .anahtar:after {
+    background-color: #03968A;
+}
+.tr-anahtar label .anahtar {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 2.5em;
+    height: .75em;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 1em;
+    margin-right: .5em;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    vertical-align: middle;
+}
+.tr-anahtar label .anahtar:after,
+.tr-anahtar label .anahtar:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    left: 0;
+    top: -4px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.tr-anahtar label .anahtar:after {
+    background-color: #C1FDF8;
+}
+/* ============= 2.3.2 Checkbox - Radio Buton */
 
 .tr-checkbox,
 .tr-radio {
@@ -2958,7 +2678,6 @@ a.etiket.beyaz {
     pointer-events: none;
     position: absolute
 }
-
 .tr-checkbox + .tr-label,
 .tr-radio + .tr-label {
     cursor: pointer;
@@ -2974,40 +2693,40 @@ a.etiket.beyaz {
     -ms-user-select: none;
     user-select: none
 }
-
 .tr-checkbox + .tr-label:after,
 .tr-checkbox + .tr-label:before,
 .tr-radio + .tr-label:after,
-.tr-radio + .tr-label:before  {
+.tr-radio + .tr-label:before {
     content: "";
     left: 0;
     position: absolute;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
     transition: .25s;
     z-index: 1
 }
-
 .tr-radio + .tr-label:after,
 .tr-radio + .tr-label:before {
-	border-radius: 50%;
-	height: 16px;
-	margin: 2px;
-	top: 0;
-	width: 16px;
-	z-index: 0
+    border-radius: 50%;
+    height: 16px;
+    margin: 2px;
+    top: 0;
+    width: 16px;
+    z-index: 0
 }
-
 .tr-checkbox:not(:checked) + .tr-label:before {
     border: 3px solid transparent;
     height: 0;
     left: 6px;
     -webkit-transform: rotateZ(37deg);
+    -ms-transform: rotate(37deg);
     transform: rotateZ(37deg);
     -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     top: 10px;
     width: 0
 }
-
 .tr-checkbox:not(:checked) + .tr-label:after {
     background-color: transparent;
     border: 2px solid #5a5a5a;
@@ -3016,17 +2735,15 @@ a.etiket.beyaz {
     width: 20px;
     z-index: 0
 }
-
 .tr-radio:not(:checked) + .tr-label:after,
 .tr-radio:not(:checked) + .tr-label:before {
-	border: 2px solid #303030
+    border: 2px solid #303030
 }
-
 .tr-radio:not(:checked) + .tr-label:after {
-	-webkit-transform: scale(0);
-	transform: scale(0)
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
 }
-
 .tr-checkbox:checked + .tr-label:before {
     border-bottom: 2px solid #fff;
     border-left: 2px solid transparent;
@@ -3035,18 +2752,18 @@ a.etiket.beyaz {
     height: 14px;
     left: 1px;
     -webkit-transform: rotateZ(37deg);
+    -ms-transform: rotate(37deg);
     transform: rotateZ(37deg);
     -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
     transform-origin: 100% 100%;
     top: 2px;
     width: 7px
 }
-
 .tr-radio:checked + .tr-label:after,
 .tr-radio:checked + .tr-label:before {
     border: 2px solid #03968A
 }
-
 .tr-checkbox:checked + .tr-label:after {
     border: 2px solid #03968A;
     background-color: #03968A;
@@ -3055,14 +2772,13 @@ a.etiket.beyaz {
     width: 20px;
     z-index: 0
 }
-
 .tr-radio:checked + .tr-label:after {
-	background-color: #03968A;
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5)
+    background-color: #03968A;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5)
 }
-
-/* ============= 2.3.2 Dosya Secici */
+/* ============= 2.3.3 Dosya Secici */
 
 input[type="file"].tr-dosya {
     border-bottom: 2px solid #eee;
@@ -3073,40 +2789,27 @@ input[type="file"].tr-dosya {
     padding: .5em .7em 0 0;
     width: 100%
 }
-
 input[type="file"].tr-dosya::-webkit-file-upload-button {
     visibility: hidden
 }
-
 input[type="file"].tr-dosya::before {
     bottom: 10px;
     content: "Seç"
 }
-
 input[type="file"].tr-dosya:hover::before {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
     color: #FFF;
     text-decoration: none
 }
-
 input[type="file"].tr-dosya:active {
     outline: 0
 }
-
 input[type="file"].tr-dosya:active::before {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
-
-
-/* ============= 2.3.3 Input - Textarea */
-
-.tr-alan {
-	margin-bottom:1em;
-	padding-top: 1em;
-	position: relative
-}
+/* ============= 2.3.4 Input - Textarea */
 
 input.tr-input,
 textarea.tr-textarea {
@@ -3117,7 +2820,7 @@ textarea.tr-textarea {
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     letter-spacing: .5px;
-	line-height: 1;
+    line-height: 1;
     outline: none;
     position: relative;
     -webkit-transition: .3s;
@@ -3125,51 +2828,45 @@ textarea.tr-textarea {
     transition: .3s;
     width: 100%
 }
-
 textarea.tr-textarea {
-    line-height:1.2em;
+    line-height: 1.2em;
     min-height: 6em;
     overflow: hidden;
-	padding: 0;
+    padding: 0;
     resize: none
 }
-
 input.tr-input:focus,
 textarea.tr-textarea:focus {
     border-bottom: 2px solid #03968A
 }
-
 input.tr-input + label,
 textarea.tr-textarea + label.tr-label {
     color: #03968A;
     cursor: auto;
     display: inline-block;
     font-weight: 400;
-	left: 1px;
+    left: 1px;
     margin: 0;
     pointer-events: none;
     position: absolute;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-	top: 1em
+    top: 1em
 }
-
 input.tr-input:valid + label.tr-label,
 textarea.tr-textarea:valid + label.tr-label {
-	color: #057970;
-	font-size: .75em;
-	top: 0
+    color: #057970;
+    font-size: .75em;
+    top: 0
 }
-
 textarea[disabled].tr-textarea {
     pointer-events: none
 }
-
-/* ============= 2.3.4 Select */
+/* ============= 2.3.5 Select */
 
 .select {
-    border: 1px solid rgba(0,0,0,.05);
+    border: 1px solid rgba(0, 0, 0, .05);
     border-radius: 3px;
     color: #000;
     cursor: pointer;
@@ -3178,7 +2875,6 @@ textarea[disabled].tr-textarea {
     position: relative;
     width: 100%
 }
-
 .tr-select-secili {
     background-color: #FFF;
     bottom: 0;
@@ -3188,7 +2884,6 @@ textarea[disabled].tr-textarea {
     right: 0;
     top: 0
 }
-
 .tr-select-secili:after {
     content: "";
     border: 5px solid transparent;
@@ -3197,14 +2892,13 @@ textarea[disabled].tr-textarea {
     top: 17px;
     right: 15px
 }
-
-.tr-select-secili:active, .tr-select-secili.aktif {
-    background-color: rgba(0,0,0,.025)
+.tr-select-secili:active,
+.tr-select-secili.aktif {
+    background-color: rgba(0, 0, 0, .025)
 }
-
 .tr-select {
     background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.05);
+    border: 1px solid rgba(0, 0, 0, .05);
     display: none;
     margin: 0;
     left: 0;
@@ -3214,18 +2908,15 @@ textarea[disabled].tr-textarea {
     top: 100%;
     z-index: 2
 }
-
 .tr-select li {
     padding: .375em 1em;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s
 }
-
 .tr-select li:hover {
-    background-color: rgba(0,0,0,.05)
+    background-color: rgba(0, 0, 0, .05)
 }
-
 /* ============= 2.4 Footer */
 
 footer.tr-footer {
@@ -3237,79 +2928,75 @@ footer.tr-footer {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     font-size: .9em;
     padding: 3em 0 2em 0;
     width: 100%
 }
-
 footer.tr-footer nav a {
     line-height: 1.5em
 }
-
 footer.tr-footer .footer-detay {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
     margin-top: 1em;
     padding: 1em 0;
     position: relative;
     top: 30px;
     width: 100%
 }
-
 /* ============= 2.5 Kartlar */
 
 .tr-kutu {
     background-color: #FFF;
     border-radius: 3px;
-    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
-            box-shadow: 0 2px 3px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
     min-height: 1px;
     margin-bottom: 1em;
     padding: 1em
 }
-
 .tr-kart {
     border-radius: 15px;
-    -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.15);
-            box-shadow: 0px 5px 15px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
     margin-bottom: 2em;
     overflow: hidden
 }
-
 .tr-kart .kart-resim {
-    background: -webkit-linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%);
-    background: -o-linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(45deg, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 100%)
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(45deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%)
 }
-
 .tr-kart .kart-resim img {
     border-radius: 100%;
-    -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.1);
-            box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
     margin: 3em 0;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
     width: 40%
 }
-
 .tr-kart .kart-icerik {
     background-color: #FFF;
     padding: 1em 2.5em
 }
-
 /* ============= 2.6 Koleksiyonlar */
 
 nav.tr-koleksiyon {
     background-color: #FFF;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative
 }
-
 nav.tr-koleksiyon .koleksiyon-baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     border-top-left-radius: 3px;
@@ -3317,7 +3004,6 @@ nav.tr-koleksiyon .koleksiyon-baslik {
     padding: .5em;
     margin: 0
 }
-
 nav.tr-koleksiyon a {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .7);
@@ -3327,56 +3013,47 @@ nav.tr-koleksiyon a {
     -o-transition: .3s;
     transition: .3s
 }
-
 nav.tr-koleksiyon a:last-child {
     border-bottom: 0
 }
-
 nav.tr-koleksiyon a:hover {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
     color: #000;
     text-decoration: none
 }
-
 nav.tr-koleksiyon a:active {
     -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
-            box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
+    box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
 }
-
 nav.tr-koleksiyon.renkli a:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, .02)
 }
-
 nav.tr-koleksiyon.saydam {
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: 0 0 0 0 transparent;
-            box-shadow: 0 0 0 0 transparent
+    box-shadow: 0 0 0 0 transparent
 }
-
 nav.tr-koleksiyon.saydam a:hover {
     background-color: transparent;
     -webkit-box-shadow: 0 0 0 0 transparent;
-            box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
     text-decoration: underline
 }
-
 nav.tr-koleksiyon.saydam .baslik,
 nav.tr-koleksiyon.saydam a {
     border-bottom: 0
 }
-
 /* ============= 2.7 Menu */
 
 header {
     z-index: 996
 }
-
 nav.menu {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: #03968A;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3385,15 +3062,14 @@ nav.menu {
     white-space: nowrap;
     width: 100%
 }
-
 nav.menu::-webkit-scrollbar {
     display: none
 }
-
-nav.menu a, nav.mobil a {
+nav.menu a,
+nav.mobil a {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     color: #FFF;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -3408,12 +3084,11 @@ nav.menu a, nav.mobil a {
     -o-transition: .3s;
     transition: .3s
 }
-
-nav.menu a:hover, nav.mobil a:hover {
+nav.menu a:hover,
+nav.mobil a:hover {
     opacity: 1;
     text-decoration: none
 }
-
 nav.menu li.acilir > a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -3421,77 +3096,64 @@ nav.menu li.acilir > a::after {
     content: "";
     margin-left: .5em
 }
-
 nav.menu a i {
     margin-right: .3em
 }
-
 nav.menu ul {
     display: inherit
 }
-
 nav.menu li ul {
     background-color: #FFF;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 0 0 3px 3px;
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 0 .6em 0 .3em;
     position: absolute;
     z-index: 2
 }
-
 nav.menu li:hover ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
-
 nav.menu li li {
     display: inherit
 }
-
 nav.menu li li a {
     color: #000 !important
 }
-
 nav.menu li li a:hover {
     color: #000;
     text-decoration: underline
 }
-
 nav.menu.sabit {
     left: 0;
     position: fixed;
     top: 0
 }
-
 nav.menu.sabit.alt {
     bottom: 0;
     top: auto
 }
-
 nav.menu.saydam {
-    color: rgba(0,0,0,.7)
+    color: rgba(0, 0, 0, .7)
 }
-
 nav.menu.saydam a {
     color: #000 !important
 }
-
 nav.menu.saydam a:hover {
     text-decoration: underline
 }
-
 /* Mobil Menu */
 
 nav.mobil {
     background-color: #03968A;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     height: 100%;
     left: -250px;
     line-height: 40px;
@@ -3503,11 +3165,9 @@ nav.mobil {
     width: 250px;
     z-index: 999
 }
-
 nav.mobil::-webkit-scrollbar {
     width: 0px
 }
-
 nav.mobil .baslik {
     background-color: rgba(0, 0, 0, .1);
     font-size: 1.5em;
@@ -3516,13 +3176,11 @@ nav.mobil .baslik {
     text-align: center;
     width: 100%
 }
-
 nav.mobil .baslik a {
     border-left: 0;
     padding-left: 0;
     opacity: 1 !important
 }
-
 nav.mobil a {
     color: #FFF;
     display: block;
@@ -3530,24 +3188,19 @@ nav.mobil a {
     padding-left: 1em;
     opacity: 1
 }
-
 nav.mobil a:not(.buton):not(.etiket) {
     display: block;
     margin: 0 1em
 }
-
 nav.mobil li ul a:not(.buton):not(.etiket) {
     padding-left: 1em
 }
-
-nav.mobil:hover a  {
+nav.mobil:hover a {
     opacity: .7
 }
-
 nav.mobil ul ul a:hover {
     opacity: 1
 }
-
 nav.mobil li.acilir>a::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -3557,25 +3210,21 @@ nav.mobil li.acilir>a::after {
     right: 0;
     top: 23px
 }
-
 nav.mobil li li a {
     opacity: .7;
     padding: .7em 0 .7em 2em
 }
-
 nav.mobil a i {
     margin-right: 7px
 }
-
 nav.mobil.sag {
     left: auto;
     right: -250px
 }
-
 .menuac {
     border-radius: 3px;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10);
     cursor: pointer;
     height: 40px;
     left: 60px;
@@ -3587,23 +3236,20 @@ nav.mobil.sag {
     width: 40px;
     z-index: 997
 }
-
-.menuac:hover  {
+.menuac:hover {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .15)
 }
-
 .menuac.sag {
     left: auto;
     right: 60px
 }
-
 /* ============= 2.8 Notlar */
 
 .tr-not {
     background-color: #03968A;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     border-radius: 3px;
     color: #FFF;
     margin-bottom: 1em;
@@ -3611,17 +3257,15 @@ nav.mobil.sag {
     position: relative;
     width: 100%
 }
-
 /* ============= 2.9 Pano */
 
 .tr-pano {
     background-color: #03968A;
     border-radius: 3px;
-    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
-            box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
     margin-bottom: 1em
 }
-
 .tr-pano .pano-baslik {
     color: #FFF;
     font-size: 1em;
@@ -3629,12 +3273,10 @@ nav.mobil.sag {
     margin: 0;
     padding: .75em 1em
 }
-
 .tr-pano .pano-icerik {
     background-color: #FFF;
     padding: .5em 1em
 }
-
 /* ============= 2.10 Progress */
 
 progress.tr-progress {
@@ -3645,41 +3287,32 @@ progress.tr-progress {
     position: relative;
     width: 100%
 }
-
 progress.tr-progress.kucuk {
     height: 10px
 }
-
 progress.tr-progress.buyuk {
     height: 20px
 }
-
 progress.tr-progress::-webkit-progress-bar {
     background-color: #EEE
 }
-
 progress.tr-progress::-webkit-progress-value {
     background-color: #03968A
 }
-
 progress.tr-progress.sari::-webkit-progress-value {
     background-color: #FFEB3B !important
 }
-
 progress.tr-progress.kirmizi::-webkit-progress-value {
     background-color: #F44336 !important
 }
-
 progress.tr-progress.yesil::-webkit-progress-value {
     background-color: #4CAF50 !important
 }
-
 progress.tr-progress.cizgili::-webkit-progress-value {
-    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-size: 1em 1em
 }
-
 /* ============= 2.11 Sayfa Konumu */
 
 .tr-konum {
@@ -3698,79 +3331,63 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     white-space: nowrap;
     width: 100%
 }
-
 .tr-konum.minik {
     font-size: .65em;
     line-height: 2
 }
-
 .tr-konum.kucuk {
     font-size: .75em
 }
-
 .tr-konum.orta {
     font-size: 1.25em;
 }
-
 .tr-konum.buyuk {
     font-size: 1.5em;
 }
-
 .tr-konum a {
     color: rgba(255, 255, 255, .6);
     margin-right: .3em
 }
-
 .tr-konum a:last-of-type {
     color: #FFF;
     padding-right: 1.3em
 }
-
 .tr-konum a::after {
     content: "/";
     margin-left: .3em
 }
-
 .tr-konum a:last-of-type::after {
     content: ""
 }
-
 .tr-konum a:hover {
     text-decoration: none
 }
-
 .tr-konum.saydam {
     background-color: transparent
 }
-
 .tr-konum.saydam a {
     color: rgba(0, 0, 0, .6)
 }
-
 .tr-konum.saydam a:last-of-type {
     color: #000
 }
-
 .tr-konum::-webkit-scrollbar {
     display: none
 }
-
 .tr-konum::-webkit-scrollbar-thumb {
     background-color: #000
 }
-
 /* ============= 2.12 Sayfa Numaralandirma */
 
 .tr-numara {
     cursor: default;
     margin: 1em 0;
 }
-
 .tr-numara a {
     background-color: #FFF;
     border-radius: 3px;
-    -webkit-box-shadow: inset 0px 0px 1px rgba(0,0,0,.5);
-            box-shadow: inset 0px 0px 1px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5);
+    box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5);
     color: #000;
     cursor: pointer;
     display: -webkit-inline-box;
@@ -3784,23 +3401,20 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     -o-transition: .1s;
     transition: .1s;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
-
 .tr-numara a:hover {
     -webkit-box-shadow: inset 0px 0px 2px #000;
-            box-shadow: inset 0px 0px 2px #000;
+    box-shadow: inset 0px 0px 2px #000;
     text-decoration: none
 }
-
 .tr-numara a:active {
     -webkit-box-shadow: inset 0px 0px 5px #000;
-            box-shadow: inset 0px 0px 5px #000;
+    box-shadow: inset 0px 0px 5px #000;
     text-decoration: none
 }
-
 .tr-numara a.aktif {
     background-color: #03968A;
     border-color: transparent;
@@ -3808,774 +3422,720 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     cursor: default;
     pointer-events: none
 }
-
 .tr-numara a.pasif {
     color: #ECECEC;
     cursor: default;
     pointer-events: none
 }
-
 .tr-numara a.pasif:hover {
     border-color: rgba(0, 0, 0, .1)
 }
-
 .tr-numara.minik a {
     font-size: .65em;
     line-height: 2;
     padding: 0 7px
 }
-
 .tr-numara.kucuk a {
     font-size: .75em;
     padding: 3px 11px
 }
-
 .tr-numara.orta a {
     font-size: 1.25em;
     padding: 5px 19px;
 }
-
 .tr-numara.buyuk a {
     font-size: 1.5em;
     margin-right: 5px;
     padding: 6px 23px
 }
-
 /* ============= 2.13 Yazi */
-
 /* ============= 2.13.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
 }
-
 .yazi-sag {
     text-align: right !important
 }
-
 .yazi-ortala {
     text-align: center !important
 }
-
 @media only screen and (max-width: 400px) {
     .yazi-ortala-ck {
         text-align: center !important
     }
 }
-
 @media only screen and (max-width: 800px) {
     .yazi-ortala-k {
         text-align: center !important
     }
 }
-
 @media only screen and (max-width: 1000px) {
     .yazi-ortala-o {
         text-align: center !important
     }
 }
-
 @media only screen and (max-width: 1200px) {
     .yazi-ortala-b {
         text-align: center !important
     }
 }
-
 .yazi-yay {
     text-align: justify !important
 }
-
 .yazi-golge {
     text-shadow: 0 2px 5px rgba(0, 0, 0, .15), 0 2px 10px rgba(0, 0, 0, .10)
 }
-
-.yazi-kalin, .yazi-kalin a, .yazi-kalin p {
+.yazi-kalin,
+.yazi-kalin a,
+.yazi-kalin p {
     font-weight: bold
 }
-
-.yazi-ince, .yazi-ince a, .yazi-ince p {
+.yazi-ince,
+.yazi-ince a,
+.yazi-ince p {
     font-weight: 100
 }
-
-.yazi-yatay, .yazi-yatay a, .yazi-yatay p {
+.yazi-yatay,
+.yazi-yatay a,
+.yazi-yatay p {
     font-style: italic
 }
-
-.yazi-cizgi, .yazi-cizgi a, .yazi-cizgi-alt, .yazi-cizgi-alt a {
+.yazi-cizgi,
+.yazi-cizgi a,
+.yazi-cizgi-alt,
+.yazi-cizgi-alt a {
     text-decoration: underline
 }
-
-.yazi-cizgi-orta, .yazi-cizgi-orta a {
+.yazi-cizgi-orta,
+.yazi-cizgi-orta a {
     text-decoration: line-through
 }
-
-.yazi-cizgi-ust, .yazi-cizgi-ust a {
+.yazi-cizgi-ust,
+.yazi-cizgi-ust a {
     text-decoration: overline
 }
-
 .yazi-buyukharf {
     text-transform: uppercase
 }
-
 .yazi-kucukharf {
     text-transform: lowercase
 }
-
 .yazi-basharfbuyuk {
     text-transform: capitalize
 }
-
 .yazi-kes {
     overflow: hidden;
     -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
+    text-overflow: ellipsis;
     white-space: nowrap
 }
-
 /* ============= 2.13.2 Yazi Renkleri */
 
-.yazi-beyaz, .yazi-beyaz a {
+.yazi-beyaz,
+.yazi-beyaz a {
     color: #FFF !important
 }
-
-.yazi-sari, .yazi-sari a, .yazi-sari6, .yazi-sari6 a {
+.yazi-sari,
+.yazi-sari a,
+.yazi-sari6,
+.yazi-sari6 a {
     color: #FFEB3B !important
 }
-
-.yazi-sari2, .yazi-sari2 a {
+.yazi-sari2,
+.yazi-sari2 a {
     color: #FFF9C4 !important
 }
-
-.yazi-sari3, .yazi-sari3 a {
+.yazi-sari3,
+.yazi-sari3 a {
     color: #FFF59D !important
 }
-
-.yazi-sari4, .yazi-sari4 a {
+.yazi-sari4,
+.yazi-sari4 a {
     color: #FFF176 !important
 }
-
-.yazi-sari5, .yazi-sari5 a {
+.yazi-sari5,
+.yazi-sari5 a {
     color: #FFEE58 !important
 }
-
-.yazi-sari7, .yazi-sari7 a {
+.yazi-sari7,
+.yazi-sari7 a {
     color: #FDD835 !important
 }
-
-.yazi-sari8, .yazi-sari8 a {
+.yazi-sari8,
+.yazi-sari8 a {
     color: #FBC02D !important
 }
-
-.yazi-sari9, .yazi-sari9 a {
+.yazi-sari9,
+.yazi-sari9 a {
     color: #F9A825 !important
 }
-
-.yazi-sari10, .yazi-sari10 a {
+.yazi-sari10,
+.yazi-sari10 a {
     color: #F57F17 !important
 }
-
-.yazi-turuncu, .yazi-turuncu a, .yazi-turuncu6, .yazi-turuncu6 a {
+.yazi-turuncu,
+.yazi-turuncu a,
+.yazi-turuncu6,
+.yazi-turuncu6 a {
     color: #FF9800 !important
 }
-
-.yazi-turuncu2, .yazi-turuncu2 a {
+.yazi-turuncu2,
+.yazi-turuncu2 a {
     color: #FFE0B2 !important
 }
-
-.yazi-turuncu3, .yazi-turuncu3 a {
+.yazi-turuncu3,
+.yazi-turuncu3 a {
     color: #FFCC80 !important
 }
-
-.yazi-turuncu4, .yazi-turuncu4 a {
+.yazi-turuncu4,
+.yazi-turuncu4 a {
     color: #FFB74D !important
 }
-
-.yazi-turuncu5, .yazi-turuncu5 a {
+.yazi-turuncu5,
+.yazi-turuncu5 a {
     color: #FFA726 !important
 }
-
-.yazi-turuncu7, .yazi-turuncu7 a {
+.yazi-turuncu7,
+.yazi-turuncu7 a {
     color: #FB8C00 !important
 }
-
-.yazi-turuncu8, .yazi-turuncu8 a {
+.yazi-turuncu8,
+.yazi-turuncu8 a {
     color: #F57C00 !important
 }
-
-.yazi-turuncu9, .yazi-turuncu9 a {
+.yazi-turuncu9,
+.yazi-turuncu9 a {
     color: #EF6C00 !important
 }
-
-.yazi-turuncu10, .yazi-turuncu10 a {
+.yazi-turuncu10,
+.yazi-turuncu10 a {
     color: #E65100 !important
 }
-
-.yazi-koyu-turuncu, .yazi-koyu-turuncu6 {
+.yazi-koyu-turuncu,
+.yazi-koyu-turuncu6 {
     background-color: #FF5722 !important
 }
-
 .yazi-koyu-turuncu2 {
     background-color: #FFCCBC !important
 }
-
 .yazi-koyu-turuncu3 {
     background-color: #FFAB91 !important
 }
-
 .yazi-koyu-turuncu4 {
     background-color: #FF8A65 !important
 }
-
 .yazi-koyu-turuncu5 {
     background-color: #FF7043 !important
 }
-
 .yazi-koyu-turuncu7 {
     background-color: #F4511E !important
 }
-
 .yazi-koyu-turuncu8 {
     background-color: #E64A19 !important
 }
-
 .yazi-koyu-turuncu9 {
     background-color: #D84315 !important
 }
-
 .yazi-koyu-turuncu10 {
     background-color: #BF360C !important
 }
-
-.yazi-kirmizi, .yazi-kirmizi a, .yazi-kirmizi6, .yazi-kirmizi6 a {
+.yazi-kirmizi,
+.yazi-kirmizi a,
+.yazi-kirmizi6,
+.yazi-kirmizi6 a {
     color: #F44336 !important
 }
-
-.yazi-kirmizi2, .yazi-kirmizi2 a {
+.yazi-kirmizi2,
+.yazi-kirmizi2 a {
     color: #FFCDD2 !important
 }
-
-.yazi-kirmizi3, .yazi-kirmizi3 a {
+.yazi-kirmizi3,
+.yazi-kirmizi3 a {
     color: #EF9A9A !important
 }
-
-.yazi-kirmizi4, .yazi-kirmizi4 a {
+.yazi-kirmizi4,
+.yazi-kirmizi4 a {
     color: #E57373 !important
 }
-
-.yazi-kirmizi5, .yazi-kirmizi5 a {
+.yazi-kirmizi5,
+.yazi-kirmizi5 a {
     color: #EF5350 !important
 }
-
-.yazi-kirmizi7, .yazi-kirmizi7 a {
+.yazi-kirmizi7,
+.yazi-kirmizi7 a {
     color: #E53935 !important
 }
-
-.yazi-kirmizi8, .yazi-kirmizi8 a {
+.yazi-kirmizi8,
+.yazi-kirmizi8 a {
     color: #D32F2F !important
 }
-
-.yazi-kirmizi9, .yazi-kirmizi9 a {
+.yazi-kirmizi9,
+.yazi-kirmizi9 a {
     color: #C62828 !important
 }
-
-.yazi-kirmizi10, .yazi-kirmizi10 a {
+.yazi-kirmizi10,
+.yazi-kirmizi10 a {
     color: #B71C1C !important
 }
-
-.yazi-pembe, .yazi-pembe a, .yazi-pembe6, .yazi-pembe6 a {
+.yazi-pembe,
+.yazi-pembe a,
+.yazi-pembe6,
+.yazi-pembe6 a {
     color: #E91E63 !important
 }
-
-.yazi-pembe2, .yazi-pembe2 a {
+.yazi-pembe2,
+.yazi-pembe2 a {
     color: #F8BBD0 !important
 }
-
-.yazi-pembe3, .yazi-pembe3 a {
+.yazi-pembe3,
+.yazi-pembe3 a {
     color: #F48FB1 !important
 }
-
-.yazi-pembe4, .yazi-pembe4 a {
+.yazi-pembe4,
+.yazi-pembe4 a {
     color: #F06292 !important
 }
-
-.yazi-pembe5, .yazi-pembe5 a {
+.yazi-pembe5,
+.yazi-pembe5 a {
     color: #EC407A !important
 }
-
-.yazi-pembe7, .yazi-pembe7 a {
+.yazi-pembe7,
+.yazi-pembe7 a {
     color: #D81B60 !important
 }
-
-.yazi-pembe8, .yazi-pembe8 a {
+.yazi-pembe8,
+.yazi-pembe8 a {
     color: #C2185B !important
 }
-
-.yazi-pembe9, .yazi-pembe9 a {
+.yazi-pembe9,
+.yazi-pembe9 a {
     color: #AD1457 !important
 }
-
-.yazi-pembe10, .yazi-pembe10 a {
+.yazi-pembe10,
+.yazi-pembe10 a {
     color: #880E4F !important
 }
-
-.yazi-mor, .yazi-mor a {
+.yazi-mor,
+.yazi-mor a {
     color: #9C27B0 !important
 }
-
-.yazi-mor2, .yazi-mor2 a {
+.yazi-mor2,
+.yazi-mor2 a {
     color: #E1BEE7 !important
 }
-
-.yazi-mor3, .yazi-mor3 a {
+.yazi-mor3,
+.yazi-mor3 a {
     color: #E1BEE7 !important
 }
-
-.yazi-mor4, .yazi-mor4 a {
+.yazi-mor4,
+.yazi-mor4 a {
     color: #CE93D8 !important
 }
-
-.yazi-mor5, .yazi-mor5 a {
+.yazi-mor5,
+.yazi-mor5 a {
     color: #BA68C8 !important
 }
-
-.yazi-mor6, .yazi-mor6 a {
+.yazi-mor6,
+.yazi-mor6 a {
     color: #AB47BC !important
 }
-
-.yazi-mor7, .yazi-mor7 a {
+.yazi-mor7,
+.yazi-mor7 a {
     color: #8E24AA !important
 }
-
-.yazi-mor8, .yazi-mor8 a {
+.yazi-mor8,
+.yazi-mor8 a {
     color: #7B1FA2 !important
 }
-
-.yazi-mor9, .yazi-mor9 a {
+.yazi-mor9,
+.yazi-mor9 a {
     color: #6A1B9A !important
 }
-
-.yazi-mor10, .yazi-mor10 a {
+.yazi-mor10,
+.yazi-mor10 a {
     color: #4A148C !important
 }
-
-.yazi-koyu-mor, .yazi-koyu-mor6 {
+.yazi-koyu-mor,
+.yazi-koyu-mor6 {
     background-color: #673AB7 !important
 }
-
 .yazi-koyu-mor2 {
     background-color: #D1C4E9 !important
 }
-
 .yazi-koyu-mor3 {
     background-color: #B39DDB !important
 }
-
 .yazi-koyu-mor4 {
     background-color: #9575CD !important
 }
-
 .yazi-koyu-mor5 {
     background-color: #7E57C2 !important
 }
-
 .yazi-koyu-mor7 {
     background-color: #5E35B1 !important
 }
-
 .yazi-koyu-mor8 {
     background-color: #512DA8 !important
 }
-
 .yazi-koyu-mor9 {
     background-color: #4527A0 !important
 }
-
 .yazi-koyu-mor10 {
     background-color: #311B92 !important
 }
-
-.yazi-mavi, .yazi-mavi a, .yazi-mavi6, .yazi-mavi6 a {
+.yazi-mavi,
+.yazi-mavi a,
+.yazi-mavi6,
+.yazi-mavi6 a {
     color: #2196F3 !important
 }
-
-.yazi-mavi2, .yazi-mavi2 a {
+.yazi-mavi2,
+.yazi-mavi2 a {
     color: #BBDEFB !important
 }
-
-.yazi-mavi3, .yazi-mavi3 a {
+.yazi-mavi3,
+.yazi-mavi3 a {
     color: #90CAF9 !important
 }
-
-.yazi-mavi4, .yazi-mavi4 a {
+.yazi-mavi4,
+.yazi-mavi4 a {
     color: #64B5F6 !important
 }
-
-.yazi-mavi5, .yazi-mavi5 a {
+.yazi-mavi5,
+.yazi-mavi5 a {
     color: #42A5F5 !important
 }
-
-.yazi-mavi7, .yazi-mavi7 a {
+.yazi-mavi7,
+.yazi-mavi7 a {
     color: #1E88E5 !important
 }
-
-.yazi-mavi8, .yazi-mavi8 a {
+.yazi-mavi8,
+.yazi-mavi8 a {
     color: #1976D2 !important
 }
-
-.yazi-mavi9, .yazi-mavi9 a {
+.yazi-mavi9,
+.yazi-mavi9 a {
     color: #1565C0 !important
 }
-
-.yazi-mavi10, .yazi-mavi10 a {
+.yazi-mavi10,
+.yazi-mavi10 a {
     color: #0D47A1 !important
 }
-
-.yazi-acik-mavi, .yazi-acik-mavi6 {
+.yazi-acik-mavi,
+.yazi-acik-mavi6 {
     background-color: #03A9F4 !important
 }
-
 .yazi-acik-mavi2 {
     background-color: #B3E5FC !important
 }
-
 .yazi-acik-mavi3 {
     background-color: #81D4FA !important
 }
-
 .yazi-acik-mavi4 {
     background-color: #4FC3F7 !important
 }
-
 .yazi-acik-mavi5 {
     background-color: #29B6F6 !important
 }
-
 .yazi-acik-mavi7 {
     background-color: #039BE5 !important
 }
-
 .yazi-acik-mavi8 {
     background-color: #0288D1 !important
 }
-
 .yazi-acik-mavi9 {
     background-color: #0277BD !important
 }
-
 .yazi-acik-mavi10 {
     background-color: #01579B !important
 }
-
-.yazi-turkuaz, .yazi-turkuaz a, .yazi-turkuaz6, .yazi-turkuaz6 a {
+.yazi-turkuaz,
+.yazi-turkuaz a,
+.yazi-turkuaz6,
+.yazi-turkuaz6 a {
     color: #1AC5B8 !important
 }
-
-.yazi-turkuaz2, .yazi-turkuaz2 a {
+.yazi-turkuaz2,
+.yazi-turkuaz2 a {
     color: #C1FDF8 !important
 }
-
-.yazi-turkuaz3, .yazi-turkuaz3 a {
+.yazi-turkuaz3,
+.yazi-turkuaz3 a {
     color: #56F7EB !important
 }
-
-.yazi-turkuaz4, .yazi-turkuaz4 a {
+.yazi-turkuaz4,
+.yazi-turkuaz4 a {
     color: #36EADD !important
 }
-
-.yazi-turkuaz5, .yazi-turkuaz5 a {
+.yazi-turkuaz5,
+.yazi-turkuaz5 a {
     color: #2ED8CB !important
 }
-
-.yazi-turkuaz7, .yazi-turkuaz7 a {
+.yazi-turkuaz7,
+.yazi-turkuaz7 a {
     color: #12B9AC !important
 }
-
-.yazi-turkuaz8, .yazi-turkuaz8 a {
+.yazi-turkuaz8,
+.yazi-turkuaz8 a {
     color: #0CAB9E !important
 }
-
-.yazi-turkuaz9, .yazi-turkuaz9 a {
+.yazi-turkuaz9,
+.yazi-turkuaz9 a {
     color: #03968A !important
 }
-
-.yazi-turkuaz10, .yazi-turkuaz10 a {
+.yazi-turkuaz10,
+.yazi-turkuaz10 a {
     color: #038075 !important
 }
-
-.yazi-yesil, .yazi-yesil a, .yazi-yesil6, .yazi-yesil6 a {
+.yazi-yesil,
+.yazi-yesil a,
+.yazi-yesil6,
+.yazi-yesil6 a {
     color: #4CAF50 !important
 }
-
-.yazi-yesil2, .yazi-yesil2 a {
+.yazi-yesil2,
+.yazi-yesil2 a {
     color: #C8E6C9 !important
 }
-
-.yazi-yesil3, .yazi-yesil3 a {
+.yazi-yesil3,
+.yazi-yesil3 a {
     color: #A5D6A7 !important
 }
-
-.yazi-yesil4, .yazi-yesil4 a {
+.yazi-yesil4,
+.yazi-yesil4 a {
     color: #81C784 !important
 }
-
-.yazi-yesil5, .yazi-yesil5 a {
+.yazi-yesil5,
+.yazi-yesil5 a {
     color: #66BB6A !important
 }
-
-.yazi-yesil7, .yazi-yesil7 a {
+.yazi-yesil7,
+.yazi-yesil7 a {
     color: #43A047 !important
 }
-
-.yazi-yesil8, .yazi-yesil8 a {
+.yazi-yesil8,
+.yazi-yesil8 a {
     color: #388E3C !important
 }
-
-.yazi-yesil9, .yazi-yesil9 a {
+.yazi-yesil9,
+.yazi-yesil9 a {
     color: #2E7D32 !important
 }
-
-.yazi-yesil10, .yazi-yesil10 a {
+.yazi-yesil10,
+.yazi-yesil10 a {
     color: #1B5E20 !important
 }
-
-.yazi-acik-yesil, .yazi-acik-yesil6 {
+.yazi-acik-yesil,
+.yazi-acik-yesil6 {
     background-color: #8BC34A !important
 }
-
 .yazi-acik-yesil2 {
     background-color: #DCEDC8 !important
 }
-
 .yazi-acik-yesil3 {
     background-color: #C5E1A5 !important
 }
-
 .yazi-acik-yesil4 {
     background-color: #AED581 !important
 }
-
 .yazi-acik-yesil5 {
     background-color: #9CCC65 !important
 }
-
 .yazi-acik-yesil7 {
     background-color: #7CB342 !important
 }
-
 .yazi-acik-yesil8 {
     background-color: #689F38 !important
 }
-
 .yazi-acik-yesil9 {
     background-color: #558B2F !important
 }
-
 .yazi-acik-yesil10 {
     background-color: #33691E !important
 }
-
-.yazi-kahverengi, .yazi-kahverengi a, .yazi-kahverengi6, .yazi-kahverengi6 a {
+.yazi-kahverengi,
+.yazi-kahverengi a,
+.yazi-kahverengi6,
+.yazi-kahverengi6 a {
     color: #795548 !important
 }
-
-.yazi-kahverengi2, .yazi-kahverengi2 a {
+.yazi-kahverengi2,
+.yazi-kahverengi2 a {
     color: #D7CCC8 !important
 }
-
-.yazi-kahverengi3, .yazi-kahverengi3 a {
+.yazi-kahverengi3,
+.yazi-kahverengi3 a {
     color: #BCAAA4 !important
 }
-
-.yazi-kahverengi4, .yazi-kahverengi4 a {
+.yazi-kahverengi4,
+.yazi-kahverengi4 a {
     color: #A1887F !important
 }
-
-.yazi-kahverengi5, .yazi-kahverengi5 a {
+.yazi-kahverengi5,
+.yazi-kahverengi5 a {
     color: #8D6E63 !important
 }
-
-.yazi-kahverengi7, .yazi-kahverengi7 a {
+.yazi-kahverengi7,
+.yazi-kahverengi7 a {
     color: #6D4C41 !important
 }
-
-.yazi-kahverengi8, .yazi-kahverengi8 a {
+.yazi-kahverengi8,
+.yazi-kahverengi8 a {
     color: #5D4037 !important
 }
-
-.yazi-kahverengi9, .yazi-kahverengi9 a {
+.yazi-kahverengi9,
+.yazi-kahverengi9 a {
     color: #4E342E !important
 }
-
-.yazi-kahverengi10, .yazi-kahverengi10 a {
+.yazi-kahverengi10,
+.yazi-kahverengi10 a {
     color: #3E2723 !important
 }
-
-.yazi-gri, .yazi-gri a, .yazi-gri6, .yazi-gri6 a {
+.yazi-gri,
+.yazi-gri a,
+.yazi-gri6,
+.yazi-gri6 a {
     color: #9E9E9E !important
 }
-
-.yazi-gri2, .yazi-gri2 a {
+.yazi-gri2,
+.yazi-gri2 a {
     color: #F5F5F5 !important
 }
-
-.yazi-gri3, .yazi-gri3 a {
+.yazi-gri3,
+.yazi-gri3 a {
     color: #EEEEEE !important
 }
-
-.yazi-gri4, .yazi-gri4 a {
+.yazi-gri4,
+.yazi-gri4 a {
     color: #E0E0E0 !important
 }
-
-.yazi-gri5, .yazi-gri5 a {
+.yazi-gri5,
+.yazi-gri5 a {
     color: #BDBDBD !important
 }
-
-.yazi-gri7, .yazi-gri7 a {
+.yazi-gri7,
+.yazi-gri7 a {
     color: #757575 !important
 }
-
-.yazi-gri8, .yazi-gri8 a {
+.yazi-gri8,
+.yazi-gri8 a {
     color: #616161 !important
 }
-
-.yazi-gri9, .yazi-gri9 a {
+.yazi-gri9,
+.yazi-gri9 a {
     color: #4E4E4E !important
 }
-
-.yazi-gri10, .yazi-gri10 a {
+.yazi-gri10,
+.yazi-gri10 a {
     color: #424040 !important
 }
-
-.yazi-siyah, .yazi-siyah a {
+.yazi-siyah,
+.yazi-siyah a {
     color: #000 !important
 }
-
-.yazi-siyah2, .yazi-siyah2 a {
+.yazi-siyah2,
+.yazi-siyah2 a {
     color: #404040 !important
 }
-
-.yazi-siyah3, .yazi-siyah3 a {
+.yazi-siyah3,
+.yazi-siyah3 a {
     color: #353535 !important
 }
-
-.yazi-siyah4, .yazi-siyah4 a {
+.yazi-siyah4,
+.yazi-siyah4 a {
     color: #303030 !important
 }
-
-.yazi-siyah5, .yazi-siyah5 a {
+.yazi-siyah5,
+.yazi-siyah5 a {
     color: #252525 !important
 }
-
-.yazi-siyah6, .yazi-siyah6 a {
+.yazi-siyah6,
+.yazi-siyah6 a {
     color: #202020 !important
 }
-
-.yazi-siyah7, .yazi-siyah7 a {
+.yazi-siyah7,
+.yazi-siyah7 a {
     color: #151515 !important
 }
-
-.yazi-siyah8, .yazi-siyah8 a {
+.yazi-siyah8,
+.yazi-siyah8 a {
     color: #101010 !important
 }
-
-.yazi-siyah9, .yazi-siyah9 a {
+.yazi-siyah9,
+.yazi-siyah9 a {
     color: #050505 !important
 }
-
 .yazi-blogger {
     color: #F87F14 !important
 }
-
 .yazi-codepen {
     color: #1B1C1B !important
 }
-
 .yazi-dribbble {
     color: #EC4A89 !important
 }
-
 .yazi-facebook {
     color: #3B5998 !important
 }
-
 .yazi-flickr {
     color: #FF0084 !important
 }
-
 .yazi-foursquare {
     color: #F94877 !important
 }
-
 .yazi-github {
     color: #323131 !important
 }
-
 .yazi-google {
     color: #DC483B !important
 }
-
 .yazi-instagram {
     color: #4E433C !important
 }
-
 .yazi-linkedin {
     color: #007AB5 !important
 }
-
 .yazi-periscope {
     color: #30A4C6 !important
 }
-
 .yazi-pinterest {
     color: #CB2027 !important
 }
-
 .yazi-scode {
     color: #E33F30 !important
 }
-
 .yazi-scorp {
     color: #DE2228 !important
 }
-
 .yazi-snapchat {
     color: #FFFC01 !important
 }
-
 .yazi-skype {
     color: #00ADED !important
 }
-
 .yazi-swarm {
     color: #FFA633 !important
 }
-
 .yazi-tumblr {
     color: #2C4762 !important
 }
-
 .yazi-twitter {
     color: #5EA9DD !important
 }
-
 .yazi-vine {
     color: #00B489 !important
 }
-
 .yazi-vimeo {
     color: #1AB7EA !important
 }
-
 .yazi-wordpress {
     color: #00749A !important
 }
-
 .yazi-youtube {
     color: #EE1C1B !important
 }
-
 /* ============= 3. JavaScript */
-
 /* ============= 3.1 Akordiyon Menu */
 
 .tr-akordiyon {
@@ -4583,16 +4143,14 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     margin-bottom: 1em;
     width: 100%
 }
-
 .tr-akordiyon .tr-akordiyon {
     margin-bottom: 1em
 }
-
-.tr-akordiyon.tema2, .tr-akordiyon.tema3 {
+.tr-akordiyon.tema2,
+.tr-akordiyon.tema3 {
     border: 1px solid rgba(0, 0, 0, .05);
     border-radius: 3px
 }
-
 .tr-akordiyon .akordiyon-baslik {
     background-color: transparent;
     color: #000;
@@ -4606,45 +4164,36 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     -o-transition: color .3s;
     transition: color .3s
 }
-
 .tr-akordiyon.tema2 .akordiyon-baslik {
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     color: #b4b4b4;
     padding: .5em 1em .5em 1.5em
 }
-
 .tr-akordiyon.tema2 .akordiyon-baslik:last-of-type {
     border-bottom: 0
 }
-
 .tr-akordiyon.tema3 .akordiyon-baslik {
     background-color: rgba(0, 0, 0, .025);
     padding: .5em 2.5em .5em 1em
 }
-
 .tr-akordiyon.tema4 .akordiyon-baslik {
     background-color: rgba(0, 0, 0, .025);
     border-left: 5px solid transparent;
     margin-bottom: 2px;
     padding: .5em 2.5em .5em 1em
 }
-
 .tr-akordiyon .akordiyon-baslik:hover {
     text-decoration: none
 }
-
 .tr-akordiyon.tema2 .tr-akordiyon-baslik:hover {
     color: #000
 }
-
 .tr-akordiyon.tema3 .akordiyon-baslik:hover {
     background-color: rgba(0, 0, 0, .05)
 }
-
 .tr-akordiyon.tema4 .akordiyon-baslik:hover {
     border-left-color: #03968A
 }
-
 .tr-akordiyon .akordiyon-baslik::after {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -4655,65 +4204,53 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     right: auto;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-        transform: rotate(-90deg);
+    transform: rotate(-90deg);
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
     top: 16px
 }
-
 .tr-akordiyon.tema2 .akordiyon-baslik::after {
     left: 10px
 }
-
-.tr-akordiyon.tema3 .akordiyon-baslik::after, .tr-akordiyon.tema4 .tr-akordiyon-baslik::after {
+.tr-akordiyon.tema3 .akordiyon-baslik::after,
+.tr-akordiyon.tema4 .tr-akordiyon-baslik::after {
     left: auto;
     right: 20px
 }
-
 .tr-akordiyon .akordiyon-baslik:hover::after {
     border-top-color: rgba(0, 0, 0, 1)
 }
-
 .tr-akordiyon .akordiyon-baslik.aktif {
     color: #000
 }
-
 .tr-akordiyon.tema2 .akordiyon-baslik.aktif {
     border-bottom: 0
 }
-
 .tr-akordiyon.tema3 .akordiyon-baslik.aktif {
     background-color: rgba(0, 0, 0, .05)
 }
-
 .tr-akordiyon.tema4 .akordiyon-baslik.aktif {
     border-left-color: #03968A
 }
-
 .tr-akordiyon .akordiyon-baslik.aktif::after {
     border-top-color: rgba(0, 0, 0, 1);
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-        transform: rotate(0deg)
+    transform: rotate(0deg)
 }
-
 .tr-akordiyon.tema4 .akordiyon-baslik::after {
     content: none
 }
-
 .tr-akordiyon .akordiyon-baslik a {
     margin-bottom: 0
 }
-
 .tr-akordiyon .akordiyon-icerik {
     padding-left: 1em
 }
-
 .tr-akordiyon.tema2 .akordiyon-icerik {
     border-bottom: 1px solid rgba(0, 0, 0, .05)
 }
-
 /* ============= 3.2 Modal */
 
 .tr-modal {
@@ -4730,8 +4267,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     text-align: left;
     top: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%) scale(0.7);
-            -ms-transform: translateX(-50%) translateY(-50%) scale(0.7);
-        transform: translateX(-50%) translateY(-50%) scale(0.7);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(0.7);
+    transform: translateX(-50%) translateY(-50%) scale(0.7);
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -4739,33 +4276,28 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     width: 75%;
     z-index: 999
 }
-
 .tr-modal.goster {
     opacity: 1;
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-            -ms-transform: translateX(-50%) translateY(-50%) scale(1);
-        transform: translateX(-50%) translateY(-50%) scale(1);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
     visibility: visible
 }
-
 .tr-modal::-webkit-scrollbar {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
     display: block;
     width: 5px
 }
-
 .tr-modal::-webkit-scrollbar-thumb {
     background-color: #000
 }
-
 .tr-modal .modal-icerik {
     border-radius: 3px;
     margin: 0 auto;
     position: relative
 }
-
 .tr-modal .modal-icerik .modal-baslik {
-    background: rgba(0,0,0,0.15);
+    background: rgba(0, 0, 0, 0.15);
     border-radius: 3px 3px 0 0;
     font-weight: 300;
     margin: 0;
@@ -4775,75 +4307,62 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     text-align: center;
     width: 100%
 }
-
 .tr-modal .modal-icerik > div {
     padding: 5%
 }
-
 .tr-modal .modal-icerik a.buton.kapat {
     display: table;
     margin: 30px auto 0 auto
 }
-
 .tr-modal.efekt2 {
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1.4);
-            -ms-transform: translateX(-50%) translateY(-50%) scale(1.4);
-        transform: translateX(-50%) translateY(-50%) scale(1.4)
+    -ms-transform: translateX(-50%) translateY(-50%) scale(1.4);
+    transform: translateX(-50%) translateY(-50%) scale(1.4)
 }
-
 .tr-modal.efekt2.goster {
     -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-            -ms-transform: translateX(-50%) translateY(-50%) scale(1);
-        transform: translateX(-50%) translateY(-50%) scale(1)
+    -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1)
 }
-
 .tr-modal.efekt3 {
     -webkit-transform: translateX(-50%) translateY(-20%);
-            -ms-transform: translateX(-50%) translateY(-20%);
-        transform: translateX(-50%) translateY(-20%)
+    -ms-transform: translateX(-50%) translateY(-20%);
+    transform: translateX(-50%) translateY(-20%)
 }
-
 .tr-modal.efekt3.goster {
     -webkit-transform: translateX(-50%) translateY(-50%);
-            -ms-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%)
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%)
 }
-
 .tr-modal.efekt4 {
     -webkit-transform: translateX(-20%) translateY(-50%);
-            -ms-transform: translateX(-20%) translateY(-50%);
-        transform: translateX(-20%) translateY(-50%)
+    -ms-transform: translateX(-20%) translateY(-50%);
+    transform: translateX(-20%) translateY(-50%)
 }
-
 .tr-modal.efekt4.goster {
     -webkit-transform: translateX(-50%) translateY(-50%);
-            -ms-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%)
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%)
 }
-
 .tr-modal.efekt5 {
     -webkit-transform: translateX(-70%) translateY(-50%);
-            -ms-transform: translateX(-70%) translateY(-50%);
-        transform: translateX(-70%) translateY(-50%)
+    -ms-transform: translateX(-70%) translateY(-50%);
+    transform: translateX(-70%) translateY(-50%)
 }
-
 .tr-modal.efekt5.goster {
     -webkit-transform: translateX(-50%) translateY(-50%);
-            -ms-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%)
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%)
 }
-
 /* ============= 3.3 Tab Menu */
 
 .tr-tab {
     background-color: #FFF
 }
-
 .tr-tab>nav {
     display: table;
     width: 100%
 }
-
 .tr-tab>nav a {
     border-bottom: 2px solid rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .1);
@@ -4857,7 +4376,6 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     -o-transition: border-bottom .25s;
     transition: border-bottom .25s
 }
-
 .tr-tab.tema2>nav a {
     background-color: rgba(0, 0, 0, .02);
     border-bottom: 0;
@@ -4866,7 +4384,6 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     -o-transition: none;
     transition: none
 }
-
 .tr-tab.tema3>nav a {
     border: 1px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -4875,31 +4392,25 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     -o-transition: none;
     transition: none
 }
-
 .tr-tab>nav a.aktif {
     background-color: #FFF;
     border-bottom: 2px solid #000;
     color: #000
 }
-
 .tr-tab.tema2>nav a.aktif {
     background-color: rgba(0, 0, 0, .04);
     border-bottom: 0
 }
-
 .tr-tab.tema3>nav a.aktif {
     border: 1px solid rgba(0, 0, 0, .1);
     border-bottom: 1px solid rgba(0, 0, 0, 0)
 }
-
 .tr-tab>nav a:hover {
     text-decoration: none
 }
-
 .tr-tab .tab-icerik {
     padding-top: 1em
 }
-
 .tr-tab.tema3 .tab-icerikler>.tab-icerik {
     border: 1px solid rgba(0, 0, 0, .1);
     border-top: 0
