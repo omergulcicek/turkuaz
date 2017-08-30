@@ -25,17 +25,18 @@
 *        2.3.4    Input - Textarea
 *        2.3.5    Select
 *      2.4     Footer
-*      2.5     Kart
-*      2.6     Koleksiyon
-*      2.7     Menu
-*      2.8     Not
-*      2.9     Pano
-*      2.10    Progress
-*      2.11    Sayfa Konumu
-*      2.12    Sayfa Numaralandirma
-*      2.13    Yazi
-*        2.13.1   Yazi Ayarlari
-*        2.13.2   Yazi Renkleri
+*      2.5     Ipucu
+*      2.6     Kart
+*      2.7     Koleksiyon
+*      2.8     Menu
+*      2.9     Not
+*      2.10     Pano
+*      2.11    Progress
+*      2.12    Sayfa Konumu
+*      2.13    Sayfa Numaralandirma
+*      2.14    Yazi
+*        2.14.1   Yazi Ayarlari
+*        2.14.2   Yazi Renkleri
 *    3.     JavaScript
 *      3.1     Akordiyon Menu
 *      3.2     Modal
@@ -2311,7 +2312,8 @@ blockquote {
 /* ============= 2.1 Buton */
 /* ============= 2.1.1 Buton Ayarlari */
 
-.buton {
+.buton,
+.tr-dosya::before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2945,7 +2947,9 @@ footer.tr-footer .footer-detay {
     top: 30px;
     width: 100%
 }
-/* ============= 2.5 Kartlar */
+/* ============= 2.5 Ipucu  */
+
+/* ============= 2.6 Kartlar */
 
 .tr-kutu {
     background-color: #FFF;
@@ -2982,70 +2986,43 @@ footer.tr-footer .footer-detay {
     background-color: #FFF;
     padding: 1em 2.5em
 }
-/* ============= 2.6 Koleksiyonlar */
+/* ============= 2.7 Koleksiyonlar */
 
-nav.tr-koleksiyon {
-    background-color: #FFF;
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 3px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    position: relative
+.tr-koleksiyon {
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 3px;
+	margin-bottom: 1em;
+	position: relative;
+	width: 100%
 }
-nav.tr-koleksiyon .koleksiyon-baslik {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    padding: .5em;
-    margin: 0
+.tr-koleksiyon .koleksiyon-baslik {
+	margin: 0
 }
-nav.tr-koleksiyon a {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    color: rgba(0, 0, 0, .7);
-    display: block;
-    padding: .5em 1em;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s
-}
-nav.tr-koleksiyon a:last-child {
-    border-bottom: 0
-}
-nav.tr-koleksiyon a:hover {
-    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .03);
+.tr-koleksiyon a,
+.tr-koleksiyon .koleksiyon-baslik {
+	border-bottom: 1px solid rgba(0,0,0,.1);
     color: #000;
-    text-decoration: none
+	display: block;
+	line-height: 1.5em;
+	padding: .5em 1rem;
+	text-decoration: none;
+	transition: .1s
 }
-nav.tr-koleksiyon a:active {
-    -webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
-    box-shadow: inset 0 0 250px rgba(0, 0, 0, .06);
-}
-nav.tr-koleksiyon.renkli a:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, .02)
-}
-nav.tr-koleksiyon.saydam {
-    background-color: transparent;
-    border: 0;
-    -webkit-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent
-}
-nav.tr-koleksiyon.saydam a:hover {
-    background-color: transparent;
-    -webkit-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent;
-    text-decoration: underline
-}
-nav.tr-koleksiyon.saydam .baslik,
-nav.tr-koleksiyon.saydam a {
+.tr-koleksiyon a:last-child {
     border-bottom: 0
 }
-/* ============= 2.7 Menu */
+.tr-koleksiyon a:hover,
+.tr-koleksiyon.renkli a:nth-child(odd) {
+    background-color: rgba(0,0,0,.025)
+}
+.tr-koleksiyon.renkli a:nth-child(odd):hover {
+    background-color: rgba(0,0,0,.05)
+}
+.tr-koleksiyon.saydam,
+.tr-koleksiyon.saydam a {
+    border-width: 0
+}
+/* ============= 2.8 Menu */
 
 header {
     z-index: 996
@@ -3198,6 +3175,9 @@ nav.mobil li ul a:not(.buton):not(.etiket) {
 nav.mobil:hover a {
     opacity: .7
 }
+nav.mobil ul ul {
+    margin-left: 1em
+}
 nav.mobil ul ul a:hover {
     opacity: 1
 }
@@ -3244,7 +3224,7 @@ nav.mobil.sag {
     left: auto;
     right: 60px
 }
-/* ============= 2.8 Notlar */
+/* ============= 2.9 Notlar */
 
 .tr-not {
     background-color: #03968A;
@@ -3257,7 +3237,7 @@ nav.mobil.sag {
     position: relative;
     width: 100%
 }
-/* ============= 2.9 Pano */
+/* ============= 2.10 Pano */
 
 .tr-pano {
     background-color: #03968A;
@@ -3277,7 +3257,7 @@ nav.mobil.sag {
     background-color: #FFF;
     padding: .5em 1em
 }
-/* ============= 2.10 Progress */
+/* ============= 2.11 Progress */
 
 progress.tr-progress {
     border-radius: 3px;
@@ -3313,7 +3293,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-size: 1em 1em
 }
-/* ============= 2.11 Sayfa Konumu */
+/* ============= 2.12 Sayfa Konumu */
 
 .tr-konum {
     background-color: #03968A;
@@ -3327,7 +3307,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     line-height: 2.5;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0 1em;
+    padding: 0 1rem;
     white-space: nowrap;
     width: 100%
 }
@@ -3377,7 +3357,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 .tr-konum::-webkit-scrollbar-thumb {
     background-color: #000
 }
-/* ============= 2.12 Sayfa Numaralandirma */
+/* ============= 2.13 Sayfa Numaralandirma */
 
 .tr-numara {
     cursor: default;
@@ -3448,8 +3428,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     margin-right: 5px;
     padding: 6px 23px
 }
-/* ============= 2.13 Yazi */
-/* ============= 2.13.1 Yazi Ayarlari */
+/* ============= 2.14 Yazi */
+/* ============= 2.14.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
@@ -3530,7 +3510,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     text-overflow: ellipsis;
     white-space: nowrap
 }
-/* ============= 2.13.2 Yazi Renkleri */
+/* ============= 2.14.2 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a {
