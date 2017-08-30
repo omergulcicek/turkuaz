@@ -31,6 +31,7 @@ Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn
 <h2>Destek</h2>
 Turkuaz Css'in gelişimine destek olmak için <a href="https://github.com/omergulcicek/turkuazcss/issues">yapılacaklar listesi</a>nde belirtilen detayları dikkate alarak kodunuzu yazın ve pull request edin!
 
+
 Turkuaz Css Slack grubunda geliştirme yapılacak konuları, hatalı bileşenleri ve önerilerimizi konuşuyoruz. Sende grubumuza katılmak istersen yapman gereken tek şey aşağıdaki davet linkini kullanarak aramıza katılman.
 
 <a href="https://join.slack.com/t/turkuazcss/shared_invite/MjI4OTg4NzMxNjUyLTE1MDMxNDY5MTQtYWQ1MjMwN2UyMg">Davet Linki</a>
