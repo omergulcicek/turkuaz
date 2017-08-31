@@ -2222,10 +2222,13 @@ video {
     height: auto;
     max-width: 100%
 }
-blockquote {
+blockquote,
+.tr-alinti {
     border-left: 5px solid rgba(0, 0, 0, .05);
+    letter-spacing: .5px;
+    line-height: 1.75;
     margin: 1em;
-    padding-left: 1em
+    padding: 1em
 }
 .cizgi {
     -webkit-box-align: center;
@@ -2950,73 +2953,77 @@ footer.tr-footer .footer-detay {
 /* ============= 2.5 Ipucu  */
 
 .tr-ipucu {
-  display: inline-block;
-  position: relative
+    display: inline-block;
+    position: relative
 }
-.tr-ipucu > .tr-icerik {
-  background: rgba(0,0,0,0.75);
-  bottom: auto;
-  color: #fff;
-  cursor: default;
-  display: inline-block;
-  left: 50%;
-  opacity: 0;
-  padding: 10px;
-  position: absolute;
-  right: auto;
-  text-align: center;
-  top: 0;
-  transition: .2s;
-  transform: translateY(calc(-100% - 20px)) translateX(-50%);
-  visibility: hidden;
-  white-space: nowrap
+.tr-ipucu .ipucu-icerik {
+    background: rgba(0,0,0,.75);
+    border-radius: 3px;
+    bottom: auto;
+    color: #fff;
+    cursor: text;
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    padding: .5em;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    top: 0;
+    transition: .2s;
+    transform: translateX(-50%) translateY(calc(-100% - 1em));
+    visibility: hidden;
+    white-space: nowrap
 }
-.tr-ipucu:hover > .tr-icerik {
-  opacity: 1;
-  transform: translateY(calc(-100% - 10px)) translateX(-50%);
-  visibility: visible
+.tr-ipucu:hover .ipucu-icerik {
+    opacity: 1;
+    transform: translateX(-50%) translateY(calc(-100% - .5em));
+    visibility: visible
 }
-.tr-ipucu.ipucu-ust > .tr-icerik {
-  bottom: auto;
-  left: 50%;
-  right: auto;
-  top: 0;
-  transform: translateY(calc(-100% - 20px)) translateX(-50%)
+.tr-ipucu.ipucu-ust .ipucu-icerik {
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    top: 0;
+    transform: translateX(-50%) translateY(calc(-100% - 1em))
 }
-.tr-ipucu.ipucu-ust:hover > .tr-icerik {
-  transform: translateY(calc(-100% - 10px)) translateX(-50%)
+.tr-ipucu.ipucu-ust:hover .ipucu-icerik {
+    transform: translateX(-50%) translateY(calc(-100% - .5em))
 }
-.tr-ipucu.ipucu-alt > .tr-icerik {
-  bottom: 0;
-  left: 50%;
-  right: auto;
-  top: auto;
-  transform: translateY(calc(100% + 20px)) translateX(-50%)
+.tr-ipucu.ipucu-alt .ipucu-icerik {
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%) translateY(calc(100% + 1em))
 }
-.tr-ipucu.ipucu-alt:hover > .tr-icerik {
-  transform: translateY(calc(100% + 10px)) translateX(-50%)
+.tr-ipucu.ipucu-alt:hover .ipucu-icerik {
+    transform: translateX(-50%) translateY(calc(100% + .5em))
 }
-.tr-ipucu.ipucu-sol > .tr-icerik {
-  bottom: auto;
-  left: 0;
-  right: auto;
-  top: 50%;
-  transform: translateY(-50%) translateX(calc(-100% - 20px))
+.tr-ipucu.ipucu-sol .ipucu-icerik {
+    bottom: auto;
+    left: 0;
+    right: auto;
+    top: 50%;
+    transform: translateX(calc(-100% - 1em)) translateY(-50%)
 }
-.tr-ipucu.ipucu-sol:hover > .tr-icerik {
-  transform: translateY(-50%) translateX(calc(-100% - 10px))
+.tr-ipucu.ipucu-sol:hover .ipucu-icerik {
+    transform: translateX(calc(-100% - .5em)) translateY(-50%)
 }
-.tr-ipucu.ipucu-sag > .tr-icerik {
-  bottom: auto;
-  left: auto;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) translateX(calc(100% + 20px))
+.tr-ipucu.ipucu-sag .ipucu-icerik {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translateX(calc(100% + 1em)) translateY(-50%)
 }
-.tr-ipucu.ipucu-sag:hover > .tr-icerik {
-  transform: translateY(-50%) translateX(calc(100% + 10px))
+.tr-ipucu.ipucu-sag:hover .ipucu-icerik {
+    transform: translateX(calc(100% + .5em)) translateY(-50%)
 }
-
+.tr-ipucu .ipucu-icerik img {
+    min-width: 1em;
+    vertical-align: middle
+}
 /* ============= 2.6 Kartlar */
 
 .tr-kutu {
