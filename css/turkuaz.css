@@ -30,13 +30,14 @@
 *      2.7     Koleksiyon
 *      2.8     Menu
 *      2.9     Not
-*      2.10     Pano
+*      2.10    Pano
 *      2.11    Progress
-*      2.12    Sayfa Konumu
-*      2.13    Sayfa Numaralandirma
-*      2.14    Yazi
-*        2.14.1   Yazi Ayarlari
-*        2.14.2   Yazi Renkleri
+*      2.12    Rozet
+*      2.13    Sayfa Konumu
+*      2.14    Sayfa Numaralandirma
+*      2.15    Yazi
+*        2.15.1   Yazi Ayarlari
+*        2.15.2   Yazi Renkleri
 *    3.     JavaScript
 *      3.1     Akordiyon Menu
 *      3.2     Modal
@@ -107,6 +108,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-weight: 400;
     margin: 0 0 .25em 0
 }
 h1 {
@@ -182,7 +184,7 @@ em {
 }
 p {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     letter-spacing: .5px;
     line-height: 1.75;
     margin-bottom: .5em;
@@ -2330,7 +2332,6 @@ blockquote,
     display: inline-flex;
     font-family: "Roboto";
     font-size: 1em;
-    font-weight: normal;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3368,7 +3369,18 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-size: 1em 1em
 }
-/* ============= 2.12 Sayfa Konumu */
+/* ============= 2.12 Rozet */
+
+.tr-rozet {
+	background-color: #03968A;
+	border-radius: 1px;
+	color: #FFF;
+	display: block;
+	float: right;
+	font-size: .8em;
+	padding: 0 .5em;
+}
+/* ============= 2.13 Sayfa Konumu */
 
 .tr-konum {
     background-color: #03968A;
@@ -3432,7 +3444,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 .tr-konum::-webkit-scrollbar-thumb {
     background-color: #000
 }
-/* ============= 2.13 Sayfa Numaralandirma */
+/* ============= 2.14 Sayfa Numaralandirma */
 
 .tr-numara {
     cursor: default;
@@ -3503,8 +3515,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     margin-right: 5px;
     padding: 6px 23px
 }
-/* ============= 2.14 Yazi */
-/* ============= 2.14.1 Yazi Ayarlari */
+/* ============= 2.15 Yazi */
+/* ============= 2.15.1 Yazi Ayarlari */
 
 .yazi-sol {
     text-align: left !important
@@ -3585,7 +3597,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     text-overflow: ellipsis;
     white-space: nowrap
 }
-/* ============= 2.14.2 Yazi Renkleri */
+/* ============= 2.15.2 Yazi Renkleri */
 
 .yazi-beyaz,
 .yazi-beyaz a {
