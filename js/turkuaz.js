@@ -119,21 +119,56 @@ $(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
         t.siblings().removeClass("aktif").end().addClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").eq(i).slideDown(250).siblings(".akordiyon-icerik").slideUp(250);
     }
 })
-$("body").on("click", "a.modal", function(e) {
-    e.preventDefault();
-    var href = $(this).attr("href");
-    var modal = $("#" + href);
-    var overlay = $("<div class='tr-karart'></div>");
-    modal.addClass("goster").scrollTop(0);
-    if (!$(".tr-karart").length) {
-        $("body").append(overlay);
-        overlay.animate({opacity: ".5"}, 250);
+
+function fadeIn(el, time = 250) {
+    var last = +new Date();
+    var fade = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+        if (+el.style.opacity < 0.5) {
+            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
+        }
+    };
+    fade();
+}
+
+function fadeOut(el, time = 250) {
+    var last = +new Date();
+    var fade = function() {
+        el.style.opacity = +el.style.opacity - (new Date() - last) / time;
+        last = +new Date();
+        if (+el.style.opacity > 0) {
+            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
+        }
+    };
+    fade();
+}
+
+var modal = document.querySelectorAll(".modal");
+var overlay = document.createElement("div");
+overlay.className += "tr-karart modal";
+
+Array.prototype.forEach.call(modal, function(el, i) {
+    modal[i].addEventListener("click", function(e) {
+        e.preventDefault();
+        var href = el.getAttribute("href");
+        var overlayCount = document.querySelectorAll(".tr-karart").length;
+        if(!overlayCount) {
+            document.body.appendChild(overlay);
+        }
+        fadeIn(overlay);
+        var modalTarget = document.getElementById(href);
+        modalTarget.classList.add("goster");
+    }, false);
+});
+
+overlay.addEventListener("click", function() {
+    var overlayCount = document.querySelectorAll(".tr-karart").length;
+    if(overlayCount) {
+        fadeOut(overlay);
+        document.querySelectorAll(".tr-modal.goster")["0"].classList.remove("goster");
+        setTimeout(function(){
+            overlay.remove();
+        }, 250);
     }
-});
-$("body").on("click", "a.kapat,.tr-karart", function(e) {
-    e.preventDefault();
-    $(".tr-modal").removeClass("goster");
-    $.when($(".tr-karart").fadeOut()).done(function() {
-        $(".tr-karart").remove();
-    });
-});
+}, false);
