@@ -1,32 +1,35 @@
 /****************** INPUT KARAKTER KONTROL *********************/
 var karakterKontrol = function(event){
 
+    var uzunluk = this.getAttribute("data-uzunluk");
+    var span    = this.parentNode.getElementsByTagName("span")[0];
 
-    if(typeof this.getAttribute("data-uzunluk") != "undefined" && this.getAttribute("data-uzunluk") != "")
+    if(typeof span == "undefined")
     {
 
-        uzunluk = this.getAttribute("data-uzunluk");
-
-        this.parentNode.getElementsByClassName("sinirasildi")[0].innerHTML = this.value.length  + '/' + uzunluk;
+        span = document.createElement("span");
+        this.parentNode.appendChild(span);
         
-        if(this.value.length > uzunluk)
-        {
-            //sınır aşılınca yapılacak işlemler
-            this.style["border-bottom-color"] = '#F44336';
+    }
 
-        }
-        else
-        {
-            
-            this.style["border-bottom-color"] = '#03968a';  
+    span.innerHTML = this.value.length  + '/' + uzunluk;
 
-        }
+    if(this.value.length > uzunluk)
+    {
+
+        this.style["border-bottom-color"] = '#F44336';
+
+    }
+    else
+    {
+        
+        this.style["border-bottom-color"] = '#03968a';  
 
     }
     
 };
 
-var allelement = document.getElementsByClassName('sinirkarakter');
+var allelement = document.querySelectorAll('[data-uzunluk]');
 
 if(allelement.length > 0)
 {
