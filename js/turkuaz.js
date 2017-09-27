@@ -1,3 +1,55 @@
+/****************** INPUT KARAKTER KONTROL *********************/
+var karakterKontrol = function(event){
+
+    // max karakter default
+    var uzunluk = 7;
+
+
+    if(typeof this.getAttribute("data-uzunluk") != "undefined" && this.getAttribute("data-uzunluk") != "")
+    {
+
+        uzunluk = this.getAttribute("data-uzunluk");
+
+    }
+
+    this.setAttribute("maxlength", uzunluk);
+    
+    this.parentNode.getElementsByClassName("sinirasildi")[0].innerHTML = this.value.length  + '/' + uzunluk;
+    
+    if(this.value.length > uzunluk)
+    {
+        //sınır aşılınca yapılacak işlemler
+        this.style["border-bottom-color"] = '#F44336';
+
+    }
+    else
+    {
+        
+        this.style["border-bottom-color"] = '#03968a';  
+
+    }
+
+};
+
+var allelement = document.getElementsByClassName('sinirkarakter');
+
+if(allelement.length > 0)
+{
+
+    var maxelement =  allelement.length;
+
+    for(var i = 0; i < maxelement; i++)
+    {
+
+        allelement[i].addEventListener('input', karakterKontrol);
+
+    }
+
+}
+/****************** INPUT KARAKTER KONTROL *********************/
+
+
+
 var tag = document.querySelectorAll("a.etiket.kapat");
 Array.prototype.forEach.call(tag, function(el, i) {
     var tagSpan = document.createElement("span");
