@@ -9,7 +9,7 @@ var karakterKontrol = function(event){
 
         span = document.createElement("span");
         this.parentNode.appendChild(span);
-        
+
     }
 
     span.innerHTML = this.value.length  + '/' + uzunluk;
@@ -29,7 +29,7 @@ var karakterKontrol = function(event){
     
 };
 
-var allelement = document.querySelectorAll('[data-uzunluk]');
+var allelement = document.querySelectorAll('input[data-uzunluk]');
 
 if(allelement.length > 0)
 {
