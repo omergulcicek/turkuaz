@@ -184,7 +184,7 @@ em {
 }
 p {
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .5px;
     line-height: 1.75;
     margin-bottom: .5em;
@@ -3387,9 +3387,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: rgba(255, 255, 255, .6);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     letter-spacing: .5px;
     line-height: 2.5;
     overflow-x: auto;
@@ -3413,21 +3411,19 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 .tr-konum a {
     color: rgba(255, 255, 255, .6);
-    margin-right: .3em
+    margin: 0 .5em;
+    transition: .3s
 }
-.tr-konum a:last-of-type {
+.tr-konum a:first-child {
+    margin-left: 0
+}
+.tr-konum a:last-child {
     color: #FFF;
-    padding-right: 1.3em
-}
-.tr-konum a::after {
-    content: "/";
-    margin-left: .3em
-}
-.tr-konum a:last-of-type::after {
-    content: ""
+    margin-right: 0;
+    padding-right: 1em
 }
 .tr-konum a:hover {
-    text-decoration: none
+    color: #FFF
 }
 .tr-konum.saydam {
     background-color: transparent
