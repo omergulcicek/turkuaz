@@ -2861,7 +2861,9 @@ textarea.tr-textarea + label.tr-label {
     top: 1em
 }
 input.tr-input:valid + label.tr-label,
-textarea.tr-textarea:valid + label.tr-label {
+textarea.tr-textarea:valid + label.tr-label,
+input[value].tr-input:disabled + label.tr-label,
+textarea[value].tr-textarea:disabled + label.tr-label {
     color: #057970;
     font-size: .75em;
     top: 0
