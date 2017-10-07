@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -2868,6 +2868,9 @@ textarea.tr-textarea:valid + label.tr-label {
 }
 textarea[disabled].tr-textarea {
     pointer-events: none
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #FFF inset;
 }
 /* ============= 2.3.5 Select */
 
