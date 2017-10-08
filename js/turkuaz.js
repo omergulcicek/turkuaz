@@ -133,9 +133,10 @@ trModalClose();
 
 overlay.addEventListener("click", function() {
     var overlayCount = document.querySelectorAll(".tr-karart").length;
-    if(overlayCount) {
+    var modalVisible = document.querySelectorAll(".tr-modal.goster")["0"];
+    if(overlayCount && typeof modalVisible !== "undefined") {
         fadeOut(overlay);
-        document.querySelectorAll(".tr-modal.goster")["0"].classList.remove("goster");
+        modalVisible.classList.remove("goster");
         setTimeout(function(){
             overlay.remove();
         }, 250);
