@@ -102,23 +102,34 @@ Array.prototype.forEach.call(textarea, function(el) {
 
 /* ============= 5. Modal  */
 
-var modal = document.querySelectorAll(".modal");
 var overlay = document.createElement("div");
 overlay.className += "tr-karart modal";
 
+var modal = document.querySelectorAll(".modal");
 Array.prototype.forEach.call(modal, function(el, i) {
     modal[i].addEventListener("click", function(e) {
         e.preventDefault();
         var href = el.getAttribute("href");
+        var modalTarget = document.getElementById(href);
+        modalTarget.classList.add("goster");
         var overlayCount = document.querySelectorAll(".tr-karart").length;
         if(!overlayCount) {
             document.body.appendChild(overlay);
         }
         fadeIn(overlay);
-        var modalTarget = document.getElementById(href);
-        modalTarget.classList.add("goster");
     }, false);
 });
+
+function trModalClose(target = ".tr-modal a.kapat") {
+    var modals = document.querySelectorAll(target);
+    Array.prototype.forEach.call(modals, function(el, i) {
+        modals[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            overlay.click();
+        }, false);
+    });
+}
+trModalClose();
 
 overlay.addEventListener("click", function() {
     var overlayCount = document.querySelectorAll(".tr-karart").length;
