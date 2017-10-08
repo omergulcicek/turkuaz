@@ -1,63 +1,137 @@
-/****************** INPUT KARAKTER KONTROL *********************/
-var karakterKontrol = function(event){
+/*!
+* Turkuaz Css v1.0.0
+* www.turkuazcss.com
+* MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
+* Roboto Yazi Stili (https://fonts.google.com/specimen/Roboto)
+*/
+/*!
+*    Turkuaz Css - JavaScript Kod Duzeni
+*
+*    1.     Ortak Fonksiyonlar
+*    2.     Etiket Kapat
+*    3.     Input Uzunluk
+*    4.     Textarea Otomatik Yukseklik
+*    5.     Modal
+*    6.     Select
+*    7.     Mobil Menu
+*    8.     Tab Menu
+*    9.     Akordiyon Menu
+*
+*/
+/* ============= 1. Ortak Fonksiyonlar  */
 
-    var uzunluk = this.getAttribute("data-uzunluk");
-    var span    = this.parentNode.getElementsByTagName("span")[0];
-
-    if(typeof span == "undefined")
-    {
-
-        span = document.createElement("span");
-        this.parentNode.appendChild(span);
-
-    }
-
-    span.innerHTML = this.value.length  + '/' + uzunluk;
-
-    if(this.value.length > uzunluk)
-    {
-
-        this.style["border-bottom-color"] = '#F44336';
-
-    }
-    else
-    {
-        
-        this.style["border-bottom-color"] = '#03968a';  
-
-    }
-    
-};
-
-var allelement = document.querySelectorAll('input[data-uzunluk]');
-
-if(allelement.length > 0)
-{
-
-    var maxelement =  allelement.length;
-
-    for(var i = 0; i < maxelement; i++)
-    {
-
-        allelement[i].addEventListener('input', karakterKontrol);
-
-    }
-
+function fadeIn(el, time = 250) {
+    var last = +new Date();
+    var fade = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+        if (+el.style.opacity < 0.5) {
+            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
+        }
+    };
+    fade();
 }
-/****************** INPUT KARAKTER KONTROL *********************/
 
+function fadeOut(el, time = 250) {
+    var last = +new Date();
+    var fade = function() {
+        el.style.opacity = +el.style.opacity - (new Date() - last) / time;
+        last = +new Date();
+        if (+el.style.opacity > 0) {
+            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
+        }
+    };
+    fade();
+}
 
+/* ============= 2. Etiket Kapat  */
 
 var tag = document.querySelectorAll("a.etiket.kapat");
 Array.prototype.forEach.call(tag, function(el, i) {
-    var tagSpan = document.createElement("span");
-    tagSpan.className += "etiket-kaldir";
-    tagSpan.innerHTML = "&times";
-    el.appendChild(tagSpan);
+    var span = document.createElement("span");
+    span.className += "etiket-kaldir";
+    span.innerHTML = "&times";
+    el.appendChild(span);
     tag[i].addEventListener("click", function() {
         el.remove();
     }, false);
 });
+
+/* ============= 3. Input Uzunluk  */
+
+var inputLength = document.querySelectorAll("input[data-uzunluk]");
+Array.prototype.forEach.call(inputLength, function(el, i) {
+    inputLength[i].addEventListener("keyup", function() {
+    	var maxLenght = el.getAttribute("data-uzunluk");
+    	var currentLenght = el.value.length;
+    	var span = el.parentNode.getElementsByTagName("span")[0];
+
+    	if(typeof span == "undefined")
+    	{
+    		span = document.createElement("span");
+    		el.parentNode.appendChild(span);
+    	}
+
+    	span.innerHTML = currentLenght  + '/' + maxLenght;
+
+    	if(currentLenght > maxLenght)
+    	{
+    		el.style["border-bottom-color"] = "#F44336";
+    	}
+    	else if (currentLenght == 0) {
+    		span.remove();
+    		el.style["border-bottom-color"] = "";
+    	}
+    	else
+    	{
+    		el.style["border-bottom-color"] = "#03968A";
+    	}
+    }, false);
+});
+
+/* ============= 4. Textarea Otomatik Yukseklik  */
+
+var textarea = document.getElementsByClassName("tr-textarea");
+Array.prototype.forEach.call(textarea, function(el) {
+    el.addEventListener("keyup", function () {
+        var lineCount = el.value.split(/\r|\r\n|\n/).length;
+        var newHeight = ++lineCount * 1.2;
+        el.style.height = (lineCount > 4) ? newHeight.toString() + "em" : "6em";
+    }, false);
+});
+
+/* ============= 5. Modal  */
+
+var modal = document.querySelectorAll(".modal");
+var overlay = document.createElement("div");
+overlay.className += "tr-karart modal";
+
+Array.prototype.forEach.call(modal, function(el, i) {
+    modal[i].addEventListener("click", function(e) {
+        e.preventDefault();
+        var href = el.getAttribute("href");
+        var overlayCount = document.querySelectorAll(".tr-karart").length;
+        if(!overlayCount) {
+            document.body.appendChild(overlay);
+        }
+        fadeIn(overlay);
+        var modalTarget = document.getElementById(href);
+        modalTarget.classList.add("goster");
+    }, false);
+});
+
+overlay.addEventListener("click", function() {
+    var overlayCount = document.querySelectorAll(".tr-karart").length;
+    if(overlayCount) {
+        fadeOut(overlay);
+        document.querySelectorAll(".tr-modal.goster")["0"].classList.remove("goster");
+        setTimeout(function(){
+            overlay.remove();
+        }, 250);
+    }
+}, false);
+
+/* ============= 6. Select  */
 
 $("select.tr-select").each(function() {
     var optionLength = $(this).children("option").length;
@@ -93,14 +167,7 @@ $("select.tr-select").each(function() {
     });
 });
 
-var textarea = document.getElementsByClassName("tr-textarea");
-Array.prototype.forEach.call(textarea, function(el) {
-    el.addEventListener("keyup", function (e) {
-        var lineCount = el.value.split(/\r|\r\n|\n/).length;
-        var newHeight = ++lineCount * 1.2;
-        el.style.height = (lineCount > 4) ? newHeight.toString() + "em" : "6em";
-    }, false);
-});
+/* ============= 7. Mobil Menu  */
 
 $("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
 $("nav.mobil li.acilir ul").hide();
@@ -138,6 +205,9 @@ $("body").on("click", ".tr-karart.menu", function() {
         });
     }
 });
+
+/* ============= 8. Tab Menu  */
+
 $(".tr-tab").each(function(){
     $(this).find(".tab-icerik:not(:first-child)").addClass("gizle")
             .end()
@@ -150,14 +220,7 @@ $(".tr-tab").on("click", "nav>a", function(e) {
             .find(".tab-icerikler").children().filter(".tab-icerik").eq(index).removeClass("gizle").siblings().addClass("gizle");
 });
 
-$(".tr-filtre [data-source='hepsi'], .filtre-icerik").addClass("aktif");
-$(".tr-filtre").on("click", "nav a", function() {
-    var source = $(this).data("source");
-    $(this).addClass("aktif").siblings().removeClass("aktif").parents(".tr-filtre").find(".filtre-icerik").addClass("aktif").not("[data-target^=" + source + "]").removeClass("aktif");
-    if (source == "hepsi" || source == "hepsi aktif") {
-        $(this).parents(".tr-filtre").find(".filtre-icerik").addClass("aktif");
-    }
-})
+/* ============= 8. Akordiyon Menu  */
 
 $(".akordiyon-icerik").hide();
 $(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
@@ -169,56 +232,3 @@ $(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
         t.siblings().removeClass("aktif").end().addClass("aktif").closest(".tr-akordiyon").children(".akordiyon-icerik").eq(i).slideDown(250).siblings(".akordiyon-icerik").slideUp(250);
     }
 })
-
-function fadeIn(el, time = 250) {
-    var last = +new Date();
-    var fade = function() {
-        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
-        last = +new Date();
-        if (+el.style.opacity < 0.5) {
-            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
-        }
-    };
-    fade();
-}
-
-function fadeOut(el, time = 250) {
-    var last = +new Date();
-    var fade = function() {
-        el.style.opacity = +el.style.opacity - (new Date() - last) / time;
-        last = +new Date();
-        if (+el.style.opacity > 0) {
-            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
-        }
-    };
-    fade();
-}
-
-var modal = document.querySelectorAll(".modal");
-var overlay = document.createElement("div");
-overlay.className += "tr-karart modal";
-
-Array.prototype.forEach.call(modal, function(el, i) {
-    modal[i].addEventListener("click", function(e) {
-        e.preventDefault();
-        var href = el.getAttribute("href");
-        var overlayCount = document.querySelectorAll(".tr-karart").length;
-        if(!overlayCount) {
-            document.body.appendChild(overlay);
-        }
-        fadeIn(overlay);
-        var modalTarget = document.getElementById(href);
-        modalTarget.classList.add("goster");
-    }, false);
-});
-
-overlay.addEventListener("click", function() {
-    var overlayCount = document.querySelectorAll(".tr-karart").length;
-    if(overlayCount) {
-        fadeOut(overlay);
-        document.querySelectorAll(".tr-modal.goster")["0"].classList.remove("goster");
-        setTimeout(function(){
-            overlay.remove();
-        }, 250);
-    }
-}, false);
