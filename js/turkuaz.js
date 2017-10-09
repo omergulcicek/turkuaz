@@ -220,16 +220,24 @@ $("body").on("click", ".tr-karart.menu", function() {
 
 /* ============= 8. Tab Menu  */
 
-$(".tr-tab").each(function(){
-    $(this).find(".tab-icerik:not(:first-child)").addClass("gizle")
-            .end()
-            .find("nav>a:first").addClass("aktif");
-});
-$(".tr-tab").on("click", "nav>a", function(e) {
-    var index = $(this).index();
-    $(this).addClass("aktif").siblings().removeClass("aktif")
-            .end().closest(".tr-tab")
-            .find(".tab-icerikler").children().filter(".tab-icerik").eq(index).removeClass("gizle").siblings().addClass("gizle");
+var tabMenu =  document.querySelectorAll(".tr-tab");
+Array.prototype.forEach.call(tabMenu, function(el, i) {
+	var tabs = tabMenu[i].querySelectorAll(".tr-tab nav a");
+	var tabContent = tabMenu[i].querySelectorAll(".tab-icerik");
+	tabs["0"].classList.add("aktif");
+	Array.prototype.forEach.call(tabContent, function(el, i) {
+		tabContent[i].style.display = "none";
+		tabContent["0"].style.display = "block";
+		tabs[i].addEventListener("click", function(e) {
+			e.preventDefault();
+			Array.prototype.forEach.call(tabs, function(el, i) {
+				el.classList.remove("aktif");
+				tabContent[i].style.display = "none";
+			});
+			tabs[i].classList.add("aktif");
+			tabContent[i].style.display = "block";
+		}, false);
+	});
 });
 
 /* ============= 8. Akordiyon Menu  */
