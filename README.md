@@ -25,11 +25,38 @@
 
 Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn edilmiştir. Türkçe isimlendirme ve çeşitli seçenekleri ile kolayca kod yazmanızı sağlar. Mobil öncelikli olarak, 5 farklı çözünürlükte grid sistemi vardır. 150'den fazla renk seçeneği ve örneklendirilmiş anlatımı ile kısa sürede şık siteler tasarlayabilirsiniz. Hazır şablon olarak paylaşılan siteleri önizleme yapabilir ve ücretsiz olarak kullanabilirsiniz.
 
+<h2>Hızlı Kullan</h2>
+Turkuaz Css sürekli gelişiyor, hemen deneyin !
+
+<h4>CDN</h4>
+<pre>
+https://cdnjs.com/libraries/turkuazcss (<i>hazır değil</i>)
+</pre>
+
+<h4>NPM</h4>
+<pre>
+npm install turkuazcss (<i>hazır değil</i>)
+</pre>
+
 <h2>Sürümler</h2>
 <strong>Mevcut Sürüm : v1.0.0</strong> - Geliştirme Aşamasında
 
+<h4>Tarayıcı Desteği</h4>
+<ul>
+	<li>Google Chrome 29+</li>
+	<li>Firefox 28+</li>
+	<li>Safari 9+</li>
+	<li>Opera 17+</li>
+	<li>Internet Explorer 10+</li>
+	<li>Microsoft Edge 12+</li>
+	<li>Android 4.4+</li>
+</ul>
+
 <h2>Destek</h2>
 Turkuaz Css'in gelişimine destek olmak için <a href="https://github.com/omergulcicek/turkuazcss/issues">yapılacaklar listesi</a>nde belirtilen detayları dikkate alarak kodunuzu yazın ve pull request edin!
+
+<h4>Pull Requests</h4>
+Pull requets yapmadan önce, <a href="https://github.com/omergulcicek/turkuazcss/issues">issue</a>'lerde yazanları tam olarak uyguladığınızdan emin olun. Önizleme göstermek için <a href="https://codepen.io/omergulcicek/pen/VMVKNe">CodePen</a> kullanabilirsiniz.
 
 Turkuaz Css Slack grubunda geliştirme yapılacak konuları, hatalı bileşenleri ve önerilerimizi konuşuyoruz. Sende grubumuza katılmak istersen yapman gereken tek şey aşağıdaki davet linkini kullanarak aramıza katılman.
 
