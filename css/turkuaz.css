@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -25,7 +25,7 @@
 *        2.3.4    Input - Textarea
 *        2.3.5    Select
 *      2.4     Footer
-*      2.5     Ipucu
+*      2.5     Ipucu, Popovers
 *      2.6     Kart
 *      2.7     Koleksiyon
 *      2.8     Menu
@@ -2958,7 +2958,8 @@ footer.tr-footer .footer-detay {
 }
 /* ============= 2.5 Ipucu  */
 
-.tr-ipucu {
+.tr-ipucu,
+.tr-popovers {
     display: inline-block;
     position: relative
 }
@@ -2981,54 +2982,90 @@ footer.tr-footer .footer-detay {
     visibility: hidden;
     white-space: nowrap
 }
-.tr-ipucu:hover .ipucu-icerik {
+.tr-popovers .popovers-icerik {
+	background: #FFF;
+	border-radius: 3px;
+	border: 1px solid rgba(0,0,0,.2);
+	bottom: auto;
+	color: #333;
+	cursor: text;
+	display: inline-block;
+	left: 50%;
+	max-width:500px;
+	min-width:250px;
+	opacity: 0;
+	position: absolute;
+	right: auto;
+	top: 0;
+	transition: .2s;
+	transform: translateX(-50%) translateY(calc(-100% - 1em));
+	visibility: hidden;
+}
+.tr-popovers .popovers-baslik {
+	background-color:#EEE;
+	font-size:20px;
+    padding: .5em
+}
+.tr-ipucu:hover .ipucu-icerik,
+.tr-popovers.aktif .popovers-icerik {
     opacity: 1;
     transform: translateX(-50%) translateY(calc(-100% - .5em));
     visibility: visible
 }
-.tr-ipucu.ipucu-ust .ipucu-icerik {
+.tr-ipucu.ipucu-ust .ipucu-icerik,
+.tr-popovers.popovers-ust .popovers-icerik {
     bottom: auto;
     left: 50%;
     right: auto;
     top: 0;
     transform: translateX(-50%) translateY(calc(-100% - 1em))
 }
-.tr-ipucu.ipucu-ust:hover .ipucu-icerik {
+.tr-ipucu.ipucu-ust:hover .ipucu-icerik,
+.tr-popovers.popovers-ust.aktif .popovers-icerik {
     transform: translateX(-50%) translateY(calc(-100% - .5em))
 }
-.tr-ipucu.ipucu-alt .ipucu-icerik {
+.tr-ipucu.ipucu-alt .ipucu-icerik,
+.tr-popovers.popovers-alt .popovers-icerik {
     bottom: 0;
     left: 50%;
     right: auto;
     top: auto;
     transform: translateX(-50%) translateY(calc(100% + 1em))
 }
-.tr-ipucu.ipucu-alt:hover .ipucu-icerik {
+.tr-ipucu.ipucu-alt:hover .ipucu-icerik,
+.tr-popovers.popovers-alt.aktif .ippopoversucu-icerik {
     transform: translateX(-50%) translateY(calc(100% + .5em))
 }
-.tr-ipucu.ipucu-sol .ipucu-icerik {
+.tr-ipucu.ipucu-sol .ipucu-icerik,
+.tr-popovers.popovers-sol .popovers-icerik {
     bottom: auto;
     left: 0;
     right: auto;
     top: 50%;
     transform: translateX(calc(-100% - 1em)) translateY(-50%)
 }
-.tr-ipucu.ipucu-sol:hover .ipucu-icerik {
+.tr-ipucu.ipucu-sol:hover .ipucu-icerik,
+.tr-popovers.popovers-sol.aktif .popovers-icerik {
     transform: translateX(calc(-100% - .5em)) translateY(-50%)
 }
-.tr-ipucu.ipucu-sag .ipucu-icerik {
+.tr-ipucu.ipucu-sag .ipucu-icerik,
+.tr-popovers-sag .popovers-icerik {
     bottom: auto;
     left: auto;
     right: 0;
     top: 50%;
     transform: translateX(calc(100% + 1em)) translateY(-50%)
 }
-.tr-ipucu.ipucu-sag:hover .ipucu-icerik {
+.tr-ipucu.ipucu-sag:hover .ipucu-icerik,
+.tr-popovers.popovers-sag.aktif .popovers-icerik {
     transform: translateX(calc(100% + .5em)) translateY(-50%)
 }
 .tr-ipucu .ipucu-icerik img {
     min-width: 1em;
     vertical-align: middle
+}
+.tr-popovers p {
+    padding: 0 .5em
 }
 /* ============= 2.6 Kartlar */
 

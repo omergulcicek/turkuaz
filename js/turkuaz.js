@@ -14,9 +14,10 @@
 *    5.     Textarea Otomatik Yukseklik
 *    6.     Modal
 *    7.     Select
-*    8.     Mobil Menu
-*    9.     Tab Menu
-*    10.    Akordiyon Menu
+*    8.     Popovers
+*    9.     Mobil Menu
+*    10.    Tab Menu
+*    11.    Akordiyon Menu
 *
 */
 /* ============= 1. Ortak Fonksiyonlar  */
@@ -188,7 +189,16 @@ $("select.tr-select").each(function() {
     });
 });
 
-/* ============= 8. Mobil Menu  */
+/* ============= 8. Popovers  */
+
+var popovers = document.querySelectorAll(".tr-popovers");
+Array.prototype.forEach.call(popovers, function(el, i) {
+	el.addEventListener("click", function () {
+		el.classList.toggle("aktif");
+	}, false);
+});
+
+/* ============= 9. Mobil Menu  */
 
 $("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
 $("nav.mobil li.acilir ul").hide();
@@ -227,7 +237,7 @@ $("body").on("click", ".tr-karart.menu", function() {
     }
 });
 
-/* ============= 9. Tab Menu  */
+/* ============= 10. Tab Menu  */
 
 var tabMenu =  document.querySelectorAll(".tr-tab");
 Array.prototype.forEach.call(tabMenu, function(el, i) {
@@ -249,8 +259,7 @@ Array.prototype.forEach.call(tabMenu, function(el, i) {
     });
 });
 
-/* ============= 10. Akordiyon Menu  */
-
+/* ============= 11. Akordiyon Menu  */
 $(".akordiyon-icerik").hide();
 $(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
     var t = $(this);
