@@ -8,14 +8,15 @@
 *    Turkuaz Css - JavaScript Kod Duzeni
 *
 *    1.     Ortak Fonksiyonlar
-*    2.     Etiket Kapat
-*    3.     Input Uzunluk
-*    4.     Textarea Otomatik Yukseklik
-*    5.     Modal
-*    6.     Select
-*    7.     Mobil Menu
-*    8.     Tab Menu
-*    9.     Akordiyon Menu
+*    2.     Renk Gecisi
+*    3.     Etiket Kapat
+*    4.     Input Uzunluk
+*    5.     Textarea Otomatik Yukseklik
+*    6.     Modal
+*    7.     Select
+*    8.     Mobil Menu
+*    9.     Tab Menu
+*    10.    Akordiyon Menu
 *
 */
 /* ============= 1. Ortak Fonksiyonlar  */
@@ -44,7 +45,15 @@ function fadeOut(el, time = 250) {
     fade();
 }
 
-/* ============= 2. Etiket Kapat  */
+/* ============= 2. Renk Gecisi  */
+
+var gradient = document.querySelectorAll("[tr-gradient]");
+Array.prototype.forEach.call(gradient, function(el, i) {
+	var attributeValue = el.attributes["0"].value;
+	el.style.backgroundImage = "linear-gradient(to " + attributeValue + ")";
+});
+
+/* ============= 3. Etiket Kapat  */
 
 var tag = document.querySelectorAll("a.etiket.kapat");
 Array.prototype.forEach.call(tag, function(el, i) {
@@ -57,7 +66,7 @@ Array.prototype.forEach.call(tag, function(el, i) {
     }, false);
 });
 
-/* ============= 3. Input Uzunluk  */
+/* ============= 4. Input Uzunluk  */
 
 var inputLength = document.querySelectorAll("input[data-uzunluk]");
 Array.prototype.forEach.call(inputLength, function(el, i) {
@@ -89,7 +98,7 @@ Array.prototype.forEach.call(inputLength, function(el, i) {
     }, false);
 });
 
-/* ============= 4. Textarea Otomatik Yukseklik  */
+/* ============= 5. Textarea Otomatik Yukseklik  */
 
 var textarea = document.getElementsByClassName("tr-textarea");
 Array.prototype.forEach.call(textarea, function(el) {
@@ -100,7 +109,7 @@ Array.prototype.forEach.call(textarea, function(el) {
     }, false);
 });
 
-/* ============= 5. Modal  */
+/* ============= 6. Modal  */
 
 var overlay = document.createElement("div");
 overlay.className += "tr-karart modal";
@@ -143,7 +152,7 @@ overlay.addEventListener("click", function() {
     }
 }, false);
 
-/* ============= 6. Select  */
+/* ============= 7. Select  */
 
 $("select.tr-select").each(function() {
     var optionLength = $(this).children("option").length;
@@ -179,7 +188,7 @@ $("select.tr-select").each(function() {
     });
 });
 
-/* ============= 7. Mobil Menu  */
+/* ============= 8. Mobil Menu  */
 
 $("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
 $("nav.mobil li.acilir ul").hide();
@@ -218,29 +227,29 @@ $("body").on("click", ".tr-karart.menu", function() {
     }
 });
 
-/* ============= 8. Tab Menu  */
+/* ============= 9. Tab Menu  */
 
 var tabMenu =  document.querySelectorAll(".tr-tab");
 Array.prototype.forEach.call(tabMenu, function(el, i) {
-	var tabs = tabMenu[i].querySelectorAll(".tr-tab nav a");
-	var tabContent = tabMenu[i].querySelectorAll(".tab-icerik");
-	tabs["0"].classList.add("aktif");
-	Array.prototype.forEach.call(tabContent, function(el, i) {
-		tabContent[i].style.display = "none";
-		tabContent["0"].style.display = "block";
-		tabs[i].addEventListener("click", function(e) {
-			e.preventDefault();
-			Array.prototype.forEach.call(tabs, function(el, i) {
-				el.classList.remove("aktif");
-				tabContent[i].style.display = "none";
-			});
-			tabs[i].classList.add("aktif");
-			tabContent[i].style.display = "block";
-		}, false);
-	});
+    var tabs = tabMenu[i].querySelectorAll(".tr-tab nav a");
+    var tabContent = tabMenu[i].querySelectorAll(".tab-icerik");
+    tabs["0"].classList.add("aktif");
+    Array.prototype.forEach.call(tabContent, function(el, i) {
+        tabContent[i].style.display = "none";
+        tabContent["0"].style.display = "block";
+        tabs[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            Array.prototype.forEach.call(tabs, function(el, i) {
+            	el.classList.remove("aktif");
+            	tabContent[i].style.display = "none";
+            });
+            tabs[i].classList.add("aktif");
+            tabContent[i].style.display = "block";
+        }, false);
+    });
 });
 
-/* ============= 8. Akordiyon Menu  */
+/* ============= 10. Akordiyon Menu  */
 
 $(".akordiyon-icerik").hide();
 $(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
