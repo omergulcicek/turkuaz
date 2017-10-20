@@ -23,7 +23,7 @@
 *        2.3.2    Checkbox - Radio Buton
 *        2.3.3    Dosya Secici
 *        2.3.4    Input - Textarea
-*        2.3.5    Select
+*        2.3.5    Select - Dropdown
 *      2.4     Footer
 *      2.5     Ipucu, Popovers
 *      2.6     Kart
@@ -2874,59 +2874,76 @@ textarea[disabled].tr-textarea {
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #FFF inset;
 }
-/* ============= 2.3.5 Select */
+/* ============= 2.3.5 Select - Dropdown */
 
-.select {
-    border: 1px solid rgba(0, 0, 0, .05);
-    border-radius: 3px;
-    color: #000;
-    cursor: pointer;
-    font-family: "Roboto";
-    font-size: 1em;
-    position: relative;
-    width: 100%
+.tr-dropdown {
+	color: #000;
+	display: inline-block;
+	font-size: 1em;
+	margin-right: 1em;
+	min-width: 150px;
+	position: relative;
+	width: 100%
 }
-.tr-select-secili {
-    background-color: #FFF;
-    bottom: 0;
-    left: 0;
-    padding: .375em 1em;
-    position: relative;
-    right: 0;
-    top: 0
+.dropdown-secili {
+	border: 1px solid rgba(0,0,0,.25);
+	border-radius: 3px;
+	background-color: #FFF;
+	cursor: pointer;
+	display: block;
+	padding: .5em .75em;
+	position: relative;
+	width: 100%
 }
-.tr-select-secili:after {
-    content: "";
-    border: 5px solid transparent;
-    border-color: #000 transparent transparent transparent;
-    position: absolute;
-    top: 17px;
-    right: 15px
+.dropdown-secili:after {
+	content: "▾";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%)
 }
-.tr-select-secili:active,
-.tr-select-secili.aktif {
-    background-color: rgba(0, 0, 0, .025)
+.tr-dropdown.aktif .dropdown-secili {
+	border-bottom-color: rgba(0,0,0,.05);
+	border-radius: 3px 3px 0 0
 }
-.tr-select {
-    background-color: #FFF;
-    border: 1px solid rgba(0, 0, 0, .05);
-    display: none;
-    margin: 0;
-    left: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 2
+.dropdown-icerik {
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	border-top-width: 0;
+	border-radius: 0 0 3px 3px;
+	cursor: pointer;
+	display: none;
+	list-style:none;
+	margin: 0px;
+	max-height:332px;
+	overflow: hidden;
+	padding: 0px;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	z-index: 1
 }
-.tr-select li {
-    padding: .375em 1em;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s
+.tr-dropdown.aktif .dropdown-icerik {
+	display: block
 }
-.tr-select li:hover {
-    background-color: rgba(0, 0, 0, .05)
+.dropdown-icerik li {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	color: #000;
+	font-size:.95em;
+	padding: .5em .75em;
+	transition: .15s;
+	user-select: none
+}
+.dropdown-icerik li:last-child {
+	border-bottom: 0
+}
+.dropdown-icerik li.aktif {
+	background-color: rgba(0,0,0,.015);
+	font-weight: bold;
+	display:none
+}
+.dropdown-icerik li:hover {
+	background: rgba(0,0,0,.03)
 }
 /* ============= 2.4 Footer */
 

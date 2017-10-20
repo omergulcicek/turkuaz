@@ -155,38 +155,63 @@ overlay.addEventListener("click", function() {
 
 /* ============= 7. Select  */
 
-$("select.tr-select").each(function() {
-    var optionLength = $(this).children("option").length;
-    $(this).addClass("gizle").wrap("<div class='select'></div>").after("<div class='tr-select-secili'></div>");
-    var selectSecili = $(this).next("div.tr-select-secili");
-    selectSecili.text($(this).children("option").eq(0).text());
-    var list = $("<ul/>", {
-        "class": "tr-select"
-    }).insertAfter(selectSecili);
-    for (var i = 0; i < optionLength; i++) {
-        $("<li/>", {
-            text: $(this).children("option").eq(i).text(),
-            rel: $(this).children("option").eq(i).val()
-        }).appendTo(list);
-    }
-    var li = list.children("li");
-    selectSecili.click(function(e) {
-        e.stopPropagation();
-        $("div.selectSecili.aktif").each(function() {
-            $(this).removeClass("aktif").next("ul.tr-select").hide();
-        });
-        $(this).toggleClass("aktif").next("ul.tr-select").toggle();
-    });
-    li.click(function(e) {
-        e.stopPropagation();
-        selectSecili.text($(this).text()).removeClass("aktif");
-        $(this).val($(this).attr("rel"));
-        list.hide();
-    });
-    $(document).click(function() {
-        selectSecili.removeClass("aktif");
-        list.hide();
-    });
+var select = document.querySelectorAll("select");
+Array.prototype.forEach.call(select, function(el, i) {
+	var options = el.getElementsByTagName("option");
+	var optionsLength = options.length;
+
+	var div = document.createElement("div");
+	div.className += "tr-dropdown";
+
+	var span = document.createElement("span");
+	span.className += "dropdown-secili";
+	span.innerHTML = "Seçiniz";
+
+	div.appendChild(span);
+
+	var ul = document.createElement("ul");
+	ul.className += "dropdown-icerik";
+
+	for (var j=0; j<optionsLength; j++) {
+		var li = document.createElement("li");
+		li.innerHTML = options[j].text;
+		ul.appendChild(li);
+	}
+
+	div.appendChild(ul);
+	div.setAttribute("tr-dropdown",i);
+
+	select[i].style.display = "none";
+
+	document.body.appendChild(div);
+});
+
+var dropdown = document.querySelectorAll(".tr-dropdown");
+Array.prototype.forEach.call(dropdown, function(el, i) {
+	dropdown[i].addEventListener("click", function(e) {
+		e.preventDefault();
+		el.classList.toggle("aktif");
+	}, false);
+
+	var liContent = dropdown[i].querySelectorAll("ul.dropdown-icerik li");
+	var liContentLength = liContent.length;
+
+	var span = dropdown[i].querySelectorAll("span.dropdown-secili");
+	Array.prototype.forEach.call(liContent, function(el, i) {
+		liContent[i].addEventListener("click", function(e) {
+			e.preventDefault();
+			for (var k=0; k<liContentLength; k++) {
+				el.parentNode.querySelectorAll("li")[k].classList.remove("aktif");
+			}
+			el.classList.add("aktif");
+
+			var selectText = el.innerHTML;
+			var selectIndex = i;
+			var whichSelect = span["0"].parentNode.getAttribute("tr-dropdown");
+			span[0].textContent = selectText;
+			select[whichSelect].selectedIndex = selectIndex;
+		}, false);
+	});
 });
 
 /* ============= 8. Popovers  */
