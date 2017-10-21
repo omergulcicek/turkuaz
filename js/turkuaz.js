@@ -183,7 +183,7 @@ Array.prototype.forEach.call(select, function(el, i) {
 
 	select[i].style.display = "none";
 
-	document.body.appendChild(div);
+	select[i].parentNode.appendChild(div);
 });
 
 var dropdown = document.querySelectorAll(".tr-dropdown");
