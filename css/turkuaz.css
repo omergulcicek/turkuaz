@@ -3044,7 +3044,7 @@ input[type="file"].tr-dosya::-webkit-file-upload-button {
 
 input[type="file"].tr-dosya::before {
 	bottom: 10px;
-	content: "SeÃ§"
+	content: "Seç"
 }
 
 input[type="file"].tr-dosya:hover::before {
@@ -3136,22 +3136,26 @@ input:-webkit-autofill {
 }
 
 .dropdown-secili {
-	border: 1px solid rgba(0, 0, 0, .25);
+	border: 1px solid rgba(0, 0, 0, .1);
 	border-radius: 3px;
 	background-color: #FFF;
 	cursor: pointer;
 	display: block;
-	padding: .5em .75em;
+	padding: .25em .75em;
 	position: relative;
 	width: 100%
 }
 
 .dropdown-secili:after {
-	content: "â–¾";
+	content: "▾";
 	position: absolute;
 	right: 10px;
 	top: 50%;
 	transform: translateY(-50%)
+}
+
+.dropdown-secili:hover {
+	border: 1px solid rgba(0, 0, 0, .2)
 }
 
 .tr-dropdown.aktif .dropdown-secili {
@@ -3168,8 +3172,9 @@ input:-webkit-autofill {
 	display: none;
 	list-style: none;
 	margin: 0px;
-	max-height: 332px;
-	overflow: hidden;
+	max-height: 20em;
+	overflow-x: hidden;
+	overflow-y: auto;
 	padding: 0px;
 	position: absolute;
 	top: 100%;
@@ -3182,10 +3187,11 @@ input:-webkit-autofill {
 }
 
 .dropdown-icerik li {
+	background-color: #FFF;
 	border-bottom: 1px solid rgba(0, 0, 0, .05);
 	color: #000;
 	font-size: .95em;
-	padding: .5em .75em;
+	padding: .25em .75em;
 	transition: .15s;
 	user-select: none
 }
@@ -3195,13 +3201,11 @@ input:-webkit-autofill {
 }
 
 .dropdown-icerik li.aktif {
-	background-color: rgba(0, 0, 0, .015);
-	font-weight: bold;
 	display: none
 }
 
 .dropdown-icerik li:hover {
-	background: rgba(0, 0, 0, .03)
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05)
 }
 
 /* ============= 2.4 Footer */
@@ -3768,13 +3772,14 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	background-color: #03968A;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-	color: rgba(255, 255, 255, .6);
 	display: block;
+	font-size: 1em;
 	letter-spacing: .5px;
 	line-height: 2.5;
 	overflow-x: auto;
 	overflow-y: hidden;
 	padding: 0 1rem;
+	user-select: none;
 	white-space: nowrap;
 	width: 100%
 }
@@ -3796,66 +3801,79 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	font-size: 1.5em;
 }
 
-.tr-konum a {
-	color: rgba(255, 255, 255, .6);
-	margin: 0 .5em;
-	transition: .3s
+.tr-konum ul {
+	margin: 0;
+	padding: 0;
 }
 
-.tr-konum a:first-child {
-	margin-left: 0
+.tr-konum li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 1em
 }
 
-.tr-konum a:last-child {
+.tr-konum li:not(:last-child):after {
+	content: "›";
 	color: #FFF;
-	margin-right: 0;
-	padding-right: 1em
+	position: relative;
+	left: .5em
 }
 
-.tr-konum a:hover {
+.tr-konum.tema2 li:not(:last-child):after {
+	content: "»"
+}
+
+.tr-konum.tema3 li:not(:last-child):after {
+	content: "/"
+}
+
+.tr-konum.tema4 li:not(:last-child):after {
+	content: "•"
+}
+
+.tr-konum li a {
+	color: rgba(255, 255, 255, .75);
+	text-decoration: none;
+	transition: .1s
+}
+
+.tr-konum li:last-child a {
 	color: #FFF
 }
 
-.tr-konum.saydam {
-	background-color: transparent
+.tr-konum li a:hover {
+	color: #FFF;
+	text-decoration: underline
 }
 
-.tr-konum.saydam a {
-	color: rgba(0, 0, 0, .6)
-}
-
-.tr-konum.saydam a:last-of-type {
-	color: #000
-}
-
-.tr-konum::-webkit-scrollbar {
-	display: none
-}
-
-.tr-konum::-webkit-scrollbar-thumb {
-	background-color: #000
+.tr-konum li a:active {
+	text-shadow: 0 0 10px rgba(0,0,0,.5)
 }
 
 /* ============= 2.14 Sayfa Numaralandirma */
 
 .tr-numara {
 	cursor: default;
-	margin: 1em 0;
+	margin: 1em 0
 }
 
 .tr-numara a {
+	align-items: center;
 	background-color: #FFF;
 	border-radius: 3px;
-	-webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5);
-	box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5);
+	border: 1px solid rgba(0,0,0,.1);
+	box-sizing: border-box;
 	color: #000;
 	cursor: pointer;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	font-size: 1em;
-	line-height: 2;
-	padding: 4px 16px;
+	height: 2.25em;
+	justify-content: center;
+	min-width: 2.25em;
+	padding: .5em;
+	text-decoration: none;
 	-webkit-transition: .15s;
 	-webkit-transition: .1s;
 	-o-transition: .1s;
@@ -3867,15 +3885,11 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-numara a:hover {
-	-webkit-box-shadow: inset 0px 0px 2px #000;
-	box-shadow: inset 0px 0px 2px #000;
-	text-decoration: none
+	border: 1px solid rgba(0, 0, 0, .25)
 }
 
 .tr-numara a:active {
-	-webkit-box-shadow: inset 0px 0px 5px #000;
-	box-shadow: inset 0px 0px 5px #000;
-	text-decoration: none
+	box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
 }
 
 .tr-numara a.aktif {
@@ -3897,25 +3911,19 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-numara.minik a {
-	font-size: .65em;
-	line-height: 2;
-	padding: 0 7px
+	font-size: .65em
 }
 
 .tr-numara.kucuk a {
-	font-size: .75em;
-	padding: 3px 11px
+	font-size: .75em
 }
 
 .tr-numara.orta a {
-	font-size: 1.25em;
-	padding: 5px 19px;
+	font-size: 1.25em
 }
 
 .tr-numara.buyuk a {
-	font-size: 1.5em;
-	margin-right: 5px;
-	padding: 6px 23px
+	font-size: 1.5em
 }
 
 /* ============= 2.15 Yazi */
