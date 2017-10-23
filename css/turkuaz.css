@@ -3247,7 +3247,7 @@ footer.tr-footer .footer-detay {
 }
 
 .tr-ipucu .ipucu-icerik {
-	background: rgba(0, 0, 0, .75);
+	background-color: #101010;
 	border-radius: 3px;
 	bottom: auto;
 	color: #fff;
@@ -3353,6 +3353,43 @@ footer.tr-footer .footer-detay {
 
 .tr-popovers p {
 	padding: 0 .5em
+}
+
+.ipucu-icerik::after {
+	border: 5px solid transparent;
+	border-top-color: #101010;
+	content: "";
+	left: 50%;
+	position: absolute;
+	top: 99%;
+	transform: translateX(-50%)
+}
+
+.ipucu-alt .ipucu-icerik::after {
+	border-bottom-color: #101010;
+	border-top-color: transparent;
+	bottom: 99%;
+	content: "";
+	left: 50%;
+	top: auto;
+	transform: translateX(-50%)
+}
+
+.ipucu-sol .ipucu-icerik::after {
+	border-top-color: transparent;
+	border-left-color: #101010;
+	left: 99%;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+.ipucu-sag .ipucu-icerik::after {
+	border-top-color: transparent;
+	border-right-color: #101010;
+	left: auto;
+	right: 99%;
+	top: 50%;
+	transform: translateY(-50%)
 }
 
 /* ============= 2.6 Kartlar */
