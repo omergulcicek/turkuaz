@@ -56,7 +56,7 @@ Array.prototype.forEach.call(gradient, function(el, i) {
 
 /* ============= 3. Etiket Kapat  */
 
-var tag = document.querySelectorAll("a.etiket.kapat");
+var tag = document.querySelectorAll(".etiket.kapat");
 Array.prototype.forEach.call(tag, function(el, i) {
     var span = document.createElement("span");
     span.className += "etiket-kaldir";

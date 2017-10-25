@@ -3319,6 +3319,10 @@ footer.tr-footer .footer-detay {
 	visibility: visible
 }
 
+.tr-popovers.aktif .popovers-icerik {
+	filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1))
+}
+
 .tr-ipucu.ipucu-ust .ipucu-icerik, .tr-popovers.popovers-ust .popovers-icerik {
 	bottom: auto;
 	left: 50%;
@@ -3376,43 +3380,59 @@ footer.tr-footer .footer-detay {
 	padding: 0 .5em
 }
 
-.ipucu-icerik::after {
+.ipucu-icerik::after,
+.popovers-icerik::after {
 	border: 5px solid transparent;
 	border-top-color: #101010;
 	content: "";
 	left: 50%;
 	position: absolute;
-	top: 99%;
+	top: 100%;
 	transform: translateX(-50%)
 }
 
-.ipucu-alt .ipucu-icerik::after {
+.popovers-icerik::after {
+	border-top-color: #FFF
+}
+
+.ipucu-alt .ipucu-icerik::after,
+.popovers-alt .popovers-icerik::after {
 	border-bottom-color: #101010;
 	border-top-color: transparent;
-	bottom: 99%;
-	content: "";
-	left: 50%;
-	top: auto;
-	transform: translateX(-50%)
+	bottom: 100%;
+	top: auto
 }
 
-.ipucu-sol .ipucu-icerik::after {
-	border-top-color: transparent;
+.popovers-alt .popovers-icerik::after {
+	border-bottom-color: #FFF
+}
+
+.ipucu-sol .ipucu-icerik::after,
+.popovers-sol .popovers-icerik::after {
 	border-left-color: #101010;
-	left: 99%;
-	top: 50%;
-	transform: translateY(-50%)
-}
-
-.ipucu-sag .ipucu-icerik::after {
 	border-top-color: transparent;
-	border-right-color: #101010;
-	left: auto;
-	right: 99%;
+	left: 100%;
 	top: 50%;
 	transform: translateY(-50%)
 }
 
+.popovers-sol .popovers-icerik::after {
+	border-left-color: #FFF
+}
+
+.ipucu-sag .ipucu-icerik::after,
+.popovers-sag .popovers-icerik::after {
+	border-right-color: #101010;
+	border-top-color: transparent;
+	left: auto;
+	right: 100%;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+.popovers-sag .popovers-icerik::after {
+	border-right-color: #FFF
+}
 /* ============= 2.6 Kartlar */
 
 .tr-kutu {
