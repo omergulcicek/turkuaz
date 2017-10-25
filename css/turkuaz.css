@@ -2513,22 +2513,14 @@ blockquote, .tr-alinti {
 /* ============= 2.1.1 Buton Ayarlari */
 
 .buton, .tr-dosya::before {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 	background-color: #03968A;
 	border: 0;
 	border-radius: 3px;
 	color: #FFF;
 	cursor: pointer;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
+	display: inline-block;
 	font-family: "Roboto";
 	font-size: 1em;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
 	letter-spacing: 1px;
 	line-height: 2.5;
 	margin-bottom: .3em;
@@ -2647,6 +2639,35 @@ blockquote, .tr-alinti {
 
 .buton.yuvarlak i, .buton.kare i {
 	margin-right: -1px
+}
+
+.tr-butonlar {
+	display: inline-block
+}
+
+.tr-butonlar .buton {
+	border-radius: 0;
+	margin: 0 0 0 -5px
+}
+
+.tr-butonlar .buton:first-child {
+	border-radius: 3px 0 0px 3px
+}
+
+.tr-butonlar .buton:last-child {
+	border-radius: 0 3px 3px 0
+}
+
+.tr-butonlar.dikey .buton {
+	display: block
+}
+
+.tr-butonlar.dikey .buton:first-child {
+	border-radius: 3px 3px 0 0
+}
+
+.tr-butonlar.dikey .buton:last-child {
+	border-radius: 0 0 3px 3px
 }
 
 /* ============= 2.1.2 Buton Efektleri */
