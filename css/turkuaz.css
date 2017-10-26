@@ -2762,21 +2762,12 @@ a.buton.efekt5:hover:before {
 
 /* ============= 2.2 Etiket */
 
-a.etiket {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+.etiket {
 	background-color: rgba(0, 0, 0, .1);
 	border-radius: 3px;
 	color: #333;
-	cursor: pointer;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	font-size: 14px;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	display: inline-block;
+	font-size: .9em;
 	letter-spacing: 1px;
 	line-height: 2;
 	margin: 0 1px 5px 0;
@@ -2785,12 +2776,16 @@ a.etiket {
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+a.etiket {
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
-	vertical-align: top;
-	white-space: nowrap
+	user-select: none
 }
 
 a.etiket:hover {
@@ -2806,7 +2801,7 @@ a.etiket:active {
 	box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
 
-a.etiket.pasif {
+.etiket.pasif {
 	background-color: #E6E6E6 !important;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -2815,17 +2810,17 @@ a.etiket.pasif {
 	pointer-events: none
 }
 
-a.etiket.kapat {
+.etiket.kapat {
 	color: #333;
 	pointer-events: none
 }
 
-a.etiket.kapat:hover {
+.etiket.kapat:hover {
 	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
-a.etiket.kapat .etiket-kaldir {
+.etiket.kapat .etiket-kaldir {
 	color: #000;
 	cursor: pointer;
 	opacity: .4;
@@ -2833,32 +2828,32 @@ a.etiket.kapat .etiket-kaldir {
 	margin-left: .25em;
 	line-height: 0;
 	pointer-events: initial;
+	position: relative;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
-	transition: .3s
+	transition: .3s;
+	top: 2px
 }
 
-a.etiket.kapat:hover .etiket-kaldir {
+.etiket.kapat:hover .etiket-kaldir {
 	opacity: 1
 }
 
-a.etiket .detay {
+.etiket .detay {
 	background: rgba(0, 0, 0, .1);
 	border-radius: 0 3px 3px 0;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
+	display: inline-block;
 	opacity: .8;
 	padding: 0 .5em;
 	margin: -5px -10px -5px 5px
 }
 
-a.etiket.kapat .detay {
+.etiket.kapat .detay {
 	border-radius: 0;
 	margin-right: 0
 }
 
-a.etiket.beyaz {
+.etiket.beyaz {
 	color: #000 !important
 }
 
@@ -3380,8 +3375,8 @@ footer.tr-footer .footer-detay {
 	padding: 0 .5em
 }
 
-.ipucu-icerik::after,
-.popovers-icerik::after {
+.tr-ipucu .ipucu-icerik::after,
+.tr-popovers .popovers-icerik::after {
 	border: 5px solid transparent;
 	border-top-color: #101010;
 	content: "";
@@ -3391,24 +3386,24 @@ footer.tr-footer .footer-detay {
 	transform: translateX(-50%)
 }
 
-.popovers-icerik::after {
+.tr-popovers .popovers-icerik::after {
 	border-top-color: #FFF
 }
 
-.ipucu-alt .ipucu-icerik::after,
-.popovers-alt .popovers-icerik::after {
+.tr-ipucu.ipucu-alt .ipucu-icerik::after,
+.tr-popovers.popovers-alt .popovers-icerik::after {
 	border-bottom-color: #101010;
 	border-top-color: transparent;
 	bottom: 100%;
 	top: auto
 }
 
-.popovers-alt .popovers-icerik::after {
+.tr-popovers.popovers-alt .popovers-icerik::after {
 	border-bottom-color: #FFF
 }
 
-.ipucu-sol .ipucu-icerik::after,
-.popovers-sol .popovers-icerik::after {
+.tr-ipucu.ipucu-sol .ipucu-icerik::after,
+.tr-popovers.popovers-sol .popovers-icerik::after {
 	border-left-color: #101010;
 	border-top-color: transparent;
 	left: 100%;
@@ -3416,12 +3411,12 @@ footer.tr-footer .footer-detay {
 	transform: translateY(-50%)
 }
 
-.popovers-sol .popovers-icerik::after {
+.tr-popovers.popovers-sol .popovers-icerik::after {
 	border-left-color: #FFF
 }
 
-.ipucu-sag .ipucu-icerik::after,
-.popovers-sag .popovers-icerik::after {
+.tr-ipucu.ipucu-sag .ipucu-icerik::after,
+.tr-popovers.popovers-sag .popovers-icerik::after {
 	border-right-color: #101010;
 	border-top-color: transparent;
 	left: auto;
@@ -3430,8 +3425,50 @@ footer.tr-footer .footer-detay {
 	transform: translateY(-50%)
 }
 
-.popovers-sag .popovers-icerik::after {
+.tr-popovers.popovers-sag .popovers-icerik::after {
 	border-right-color: #FFF
+}
+
+.tr-ipucu.animasyon .ipucu-icerik {
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-name: ipucuAnimasyonUst;
+}
+
+.tr-ipucu.ipucu-alt.animasyon .ipucu-icerik {
+	animation-name: ipucuAnimasyonAlt
+}
+
+.tr-ipucu.ipucu-sol.animasyon .ipucu-icerik {
+	animation-name: ipucuAnimasyonSol
+}
+
+.tr-ipucu.ipucu-sag.animasyon .ipucu-icerik {
+	animation-name: ipucuAnimasyonSag
+}
+
+@keyframes ipucuAnimasyonUst {
+	0%   { transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+	50%  { transform: translateX(-50%) translateY(calc(-100% - 1em)); }
+	100% { transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+}
+
+@keyframes ipucuAnimasyonAlt {
+	0%   { transform: translateX(-50%) translateY(calc(100% + .5em)) }
+	50%  { transform: translateX(-50%) translateY(calc(100% + 1em)) }
+	100% { transform: translateX(-50%) translateY(calc(100% + .5em)) }
+}
+
+@keyframes ipucuAnimasyonSag {
+	0%   { transform: translateX(calc(100% + .5em)) translateY(-50%) }
+	50%  { transform: translateX(calc(100% + 1em)) translateY(-50%) }
+	100% { transform: translateX(calc(100% + .5em)) translateY(-50%) }
+}
+
+@keyframes ipucuAnimasyonSol {
+	0%   { transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	50%  { transform: translateX(calc(-100% - 1em)) translateY(-50%) }
+	100% { transform: translateX(calc(-100% - .5em)) translateY(-50%) }
 }
 /* ============= 2.6 Kartlar */
 
