@@ -2860,11 +2860,11 @@ a.etiket:active {
 /* ============= 2.3 Form Elemanlari */
 
 .tr-alan {
+	display: flex;
 	margin-bottom: 1em;
 	padding-top: 1em;
 	position: relative
 }
-
 /* ============= 2.3.1 Anahtar */
 
 .tr-anahtar, .tr-anahtar * {
@@ -3139,6 +3139,15 @@ input:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0 30px #FFF inset;
 }
 
+span.input-ek {
+	background-color: #EEE;
+	padding: .5em;
+	white-space: nowrap
+}
+
+span.input-ek + .tr-input {
+	padding-left: .5em
+}
 /* ============= 2.3.5 Select - Dropdown */
 
 .tr-dropdown {
