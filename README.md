@@ -80,11 +80,11 @@ Turkuaz Css Slack grubunda geliştirme yapılacak konuları, hatalı bileşenler
 
 <p>
 Sosyal ağ hesaplarımızı takip ederek yeniliklerden haberdar olabilirsiniz.
+</p>
 - <a href="https://facebook.com/turkuazcss">facebook.com/turkuazcss</a>	
 - <a href="https://twitter.com/turkuazcss">twitter.com/turkuazcss</a>
 - <a href="https://instagram.com/turkuazcss">instagram.com/turkuazcss</a>
 - <a href="https://turkuazcss.slack.com">slack.turkuazcss.com</a>
-</p>
 
 <h2>Lisans</h2>
 <p>
