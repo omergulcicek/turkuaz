@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -2525,13 +2525,12 @@ blockquote, .tr-alinti {
 	line-height: 2.5;
 	margin-bottom: .3em;
 	outline: 0;
-	overflow: hidden;
 	padding: 0 10px;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
-	vertical-align: top;
+	vertical-align: middle;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -3279,6 +3278,7 @@ footer.tr-footer .footer-detay {
 	cursor: text;
 	display: inline-block;
 	left: 50%;
+	line-height: 1;
 	opacity: 0;
 	padding: .5em;
 	position: absolute;
