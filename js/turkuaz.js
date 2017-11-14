@@ -22,28 +22,17 @@
 */
 /* ============= 1. Ortak Fonksiyonlar  */
 
-function fadeIn(el, time = 250) {
-    var last = +new Date();
-    var fade = function() {
-        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
-        last = +new Date();
-        if (+el.style.opacity < 0.5) {
-            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
-        }
-    };
-    fade();
+function fadeIn(el, duration, display) {
+    var s = el.style, step = 25/(duration || 1000);
+    s.opacity = s.opacity || 0;
+    s.display = display || "inline-block";
+    (function fade() { (s.opacity = s.opacity+step) > 0.5 ? s.opacity = 0.5 : setTimeout(fade, 25); })();
 }
 
-function fadeOut(el, time = 250) {
-    var last = +new Date();
-    var fade = function() {
-        el.style.opacity = +el.style.opacity - (new Date() - last) / time;
-        last = +new Date();
-        if (+el.style.opacity > 0) {
-            (window.requestAnimationFrame && requestAnimationFrame(fade)) || setTimeout(fade, 16);
-        }
-    };
-    fade();
+function fadeOut(el, duration) {
+    var s = el.style, step = 25/(duration || 1000);
+    s.opacity = s.opacity || 1;
+    (function fade() {(s.opacity -= step) < 0 ? s.display = "none" : setTimeout(fade, 25); })();
 }
 
 /* ============= 2. Renk Gecisi  */
