@@ -1914,25 +1914,25 @@ sup {
 	display: none !important
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 359px) {
 	.gizle-ck, .gizle-cb-alt, .gizle-b-alt, .gizle-o-alt, .gizle-k-alt {
 		display: none !important
 	}
 }
 
-@media only screen and (min-width: 360px) and (max-width: 720px) {
+@media only screen and (min-width: 360px) and (max-width: 719px) {
 	.gizle-k, .gizle-ck-ust, .gizle-cb-alt, .gizle-b-alt, .gizle-o-alt {
 		display: none !important
 	}
 }
 
-@media only screen and (min-width: 720px) and (max-width: 1024px) {
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
 	.gizle-o, .gizle-ck-ust, .gizle-k-ust, .gizle-cb-alt, .gizle-b-alt {
 		display: none !important
 	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 	.gizle-b, .gizle-ck-ust, .gizle-k-ust, .gizle-o-ust, .gizle-cb-alt {
 		display: none !important
 	}
