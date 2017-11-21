@@ -2512,7 +2512,7 @@ blockquote, .tr-alinti {
 
 /* ============= 2.1.1 Buton Ayarlari */
 
-.buton, .tr-dosya::before {
+.buton, input[type="file"].tr-dosya::-webkit-file-upload-button {
 	background-color: #03968A;
 	border: 0;
 	border-radius: 3px;
@@ -3044,38 +3044,8 @@ a.etiket:active {
 /* ============= 2.3.3 Dosya Secici */
 
 input[type="file"].tr-dosya {
-	border-bottom: 2px solid #eee;
 	cursor: pointer;
-	height: 38px;
-	margin-bottom: 1em;
-	outline: none;
-	padding: .5em .7em 0 0;
-	width: 100%
-}
-
-input[type="file"].tr-dosya::-webkit-file-upload-button {
-	visibility: hidden
-}
-
-input[type="file"].tr-dosya::before {
-	bottom: 10px;
-	content: "Seç"
-}
-
-input[type="file"].tr-dosya:hover::before {
-	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-	box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-	color: #FFF;
-	text-decoration: none
-}
-
-input[type="file"].tr-dosya:active {
-	outline: 0
-}
-
-input[type="file"].tr-dosya:active::before {
-	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
-	box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
+	outline: none
 }
 
 /* ============= 2.3.4 Input - Textarea */
