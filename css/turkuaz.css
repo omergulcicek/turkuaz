@@ -3309,6 +3309,7 @@ footer.tr-footer .footer-detay {
 	transition: .2s;
 	transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: hidden;
+	z-index: 2
 }
 
 .tr-popovers .popovers-baslik {
@@ -3319,12 +3320,13 @@ footer.tr-footer .footer-detay {
 
 .tr-ipucu:hover .ipucu-icerik, .tr-popovers.aktif .popovers-icerik {
 	opacity: 1;
-	transform: translateX(-50%) translateY(calc(-100% - .5em));
+	transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: visible
 }
 
 .tr-popovers.aktif .popovers-icerik {
-	filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1))
+	filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
+	transform: translateX(-50%) translateY(calc(-100% - .5em))
 }
 
 .tr-ipucu.ipucu-ust .ipucu-icerik, .tr-popovers.popovers-ust .popovers-icerik {
@@ -3347,7 +3349,7 @@ footer.tr-footer .footer-detay {
 	transform: translateX(-50%) translateY(calc(100% + 1em))
 }
 
-.tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .ippopoversucu-icerik {
+.tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .popovers-icerik {
 	transform: translateX(-50%) translateY(calc(100% + .5em))
 }
 
@@ -3363,7 +3365,7 @@ footer.tr-footer .footer-detay {
 	transform: translateX(calc(-100% - .5em)) translateY(-50%)
 }
 
-.tr-ipucu.ipucu-sag .ipucu-icerik, .tr-popovers-sag .popovers-icerik {
+.tr-ipucu.ipucu-sag .ipucu-icerik, .tr-popovers.popovers-sag .popovers-icerik {
 	bottom: auto;
 	left: auto;
 	right: 0;
