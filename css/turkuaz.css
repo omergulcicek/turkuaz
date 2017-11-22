@@ -24,7 +24,8 @@
 *        2.3.2    Checkbox - Radio Buton
 *        2.3.3    Dosya Secici
 *        2.3.4    Input - Textarea
-*        2.3.5    Select - Dropdown
+*        2.3.5    Range Input
+*        2.3.6    Select - Dropdown
 *      2.4     Footer
 *      2.5     Ipucu, Popovers
 *      2.6     Kart
@@ -3117,7 +3118,32 @@ span.input-ek {
 span.input-ek + .tr-input {
 	padding-left: .5em
 }
-/* ============= 2.3.5 Select - Dropdown */
+/* ============= 2.3.5 Range Input */
+
+input[type="range"] {
+	-webkit-appearance: none;
+	background-color: #03968A;
+	height: .5em;
+	margin: 2em;
+	border-radius: 3px;
+	outline: none;
+	width: 100%
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 3px;
+	box-shadow: -2px 2px 0 rgba(0,0,0,.1);
+	cursor: pointer;
+	display: block;
+	height: 1.5em;
+	margin-right: 2px;
+	position: relative;
+	width: 1em
+}
+/* ============= 2.3.6 Select - Dropdown */
 
 .tr-dropdown {
 	color: #000;
