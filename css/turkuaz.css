@@ -3120,17 +3120,15 @@ span.input-ek + .tr-input {
 }
 /* ============= 2.3.5 Range Input */
 
-input[type="range"] {
+input[type="range"].tr-range {
 	-webkit-appearance: none;
 	background-color: #03968A;
 	height: .5em;
-	margin: 2em;
 	border-radius: 3px;
 	outline: none;
 	width: 100%
 }
-
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"].tr-range::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	background-color: #fff;
 	border: 1px solid rgba(0,0,0,.15);
@@ -3139,9 +3137,36 @@ input[type="range"]::-webkit-slider-thumb {
 	cursor: pointer;
 	display: block;
 	height: 1.5em;
-	margin-right: 2px;
 	position: relative;
 	width: 1em
+}
+
+.range-deger {
+	background-color: #03968A;
+	border-radius: 100%;
+	bottom: 100%;
+	color: #FFF;
+	cursor: default;
+	display: block;
+	font-size: .75em;
+	left: 0;
+	min-height: 1em;
+	min-width: 1em;
+	padding: .5em;
+	position: absolute;
+	text-align: center;
+	transform: translateX(-.5em)
+}
+
+.range-deger:after {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #03968A;
+	bottom: -4px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%)
 }
 /* ============= 2.3.6 Select - Dropdown */
 

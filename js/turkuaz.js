@@ -12,12 +12,13 @@
 *    3.     Etiket Kapat
 *    4.     Input Uzunluk
 *    5.     Textarea Otomatik Yukseklik
-*    6.     Modal
-*    7.     Select
-*    8.     Popovers
-*    9.     Mobil Menu
-*    10.    Tab Menu
-*    11.    Akordiyon Menu
+*    6.     Range Input
+*    7.     Modal
+*    8.     Select
+*    9.     Popovers
+*    10.     Mobil Menu
+*    11.    Tab Menu
+*    12.    Akordiyon Menu
 *
 */
 /* ============= 1. Ortak Fonksiyonlar  */
@@ -99,7 +100,28 @@ Array.prototype.forEach.call(textarea, function(el) {
     }, false);
 });
 
-/* ============= 6. Modal  */
+/* ============= 6. Range Input  */
+
+var range = document.querySelectorAll("input[type='range'].tr-range");
+Array.prototype.forEach.call(range, function(el, i) {
+	var rangeChange = function (){
+		var span = el.parentNode.querySelector(".range-deger");
+		var spanWidth = span.offsetWidth;
+		var rangeMax = el.max;
+		var rangeValue = el.value;
+		var rangeWidth = el.offsetWidth - (spanWidth/2);
+		span.innerHTML = rangeValue;
+		span.style.left = Math.ceil(rangeWidth/rangeMax*rangeValue) + "px";
+	}
+	el.addEventListener("mousemove", function () {
+		rangeChange();
+	}, false);
+	el.addEventListener("change", function () {
+		rangeChange();
+	}, false);
+});
+
+/* ============= 7. Modal  */
 
 var overlay = document.createElement("div");
 overlay.className += "tr-karart modal";
@@ -142,7 +164,7 @@ overlay.addEventListener("click", function() {
     }
 }, false);
 
-/* ============= 7. Select  */
+/* ============= 8. Select  */
 
 var select = document.querySelectorAll("select");
 Array.prototype.forEach.call(select, function(el, i) {
@@ -203,7 +225,7 @@ Array.prototype.forEach.call(dropdown, function(el, i) {
 	});
 });
 
-/* ============= 8. Popovers  */
+/* ============= 9. Popovers  */
 
 var popovers = document.querySelectorAll(".tr-popovers");
 Array.prototype.forEach.call(popovers, function(el, i) {
@@ -212,7 +234,7 @@ Array.prototype.forEach.call(popovers, function(el, i) {
 	}, false);
 });
 
-/* ============= 9. Mobil Menu  */
+/* ============= 10. Mobil Menu  */
 
 $("nav.mobil li ul, nav.menu li ul").parents("li").addClass("acilir");
 $("nav.mobil li.acilir ul").hide();
@@ -251,7 +273,7 @@ $("body").on("click", ".tr-karart.menu", function() {
     }
 });
 
-/* ============= 10. Tab Menu  */
+/* ============= 11. Tab Menu  */
 
 var tabMenu =  document.querySelectorAll(".tr-tab");
 Array.prototype.forEach.call(tabMenu, function(el, i) {
@@ -273,7 +295,7 @@ Array.prototype.forEach.call(tabMenu, function(el, i) {
     });
 });
 
-/* ============= 11. Akordiyon Menu  */
+/* ============= 12. Akordiyon Menu  */
 $(".akordiyon-icerik").hide();
 $(".tr-akordiyon > .akordiyon-baslik").on("click", function() {
     var t = $(this);
