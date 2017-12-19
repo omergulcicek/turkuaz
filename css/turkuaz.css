@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -2389,6 +2389,9 @@ video {
 }
 
 .tr-kapak {
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#03968A), to(#56F7EB));
+	background-image: -webkit-linear-gradient(bottom, #03968A, #56F7EB);
+	background-image: -o-linear-gradient(bottom, #03968A, #56F7EB);
 	background-image: linear-gradient(to top, #03968A, #56F7EB);
 	cursor: pointer;
 	padding: 5em 3em;
@@ -2398,13 +2401,19 @@ video {
 .tr-kapak img {
 	background-color: #FFF;
 	border-radius: 3px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+	        box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+	-webkit-transition: .75s;
+	-o-transition: .75s;
 	transition: .75s
 }
 
 .tr-kapak:hover img {
-	box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
-	transform: scale(1.1)
+	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+	        box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1)
 }
 
 blockquote, .tr-alinti {
@@ -2860,6 +2869,8 @@ a.etiket:active {
 /* ============= 2.3 Form Elemanlari */
 
 .tr-alan {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 1em;
 	padding-top: 1em;
@@ -3133,7 +3144,8 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	background-color: #fff;
 	border: 1px solid rgba(0,0,0,.15);
 	border-radius: 3px;
-	box-shadow: -2px 2px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: -2px 2px 0 rgba(0,0,0,.1);
+	        box-shadow: -2px 2px 0 rgba(0,0,0,.1);
 	cursor: pointer;
 	display: block;
 	height: 1.5em;
@@ -3155,7 +3167,9 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	padding: .5em;
 	position: absolute;
 	text-align: center;
-	transform: translateX(-.5em)
+	-webkit-transform: translateX(-.5em);
+	    -ms-transform: translateX(-.5em);
+	        transform: translateX(-.5em)
 }
 
 .range-deger:after {
@@ -3166,7 +3180,9 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	content: "";
 	left: 50%;
 	position: absolute;
-	transform: translateX(-50%)
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%)
 }
 /* ============= 2.3.6 Select - Dropdown */
 
@@ -3196,7 +3212,9 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	position: absolute;
 	right: 10px;
 	top: 50%;
-	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%)
 }
 
 .dropdown-secili:hover {
@@ -3237,8 +3255,13 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	color: #000;
 	font-size: .95em;
 	padding: .25em .75em;
+	-webkit-transition: .15s;
+	-o-transition: .15s;
 	transition: .15s;
-	user-select: none
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none
 }
 
 .dropdown-icerik li:last-child {
@@ -3250,7 +3273,8 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 }
 
 .dropdown-icerik li:hover {
-	box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05)
+	-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05);
+	        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05)
 }
 
 /* ============= 2.4 Footer */
@@ -3306,8 +3330,12 @@ footer.tr-footer .footer-detay {
 	right: auto;
 	text-align: center;
 	top: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
 	transition: .2s;
-	transform: translateX(-50%) translateY(calc(-100% - 1em));
+	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	        transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: hidden;
 	white-space: nowrap
 }
@@ -3327,8 +3355,12 @@ footer.tr-footer .footer-detay {
 	position: absolute;
 	right: auto;
 	top: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
 	transition: .2s;
-	transform: translateX(-50%) translateY(calc(-100% - 1em));
+	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	        transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: hidden;
 	z-index: 2
 }
@@ -3341,13 +3373,18 @@ footer.tr-footer .footer-detay {
 
 .tr-ipucu:hover .ipucu-icerik, .tr-popovers.aktif .popovers-icerik {
 	opacity: 1;
-	transform: translateX(-50%) translateY(calc(-100% - 1em));
+	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	        transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: visible
 }
 
 .tr-popovers.aktif .popovers-icerik {
-	filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
-	transform: translateX(-50%) translateY(calc(-100% - .5em))
+	-webkit-filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
+	        filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
+	-webkit-transform: translateX(-50%) translateY(calc(-100% - .5em));
+	    -ms-transform: translateX(-50%) translateY(calc(-100% - .5em));
+	        transform: translateX(-50%) translateY(calc(-100% - .5em))
 }
 
 .tr-ipucu.ipucu-ust .ipucu-icerik, .tr-popovers.popovers-ust .popovers-icerik {
@@ -3355,11 +3392,15 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	right: auto;
 	top: 0;
-	transform: translateX(-50%) translateY(calc(-100% - 1em))
+	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
+	        transform: translateX(-50%) translateY(calc(-100% - 1em))
 }
 
 .tr-ipucu.ipucu-ust:hover .ipucu-icerik, .tr-popovers.popovers-ust.aktif .popovers-icerik {
-	transform: translateX(-50%) translateY(calc(-100% - .5em))
+	-webkit-transform: translateX(-50%) translateY(calc(-100% - .5em));
+	    -ms-transform: translateX(-50%) translateY(calc(-100% - .5em));
+	        transform: translateX(-50%) translateY(calc(-100% - .5em))
 }
 
 .tr-ipucu.ipucu-alt .ipucu-icerik, .tr-popovers.popovers-alt .popovers-icerik {
@@ -3367,11 +3408,15 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	right: auto;
 	top: auto;
-	transform: translateX(-50%) translateY(calc(100% + 1em))
+	-webkit-transform: translateX(-50%) translateY(calc(100% + 1em));
+	    -ms-transform: translateX(-50%) translateY(calc(100% + 1em));
+	        transform: translateX(-50%) translateY(calc(100% + 1em))
 }
 
 .tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .popovers-icerik {
-	transform: translateX(-50%) translateY(calc(100% + .5em))
+	-webkit-transform: translateX(-50%) translateY(calc(100% + .5em));
+	    -ms-transform: translateX(-50%) translateY(calc(100% + .5em));
+	        transform: translateX(-50%) translateY(calc(100% + .5em))
 }
 
 .tr-ipucu.ipucu-sol .ipucu-icerik, .tr-popovers.popovers-sol .popovers-icerik {
@@ -3379,11 +3424,15 @@ footer.tr-footer .footer-detay {
 	left: 0;
 	right: auto;
 	top: 50%;
-	transform: translateX(calc(-100% - 1em)) translateY(-50%)
+	-webkit-transform: translateX(calc(-100% - 1em)) translateY(-50%);
+	    -ms-transform: translateX(calc(-100% - 1em)) translateY(-50%);
+	        transform: translateX(calc(-100% - 1em)) translateY(-50%)
 }
 
 .tr-ipucu.ipucu-sol:hover .ipucu-icerik, .tr-popovers.popovers-sol.aktif .popovers-icerik {
-	transform: translateX(calc(-100% - .5em)) translateY(-50%)
+	-webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%);
+	    -ms-transform: translateX(calc(-100% - .5em)) translateY(-50%);
+	        transform: translateX(calc(-100% - .5em)) translateY(-50%)
 }
 
 .tr-ipucu.ipucu-sag .ipucu-icerik, .tr-popovers.popovers-sag .popovers-icerik {
@@ -3391,11 +3440,15 @@ footer.tr-footer .footer-detay {
 	left: auto;
 	right: 0;
 	top: 50%;
-	transform: translateX(calc(100% + 1em)) translateY(-50%)
+	-webkit-transform: translateX(calc(100% + 1em)) translateY(-50%);
+	    -ms-transform: translateX(calc(100% + 1em)) translateY(-50%);
+	        transform: translateX(calc(100% + 1em)) translateY(-50%)
 }
 
 .tr-ipucu.ipucu-sag:hover .ipucu-icerik, .tr-popovers.popovers-sag.aktif .popovers-icerik {
-	transform: translateX(calc(100% + .5em)) translateY(-50%)
+	-webkit-transform: translateX(calc(100% + .5em)) translateY(-50%);
+	    -ms-transform: translateX(calc(100% + .5em)) translateY(-50%);
+	        transform: translateX(calc(100% + .5em)) translateY(-50%)
 }
 
 .tr-ipucu .ipucu-icerik img {
@@ -3415,7 +3468,9 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	position: absolute;
 	top: 100%;
-	transform: translateX(-50%)
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%)
 }
 
 .tr-popovers .popovers-icerik::after {
@@ -3440,7 +3495,9 @@ footer.tr-footer .footer-detay {
 	border-top-color: transparent;
 	left: 100%;
 	top: 50%;
-	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%)
 }
 
 .tr-popovers.popovers-sol .popovers-icerik::after {
@@ -3454,7 +3511,9 @@ footer.tr-footer .footer-detay {
 	left: auto;
 	right: 100%;
 	top: 50%;
-	transform: translateY(-50%)
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%)
 }
 
 .tr-popovers.popovers-sag .popovers-icerik::after {
@@ -3462,45 +3521,75 @@ footer.tr-footer .footer-detay {
 }
 
 .tr-ipucu.animasyon .ipucu-icerik {
-	animation-duration: 1.5s;
-	animation-iteration-count: infinite;
-	animation-name: ipucuAnimasyonUst;
+	-webkit-animation-duration: 1.5s;
+	        animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-name: ipucuAnimasyonUst;
+	        animation-name: ipucuAnimasyonUst;
 }
 
 .tr-ipucu.ipucu-alt.animasyon .ipucu-icerik {
-	animation-name: ipucuAnimasyonAlt
+	-webkit-animation-name: ipucuAnimasyonAlt;
+	        animation-name: ipucuAnimasyonAlt
 }
 
 .tr-ipucu.ipucu-sol.animasyon .ipucu-icerik {
-	animation-name: ipucuAnimasyonSol
+	-webkit-animation-name: ipucuAnimasyonSol;
+	        animation-name: ipucuAnimasyonSol
 }
 
 .tr-ipucu.ipucu-sag.animasyon .ipucu-icerik {
-	animation-name: ipucuAnimasyonSag
+	-webkit-animation-name: ipucuAnimasyonSag;
+	        animation-name: ipucuAnimasyonSag
+}
+
+@-webkit-keyframes ipucuAnimasyonUst {
+	0%   { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+	50%  { -webkit-transform: translateX(-50%) translateY(calc(-100% - 1em)); transform: translateX(-50%) translateY(calc(-100% - 1em)); }
+	100% { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
 }
 
 @keyframes ipucuAnimasyonUst {
-	0%   { transform: translateX(-50%) translateY(calc(-100% - .5em)); }
-	50%  { transform: translateX(-50%) translateY(calc(-100% - 1em)); }
-	100% { transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+	0%   { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+	50%  { -webkit-transform: translateX(-50%) translateY(calc(-100% - 1em)); transform: translateX(-50%) translateY(calc(-100% - 1em)); }
+	100% { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+}
+
+@-webkit-keyframes ipucuAnimasyonAlt {
+	0%   { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
+	50%  { -webkit-transform: translateX(-50%) translateY(calc(100% + 1em)); transform: translateX(-50%) translateY(calc(100% + 1em)) }
+	100% { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
 }
 
 @keyframes ipucuAnimasyonAlt {
-	0%   { transform: translateX(-50%) translateY(calc(100% + .5em)) }
-	50%  { transform: translateX(-50%) translateY(calc(100% + 1em)) }
-	100% { transform: translateX(-50%) translateY(calc(100% + .5em)) }
+	0%   { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
+	50%  { -webkit-transform: translateX(-50%) translateY(calc(100% + 1em)); transform: translateX(-50%) translateY(calc(100% + 1em)) }
+	100% { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
+}
+
+@-webkit-keyframes ipucuAnimasyonSag {
+	0%   { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
+	50%  { -webkit-transform: translateX(calc(100% + 1em)) translateY(-50%); transform: translateX(calc(100% + 1em)) translateY(-50%) }
+	100% { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
 }
 
 @keyframes ipucuAnimasyonSag {
-	0%   { transform: translateX(calc(100% + .5em)) translateY(-50%) }
-	50%  { transform: translateX(calc(100% + 1em)) translateY(-50%) }
-	100% { transform: translateX(calc(100% + .5em)) translateY(-50%) }
+	0%   { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
+	50%  { -webkit-transform: translateX(calc(100% + 1em)) translateY(-50%); transform: translateX(calc(100% + 1em)) translateY(-50%) }
+	100% { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
+}
+
+@-webkit-keyframes ipucuAnimasyonSol {
+	0%   { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	50%  { -webkit-transform: translateX(calc(-100% - 1em)) translateY(-50%); transform: translateX(calc(-100% - 1em)) translateY(-50%) }
+	100% { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
 }
 
 @keyframes ipucuAnimasyonSol {
-	0%   { transform: translateX(calc(-100% - .5em)) translateY(-50%) }
-	50%  { transform: translateX(calc(-100% - 1em)) translateY(-50%) }
-	100% { transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	0%   { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	50%  { -webkit-transform: translateX(calc(-100% - 1em)) translateY(-50%); transform: translateX(calc(-100% - 1em)) translateY(-50%) }
+	100% { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
 }
 /* ============= 2.6 Kartlar */
 
@@ -3565,6 +3654,8 @@ footer.tr-footer .footer-detay {
 	line-height: 1.5em;
 	padding: .5em 1rem;
 	text-decoration: none;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
 	transition: .1s
 }
 
@@ -3926,7 +4017,10 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	overflow-x: auto;
 	overflow-y: hidden;
 	padding: 0 1rem;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	white-space: nowrap;
 	width: 100%
 }
@@ -3981,6 +4075,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 .tr-konum li a {
 	color: rgba(255, 255, 255, .75);
 	text-decoration: none;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
 	transition: .1s
 }
 
@@ -4005,11 +4101,14 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-numara a {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-color: #FFF;
 	border-radius: 3px;
 	border: 1px solid rgba(0,0,0,.1);
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	color: #000;
 	cursor: pointer;
 	display: -webkit-inline-box;
@@ -4017,7 +4116,9 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	display: inline-flex;
 	font-size: 1em;
 	height: 2.25em;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	min-width: 2.25em;
 	padding: .5em;
 	text-decoration: none;
@@ -4036,7 +4137,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-numara a:active {
-	box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
+	-webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2);
+	        box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
 }
 
 .tr-numara a.aktif {
