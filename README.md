@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h2 align="center">Turkuaz Css</h2>
+<h3 align="center">Turkuaz Css</h3>
 
 <p align="center">
     Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework.
