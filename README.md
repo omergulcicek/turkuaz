@@ -74,11 +74,6 @@ Turkuaz Css Slack grubunda geliştirme yapılacak konuları, hatalı bileşenler
 </p>
 
 <p>
-<a href="https://join.slack.com/t/turkuazcss/shared_invite/MjI4OTg4NzMxNjUyLTE1MDMxNDY5MTQtYWQ1MjMwN2UyMg">Davet Linki</a>
-(<i>Link aktif değil ise facebook sayfamıza mesaj atarak güncel linke sahip olabilirsiniz.</i>)
-</p>
-
-<p>
 Sosyal ağ hesaplarımızı takip ederek yeniliklerden haberdar olabilirsiniz.
 </p>
 
@@ -88,7 +83,7 @@ Sosyal ağ hesaplarımızı takip ederek yeniliklerden haberdar olabilirsiniz.
 
 - <a href="https://instagram.com/turkuazcss">instagram.com/turkuazcss</a>
 
-- <a href="https://turkuazcss.slack.com">slack.turkuazcss.com</a>
+- <a href="https://turkuazcss.slack.com">slack.turkuazcss.com</a> (<a href="https://join.slack.com/t/turkuazcss/shared_invite/MjI4OTg4NzMxNjUyLTE1MDMxNDY5MTQtYWQ1MjMwN2UyMg">Davet Linki</a>)
 
 <h2>Lisans</h2>
 <p>
