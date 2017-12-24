@@ -1,4 +1,4 @@
-/*!
+﻿/*!
 * Turkuaz Css v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
@@ -24,8 +24,7 @@
 *        2.3.2    Checkbox - Radio Buton
 *        2.3.3    Dosya Secici
 *        2.3.4    Input - Textarea
-*        2.3.5    Range Input
-*        2.3.6    Select - Dropdown
+*        2.3.5    Select - Dropdown
 *      2.4     Footer
 *      2.5     Ipucu, Popovers
 *      2.6     Kart
@@ -51,13 +50,12 @@
 /* ============= 1. Css  */
 
 html {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box
 }
 
 *, :before, :after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: -apple-system, "Roboto", sans-serif
 }
 
 ::-moz-selection {
@@ -72,18 +70,9 @@ html {
 
 body {
 	background-color: #FFF;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	font-family: "Roboto", sans-serif;
 	font-size: 14px;
-	letter-spacing: .3px;
-	margin: 0;
-	min-height: 100vh
+	font-weight: 400;
+	margin: 0
 }
 
 @media only screen and (min-width: 1024px) {
@@ -92,7 +81,7 @@ body {
 	}
 }
 
-article, aside, details, figure, footer, header, main, menu, nav, section, summary {
+article, aside, figure, footer, header, main, nav, section, summary {
 	display: block
 }
 
@@ -100,59 +89,6 @@ main {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 400;
-	margin: 0 0 .25em 0
-}
-
-h1 {
-	font-size: 2em
-}
-
-h2 {
-	font-size: 1.8em
-}
-
-h3 {
-	font-size: 1.6em
-}
-
-h4 {
-	font-size: 1.4em
-}
-
-h5 {
-	font-size: 1.2em
-}
-
-h6 {
-	font-size: 1em
-}
-
-@media only screen and (min-width: 1024px) {
-	h1, h2, h3, h4, h5, h6 {
-		margin-bottom: .5em
-	}
-	h1 {
-		font-size: 4em
-	}
-	h2 {
-		font-size: 3em
-	}
-	h3 {
-		font-size: 2.5em
-	}
-	h4 {
-		font-size: 2em
-	}
-	h5 {
-		font-size: 1.5em
-	}
-	h6 {
-		font-size: 1em
-	}
 }
 
 a {
@@ -184,12 +120,39 @@ i, em {
 }
 
 p {
-	font-style: normal;
-	font-weight: 400;
 	letter-spacing: .5px;
 	line-height: 1.75;
-	margin-bottom: .5em;
-	margin-top: .5em
+	margin-bottom: 16px;
+	margin-top: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+	margin-top: 0
+}
+
+h1 {
+	font-size: 3.5rem
+}
+
+h2 {
+	font-size: 3rem
+}
+
+h3 {
+	font-size: 2.5rem
+}
+
+h4 {
+	font-size: 2rem
+}
+
+h5 {
+	font-size: 1.5rem
+}
+
+h6 {
+	font-size: 1rem
 }
 
 ul {
@@ -199,6 +162,16 @@ ul {
 
 li {
 	list-style-type: none
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	box-sizing: content-box;
+	height: 0;
+	margin-bottom: .5rem;
+	margin-top: .5rem;
+	overflow: visible
 }
 
 img {
@@ -211,18 +184,19 @@ input, button, select, textarea, pre, code {
 }
 
 pre {
-	background-color: #3E2723;
-	border: 1px solid rgba(0, 0, 0, .1);
+	background-color: #F5F5F5;
 	border-radius: 3px;
-	color: #EEEEEE;
-	font-size: .9em;
-	padding: 1em;
+	color: #050505;
+	margin-bottom: 1rem;
+	letter-spacing: .5px;
+	line-height: 1.5;
+	padding: 1rem;
 	overflow-y: auto;
 	width: 100%
 }
 
 code {
-	white-space: pre-wrap
+	white-space: pre
 }
 
 kbd {
@@ -230,7 +204,7 @@ kbd {
 	border-radius: 3px;
 	color: #FFF;
 	font-size: 90%;
-	padding: .25em .4em
+	padding: .25rem .5rem
 }
 
 form {
@@ -249,11 +223,11 @@ sub, sup {
 }
 
 sub {
-	bottom: -0.25em
+	bottom: -.5rem
 }
 
 sup {
-	top: -0.5em
+	top: -.5rem
 }
 
 /* ============= 1.1 Grid Sistemi  */
@@ -1197,12 +1171,6 @@ sup {
 
 /* ============= 1.2 Renkler */
 
-.saydam {
-	background-color: transparent !important;
-	-webkit-box-shadow: 0px 0px 0px transparent !important;
-	box-shadow: 0px 0px 0px transparent !important
-}
-
 .beyaz {
 	background-color: #FFF !important
 }
@@ -1845,32 +1813,25 @@ sup {
 	background-color: #FFF;
 	border-collapse: collapse;
 	border-spacing: 0;
-	border-top: 1px solid rgba(0, 0, 0, .1);
-	cursor: default;
 	display: block;
-	margin: 1em 0;
+	line-height: 1;
+	margin-bottom: 1rem;
 	overflow-x: auto;
 	overflow-y: hidden;
 	width: 100%
 }
 
-.tr-tablo tr {
-	border-right: 1px solid rgba(0, 0, 0, .05);
-	border-left: 1px solid rgba(0, 0, 0, .05)
-}
-
 .tr-tablo tr td, .tr-tablo tr th {
-	border-bottom: 1px solid rgba(0, 0, 0, .05);
-	padding: .9em;
+	padding: 1rem;
 	width: 100vw
 }
 
 .tr-tablo.kucuk tr td, .tr-tablo.kucuk tr th {
-	padding: .45em
+	padding: .5rem
 }
 
 .tr-tablo tr th {
-	background-color: rgba(0, 0, 0, .02);
+	border-bottom: 2px solid rgba(0,0,0,.05);
 	text-align: left
 }
 
@@ -1878,7 +1839,7 @@ sup {
 	text-align: center
 }
 
-.tr-tablo.renkli tr:nth-of-type(odd) {
+.tr-tablo.renkli tr:nth-of-type(even) {
 	background-color: rgba(0, 0, 0, .02)
 }
 
@@ -1987,23 +1948,23 @@ sup {
 }
 
 .m1 {
-	margin: 1em !important
+	margin: 1rem !important
 }
 
 .m2 {
-	margin: 2em !important
+	margin: 2rem !important
 }
 
 .m3 {
-	margin: 3em !important
+	margin: 3rem !important
 }
 
 .m4 {
-	margin: 4em !important
+	margin: 4rem !important
 }
 
 .m5 {
-	margin: 5em !important
+	margin: 5rem !important
 }
 
 /* padding */
@@ -2013,23 +1974,23 @@ sup {
 }
 
 .p1 {
-	padding: 1em !important
+	padding: 1rem !important
 }
 
 .p2 {
-	padding: 2em !important
+	padding: 2rem !important
 }
 
 .p3 {
-	padding: 3em !important
+	padding: 3rem !important
 }
 
 .p4 {
-	padding: 4em !important
+	padding: 4rem !important
 }
 
 .p5 {
-	padding: 5em !important
+	padding: 5rem !important
 }
 
 /* margin-top */
@@ -2039,23 +2000,23 @@ sup {
 }
 
 .mt1 {
-	margin-top: 1em !important
+	margin-top: 1rem !important
 }
 
 .mt2 {
-	margin-top: 2em !important
+	margin-top: 2rem !important
 }
 
 .mt3 {
-	margin-top: 3em !important
+	margin-top: 3rem !important
 }
 
 .mt4 {
-	margin-top: 4em !important
+	margin-top: 4rem !important
 }
 
 .mt5 {
-	margin-top: 5em !important
+	margin-top: 5rem !important
 }
 
 /* margin-bottom */
@@ -2065,23 +2026,23 @@ sup {
 }
 
 .mb1 {
-	margin-bottom: 1em !important
+	margin-bottom: 1rem !important
 }
 
 .mb2 {
-	margin-bottom: 2em !important
+	margin-bottom: 2rem !important
 }
 
 .mb3 {
-	margin-bottom: 3em !important
+	margin-bottom: 3rem !important
 }
 
 .mb4 {
-	margin-bottom: 4em !important
+	margin-bottom: 4rem !important
 }
 
 .mb5 {
-	margin-bottom: 5em !important
+	margin-bottom: 5rem !important
 }
 
 /* margin-right */
@@ -2091,23 +2052,23 @@ sup {
 }
 
 .mr1 {
-	margin-right: 1em !important
+	margin-right: 1rem !important
 }
 
 .mr2 {
-	margin-right: 2em !important
+	margin-right: 2rem !important
 }
 
 .mr3 {
-	margin-right: 3em !important
+	margin-right: 3rem !important
 }
 
 .mr4 {
-	margin-right: 4em !important
+	margin-right: 4rem !important
 }
 
 .mr5 {
-	margin-right: 5em !important
+	margin-right: 5rem !important
 }
 
 /* margin-left */
@@ -2117,7 +2078,7 @@ sup {
 }
 
 .ml1 {
-	margin-left: 1em !important
+	margin-left: 1rem !important
 }
 
 .ml2 {
@@ -2125,15 +2086,15 @@ sup {
 }
 
 .ml3 {
-	margin-left: 3em !important
+	margin-left: 3rem !important
 }
 
 .ml4 {
-	margin-left: 4em !important
+	margin-left: 4rem !important
 }
 
 .ml5 {
-	margin-left: 5em !important
+	margin-left: 5rem !important
 }
 
 /* margin-x */
@@ -2144,28 +2105,28 @@ sup {
 }
 
 .mx1 {
-	margin-left: 1em !important;
-	margin-right: 1em !important
+	margin-left: 1rem !important;
+	margin-right: 1rem !important
 }
 
 .mx2 {
-	margin-left: 2em !important;
-	margin-right: 2em !important
+	margin-left: 2rem !important;
+	margin-right: 2rem !important
 }
 
 .mx3 {
-	margin-left: 3em !important;
-	margin-right: 3em !important
+	margin-left: 3rem !important;
+	margin-right: 3rem !important
 }
 
 .mx4 {
-	margin-left: 4em !important;
-	margin-right: 4em !important
+	margin-left: 4rem !important;
+	margin-right: 4rem !important
 }
 
 .mx5 {
-	margin-left: 5em !important;
-	margin-right: 5em !important
+	margin-left: 5rem !important;
+	margin-right: 5rem !important
 }
 
 /* margin-y */
@@ -2176,28 +2137,28 @@ sup {
 }
 
 .my1 {
-	margin-bottom: 1em !important;
-	margin-top: 1em !important
+	margin-bottom: 1rem !important;
+	margin-top: 1rem !important
 }
 
 .my2 {
-	margin-bottom: 2em !important;
-	margin-top: 2em !important
+	margin-bottom: 2rem !important;
+	margin-top: 2rem !important
 }
 
 .my3 {
-	margin-bottom: 3em !important;
-	margin-top: 3em !important
+	margin-bottom: 3rem !important;
+	margin-top: 3rem !important
 }
 
 .my4 {
-	margin-bottom: 4em !important;
-	margin-top: 4em !important
+	margin-bottom: 4rem !important;
+	margin-top: 4rem !important
 }
 
 .my5 {
-	margin-bottom: 5em !important;
-	margin-top: 5em !important
+	margin-bottom: 5rem !important;
+	margin-top: 5rem !important
 }
 
 /* padding-top */
@@ -2207,23 +2168,23 @@ sup {
 }
 
 .pt1 {
-	padding-top: 1em !important
+	padding-top: 1rem !important
 }
 
 .pt2 {
-	padding-top: 2em !important
+	padding-top: 2rem !important
 }
 
 .pt3 {
-	padding-top: 3em !important
+	padding-top: 3rem !important
 }
 
 .pt4 {
-	padding-top: 4em !important
+	padding-top: 4rem !important
 }
 
 .pt5 {
-	padding-top: 5em !important
+	padding-top: 5rem !important
 }
 
 /* padding-bottom */
@@ -2233,23 +2194,23 @@ sup {
 }
 
 .pb1 {
-	padding-bottom: 1em !important
+	padding-bottom: 1rem !important
 }
 
 .pb2 {
-	padding-bottom: 2em !important
+	padding-bottom: 2rem !important
 }
 
 .pb3 {
-	padding-bottom: 3em !important
+	padding-bottom: 3rem !important
 }
 
 .pb4 {
-	padding-bottom: 4em !important
+	padding-bottom: 4rem !important
 }
 
 .pb5 {
-	padding-bottom: 5em !important
+	padding-bottom: 5rem !important
 }
 
 /* padding-right */
@@ -2259,23 +2220,23 @@ sup {
 }
 
 .pr1 {
-	padding-right: 1em !important
+	padding-right: 1rem !important
 }
 
 .pr2 {
-	padding-right: 2em !important
+	padding-right: 2rem !important
 }
 
 .pr3 {
-	padding-right: 3em !important
+	padding-right: 3rem !important
 }
 
 .pr4 {
-	padding-right: 4em !important
+	padding-right: 4rem !important
 }
 
 .pr5 {
-	padding-right: 5em !important
+	padding-right: 5rem !important
 }
 
 /* padding-left */
@@ -2285,23 +2246,23 @@ sup {
 }
 
 .pl1 {
-	padding-left: 1em !important
+	padding-left: 1rem !important
 }
 
 .pl2 {
-	padding-left: 2em !important
+	padding-left: 2rem !important
 }
 
 .pl3 {
-	padding-left: 3em !important
+	padding-left: 3rem !important
 }
 
 .pl4 {
-	padding-left: 4em !important
+	padding-left: 4rem !important
 }
 
 .pl5 {
-	padding-left: 5em !important
+	padding-left: 5rem !important
 }
 
 /* padding-x */
@@ -2312,28 +2273,28 @@ sup {
 }
 
 .px1 {
-	padding-left: 1em !important;
-	padding-right: 1em !important
+	padding-left: 1rem !important;
+	padding-right: 1rem !important
 }
 
 .px2 {
-	padding-left: 2em !important;
-	padding-right: 2em !important
+	padding-left: 2rem !important;
+	padding-right: 2rem !important
 }
 
 .px3 {
-	padding-left: 3em !important;
-	padding-right: 3em !important
+	padding-left: 3rem !important;
+	padding-right: 3rem !important
 }
 
 .px4 {
-	padding-left: 4em !important;
-	padding-right: 4em !important
+	padding-left: 4rem !important;
+	padding-right: 4rem !important
 }
 
 .px5 {
-	padding-left: 5em !important;
-	padding-right: 5em !important
+	padding-left: 5rem !important;
+	padding-right: 5rem !important
 }
 
 /* padding-y */
@@ -2344,28 +2305,28 @@ sup {
 }
 
 .py1 {
-	padding-bottom: 1em !important;
-	padding-top: 1em !important
+	padding-bottom: 1rem !important;
+	padding-top: 1rem !important
 }
 
 .py2 {
-	padding-bottom: 2em !important;
-	padding-top: 2em !important
+	padding-bottom: 2rem !important;
+	padding-top: 2rem !important
 }
 
 .py3 {
-	padding-bottom: 3em !important;
-	padding-top: 3em !important
+	padding-bottom: 3rem !important;
+	padding-top: 3rem !important
 }
 
 .py4 {
-	padding-bottom: 4em !important;
-	padding-top: 4em !important
+	padding-bottom: 4rem !important;
+	padding-top: 4rem !important
 }
 
 .py5 {
-	padding-bottom: 5em !important;
-	padding-top: 5em !important
+	padding-bottom: 5rem !important;
+	padding-top: 5rem !important
 }
 
 .tr-embed {
@@ -2389,39 +2350,30 @@ video {
 }
 
 .tr-kapak {
-	background-image: -webkit-gradient(linear, left bottom, left top, from(#03968A), to(#56F7EB));
-	background-image: -webkit-linear-gradient(bottom, #03968A, #56F7EB);
-	background-image: -o-linear-gradient(bottom, #03968A, #56F7EB);
 	background-image: linear-gradient(to top, #03968A, #56F7EB);
 	cursor: pointer;
-	padding: 5em 3em;
+	padding: 5rem 3rem;
 	text-align: center
 }
 
 .tr-kapak img {
 	background-color: #FFF;
 	border-radius: 3px;
-	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
-	        box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
-	-webkit-transition: .75s;
-	-o-transition: .75s;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
 	transition: .75s
 }
 
 .tr-kapak:hover img {
-	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
-	        box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
-	-webkit-transform: scale(1.1);
-	    -ms-transform: scale(1.1);
-	        transform: scale(1.1)
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+	transform: scale(1.1)
 }
 
 blockquote, .tr-alinti {
 	border-left: 5px solid rgba(0, 0, 0, .05);
 	letter-spacing: .5px;
 	line-height: 1.75;
-	margin: 1em;
-	padding: 1em
+	margin: 1rem;
+	padding: 1rem
 }
 
 .cizgi {
@@ -2436,7 +2388,7 @@ blockquote, .tr-alinti {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 1em auto;
+	margin: 1rem auto;
 	position: relative;
 	text-align: center;
 	width: 100%
@@ -2444,8 +2396,8 @@ blockquote, .tr-alinti {
 
 .cizgi img {
 	background-color: #FFF;
-	height: 1.5em;
-	padding: 0 1em
+	height: 1.5rem;
+	padding: 0 .5rem
 }
 
 .temizle:before, .temizle:after {
@@ -2522,20 +2474,18 @@ blockquote, .tr-alinti {
 
 /* ============= 2.1.1 Buton Ayarlari */
 
-.buton, input[type="file"].tr-dosya::-webkit-file-upload-button {
+.buton, .tr-dosya::before {
 	background-color: #03968A;
 	border: 0;
 	border-radius: 3px;
 	color: #FFF;
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Roboto";
-	font-size: 1em;
 	letter-spacing: 1px;
 	line-height: 2.5;
-	margin-bottom: .3em;
+	margin-bottom: .25rem;
 	outline: 0;
-	padding: 0 10px;
+	padding: 0 .5rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -2549,20 +2499,22 @@ blockquote, .tr-alinti {
 }
 
 .buton.minik {
-	font-size: .65em;
+	font-size: .65rem;
 	line-height: 2
 }
 
 .buton.kucuk {
-	font-size: .75em
+	font-size: .75rem
 }
 
 .buton.orta {
-	font-size: 1.25em
+	font-size: 1.25rem;
+	padding: 0 1rem
 }
 
 .buton.buyuk {
-	font-size: 1.5em
+	font-size: 1.5rem;
+	padding: 0 1rem
 }
 
 .buton:hover {
@@ -2579,19 +2531,17 @@ blockquote, .tr-alinti {
 
 .buton.saydam {
 	background-color: transparent;
-	-webkit-box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5) !important;
-	box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .5) !important;
+	border: 1px solid rgba(0,0,0,.1);
 	color: #000
 }
 
 .buton.saydam:hover {
-	-webkit-box-shadow: inset 0px 0px 2px #000 !important;
-	box-shadow: inset 0px 0px 2px #000 !important
+	border: 1px solid rgba(0,0,0,.25);
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .buton.saydam:active {
-	-webkit-box-shadow: inset 0px 0px 4px #000 !important;
-	box-shadow: inset 0px 0px 4px #000 !important
+	box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
 }
 
 .buton.pasif {
@@ -2656,7 +2606,11 @@ blockquote, .tr-alinti {
 
 .tr-butonlar .buton {
 	border-radius: 0;
-	margin: 0 0 0 -5px
+	margin-left: -4px
+}
+
+.tr-butonlar .buton:first-child {
+	margin-left: 0
 }
 
 .tr-butonlar .buton:first-child {
@@ -2668,7 +2622,8 @@ blockquote, .tr-alinti {
 }
 
 .tr-butonlar.dikey .buton {
-	display: block
+	display: block;
+	margin: 0
 }
 
 .tr-butonlar.dikey .buton:first-child {
@@ -2779,9 +2734,9 @@ a.buton.efekt5:hover:before {
 	font-size: .9em;
 	letter-spacing: 1px;
 	line-height: 2;
-	margin: 0 1px 5px 0;
+	margin: 0 4px 4px 0;
 	outline: none;
-	padding: 0 10px;
+	padding: 0 .5rem;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
@@ -2798,7 +2753,6 @@ a.etiket {
 }
 
 a.etiket:hover {
-	border-color: rgba(0, 0, 0, .075);
 	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
 	box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
 	color: #000;
@@ -2833,8 +2787,8 @@ a.etiket:active {
 	color: #000;
 	cursor: pointer;
 	opacity: .4;
-	font-size: 1.25em;
-	margin-left: .25em;
+	font-size: 1rem;
+	margin-left: 4px;
 	line-height: 0;
 	pointer-events: initial;
 	position: relative;
@@ -2853,8 +2807,8 @@ a.etiket:active {
 	border-radius: 0 3px 3px 0;
 	display: inline-block;
 	opacity: .8;
-	padding: 0 .5em;
-	margin: -5px -10px -5px 5px
+    padding: 0 .5rem;
+    margin-right: -.5rem;
 }
 
 .etiket.kapat .detay {
@@ -2869,11 +2823,9 @@ a.etiket:active {
 /* ============= 2.3 Form Elemanlari */
 
 .tr-alan {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	margin-bottom: 1em;
-	padding-top: 1em;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
 	position: relative
 }
 /* ============= 2.3.1 Anahtar */
@@ -3056,8 +3008,39 @@ a.etiket:active {
 /* ============= 2.3.3 Dosya Secici */
 
 input[type="file"].tr-dosya {
+	border-bottom: 2px solid #eee;
 	cursor: pointer;
-	outline: none
+	height: 40px;
+	margin-bottom: 1em;
+	outline: none;
+	padding-top: 8px;
+	width: 100%
+}
+
+input[type="file"].tr-dosya::-webkit-file-upload-button {
+	visibility: hidden
+}
+
+input[type="file"].tr-dosya::before {
+	bottom: .5rem;
+	content: "Seç";
+	padding: 0 1rem
+}
+
+input[type="file"].tr-dosya:hover::before {
+	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
+	color: #FFF;
+	text-decoration: none
+}
+
+input[type="file"].tr-dosya:active {
+	outline: 0
+}
+
+input[type="file"].tr-dosya:active::before {
+	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
 }
 
 /* ============= 2.3.4 Input - Textarea */
@@ -3067,8 +3050,7 @@ input.tr-input, textarea.tr-textarea {
 	border: none;
 	border-bottom: 2px solid #EEE;
 	display: inline-block;
-	font-family: "Roboto", sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	letter-spacing: .5px;
 	line-height: 1;
 	outline: none;
@@ -3080,8 +3062,8 @@ input.tr-input, textarea.tr-textarea {
 }
 
 textarea.tr-textarea {
-	line-height: 1.2em;
-	min-height: 6em;
+	line-height: 1.2;
+	min-height: 6rem;
 	overflow: hidden;
 	padding: 0;
 	resize: none
@@ -3103,12 +3085,12 @@ input.tr-input+label, textarea.tr-textarea+label.tr-label {
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
-	top: 1em
+	top: 1rem
 }
 
-input.tr-input:valid+label.tr-label, textarea.tr-textarea:valid+label.tr-label, input[value].tr-input:disabled+label.tr-label, textarea[value].tr-textarea:disabled+label.tr-label, input.tr-input:focus+label.tr-label, textarea.tr-textarea:focus+label.tr-label {
+input.tr-input:valid+label.tr-label, textarea.tr-textarea:valid+label.tr-label, input[value].tr-input:disabled+label.tr-label, textarea[value].tr-textarea:disabled+label.tr-label {
 	color: #057970;
-	font-size: .75em;
+	font-size: .75rem;
 	top: 0
 }
 
@@ -3122,75 +3104,19 @@ input:-webkit-autofill {
 
 span.input-ek {
 	background-color: #EEE;
-	padding: .5em;
+	padding: .5rem;
 	white-space: nowrap
 }
 
 span.input-ek + .tr-input {
-	padding-left: .5em
+	padding-left: .5rem
 }
-/* ============= 2.3.5 Range Input */
-
-input[type="range"].tr-range {
-	-webkit-appearance: none;
-	background-color: #03968A;
-	height: .5em;
-	border-radius: 3px;
-	outline: none;
-	width: 100%
-}
-input[type="range"].tr-range::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	background-color: #fff;
-	border: 1px solid rgba(0,0,0,.15);
-	border-radius: 3px;
-	-webkit-box-shadow: -2px 2px 0 rgba(0,0,0,.1);
-	        box-shadow: -2px 2px 0 rgba(0,0,0,.1);
-	cursor: pointer;
-	display: block;
-	height: 1.5em;
-	position: relative;
-	width: 1em
-}
-
-.range-deger {
-	background-color: #03968A;
-	border-radius: 100%;
-	bottom: 100%;
-	color: #FFF;
-	cursor: default;
-	display: block;
-	font-size: .75em;
-	left: 0;
-	min-height: 1em;
-	min-width: 1em;
-	padding: .5em;
-	position: absolute;
-	text-align: center;
-	-webkit-transform: translateX(-.5em);
-	    -ms-transform: translateX(-.5em);
-	        transform: translateX(-.5em)
-}
-
-.range-deger:after {
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid #03968A;
-	bottom: -4px;
-	content: "";
-	left: 50%;
-	position: absolute;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%)
-}
-/* ============= 2.3.6 Select - Dropdown */
+/* ============= 2.3.5 Select - Dropdown */
 
 .tr-dropdown {
 	color: #000;
 	display: inline-block;
-	font-size: 1em;
-	margin-right: 1em;
+	margin-right: 1rem;
 	min-width: 150px;
 	position: relative;
 	width: 100%
@@ -3202,7 +3128,7 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	background-color: #FFF;
 	cursor: pointer;
 	display: block;
-	padding: .25em .75em;
+	padding: .25rem .75rem;
 	position: relative;
 	width: 100%
 }
@@ -3212,9 +3138,7 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	position: absolute;
 	right: 10px;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%)
+	transform: translateY(-50%)
 }
 
 .dropdown-secili:hover {
@@ -3235,7 +3159,7 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	display: none;
 	list-style: none;
 	margin: 0px;
-	max-height: 20em;
+	max-height: 20rem;
 	overflow-x: hidden;
 	overflow-y: auto;
 	padding: 0px;
@@ -3255,13 +3179,8 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 	color: #000;
 	font-size: .95em;
 	padding: .25em .75em;
-	-webkit-transition: .15s;
-	-o-transition: .15s;
 	transition: .15s;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none
+	user-select: none
 }
 
 .dropdown-icerik li:last-child {
@@ -3273,8 +3192,7 @@ input[type="range"].tr-range::-webkit-slider-thumb {
 }
 
 .dropdown-icerik li:hover {
-	-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05);
-	        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05)
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.05)
 }
 
 /* ============= 2.4 Footer */
@@ -3290,21 +3208,20 @@ footer.tr-footer {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	font-size: .9em;
-	padding: 3em 0 2em 0;
+	padding: 3rem 0 2rem 0;
 	width: 100%
 }
 
 footer.tr-footer nav a {
-	line-height: 1.5em
+	line-height: 1.5
 }
 
 footer.tr-footer .footer-detay {
 	background-color: rgba(0, 0, 0, .05);
-	margin-top: 1em;
-	padding: 1em 0;
+	margin-top: 1rem;
+	padding: 1rem 0;
 	position: relative;
-	top: 30px;
+	top: 2rem;
 	width: 100%
 }
 
@@ -3325,17 +3242,13 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	line-height: 1;
 	opacity: 0;
-	padding: .5em;
+	padding: .5rem;
 	position: absolute;
 	right: auto;
 	text-align: center;
 	top: 0;
-	-webkit-transition: .2s;
-	-o-transition: .2s;
 	transition: .2s;
-	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	        transform: translateX(-50%) translateY(calc(-100% - 1em));
+	transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: hidden;
 	white-space: nowrap
 }
@@ -3355,36 +3268,25 @@ footer.tr-footer .footer-detay {
 	position: absolute;
 	right: auto;
 	top: 0;
-	-webkit-transition: .2s;
-	-o-transition: .2s;
 	transition: .2s;
-	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	        transform: translateX(-50%) translateY(calc(-100% - 1em));
+	transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: hidden;
-	z-index: 2
 }
 
 .tr-popovers .popovers-baslik {
 	background-color: #EEE;
 	font-size: 20px;
-	padding: .5em
+	padding: .5rem
 }
 
 .tr-ipucu:hover .ipucu-icerik, .tr-popovers.aktif .popovers-icerik {
 	opacity: 1;
-	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	        transform: translateX(-50%) translateY(calc(-100% - 1em));
+	transform: translateX(-50%) translateY(calc(-100% - .5em));
 	visibility: visible
 }
 
 .tr-popovers.aktif .popovers-icerik {
-	-webkit-filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
-	        filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1));
-	-webkit-transform: translateX(-50%) translateY(calc(-100% - .5em));
-	    -ms-transform: translateX(-50%) translateY(calc(-100% - .5em));
-	        transform: translateX(-50%) translateY(calc(-100% - .5em))
+	filter: drop-shadow(0px 2px 2px rgba(0,0,0,.1))
 }
 
 .tr-ipucu.ipucu-ust .ipucu-icerik, .tr-popovers.popovers-ust .popovers-icerik {
@@ -3392,15 +3294,11 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	right: auto;
 	top: 0;
-	-webkit-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	    -ms-transform: translateX(-50%) translateY(calc(-100% - 1em));
-	        transform: translateX(-50%) translateY(calc(-100% - 1em))
+	transform: translateX(-50%) translateY(calc(-100% - 1em))
 }
 
 .tr-ipucu.ipucu-ust:hover .ipucu-icerik, .tr-popovers.popovers-ust.aktif .popovers-icerik {
-	-webkit-transform: translateX(-50%) translateY(calc(-100% - .5em));
-	    -ms-transform: translateX(-50%) translateY(calc(-100% - .5em));
-	        transform: translateX(-50%) translateY(calc(-100% - .5em))
+	transform: translateX(-50%) translateY(calc(-100% - .5em))
 }
 
 .tr-ipucu.ipucu-alt .ipucu-icerik, .tr-popovers.popovers-alt .popovers-icerik {
@@ -3408,15 +3306,11 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	right: auto;
 	top: auto;
-	-webkit-transform: translateX(-50%) translateY(calc(100% + 1em));
-	    -ms-transform: translateX(-50%) translateY(calc(100% + 1em));
-	        transform: translateX(-50%) translateY(calc(100% + 1em))
+	transform: translateX(-50%) translateY(calc(100% + 1em))
 }
 
-.tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .popovers-icerik {
-	-webkit-transform: translateX(-50%) translateY(calc(100% + .5em));
-	    -ms-transform: translateX(-50%) translateY(calc(100% + .5em));
-	        transform: translateX(-50%) translateY(calc(100% + .5em))
+.tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .ippopoversucu-icerik {
+	transform: translateX(-50%) translateY(calc(100% + .5em))
 }
 
 .tr-ipucu.ipucu-sol .ipucu-icerik, .tr-popovers.popovers-sol .popovers-icerik {
@@ -3424,40 +3318,32 @@ footer.tr-footer .footer-detay {
 	left: 0;
 	right: auto;
 	top: 50%;
-	-webkit-transform: translateX(calc(-100% - 1em)) translateY(-50%);
-	    -ms-transform: translateX(calc(-100% - 1em)) translateY(-50%);
-	        transform: translateX(calc(-100% - 1em)) translateY(-50%)
+	transform: translateX(calc(-100% - 1em)) translateY(-50%)
 }
 
 .tr-ipucu.ipucu-sol:hover .ipucu-icerik, .tr-popovers.popovers-sol.aktif .popovers-icerik {
-	-webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%);
-	    -ms-transform: translateX(calc(-100% - .5em)) translateY(-50%);
-	        transform: translateX(calc(-100% - .5em)) translateY(-50%)
+	transform: translateX(calc(-100% - .5em)) translateY(-50%)
 }
 
-.tr-ipucu.ipucu-sag .ipucu-icerik, .tr-popovers.popovers-sag .popovers-icerik {
+.tr-ipucu.ipucu-sag .ipucu-icerik, .tr-popovers-sag .popovers-icerik {
 	bottom: auto;
 	left: auto;
 	right: 0;
 	top: 50%;
-	-webkit-transform: translateX(calc(100% + 1em)) translateY(-50%);
-	    -ms-transform: translateX(calc(100% + 1em)) translateY(-50%);
-	        transform: translateX(calc(100% + 1em)) translateY(-50%)
+	transform: translateX(calc(100% + 1em)) translateY(-50%)
 }
 
 .tr-ipucu.ipucu-sag:hover .ipucu-icerik, .tr-popovers.popovers-sag.aktif .popovers-icerik {
-	-webkit-transform: translateX(calc(100% + .5em)) translateY(-50%);
-	    -ms-transform: translateX(calc(100% + .5em)) translateY(-50%);
-	        transform: translateX(calc(100% + .5em)) translateY(-50%)
+	transform: translateX(calc(100% + .5em)) translateY(-50%)
 }
 
 .tr-ipucu .ipucu-icerik img {
-	min-width: 1em;
+	min-width: 1rem;
 	vertical-align: middle
 }
 
 .tr-popovers p {
-	padding: 0 .5em
+	padding: 0 .5rem
 }
 
 .tr-ipucu .ipucu-icerik::after,
@@ -3468,9 +3354,7 @@ footer.tr-footer .footer-detay {
 	left: 50%;
 	position: absolute;
 	top: 100%;
-	-webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	        transform: translateX(-50%)
+	transform: translateX(-50%)
 }
 
 .tr-popovers .popovers-icerik::after {
@@ -3495,9 +3379,7 @@ footer.tr-footer .footer-detay {
 	border-top-color: transparent;
 	left: 100%;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%)
+	transform: translateY(-50%)
 }
 
 .tr-popovers.popovers-sol .popovers-icerik::after {
@@ -3511,9 +3393,7 @@ footer.tr-footer .footer-detay {
 	left: auto;
 	right: 100%;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%)
+	transform: translateY(-50%)
 }
 
 .tr-popovers.popovers-sag .popovers-icerik::after {
@@ -3521,75 +3401,45 @@ footer.tr-footer .footer-detay {
 }
 
 .tr-ipucu.animasyon .ipucu-icerik {
-	-webkit-animation-duration: 1.5s;
-	        animation-duration: 1.5s;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
-	-webkit-animation-name: ipucuAnimasyonUst;
-	        animation-name: ipucuAnimasyonUst;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-name: ipucuAnimasyonUst;
 }
 
 .tr-ipucu.ipucu-alt.animasyon .ipucu-icerik {
-	-webkit-animation-name: ipucuAnimasyonAlt;
-	        animation-name: ipucuAnimasyonAlt
+	animation-name: ipucuAnimasyonAlt
 }
 
 .tr-ipucu.ipucu-sol.animasyon .ipucu-icerik {
-	-webkit-animation-name: ipucuAnimasyonSol;
-	        animation-name: ipucuAnimasyonSol
+	animation-name: ipucuAnimasyonSol
 }
 
 .tr-ipucu.ipucu-sag.animasyon .ipucu-icerik {
-	-webkit-animation-name: ipucuAnimasyonSag;
-	        animation-name: ipucuAnimasyonSag
-}
-
-@-webkit-keyframes ipucuAnimasyonUst {
-	0%   { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
-	50%  { -webkit-transform: translateX(-50%) translateY(calc(-100% - 1em)); transform: translateX(-50%) translateY(calc(-100% - 1em)); }
-	100% { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+	animation-name: ipucuAnimasyonSag
 }
 
 @keyframes ipucuAnimasyonUst {
-	0%   { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
-	50%  { -webkit-transform: translateX(-50%) translateY(calc(-100% - 1em)); transform: translateX(-50%) translateY(calc(-100% - 1em)); }
-	100% { -webkit-transform: translateX(-50%) translateY(calc(-100% - .5em)); transform: translateX(-50%) translateY(calc(-100% - .5em)); }
-}
-
-@-webkit-keyframes ipucuAnimasyonAlt {
-	0%   { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
-	50%  { -webkit-transform: translateX(-50%) translateY(calc(100% + 1em)); transform: translateX(-50%) translateY(calc(100% + 1em)) }
-	100% { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
+	0%   { transform: translateX(-50%) translateY(calc(-100% - .5em)); }
+	50%  { transform: translateX(-50%) translateY(calc(-100% - 1em)); }
+	100% { transform: translateX(-50%) translateY(calc(-100% - .5em)); }
 }
 
 @keyframes ipucuAnimasyonAlt {
-	0%   { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
-	50%  { -webkit-transform: translateX(-50%) translateY(calc(100% + 1em)); transform: translateX(-50%) translateY(calc(100% + 1em)) }
-	100% { -webkit-transform: translateX(-50%) translateY(calc(100% + .5em)); transform: translateX(-50%) translateY(calc(100% + .5em)) }
-}
-
-@-webkit-keyframes ipucuAnimasyonSag {
-	0%   { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
-	50%  { -webkit-transform: translateX(calc(100% + 1em)) translateY(-50%); transform: translateX(calc(100% + 1em)) translateY(-50%) }
-	100% { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
+	0%   { transform: translateX(-50%) translateY(calc(100% + .5em)) }
+	50%  { transform: translateX(-50%) translateY(calc(100% + 1em)) }
+	100% { transform: translateX(-50%) translateY(calc(100% + .5em)) }
 }
 
 @keyframes ipucuAnimasyonSag {
-	0%   { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
-	50%  { -webkit-transform: translateX(calc(100% + 1em)) translateY(-50%); transform: translateX(calc(100% + 1em)) translateY(-50%) }
-	100% { -webkit-transform: translateX(calc(100% + .5em)) translateY(-50%); transform: translateX(calc(100% + .5em)) translateY(-50%) }
-}
-
-@-webkit-keyframes ipucuAnimasyonSol {
-	0%   { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
-	50%  { -webkit-transform: translateX(calc(-100% - 1em)) translateY(-50%); transform: translateX(calc(-100% - 1em)) translateY(-50%) }
-	100% { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	0%   { transform: translateX(calc(100% + .5em)) translateY(-50%) }
+	50%  { transform: translateX(calc(100% + 1em)) translateY(-50%) }
+	100% { transform: translateX(calc(100% + .5em)) translateY(-50%) }
 }
 
 @keyframes ipucuAnimasyonSol {
-	0%   { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
-	50%  { -webkit-transform: translateX(calc(-100% - 1em)) translateY(-50%); transform: translateX(calc(-100% - 1em)) translateY(-50%) }
-	100% { -webkit-transform: translateX(calc(-100% - .5em)) translateY(-50%); transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	0%   { transform: translateX(calc(-100% - .5em)) translateY(-50%) }
+	50%  { transform: translateX(calc(-100% - 1em)) translateY(-50%) }
+	100% { transform: translateX(calc(-100% - .5em)) translateY(-50%) }
 }
 /* ============= 2.6 Kartlar */
 
@@ -3599,15 +3449,15 @@ footer.tr-footer .footer-detay {
 	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
 	box-shadow: 0 2px 3px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
 	min-height: 1px;
-	margin-bottom: 1em;
-	padding: 1em
+	margin-bottom: 1rem;
+	padding: 1rem
 }
 
 .tr-kart {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
-	margin-bottom: 2em;
+	margin-bottom: 2rem;
 	overflow: hidden
 }
 
@@ -3621,7 +3471,7 @@ footer.tr-footer .footer-detay {
 	border-radius: 100%;
 	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
 	box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
-	margin: 3em 0;
+	margin: 3rem 0;
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
@@ -3630,7 +3480,7 @@ footer.tr-footer .footer-detay {
 
 .tr-kart .kart-icerik {
 	background-color: #FFF;
-	padding: 1em 2.5em
+	padding: 1rem 2.5rem
 }
 
 /* ============= 2.7 Koleksiyonlar */
@@ -3638,7 +3488,7 @@ footer.tr-footer .footer-detay {
 .tr-koleksiyon {
 	border: 1px solid rgba(0, 0, 0, .1);
 	border-radius: 3px;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 	position: relative;
 	width: 100%
 }
@@ -3651,11 +3501,9 @@ footer.tr-footer .footer-detay {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	color: #000;
 	display: block;
-	line-height: 1.5em;
-	padding: .5em 1rem;
+	line-height: 1.5;
+	padding: .5rem 1rem;
 	text-decoration: none;
-	-webkit-transition: .1s;
-	-o-transition: .1s;
 	transition: .1s
 }
 
@@ -3783,6 +3631,7 @@ nav.menu.sabit.alt {
 }
 
 nav.menu.saydam {
+	background-color: transparent;
 	color: rgba(0, 0, 0, .7)
 }
 
@@ -3931,39 +3780,37 @@ nav.mobil.sag {
 	border-radius: 3px;
 	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, .15);
-	margin-bottom: 1em
+	margin-bottom: 1rem
 }
 
 .tr-pano .pano-baslik {
 	color: #FFF;
-	font-size: 1em;
 	font-weight: 100;
 	margin: 0;
-	padding: .75em 1em
+	padding: 1rem
 }
 
 .tr-pano .pano-icerik {
 	background-color: #FFF;
-	padding: .5em 1em
+	padding: .5rem 1rem
 }
 
 /* ============= 2.11 Progress */
 
 progress.tr-progress {
 	border-radius: 3px;
-	height: 1em;
-	margin: 5px 0;
+	height: 1rem;
 	overflow: hidden;
 	position: relative;
 	width: 100%
 }
 
 progress.tr-progress.kucuk {
-	height: 10px
+	height: .5rem
 }
 
 progress.tr-progress.buyuk {
-	height: 20px
+	height: 1.5rem
 }
 
 progress.tr-progress::-webkit-progress-bar {
@@ -3989,7 +3836,7 @@ progress.tr-progress.yesil::-webkit-progress-value {
 progress.tr-progress.cizgili::-webkit-progress-value {
 	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 	background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-	background-size: 1em 1em
+	background-size: 1rem 1rem
 }
 
 /* ============= 2.12 Rozet */
@@ -4000,8 +3847,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	color: #FFF;
 	display: block;
 	float: right;
-	font-size: .8em;
-	padding: 0 .5em
+	padding: 0 .5rem
 }
 
 /* ============= 2.13 Sayfa Konumu */
@@ -4011,16 +3857,12 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	display: block;
-	font-size: 1em;
 	letter-spacing: .5px;
 	line-height: 2.5;
 	overflow-x: auto;
 	overflow-y: hidden;
 	padding: 0 1rem;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
+	user-select: none;
 	white-space: nowrap;
 	width: 100%
 }
@@ -4050,14 +3892,14 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 .tr-konum li {
 	display: inline-block;
 	list-style: none;
-	margin-right: 1em
+	margin-right: .5rem
 }
 
 .tr-konum li:not(:last-child):after {
 	content: "›";
 	color: #FFF;
 	position: relative;
-	left: .5em
+	left: .25rem
 }
 
 .tr-konum.tema2 li:not(:last-child):after {
@@ -4075,8 +3917,6 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 .tr-konum li a {
 	color: rgba(255, 255, 255, .75);
 	text-decoration: none;
-	-webkit-transition: .1s;
-	-o-transition: .1s;
 	transition: .1s
 }
 
@@ -4097,28 +3937,22 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 
 .tr-numara {
 	cursor: default;
-	margin: 1em 0
+	margin-bottom: 1rem
 }
 
 .tr-numara a {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	background-color: #FFF;
 	border-radius: 3px;
 	border: 1px solid rgba(0,0,0,.1);
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	color: #000;
 	cursor: pointer;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
-	font-size: 1em;
 	height: 2.25em;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 	min-width: 2.25em;
 	padding: .5em;
 	text-decoration: none;
@@ -4137,8 +3971,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-numara a:active {
-	-webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2);
-	        box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
+	box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
 }
 
 .tr-numara a.aktif {
@@ -4269,43 +4102,43 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 /* ============= 2.15.2 Yazi Boyutlari */
 
 .yazi-boyut1 {
-	font-size: 3em
+	font-size: 3rem
 }
 
 .yazi-boyut2 {
-	font-size: 2.75em
+	font-size: 2.75rem
 }
 
 .yazi-boyut3 {
-	font-size: 2.5em
+	font-size: 2.5rem
 }
 
 .yazi-boyut4 {
-	font-size: 2.25em
+	font-size: 2.25rem
 }
 
 .yazi-boyut5 {
-	font-size: 2em
+	font-size: 2rem
 }
 
 .yazi-boyut6 {
-	font-size: 1.75em
+	font-size: 1.75rem
 }
 
 .yazi-boyut7 {
-	font-size: 1.5em
+	font-size: 1.5rem
 }
 
 .yazi-boyut8 {
-	font-size: 1.25em
+	font-size: 1.25rem
 }
 
 .yazi-boyut9 {
-	font-size: 1em
+	font-size: 1rem
 }
 
 .yazi-boyut10 {
-	font-size: .75em
+	font-size: .75rem
 }
 
 /* ============= 2.15.3 Yazi Renkleri */
@@ -4956,12 +4789,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 
 .tr-akordiyon {
 	display: block;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 	width: 100%
-}
-
-.tr-akordiyon .tr-akordiyon {
-	margin-bottom: 1em
 }
 
 .tr-akordiyon.tema2, .tr-akordiyon.tema3 {
@@ -4973,9 +4802,8 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	background-color: transparent;
 	color: #000;
 	cursor: pointer;
-	font-size: 1em;
 	letter-spacing: .5px;
-	padding: .5em 1em .5em 1.5em;
+	padding: .5rem 1rem .5rem 1.5rem;
 	position: relative;
 	text-align: left;
 	-webkit-transition: color .3s;
@@ -4986,7 +4814,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 .tr-akordiyon.tema2 .akordiyon-baslik {
 	border-bottom: 1px solid rgba(0, 0, 0, .05);
 	color: #b4b4b4;
-	padding: .5em 1em .5em 1.5em
+	padding: .5rem 1rem .5rem 1.5rem
 }
 
 .tr-akordiyon.tema2 .akordiyon-baslik:last-of-type {
@@ -4995,14 +4823,14 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 
 .tr-akordiyon.tema3 .akordiyon-baslik {
 	background-color: rgba(0, 0, 0, .025);
-	padding: .5em 2.5em .5em 1em
+	padding: .5rem 2.5rem .5rem 1rem
 }
 
 .tr-akordiyon.tema4 .akordiyon-baslik {
 	background-color: rgba(0, 0, 0, .025);
 	border-left: 5px solid transparent;
 	margin-bottom: 2px;
-	padding: .5em 2.5em .5em 1em
+	padding: .5rem 2.5rem .5rem 1rem
 }
 
 .tr-akordiyon .akordiyon-baslik:hover {
@@ -5083,7 +4911,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-akordiyon .akordiyon-icerik {
-	padding-left: 1em
+	padding-left: 1rem
 }
 
 .tr-akordiyon.tema2 .akordiyon-icerik {
@@ -5146,7 +4974,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	font-weight: 300;
 	margin: 0;
 	opacity: .8;
-	padding: .5em;
+	padding: .5rem;
 	position: relative;
 	text-align: center;
 	width: 100%
@@ -5227,7 +5055,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 	display: table-cell;
 	font-weight: bold;
 	letter-spacing: 1px;
-	padding: .7em 1em;
+	padding: .5rem 1rem;
 	text-align: center;
 	-webkit-transition: border-bottom .25s;
 	-o-transition: border-bottom .25s;
@@ -5273,7 +5101,7 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 }
 
 .tr-tab .tab-icerik {
-	padding-top: 1em
+	padding-top: 1rem
 }
 
 .tr-tab.tema3 .tab-icerikler>.tab-icerik {
