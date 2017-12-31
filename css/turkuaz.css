@@ -24,7 +24,8 @@
 *        2.3.2    Checkbox - Radio Buton
 *        2.3.3    Dosya Secici
 *        2.3.4    Input - Textarea
-*        2.3.5    Select - Dropdown
+*        2.3.5    Range
+*        2.3.6    Select - Dropdown
 *      2.4     Footer
 *      2.5     Ipucu, Popovers
 *      2.6     Kart
@@ -2485,7 +2486,7 @@ blockquote, .tr-alinti {
 	line-height: 2.5;
 	margin-bottom: .25rem;
 	outline: 0;
-	padding: 0 .5rem;
+	padding: 0 1rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -3005,6 +3006,15 @@ a.etiket:active {
 	transform: scale(0.5)
 }
 
+.tr-checkbox[disabled]+.tr-label, .tr-radio[disabled]+.tr-label {
+	color: #9E9E9E;
+	cursor: default
+}
+
+.tr-checkbox:not(:checked)+.tr-label:after, .tr-radio:not(:checked)+.tr-label:after, .tr-radio:not(:checked)+.tr-label:before {
+	border-color: #9E9E9E
+}
+
 /* ============= 2.3.3 Dosya Secici */
 
 input[type="file"].tr-dosya {
@@ -3095,6 +3105,8 @@ input.tr-input:valid+label.tr-label, textarea.tr-textarea:valid+label.tr-label, 
 }
 
 textarea[disabled].tr-textarea {
+	background-color: #F5F5F5;
+	cursor: not-allowed;
 	pointer-events: none
 }
 
@@ -3109,9 +3121,61 @@ span.input-ek {
 }
 
 span.input-ek + .tr-input {
-	padding-left: .5rem
+	padding: 0 .5rem
 }
-/* ============= 2.3.5 Select - Dropdown */
+/* ============= 2.3.5 Range */
+
+input[type="range"] {
+	-webkit-appearance: none;
+	background-color: #03968A;
+	height: .5rem;
+	border-radius: 3px;
+	outline: none;
+	width: 100%
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 3px;
+	box-shadow: -2px 2px 0 rgba(0,0,0,.1);
+	cursor: pointer;
+	display: block;
+	height: 1.5rem;
+	position: relative;
+	width: 1rem
+}
+
+.range-deger {
+	background-color: #03968A;
+	border-radius: 100%;
+	bottom: 100%;
+	color: #FFF;
+	cursor: default;
+	display: block;
+	font-size: .75rem;
+	left: 0;
+	min-height: 1rem;
+	min-width: 2rem;
+	padding: .5rem;
+	position: absolute;
+	text-align: center;
+	transform: translateX(-.5rem)
+}
+
+.range-deger:after {
+	border-left: .5rem solid transparent;
+	border-right: .5rem solid transparent;
+	border-top: .5rem solid #03968A;
+	bottom: -3px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%)
+}
+
+/* ============= 2.3.6 Select - Dropdown */
 
 .tr-dropdown {
 	color: #000;
@@ -3250,7 +3314,8 @@ footer.tr-footer .footer-detay {
 	transition: .2s;
 	transform: translateX(-50%) translateY(calc(-100% - 1em));
 	visibility: hidden;
-	white-space: nowrap
+	white-space: nowrap;
+	z-index: 2
 }
 
 .tr-popovers .popovers-icerik {
@@ -3276,7 +3341,8 @@ footer.tr-footer .footer-detay {
 .tr-popovers .popovers-baslik {
 	background-color: #EEE;
 	font-size: 20px;
-	padding: .5rem
+	padding: .5rem;
+	z-index: 2
 }
 
 .tr-ipucu:hover .ipucu-icerik, .tr-popovers.aktif .popovers-icerik {
@@ -3309,7 +3375,7 @@ footer.tr-footer .footer-detay {
 	transform: translateX(-50%) translateY(calc(100% + 1em))
 }
 
-.tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .ippopoversucu-icerik {
+.tr-ipucu.ipucu-alt:hover .ipucu-icerik, .tr-popovers.popovers-alt.aktif .popovers-icerik {
 	transform: translateX(-50%) translateY(calc(100% + .5em))
 }
 
