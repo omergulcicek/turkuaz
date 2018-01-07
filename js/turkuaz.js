@@ -40,8 +40,8 @@ function fadeOut(el, duration) {
 
 var gradient = document.querySelectorAll("[tr-gradient]");
 Array.prototype.forEach.call(gradient, function(el, i) {
-	var attributeValue = el.attributes["0"].value;
-	el.style.backgroundImage = "linear-gradient(to " + attributeValue + ")";
+    var attributeValue = el.attributes["0"].value;
+    el.style.backgroundImage = "linear-gradient(to " + attributeValue + ")";
 });
 
 /* ============= 3. Etiket Kapat  */
@@ -62,30 +62,30 @@ Array.prototype.forEach.call(tag, function(el, i) {
 var inputLength = document.querySelectorAll("input[data-uzunluk]");
 Array.prototype.forEach.call(inputLength, function(el, i) {
     inputLength[i].addEventListener("keyup", function() {
-    	var maxLenght = el.getAttribute("data-uzunluk");
-    	var currentLenght = el.value.length;
-    	var span = el.parentNode.getElementsByTagName("span")[0];
+        var maxLenght = el.getAttribute("data-uzunluk");
+        var currentLenght = el.value.length;
+        var span = el.parentNode.getElementsByTagName("span")[0];
 
-    	if(typeof span == "undefined")
-    	{
-    		span = document.createElement("span");
-    		el.parentNode.appendChild(span);
-    	}
+        if(typeof span == "undefined")
+        {
+            span = document.createElement("span");
+            el.parentNode.appendChild(span);
+        }
 
-    	span.innerHTML = currentLenght  + '/' + maxLenght;
+        span.innerHTML = currentLenght  + '/' + maxLenght;
 
-    	if(currentLenght > maxLenght)
-    	{
-    		el.style["border-bottom-color"] = "#F44336";
-    	}
-    	else if (currentLenght == 0) {
-    		span.remove();
-    		el.style["border-bottom-color"] = "";
-    	}
-    	else
-    	{
-    		el.style["border-bottom-color"] = "#03968A";
-    	}
+        if(currentLenght > maxLenght)
+        {
+            el.style["border-bottom-color"] = "#F44336";
+        }
+        else if (currentLenght == 0) {
+            span.remove();
+            el.style["border-bottom-color"] = "";
+        }
+        else
+        {
+            el.style["border-bottom-color"] = "#03968A";
+        }
     }, false);
 });
 
@@ -104,21 +104,21 @@ Array.prototype.forEach.call(textarea, function(el) {
 
 var range = document.querySelectorAll("input[type='range'].tr-range");
 Array.prototype.forEach.call(range, function(el, i) {
-	var rangeChange = function (){
-		var span = el.parentNode.querySelector(".range-deger");
-		var spanWidth = span.offsetWidth;
-		var rangeMax = el.max;
-		var rangeValue = el.value;
-		var rangeWidth = el.offsetWidth - (spanWidth/2);
-		span.innerHTML = rangeValue;
-		span.style.left = Math.ceil(rangeWidth/rangeMax*rangeValue) + "px";
-	}
-	el.addEventListener("mousemove", function () {
-		rangeChange();
-	}, false);
-	el.addEventListener("change", function () {
-		rangeChange();
-	}, false);
+    var rangeChange = function (){
+        var span = el.parentNode.querySelector(".range-deger");
+        var spanWidth = span.offsetWidth;
+        var rangeMax = el.max;
+        var rangeValue = el.value;
+        var rangeWidth = el.offsetWidth - (spanWidth/2);
+        span.innerHTML = rangeValue;
+        span.style.left = Math.ceil(rangeWidth/rangeMax*rangeValue) + "px";
+    }
+    el.addEventListener("mousemove", function () {
+        rangeChange();
+    }, false);
+    el.addEventListener("change", function () {
+        rangeChange();
+    }, false);
 });
 
 /* ============= 7. Modal  */
@@ -168,70 +168,70 @@ overlay.addEventListener("click", function() {
 
 var select = document.querySelectorAll("select");
 Array.prototype.forEach.call(select, function(el, i) {
-	var options = el.getElementsByTagName("option");
-	var optionsLength = options.length;
+    var options = el.getElementsByTagName("option");
+    var optionsLength = options.length;
 
-	var div = document.createElement("div");
-	div.className += "tr-dropdown";
+    var div = document.createElement("div");
+    div.className += "tr-dropdown";
 
-	var span = document.createElement("span");
-	span.className += "dropdown-secili";
-	span.innerHTML = "Seçiniz";
+    var span = document.createElement("span");
+    span.className += "dropdown-secili";
+    span.innerHTML = "Seçiniz";
 
-	div.appendChild(span);
+    div.appendChild(span);
 
-	var ul = document.createElement("ul");
-	ul.className += "dropdown-icerik";
+    var ul = document.createElement("ul");
+    ul.className += "dropdown-icerik";
 
-	for (var j=0; j<optionsLength; j++) {
-		var li = document.createElement("li");
-		li.innerHTML = options[j].text;
-		ul.appendChild(li);
-	}
+    for (var j=0; j<optionsLength; j++) {
+        var li = document.createElement("li");
+        li.innerHTML = options[j].text;
+        ul.appendChild(li);
+    }
 
-	div.appendChild(ul);
-	div.setAttribute("tr-dropdown",i);
+    div.appendChild(ul);
+    div.setAttribute("tr-dropdown",i);
 
-	select[i].style.display = "none";
+    select[i].style.display = "none";
 
-	select[i].parentNode.appendChild(div);
+    select[i].parentNode.appendChild(div);
 });
 
 var dropdown = document.querySelectorAll(".tr-dropdown");
 Array.prototype.forEach.call(dropdown, function(el, i) {
-	dropdown[i].addEventListener("click", function(e) {
-		e.preventDefault();
-		el.classList.toggle("aktif");
-	}, false);
+    dropdown[i].addEventListener("click", function(e) {
+        e.preventDefault();
+        el.classList.toggle("aktif");
+    }, false);
 
-	var liContent = dropdown[i].querySelectorAll("ul.dropdown-icerik li");
-	var liContentLength = liContent.length;
+    var liContent = dropdown[i].querySelectorAll("ul.dropdown-icerik li");
+    var liContentLength = liContent.length;
 
-	var span = dropdown[i].querySelectorAll("span.dropdown-secili");
-	Array.prototype.forEach.call(liContent, function(el, i) {
-		liContent[i].addEventListener("click", function(e) {
-			e.preventDefault();
-			for (var k=0; k<liContentLength; k++) {
-				el.parentNode.querySelectorAll("li")[k].classList.remove("aktif");
-			}
-			el.classList.add("aktif");
+    var span = dropdown[i].querySelectorAll("span.dropdown-secili");
+    Array.prototype.forEach.call(liContent, function(el, i) {
+        liContent[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            for (var k=0; k<liContentLength; k++) {
+                el.parentNode.querySelectorAll("li")[k].classList.remove("aktif");
+            }
+            el.classList.add("aktif");
 
-			var selectText = el.innerHTML;
-			var selectIndex = i;
-			var whichSelect = span["0"].parentNode.getAttribute("tr-dropdown");
-			span[0].textContent = selectText;
-			select[whichSelect].selectedIndex = selectIndex;
-		}, false);
-	});
+            var selectText = el.innerHTML;
+            var selectIndex = i;
+            var whichSelect = span["0"].parentNode.getAttribute("tr-dropdown");
+            span[0].textContent = selectText;
+            select[whichSelect].selectedIndex = selectIndex;
+        }, false);
+    });
 });
 
 /* ============= 9. Popovers  */
 
 var popovers = document.querySelectorAll(".tr-popovers");
 Array.prototype.forEach.call(popovers, function(el, i) {
-	el.addEventListener("click", function () {
-		el.classList.toggle("aktif");
-	}, false);
+    el.addEventListener("click", function () {
+        el.classList.toggle("aktif");
+    }, false);
 });
 
 /* ============= 10. Mobil Menu  */
@@ -286,8 +286,8 @@ Array.prototype.forEach.call(tabMenu, function(el, i) {
         tabs[i].addEventListener("click", function(e) {
             e.preventDefault();
             Array.prototype.forEach.call(tabs, function(el, i) {
-            	el.classList.remove("aktif");
-            	tabContent[i].style.display = "none";
+                el.classList.remove("aktif");
+                tabContent[i].style.display = "none";
             });
             tabs[i].classList.add("aktif");
             tabContent[i].style.display = "block";
