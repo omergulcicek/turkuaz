@@ -7,9 +7,9 @@
 <h3 align="center">Turkuaz Css</h3>
 
 <p align="center">
-    Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework.
+    Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
     <br>
-    <a href="https://turkuazcss.com/dokumantasyon"><strong>Turkuaz Css dokümanlarını keşfedin »</strong></a>
+    <a href="https://turkuazcss.com/dokumantasyon"><strong>Turkuaz Css dokümantasyonunu inceleyin »</strong></a>
     <br>
     <br>
     <a href="https://turkuazcss.com/hakkinda">Hakkında</a>
