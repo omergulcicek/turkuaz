@@ -166,13 +166,11 @@ li {
 }
 
 hr {
+	background-color: rgba(0,0,0,.1);
 	border: 0;
-	border-top: 1px solid rgba(0, 0, 0, .1);
-	box-sizing: content-box;
-	height: 0;
-	margin-bottom: .5rem;
-	margin-top: .5rem;
-	overflow: visible
+	height: 1px;
+	margin: 16px 0;
+	width: 100%
 }
 
 img {
@@ -2375,30 +2373,6 @@ blockquote, .tr-alinti {
 	line-height: 1.75;
 	margin: 1rem;
 	padding: 1rem
-}
-
-.cizgi {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	background-color: rgba(0, 0, 0, .1);
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	height: 1px;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	margin: 1rem auto;
-	position: relative;
-	text-align: center;
-	width: 100%
-}
-
-.cizgi img {
-	background-color: #FFF;
-	height: 1.5rem;
-	padding: 0 .5rem
 }
 
 .temizle:before, .temizle:after {
