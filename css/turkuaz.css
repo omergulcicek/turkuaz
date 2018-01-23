@@ -5080,71 +5080,47 @@ progress.tr-progress.cizgili::-webkit-progress-value {
 /* ============= 3.3 Tab Menu */
 
 .tr-tab {
-	background-color: #FFF
+	background-color: #fff;
+	display: block;
+	margin: 16px;
+	padding: 32px;
+	width: 100%;
 }
 
-.tr-tab>nav {
-	display: table;
-	width: 100%
-}
-
-.tr-tab>nav a {
-	border-bottom: 2px solid rgba(0, 0, 0, .1);
-	color: rgba(0, 0, 0, .1);
+.tr-tab nav a {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 2px solid transparent;
+	color: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
-	display: table-cell;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding: .5rem 1rem;
-	text-align: center;
-	-webkit-transition: border-bottom .25s;
-	-o-transition: border-bottom .25s;
-	transition: border-bottom .25s
+	display: inline-block;
+	font-size: 15px;
+	letter-spacing: .5px;
+	margin-left: -4px;
+	line-height: 1.5;
+	padding: 8px 24px;
+	text-decoration: none;
+	-webkit-transition: .1s;
+	transition: .1s
 }
 
-.tr-tab.tema2>nav a {
-	background-color: rgba(0, 0, 0, .02);
-	border-bottom: 0;
-	color: rgba(0, 0, 0, .25);
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none
+.tr-tab nav a:hover {
+	color: rgba(0,0,0,.75)
 }
 
-.tr-tab.tema3>nav a {
-	border: 1px solid rgba(0, 0, 0, 0);
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	color: rgba(0, 0, 0, .25);
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: none
-}
-
-.tr-tab>nav a.aktif {
-	background-color: #FFF;
-	border-bottom: 2px solid #000;
+.tr-tab nav a.aktif {
+	border-bottom: 0 solid transparent;
+	border-left-color: rgba(0,0,0,.1);
+	border-right-color: rgba(0,0, 0,.1);
+	border-top-color: #03968A;
 	color: #000
 }
 
-.tr-tab.tema2>nav a.aktif {
-	background-color: rgba(0, 0, 0, .04);
-	border-bottom: 0
+.tr-tab .tab-icerikler {
+	padding: 16px
 }
 
-.tr-tab.tema3>nav a.aktif {
-	border: 1px solid rgba(0, 0, 0, .1);
-	border-bottom: 1px solid rgba(0, 0, 0, 0)
-}
-
-.tr-tab>nav a:hover {
-	text-decoration: none
-}
-
-.tr-tab .tab-icerik {
-	padding-top: 1rem
-}
-
-.tr-tab.tema3 .tab-icerikler>.tab-icerik {
-	border: 1px solid rgba(0, 0, 0, .1);
-	border-top: 0
+.tr-tab .tab-icerikler .tab-icerik {
+	color: rgba(0,0,0,.75)
 }
