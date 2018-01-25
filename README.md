@@ -24,7 +24,13 @@
 </p>
 
 <p>
-Turkuaz Css web sitenizin birden fazla cihaz üzerinde ölçeklemek için dizayn edilmiştir. Türkçe isimlendirme ve çeşitli seçenekleri ile kolayca kod yazmanızı sağlar. Mobil öncelikli olarak, 5 farklı çözünürlükte grid sistemi vardır. 150'den fazla renk seçeneği ve örneklendirilmiş anlatımı ile kısa sürede şık siteler tasarlayabilirsiniz. Hazır şablon olarak paylaşılan siteleri önizleme yapabilir ve ücretsiz olarak kullanabilirsiniz.
+	Turkuaz Css 11 Nisan 2016 tarihinde, <a href="https://omergulcicek.com">@omergulcicek</a> tarafından GitHub üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. Kolayca özelleştirilebilir kod yapısı ile kısa sürede şık tasarımlar ortaya çıkartabilirsiniz. Türkçe sınıf isimlendirmeleri ile, geliştirmeye yeni başlamış veya yabancı dilde yetersiz olan kişilerin, kolayca site oluşturmasını sağlar.
+</p>
+<p>
+	Turkuaz Css ile oluşturulan siteler, CSS medya sorguları ile mobil öncelikli olarak masaüstü, dizüstü bilgisayar, tablet ve cep telefonları dahil her cihazda uyumlu çalışır. Geliştiriciler, ekran boyutları için benzersiz tasarımlar oluşturabilir ve cihaz ne olursa olsun sorunsuz bir deneyim yaşatabilir. Ücretsiz olarak sunulan yüzlerce örnek, onlarca temayı indirip, geliştirmeye başlayabilirsiniz.
+</p>
+<p>
+	İsmini Türk rengi olarakta bilinen Turkuaz renginden alır.
 </p>
 
 <h2>Hızlı Kullan</h2>
