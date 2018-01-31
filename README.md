@@ -83,13 +83,13 @@ Turkuaz Css Slack grubunda geliştirme yapılacak konuları, hatalı bileşenler
 Sosyal ağ hesaplarımızı takip ederek yeniliklerden haberdar olabilirsiniz.
 </p>
 
-- <a href="https://facebook.com/turkuazcss">facebook.com/turkuazcss</a>	
+<a href="https://facebook.com/turkuazcss"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png" height="50"></a>	
 
-- <a href="https://twitter.com/turkuazcss">twitter.com/turkuazcss</a>
+<a href="https://twitter.com/turkuazcss"><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" height="50"></a>
 
-- <a href="https://instagram.com/turkuazcss">instagram.com/turkuazcss</a>
+<a href="https://instagram.com/turkuazcss"><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" height="50"></a>
 
-- <a href="https://turkuazcss.slack.com">slack.turkuazcss.com</a> (<a href="https://join.slack.com/t/turkuazcss/shared_invite/MjI4OTg4NzMxNjUyLTE1MDMxNDY5MTQtYWQ1MjMwN2UyMg">Davet Linki</a>)
+<a href="https://turkuazcss.slack.com"><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" height="50"></a> (<a href="https://join.slack.com/t/turkuazcss/shared_invite/MjI4OTg4NzMxNjUyLTE1MDMxNDY5MTQtYWQ1MjMwN2UyMg">Davet Linki</a>)
 
 <h2>Lisans</h2>
 <p>
