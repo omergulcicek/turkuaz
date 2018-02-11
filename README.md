@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://turkuazcss.com/">
-    <img src="http://i.hizliresim.com/nj13YR.png"/ height="100">
+    <img src="http://i.hizliresim.com/nj13YR.png"/ height="100" />
   </a>
 </p>
 
