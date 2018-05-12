@@ -3022,30 +3022,34 @@ input[type="file"].tr-dosya:active::before {
 
 input,
 textarea {
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, .025);
 	border: none;
-	border-bottom: 2px solid #EEE;
+	border-radius: 3px;
 	display: inline-block;
-	font-size: 16px;
+	font-family: -apple-system, "Montserrat", sans-serif;
+	font-size: 14px;
 	letter-spacing: .5px;
 	line-height: 2;
 	outline: none;
-	padding: 0;
+	padding: 8px 16px;
 	position: relative;
 	width: 100%
 }
 
 textarea {
-	height: 34px;
+	height: 44px;
+	min-height: 44px;
 	line-height: normal;
-	overflow-y: hidden;
-	padding-top: 6px;
-	resize: none;
+	overflow-x: hidden;
+	padding-top: 12px;
+	resize: vertical;
 }
 
 input[disabled],
 textarea[disabled] {
-	border-bottom-style: dotted;
+	background-color: rgba(0, 0, 0, .05);
+	cursor: no-drop;
+	resize: none;
 }
 
 input:focus,
@@ -3053,35 +3057,60 @@ textarea:focus {
 	border-bottom-color: #03968A
 }
 
-input + label,
-textarea + label {
+input ~ label,
+textarea ~ label {
 	color: #BBB;
 	cursor: text;
 	display: inline-block;
-	left: 0;
+	left: 16px;
 	pointer-events: none;
 	position: absolute;
-	transition: .3s;
-	top: 8px
+	transition: .1s;
+	top: 14px;
 }
 
-input:focus + label,
-input:valid + label,
-input[placeholder] + label,
-input[readonly] + label,
-input[value][disabled] + label,
-textarea:focus + label,
-textarea:valid + label,
-textarea[placeholder] + label,
-textarea[readonly] + label,
-textarea[value][disabled] + label {
+input:focus ~ label,
+input:valid ~ label,
+input[placeholder] ~ label,
+input[readonly] ~ label,
+input[value][disabled] ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label,
+textarea[placeholder] ~ label,
+textarea[readonly] ~ label,
+textarea[value][disabled] ~ label {
 	color: #03968A;
-	font-size: .75rem;
+	font-size: 12px;
 	top: -16px
 }
 
 input:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0 30px #FFF inset;
+}
+
+input::placeholder {
+	color: #BBB;
+}
+
+.tr-alan i[class^="fa"] {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    color: #BBB;
+}
+
+.tr-alan i[class^="fa"] + input,
+.tr-alan i[class^="fa"] + textarea {
+    padding-left: 44px;
+}
+
+.tr-alan i[class^="fa"] ~ label {
+    left: 44px;
+}
+
+.tr-alan i[class^="fa"] + input:focus + label,
+.tr-alan i[class^="fa"] + input:valid + label {
+    left: 16px;
 }
 
 span.input-ek {
