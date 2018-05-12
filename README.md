@@ -1,5 +1,5 @@
 <p align="center">
-<img src="http://i.hizliresim.com/nj13YR.png" height="100">
+<img src="https://turkuazcss.com/img/logo.png" height="100">
 </p>
 
 <h3 align="center">Turkuaz Css</h3>
