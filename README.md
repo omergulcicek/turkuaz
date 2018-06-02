@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://turkuazcss.com/img/logo.png" height="100">
+<img src="https://omergulcicek.com/img/turkuazcss.png">
 </p>
 
 <h3 align="center">Turkuaz Css</h3>
@@ -14,13 +14,6 @@
     ·
     <a href="https://turkuazcss.com/temalar">Ücretsiz Tema</a>
   </p>
-  
-<p align="center">
-    <a href="https://turkuazcss.com/versiyonlar"><img src="https://turkuazcss.com/img/g-versiyon.png"/></a>
-    <a href="https://github.com/turkuazcss/Framework/blob/master/LICENSE"><img src="https://turkuazcss.com/img/g-lisans.png"/></a>
-    <a href="https://omergulcicek.com"><img src="https://turkuazcss.com/img/g-kurucu.png"/></a>
-</p>
-
 <p>
 	Turkuaz Css 11 Nisan 2016 tarihinde, <a href="https://omergulcicek.com">@omergulcicek</a> tarafından GitHub üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. Kolayca özelleştirilebilir kod yapısı ile kısa sürede şık tasarımlar ortaya çıkartabilirsiniz. Türkçe sınıf isimlendirmeleri ile, geliştirmeye yeni başlamış veya yabancı dilde yetersiz olan kişilerin, kolayca site oluşturmasını sağlar.
 </p>
