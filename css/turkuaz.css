@@ -1819,6 +1819,7 @@ table {
 table tr td,
 table tr th {
 	padding: 16px;
+	transition: .1s;
 	width: 100vw
 }
 
@@ -1834,11 +1835,16 @@ table.buyuk tr th {
 
 table tr th {
 	border-bottom: 2px solid rgba(0,0,0,.05);
+	font-size: 16px;
 	text-align: left;
 }
 
 table.renkli tr:nth-of-type(even) {
 	background-color: rgba(0, 0, 0, .02)
+}
+
+table.cizgi tr {
+	border-bottom: 1px solid #EEE;
 }
 
 table.vurgu tr:hover td {
@@ -2699,6 +2705,7 @@ a.buton.efekt5:hover:before {
 }
 
 /* ============= 2.2 Etiket */
+
 .etiket {
 	background-color: #EEE;
 	border-radius: 50px;
@@ -2964,11 +2971,18 @@ a.etiket[disabled]:hover {
 
 /* ============= 2.3.3 Dosya Secici */
 
-
 [type="file"] {
 	cursor: pointer;
 	padding-left: 128px;
 	transition: .1s
+}
+
+[type="file"]:hover {
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+[type="file"][disabled]:hover {
+	box-shadow: 0 0 0 transparent
 }
 
 [type="file"]::-webkit-file-upload-button {
@@ -3003,6 +3017,11 @@ a.etiket[disabled]:hover {
     user-select: none;
 }
 
+[type="file"][disabled]::after {
+	background-color: #bbb;
+	box-shadow: 0 0 0 transparent
+}
+
 [type="file"]:hover::after {
 	box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
     color: #FFF;
@@ -3011,17 +3030,15 @@ a.etiket[disabled]:hover {
     transition: box-shadow .1s;
 }
 
-[type="file"]:hover {
-	box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+[type="file"][disabled]:hover::after {
+	box-shadow: 0 0 0 transparent
 }
 
 [type="file"]:active::after {
 	box-shadow: inset 0 0 100px rgba(0, 0, 0, .1), 0 3px 8px rgba(0, 0, 0, .25);
 }
 
-
 /* ============= 2.3.4 Input - Textarea */
-
 
 input,
 textarea {
@@ -3168,6 +3185,18 @@ select {
 
 select:hover {
 	box-shadow: inset 0px 0px 0px 1px#bbb;
+}
+
+select[multiple] {
+	background: none;
+	padding: 0;
+}
+
+select[multiple] option {
+	padding: 13px 16px;
+}
+select[multiple] option:checked {
+	background: #03968a linear-gradient(0deg, #03968a 0%, #03968a 100%);
 }
 
 /* ============= 2.4 Footer */
