@@ -1,3 +1,13 @@
+<p>
+	Site güncel değil, eski dokümana <a href="https://turkuazcss.com/_">turkuazcss.com/_</a> (*) adresinden, güncel koda ise <a href="https://raw.githubusercontent.com/omergulcicek/turkuazcss/master/css/turkuaz.css">github</a> üzerinden ulaşabilirsiniz.
+</p>
+<p>
+	<i><b>*</b>: Sitedeki linkler çalışmıyor ve hatalar mevcut; sadece dokümandan yararlanabilirsiniz.</i>
+</p>
+<p>
+	Tüm kodlar sürekli baştan ele alınarak en kolay kullanım sağlayan, sade ve şık tasarım üzerinde çalışılıyor. Ayrıca site, React ile SPA olacak şekilde sıfırdan geliştiriliyor. Geliştirme tamamlandığında ücretsiz temalarla <b>v1.0.0</b> duyrulacaktır.
+</p>
+
 <p align="center">
 <img src="https://omergulcicek.com/img/turkuazcss.png">
 </p>
@@ -63,11 +73,6 @@ Turkuaz Css'in gelişimine destek olmak için <a href="https://github.com/omergu
 <h4>Pull Requests</h4>
 <p>
 Pull requets yapmadan önce, <a href="https://github.com/omergulcicek/turkuazcss/issues">issue</a>'lerde yazanları tam olarak uyguladığınızdan emin olun. Önizleme göstermek için <a href="https://codepen.io/omergulcicek/pen/VMVKNe">CodePen</a> kullanabilirsiniz.
-</p>
-
-<h4>Sosyal Ağlar</h4>
-<p>
-Turkuaz Css Slack grubunda geliştirme yapılacak konuları, hatalı bileşenleri ve önerilerimizi konuşuyoruz. Sende grubumuza katılmak istersen yapman gereken tek şey aşağıdaki davet linkini kullanarak aramıza katılman.
 </p>
 
 <h2>Lisans</h2>
