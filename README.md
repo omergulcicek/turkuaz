@@ -1,34 +1,27 @@
-<p>
+<blockquote>
 	Site güncel değil, eski dokümana <a href="https://turkuazcss.com/_">turkuazcss.com/_</a> (*) adresinden, güncel koda ise <a href="https://raw.githubusercontent.com/omergulcicek/turkuazcss/master/css/turkuaz.css">github</a> üzerinden ulaşabilirsiniz.
 </p>
 <p>
-	<i><b>*</b>: Sitedeki linkler çalışmıyor ve hatalar mevcut; sadece dokümandan yararlanabilirsiniz.</i>
+	<i><b>*</b> Sitedeki linkler çalışmıyor ve hatalar mevcut; sadece dokümandan yararlanabilirsiniz.</i>
 </p>
 <p>
-	Tüm kodlar sürekli baştan ele alınarak en kolay kullanım sağlayan, sade ve şık tasarım üzerinde çalışılıyor. Ayrıca site, React ile SPA olacak şekilde sıfırdan geliştiriliyor. Geliştirme tamamlandığında ücretsiz temalarla <b>v1.0.0</b> duyrulacaktır.
+	Tüm kodlar sürekli baştan ele alınarak en kolay kullanım sağlayan, sade ve şık tasarım üzerinde çalışılıyor. Ayrıca site, React ile SPA olacak şekilde sıfırdan geliştiriliyor. Geliştirme tamamlandığında ücretsiz temalarla beraber <b>v1.0.0</b> duyurulacaktır.
 </p>
+</blockquote>
 
 <p align="center">
-<img src="https://omergulcicek.com/img/turkuazcss.png">
+<img src="https://omergulcicek.com/img/turkuazcss.png" height="120">
 </p>
 
-<h3 align="center">Turkuaz Css</h3>
+<h1 align="center">Turkuaz</h1>
 
 <p align="center">
-    Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
-    <br>
-    <a href="https://turkuazcss.com/dokumantasyon"><strong>Turkuaz Css dokümantasyonunu inceleyin »</strong></a>
-    <br>
-    <br>
-    <a href="https://turkuazcss.com/hakkinda">Hakkında</a>
-    ·
-    <a href="https://turkuazcss.com/temalar">Ücretsiz Tema</a>
-  </p>
+	<i>Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework</i>
 <p>
-	Turkuaz Css 11 Nisan 2016 tarihinde, <a href="https://omergulcicek.com">@omergulcicek</a> tarafından GitHub üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. Kolayca özelleştirilebilir kod yapısı ile kısa sürede şık tasarımlar ortaya çıkartabilirsiniz. Türkçe sınıf isimlendirmeleri ile, geliştirmeye yeni başlamış veya yabancı dilde yetersiz olan kişilerin, kolayca site oluşturmasını sağlar.
+	Turkuaz Css 11 Nisan 2016 tarihinde, <a href="https://omergulcicek.com">@omergulcicek</a> tarafından GitHub üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. Kolayca özelleştirilebilir kod yapısı ile kısa sürede şık tasarımlar ortaya çıkartabilirsiniz. Türkçe sınıf isimlendirmeleri ile, özellikle <i>geliştirmeye yeni başlamış veya yabancı dilde yetersiz olan kişilerin</i> kolayca site oluşturmasını sağlar.
 </p>
 <p>
-	Turkuaz Css ile oluşturulan siteler, CSS medya sorguları ile mobil öncelikli olarak masaüstü, dizüstü bilgisayar, tablet ve cep telefonları dahil her cihazda uyumlu çalışır. Geliştiriciler, ekran boyutları için benzersiz tasarımlar oluşturabilir ve cihaz ne olursa olsun sorunsuz bir deneyim yaşatabilir. Ücretsiz olarak sunulan yüzlerce örnek, onlarca temayı indirip, geliştirmeye başlayabilirsiniz.
+	Turkuaz Css ile oluşturulan siteler, CSS medya sorguları ile mobil öncelikli olarak cep telefonu, tablet, dizüstü, masaüstü ve geniş ekranlar dahil her cihazda uyumlu çalışır. Geliştiriciler, ekran boyutları için benzersiz tasarımlar oluşturabilir ve cihaz ne olursa olsun sorunsuz bir deneyim yaşatabilir. Ücretsiz olarak sunulan yüzlerce örnek, onlarca temayı indirip, geliştirmeye başlayabilirsiniz.
 </p>
 <p>
 	İsmini Türk rengi olarakta bilinen Turkuaz renginden alır.
