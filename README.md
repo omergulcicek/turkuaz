@@ -1,3 +1,5 @@
+***
+
 <blockquote>
 	Site güncel değil, eski dokümana <a href="https://turkuazcss.com/_">turkuazcss.com/_</a> (*) adresinden, güncel koda ise <a href="https://raw.githubusercontent.com/omergulcicek/turkuazcss/master/css/turkuaz.css">github</a> üzerinden ulaşabilirsiniz.
 </p>
@@ -9,6 +11,8 @@
 </p>
 </blockquote>
 
+***
+
 <p align="center">
 <img src="https://omergulcicek.com/img/turkuazcss.png" height="120">
 </p>
@@ -18,6 +22,8 @@
 <p align="center">
 	<i>Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework</i>
 <p>
+	<br>
+	<br>
 	Turkuaz Css 11 Nisan 2016 tarihinde, <a href="https://omergulcicek.com">@omergulcicek</a> tarafından GitHub üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. Kolayca özelleştirilebilir kod yapısı ile kısa sürede şık tasarımlar ortaya çıkartabilirsiniz. Türkçe sınıf isimlendirmeleri ile, özellikle <i>geliştirmeye yeni başlamış veya yabancı dilde yetersiz olan kişilerin</i> kolayca site oluşturmasını sağlar.
 </p>
 <p>
