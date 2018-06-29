@@ -1,7 +1,7 @@
 ***
 
 <blockquote>
-	Site güncel değil, eski dokümana <a href="https://turkuazcss.com/_">turkuazcss.com/_</a> (*) adresinden, güncel koda ise <a href="https://raw.githubusercontent.com/omergulcicek/turkuazcss/master/css/turkuaz.css">github</a> üzerinden ulaşabilirsiniz.
+	Site güncel değil ve yapım aşamasında, eski dokümana <a href="https://turkuazcss.com/_">turkuazcss.com/_</a> (*) adresinden, güncel koda ise <a href="https://raw.githubusercontent.com/omergulcicek/turkuazcss/master/css/turkuaz.css">github</a> üzerinden ulaşabilirsiniz.
 </p>
 <p>
 	<i><b>*</b> Sitedeki linkler çalışmıyor ve hatalar mevcut; sadece dokümandan yararlanabilirsiniz.</i>
