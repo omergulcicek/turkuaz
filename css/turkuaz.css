@@ -2454,164 +2454,128 @@ blockquote, .tr-alinti {
 
 /* ============= 2.1.1 Buton Ayarlari */
 
-.buton, .tr-dosya::before {
-	background-color: #03968A;
-	border: 0;
-	border-radius: 3px;
-	color: #FFF;
-	cursor: pointer;
-	display: inline-block;
-	letter-spacing: 1px;
-	line-height: 2.5;
-	margin-bottom: .25rem;
-	outline: 0;
-	padding: 0 1rem;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	user-select: none;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	white-space: nowrap
+
+.btn {
+  backface-visibility: hidden;
+  background-color: #03968a;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(3, 150, 138, 0.075), 0 0 4px rgba(0, 0, 0, 0);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  transition: 0.15s ease;
+  text-align: center;
+  user-select: none;
 }
 
-.buton.minik {
-	font-size: .65rem;
-	line-height: 2
+.btn:not(:last-of-type) {
+  margin-right: 8px;
 }
 
-.buton.kucuk {
-	font-size: .75rem
+.btn:not(:disabled) {
+  cursor: pointer;
 }
 
-.buton.orta {
-	font-size: 1.25rem;
-	padding: 0 1rem
+.btn:hover {
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
-.buton.buyuk {
-	font-size: 1.5rem;
-	padding: 0 1rem
+.btn:active {
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
 }
 
-.buton:hover {
-	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-	box-shadow: inset 0 0 250px rgba(0, 0, 0, .1);
-	color: #FFF;
-	text-decoration: none
+.btn--kucuk {
+  font-size: 12px;
+  padding: 4px 8px;
 }
 
-.buton:active {
-	-webkit-box-shadow: inset 0 0 250px rgba(0, 0, 0, .2);
-	box-shadow: inset 0 0 250px rgba(0, 0, 0, .2)
+.btn--buyuk {
+  font-size: 16px;
+  padding: 12px 16px;
 }
 
-.buton.saydam {
-	background-color: transparent;
-	border: 1px solid rgba(0,0,0,.1);
-	color: #000
+.btn--saydam {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  color: #000;
 }
 
-.buton.saydam:hover {
-	border: 1px solid rgba(0,0,0,.25);
-	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+.btn--saydam:hover {
+  box-shadow: none;
+  color: #000;
 }
 
-.buton.saydam:active {
-	box-shadow: inset 0 1px 2px rgba(10, 10, 10, .2)
+.btn--saydam:active {
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
 }
 
-.buton.pasif {
-	background-color: #E6E6E6;
-	color: rgba(0, 0, 0, .4);
-	cursor: default;
-	pointer-events: none
+.btn[disabled] {
+  background-color: #f7f7f7;
+  box-shadow: none;
+  color: #9e9e9e;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: dashed;
+  pointer-events: none;
 }
 
-.buton.pasif:hover {
-	background-color: #E6E6E6;
-	-webkit-box-shadow: inset 0 0 0 0 transparent;
-	box-shadow: inset 0 0 0 0 transparent
+.btn[disabled]:hover {
+  color: #fff;
+  cursor: default;
+  transform: none;
 }
 
-.buton.yuvarlak, .buton.kare {
-	height: 40px;
-	line-height: 40px;
-	padding: 0px;
-	width: 40px
+.btn--link,
+.btn--link:hover,
+.btn--link:active {
+  background-color: transparent;
+  box-shadow: none;
+  color: #000;
 }
 
-.buton.yuvarlak.minik, .buton.kare.minik {
-	height: 20px;
-	line-height: 20px;
-	width: 20px
+.btn--yuvarlak {
+  border-radius: 100%;
 }
 
-.buton.yuvarlak.kucuk, .buton.kare.kucuk {
-	height: 30px;
-	line-height: 30px;
-	width: 30px
+.btn--kare,
+.btn--yuvarlak {
+  height: 46px;
+  line-height: 46px;
+  padding: 0;
+  width: 46px;
 }
 
-.buton.yuvarlak.orta, .buton.kare.orta {
-	height: 50px;
-	line-height: 50px;
-	width: 50px
+.btn--kare.btn--kucuk,
+.btn--yuvarlak.btn--kucuk {
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
 }
 
-.buton.yuvarlak.buyuk, .buton.kare.buyuk {
-	height: 60px;
-	line-height: 60px;
-	width: 60px
+.btn--kare.btn--buyuk,
+.btn--yuvarlak.btn--buyuk {
+  height: 58px;
+  line-height: 58px;
+  width: 58px;
 }
 
-.buton.yay {
-	width: 100%
+.btn__ikon:not(:first-child),
+.btn__yazi:not(:first-child) {
+  margin-left: 8px;
 }
 
-.buton.beyaz {
-	color: #000 !important
-}
-
-.buton.yuvarlak i, .buton.kare i {
-	margin-right: -1px
-}
-
-.tr-butonlar {
-	display: inline-block
-}
-
-.tr-butonlar .buton {
-	border-radius: 0;
-	margin-left: -4px
-}
-
-.tr-butonlar .buton:first-child {
-	margin-left: 0
-}
-
-.tr-butonlar .buton:first-child {
-	border-radius: 3px 0 0px 3px
-}
-
-.tr-butonlar .buton:last-child {
-	border-radius: 0 3px 3px 0
-}
-
-.tr-butonlar.dikey .buton {
-	display: block;
-	margin: 0
-}
-
-.tr-butonlar.dikey .buton:first-child {
-	border-radius: 3px 3px 0 0
-}
-
-.tr-butonlar.dikey .buton:last-child {
-	border-radius: 0 0 3px 3px
+.btn svg {
+  vertical-align: sub;
 }
 
 /* ============= 2.1.2 Buton Efektleri */
