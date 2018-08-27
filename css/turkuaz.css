@@ -2671,70 +2671,43 @@ a.buton.efekt5:hover:before {
 /* ============= 2.2 Etiket */
 
 .etiket {
-	background-color: #EEE;
-	border-radius: 50px;
-	color: #454545;
-	cursor: default;
-	display: inline-block;
-	line-height: 32px;
-	margin: 0 4px 8px 0px;
-	padding: 0 12px;
-	user-select: none;
+  background-color: #eee;
+  border-radius: 50px;
+  cursor: default;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 8px;
+  padding: 0 12px;
+  transition: 0.15s ease;
+  user-select: none;
 }
 
-a.etiket {
-	text-decoration: none
+.etiket:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
 }
 
-a.etiket:hover {
-	box-shadow: inset 0 0 100px rgba(0, 0, 0, .05);
-	color: #000
+.etiket:active {
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
-.etiket span {
-	margin: 0 4px;
+.etiket:not(:last-of-type) {
+  margin-right: 8px;
 }
 
-.etiket a {
-	color: #454545;
+.etiket__detay {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px 0 0 50px;
+  display: inline-block;
+  margin: 0 8px 0 -12px;
+  padding: 0 8px 0 12px;
 }
 
-.etiket .detay {
-    background: rgba(0, 0, 0, .05);
-	border-radius: 50px 0 0 50px;
-	display: inline-block;
-	margin: 0 0 0 -12px;
-	padding: 0px 8px 0 12px;
-}
-
-.etiket span + .detay {
-	border-radius: 0 50px 50px 0;
-	margin: 0 -12px 0 0;
-	padding: 0px 12px 0 8px;
-}
-
-.etiket a.detay {
-	color: #454545;
-	cursor: pointer;
-    text-decoration: none;
-    transition: .1s
-}
-
-.etiket a.detay:hover {
-	box-shadow: inset 0 0 100px rgba(0, 0, 0, .1);
-}
-
-.etiket[disabled] {
-	background-color: #F5F5F5;
-	cursor: no-drop;
-}
-
-a.etiket[disabled]:hover {
-	box-shadow: 0 0 0 transparent
-}
-
-.etiket[disabled] i[class^="fa"]  {
-	color: #848484;
+.etiket span + .etiket__detay {
+  border-radius: 0 50px 50px 0;
+  margin: 0 -12px 0 8px;
+  padding-left: 8px;
 }
 
 /* ============= 2.3 Form Elemanlari */
