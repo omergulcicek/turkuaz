@@ -3419,45 +3419,82 @@ footer.tr-footer .footer-detay {
 
 /* ============= 2.6 Kartlar */
 
-.tr-kutu {
-	background-color: #FFF;
-	border-radius: 3px;
-	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
-	box-shadow: 0 2px 3px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
-	min-height: 1px;
-	margin-bottom: 1rem;
-	padding: 1rem
+.kutu {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+  padding: 24px;
 }
 
-.tr-kart {
-	border-radius: 15px;
-	-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, .15);
-	margin-bottom: 2rem;
-	overflow: hidden
+.kart {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-bottom: 32px;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
-.tr-kart .kart-resim {
-	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
-	background: -o-linear-gradient(45deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
-	background: linear-gradient(45deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%)
+.kart--dar {
+  margin-top: 16px;
 }
 
-.tr-kart .kart-resim img {
-	border-radius: 100%;
-	-webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
-	margin: 3rem 0;
-	-webkit-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
-	width: 40%
+.kart--genis {
+  box-shadow: none;
 }
 
-.tr-kart .kart-icerik {
-	background-color: #FFF;
-	padding: 1rem 2.5rem
+.kart__resim {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
+
+.kart--dar .kart__resim,
+.kart--genis .kart__resim {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.kart__resim img {
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.1s;
+  width: 100%;
+}
+
+.kart__resim:hover img {
+  transform: scale(1.01);
+}
+
+.kart__icerik {
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.kart--dar .kart__resim {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -16px;
+}
+
+.kart--genis .kart__icerik {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kart__baslik {
+  text-transform: capitalize;
+}
+
 
 /* ============= 2.7 Koleksiyonlar */
 
