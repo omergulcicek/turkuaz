@@ -1,15 +1,3 @@
-***
-
-<blockquote>
-	Site güncel değil ve yapım aşamasında, güncel koda <a href="https://raw.githubusercontent.com/omergulcicek/turkuazcss/master/css/turkuaz.css">github</a> üzerinden ulaşabilirsiniz.
-</p>
-<p>
-	Tüm kodlar sürekli baştan ele alınarak en kolay kullanım sağlayan, sade ve şık tasarım üzerinde çalışılıyor. Ayrıca site, React ile SPA olacak şekilde sıfırdan geliştiriliyor. Geliştirme tamamlandığında ücretsiz temalarla beraber <b>v1.0.0</b> duyurulacaktır.
-</p>
-</blockquote>
-
-***
-
 <p align="center">
 <img src="https://omergulcicek.com/img/turkuazcss.png" height="120">
 </p>
