@@ -2687,6 +2687,22 @@ h6 {
 * 1.3 Yardimci Kodlar
 */
 
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
 .sol {
   float: left !important;
 }
@@ -2855,6 +2871,37 @@ video {
   margin-top: 24px;
 }
 
+.baslik-1,
+.baslik-2,
+.baslik-3 {
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.baslik-1 {
+  font-size: 64px;
+}
+
+.baslik-2 {
+  font-size: 56px;
+}
+
+.baslik-3 {
+  font-size: 44px;
+}
+
+@media (min-width: 992px) {
+  .baslik-1 {
+    font-size: 80px;
+  }
+  .baslik-2 {
+    font-size: 64px;
+  }
+  .baslik-3 {
+    font-size: 48px;
+  }
+}
+
 /*!
 * 2. BILESENLER
 * 2.1 Buton
@@ -2866,7 +2913,7 @@ video {
   background-color: #03968a;
   border: 1px solid transparent;
   border-radius: 4px;
-  box-shadow: 0 4px 4px rgba(3, 150, 138, 0.075), 0 0 4px rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   color: #fff;
   display: inline-flex;
   font-size: 14px;
@@ -3037,7 +3084,7 @@ video {
 .footer {
   background-color: #fff;
   font-size: 90%;
-  padding-top: 24px;
+  padding-top: 40px;
 }
 
 /*!
@@ -3067,9 +3114,9 @@ textarea {
   font-family: -apple-system, "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
-  line-height: 3;
+  line-height: 1.75;
   outline: none;
-  padding: 0 16px;
+  padding: 8px 16px;
   position: relative;
   transition: 0.15s ease;
   width: 100%;
@@ -3112,7 +3159,7 @@ textarea ~ label {
   pointer-events: none;
   position: absolute;
   transition: 0.15s ease;
-  top: 14px;
+  top: 11px;
 }
 
 input:focus ~ label,
@@ -3127,7 +3174,7 @@ textarea[readonly] ~ label,
 textarea[value][disabled] ~ label {
   color: #252525;
   font-size: 12px;
-  top: -16px;
+  top: -18px;
 }
 
 input:-webkit-autofill {
@@ -3166,8 +3213,12 @@ textarea::placeholder,
 
 .tr-alan i[class^="fa"] + input:focus + label,
 .tr-alan i[class^="fa"] + input:valid + label,
+.tr-alan svg[class*="fa"] + input:focus + label,
+.tr-alan svg[class*="fa"] + input:valid + label,
 .tr-alan i[class^="fa"] + textarea:focus + label,
-.tr-alan i[class^="fa"] + textarea:valid + label {
+.tr-alan i[class^="fa"] + textarea:valid + label,
+.tr-alan svg[class*="fa"] + textarea:focus + label,
+.tr-alan svg[class*="fa"] + textarea:valid + label {
   left: 16px;
 }
 
@@ -3319,8 +3370,8 @@ select {
   cursor: pointer;
   font-size: 16px;
   letter-spacing: 0.5px;
-  line-height: 3;
-  padding: 0 16px;
+  line-height: 1.75;
+  padding: 8px 16px;
   position: relative;
   transition: 0.1s;
   -webkit-appearance: none;
@@ -3352,12 +3403,12 @@ select[multiple] option:checked {
 [type="file"] {
   background-color: #fff;
   cursor: pointer;
-  padding-left: 80px;
+  padding: 0 8px 0 80px;
   transition: 0.1s;
 }
 
 [type="file"]:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.075);
+  border-color: #bdbdbd;
 }
 
 [type="file"][disabled] {
@@ -3379,22 +3430,23 @@ select[multiple] option:checked {
 }
 
 [type="file"]::after {
-  background-color: #03968a;
+  align-items: center;
   backface-visibility: hidden;
+  background-color: #03968a;
   border: 1px solid transparent;
   border-radius: 4px 0 0 4px;
   box-shadow: 0 4px 4px rgba(3, 150, 138, 0.075), 0 0 4px rgba(0, 0, 0, 0);
   color: #fff;
   content: "Seç";
-  display: inline-block;
+  display: inline-flex;
   font-size: 14px;
-  margin-bottom: 8px;
-  margin-left: 0;
+  font-weight: 600;
+  justify-content: center;
   left: 0;
   letter-spacing: 1px;
-  line-height: 46px;
+  line-height: 2;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 8px 20px;
   position: absolute;
   transition: 0.15s ease;
   text-align: center;
@@ -3719,14 +3771,14 @@ select[multiple] option:checked {
 .kutu {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 32px;
   padding: 24px;
 }
 
 .kart {
   border-radius: 8px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   color: #555;
   display: flex;
   flex-direction: column;
