@@ -1,8 +1,6 @@
 <p align="center">
-<img src="https://omergulcicek.com/img/turkuazcss.png" height="120">
+<img src="https://omergulcicek.com/img/turkuaz.png" />
 </p>
-
-<h1 align="center">Turkuaz</h1>
 
 <p align="center">
 	<i>Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework</i>
