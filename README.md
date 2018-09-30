@@ -1,4 +1,7 @@
 <p align="center">
+	<img src="https://omergulcicek.com/img/turkuazcss.png" />
+</p>
+	<p align="center">
 <img src="https://omergulcicek.com/img/turkuaz.png" />
 </p>
 
