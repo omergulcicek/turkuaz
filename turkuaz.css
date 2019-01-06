@@ -1,5 +1,5 @@
 ﻿/*!
-* Turkuaz Css v1.0.0
+* Turkuaz Css - v1.0.0
 * www.turkuazcss.com
 * MIT Lisansi (https://raw.githubusercontent.com/TurkuazCss/Framework/master/LICENSE)
 * Open Sans Yazi Stili (https://fonts.google.com/specimen/Open+Sans)
@@ -21,7 +21,6 @@
 *        2.3.3    Select
 *        2.3.4    Dosya Secici
 *        2.3.5    Anahtar
-*        2.3.6    Range
 *      2.4     Footer
 *      2.5     Ipucu
 *      2.6     Kart
@@ -32,7 +31,6 @@
 *      2.11    Resimler
 *      2.12    Sayfa Numaralandirma
 *      2.13    Tablo
-*      2.14    Uyari
 *
 */
 
@@ -172,9 +170,7 @@ kbd {
 
 blockquote {
   background-color: #fff;
-  border: 1px solid #f5f5f5;
   border-left: 5px solid #ababab;
-  border-radius: 4px;
   color: #252525;
   display: block;
   margin: 0 0 16px 0;
@@ -190,7 +186,7 @@ figure {
 
 caption,
 figcaption,
-.blockquote__alt-yazi {
+.blockquote__yazi {
   color: #9e9e9e;
   display: block;
   font-size: 90%;
@@ -304,14 +300,7 @@ h6 {
 * 1.1 Grid Sistemi
 */
 
-.container {
-  width: 100%;
-  padding-right: 16px;
-  padding-left: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
+.container,
 .container-fluid {
   width: 100%;
   padding-right: 16px;
@@ -2814,8 +2803,8 @@ video {
 input,
 textarea {
   background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 4px;
+  border: 0;
+  border-bottom: 1px solid #eee;
   color: #252525;
   display: inline-block;
   font-family: -apple-system, "Open Sans", sans-serif;
@@ -2823,16 +2812,18 @@ textarea {
   letter-spacing: 0.5px;
   line-height: 1.75;
   outline: none;
-  padding: 8px 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   position: relative;
   transition: 0.15s ease;
   width: 100%;
 }
 
-input:focus,
-textarea:focus {
+input:not([readonly]):focus,
+textarea:not([readonly]):focus {
   background-color: #fff;
-  border-color: #bdbdbd;
+  border-color: #03968a;
+  box-shadow: 0 1px 0 0 #03968a;
 }
 
 textarea {
@@ -2846,7 +2837,6 @@ textarea {
 
 input[disabled],
 textarea[disabled] {
-  background-color: #f7f7f7;
   border-color: #bdbdbd;
   border-style: dashed;
   color: #9e9e9e;
@@ -2862,11 +2852,11 @@ textarea ~ label {
   cursor: text;
   display: inline-block;
   font-size: 16px;
-  left: 16px;
+  left: 0;
   pointer-events: none;
   position: absolute;
   transition: 0.15s ease;
-  top: 11px;
+  top: 10px;
 }
 
 input:focus ~ label,
@@ -2881,7 +2871,7 @@ textarea[readonly] ~ label,
 textarea[value][disabled] ~ label {
   color: #252525;
   font-size: 12px;
-  top: -18px;
+  top: -16px;
 }
 
 input:-webkit-autofill {
@@ -2916,17 +2906,6 @@ textarea::placeholder,
 .tr-alan i[class^="fa"] ~ label,
 .tr-alan svg[class*="fa"] ~ label {
   left: 48px;
-}
-
-.tr-alan i[class^="fa"] + input:focus + label,
-.tr-alan i[class^="fa"] + input:valid + label,
-.tr-alan svg[class*="fa"] + input:focus + label,
-.tr-alan svg[class*="fa"] + input:valid + label,
-.tr-alan i[class^="fa"] + textarea:focus + label,
-.tr-alan i[class^="fa"] + textarea:valid + label,
-.tr-alan svg[class*="fa"] + textarea:focus + label,
-.tr-alan svg[class*="fa"] + textarea:valid + label {
-  left: 16px;
 }
 
 /*!
@@ -3074,6 +3053,7 @@ select {
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.75;
+  outline: none;
   padding: 8px 16px;
   position: relative;
   transition: 0.1s;
@@ -3137,7 +3117,7 @@ select[multiple] option:checked {
   backface-visibility: hidden;
   background-color: #03968a;
   border: 1px solid transparent;
-  border-radius: 4px 0 0 4px;
+  border-top-left-radius: 4px;
   box-shadow: 0 4px 4px rgba(3, 150, 138, 0.075), 0 0 4px rgba(0, 0, 0, 0);
   color: #fff;
   content: "Seç";
@@ -3151,8 +3131,9 @@ select[multiple] option:checked {
   text-transform: uppercase;
   padding: 8px 20px;
   position: absolute;
-  transition: 0.15s ease;
   text-align: center;
+  top: 2px;
+  transition: 0.15s ease;
   user-select: none;
 }
 
@@ -3216,7 +3197,7 @@ select[multiple] option:checked {
 }
 
 .tr-anahtar label .anahtar {
-  background-color: #fff;
+  background-color: #e0e0e0;
   border-radius: 50px;
   content: "";
   display: inline-block;
@@ -3240,33 +3221,6 @@ select[multiple] option:checked {
   -webkit-transition: 0.1s;
   -o-transition: 0.1s;
   transition: 0.1s;
-}
-
-/*!
-* 2. BILESENLER
-* 2.4.6 Range
-*/
-
-[type="range"] {
-  -webkit-appearance: none;
-  border-radius: 50px;
-  background-color: #fff;
-  height: 8px;
-  outline: none;
-  padding: 0;
-  width: 100%;
-}
-
-[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #fff;
-  border: 1px solid #bbb;
-  border-radius: 100%;
-  box-shadow: 0 2px 1px #bbb;
-  cursor: pointer;
-  height: 24px;
-  position: relative;
-  width: 24px;
 }
 
 /*!
@@ -3474,7 +3428,7 @@ select[multiple] option:checked {
 .kutu {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   color: #252525;
   margin-bottom: 32px;
   padding: 24px;
@@ -3482,7 +3436,7 @@ select[multiple] option:checked {
 
 .kart {
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   color: #555;
   display: flex;
   flex-direction: column;
@@ -3541,7 +3495,7 @@ select[multiple] option:checked {
 }
 
 .kart--genis .kart__icerik {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -3680,9 +3634,11 @@ select[multiple] option:checked {
 
 .menu {
   align-items: center;
-  background-color: #fff;
+  background-color: #03968a;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
+  padding-bottom: 16px;
+  padding-top: 16px;
   width: 100%;
 }
 
@@ -3690,7 +3646,40 @@ select[multiple] option:checked {
   align-items: center;
   display: flex;
   margin-bottom: 0;
-  padding: 16px 0;
+}
+
+.menu:not(.menu--dikey) ul ul {
+  background-color: #fff;
+  display: none;
+  margin: 0;
+  list-style: none;
+  padding: 8px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li ul {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  width: 240px;
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+.menu li ul a {
+  color: #333;
+  display: block;
+}
+
+.menu li ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
 }
 
 .menu--dikey ul {
@@ -3698,7 +3687,7 @@ select[multiple] option:checked {
 }
 
 .menu--dikey ul ul {
-  border-left: 2px solid #eee;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
   margin-left: 24px;
   padding: 0;
   padding-left: 4px;
@@ -3707,7 +3696,7 @@ select[multiple] option:checked {
 .menu a {
   align-items: center;
   border-radius: 4px;
-  color: #555;
+  color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-size: 15px;
@@ -3715,6 +3704,7 @@ select[multiple] option:checked {
   margin-right: 4px;
   padding: 8px 12px;
   text-decoration: none;
+  transition: 0.3s;
   user-select: none;
 }
 
@@ -3727,13 +3717,13 @@ select[multiple] option:checked {
 }
 
 .menu a:hover {
-  background-color: rgba(0, 0, 0, 0.03);
-  color: #444;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
   text-decoration: none;
 }
 
 .menu a.aktif {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu a svg {
@@ -3909,20 +3899,4 @@ progress::-webkit-progress-value {
 .tablo--cizgi tr,
 .tablo--cizgi td {
   border: 1px solid #f5f5f5;
-}
-
-/*!
-* 2. BILESENLER
-* 2.14 Uyari
-*/
-
-.uyari {
-  background-color: #03968a;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px rgba(3, 150, 138, 0.075), 0 0 4px rgba(0, 0, 0, 0);
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 16px;
-  line-height: 1.7;
-  padding: 16px 24px;
 }
