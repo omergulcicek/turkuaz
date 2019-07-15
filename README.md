@@ -31,6 +31,15 @@ npm install turkuaz (<i>hazır değil</i>)
 
 **Mevcut Sürüm : v0.1.0** - *Geliştirme Aşamasında*
 
+## 📌 Sıradaki Projeler
+
+Turkuaz Css v1.0.0 ile ilk versiyonunu yayınladıktan sonra aşağıdaki projelere başlanacaktır:
+
+* [React Turkuaz](https://github.com/omergulcicek/react-turkuaz)
+* [Vue Turkuaz](https://github.com/omergulcicek/vue-turkuaz)
+* [Angular Turkuaz](https://github.com/omergulcicek/angular-turkuaz)
+* [Turkuaz Snippet](https://github.com/omergulcicek/turkuaz-snippet)
+
 ## 🤝 Destek
 
 Turkuaz Css'in gelişimine destek olmak için [issue sayfası](https://github.com/omergulcicek/turkuazcss/issues)nda bulunan bir problemi çözün ve kodunuzu pull request edin!
