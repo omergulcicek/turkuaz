@@ -1,66 +1,43 @@
 <p align="center">
-	<img src="https://omergulcicek.com/img/turkuazcss.png" />
-</p>
-	<p align="center">
-<img src="https://omergulcicek.com/img/turkuaz.png" />
+  <img src="https://omergulcicek.com/img/turkuazcss.png" />
 </p>
 
 <p align="center">
 	<i>Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework</i>
-<p>
-	<br>
-	<br>
-	Turkuaz Css 11 Nisan 2016 tarihinde, <a href="https://omergulcicek.com">@omergulcicek</a> tarafından GitHub üzerinden açık kaynak olarak geliştirilmeye başlanmıştır. Kolayca özelleştirilebilir kod yapısı ile kısa sürede şık tasarımlar ortaya çıkartabilirsiniz. Türkçe sınıf isimlendirmeleri ile, özellikle <i>geliştirmeye yeni başlamış veya yabancı dilde yetersiz olan kişilerin</i> kolayca site oluşturmasını sağlar.
-</p>
-<p>
-	Turkuaz Css ile oluşturulan siteler, CSS medya sorguları ile mobil öncelikli olarak cep telefonu, tablet, dizüstü, masaüstü ve geniş ekranlar dahil her cihazda uyumlu çalışır. Geliştiriciler, ekran boyutları için benzersiz tasarımlar oluşturabilir ve cihaz ne olursa olsun sorunsuz bir deneyim yaşatabilir. Ücretsiz olarak sunulan yüzlerce örnek, onlarca temayı indirip, geliştirmeye başlayabilirsiniz.
-</p>
-<p>
-	İsmini Türk rengi olarakta bilinen Turkuaz renginden alır.
 </p>
 
-<h2>Hızlı Kullan</h2>
+***
+
+Turkuaz Css 11 Nisan 2016 tarihinde, açık kaynak olarak geliştirilmeye başlanmış kişisel bir projedir.
+
+İsmini Türk rengi olarakta bilinen Turkuaz renginden alır.
+
+## 🚀 Hızlı Kullan
 <p>
 Turkuaz Css sürekli gelişiyor, hemen deneyin !
 </p>
 
 <h4>CDN</h4>
 <pre>
-https://cdnjs.com/libraries/turkuazcss (<i>hazır değil</i>)
+https://cdnjs.com/libraries/turkuaz (<i>hazır değil</i>)
 </pre>
 
 <h4>NPM</h4>
 <pre>
-npm install turkuazcss (<i>hazır değil</i>)
+npm install turkuaz (<i>hazır değil</i>)
 </pre>
 
-<h2>Sürümler</h2>
-<p>
-<strong>Mevcut Sürüm : v1.0.0</strong> - Geliştirme Aşamasında
-</p>
+## 💭 Sürümler
 
-<h2>Tarayıcı Desteği</h2>
-<ul>
-	<li>Google Chrome 29+</li>
-	<li>Firefox 28+</li>
-	<li>Safari 9+</li>
-	<li>Opera 17+</li>
-	<li>Internet Explorer 10+</li>
-	<li>Microsoft Edge 12+</li>
-	<li>Android 4.4+</li>
-</ul>
+**Mevcut Sürüm : v0.1.0** - *Geliştirme Aşamasında*
 
-<h2>Destek</h2>
-<p>
-Turkuaz Css'in gelişimine destek olmak için <a href="https://github.com/omergulcicek/turkuazcss/issues">yapılacaklar listesi</a>nde belirtilen detayları dikkate alarak kodunuzu yazın ve pull request edin!
-</p>
+## 🤝 Destek
 
-<h4>Pull Requests</h4>
-<p>
-Pull requets yapmadan önce, <a href="https://github.com/omergulcicek/turkuazcss/issues">issue</a>'lerde yazanları tam olarak uyguladığınızdan emin olun. Önizleme göstermek için <a href="https://codepen.io/omergulcicek/pen/VMVKNe">CodePen</a> kullanabilirsiniz.
-</p>
+Turkuaz Css'in gelişimine destek olmak için [issue sayfası](https://github.com/omergulcicek/turkuazcss/issues)nda bulunan bir problemi çözün ve kodunuzu pull request edin!
 
-<h2>Lisans</h2>
-<p>
-Turkuaz Css, <a href="https://github.com/turkuazcss/Framework/blob/master/LICENSE">MIT Lisansı</a> ile lisanslanmıştır.
-</p>
+## 📝 Lisans
+
+Telif Hakkı © 2019 [Ömer Gülçiçek](https://omergulcicek.com)
+
+Turkuaz Css, [MIT Lisansı](https://github.com/turkuazcss/Framework/blob/master/LICENSE) ile lisanslanmıştır.
+
