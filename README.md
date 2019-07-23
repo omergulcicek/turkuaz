@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-	<i>Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework</i>
+	Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
 </p>
 
 ***
@@ -12,17 +12,21 @@ Turkuaz Css 11 Nisan 2016 tarihinde, açık kaynak olarak geliştirilmeye başla
 
 İsmini Türk rengi olarakta bilinen Turkuaz renginden alır.
 
+## 📑 Doküman
+
+Tüm doküman için [turkuazcss.com](https://turkuazcss.com) adresini ziyaret ediniz.
+
 ## 🚀 Hızlı Kullan
 <p>
 Turkuaz Css sürekli gelişiyor, hemen deneyin !
 </p>
 
-<h4>CDN</h4>
+#### CDN
 <pre>
 https://cdnjs.com/libraries/turkuaz (<i>hazır değil</i>)
 </pre>
 
-<h4>NPM</h4>
+#### NPM
 <pre>
 npm install turkuaz (<i>hazır değil</i>)
 </pre>
@@ -31,14 +35,20 @@ npm install turkuaz (<i>hazır değil</i>)
 
 **Mevcut Sürüm : v0.1.0** - *Geliştirme Aşamasında*
 
+Eski sürümleri incelemek ve indirmek için [release](https://github.com/omergulcicek/turkuaz/releases) sayfasını inceleyebilirsiniz.
+
+Her sürümde geriye dönük uyumluluk sağlamak için çalışıyoruz. Turkuaz Css, [semantik versiyonlama](https://semver.org/lang/tr/) kurallarını kullanır.
+
 ## 📌 Sıradaki Projeler
 
-Turkuaz Css v1.0.0 ile ilk versiyonunu yayınladıktan sonra aşağıdaki projelere başlanacaktır:
+**Turkuaz Css v1.0.0** ile ilk versiyonunu yayınladıktan sonra aşağıdaki projelere başlanacaktır:
 
 * [React Turkuaz](https://github.com/omergulcicek/react-turkuaz)
 * [Vue Turkuaz](https://github.com/omergulcicek/vue-turkuaz)
 * [Angular Turkuaz](https://github.com/omergulcicek/angular-turkuaz)
 * [Turkuaz Snippet](https://github.com/omergulcicek/turkuaz-snippet)
+
+_Detaylı bilgi için [destek](https://turkuazcss.com/detay/destek) sayfasını inceleyiniz._
 
 ## 🤝 Destek
 
