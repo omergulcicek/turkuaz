@@ -1,0 +1,34 @@
+{
+  "name": "turkuaz",
+  "version": "0.1.0",
+  "description": "Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework",
+  "homepage": "https://turkuazcss.com",
+  "author": {
+    "name": "Ömer Gülçiçek",
+    "email": "iletisim@omergulcicek.com",
+    "url": "https://omergulcicek.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omergulcicek/turkuaz.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "turkuaz",
+    "turkuazcss",
+    "css",
+    "sass",
+    "responsive",
+    "frontend",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/omergulcicek/turkuaz/issues"
+  },
+  "style": "css/turkuaz.min.css",
+  "sass": "scss/turkuaz.scss"
+}
