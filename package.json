@@ -30,5 +30,15 @@
     "url": "https://github.com/omergulcicek/turkuaz/issues"
   },
   "style": "css/turkuaz.min.css",
-  "sass": "scss/turkuaz.scss"
+  "sass": "scss/turkuaz.scss",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "css-declaration-sorter": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
 }
