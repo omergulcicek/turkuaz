@@ -54,6 +54,8 @@ _Detaylı bilgi için [destek](https://turkuazcss.com/detay/destek) sayfasını 
 
 Turkuaz Css'in gelişimine destek olmak için [issue sayfası](https://github.com/omergulcicek/turkuazcss/issues)nda bulunan bir problemi çözün ve kodunuzu pull request edin!
 
+[Projeler sayfası](https://github.com/omergulcicek/turkuaz/projects)nda sıradaki versiyon için yapılacaklar listesi yer almaktadır.
+
 ## 📝 Lisans
 
 Telif Hakkı © 2019 [Ömer Gülçiçek](https://omergulcicek.com)
