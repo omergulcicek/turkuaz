@@ -6,8 +6,14 @@
 	Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
 </p>
 
-***
+<p align="center">
+	<img src="https://img.shields.io/npm/v/turkuaz" />
+	<img src="https://img.shields.io/npm/dt/turkuaz" />
+	<img src="https://img.shields.io/bundlephobia/minzip/turkuaz" />
+	<img src="https://img.shields.io/github/license/omergulcicek/turkuaz" />
+</p>
 
+***
 Turkuaz Css 11 Nisan 2016 tarihinde, açık kaynak olarak geliştirilmeye başlanmış kişisel bir projedir.
 
 İsmini Türk rengi olarakta bilinen Turkuaz renginden alır.
