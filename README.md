@@ -66,5 +66,5 @@ Turkuaz Css'in gelişimine destek olmak için [issue sayfası](https://github.co
 
 Telif Hakkı © 2019 [Ömer Gülçiçek](https://omergulcicek.com)
 
-Turkuaz Css, [MIT Lisansı](https://github.com/turkuaz/Framework/blob/master/LICENSE) ile lisanslanmıştır.
+Turkuaz Css, [MIT Lisansı](https://github.com/omergulcicek/turkuaz/blob/master/LICENSE) ile lisanslanmıştır.
 
