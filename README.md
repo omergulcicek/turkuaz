@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/npm/v/turkuaz" />
-	<img src="https://img.shields.io/npm/dt/turkuaz" />
-	<img src="https://img.shields.io/bundlephobia/minzip/turkuaz" />
-	<img src="https://img.shields.io/github/license/omergulcicek/turkuaz" />
+	<img src="https://img.shields.io/npm/v/turkuazcss" />
+	<img src="https://img.shields.io/npm/dt/turkuazcss" />
+	<img src="https://img.shields.io/bundlephobia/minzip/turkuazcss" />
+	<img src="https://img.shields.io/github/license/omergulcicek/turkuazcss" />
 </p>
 
 ***
@@ -29,12 +29,12 @@ Turkuaz Css sürekli gelişiyor, hemen deneyin !
 
 #### CDN
 <pre>
-https://cdnjs.com/libraries/turkuaz (<i>hazır değil</i>)
+https://cdnjs.com/libraries/turkuazcss (<i>hazır değil</i>)
 </pre>
 
 #### NPM
 <pre>
-npm install turkuaz (<i>hazır değil</i>)
+npm install turkuazcss (<i>hazır değil</i>)
 </pre>
 
 ## 💭 Sürümler
