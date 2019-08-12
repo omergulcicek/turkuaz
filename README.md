@@ -34,7 +34,7 @@ https://cdnjs.com/libraries/turkuazcss (<i>hazır değil</i>)
 
 #### NPM
 <pre>
-npm install turkuazcss (<i>hazır değil</i>)
+npm install turkuazcss
 </pre>
 
 ## 💭 Sürümler
