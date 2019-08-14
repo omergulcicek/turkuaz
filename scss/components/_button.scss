@@ -34,7 +34,12 @@
     padding-top: 8px;
   }
   &--primary, &--success, &--warning, &--danger, &--info {
-    color: #fff !important;
+    color: #fff;
+  }
+  &--outline {
+    border: 1px solid #dbdbdb;
+    padding-bottom: 7px;
+    padding-top: 7px;
   }
   &--primary {
     background-color: #009688;
@@ -43,6 +48,16 @@
     }
     &:not([disabled]):active {
       background-color: #00796b;
+    }
+    &.button--outline {
+      background-color: transparent;
+      border-color: #009688;
+      color: #009688;
+      &:hover {
+        background-color: #009688;
+        border-color: #009688;
+        color: #fff;
+      }
     }
   }
   &--secondary {
@@ -53,6 +68,16 @@
     &:not([disabled]):active {
       background-color: #e0e0e0;
     }
+    &.button--outline {
+      background-color: transparent;
+      border-color: #dbdbdb;
+      color: #252525;
+      &:hover {
+        background-color: #f5f5f5;
+        border-color: #f5f5f5;
+        color: #252525;
+      }
+    }
   }
   &--success {
     background-color: #23d160;
@@ -61,6 +86,16 @@
     }
     &:not([disabled]):active {
       background-color: #1eae50;
+    }
+    &.button--outline {
+      background-color: transparent;
+      border-color: #23d160;
+      color: #23d160;
+      &:hover {
+        background-color: #23d160;
+        border-color: #23d160;
+        color: #fff;
+      }
     }
   }
   &--warning {
@@ -71,6 +106,16 @@
     &:not([disabled]):active {
       background-color: #f5b800;
     }
+    &.button--outline {
+      background-color: transparent;
+      border-color: #ffca28;
+      color: #ffca28;
+      &:hover {
+        background-color: #ffca28;
+        border-color: #ffca28;
+        color: #fff;
+      }
+    }
   }
   &--danger {
     background-color: #f44336;
@@ -80,6 +125,16 @@
     &:not([disabled]):active {
       background-color: #d32f2f;
     }
+    &.button--outline {
+      background-color: transparent;
+      border-color: #f44336;
+      color: #f44336;
+      &:hover {
+        background-color: #f44336;
+        border-color: #f44336;
+        color: #fff;
+      }
+    }
   }
   &--info {
     background-color: #2196f3;
@@ -88,6 +143,16 @@
     }
     &:not([disabled]):active {
       background-color: #1976d2;
+    }
+    &.button--outline {
+      background-color: transparent;
+      border-color: #2196f3;
+      color: #2196f3;
+      &:hover {
+        background-color: #2196f3;
+        border-color: #2196f3;
+        color: #fff;
+      }
     }
   }
   &--link {
