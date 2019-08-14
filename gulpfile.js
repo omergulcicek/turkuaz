@@ -16,7 +16,7 @@ gulp.task("browserSync", () => {
 })
 
 gulp.task("sass", () => {
-  return gulp.src("scss/*.scss")
+  return gulp.src("turkuaz.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: "compressed"}).on("error", sass.logError))
     .pipe(concat("turkuaz.min.css"))
