@@ -1,6 +1,6 @@
 .button {
   align-items: center;
-  background-color: #fff;
+  background-color: $white;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   color: #252525;
@@ -34,7 +34,7 @@
     padding-top: 8px;
   }
   &--primary, &--success, &--warning, &--danger, &--info {
-    color: #fff;
+    color: $white;
   }
   &--outline {
     border: 1px solid #dbdbdb;
@@ -42,116 +42,116 @@
     padding-top: 7px;
   }
   &--primary {
-    background-color: #009688;
+    background-color: $primary;
     &:not([disabled]):hover {
-      background-color: #00897b;
+      background-color: darken($primary, 5%);
     }
     &:not([disabled]):active {
-      background-color: #00796b;
+      background-color: darken($primary, 10%);
     }
     &.button--outline {
       background-color: transparent;
-      border-color: #009688;
-      color: #009688;
+      border-color: $primary;
+      color: $primary;
       &:hover {
-        background-color: #009688;
-        border-color: #009688;
-        color: #fff;
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
       }
     }
   }
   &--secondary {
-    background-color: #f5f5f5;
+    background-color: $secondary;
     &:not([disabled]):hover {
-      background-color: #ebebeb;
+      background-color: darken($secondary, 5%);
     }
     &:not([disabled]):active {
-      background-color: #e0e0e0;
+      background-color: darken($secondary, 10%);
     }
     &.button--outline {
       background-color: transparent;
       border-color: #dbdbdb;
       color: #252525;
       &:hover {
-        background-color: #f5f5f5;
-        border-color: #f5f5f5;
+        background-color: $secondary;
+        border-color: $secondary;
         color: #252525;
       }
     }
   }
   &--success {
-    background-color: #23d160;
+    background-color: $success;
     &:not([disabled]):hover {
-      background-color: #21c058;
+      background-color: darken($success, 5%);
     }
     &:not([disabled]):active {
-      background-color: #1eae50;
+      background-color: darken($success, 10%);
     }
     &.button--outline {
       background-color: transparent;
-      border-color: #23d160;
-      color: #23d160;
+      border-color: $success;
+      color: $success;
       &:hover {
-        background-color: #23d160;
-        border-color: #23d160;
-        color: #fff;
+        background-color: $success;
+        border-color: $success;
+        color: $white;
       }
     }
   }
   &--warning {
-    background-color: #ffca28;
+    background-color: $warning;
     &:not([disabled]):hover {
-      background-color: #ffc20a;
+      background-color: darken($warning, 5%);
     }
     &:not([disabled]):active {
-      background-color: #f5b800;
+      background-color: darken($warning, 10%);
     }
     &.button--outline {
       background-color: transparent;
-      border-color: #ffca28;
-      color: #ffca28;
+      border-color: $warning;
+      color: $warning;
       &:hover {
-        background-color: #ffca28;
-        border-color: #ffca28;
-        color: #fff;
+        background-color: $warning;
+        border-color: $warning;
+        color: $white;
       }
     }
   }
   &--danger {
-    background-color: #f44336;
+    background-color: $danger;
     &:not([disabled]):hover {
-      background-color: #e53935;
+      background-color: darken($danger, 5%);
     }
     &:not([disabled]):active {
-      background-color: #d32f2f;
+      background-color: darken($danger, 10%);
     }
     &.button--outline {
       background-color: transparent;
-      border-color: #f44336;
-      color: #f44336;
+      border-color: $danger;
+      color: $danger;
       &:hover {
-        background-color: #f44336;
-        border-color: #f44336;
-        color: #fff;
+        background-color: $danger;
+        border-color: $danger;
+        color: $white;
       }
     }
   }
   &--info {
-    background-color: #2196f3;
+    background-color: $info;
     &:not([disabled]):hover {
-      background-color: #1e88e5;
+      background-color: darken($info, 5%);
     }
     &:not([disabled]):active {
-      background-color: #1976d2;
+      background-color: darken($info, 10%);
     }
     &.button--outline {
       background-color: transparent;
-      border-color: #2196f3;
-      color: #2196f3;
+      border-color: $info;
+      color: $info;
       &:hover {
-        background-color: #2196f3;
-        border-color: #2196f3;
-        color: #fff;
+        background-color: $info;
+        border-color: $info;
+        color: $white;
       }
     }
   }
@@ -160,7 +160,7 @@
       text-decoration: underline !important;
     }
     &:not([disabled]):active {
-      background-color: #f5f5f5;
+      background-color: $secondary;
     }
   }
   &[disabled] {

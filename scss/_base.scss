@@ -5,12 +5,12 @@
 }
 
 ::selection {
-  background-color: #191919;
-  color: #fff;
+  background-color: $black;
+  color: $white;
 }
 
 html {
-  background-color: #fff;
+  background-color: $white;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Open Sans";
   font-size: 16px;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  color: #191919;
+  color: $black;
   margin: 0;
 }
 
@@ -144,9 +144,9 @@ pre {
 }
 
 kbd {
-  background-color: #191919;
+  background-color: $black;
   border-radius: 4px;
-  color: #fff;
+  color: $white;
   font-size: 85%;
   padding: 4px 8px;
 }
