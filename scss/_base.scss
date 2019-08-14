@@ -94,7 +94,7 @@ blockquote,
     margin-bottom: 0;
   }
   &__footer {
-    color: #757575;
+    color: $dark-grey;
     font-size: 80%;
     &::before {
       content: "—";
@@ -126,7 +126,7 @@ samp {
 }
 
 pre {
-  background-color: #f5f5f5;
+  background-color: $grey;
   border-radius: 4px;
   color: inherit;
   font-size: 85%;
@@ -167,7 +167,7 @@ em {
 }
 
 mark {
-  background-color: #ffee58;
+  background-color: $mark;
   color: inherit;
   padding: 4px;
 }
@@ -185,7 +185,7 @@ figure {
 caption,
 figcaption {
   caption-side: bottom;
-  color: #757575;
+  color: $dark-grey;
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: left;
@@ -200,7 +200,7 @@ img {
 
 a {
   background-color: transparent;
-  color: #2196f3;
+  color: $link;
   cursor: pointer;
   text-decoration: none;
   &:hover {

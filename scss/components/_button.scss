@@ -71,11 +71,9 @@
     &.button--outline {
       background-color: transparent;
       border-color: #dbdbdb;
-      color: #252525;
       &:hover {
         background-color: $secondary;
         border-color: $secondary;
-        color: #252525;
       }
     }
   }
