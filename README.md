@@ -39,7 +39,7 @@ npm install turkuazcss
 
 ## 💭 Sürümler
 
-**Mevcut Sürüm : v0.4.0** - *Geliştirme Aşamasında*
+**Mevcut Sürüm : v0.5.0** - *Geliştirme Aşamasında*
 
 Eski sürümleri incelemek ve indirmek için [release](https://github.com/omergulcicek/turkuaz/releases) sayfasını inceleyebilirsiniz.
 
