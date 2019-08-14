@@ -61,19 +61,19 @@
     }
   }
   &--secondary {
-    background-color: $secondary;
+    background-color: $grey;
     &:not([disabled]):hover {
-      background-color: darken($secondary, 5%);
+      background-color: darken($grey, 5%);
     }
     &:not([disabled]):active {
-      background-color: darken($secondary, 10%);
+      background-color: darken($grey, 10%);
     }
     &.button--outline {
       background-color: transparent;
       border-color: #dbdbdb;
       &:hover {
-        background-color: $secondary;
-        border-color: $secondary;
+        background-color: $grey;
+        border-color: $grey;
       }
     }
   }
@@ -158,7 +158,7 @@
       text-decoration: underline !important;
     }
     &:not([disabled]):active {
-      background-color: $secondary;
+      background-color: $grey;
     }
   }
   &[disabled] {
