@@ -61,7 +61,6 @@
   line-height: 30px;
   outline: none;
   padding: 4px 12px;
-  transition: 0.1s ease-out;
   width: 100%;
 
   &:focus {
@@ -118,4 +117,36 @@
 @keyframes spinAround {
   from  { transform: rotate(0) }
   to    { transform: rotate(359deg) }
+}
+
+.textarea {
+  background-color: $white;
+  border: 1px solid $border;
+  border-radius: 4px;
+  color: $black;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.75;
+  min-height: 80px;
+  outline: none;
+  padding: 4px 12px;
+  resize: vertical;
+  width: 100%;
+  
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+  }
+
+  &[disabled] {
+    background-color: $grey;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &::placeholder {
+    color: $dark-grey;
+  }
 }
