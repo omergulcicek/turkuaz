@@ -1,3 +1,7 @@
+## 0.9.0
+
+* Eklendi     : `_form.scss`e `select` eklendi.
+
 ## 0.8.0
 
 * Eklendi     : `_form.scss`e `textarea` eklendi.
