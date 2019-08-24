@@ -150,3 +150,54 @@
     color: $dark-grey;
   }
 }
+
+.select {
+  select {
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: 4px;
+    color: $black;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    outline: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    resize: vertical;
+    width: 100%;
+    -webkit-appearance: none;
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    }
+  
+    &[disabled] {
+      background-color: $grey;
+      box-shadow: none;
+      cursor: default;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  
+    &::placeholder {
+      color: $dark-grey;
+    }
+  }
+  &::after {
+    border: 3px solid transparent;
+    border-radius: 2px;
+    border-right: 0;
+    border-top: 0;
+    border-color: $dark-grey;
+    content: "";
+    display: block;
+    height: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    width: 10px;
+  }
+}
