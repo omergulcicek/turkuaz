@@ -29,12 +29,12 @@ Turkuaz Css sürekli gelişiyor, hemen deneyin !
 
 #### CDN
 <pre>
-https://cdnjs.com/libraries/turkuazcss (<i>hazır değil</i>)
+https://cdnjs.com/libraries/turkuaz (<i>hazır değil</i>)
 </pre>
 
 #### NPM
 <pre>
-npm install turkuazcss
+npm install turkuaz
 </pre>
 
 ## 💭 Sürümler
