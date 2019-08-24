@@ -1,9 +1,9 @@
 .button {
   align-items: center;
   background-color: $white;
-  border: 1px solid #dbdbdb;
+  border: 1px solid $border;
   border-radius: 4px;
-  color: #252525;
+  color: $black;
   cursor: pointer;
   display: inline-flex;
   font-weight: normal;
@@ -20,39 +20,65 @@
   text-decoration: none;
   transition: 0.1s ease-out;
   user-select: none;
+
   &:hover:not([disabled]) {
-    border-color: #b5b5b5;
+    border-color: $dark-grey;
     text-decoration: none;
   }
+
   &:focus:not(.button--link),
   &:active:not(.button--link) {
+    border-color: $border;
     box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
   }
-  &--primary, &--secondary, &--link, &--success, &--warning, &--danger, &--info {
+
+  &--primary,
+  &--secondary,
+  &--link,
+  &--success,
+  &--warning,
+  &--danger,
+  &--info {
     border-width: 0;
     padding-bottom: 8px;
     padding-top: 8px;
   }
-  &--primary, &--success, &--warning, &--danger, &--info {
+
+  &--primary,
+  &--success,
+  &--warning,
+  &--danger,
+  &--info {
     color: $white;
   }
+
   &--outline {
-    border: 1px solid #dbdbdb;
+    border: 1px solid $border;
     padding-bottom: 7px;
     padding-top: 7px;
   }
+
   &--primary {
     background-color: $primary;
+
     &:not([disabled]):hover {
       background-color: darken($primary, 5%);
     }
+
     &:not([disabled]):active {
       background-color: darken($primary, 10%);
     }
+    
+    &:not([disabled]):focus,
+    &:not([disabled]):active {
+      box-shadow: 0 0 0 3px rgba($primary, 0.25);
+    }
+
     &.button--outline {
       background-color: transparent;
       border-color: $primary;
       color: $primary;
+
       &:hover {
         background-color: $primary;
         border-color: $primary;
@@ -60,35 +86,50 @@
       }
     }
   }
+
   &--secondary {
     background-color: $grey;
+
     &:not([disabled]):hover {
       background-color: darken($grey, 5%);
     }
+
     &:not([disabled]):active {
       background-color: darken($grey, 10%);
     }
+
     &.button--outline {
       background-color: transparent;
-      border-color: #dbdbdb;
+      border-color: $border;
+
       &:hover {
         background-color: $grey;
         border-color: $grey;
       }
     }
   }
+
   &--success {
     background-color: $success;
+
     &:not([disabled]):hover {
       background-color: darken($success, 5%);
     }
+
     &:not([disabled]):active {
       background-color: darken($success, 10%);
     }
+    
+    &:not([disabled]):focus,
+    &:not([disabled]):active {
+      box-shadow: 0 0 0 3px rgba($success, 0.25);
+    }
+
     &.button--outline {
       background-color: transparent;
       border-color: $success;
       color: $success;
+
       &:hover {
         background-color: $success;
         border-color: $success;
@@ -96,18 +137,28 @@
       }
     }
   }
+
   &--warning {
     background-color: $warning;
+
     &:not([disabled]):hover {
       background-color: darken($warning, 5%);
     }
+
     &:not([disabled]):active {
       background-color: darken($warning, 10%);
     }
+
+    &:not([disabled]):focus,
+    &:not([disabled]):active {
+      box-shadow: 0 0 0 3px rgba($warning, 0.25);
+    }
+
     &.button--outline {
       background-color: transparent;
       border-color: $warning;
       color: $warning;
+
       &:hover {
         background-color: $warning;
         border-color: $warning;
@@ -115,18 +166,28 @@
       }
     }
   }
+
   &--danger {
     background-color: $danger;
+
     &:not([disabled]):hover {
       background-color: darken($danger, 5%);
     }
+
     &:not([disabled]):active {
       background-color: darken($danger, 10%);
     }
+
+    &:not([disabled]):focus,
+    &:not([disabled]):active {
+      box-shadow: 0 0 0 3px rgba($danger, 0.25);
+    }
+
     &.button--outline {
       background-color: transparent;
       border-color: $danger;
       color: $danger;
+
       &:hover {
         background-color: $danger;
         border-color: $danger;
@@ -134,18 +195,28 @@
       }
     }
   }
+
   &--info {
     background-color: $info;
+
     &:not([disabled]):hover {
       background-color: darken($info, 5%);
     }
+
     &:not([disabled]):active {
       background-color: darken($info, 10%);
     }
+
+    &:not([disabled]):focus,
+    &:not([disabled]):active {
+      box-shadow: 0 0 0 3px rgba($info, 0.25);
+    }
+
     &.button--outline {
       background-color: transparent;
       border-color: $info;
       color: $info;
+
       &:hover {
         background-color: $info;
         border-color: $info;
@@ -153,31 +224,38 @@
       }
     }
   }
+
   &--link {
     &:not([disabled]):hover {
       text-decoration: underline !important;
     }
+
     &:not([disabled]):active {
       background-color: $grey;
     }
   }
+
   &[disabled] {
     box-shadow: none;
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
   }
+
   &--small {
     padding-bottom: 3px;
     padding-top: 3px;
   }
+
   &--large {
     font-size: 16px;
     padding: 11px 20px;
   }
+
   &--round {
     border-radius: 100px;
   }
+
   &--round,
   &--square {
     height: 40px;
@@ -185,28 +263,34 @@
     padding: 0;
     width: 40px;
   }
+
   &--round.button--small,
   &--square.button--small {
     height: 32px;
     width: 32px;
   }
+
   &--round.button--large,
   &--square.button--large {
     height: 48px;
     width: 48px;
   }
+
   &--block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
+
   .button__icon {
     width: 24px;
+
     &:first-child:not(:last-child) {
       margin-left: -8px;
       margin-right: 4px;
     }
+
     &:last-child:not(:first-child) {
       margin-left: 4px;
       margin-right: -8px;
