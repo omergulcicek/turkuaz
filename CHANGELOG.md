@@ -1,3 +1,8 @@
+## 0.7.0
+
+* Eklendi     : `_form.scss`e input, `_variables.scss`e `$border` rengi eklendi.
+* Güncellendi : `_button.scss`te renkler değişkene atandı ve boşluklar düzeltildi.
+
 ## 0.6.0
 
 * Eklendi     : `_tag.scss` eklendi.
