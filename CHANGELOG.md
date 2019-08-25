@@ -1,3 +1,7 @@
+## 0.12.0
+
+* Eklendi     : `_form.scss`e `switch` eklendi.
+
 ## 0.11.0
 
 * Eklendi     : `_form.scss`e `radio` eklendi.
