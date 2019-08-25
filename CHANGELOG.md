@@ -1,3 +1,8 @@
+## 0.10.0
+
+* Eklendi     : `_form.scss`e `checkbox` eklendi.
+* Güncellendi : `package.json`da `turkuazcss` -> `turkuaz`. `select`in oku değişti.
+
 ## 0.9.0
 
 * Eklendi     : `_form.scss`e `select` eklendi.
