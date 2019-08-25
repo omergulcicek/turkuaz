@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/npm/v/turkuazcss" />
-	<img src="https://img.shields.io/npm/dt/turkuazcss" />
-	<img src="https://img.shields.io/bundlephobia/minzip/turkuazcss" />
-	<img src="https://img.shields.io/github/license/omergulcicek/turkuazcss" />
+	<img src="https://img.shields.io/npm/v/turkuaz" />
+	<img src="https://img.shields.io/npm/dt/turkuaz" />
+	<img src="https://img.shields.io/bundlephobia/minzip/turkuaz" />
+	<img src="https://img.shields.io/github/license/omergulcicek/turkuaz" />
 </p>
 
 ***
@@ -39,7 +39,7 @@ npm install turkuaz
 
 ## 💭 Sürümler
 
-**Mevcut Sürüm : v0.10.0** - *Geliştirme Aşamasında*
+**Mevcut Sürüm : v0.11.0** - *Geliştirme Aşamasında*
 
 Eski sürümleri incelemek ve indirmek için [release](https://github.com/omergulcicek/turkuaz/releases) sayfasını inceleyebilirsiniz.
 
