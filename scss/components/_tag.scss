@@ -11,30 +11,37 @@
   margin-bottom: 8px;
   margin-right: 4px;
   overflow: hidden;
-  padding: 4px 12px;
+  padding: 4px 8px;
+  vertical-align: middle;
+
   .tag__detail {
     background-color: rgba(0, 0, 0, .05);
     color: inherit;
     padding-bottom: 4px;
     padding-top: 4px;
+
     &:first-child:not(:last-child) {
-      margin: -8px 8px -8px -12px;
+      margin: -8px 4px -8px -12px;
       padding-left: 12px;
-      padding-right: 8px;
+      padding-right: 4px;
     }
+
     &:last-child:not(:first-child) {
-      margin: -8px -12px -8px 8px;
-      padding-left: 8px;
+      margin: -8px -12px -8px 4px;
+      padding-left: 4px;
       padding-right: 12px;
     }
   }
-  .tag__icon {
+
+  .delete {
     color: inherit;
+
     &:first-child:not(:last-child) {
-      margin-right: 8px;
+      margin-right: 4px;
     }
+
     &:last-child:not(:first-child) {
-      margin-left: 8px;
+      margin-left: 4px;
     }
   }
 }
