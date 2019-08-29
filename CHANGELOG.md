@@ -1,3 +1,8 @@
+## 0.13.0
+
+* Eklendi     : `_delete.scss` eklendi.
+* Güncellendi : `_tag.scss_`de `.tag__icon` -> `.delete--small`.
+
 ## 0.12.0
 
 * Eklendi     : `_form.scss`e `switch` eklendi.
