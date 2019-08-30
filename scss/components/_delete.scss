@@ -38,11 +38,11 @@
   &:active {
     box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
   }
-  &--small {
+  &.is-small {
     height: 16px;
     width: 16px;
   }
-  &--large {
+  &.is-large {
     height: 24px;
     width: 24px;
   }
