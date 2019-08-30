@@ -21,44 +21,44 @@
   transition: 0.1s ease-out;
   user-select: none;
 
-  &:hover:not([disabled]) {
-    border-color: $dark-grey;
+  &:hover {
+    border-color: darken($border, 15%);
     text-decoration: none;
   }
 
-  &:focus:not(.button--link),
-  &:active:not(.button--link) {
+  &:focus:not(.is-link),
+  &:active:not(.is-link) {
     border-color: $border;
     box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
   }
 
-  &--primary,
-  &--secondary,
-  &--link,
-  &--success,
-  &--warning,
-  &--danger,
-  &--info {
+  &.is-primary,
+  &.is-secondary,
+  &.is-link,
+  &.is-success,
+  &.is-warning,
+  &.is-danger,
+  &.is-info {
     border-width: 0;
     padding-bottom: 8px;
     padding-top: 8px;
   }
 
-  &--primary,
-  &--success,
-  &--warning,
-  &--danger,
-  &--info {
+  &.is-primary,
+  &.is-success,
+  &.is-warning,
+  &.is-danger,
+  &.is-info {
     color: $white;
   }
 
-  &--outline {
+  &.is-outline {
     border: 1px solid $border;
     padding-bottom: 7px;
     padding-top: 7px;
   }
 
-  &--primary {
+  &.is-primary {
     background-color: $primary;
 
     &:not([disabled]):hover {
@@ -74,7 +74,7 @@
       box-shadow: 0 0 0 3px rgba($primary, 0.25);
     }
 
-    &.button--outline {
+    &.is-outline {
       background-color: transparent;
       border-color: $primary;
       color: $primary;
@@ -87,7 +87,7 @@
     }
   }
 
-  &--secondary {
+  &.is-secondary {
     background-color: $grey;
 
     &:not([disabled]):hover {
@@ -98,7 +98,7 @@
       background-color: darken($grey, 10%);
     }
 
-    &.button--outline {
+    &.is-outline {
       background-color: transparent;
       border-color: $border;
 
@@ -109,7 +109,7 @@
     }
   }
 
-  &--success {
+  &.is-success {
     background-color: $success;
 
     &:not([disabled]):hover {
@@ -125,7 +125,7 @@
       box-shadow: 0 0 0 3px rgba($success, 0.25);
     }
 
-    &.button--outline {
+    &.is-outline {
       background-color: transparent;
       border-color: $success;
       color: $success;
@@ -138,7 +138,7 @@
     }
   }
 
-  &--warning {
+  &.is-warning {
     background-color: $warning;
 
     &:not([disabled]):hover {
@@ -154,7 +154,7 @@
       box-shadow: 0 0 0 3px rgba($warning, 0.25);
     }
 
-    &.button--outline {
+    &.is-outline {
       background-color: transparent;
       border-color: $warning;
       color: $warning;
@@ -167,7 +167,7 @@
     }
   }
 
-  &--danger {
+  &.is-danger {
     background-color: $danger;
 
     &:not([disabled]):hover {
@@ -183,7 +183,7 @@
       box-shadow: 0 0 0 3px rgba($danger, 0.25);
     }
 
-    &.button--outline {
+    &.is-outline {
       background-color: transparent;
       border-color: $danger;
       color: $danger;
@@ -196,7 +196,7 @@
     }
   }
 
-  &--info {
+  &.is-info {
     background-color: $info;
 
     &:not([disabled]):hover {
@@ -212,7 +212,7 @@
       box-shadow: 0 0 0 3px rgba($info, 0.25);
     }
 
-    &.button--outline {
+    &.is-outline {
       background-color: transparent;
       border-color: $info;
       color: $info;
@@ -225,7 +225,7 @@
     }
   }
 
-  &--link {
+  &.is-link {
     &:not([disabled]):hover {
       text-decoration: underline !important;
     }
@@ -242,48 +242,45 @@
     pointer-events: none;
   }
 
-  &--small {
-    padding-bottom: 3px;
-    padding-top: 3px;
+  &.is-small {
+    padding: 3px 8px;
   }
 
-  &--large {
+  &.is-large {
     font-size: 16px;
     padding: 11px 20px;
   }
 
-  &--round {
+  &.is-round {
     border-radius: 100px;
   }
 
-  &--round,
-  &--square {
+  &.is-round,
+  &.is-square {
     height: 40px;
     min-width: initial;
     padding: 0;
     width: 40px;
   }
 
-  &--round.button--small,
-  &--square.button--small {
+  &.is-round.is-small,
+  &.is-square.is-small {
     height: 32px;
     width: 32px;
   }
 
-  &--round.button--large,
-  &--square.button--large {
+  &.is-round.is-large,
+  &.is-square.is-large {
     height: 48px;
     width: 48px;
   }
 
-  &--block {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  &.is-block {
     display: flex;
     width: 100%;
   }
 
-  .button__icon {
+  .button_icon {
     width: 24px;
 
     &:first-child:not(:last-child) {

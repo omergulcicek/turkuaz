@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 16px;
 
-  &.form-loading {
+  &.has-loading {
     &:after {
       animation: spinAround .5s infinite linear;
       border: 2px solid $border;
@@ -22,30 +22,31 @@
     }
   }
 
-  &.form-icon {
+  &.has-icon {
     .input {
       padding-left: 40px;
       
-      + .icon {
+      + .input-icon {
         color: $dark-grey;
+        display: inline-block;
         font-size: 16px;
         left: 12px;
         position: absolute;
         text-align: center;
-        top: 12px;
+        top: 6px;
         transition: 0.1s ease-out;
         width: 16px;
       }
 
       &:focus {
-        +.icon {
+        + .input-icon {
           color: $black;
         }
       }
     }
 
-    label + .input + .icon {
-      top: 40px;
+    label + .input + .input-icon {
+      top: 33px;
     }
   }
 }
@@ -80,35 +81,35 @@
     color: $dark-grey;
   }
 
-  &.valid,
-  &.invalid {
+  &.is-valid,
+  &.is-invalid {
     background-repeat: no-repeat;
     background-position: center right 12px;
     background-size: 16px;
     padding-right: 40px;
   }
 
-  &.valid {
+  &.is-valid {
     border-color: $success;
     box-shadow: 0 0 0 3px rgba($success,0.25);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2323d160' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
 
-    + .text {
+    + .input-text {
       color: $success;
     }
   }
 
-  &.invalid {
+  &.is-invalid {
     border-color: $danger;
     box-shadow: 0 0 0 3px rgba($danger,0.25);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f44336' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23f44336' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
 
-    + .text {
+    + .input-text {
       color: $danger;
     }
   }
 
-  + .text {
+  + .input-text {
     color: $dark-grey;
     display: block;
     margin-top: 4px;
@@ -170,6 +171,7 @@
   transition: box-shadow .2s ease;
   width: 100%;
   -webkit-appearance: none;
+
   &:focus {
     box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
   }
@@ -198,6 +200,7 @@
     display: inline-block;
     padding-left: 24px;
     position: relative;
+    
     &::before {
       background-color: $white;
       border: 1px solid $border;
