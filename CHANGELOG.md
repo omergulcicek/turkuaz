@@ -1,3 +1,7 @@
+## 0.14.0
+
+* Güncellendi : Sınıf isimlendirmelerinde BEM standartı kaldırıldı, `_child`, `is-` ve `has-` kalıbı kullanılacak.
+
 ## 0.13.0
 
 * Eklendi     : `_delete.scss` eklendi.
