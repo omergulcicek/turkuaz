@@ -93,7 +93,7 @@ blockquote,
   &:not(:last-of-type) {
     margin-bottom: 0;
   }
-  &__footer {
+  &_footer {
     color: $dark-grey;
     font-size: 80%;
     &::before {
