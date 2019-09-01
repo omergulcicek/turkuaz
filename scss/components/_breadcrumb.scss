@@ -1,0 +1,33 @@
+.breadcrumb {
+  li {
+    display: inline-block;
+    font-size: 16px;
+    list-style: none;
+    white-space: nowrap;
+    &:not(:first-child) {
+      &::before {
+        color: $border;
+        content: "/";
+        padding-left: 4px;
+        padding-right: 8px;
+      }
+    }
+    &:last-child {
+      cursor: text;
+      a {
+        color: inherit;
+        pointer-events: none;
+      }
+    }
+  }
+  &.is-small {
+    li {
+      font-size: 12px;
+    }
+  }
+  &.is-large {
+    li {
+      font-size: 20px;
+    }
+  }
+}
