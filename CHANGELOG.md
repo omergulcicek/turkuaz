@@ -1,3 +1,7 @@
+## 0.15.0
+
+* Eklendi     : `_breadcrumb.scss` eklendi.
+
 ## 0.14.0
 
 * Güncellendi : Sınıf isimlendirmelerinde BEM standartı kaldırıldı, `_child`, `is-` ve `has-` kalıbı kullanılacak.
