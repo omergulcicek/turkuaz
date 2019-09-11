@@ -1,3 +1,7 @@
+## 0.15.1
+
+* Güncellendi : Linklerin `:focus`unda `outline` yerine `box-shadow` kullanılacak.
+
 ## 0.15.0
 
 * Eklendi     : `_breadcrumb.scss` eklendi.
