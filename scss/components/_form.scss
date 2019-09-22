@@ -5,7 +5,7 @@
   &.has-loading {
     &:after {
       animation: spinAround .5s infinite linear;
-      border: 2px solid $border;
+      border: 2px solid $grey;
       border-radius: 100%;
       border-right-color: transparent;
       border-top-color: transparent;
@@ -27,7 +27,7 @@
       padding-left: 40px;
       
       + .input-icon {
-        color: $dark-grey;
+        color: $grey-dark;
         display: inline-block;
         font-size: 16px;
         left: 12px;
@@ -40,7 +40,7 @@
 
       &:focus {
         + .input-icon {
-          color: $black;
+          color: $text;
         }
       }
     }
@@ -53,12 +53,12 @@
 
 .input {
   background-color: $white;
-  border: 1px solid $border;
-  border-radius: 4px;
-  color: $black;
+  border: $border;
+  border-radius: $radius;
+  color: $text;
   display: block;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: $weight-normal;
   line-height: 30px;
   outline: none;
   padding: 4px 12px;
@@ -70,7 +70,7 @@
   }
 
   &[disabled] {
-    background-color: $grey;
+    background-color: $grey-light;
     box-shadow: none;
     cursor: default;
     opacity: 0.5;
@@ -78,7 +78,7 @@
   }
 
   &::placeholder {
-    color: $dark-grey;
+    color: $grey-dark;
   }
 
   &.is-valid,
@@ -91,8 +91,11 @@
 
   &.is-valid {
     border-color: $success;
-    box-shadow: 0 0 0 3px rgba($success,0.25);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2323d160' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($success,0.25);
+    }
 
     + .input-text {
       color: $success;
@@ -101,8 +104,11 @@
 
   &.is-invalid {
     border-color: $danger;
-    box-shadow: 0 0 0 3px rgba($danger,0.25);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f44336' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23f44336' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($danger,0.25);
+    }
 
     + .input-text {
       color: $danger;
@@ -110,7 +116,7 @@
   }
 
   + .input-text {
-    color: $dark-grey;
+    color: $grey-dark;
     display: block;
     margin-top: 4px;
   }
@@ -123,12 +129,12 @@
 
 .textarea {
   background-color: $white;
-  border: 1px solid $border;
-  border-radius: 4px;
-  color: $black;
+  border: $border;
+  border-radius: $radius;
+  color: $text;
   display: block;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: $weight-normal;
   line-height: 1.75;
   min-height: 80px;
   outline: none;
@@ -138,11 +144,11 @@
   width: 100%;
   
   &:focus {
-    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    box-shadow: $shadow;
   }
 
   &[disabled] {
-    background-color: $grey;
+    background-color: $grey-light;
     box-shadow: none;
     cursor: default;
     opacity: 0.5;
@@ -150,19 +156,19 @@
   }
 
   &::placeholder {
-    color: $dark-grey;
+    color: $grey-dark;
   }
 }
 
 .select {
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23757575' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 12px center/8px 10px;
   background-color: $white;
-  border: 1px solid $border;
-  border-radius: 4px;
-  color: $black;
+  border: $border;
+  border-radius: $radius;
+  color: $text;
   display: block;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: $weight-normal;
   height: 40px;
   outline: none;
   padding-left: 12px;
@@ -173,11 +179,11 @@
   -webkit-appearance: none;
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    box-shadow: $shadow;
   }
 
   &[disabled] {
-    background-color: $grey;
+    background-color: $grey-light;
     box-shadow: none;
     cursor: default;
     opacity: 0.5;
@@ -185,7 +191,7 @@
   }
 
   &::placeholder {
-    color: $dark-grey;
+    color: $grey-dark;
   }
 }
 
@@ -203,8 +209,8 @@
     
     &::before {
       background-color: $white;
-      border: 1px solid $border;
-      border-radius: 4px;
+      border: $border;
+      border-radius: $radius;
       content: "";
       display: block;
       height: 16px;
@@ -227,11 +233,11 @@
 
   &[disabled] {
     & + span {
-      color: $dark-grey;
+      color: $grey-dark;
       cursor: default;
 
       &::before {
-        background-color: $grey;
+        background-color: $grey-light;
         opacity: .5;
       }
     }
@@ -295,7 +301,7 @@
 
     &::before {
       background-color: $white;
-      border: 1px solid $border;
+      border: $border;
       border-radius: 32px;
       content: "";
       display: inline-block;
@@ -308,7 +314,7 @@
 
     &::after {
       background-color: $white;
-      border: 1px solid $border;
+      border: $border;
       border-radius: 100%;
       content: "";
       display: inline-block;
@@ -331,11 +337,11 @@
 
   &[disabled] {
     & + span {
-      color: $dark-grey;
+      color: $grey-dark;
       cursor: default;
 
       &::before {
-        background-color: $grey;
+        background-color: $grey-light;
         opacity: .5;
       }
     }

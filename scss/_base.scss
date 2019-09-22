@@ -10,21 +10,21 @@
 }
 
 html {
-  background-color: $white;
+  background-color: $body-background-color;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Open Sans";
-  font-size: 16px;
+  font-family: $body-family;
+  font-size: $body-size;
   font-variant-ligatures: common-ligatures;
-  font-weight: 400;
+  font-weight: $weight-normal;
   line-height: 1.75;
-  min-width: 320px;
+  min-width: $body-min-width;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  color: $black;
+  color: $body-color;
   margin: 0;
 }
 
@@ -76,7 +76,7 @@ dl {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: $weight-bold;
 }
 
 dd {
@@ -100,7 +100,7 @@ blockquote,
   }
 
   &_footer {
-    color: $dark-grey;
+    color: $grey-dark;
     font-size: 80%;
 
     &::before {
@@ -133,8 +133,8 @@ samp {
 }
 
 pre {
-  background-color: $grey;
-  border-radius: 4px;
+  background-color: $grey-light;
+  border-radius: $radius;
   color: inherit;
   font-size: 85%;
   margin-bottom: 16px;
@@ -153,7 +153,7 @@ pre {
 
 kbd {
   background-color: $black;
-  border-radius: 4px;
+  border-radius: $radius;
   color: $white;
   font-size: 85%;
   padding: 4px 8px;
@@ -166,7 +166,7 @@ svg {
 
 b,
 strong {
-  font-weight: 700;
+  font-weight: $weight-bold;
 }
 
 i,
@@ -182,7 +182,7 @@ mark {
 
 small {
   font-size: 80%;
-  font-weight: 400;
+  font-weight: $weight-normal;
 }
 
 figure {
@@ -193,7 +193,7 @@ figure {
 caption,
 figcaption {
   caption-side: bottom;
-  color: $dark-grey;
+  color: $grey-dark;
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: left;
@@ -217,7 +217,7 @@ a {
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    box-shadow: $shadow;
     outline: none;
   }
 
@@ -252,56 +252,56 @@ p {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 400;
+  font-weight: $weight-normal;
   margin-bottom: 8px;
   margin-top: 0;
 }
 
 h1, .h1 {
-  font-size: 40px;
+  font-size: $header-1;
 }
 
 h2, .h2 {
-  font-size: 32px;
+  font-size: $header-2;
 }
 
 h3, .h3 {
-  font-size: 28px;
+  font-size: $header-3;
 }
 
 h4, .h4 {
-  font-size: 24px;
+  font-size: $header-4;
 }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: $header-5;
 }
 
 h6, .h6 {
-  font-size: 16px;
+  font-size: $header-6;
 }
 
 .display-1,
 .display-2,
 .display-3,
 .display-4 {
-  font-weight: 300;
+  font-weight: $weight-light;
   line-height: 1.5;
   margin-bottom: 8px;
 }
 
 .display-1 {
-  font-size: 60px;
+  font-size: $display-1;
 }
 
 .display-2 {
-  font-size: 48px;
+  font-size: $display-2;
 }
 
 .display-3 {
-  font-size: 36px;
+  font-size: $display-3;
 }
 
 .display-4 {
-  font-size: 26px;
+  font-size: $display-4;
 }

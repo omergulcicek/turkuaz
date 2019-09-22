@@ -1,12 +1,12 @@
 .button {
   align-items: center;
   background-color: $white;
-  border: 1px solid $border;
-  border-radius: 4px;
-  color: $black;
+  border: $border;
+  border-radius: $radius;
+  color: $text;
   cursor: pointer;
   display: inline-flex;
-  font-weight: normal;
+  font-weight: $weight-normal;
   font-size: 14px;
   justify-content: center;
   margin-bottom: 8px;
@@ -22,14 +22,14 @@
   user-select: none;
 
   &:hover {
-    border-color: darken($border, 15%);
+    border-color: darken($grey, 15%);
     text-decoration: none;
   }
 
   &:focus:not(.is-link),
   &:active:not(.is-link) {
-    border-color: $border;
-    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    border-color: $grey;
+    box-shadow: $shadow;
   }
 
   &.is-primary,
@@ -53,7 +53,7 @@
   }
 
   &.is-outline {
-    border: 1px solid $border;
+    border: $border;
     padding-bottom: 7px;
     padding-top: 7px;
   }
@@ -88,22 +88,22 @@
   }
 
   &.is-secondary {
-    background-color: $grey;
+    background-color: $secondary;
 
     &:not([disabled]):hover {
-      background-color: darken($grey, 5%);
+      background-color: darken($secondary, 5%);
     }
 
     &:not([disabled]):active {
-      background-color: darken($grey, 10%);
+      background-color: darken($secondary, 10%);
     }
 
     &.is-outline {
       background-color: transparent;
-      border-color: $border;
+      border-color: $grey;
 
       &:hover {
-        background-color: $grey;
+        background-color: $secondary;
         border-color: $grey;
       }
     }
@@ -231,7 +231,7 @@
     }
 
     &:not([disabled]):active {
-      background-color: $grey;
+      background-color: $grey-light;
     }
   }
 
