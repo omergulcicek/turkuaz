@@ -1,3 +1,7 @@
+## 0.16.0
+
+* Güncellendi : Tüm değişkenler `_variables` içerisinde tanımlandı.
+
 ## 0.15.1
 
 * Güncellendi : Linklerin `:focus`unda `outline` yerine `box-shadow` kullanılacak.

@@ -1,38 +1,12 @@
 ﻿/*!
- * Turkuaz Css - v0.15.1
+ * Turkuaz Css - v0.16.0
  * https://turkuazcss.com/
  * Copyright 2016-2019 Ömer Gülçiçek
  * MIT License
  */
 
- @import "scss/variables";
- @import "scss/base";
-
- @import "scss/layout/grid";
- @import "scss/layout/media";
-
- @import "scss/components/alert";
- @import "scss/components/badge";
- @import "scss/components/breadcrumb";
- @import "scss/components/box";
- @import "scss/components/button";
- @import "scss/components/card";
- @import "scss/components/delete";
- @import "scss/components/dropdown";
- @import "scss/components/form";
- @import "scss/components/list";
- @import "scss/components/menu";
- @import "scss/components/modal";
- @import "scss/components/navbar";
- @import "scss/components/pagination";
- @import "scss/components/progress";
- @import "scss/components/table";
- @import "scss/components/tag";
- @import "scss/components/tooltip";
- 
- @import "scss/helpers/border";
- @import "scss/helpers/display";
- @import "scss/helpers/embed";
- @import "scss/helpers/flex";
- @import "scss/helpers/spacing";
- @import "scss/helpers/text";
+@import "scss/variables";
+@import "scss/base";
+@import "scss/layout/all";
+@import "scss/components/all";
+@import "scss/helpers/all";
