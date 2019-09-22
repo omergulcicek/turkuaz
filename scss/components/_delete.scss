@@ -36,7 +36,7 @@
   
   &:focus,
   &:active {
-    box-shadow: 0 0 0 3px rgba(0, 209, 178, 0.25);
+    box-shadow: $shadow;
   }
   &.is-small {
     height: 16px;

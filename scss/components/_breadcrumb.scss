@@ -1,12 +1,12 @@
 .breadcrumb {
   li {
     display: inline-block;
-    font-size: 16px;
+    font-size: $font-size;
     list-style: none;
     white-space: nowrap;
     &:not(:first-child) {
       &::before {
-        color: $border;
+        color: $grey;
         content: "/";
         padding-left: 4px;
         padding-right: 8px;
