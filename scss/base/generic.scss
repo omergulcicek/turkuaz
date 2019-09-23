@@ -84,8 +84,7 @@ dd {
   margin-left: 0;
 }
 
-blockquote,
-.blockquote  {
+blockquote  {
   font-size: 20px;
   margin: 0 0 16px;
   padding: 16px 32px;
@@ -99,7 +98,7 @@ blockquote,
     margin-bottom: 0;
   }
 
-  &_footer {
+  footer {
     color: $grey-dark;
     font-size: 80%;
 
@@ -250,58 +249,37 @@ p {
   }
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $weight-normal;
   margin-bottom: 8px;
   margin-top: 0;
 }
 
-h1, .h1 {
+h1 {
   font-size: $header-1;
 }
 
-h2, .h2 {
+h2 {
   font-size: $header-2;
 }
 
-h3, .h3 {
+h3 {
   font-size: $header-3;
 }
 
-h4, .h4 {
+h4 {
   font-size: $header-4;
 }
 
-h5, .h5 {
+h5 {
   font-size: $header-5;
 }
 
-h6, .h6 {
+h6 {
   font-size: $header-6;
-}
-
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
-  font-weight: $weight-light;
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-
-.display-1 {
-  font-size: $display-1;
-}
-
-.display-2 {
-  font-size: $display-2;
-}
-
-.display-3 {
-  font-size: $display-3;
-}
-
-.display-4 {
-  font-size: $display-4;
 }

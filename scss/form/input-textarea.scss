@@ -1,0 +1,81 @@
+%input-textarea {
+  background-color: $white;
+  border: $border;
+  border-radius: $radius;
+  color: $text;
+  display: block;
+  font-size: 14px;
+  font-weight: $weight-normal;
+  outline: none;
+  padding: 4px 12px;
+  transition: box-shadow .2s ease;
+  width: 100%;
+
+  &:focus {
+    box-shadow: $shadow;
+  }
+
+  &[disabled] {
+    background-color: $grey-light;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &::placeholder {
+    color: $grey-dark;
+  }
+}
+
+.input {
+  @extend %input-textarea;
+  line-height: 30px;
+
+  &.is-valid,
+  &.is-invalid {
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+
+  &.is-valid {
+    border-color: $success;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2323d160' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($success,0.25);
+    }
+
+    + .input-text {
+      color: $success;
+    }
+  }
+
+  &.is-invalid {
+    border-color: $danger;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f44336' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23f44336' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($danger,0.25);
+    }
+
+    + .input-text {
+      color: $danger;
+    }
+  }
+
+  + .input-text {
+    color: $grey-dark;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.textarea {
+  @extend %input-textarea;
+  line-height: 1.75;
+  min-height: 80px;
+  resize: vertical;
+}

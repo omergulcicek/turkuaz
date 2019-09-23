@@ -1,0 +1,70 @@
+.switch {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+
+  & + span {
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      background-color: $white;
+      border: $border;
+      border-radius: 32px;
+      content: "";
+      display: inline-block;
+      height: 24px;
+      position: relative;
+      transition: .2s ease;
+      top: 6px;
+      width: 48px;
+    }
+
+    &::after {
+      background-color: $white;
+      border: $border;
+      border-radius: 100%;
+      content: "";
+      display: inline-block;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      top: -1px;
+      transition: .2s ease;
+      width: 24px;
+    }
+  }
+
+  &:focus {
+    & + span {
+      &::before {
+        box-shadow: 0 0 0 3px rgba($primary,.25);
+      }
+    }
+  }
+
+  &[disabled] {
+    & + span {
+      color: $grey-dark;
+      cursor: default;
+
+      &::before {
+        background-color: $grey-light;
+        opacity: .5;
+      }
+    }
+  }
+
+  &:checked {
+    & + span {
+      &::before {
+        background-color: $primary;
+        border-color: $primary;
+      }
+      
+      &::after {
+        left: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.select {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23757575' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 12px center/8px 10px;
+  background-color: $white;
+  border: $border;
+  border-radius: $radius;
+  color: $text;
+  display: block;
+  font-size: 14px;
+  font-weight: $weight-normal;
+  height: 40px;
+  outline: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  resize: vertical;
+  transition: box-shadow .2s ease;
+  width: 100%;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow: $shadow;
+  }
+
+  &[disabled] {
+    background-color: $grey-light;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &::placeholder {
+    color: $grey-dark;
+  }
+}
