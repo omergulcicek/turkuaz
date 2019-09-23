@@ -1,3 +1,7 @@
+## 0.17.1
+
+* Güncellendi : Klasör yapısı baştan ele alıntı. Yeni elementler eklendi.
+
 ## 0.17.0
 
 * Eklendi     : `_box.scss` eklendi.

@@ -1,5 +1,4 @@
 // Colors 
-
 $black        : #191919 !default;
 $grey-dark    : #757575 !default;
 $grey         : #bdbdbd !default;
@@ -23,7 +22,6 @@ $danger       : $red        !default;
 $info         : $blue       !default;
 
 // Typography
-
 $font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Open Sans" !default;
 $font-size              : 16px !default;
 $header-1               : 40px !default;
@@ -32,10 +30,10 @@ $header-3               : 28px !default;
 $header-4               : 24px !default;
 $header-5               : 20px !default;
 $header-6               : 16px !default;
-$display-1              : 60px !default;
-$display-2              : 48px !default;
-$display-3              : 36px !default;
-$display-4              : 26px !default;
+$title-1                : 60px !default;
+$title-2                : 48px !default;
+$title-3                : 36px !default;
+$title-4                : 26px !default;
 $weight-light           : 300  !default;
 $weight-normal          : 400  !default;
 $weight-medium          : 500  !default;
@@ -43,7 +41,6 @@ $weight-semibold        : 600  !default;
 $weight-bold            : 700  !default;
 
 // Breakpoints
-
 $phone                  : 599px  !default;
 $tablet                 : 600px  !default;
 $tablet-landscape       : 900px  !default;

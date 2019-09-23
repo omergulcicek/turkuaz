@@ -1,0 +1,21 @@
+.title {
+  font-weight: $weight-light;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  
+  &.is-1 {
+    font-size: $title-1;
+  }
+
+  &.is-2 {
+    font-size: $title-2;
+  }
+
+  &.is-3 {
+    font-size: $title-3;
+  }
+
+  &.is-4 {
+    font-size: $title-4;
+  }
+}
