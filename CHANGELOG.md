@@ -1,3 +1,7 @@
+## 0.18.1
+
+* Güncellendi : `_range.scss`e `:active` kodları eklendi.
+
 ## 0.18.0
 
 * Eklendi     : `_range.scss` eklendi.
