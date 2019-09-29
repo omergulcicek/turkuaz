@@ -1,0 +1,33 @@
+.range {
+  margin: 16px 0;
+  width: 100%;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      box-shadow: $shadow;
+    }
+  }
+  
+  &::-webkit-slider-runnable-track {
+    background: $grey-light;
+    border-radius: $radius;
+    cursor: pointer;
+    height: 8px;
+    width: 100%;
+  }
+
+  &::-webkit-slider-thumb {
+    background: $white;
+    border: $border;
+    border-radius: $radius;
+    cursor: pointer;
+    height: 16px;
+    margin-top: -4px;
+    width: 16px;
+    -webkit-appearance: none;
+  }
+
+}
