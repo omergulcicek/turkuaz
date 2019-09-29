@@ -11,6 +11,12 @@
     }
   }
   
+  &:active {
+    &::-webkit-slider-thumb {
+      transform: scale(1.2)
+    }
+  }
+  
   &::-webkit-slider-runnable-track {
     background: $grey-light;
     border-radius: $radius;
