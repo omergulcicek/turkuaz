@@ -1,3 +1,7 @@
+## 0.18.0
+
+* Eklendi     : `_range.scss` eklendi.
+
 ## 0.17.1
 
 * Güncellendi : Klasör yapısı baştan ele alıntı. Yeni elementler eklendi.
