@@ -1,3 +1,7 @@
+## 0.19.0
+
+* Eklendi     : `_pagination.scss` eklendi.
+
 ## 0.18.1
 
 * Güncellendi : `_range.scss`e `:active` kodları eklendi.

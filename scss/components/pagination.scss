@@ -1,0 +1,44 @@
+.pagination {
+  background-color: #fff;
+  display: block;
+  margin-bottom: 16px;
+
+  a {
+    border: $border;
+    border-radius: $radius;
+    color: $black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 32px;
+    padding: 4px 8px;
+    text-align: center;
+    transition: 0.1s ease-out;
+    user-select: none;
+
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      border-color: darken($grey, 15%);
+      text-decoration: none;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: $shadow;
+    }
+
+    &.is-current {
+      background-color: $primary;
+      color: $white;
+    }
+
+    &[disabled] {
+      color: $grey;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+}
