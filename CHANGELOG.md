@@ -1,3 +1,7 @@
+## 0.20.0
+
+* Eklendi     : `_divider.scss` eklendi.
+
 ## 0.19.0
 
 * Eklendi     : `_pagination.scss` eklendi.

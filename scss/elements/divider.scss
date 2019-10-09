@@ -1,0 +1,32 @@
+.divider {
+  background-color: darken($grey-light, 10%);
+  display: block;
+  height: 2px;
+  margin: 32px 0;
+  text-align: center;
+
+  &[data-content]::after {
+    background-color: $white;
+    content: attr(data-content);
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 12px;
+    transform: translateY(-16px)
+  }
+
+  &.is-vertical {
+    height: auto;
+    margin: 0 48px;
+    min-height: 32px;
+    position: relative;
+    width: 2px;
+
+    &[data-content]::after {
+      position: absolute;
+      left: 50%;
+      padding: 0;
+      transform: translateX(-50%) translateY(-50%);
+      top: 50%;
+    }
+  }
+}
