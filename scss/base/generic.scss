@@ -19,6 +19,7 @@ html {
   line-height: 1.75;
   min-width: $body-min-width;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
 }
@@ -230,6 +231,10 @@ a {
       color: inherit;
       text-decoration: none;
     }
+  }
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto
   }
 
   b,
