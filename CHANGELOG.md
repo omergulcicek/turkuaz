@@ -1,3 +1,7 @@
+## 0.20.1
+
+* Güncellendi : `scroll-behavior` ve `text-decoration-skip-ink` eklendi.
+
 ## 0.20.0
 
 * Eklendi     : `_divider.scss` eklendi.
