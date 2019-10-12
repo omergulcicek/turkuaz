@@ -39,7 +39,7 @@ npm install turkuaz
 
 ## 💭 Sürümler
 
-**Mevcut Sürüm : v0.20.1** - *Geliştirme Aşamasında*
+**Mevcut Sürüm : v0.21.0** - *Geliştirme Aşamasında*
 
 Eski sürümleri incelemek ve indirmek için [release](https://github.com/omergulcicek/turkuaz/releases) sayfasını inceleyebilirsiniz.
 
