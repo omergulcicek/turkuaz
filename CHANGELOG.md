@@ -1,3 +1,7 @@
+## 0.22.0
+
+* Eklendi     : `_tooltip.scss` eklendi.
+
 ## 0.21.0
 
 * Eklendi     : `_list.scss` ve `$grey-lighter` rengi eklendi.

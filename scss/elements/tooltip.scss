@@ -1,0 +1,74 @@
+.tooltip {
+  position: relative;
+
+  &::before,
+  &::after {
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: auto;
+    transition: .1s;
+    z-index: 1;
+  }
+
+  &::before {
+    background-color: $black;
+    border-radius: $radius;
+    color: $white;
+    content: attr(data-content);
+    font-size: 12px;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 8px;
+    text-overflow: ellipsis;
+    transform: translate(-50%, -8px);
+    white-space: nowrap;
+  }
+
+  &::after {
+    border: 5px solid transparent;
+    border-top-color: $black;
+    bottom: auto;
+    content: "";
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -8px;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: .9;
+  }
+
+  &.is-bottom {
+    &::before {
+      bottom: auto;
+      top: 100%;
+      transform: translate(-50%, 8px);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: translate(-50%, calc(100% + -2px)) rotate(180deg);
+      top: auto;
+    }
+  }
+
+  &.is-multiline {
+    &::before {
+      min-width: 280px;
+      text-overflow: clip;
+      white-space: normal;
+      word-break: keep-all;
+    }
+
+    &.is-bottom {
+      &::before {
+        top: 100%;
+        transform: translate(-50%, 8px);
+      }
+    }
+  }
+}
