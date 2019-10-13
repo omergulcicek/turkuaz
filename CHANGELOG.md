@@ -1,3 +1,8 @@
+## 0.21.0
+
+* Eklendi     : `_list.scss` ve `$grey-lighter` rengi eklendi.
+* Güncellendi : `$grey-light` -> `$grey-lighter`.
+
 ## 0.20.1
 
 * Güncellendi : `scroll-behavior` ve `text-decoration-skip-ink` eklendi.
