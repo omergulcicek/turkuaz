@@ -2,3 +2,10 @@
   from  { transform: rotate(0) }
   to    { transform: rotate(359deg) }
 }
+
+@keyframes modal {
+  0%    { transform: translate(-50%, -50%) scale(.7) }
+  45%   { transform: translate(-50%, -50%) scale(1.05) }
+  80%   { transform: translate(-50%, -50%) scale(.95) }
+  100%  { transform: translate(-50%, -50%) scale(1) }
+}
