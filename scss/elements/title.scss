@@ -3,19 +3,19 @@
   line-height: 1.5;
   margin-bottom: 8px;
   
-  &.is-1 {
+  &.is-size-1 {
     font-size: $title-1;
   }
 
-  &.is-2 {
+  &.is-size-2 {
     font-size: $title-2;
   }
 
-  &.is-3 {
+  &.is-size-3 {
     font-size: $title-3;
   }
 
-  &.is-4 {
+  &.is-size-4 {
     font-size: $title-4;
   }
 }
