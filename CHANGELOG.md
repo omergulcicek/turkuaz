@@ -1,3 +1,8 @@
+## 0.23.0
+
+* Eklendi     : `_modal.scss`, `_overlay.scss` ve `_helper.scss` eklendi.
+* Güncellendi : `html` kodları `body`e taşındı.
+
 ## 0.22.0
 
 * Eklendi     : `_tooltip.scss` eklendi.

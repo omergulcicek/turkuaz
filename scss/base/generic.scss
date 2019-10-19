@@ -9,7 +9,8 @@
   color: $white;
 }
 
-html {
+body {
+  color: $body-color;
   background-color: $body-background-color;
   box-sizing: border-box;
   font-family: $body-family;
@@ -17,16 +18,12 @@ html {
   font-variant-ligatures: common-ligatures;
   font-weight: $weight-normal;
   line-height: 1.75;
+  margin: 0;
   min-width: $body-min-width;
   overflow-x: hidden;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  color: $body-color;
-  margin: 0;
 }
 
 [tabindex="-1"]:focus {
