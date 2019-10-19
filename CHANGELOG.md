@@ -1,3 +1,8 @@
+## 0.24.0
+
+* Eklendi     : `_display.scss` eklendi.
+* Güncellendi : `.is-1` -> `.is-size-1`.
+
 ## 0.23.0
 
 * Eklendi     : `_modal.scss`, `_overlay.scss` ve `_helper.scss` eklendi.
