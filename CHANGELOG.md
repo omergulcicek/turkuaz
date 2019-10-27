@@ -1,6 +1,10 @@
+## 0.27.0
+
+* Eklendi     : `_dropdown.scss` eklendi.
+
 ## 0.26.0
 
-* Eklendi     : `_embed_.scss` eklendi.
+* Eklendi     : `_embed.scss` eklendi.
 
 ## 0.25.0
 
