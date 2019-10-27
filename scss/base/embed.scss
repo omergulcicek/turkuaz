@@ -1,0 +1,26 @@
+.embed {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+
+  embed,
+  iframe,
+  object,
+  video {
+    border: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+}

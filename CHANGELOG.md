@@ -1,3 +1,7 @@
+## 0.26.0
+
+* Eklendi     : `_embed_.scss` eklendi.
+
 ## 0.25.0
 
 * Eklendi     : `_border.scss` eklendi.
