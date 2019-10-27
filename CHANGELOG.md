@@ -1,3 +1,7 @@
+## 0.23.1
+
+* Güncellendi : `modal` konumu düzeltildi.
+
 ## 0.23.0
 
 * Eklendi     : `_modal.scss`, `_overlay.scss` ve `_helper.scss` eklendi.
