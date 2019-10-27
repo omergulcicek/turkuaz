@@ -1,6 +1,11 @@
-## 0.23.1
+## 0.24.1
 
 * Güncellendi : `modal` konumu düzeltildi.
+
+## 0.24.0
+
+* Eklendi     : `_display.scss` eklendi.
+* Güncellendi : `.is-1` -> `.is-size-1`.
 
 ## 0.23.0
 
