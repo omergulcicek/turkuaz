@@ -7,13 +7,14 @@
   display: none;
   font-family: $font-family;
   font-size: $font-size;
+  left: calc(-50vw + 50%);
   margin: auto;
-  left: 50%;
   padding: 24px;
   position: fixed;
+  right: calc(-50vw + 50%);
   text-align: center;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   width: 400px;
   z-index: 5;
 

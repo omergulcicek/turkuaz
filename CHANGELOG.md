@@ -1,3 +1,7 @@
+## 0.24.1
+
+* Güncellendi : `modal` konumu düzeltildi.
+
 ## 0.24.0
 
 * Eklendi     : `_display.scss` eklendi.
