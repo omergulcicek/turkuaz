@@ -1,0 +1,43 @@
+.border {
+  border: $border;
+
+  &.is-primary {
+    border-color: $primary;
+  }
+
+  &.is-secondary {
+    border-color: $secondary;
+  }
+
+  &.is-success {
+    border-color: $success;
+  }
+
+  &.is-warning {
+    border-color: $warning;
+  }
+
+  &.is-danger {
+    border-color: $danger;
+  }
+
+  &.is-info {
+    border-color: $info;
+  }
+  
+  &.is-link {
+    border-color: $link;
+  }
+
+  &.is-rounded {
+    border-radius: $radius;
+  }
+
+  &.is-circle {
+    border-radius: 100%;
+  }
+}
+
+.no-border {
+  border: 0;
+}
