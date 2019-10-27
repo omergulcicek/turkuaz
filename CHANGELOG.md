@@ -1,3 +1,8 @@
+## 0.25.0
+
+* Eklendi     : `_border.scss` eklendi.
+* Güncellendi : Butonlarda `.is-round` -> `.is-circle`.
+
 ## 0.24.1
 
 * Güncellendi : `modal` konumu düzeltildi.

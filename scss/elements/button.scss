@@ -251,11 +251,11 @@
     padding: 11px 20px;
   }
 
-  &.is-round {
-    border-radius: 100px;
+  &.is-circle {
+    border-radius: 100%;
   }
 
-  &.is-round,
+  &.is-circle,
   &.is-square {
     height: 40px;
     min-width: initial;
@@ -263,13 +263,13 @@
     width: 40px;
   }
 
-  &.is-round.is-small,
+  &.is-circle.is-small,
   &.is-square.is-small {
     height: 32px;
     width: 32px;
   }
 
-  &.is-round.is-large,
+  &.is-circle.is-large,
   &.is-square.is-large {
     height: 48px;
     width: 48px;
