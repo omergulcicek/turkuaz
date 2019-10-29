@@ -1,39 +1,37 @@
 .divider {
-  background-color: $grey-light;
+  background-color: rgba($black, .1);
   display: block;
-  height: 2px;
-  margin: 32px 0;
+  height: 1px;
+  margin: 8px 0;
   text-align: center;
 
-  &[data-content]::after {
-    background-color: $white;
-    content: attr(data-content);
-    display: inline-block;
-    font-size: 12px;
-    padding: 0 12px;
-    transform: translateY(-16px)
+  &[data-content] {
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    &::after {
+      background-color: $white;
+      content: attr(data-content);
+      display: inline-block;
+      font-size: 12px;
+      padding: 0 12px;
+      transform: translateY(-16px)
+    }
   }
 
   &.is-vertical {
+    display: inline-block;
     height: auto;
-    margin: 0 48px;
-    min-height: 32px;
+    margin: 0 32px;
+    min-height: 40px;
     position: relative;
-    width: 2px;
+    width: 1px;
 
     &[data-content]::after {
       position: absolute;
       left: 50%;
-      padding: 0;
       transform: translateX(-50%) translateY(-50%);
       top: 50%;
     }
   }
-}
-
-.dropdown .divider {
-  background-color: $grey-light;
-  height: 1px;
-  margin-bottom: 8px;
-  margin-top: 8px;
 }
