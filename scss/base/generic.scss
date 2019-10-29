@@ -257,7 +257,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: $weight-normal;
+  font-weight: $weight-semibold;
+  line-height: 1;
   margin-bottom: 8px;
   margin-top: 0;
 }
