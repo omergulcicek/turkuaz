@@ -1,0 +1,89 @@
+.is-text-left {
+  text-align: left !important;
+}
+
+.is-text-center {
+  text-align: center !important;
+}
+
+.is-text-right {
+  text-align: right !important;
+}
+
+.is-text-justified {
+  text-align: justify !important;
+}
+
+.is-text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.is-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.is-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.is-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+@media (min-width: 576px) {
+  .is-text-left-sm {
+    text-align: left !important;
+  }
+  
+  .is-text-center-sm {
+    text-align: center !important;
+  }
+  
+  .is-text-right-sm {
+    text-align: right !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .is-text-left-md {
+    text-align: left !important;
+  }
+  
+  .is-text-center-md {
+    text-align: center !important;
+  }
+  
+  .is-text-right-md {
+    text-align: right !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .is-text-left-lg {
+    text-align: left !important;
+  }
+  
+  .is-text-center-lg {
+    text-align: center !important;
+  }
+  
+  .is-text-right-lg {
+    text-align: right !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .is-text-left-xl {
+    text-align: left !important;
+  }
+  
+  .is-text-center-xl {
+    text-align: center !important;
+  }
+  
+  .is-text-right-xl {
+    text-align: right !important;
+  }
+}
