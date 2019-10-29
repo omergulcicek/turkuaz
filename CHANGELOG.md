@@ -1,3 +1,8 @@
+## 0.30.0
+
+* Eklendi     : `_notification.scss` eklendi.
+* Güncellendi : `divider` renk ve boyutları güncellendi.
+
 ## 0.29.0
 
 * Eklendi     : `_text.scss` eklendi.
