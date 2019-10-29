@@ -1,3 +1,7 @@
+## 0.29.0
+
+* Eklendi     : `_text.scss` eklendi.
+
 ## 0.28.0
 
 * Eklendi     : `_media.scss` eklendi.
