@@ -1,3 +1,8 @@
+## 0.28.0
+
+* Eklendi     : `_media.scss` eklendi.
+* Güncellendi : Başlıkların yazı kalınlığı arttırıldı.
+
 ## 0.27.0
 
 * Eklendi     : `_dropdown.scss` eklendi.
