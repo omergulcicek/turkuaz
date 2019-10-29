@@ -1,0 +1,44 @@
+.notification {
+  background-color: $grey-lighter;
+  border-radius: $radius;
+  color: $text;
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  position: relative;
+
+  a:not(.button) {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  &.is-primary {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &.is-success {
+    background-color: $success;
+    color: $white;
+  }
+
+  &.is-danger {
+    background-color: $danger;
+    color: $white;
+  }
+
+  &.is-warning {
+    background-color: $warning;
+  }
+
+  &.is-info {
+    background-color: $info;
+    color: $white;
+  }
+
+  .delete {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+}
