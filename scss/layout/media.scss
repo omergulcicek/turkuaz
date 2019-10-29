@@ -1,0 +1,15 @@
+.media {
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+
+  > * {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  .media-content {
+    flex: 1;
+  }
+}
