@@ -1,3 +1,7 @@
+## 0.31.0
+
+* Eklendi     : `_progress.scss` eklendi.
+
 ## 0.30.0
 
 * Eklendi     : `_notification.scss` eklendi.
