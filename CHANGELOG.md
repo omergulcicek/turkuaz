@@ -1,3 +1,7 @@
+## 0.32.0
+
+* Eklendi     : `_card.scss` eklendi.
+
 ## 0.31.0
 
 * Eklendi     : `_progress.scss` eklendi.
