@@ -1,3 +1,7 @@
+## 0.33.0
+
+* Eklendi     : `_table.scss` eklendi.
+
 ## 0.32.0
 
 * Eklendi     : `_card.scss` eklendi.
