@@ -1,0 +1,54 @@
+.card {
+  background-color: $white;
+  border: $border;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  margin-bottom: 32px;
+  width: 100%;
+
+  &-image {
+    position: relative;
+
+    img {
+      border-radius: 4px 4px 0 0;
+      width: 100%;
+    }
+  }
+
+  &-content {
+    color: $text;
+    padding: 24px 24px 16px;
+  }
+
+  &.is-small {
+    margin-top: 16px;
+
+    .card-image {
+      padding-left: 5%;
+      padding-right: 5%; 
+
+      img {
+        border-radius: 4px;
+        margin-top: -16px;
+      }
+    }
+  }
+
+  &.is-large {
+    border: none;
+
+    .card-content {
+      border: $border;
+      border-top: 0;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .card-image {
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+}
