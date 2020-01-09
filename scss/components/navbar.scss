@@ -1,0 +1,46 @@
+.nav {
+  align-items: center;
+  background-color: $grey-lighter;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+
+  &_brand {
+    color: inherit;
+    display: inline-block;
+    margin-right: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  &_item {
+    color: $text;
+    padding: 8px 16px;
+
+    a {
+      color: inherit;
+      display: flex;
+
+      &[disabled] {
+        color: $grey;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+
+    &.dropdown {
+      padding-bottom: 4px;
+    }
+  }
+}
