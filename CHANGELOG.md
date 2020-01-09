@@ -1,3 +1,7 @@
+## 0.34.0
+
+* Eklendi     : `_navbar.scss` ve`dropdown`a `is-hoverable` özelliği eklendi.
+
 ## 0.33.0
 
 * Eklendi     : `_table.scss` eklendi.
