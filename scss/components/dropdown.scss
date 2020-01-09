@@ -3,7 +3,9 @@
   position: relative;
 
   &-trigger {
-    margin-bottom: 0;
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 4px;
 
     &::after {
       border-bottom: 0;
@@ -21,7 +23,6 @@
     border: $border;
     border-radius: $radius;
     display: none;
-    margin-top: 4px;
     min-width: 200px;
     padding-bottom: 8px;
     padding-top: 8px;
@@ -49,6 +50,12 @@
 
     &:focus {
       box-shadow: $shadow;
+    }
+  }
+
+  &.is-hoverable:hover {
+    .dropdown-menu {
+      display: block;
     }
   }
 }
