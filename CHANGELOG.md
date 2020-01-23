@@ -1,7 +1,10 @@
+## 0.35.0
+
+* Eklendi     : `_spacing.scss` eklendi.
+
 ## 0.34.1
 
 * Güncellendi : `_navbar.scss` kodları güncellendi.
-
 
 ## 0.34.0
 
