@@ -1,3 +1,7 @@
+## 0.35.2
+
+* Güncellendi : `switch` tasarımı küçültüldü.
+
 ## 0.35.1
 
 * Eklendi     : `checkbox` ve `radio`ya renk ve select tasarımları eklendi.
