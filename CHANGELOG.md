@@ -1,3 +1,7 @@
+## 0.35.4
+
+* Güncellendi : `code` tasarımı değiştirildi.
+
 ## 0.35.3
 
 * Güncellendi : `notification` renkleri değiştirildi.

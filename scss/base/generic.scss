@@ -129,6 +129,16 @@ samp {
   font-family: Consolas, monospace;
 }
 
+code {
+  background-color: $grey-lighter;
+  border: 1px solid $grey-light;
+  border-radius: $radius;
+  color: inherit;
+  font-size: 85%;
+  padding: 3px;
+  word-break: break-word;
+}
+
 pre {
   background-color: $grey-lighter;
   border-radius: $radius;
@@ -143,7 +153,10 @@ pre {
 
   code {
     background-color: transparent;
+    border: inherit;
+    border-radius: 0;
     color: currentColor;
+    font-size: inherit;
     padding: 0;
   }
 }
