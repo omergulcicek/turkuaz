@@ -1,3 +1,7 @@
+## 0.35.3
+
+* Güncellendi : `notification` renkleri değiştirildi.
+
 ## 0.35.2
 
 * Güncellendi : `switch` tasarımı küçültüldü.
