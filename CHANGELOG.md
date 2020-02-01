@@ -1,3 +1,8 @@
+## 0.35.1
+
+* Eklendi     : `checkbox` ve `radio`ya renk ve select tasarımları eklendi.
+* Kaldırıldı  : `button`tan `button_icon` kodu kaldırıldı.
+
 ## 0.35.0
 
 * Eklendi     : `_spacing.scss` eklendi.
