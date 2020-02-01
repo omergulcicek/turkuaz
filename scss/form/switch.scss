@@ -13,11 +13,11 @@
       border-radius: 32px;
       content: "";
       display: inline-block;
-      height: 24px;
+      height: 20px;
       position: relative;
       transition: .2s ease;
-      top: 6px;
-      width: 48px;
+      top: 5px;
+      width: 36px;
     }
 
     &::after {
@@ -26,12 +26,12 @@
       border-radius: 100%;
       content: "";
       display: inline-block;
-      height: 24px;
+      height: 18px;
       position: absolute;
-      left: 0;
-      top: -1px;
+      left: 1px;
+      top: 3px;
       transition: .2s ease;
-      width: 24px;
+      width: 18px;
     }
   }
 
@@ -63,7 +63,7 @@
       }
       
       &::after {
-        left: 24px;
+        left: 17px;
       }
     }
   }
