@@ -13,27 +13,28 @@
   }
 
   &.is-primary {
-    background-color: $primary;
-    color: $white;
+    background-color: lighten($primary, 25%);
+    color: darken($primary, 25%);
   }
 
   &.is-success {
-    background-color: $success;
-    color: $white;
+    background-color: lighten($success, 25%);
+    color: darken($success, 25%);
   }
 
   &.is-danger {
-    background-color: $danger;
-    color: $white;
+    background-color: lighten($danger, 25%);
+    color: darken($danger, 25%);
   }
 
   &.is-warning {
-    background-color: $warning;
+    background-color: lighten($warning, 25%);
+    color: darken($warning, 25%);
   }
 
   &.is-info {
-    background-color: $info;
-    color: $white;
+    background-color: lighten($info, 25%);
+    color: darken($info, 25%);
   }
 
   .delete {
