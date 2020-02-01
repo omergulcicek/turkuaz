@@ -279,18 +279,4 @@
     display: flex;
     width: 100%;
   }
-
-  .button_icon {
-    width: 24px;
-
-    &:first-child:not(:last-child) {
-      margin-left: -8px;
-      margin-right: 4px;
-    }
-
-    &:last-child:not(:first-child) {
-      margin-left: 4px;
-      margin-right: -8px;
-    }
-  }
 }
