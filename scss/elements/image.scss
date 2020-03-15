@@ -1,0 +1,50 @@
+.image {
+  position: relative;
+
+  &.is-16 {
+    height: 16px;
+    width: 16px;
+  }
+
+  &.is-24 {
+    height: 24px;
+    width: 24px;
+  }
+
+  &.is-32 {
+    height: 32px;
+    width: 32px;
+  }
+
+  &.is-48 {
+    height: 48px;
+    width: 48px;
+  }
+
+  &.is-64 {
+    height: 64px;
+    width: 64px;
+  }
+
+  &.is-96 {
+    height: 96px;
+    width: 96px;
+  }
+
+  &.is-128 {
+    height: 128px;
+    width: 128px;
+  }
+
+  &.is-rounded {
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}

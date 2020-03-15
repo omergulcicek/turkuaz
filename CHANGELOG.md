@@ -1,3 +1,7 @@
+## 0.36.0
+
+* Eklendi : `image` eklendi.
+
 ## 0.35.4
 
 * Güncellendi : `code` tasarımı değiştirildi.
