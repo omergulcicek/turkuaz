@@ -9,7 +9,6 @@
   font-weight: $weight-normal;
   font-size: 14px;
   justify-content: center;
-  margin-bottom: 8px;
   margin-right: 4px;
   min-width: 64px;
   outline: none;
@@ -247,12 +246,15 @@
   }
 
   &.is-large {
-    font-size: 16px;
     padding: 11px 20px;
   }
 
   &.is-circle {
     border-radius: 100%;
+  }
+
+  &.is-rounded {
+    border-radius: 50px;
   }
 
   &.is-circle,
