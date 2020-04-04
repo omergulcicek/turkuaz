@@ -1,3 +1,8 @@
+## 0.36.1
+
+* Eklendi     : `button`a `is-rounded` eklendi.
+* Güncellendi : `button`, `image` ve `modal` hata düzenlemeleri oldu.
+
 ## 0.36.0
 
 * Eklendi : `image` eklendi.
