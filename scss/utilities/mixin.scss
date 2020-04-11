@@ -1,0 +1,64 @@
+@mixin mediaBreakpoint($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+
+  @if $min != 0 {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}
+
+@mixin makeContainer($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include mediaBreakpoint($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+@mixin makeColumns($columns: $grid-columns, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $min: map-get($breakpoints, $breakpoint);
+    $val: if($min != 0, $min, null);
+    $class: if($val == null, "", "-#{$breakpoint}");
+
+    @include mediaBreakpoint($breakpoint, $breakpoints) {
+      .col#{$class}-auto {
+        flex: 0 0 auto;
+        width: auto
+      }
+
+      @for $i from 1 through $columns {
+        .col#{$class}-#{$i} {
+          flex: 0 0 auto;
+          width: percentage($i / $columns)
+        }
+      }
+
+      .order#{$class}-first {
+        order: -1
+      }
+
+      .order#{$class}-last {
+        order: 13
+      }
+      @for $i from 1 through $columns {
+        .order#{$class}-#{$i} {
+          order: $i
+        }
+      }
+
+      @for $i from 0 through ($columns - 1) {
+        @if not($class == "" and $i == 0) {
+          .offset#{$class}-#{$i} {
+            $num: $i / $columns;
+            margin-left: if($num == 0, 0, percentage($num));
+          }
+        }
+      }
+    }
+  }
+}

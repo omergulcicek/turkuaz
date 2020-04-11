@@ -41,12 +41,24 @@ $weight-medium          : 500  !default;
 $weight-semibold        : 600  !default;
 $weight-bold            : 700  !default;
 
-// Breakpoints
-$phone                  : 599px  !default;
-$tablet                 : 600px  !default;
-$tablet-landscape       : 900px  !default;
-$desktop                : 1200px !default;
-$widescreen             : 1800px !default;
+// Grid Layout
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$grid-columns           : 12 !default;
+$grid-gap               : 15px !default;
 
 // Generic
 $body-background-color  : $white        !default;
