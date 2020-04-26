@@ -8,7 +8,6 @@
   display: inline-flex;
   justify-content: center;
   font-size: 13px;
-  margin-bottom: 8px;
   margin-right: 4px;
   overflow: hidden;
   padding: 4px 8px;
@@ -43,5 +42,11 @@
     &:last-child:not(:first-child) {
       margin-left: 4px;
     }
+  }
+}
+
+.tags {
+  .tag {
+    margin-bottom: 8px
   }
 }
