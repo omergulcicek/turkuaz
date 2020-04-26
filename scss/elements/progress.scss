@@ -23,10 +23,6 @@
   &.is-large {
     height: 24px;
   }
-  
-  &.is-secondary::-webkit-progress-value {
-    background-color: $secondary;
-  }
 
   &.is-success::-webkit-progress-value {
     background-color: $success;
