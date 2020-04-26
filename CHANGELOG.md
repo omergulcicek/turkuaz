@@ -1,3 +1,9 @@
+## 0.38.0
+
+* Eklendi     : `tag`a `tags` kapsayıcısı eklendi. Container xs, max-width eklendi.
+* Güncellendi : Copyright 2020 yapıldı. Tabloda başlıklar sola dayandı.
+* Kaldırıldı  : `progress`tan `secondary` rengi ve `tooltip` opacity kaldırıldı.
+
 ## 0.37.0
 
 * Eklendi : `grid` eklendi.
