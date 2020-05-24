@@ -45,6 +45,7 @@
       .order#{$class}-last {
         order: 13
       }
+      
       @for $i from 1 through $columns {
         .order#{$class}-#{$i} {
           order: $i
