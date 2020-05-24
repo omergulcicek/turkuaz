@@ -1,3 +1,7 @@
+## 0.39.0
+
+* Eklendi : `flex` eklendi.
+
 ## 0.38.0
 
 * Eklendi     : `tag`a `tags` kapsayıcısı eklendi. Container xs, max-width eklendi.
