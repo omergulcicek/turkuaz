@@ -4,6 +4,7 @@
     font-size: $font-size;
     list-style: none;
     white-space: nowrap;
+
     &:not(:first-child) {
       &::before {
         color: $grey;
@@ -12,19 +13,23 @@
         padding-right: 8px;
       }
     }
+
     &:last-child {
       cursor: text;
+      
       a {
         color: inherit;
         pointer-events: none;
       }
     }
   }
+
   &.is-small {
     li {
       font-size: 12px;
     }
   }
+
   &.is-large {
     li {
       font-size: 20px;
