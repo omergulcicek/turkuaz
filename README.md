@@ -39,7 +39,7 @@ npm install turkuaz
 
 ## 💭 Sürümler
 
-**Mevcut Sürüm : v0.39.0** - *Geliştirme Aşamasında*
+**Mevcut Sürüm : v0.39.1** - *Geliştirme Aşamasında*
 
 Eski sürümleri incelemek ve indirmek için [release](https://github.com/omergulcicek/turkuaz/releases) sayfasını inceleyebilirsiniz.
 
@@ -64,7 +64,7 @@ Turkuaz Css'in gelişimine destek olmak için [issue sayfası](https://github.co
 
 ## 📝 Lisans
 
-Telif Hakkı © 2019 [Ömer Gülçiçek](https://omergulcicek.com)
+Telif Hakkı © 2020 [Ömer Gülçiçek](https://omergulcicek.com)
 
 Turkuaz Css, [MIT Lisansı](https://github.com/omergulcicek/turkuaz/blob/master/LICENSE) ile lisanslanmıştır.
 

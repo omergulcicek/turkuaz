@@ -1,3 +1,7 @@
+## 0.39.1
+
+* Güncellendi : Yazı stillerine `Inter` eklenip, minik düzenlemeler yapıldı.
+
 ## 0.39.0
 
 * Eklendi : `flex` eklendi.
