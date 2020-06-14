@@ -1,3 +1,7 @@
+## 0.39.2
+
+* Güncellendi : Küçük kartın resim kısmının boyutu değiştirildi.
+
 ## 0.39.1
 
 * Güncellendi : Yazı stillerine `Inter` eklenip, minik düzenlemeler yapıldı.
