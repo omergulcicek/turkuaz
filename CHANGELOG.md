@@ -1,3 +1,7 @@
+## 0.40.0
+
+* Eklendi : `line-clamp` özelliği eklendi.
+
 ## 0.39.2
 
 * Güncellendi : Küçük kartın resim kısmının boyutu değiştirildi.
