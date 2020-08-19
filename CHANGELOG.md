@@ -1,3 +1,7 @@
+## 0.41.0
+
+* Güncellendi : Bir çok komponentte tasarım değişiklikleri yapıldı.
+
 ## 0.40.0
 
 * Eklendi : `line-clamp` özelliği eklendi.
