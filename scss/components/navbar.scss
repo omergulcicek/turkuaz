@@ -7,6 +7,7 @@
   padding: 12px 16px;
 
   a.nav_brand {
+    color: inherit;
     margin-right: 16px;
     padding: 0;
 
@@ -25,17 +26,21 @@
     margin-bottom: 0;
   }
 
-  > a,
+  > a:not(.nav_brand),
   li > a,
   .dropdown-trigger {
     border-radius: $radius;
     color: inherit;
     display: inline-flex;
+    font-size: inherit;
     margin-bottom: 0;
-    margin-right: 4px;
-    padding: 4px 12px;
+    margin-left: 40px;
+    opacity: 0.8;
 
+    &:focus,
     &:hover {
+      opacity: 1;
+      text-decoration: none;
       transition: 0.1s ease-out;
     }
 
