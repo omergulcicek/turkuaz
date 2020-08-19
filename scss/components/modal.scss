@@ -2,24 +2,61 @@
   animation: modal .3s;
   background-color: $white;
   border: 0;
-  border-radius: $radius;
-  color: $black;
+  border-radius: 8px;
+  color: #6b7280;
   display: none;
   font-family: $font-family;
-  font-size: $font-size;
+  font-size: 14px;
   left: calc(-50vw + 50%);
   margin: auto;
-  padding: 24px;
+  padding: 0;
   position: fixed;
   right: calc(-50vw + 50%);
-  text-align: center;
   top: 25%;
   transform: translateY(-50%);
-  width: 400px;
+  width: 504px;
   z-index: 5;
 
   &.is-open,
   &[open] {
     display: block;
+  }
+
+  &_content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 24px 16px;
+  }
+
+  &_icon {
+    align-items: center;
+    background-color: #fde8e8;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 40px;
+    margin-right: 16px;
+    width: 40px;
+
+    svg {
+      height: 24px;
+    }
+  }
+
+  &_title {
+    color: $black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  &_footer {
+    background-color: #f9fafb;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 24px;
   }
 }
