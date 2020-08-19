@@ -3,17 +3,17 @@
   background-color: $white;
   border: $border;
   border-radius: $radius;
-  color: $text;
+  color: rgba($text, $text-opacity);
   cursor: pointer;
   display: inline-flex;
-  font-weight: $weight-normal;
+  font-weight: $weight-medium;
   font-size: 14px;
   justify-content: center;
   margin-right: 4px;
   min-width: 64px;
   outline: none;
-  line-height: 24px;
-  padding: 7px 16px;
+  line-height: 20px;
+  padding: 8px 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -21,7 +21,7 @@
   user-select: none;
 
   &:hover {
-    border-color: darken($grey, 15%);
+    color: rgba($text, 1);
     text-decoration: none;
   }
 
