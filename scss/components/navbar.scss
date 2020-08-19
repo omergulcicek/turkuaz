@@ -30,18 +30,17 @@
   li > a,
   .dropdown-trigger {
     border-radius: $radius;
-    color: inherit;
+    color: rgba($text, $text-opacity);
     display: inline-flex;
     font-size: inherit;
     margin-bottom: 0;
     margin-left: 40px;
-    opacity: 0.8;
 
     &:focus,
     &:hover {
-      opacity: 1;
+      color: inherit;
       text-decoration: none;
-      transition: 0.1s ease-out;
+      transition: $transition;
     }
 
     &[disabled] {

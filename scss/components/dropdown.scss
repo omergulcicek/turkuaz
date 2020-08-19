@@ -18,7 +18,7 @@
   }
   }
 
-  &-menu {
+  &_menu {
     background-color: $white;
     border: $border;
     border-radius: $radius;
@@ -32,12 +32,12 @@
   }
 
   &.is-active {
-    .dropdown-menu {
+    .dropdown_menu {
       display: block;
     }
   }
 
-  &-item {
+  &_item {
     color: $text;
     display: block;
     font-size: 14px;
@@ -45,6 +45,7 @@
 
     &:hover {
       background-color: $grey-lighter;
+      color: $text;
       text-decoration: none;
     }
 
@@ -54,7 +55,7 @@
   }
 
   &.is-hoverable:hover {
-    .dropdown-menu {
+    .dropdown_menu {
       display: block;
     }
   }

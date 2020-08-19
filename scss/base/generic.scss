@@ -16,7 +16,7 @@ body {
   font-family: $body-family;
   font-size: $body-size;
   font-variant-ligatures: common-ligatures;
-  font-weight: $weight-normal;
+  font-weight: $font-normal;
   line-height: 1.75;
   margin: 0;
   min-width: $body-min-width;
@@ -74,7 +74,7 @@ dl {
 }
 
 dt {
-  font-weight: $weight-bold;
+  font-weight: $font-bold;
 }
 
 dd {
@@ -98,7 +98,7 @@ blockquote  {
 
   footer {
     color: $grey-dark;
-    font-size: 80%;
+    font-size: $font-small;
 
     &::before {
       content: "—";
@@ -108,7 +108,7 @@ blockquote  {
 
 sub,
 sup {
-  font-size: 80%;
+  font-size: $font-small;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -131,10 +131,10 @@ samp {
 
 code {
   background-color: $grey-lighter;
-  border: 1px solid $grey-light;
+  border: $border;
   border-radius: $radius;
   color: inherit;
-  font-size: 85%;
+  font-size: $font-small;
   padding: 3px;
   word-break: break-word;
 }
@@ -143,7 +143,7 @@ pre {
   background-color: $grey-lighter;
   border-radius: $radius;
   color: inherit;
-  font-size: 85%;
+  font-size: $font-small;
   margin-bottom: 16px;
   margin-top: 0;
   overflow: auto;
@@ -165,7 +165,7 @@ kbd {
   background-color: $black;
   border-radius: $radius;
   color: $white;
-  font-size: 85%;
+  font-size: $font-small;
   padding: 4px 8px;
 }
 
@@ -176,7 +176,7 @@ svg {
 
 b,
 strong {
-  font-weight: $weight-bold;
+  font-weight: $font-bold;
 }
 
 i,
@@ -191,8 +191,8 @@ mark {
 }
 
 small {
-  font-size: 80%;
-  font-weight: $weight-normal;
+  font-size: $font-small;
+  font-weight: $font-normal;
 }
 
 figure {
@@ -217,12 +217,12 @@ img {
 
 a {
   background-color: transparent;
-  color: $link;
+  color: rgba($link, $text-opacity);
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    color: $link;
   }
 
   &:focus {
@@ -269,7 +269,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: $weight-semibold;
+  font-weight: $font-semibold;
   line-height: 1;
   margin-bottom: 16px;
   margin-top: 0;

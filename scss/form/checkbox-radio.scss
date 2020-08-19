@@ -100,7 +100,7 @@
   &.select-input {
     & + span {
       align-items: center;
-      border: 1px solid $grey-light;
+      border: $border;
       border-radius: 3px;
       display: inline-flex;
       height: 40px;

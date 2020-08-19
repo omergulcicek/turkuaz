@@ -7,7 +7,7 @@
   margin-bottom: 32px;
   width: 100%;
 
-  &-image {
+  &_image {
     position: relative;
     width: 100%;
 
@@ -17,17 +17,21 @@
     }
   }
 
-  &-content {
+  &_content {
     color: $text;
     padding: 24px 24px 16px;
   }
 
+  &_title {
+    font-weight: $font-medium;
+  }
+
   &.is-small {
-    .card-image {
-      padding: 16px 16px 8px;
+    .card_image {
+      padding: 16px 16px 0;
 
       img {
-        border-radius: 4px;
+        border-radius: $radius;
       }
     }
   }
@@ -35,14 +39,14 @@
   &.is-large {
     border: none;
 
-    .card-content {
+    .card_content {
       border: $border;
       border-top: 0;
       margin-left: 5%;
       margin-right: 5%;
     }
 
-    .card-image {
+    .card_image {
       img {
         border-radius: 8px;
       }

@@ -35,11 +35,12 @@ $title-1                : 60px !default;
 $title-2                : 48px !default;
 $title-3                : 36px !default;
 $title-4                : 26px !default;
-$weight-light           : 300  !default;
-$weight-normal          : 400  !default;
-$weight-medium          : 500  !default;
-$weight-semibold        : 600  !default;
-$weight-bold            : 700  !default;
+$font-light             : 300  !default;
+$font-normal            : 400  !default;
+$font-medium            : 500  !default;
+$font-semibold          : 600  !default;
+$font-bold              : 700  !default;
+$font-small             : 85%  !default;
 
 // Grid Layout
 $container-max-widths: (
@@ -73,4 +74,5 @@ $shadow                 : 0 0 0 3px rgba(0, 209, 178, 0.25) !default;
 $radius                 : 4px !default;
 $border                 : 1px solid $grey-light !default;
 $spacer                 : 16px;
+$transition             : 0.2s ease-out;
 

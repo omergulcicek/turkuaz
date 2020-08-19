@@ -6,7 +6,7 @@
   color: rgba($text, $text-opacity);
   cursor: pointer;
   display: inline-flex;
-  font-weight: $weight-medium;
+  font-weight: $font-medium;
   font-size: 14px;
   justify-content: center;
   margin-right: 4px;
@@ -17,7 +17,7 @@
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: 0.1s ease-out;
+  transition: $transition;
   user-select: none;
 
   &:hover {

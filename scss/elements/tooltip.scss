@@ -9,7 +9,7 @@
     pointer-events: none;
     position: absolute;
     top: auto;
-    transition: .1s;
+    transition: $transition;
     z-index: 1;
   }
 

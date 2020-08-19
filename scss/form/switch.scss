@@ -15,7 +15,7 @@
       display: inline-block;
       height: 20px;
       position: relative;
-      transition: .2s ease;
+      transition: $transition;
       top: 5px;
       width: 36px;
     }
@@ -30,7 +30,7 @@
       position: absolute;
       left: 1px;
       top: 2px;
-      transition: .2s ease;
+      transition: $transition;
       width: 18px;
     }
   }
