@@ -1,27 +1,26 @@
 .pagination {
   background-color: #fff;
-  display: block;
+  border: $border;
+  border-radius: $radius;
+  display: inline-flex;
   margin-bottom: 16px;
 
   a {
-    border: $border;
-    border-radius: $radius;
     color: $black;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
-    min-width: 32px;
-    padding: 3px 8px;
+    line-height: 20px;
+    padding: 8px 15px;
     text-align: center;
     transition: 0.1s ease-out;
     user-select: none;
 
     &:not(:first-child) {
-      margin-left: 4px;
+      border-left: $border;
     }
 
     &:hover {
-      border-color: darken($grey, 15%);
       text-decoration: none;
     }
 
