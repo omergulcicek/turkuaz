@@ -51,7 +51,6 @@ Her sürümde geriye dönük uyumluluk sağlamak için çalışıyoruz. Turkuaz 
 
 * [React Turkuaz](https://github.com/omergulcicek/react-turkuaz)
 * [Vue Turkuaz](https://github.com/omergulcicek/vue-turkuaz)
-* [Angular Turkuaz](https://github.com/omergulcicek/angular-turkuaz)
 * [Turkuaz Snippet](https://github.com/omergulcicek/turkuaz-snippet)
 
 _Detaylı bilgi için [destek](https://turkuazcss.com/detay/destek) sayfasını inceleyiniz._
