@@ -8,7 +8,7 @@
 
   a.nav_brand {
     color: inherit;
-    margin-right: 16px;
+    margin-right: 40px;
     padding: 0;
 
     img {
@@ -28,13 +28,13 @@
 
   > a:not(.nav_brand),
   li > a,
-  .dropdown-trigger {
+  .dropdown_trigger {
     border-radius: $radius;
     color: rgba($text, $text-opacity);
     display: inline-flex;
     font-size: inherit;
     margin-bottom: 0;
-    margin-left: 40px;
+    margin-right: 40px;
 
     &:focus,
     &:hover {
@@ -49,5 +49,4 @@
       pointer-events: none;
     }
   }
-  
 }
