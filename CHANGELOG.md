@@ -1,3 +1,7 @@
+## 0.41.1
+
+* Güncellendi : Değişken isimlendirmelerinde değişiklikler yapıldı.
+
 ## 0.41.0
 
 * Güncellendi : Bir çok komponentte tasarım değişiklikleri yapıldı.
