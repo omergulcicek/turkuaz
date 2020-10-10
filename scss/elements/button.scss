@@ -27,7 +27,7 @@
 
   &:focus:not(.is-link),
   &:active:not(.is-link) {
-    border-color: $grey;
+    border-color: $grey-500;
     box-shadow: $shadow;
   }
 
@@ -99,11 +99,11 @@
 
     &.is-outline {
       background-color: transparent;
-      border-color: $grey;
+      border-color: $grey-500;
 
       &:hover {
         background-color: $secondary;
-        border-color: $grey;
+        border-color: $grey-500;
       }
     }
   }
@@ -230,7 +230,7 @@
     }
 
     &:not([disabled]):active {
-      background-color: $grey-lighter;
+      background-color: $grey-200;
     }
   }
 

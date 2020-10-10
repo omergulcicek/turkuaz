@@ -7,7 +7,7 @@
 
     &:not(:first-child) {
       &::before {
-        color: $grey;
+        color: $grey-500;
         content: "/";
         padding-left: 4px;
         padding-right: 8px;

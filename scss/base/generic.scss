@@ -97,7 +97,7 @@ blockquote  {
   }
 
   footer {
-    color: $grey-dark;
+    color: $grey-700;
     font-size: $font-small;
 
     &::before {
@@ -130,7 +130,7 @@ samp {
 }
 
 code {
-  background-color: $grey-lighter;
+  background-color: $grey-200;
   border: $border;
   border-radius: $radius;
   color: inherit;
@@ -140,7 +140,7 @@ code {
 }
 
 pre {
-  background-color: $grey-lighter;
+  background-color: $grey-200;
   border-radius: $radius;
   color: inherit;
   font-size: $font-small;
@@ -203,7 +203,7 @@ figure {
 caption,
 figcaption {
   caption-side: bottom;
-  color: $grey-dark;
+  color: $grey-700;
   padding-bottom: 8px;
   padding-top: 8px;
   text-align: left;
@@ -223,6 +223,7 @@ a {
 
   &:hover {
     color: $link;
+    text-decoration: underline;
   }
 
   &:focus {

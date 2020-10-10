@@ -19,7 +19,7 @@
     }
 
     &[disabled] {
-      color: $grey-light;
+      color: $grey-400;
       pointer-events: none;
     }
 
@@ -35,7 +35,7 @@
       }
 
       &:not(.is-active):hover {
-        background-color: $grey-lighter;
+        background-color: $grey-200;
         text-decoration: none;
       }
     }

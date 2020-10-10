@@ -5,7 +5,7 @@
   &.has-loading {
     &:after {
       animation: spinAround .5s infinite linear;
-      border: 2px solid $grey;
+      border: 2px solid $grey-500;
       border-radius: 100%;
       border-right-color: transparent;
       border-top-color: transparent;
@@ -27,7 +27,7 @@
       padding-left: 40px;
       
       + .input-icon {
-        color: $grey-dark;
+        color: $grey-700;
         display: inline-block;
         font-size: 16px;
         left: 12px;

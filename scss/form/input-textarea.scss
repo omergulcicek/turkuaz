@@ -16,7 +16,7 @@
   }
 
   &[disabled] {
-    background-color: $grey-lighter;
+    background-color: $grey-200;
     box-shadow: none;
     cursor: default;
     opacity: 0.5;
@@ -24,7 +24,7 @@
   }
 
   &::placeholder {
-    color: $grey-dark;
+    color: $grey-700;
   }
 }
 
@@ -67,7 +67,7 @@
   }
 
   + .input-text {
-    color: $grey-dark;
+    color: $grey-700;
     display: block;
     margin-top: 4px;
   }

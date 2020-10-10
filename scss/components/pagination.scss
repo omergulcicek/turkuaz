@@ -35,7 +35,7 @@
     }
 
     &[disabled] {
-      color: $grey;
+      color: $grey-500;
       pointer-events: none;
     }
   }

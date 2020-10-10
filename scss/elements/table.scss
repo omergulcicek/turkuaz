@@ -9,7 +9,7 @@
   width: 100%;
 
   thead th {
-    border-bottom: 2px solid $grey-lighter;
+    border-bottom: 2px solid $grey-200;
   }
 
   th {
@@ -40,11 +40,11 @@
 
   &.is-bordered {
     th {
-      border: 1px solid $grey-lighter;
-      border-bottom: 2px solid $grey-lighter;
+      border: 1px solid $grey-200;
+      border-bottom: 2px solid $grey-200;
     }
     td {
-      border: 1px solid $grey-lighter;
+      border: 1px solid $grey-200;
     }
   }
 
@@ -61,7 +61,7 @@
 
     &.is-striped {
       tbody tr:nth-child(even):hover {
-        background-color: $grey-lighter;
+        background-color: $grey-200;
       }
     }
   }

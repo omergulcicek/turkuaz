@@ -45,11 +45,11 @@
 
   &[disabled] {
     & + span {
-      color: $grey-dark;
+      color: $grey-700;
       cursor: default;
 
       &::before {
-        background-color: $grey-lighter;
+        background-color: $grey-200;
         opacity: .5;
       }
     }

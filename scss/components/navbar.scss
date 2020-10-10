@@ -1,6 +1,6 @@
 .nav {
   align-items: center;
-  background-color: $grey-lighter;
+  background-color: $grey-200;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 16px;
@@ -44,7 +44,7 @@
     }
 
     &[disabled] {
-      color: $grey;
+      color: $grey-500;
       cursor: default;
       pointer-events: none;
     }

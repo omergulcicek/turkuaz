@@ -11,7 +11,7 @@
       border-bottom: 0;
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
-      border-top: 4px solid $grey-dark;
+      border-top: 4px solid $grey-700;
       content: "";
       display: inline-block;
       margin-left: 8px;
@@ -44,7 +44,7 @@
     padding: 4px 16px;
 
     &:hover {
-      background-color: $grey-lighter;
+      background-color: $grey-200;
       color: $text;
       text-decoration: none;
     }

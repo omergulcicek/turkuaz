@@ -9,7 +9,7 @@
   width: 100%;
 
   &::-webkit-progress-bar {
-    background-color: $grey-lighter;
+    background-color: $grey-200;
   }
 
   &::-webkit-progress-value {
@@ -47,7 +47,7 @@
     pointer-events: none;
 
     &::-webkit-progress-bar {
-      background-color: $grey-light;
+      background-color: $grey-400;
     }
   }
 }
