@@ -10,11 +10,11 @@
 }
 
 body {
-  color: $body-color;
+  color: $body-text-color;
   background-color: $body-background-color;
   box-sizing: border-box;
-  font-family: $body-family;
-  font-size: $body-size;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
   font-variant-ligatures: common-ligatures;
   font-weight: $font-normal;
   line-height: 1.75;
