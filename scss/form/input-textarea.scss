@@ -15,6 +15,15 @@
     box-shadow: $shadow;
   }
 
+  &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px $white inset;
+      transition: box-shadow 0s ease;
+
+      &:focus {
+        -webkit-box-shadow: $shadow, 0 0 0 30px $white inset;
+      }
+  }
+
   &[disabled] {
     background-color: $grey-200;
     box-shadow: none;
@@ -42,8 +51,8 @@
 
   &.is-valid {
     border-color: $success;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2323d160' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-
+    background-color: lighten($success, 47%);
+    
     &:focus {
       box-shadow: 0 0 0 3px rgba($success,0.25);
     }
@@ -55,7 +64,7 @@
 
   &.is-invalid {
     border-color: $danger;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f44336' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23f44336' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-color: lighten($danger, 37%);
 
     &:focus {
       box-shadow: 0 0 0 3px rgba($danger,0.25);

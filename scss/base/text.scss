@@ -1,56 +1,56 @@
-.is-text-left {
+.text-left {
   text-align: left !important;
 }
 
-.is-text-center {
+.text-center {
   text-align: center !important;
 }
 
-.is-text-right {
+.text-right {
   text-align: right !important;
 }
 
-.is-text-justified {
+.text-justified {
   text-align: justify !important;
 }
 
-.is-text-truncate {
+.text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.is-text-lowercase {
+.text-lowercase {
   text-transform: lowercase !important;
 }
 
-.is-text-uppercase {
+.text-uppercase {
   text-transform: uppercase !important;
 }
 
-.is-text-capitalize {
+.text-capitalize {
   text-transform: capitalize !important;
 }
 
-.is-line-clamp-0 {
+.line-clamp-0 {
   display: inherit;
 }
 
-.is-line-clamp-1 {
+.line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
 
-.is-line-clamp-2 {
+.line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
 
-.is-line-clamp-3 {
+.line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
@@ -58,37 +58,37 @@
 }
 
 @media (min-width: 576px) {
-  .is-text-left-sm {
+  .text-left-sm {
     text-align: left !important;
   }
   
-  .is-text-center-sm {
+  .text-center-sm {
     text-align: center !important;
   }
   
-  .is-text-right-sm {
+  .text-right-sm {
     text-align: right !important;
   }
 
-  .is-line-clamp-0-sm {
+  .line-clamp-0-sm {
     display: inherit;
   }
 
-  .is-line-clamp-1-sm {
+  .line-clamp-1-sm {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-2-sm {
+  .line-clamp-2-sm {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-3-sm {
+  .line-clamp-3-sm {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
@@ -97,37 +97,37 @@
 }
 
 @media (min-width: 768px) {
-  .is-text-left-md {
+  .text-left-md {
     text-align: left !important;
   }
   
-  .is-text-center-md {
+  .text-center-md {
     text-align: center !important;
   }
   
-  .is-text-right-md {
+  .text-right-md {
     text-align: right !important;
   }
 
-  .is-line-clamp-0-md {
+  .line-clamp-0-md {
     display: inherit;
   }
 
-  .is-line-clamp-1-md {
+  .line-clamp-1-md {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-2-md {
+  .line-clamp-2-md {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-3-md {
+  .line-clamp-3-md {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
@@ -136,37 +136,37 @@
 }
 
 @media (min-width: 992px) {
-  .is-text-left-lg {
+  .text-left-lg {
     text-align: left !important;
   }
   
-  .is-text-center-lg {
+  .text-center-lg {
     text-align: center !important;
   }
   
-  .is-text-right-lg {
+  .text-right-lg {
     text-align: right !important;
   }
 
-  .is-line-clamp-0-lg {
+  .line-clamp-0-lg {
     display: inherit;
   }
 
-  .is-line-clamp-1-lg {
+  .line-clamp-1-lg {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-2-lg {
+  .line-clamp-2-lg {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-3-lg {
+  .line-clamp-3-lg {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
@@ -175,37 +175,37 @@
 }
 
 @media (min-width: 1200px) {
-  .is-text-left-xl {
+  .text-left-xl {
     text-align: left !important;
   }
   
-  .is-text-center-xl {
+  .text-center-xl {
     text-align: center !important;
   }
   
-  .is-text-right-xl {
+  .text-right-xl {
     text-align: right !important;
   }
 
-  .is-line-clamp-0-xl {
+  .line-clamp-0-xl {
     display: inherit;
   }
 
-  .is-line-clamp-1-xl {
+  .line-clamp-1-xl {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-2-xl {
+  .line-clamp-2-xl {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
   
-  .is-line-clamp-3-xl {
+  .line-clamp-3-xl {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  

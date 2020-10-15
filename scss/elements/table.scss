@@ -3,13 +3,14 @@
   border-collapse: collapse;
   border-spacing: 0;
   color: $text;
+  cursor: default;
   margin-bottom: 16px;
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
 
   thead th {
-    border-bottom: 2px solid $grey-200;
+    border-bottom: 2px solid $grey-300;
   }
 
   th {
@@ -40,23 +41,23 @@
 
   &.is-bordered {
     th {
-      border: 1px solid $grey-200;
-      border-bottom: 2px solid $grey-200;
+      border: 1px solid $grey-300;
+      border-bottom: 2px solid $grey-300;
     }
     td {
-      border: 1px solid $grey-200;
+      border: 1px solid $grey-300;
     }
   }
 
   &.is-striped {
     tr:nth-child(even) {
-      background-color: #fafafa
+      background-color: $grey-100;
     }
   }
 
   &.is-hoverable {
     tbody tr:hover {
-      background-color: #fafafa
+      background-color: $grey-100;
     }
 
     &.is-striped {

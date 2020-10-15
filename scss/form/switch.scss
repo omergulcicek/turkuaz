@@ -3,7 +3,7 @@
   opacity: 0;
   z-index: -1;
 
-  & + span {
+  & + label {
     cursor: pointer;
     position: relative;
 
@@ -13,11 +13,11 @@
       border-radius: 32px;
       content: "";
       display: inline-block;
-      height: 20px;
+      height: 24px;
       position: relative;
       transition: $transition;
-      top: 5px;
-      width: 36px;
+      top: 4px;
+      width: 40px;
     }
 
     &::after {
@@ -28,15 +28,15 @@
       display: inline-block;
       height: 18px;
       position: absolute;
-      left: 1px;
-      top: 2px;
+      left: 2px;
+      top: -1px;
       transition: $transition;
       width: 18px;
     }
   }
 
   &:focus {
-    & + span {
+    & + label {
       &::before {
         box-shadow: 0 0 0 3px rgba($primary,.25);
       }
@@ -44,7 +44,7 @@
   }
 
   &[disabled] {
-    & + span {
+    & + label {
       color: $grey-700;
       cursor: default;
 
@@ -56,14 +56,14 @@
   }
 
   &:checked {
-    & + span {
+    & + label {
       &::before {
         background-color: $primary;
         border-color: $primary;
       }
       
       &::after {
-        left: 17px;
+        left: 18px;
       }
     }
   }
