@@ -1,3 +1,7 @@
+## 0.42.0
+
+* Güncellendi : Input, select ve switch elemenlerinin tasarımları değiştirildi.
+
 ## 0.41.1
 
 * Güncellendi : Değişken isimlendirmelerinde değişiklikler yapıldı.
