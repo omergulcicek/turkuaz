@@ -1,3 +1,8 @@
+## 0.43.0
+
+* Eklendi : `modal`lara farklı renkler eklendi.
+* Güncellendi : Dropdown ok görseli, select ile eşitlendi.
+
 ## 0.42.0
 
 * Güncellendi : Input, select ve switch elemenlerinin tasarımları değiştirildi.
