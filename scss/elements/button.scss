@@ -225,6 +225,8 @@
   }
 
   &.is-link {
+    background-color: transparent;
+    
     &:not([disabled]):hover {
       text-decoration: underline !important;
     }
