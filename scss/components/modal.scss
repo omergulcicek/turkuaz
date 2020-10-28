@@ -6,7 +6,6 @@
   color: #6b7280;
   display: none;
   font-family: $font-family;
-  font-size: 14px;
   left: calc(-50vw + 50%);
   margin: auto;
   padding: 0;
@@ -31,8 +30,9 @@
 
   &_icon {
     align-items: center;
-    background-color: #fde8e8;
+    background-color: lighten($primary, 35%);
     border-radius: 100%;
+    color: darken($primary, 5%);
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;
@@ -41,7 +41,36 @@
     width: 40px;
 
     svg {
-      height: 24px;
+      height: 20px;
+    }
+  }
+
+  &.is-success {
+    .modal_icon {
+      background-color: lighten($success, 35%);
+      color: darken($success, 10%);
+    }
+  }
+
+  &.is-warning {
+    .modal_icon {
+      background-color: lighten($warning, 30%);
+      color: darken($warning, 10%);
+    }
+  }
+
+  &.is-danger {
+    .modal_icon {
+      background-color: lighten($danger, 35%);
+      color: $danger;
+    }
+  }
+
+  &.is-info {
+    .modal_icon {
+      background-color: lighten($info, 40%);
+      color: $info;
+      color: darken($info, 25%);
     }
   }
 
@@ -50,6 +79,11 @@
     font-size: 18px;
     font-weight: $font-medium;
     margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &_footer {
