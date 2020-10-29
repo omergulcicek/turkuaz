@@ -1,3 +1,8 @@
+## 0.45.0
+
+* Eklendi : `container`ın çeşitliliği arttırıldı.
+* Güncellendi : Display ve border isimlendirmelerinde değişiklikler oldu.
+
 ## 0.44.0
 
 * Eklendi : `flex`e wrap ve nowrap özelliği eklendi.
