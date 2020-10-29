@@ -6,6 +6,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
+  padding-left: $grid-gap;
+  padding-right: $grid-gap;
   width: 100%;
 }
 
