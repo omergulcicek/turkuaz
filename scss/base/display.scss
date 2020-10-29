@@ -1,5 +1,4 @@
 .d-none,
-.d-hidden,
 [hidden] {
   display: none !important;
 }
@@ -25,8 +24,7 @@
 }
 
 @media (min-width: 576px) {
-  .d-none-sm,
-  .d-hidden-sm {
+  .d-none-sm {
     display: none !important;
   }
 
@@ -52,8 +50,7 @@
 }
 
 @media (min-width: 768px) {
-  .d-none-md,
-  .d-hidden-md {
+  .d-none-md {
     display: none !important;
   }
 
@@ -79,8 +76,7 @@
 }
 
 @media (min-width: 992px) {
-  .d-none-lg,
-  .d-hidden-lg {
+  .d-none-lg {
     display: none !important;
   }
 
@@ -106,8 +102,7 @@
 }
 
 @media (min-width: 1200px) {
-  .d-none-xl,
-  .d-hidden-xl {
+  .d-none-xl {
     display: none !important;
   }
 
