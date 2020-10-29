@@ -1,135 +1,133 @@
-.is-none,
-.is-hidden,
+.d-none,
+.d-hidden,
 [hidden] {
   display: none !important;
 }
 
-.is-block {
+.d-block {
   display: block !important;
 }
 
-.is-flex {
+.d-flex {
   display: flex !important;
 }
 
-.is-inline {
+.d-inline {
   display: inline !important;
 }
 
-.is-inline-block {
+.d-inline-block {
   display: inline-block !important;
 }
 
-.is-inline-flex {
+.d-inline-flex {
   display: inline-flex !important;
 }
 
 @media (min-width: 576px) {
-  .is-none-sm,
-  .is-hidden-sm {
+  .d-none-sm,
+  .d-hidden-sm {
     display: none !important;
   }
 
-  .is-block-sm {
+  .d-block-sm {
     display: block !important;
   }
 
-  .is-flex-sm {
+  .d-flex-sm {
     display: flex !important;
   }
 
-  .is-inline-sm {
+  .d-inline-sm {
     display: inline !important;
   }
   
-  .is-inline-block-sm {
+  .d-inline-block-sm {
     display: inline-block !important;
   }
   
-  .is-inline-flex-sm {
+  .d-inline-flex-sm {
     display: inline-flex !important;
   }
 }
 
 @media (min-width: 768px) {
-  .is-none-md,
-  .is-hidden-md {
+  .d-none-md,
+  .d-hidden-md {
     display: none !important;
   }
 
-  .is-block-md {
+  .d-block-md {
     display: block !important;
   }
 
-  .is-flex-md {
+  .d-flex-md {
     display: flex !important;
   }
 
-  .is-inline-md {
+  .d-inline-md {
     display: inline !important;
   }
   
-  .is-inline-block-md {
+  .d-inline-block-md {
     display: inline-block !important;
   }
   
-  .is-inline-flex-md {
+  .d-inline-flex-md {
     display: inline-flex !important;
   }
 }
 
 @media (min-width: 992px) {
-  .is-none-lg,
-  .is-hidden-lg {
+  .d-none-lg,
+  .d-hidden-lg {
     display: none !important;
   }
 
-  .is-block-lg {
+  .d-block-lg {
     display: block !important;
   }
 
-  .is-flex-lg {
+  .d-flex-lg {
     display: flex !important;
   }
 
-  .is-inline-lg {
+  .d-inline-lg {
     display: inline !important;
   }
   
-  .is-inline-block-lg {
+  .d-inline-block-lg {
     display: inline-block !important;
   }
   
-  .is-inline-flex-lg {
+  .d-inline-flex-lg {
     display: inline-flex !important;
   }
-  
 }
 
 @media (min-width: 1200px) {
-  .is-none-xl,
-  .is-hidden-xl {
+  .d-none-xl,
+  .d-hidden-xl {
     display: none !important;
   }
 
-  .is-block-xl {
+  .d-block-xl {
     display: block !important;
   }
 
-  .is-flex-xl {
+  .d-flex-xl {
     display: flex !important;
   }
 
-  .is-inline-xl {
+  .d-inline-xl {
     display: inline !important;
   }
   
-  .is-inline-block-xl {
+  .d-inline-block-xl {
     display: inline-block !important;
   }
   
-  .is-inline-flex-xl {
+  .d-inline-flex-xl {
     display: inline-flex !important;
   }
-  
 }

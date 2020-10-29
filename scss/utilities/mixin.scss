@@ -11,14 +11,6 @@
   }
 }
 
-@mixin makeContainer($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-  @each $breakpoint, $container-max-width in $max-widths {
-    @include mediaBreakpoint($breakpoint, $breakpoints) {
-      max-width: $container-max-width;
-    }
-  }
-}
-
 @mixin makeColumns($columns: $grid-columns, $breakpoints: $grid-breakpoints) {
   @each $breakpoint in map-keys($breakpoints) {
     $min: map-get($breakpoints, $breakpoint);

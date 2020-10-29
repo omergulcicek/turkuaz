@@ -1,0 +1,14 @@
+[class*="col-"] {
+  padding-right: $grid-gap;
+  padding-left: $grid-gap;
+  position: relative;
+  width: 100%
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%
+}
+
+@include makeColumns()

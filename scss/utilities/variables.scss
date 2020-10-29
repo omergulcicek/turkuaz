@@ -51,14 +51,6 @@ $font-bold              : 700   !default;
 $font-small             : 85%   !default;
 
 // Grid Layout
-$container-max-widths: (
-  xs: 90%,
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
-) !default;
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

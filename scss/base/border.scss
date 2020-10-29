@@ -1,43 +1,15 @@
 .border {
-  border: $border;
-
-  &.is-primary {
-    border-color: $primary;
-  }
-
-  &.is-secondary {
-    border-color: $secondary;
-  }
-
-  &.is-success {
-    border-color: $success;
-  }
-
-  &.is-warning {
-    border-color: $warning;
-  }
-
-  &.is-danger {
-    border-color: $danger;
-  }
-
-  &.is-info {
-    border-color: $info;
-  }
-  
-  &.is-link {
-    border-color: $link;
-  }
+  border: $border !important;
 
   &.is-rounded {
-    border-radius: $radius;
+    border-radius: $radius !important;
   }
 
   &.is-circle {
-    border-radius: 100%;
+    border-radius: 100% !important;
   }
 }
 
 .no-border {
-  border: 0;
+  border: 0 !important;
 }
