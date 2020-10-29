@@ -1,16 +1,21 @@
+## 0.45.1
+
+* Eklendi     : `container`a padding eklendi
+* Kaldırıldı  : `d-hidden` kaldırıldı.
+
 ## 0.45.0
 
-* Eklendi : `container`ın çeşitliliği arttırıldı.
+* Eklendi     : `container`ın çeşitliliği arttırıldı.
 * Güncellendi : Display ve border isimlendirmelerinde değişiklikler oldu.
 
 ## 0.44.0
 
-* Eklendi : `flex`e wrap ve nowrap özelliği eklendi.
+* Eklendi     : `flex`e wrap ve nowrap özelliği eklendi.
 * Güncellendi : Flex sınıflarının sınıf adı ve pagination'da küçük güncelleme yapıldı.
 
 ## 0.43.0
 
-* Eklendi : `modal`lara farklı renkler eklendi.
+* Eklendi     : `modal`lara farklı renkler eklendi.
 * Güncellendi : Dropdown ok görseli, select ile eşitlendi.
 
 ## 0.42.0
@@ -27,7 +32,7 @@
 
 ## 0.40.0
 
-* Eklendi : `line-clamp` özelliği eklendi.
+* Eklendi     : `line-clamp` özelliği eklendi.
 
 ## 0.39.2
 
@@ -39,7 +44,7 @@
 
 ## 0.39.0
 
-* Eklendi : `flex` eklendi.
+* Eklendi     : `flex` eklendi.
 
 ## 0.38.0
 
@@ -49,7 +54,7 @@
 
 ## 0.37.0
 
-* Eklendi : `grid` eklendi.
+* Eklendi      : `grid` eklendi.
 
 ## 0.36.1
 
