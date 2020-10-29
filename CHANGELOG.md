@@ -1,3 +1,8 @@
+## 0.44.0
+
+* Eklendi : `flex`e wrap ve nowrap özelliği eklendi.
+* Güncellendi : Flex sınıflarının sınıf adı ve pagination'da küçük güncelleme yapıldı.
+
 ## 0.43.0
 
 * Eklendi : `modal`lara farklı renkler eklendi.
