@@ -11,7 +11,6 @@ $grey-800     : #616161       !default;
 $grey-900     : #424242       !default;
 $black        : #191919       !default;
 
-
 $turquoise    : #26a69a       !default;
 $blue         : #2196f3       !default;
 $red          : #f44336       !default;
@@ -39,16 +38,12 @@ $header-3               : 28px  !default;
 $header-4               : 24px  !default;
 $header-5               : 20px  !default;
 $header-6               : 16px  !default;
-$title-1                : 60px  !default;
-$title-2                : 48px  !default;
-$title-3                : 36px  !default;
-$title-4                : 26px  !default;
 $font-light             : 300   !default;
 $font-normal            : 400   !default;
 $font-medium            : 500   !default;
 $font-semibold          : 600   !default;
 $font-bold              : 700   !default;
-$font-small             : 85%   !default;
+$font-small             : 14px  !default;
 
 // Grid Layout
 $grid-breakpoints: (
@@ -60,7 +55,7 @@ $grid-breakpoints: (
 ) !default;
 
 $grid-columns           : 12            !default;
-$grid-gap               : 15px          !default;
+$grid-gap               : 12px          !default;
 
 // Generic
 $body-background-color  : $white        !default;
@@ -75,3 +70,69 @@ $radius                 : 4px                                 !default;
 $border                 : 1px solid $border-color             !default;
 $spacer                 : 16px                                !default;
 $transition             : 200ms ease-out                      !default;
+$disabled               : 0.5                                 !default;
+
+// Elements
+$box-bg-color           : $white      !default;
+$box-border-radius      : $radius     !default;
+$box-box-shadow         : 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
+$box-color              : $text       !default;
+$box-padding            : 20px        !default;
+
+$button-bg-color        : $white      !default;
+$button-border-radius   : $radius     !default;
+$button-color           : $text       !default;
+$button-font-size       : $font-small !default;
+$button-padding         : 16px        !default;
+$button-height          : 40px        !default;
+$button-small           : 32px        !default;
+$button-large           : 48px        !default;
+
+$delete-bg-color        : rgba($black, 0.2) !default;
+$delete-size            : 20px              !default;
+$delete-small           : 16px              !default;
+$delete-large           : 24px              !default;
+
+$divider-bg-color       : rgba($black, .1)  !default;
+$divider-divider-height : 40px              !default;
+
+$notification-font-size : $font-small       !default;
+$notification-small     : 16px 24px         !default;
+
+$progress-bg-color      : $grey-200         !default;
+$progress-height        : 16px              !default;
+$progress-small         : 8px               !default;
+$progress-large         : 24px              !default;
+
+$table-bg-color         : $white            !default;
+$table-color            : $text             !default;
+$table-head-bg-color    : $grey-200         !default;
+$table-head-color       : $grey-700         !default;
+$table-font-size        : $font-small       !default;
+
+$tag-bg-color           : $grey-200         !default;
+$tag-color              : $text             !default;
+$tag-height             : 24px              !default;
+
+$title-1                : 60px              !default;
+$title-2                : 48px              !default;
+$title-3                : 36px              !default;
+$title-4                : 26px              !default;
+
+$tooltip-bg-color       : $black            !default;
+$tooltip-multiline-min-width : 280px        !default;
+
+// Form
+$checkbox-radio-bg-color: $primary          !default;
+$checkbox-radio-size    : 16px              !default;
+
+$label-font-size        : $font-small       !default;
+$input-font-size        : $font-small       !default;
+$input-height           : 40px              !default;
+$input-valid            : $success          !default;
+$input-invalid          : $danger           !default;
+
+$select-height          : 40px              !default;
+$select-font-size       : $font-small       !default;
+
+$switch-bg-color        : $primary          !default;

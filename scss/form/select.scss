@@ -5,9 +5,10 @@
   border-radius: $radius;
   color: $text;
   display: block;
-  font-size: 14px;
+  font-size: $select-font-size;
   font-weight: $font-normal;
-  height: 40px;
+  height: $select-height;
+  line-height: $select-height;
   outline: none;
   padding-left: 12px;
   padding-right: 12px;
@@ -24,7 +25,7 @@
     background-color: $grey-200;
     box-shadow: none;
     cursor: default;
-    opacity: 0.5;
+    opacity: $disabled;
     pointer-events: none;
   }
 

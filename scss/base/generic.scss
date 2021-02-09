@@ -5,8 +5,8 @@
 }
 
 ::selection {
-  background-color: $black;
-  color: $white;
+  background-color: lighten($primary, 25%);
+  color: darken($primary, 25%);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   font-size: $body-font-size;
   font-variant-ligatures: common-ligatures;
   font-weight: $font-normal;
-  line-height: 1.75;
+  line-height: 1.618;
   margin: 0;
   min-width: $body-min-width;
   overflow-x: hidden;
@@ -176,7 +176,7 @@ svg {
 
 b,
 strong {
-  font-weight: $font-bold;
+  font-weight: $font-semibold;
 }
 
 i,

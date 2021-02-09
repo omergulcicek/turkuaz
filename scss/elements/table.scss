@@ -1,76 +1,54 @@
 .table {
-  background-color: $white;
+  background-color: $table-bg-color;
+  border: 1px solid $grey-300;
   border-collapse: collapse;
   border-spacing: 0;
-  color: $text;
+  color: $table-color;
   cursor: default;
-  margin-bottom: 16px;
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
 
   thead th {
-    border-bottom: 2px solid $grey-300;
+    border-bottom: 1px solid $grey-300;
   }
 
   th {
+    background-color: $table-head-bg-color;
+    border-bottom: 1px solid $grey-300;
+    color: $table-head-color;
+    font-size: 12px;
     font-weight: $font-medium;
-    text-align: left;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: left
+  }
+
+  td {
+    font-size: $table-font-size;
+    padding-bottom: 16px;
+    padding-top: 16px
   }
 
   th,
   td {
-    padding: 12px 16px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
-  &.is-small {
-    th,
-    td {
-      padding-bottom: 8px;
-      padding-top: 8px;
-    }
+  tr:not(:last-child) {
+    border-bottom: 1px solid $grey-300;
   }
 
-  &.is-large {
-    th,
-    td {
-      padding-bottom: 16px;
-      padding-top: 16px;
-    }
-  }
-
-  &.is-bordered {
-    th {
-      border: 1px solid $grey-300;
-      border-bottom: 2px solid $grey-300;
-    }
-    td {
-      border: 1px solid $grey-300;
+  &.is-borderless {
+    tr:not(:last-child) td {
+      border: 0;
     }
   }
 
   &.is-striped {
     tr:nth-child(even) {
       background-color: $grey-100;
-    }
-  }
-
-  &.is-hoverable {
-    tbody tr:hover {
-      background-color: $grey-100;
-    }
-
-    &.is-striped {
-      tbody tr:nth-child(even):hover {
-        background-color: $grey-200;
-      }
-    }
-  }
-
-  &.is-borderless {
-    th,
-    td {
-      border: 0;
     }
   }
 }

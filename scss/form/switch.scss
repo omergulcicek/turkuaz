@@ -50,7 +50,7 @@
 
       &::before {
         background-color: $grey-200;
-        opacity: .5;
+        opacity: $disabled;
       }
     }
   }
@@ -58,8 +58,8 @@
   &:checked {
     & + label {
       &::before {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $switch-bg-color;
+        border-color: $switch-bg-color;
       }
       
       &::after {

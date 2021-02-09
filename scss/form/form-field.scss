@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 16px;
 
+  & > label {
+    font-size: $label-font-size;
+  }
+
   &.has-loading {
     &:after {
       animation: spinAround .5s infinite linear;
@@ -19,34 +23,6 @@
 
     .input {
       padding-right: 40px;
-    }
-  }
-
-  &.has-icon {
-    .input {
-      padding-left: 40px;
-      
-      + .input-icon {
-        color: $grey-700;
-        display: inline-block;
-        font-size: 16px;
-        left: 12px;
-        position: absolute;
-        text-align: center;
-        top: 6px;
-        transition: $transition;
-        width: 16px;
-      }
-
-      &:focus {
-        + .input-icon {
-          color: $text;
-        }
-      }
-    }
-
-    label + .input + .input-icon {
-      top: 33px;
     }
   }
 }

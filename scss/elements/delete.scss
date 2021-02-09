@@ -1,15 +1,16 @@
 .delete {
-  background-color: rgba($black, 0.2);
+  background-color: $delete-bg-color;
   border-radius: 100%;
   cursor: pointer !important;
   display: inline-block;
-  height: 20px;
+  height: $delete-size;
   outline: none;
   position: relative;
   transition: box-shadow .2s ease;
   user-select: none;
+  -webkit-user-select: none;
   vertical-align: middle;
-  width: 20px;
+  width: $delete-size;
 
   &::before,
   &::after {
@@ -39,11 +40,11 @@
     box-shadow: $shadow;
   }
   &.is-small {
-    height: 16px;
-    width: 16px;
+    height: $delete-small;
+    width: $delete-small;
   }
   &.is-large {
-    height: 24px;
-    width: 24px;
+    height: $delete-large;
+    width: $delete-large;
   }
 }

@@ -1,3 +1,7 @@
+## 0.46.0
+
+* Güncellendi : Değişkenler `variables`a taşındı.
+
 ## 0.45.1
 
 * Eklendi     : `container`a padding eklendi

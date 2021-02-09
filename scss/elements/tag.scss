@@ -1,52 +1,61 @@
 
 .tag {
   align-items: center;
-  background-color: $grey-200;
-  border-radius: $radius;
-  color: $text;
+  background-color: $tag-bg-color;
+  border-radius: 99px;
+  color: $tag-color;
   cursor: default;
   display: inline-flex;
   justify-content: center;
-  font-size: 13px;
-  margin-right: 4px;
+  font-size: 12px;
+  font-weight: $font-normal;
+  height: $tag-height;
   overflow: hidden;
-  padding: 4px 8px;
-  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 8px;
 
-  .tag_detail {
-    background-color: rgba(0, 0, 0, .05);
-    color: inherit;
-    padding-bottom: 4px;
-    padding-top: 4px;
+  &.is-primary {
+    background-color: lighten($primary, 25%);
+    color: darken($primary, 25%)
+  }
 
-    &:first-child:not(:last-child) {
-      margin: -8px 4px -8px -12px;
-      padding-left: 12px;
-      padding-right: 4px;
-    }
+  &.is-success {
+    background-color: lighten($success, 25%);
+    color: darken($success, 25%)
+  }
 
-    &:last-child:not(:first-child) {
-      margin: -8px -12px -8px 4px;
-      padding-left: 4px;
-      padding-right: 12px;
-    }
+  &.is-danger {
+    background-color: lighten($danger, 25%);
+    color: darken($danger, 25%)
+  }
+
+  &.is-warning {
+    background-color: lighten($warning, 25%);
+    color: darken($warning, 25%)
+  }
+
+  &.is-info {
+    background-color: lighten($info, 25%);
+    color: darken($info, 25%)
   }
 
   .delete {
     color: inherit;
+    height: $delete-small;
+    width: $delete-small;
 
     &:first-child:not(:last-child) {
-      margin-right: 4px;
+      margin-right: 4px
     }
 
     &:last-child:not(:first-child) {
-      margin-left: 4px;
+      margin-left: 4px
     }
   }
 }
 
 .tags {
   .tag {
-    margin-bottom: 8px
+    margin-bottom: 4px
   }
 }

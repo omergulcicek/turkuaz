@@ -1,5 +1,5 @@
 .divider {
-  background-color: rgba($black, .1);
+  background-color: $divider-bg-color;
   display: block;
   height: 1px;
   margin: 8px 0;
@@ -23,7 +23,7 @@
     display: inline-block;
     height: auto;
     margin: 0 32px;
-    min-height: 40px;
+    min-height: $divider-divider-height;
     position: relative;
     width: 1px;
 

@@ -2,9 +2,8 @@
   background-color: $grey-200;
   border-radius: $radius;
   color: $text;
-  font-size: 14px;
-  margin-bottom: 16px;
-  padding: 16px 24px;
+  font-size: $notification-font-size;
+  padding: $notification-small;
   position: relative;
 
   a:not(.button) {

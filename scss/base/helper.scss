@@ -1,3 +1,13 @@
 body.no-scroll {
   overflow: hidden;
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, .1);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}

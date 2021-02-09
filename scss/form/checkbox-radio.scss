@@ -16,12 +16,12 @@
       border-radius: $radius;
       content: "";
       display: block;
-      height: 16px;
+      height: $checkbox-radio-size;
       left: 0;
       pointer-events: none;
       position: absolute;
       top: 6px;
-      width: 16px;
+      width: $checkbox-radio-size;
       transition: box-shadow .2s ease;
     }
   }
@@ -29,7 +29,7 @@
   &:focus {
     & + span {
       &::before {
-        box-shadow: 0 0 0 3px rgba($primary,.25);
+        box-shadow: 0 0 0 3px rgba($checkbox-radio-bg-color,.25);
       }
     }
   }
@@ -41,7 +41,7 @@
 
       &::before {
         background-color: $grey-200;
-        opacity: .5;
+        opacity: $disabled;
       }
     }
   }
@@ -49,8 +49,8 @@
   &:checked {
     & + span {
       &::before {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $checkbox-radio-bg-color;
+        border-color: $checkbox-radio-bg-color;
       }
 
       &::after {
@@ -58,82 +58,11 @@
         background: no-repeat 50%/50% 50%;
         content: "";
         display: block;
-        height: 16px;
+        height: $checkbox-radio-size;
         left: 0;
         position: absolute;
-        width: 16px;
+        width: $checkbox-radio-size;
         top: 6px;
-      }
-    }
-  }
-
-  &.color-input {
-    & + span {
-      border-radius: 3px;
-      margin-right: 4px;
-      height: 32px;
-      width: 32px;
-      
-      &::before {
-        content: none;
-      }
-
-      &::after {
-        content: "";
-        height: 24px;
-        left: 50%;
-        top: 50%;
-        width: 24px;
-        transform: translateX(-50%) translateY(-50%);
-      }
-    }
-
-    &:checked {
-      & + span {
-        &::after {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-        }
-      }
-    }
-  }
-
-  &.select-input {
-    & + span {
-      align-items: center;
-      border: $border;
-      border-radius: 3px;
-      display: inline-flex;
-      height: 40px;
-      justify-content: center;
-      margin-right: 4px;
-      padding-left: 8px;
-      padding-right: 8px;
-      min-width: 40px;
-      
-      &::before,
-      &::after {
-        content: none;
-      }
-    }
-
-    &:checked {
-      & + span {
-        background-color: lighten($primary, 45%);
-      }
-    }
-  }
-
-  &.color-input,
-  &.select-input {
-    &:focus {
-      & + span {
-        box-shadow: 0 0 0 3px rgba($primary,.25);
-      }
-    }
-
-    &.is-circle {
-      & + span {
-        border-radius: 50px;
       }
     }
   }
@@ -157,8 +86,8 @@
   &:checked[disabled] {
     & + span {
       &::before {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $checkbox-radio-bg-color;
+        border-color: $checkbox-radio-bg-color;
       }
     }
   }

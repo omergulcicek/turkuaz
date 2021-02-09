@@ -1,8 +1,8 @@
 .box {
-  background-color: $white;
-  border-radius: $radius;
-  box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
-  color: $text;
+  background-color: $box-bg-color;
+  border-radius: $box-border-radius;
+  box-shadow: $box-box-shadow;
+  color: $box-color;
   display: block;
-  padding: 20px;
+  padding: $box-padding;
 }

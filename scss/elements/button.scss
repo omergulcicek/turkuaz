@@ -1,27 +1,30 @@
 .button {
   align-items: center;
-  background-color: $white;
+  background-color: $button-bg-color;
   border: $border;
   border-radius: $radius;
-  color: rgba($text, $text-opacity);
+  color: $button-color;
   cursor: pointer;
   display: inline-flex;
-  font-weight: $font-medium;
-  font-size: 14px;
+  font-weight: $font-normal;
+  font-size: $button-font-size;
   justify-content: center;
-  margin-right: 4px;
+  height: $button-height;
   min-width: 64px;
   outline: none;
-  line-height: 20px;
-  padding: 8px 16px;
+  line-height: 40px;
+  padding-left: $button-padding;
+  padding-right: $button-padding;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition: $transition;
+  -webkit-user-select: none;
   user-select: none;
 
   &:hover {
-    color: rgba($text, 1);
+    background-color: $grey-200;
+    color: $text;
     text-decoration: none;
   }
 
@@ -141,7 +144,7 @@
     background-color: $warning;
 
     &:not([disabled]):hover {
-      background-color: darken($warning, 5%);
+      background-color: darken($warning, 10%);
     }
 
     &:not([disabled]):active {
@@ -170,7 +173,7 @@
     background-color: $danger;
 
     &:not([disabled]):hover {
-      background-color: darken($danger, 5%);
+      background-color: darken($danger, 10%);
     }
 
     &:not([disabled]):active {
@@ -199,7 +202,7 @@
     background-color: $info;
 
     &:not([disabled]):hover {
-      background-color: darken($info, 5%);
+      background-color: darken($info, 10%);
     }
 
     &:not([disabled]):active {
@@ -239,16 +242,19 @@
   &[disabled] {
     box-shadow: none;
     cursor: default;
-    opacity: 0.5;
+    opacity: $disabled;
     pointer-events: none;
   }
 
   &.is-small {
-    padding: 3px 8px;
+    height: $button-small;
+    line-height: $button-small;
   }
 
   &.is-large {
-    padding: 11px 20px;
+    height: $button-large;
+    line-height: $button-large;
+    min-width: 80px;
   }
 
   &.is-circle {

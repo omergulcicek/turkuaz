@@ -14,7 +14,7 @@
   }
 
   &::before {
-    background-color: $black;
+    background-color: $tooltip-bg-color;
     border-radius: $radius;
     color: $white;
     content: attr(data-content);
@@ -29,7 +29,7 @@
 
   &::after {
     border: 5px solid transparent;
-    border-top-color: $black;
+    border-top-color: $tooltip-bg-color;
     bottom: auto;
     content: "";
     left: 50%;
@@ -58,7 +58,7 @@
 
   &.is-multiline {
     &::before {
-      min-width: 280px;
+      min-width: $tooltip-multiline-min-width;
       text-overflow: clip;
       white-space: normal;
       word-break: keep-all;

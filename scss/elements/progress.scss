@@ -1,9 +1,12 @@
 .progress {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
   border: none;
   border-radius: $radius;
   display: block;
-  height: 16px;
+  height: $progress-height;
   overflow: hidden;
   padding: 0;
   width: 100%;
@@ -17,11 +20,11 @@
   }
 
   &.is-small {
-    height: 8px;
+    height: $progress-small;
   }
 
   &.is-large {
-    height: 24px;
+    height: $progress-large;
   }
 
   &.is-success::-webkit-progress-value {
@@ -43,7 +46,7 @@
   &[disabled] {
     box-shadow: none;
     cursor: default;
-    opacity: 0.5;
+    opacity: $disabled;
     pointer-events: none;
 
     &::-webkit-progress-bar {
