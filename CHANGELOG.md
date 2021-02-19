@@ -1,3 +1,7 @@
+## 0.47.0
+
+* Güncellendi : `_dropdown.scss`te sınıf ismi değişti ve `$font-small` -> `$font-size-small`
+
 ## 0.46.0
 
 * Güncellendi : Değişkenler `variables`a taşındı.

@@ -19,7 +19,7 @@
     margin-top: 4px;
   }
 
-  &_menu {
+  &_items {
     background-color: $white;
     border: $border;
     border-radius: $radius;
@@ -36,7 +36,7 @@
   }
 
   &.is-active {
-    .dropdown_menu {
+    .dropdown_items {
       display: block;
       opacity: 1;
       pointer-events: all;
@@ -63,7 +63,7 @@
   }
 
   &.is-hoverable:hover {
-    .dropdown_menu {
+    .dropdown_items {
       display: block;
       opacity: 1;
       pointer-events: all;

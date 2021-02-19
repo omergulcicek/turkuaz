@@ -32,6 +32,7 @@ $border-color : $grey-400       !default;
 // Typography
 $font-family            : -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Roboto" !default;
 $font-size              : 16px  !default;
+$font-size-small        : 14px  !default;
 $header-1               : 40px  !default;
 $header-2               : 32px  !default;
 $header-3               : 28px  !default;
@@ -43,9 +44,11 @@ $font-normal            : 400   !default;
 $font-medium            : 500   !default;
 $font-semibold          : 600   !default;
 $font-bold              : 700   !default;
-$font-small             : 14px  !default;
 
 // Grid Layout
+$grid-columns           : 12    !default;
+$grid-gap               : 12px  !default;
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -53,9 +56,6 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px
 ) !default;
-
-$grid-columns           : 12            !default;
-$grid-gap               : 12px          !default;
 
 // Generic
 $body-background-color  : $white        !default;
@@ -82,7 +82,7 @@ $box-padding            : 20px        !default;
 $button-bg-color        : $white      !default;
 $button-border-radius   : $radius     !default;
 $button-color           : $text       !default;
-$button-font-size       : $font-small !default;
+$button-font-size       : $font-size-small !default;
 $button-padding         : 16px        !default;
 $button-height          : 40px        !default;
 $button-small           : 32px        !default;
@@ -96,7 +96,7 @@ $delete-large           : 24px              !default;
 $divider-bg-color       : rgba($black, .1)  !default;
 $divider-divider-height : 40px              !default;
 
-$notification-font-size : $font-small       !default;
+$notification-font-size : $font-size-small  !default;
 $notification-small     : 16px 24px         !default;
 
 $progress-bg-color      : $grey-200         !default;
@@ -108,7 +108,7 @@ $table-bg-color         : $white            !default;
 $table-color            : $text             !default;
 $table-head-bg-color    : $grey-200         !default;
 $table-head-color       : $grey-700         !default;
-$table-font-size        : $font-small       !default;
+$table-font-size        : $font-size-small  !default;
 
 $tag-bg-color           : $grey-200         !default;
 $tag-color              : $text             !default;
@@ -126,13 +126,13 @@ $tooltip-multiline-min-width : 280px        !default;
 $checkbox-radio-bg-color: $primary          !default;
 $checkbox-radio-size    : 16px              !default;
 
-$label-font-size        : $font-small       !default;
-$input-font-size        : $font-small       !default;
+$label-font-size        : $font-size-small  !default;
+$input-font-size        : $font-size-small  !default;
 $input-height           : 40px              !default;
 $input-valid            : $success          !default;
 $input-invalid          : $danger           !default;
 
 $select-height          : 40px              !default;
-$select-font-size       : $font-small       !default;
+$select-font-size       : $font-size-small  !default;
 
 $switch-bg-color        : $primary          !default;

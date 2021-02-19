@@ -1,7 +1,6 @@
 "use strict";
 
 const alphabetical    = require("css-declaration-sorter"),
-      autoprefixer    = require("gulp-autoprefixer"),
       browserSync     = require("browser-sync").create(),
       concat          = require("gulp-concat"),
       sourcemaps      = require("gulp-sourcemaps"),

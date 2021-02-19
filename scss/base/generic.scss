@@ -98,7 +98,7 @@ blockquote  {
 
   footer {
     color: $grey-700;
-    font-size: $font-small;
+    font-size: $font-size-small;
 
     &::before {
       content: "—";
@@ -108,7 +108,7 @@ blockquote  {
 
 sub,
 sup {
-  font-size: $font-small;
+  font-size: $font-size-small;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -134,7 +134,7 @@ code {
   border: $border;
   border-radius: $radius;
   color: inherit;
-  font-size: $font-small;
+  font-size: $font-size-small;
   padding: 3px;
   word-break: break-word;
 }
@@ -143,7 +143,7 @@ pre {
   background-color: $grey-200;
   border-radius: $radius;
   color: inherit;
-  font-size: $font-small;
+  font-size: $font-size-small;
   margin-bottom: 16px;
   margin-top: 0;
   overflow: auto;
@@ -165,7 +165,7 @@ kbd {
   background-color: $black;
   border-radius: $radius;
   color: $white;
-  font-size: $font-small;
+  font-size: $font-size-small;
   padding: 4px 8px;
 }
 
@@ -191,7 +191,7 @@ mark {
 }
 
 small {
-  font-size: $font-small;
+  font-size: $font-size-small;
   font-weight: $font-normal;
 }
 
