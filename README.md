@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-	Daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
+	Hızlı ve kolay web sayfaları geliştirin
 </p>
 
 <p align="center">
