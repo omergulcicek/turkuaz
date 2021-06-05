@@ -1,70 +1,50 @@
 .switch {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+  appearance: none;
+  background-color: $white;
+  border: $border;
+  border-radius: 32px;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  transition: $transition;
+  width: 40px;
 
-  & + label {
-    cursor: pointer;
-    position: relative;
-
-    &::before {
-      background-color: $white;
-      border: $border;
-      border-radius: 32px;
-      content: "";
-      display: inline-block;
-      height: 24px;
-      position: relative;
-      transition: $transition;
-      top: 4px;
-      width: 40px;
-    }
-
-    &::after {
-      background-color: $white;
-      border: $border;
-      border-radius: 100%;
-      content: "";
-      display: inline-block;
-      height: 18px;
-      position: absolute;
-      left: 2px;
-      top: -1px;
-      transition: $transition;
-      width: 18px;
-    }
+  &::before {
+    background-color: $white;
+    border: $border;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 18px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: $transition;
+    width: 18px;
   }
 
   &:focus {
-    & + label {
-      &::before {
-        box-shadow: 0 0 0 3px rgba($primary,.25);
-      }
+    box-shadow: 0 0 0 3px rgba($primary,.25);
+  }
+
+  &:checked {
+    background-color: $switch-bg-color;
+    border-color: $switch-bg-color;
+
+    &::before {
+      border-color: #fff;
+      left: 18px;
     }
   }
 
   &[disabled] {
-    & + label {
-      color: $grey-700;
-      cursor: default;
+    cursor: default;
+    opacity: $disabled;
 
-      &::before {
-        background-color: $grey-200;
-        opacity: $disabled;
-      }
-    }
-  }
-
-  &:checked {
-    & + label {
-      &::before {
-        background-color: $switch-bg-color;
-        border-color: $switch-bg-color;
-      }
-      
-      &::after {
-        left: 18px;
-      }
+    &::before {
+      background-color: $grey-200;
+      border-color: $grey-200;
     }
   }
 }

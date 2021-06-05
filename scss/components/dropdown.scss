@@ -62,7 +62,8 @@
     }
   }
 
-  &.is-hoverable:hover {
+  &.is-hoverable:hover,
+  &.is-hoverable:focus-within {
     .dropdown_items {
       display: block;
       opacity: 1;

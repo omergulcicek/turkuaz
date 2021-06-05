@@ -37,9 +37,13 @@
     top: -8px;
   }
 
-  &:hover::before,
-  &:hover::after {
-    opacity: 1;
+  &:hover {
+    cursor: default;
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
   }
 
   &.is-bottom {
