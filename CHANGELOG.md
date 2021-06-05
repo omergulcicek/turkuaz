@@ -1,3 +1,7 @@
+## 0.48.0
+
+* Güncellendi : `checkbox` ve `radio buton` kodları input'a taşındı. Dropdown'a focus desteği getirildi.
+
 ## 0.47.0
 
 * Güncellendi : `_dropdown.scss`te sınıf ismi değişti ve `$font-small` -> `$font-size-small`
