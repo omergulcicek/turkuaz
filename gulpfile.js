@@ -1,6 +1,7 @@
 "use strict";
 
 const alphabetical    = require("css-declaration-sorter"),
+      autoprefixer    = require('gulp-autoprefixer'),
       browserSync     = require("browser-sync").create(),
       concat          = require("gulp-concat"),
       sourcemaps      = require("gulp-sourcemaps"),
@@ -20,6 +21,7 @@ gulp.task("sass", () => {
     .pipe(sass({outputStyle: "compressed"}).on("error", sass.logError))
     .pipe(concat("turkuaz.min.css"))
     .pipe(postcss([alphabetical({order: "alphabetically"})]))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest("css"))
     .pipe(browserSync.stream())
