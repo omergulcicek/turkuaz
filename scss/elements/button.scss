@@ -241,9 +241,8 @@
 
   &[disabled] {
     box-shadow: none;
-    cursor: default;
+    cursor: not-allowed;
     opacity: $disabled;
-    pointer-events: none;
   }
 
   &.is-small {

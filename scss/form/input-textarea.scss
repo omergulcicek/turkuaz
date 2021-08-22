@@ -28,9 +28,8 @@
   &[disabled] {
     background-color: $grey-200;
     box-shadow: none;
-    cursor: default;
+    cursor: not-allowed;
     opacity: $disabled;
-    pointer-events: none;
   }
 
   &::placeholder {
@@ -52,7 +51,7 @@
   }
 
   &.is-valid {
-    border-color: $input-valid;
+    border-color: lighten($input-valid, 15%);
     background-color: lighten($input-valid, 47%);
     
     &:focus {
@@ -65,7 +64,7 @@
   }
 
   &.is-invalid {
-    border-color: $input-invalid;
+    border-color: lighten($input-invalid, 15%);
     background-color: lighten($input-invalid, 37%);
 
     &:focus {

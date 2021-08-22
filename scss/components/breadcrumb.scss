@@ -11,15 +11,15 @@
         color: $grey-500;
         content: "/";
         padding-left: 8px;
-        padding-right: 12px;
+        padding-right: 8px;
       }
     }
 
     a {
-      color: $link;
+      color: $grey-500;
 
       &:hover {
-        color: $text;
+        color: $link;
         text-decoration: none;
       }
     }

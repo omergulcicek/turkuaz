@@ -6,6 +6,7 @@
   cursor: pointer;
   display: inline-block;
   height: 24px;
+  margin: 0;
   position: relative;
   transition: $transition;
   width: 40px;
@@ -39,7 +40,7 @@
   }
 
   &[disabled] {
-    cursor: default;
+    cursor: not-allowed;
     opacity: $disabled;
 
     &::before {

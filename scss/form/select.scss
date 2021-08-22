@@ -24,9 +24,8 @@
   &[disabled] {
     background-color: $grey-200;
     box-shadow: none;
-    cursor: default;
+    cursor: not-allowed;
     opacity: $disabled;
-    pointer-events: none;
   }
 
   &::placeholder {

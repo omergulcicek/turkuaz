@@ -1,5 +1,6 @@
 .notification {
   background-color: $grey-200;
+  border: 1px solid darken($tag-bg-color, 5%);
   border-radius: $radius;
   color: $text;
   font-size: $notification-font-size;
@@ -12,28 +13,33 @@
   }
 
   &.is-primary {
-    background-color: lighten($primary, 25%);
-    color: darken($primary, 25%);
+    background-color: lighten($primary, 35%);
+    border-color: lighten($primary, 15%);
+    color: darken($primary, 20%)
   }
 
   &.is-success {
-    background-color: lighten($success, 25%);
-    color: darken($success, 25%);
+    background-color: lighten($success, 35%);
+    border-color: lighten($success, 15%);
+    color: darken($success, 20%)
   }
 
   &.is-danger {
-    background-color: lighten($danger, 25%);
-    color: darken($danger, 25%);
+    background-color: lighten($danger, 35%);
+    border-color: lighten($danger, 15%);
+    color: darken($danger, 20%)
   }
 
   &.is-warning {
-    background-color: lighten($warning, 25%);
-    color: darken($warning, 25%);
+    background-color: lighten($warning, 35%);
+    border-color: $warning;
+    color: darken($warning, 25%)
   }
 
   &.is-info {
-    background-color: lighten($info, 25%);
-    color: darken($info, 25%);
+    background-color: lighten($info, 35%);
+    border-color: lighten($info, 15%);
+    color: darken($info, 20%)
   }
 
   .delete {

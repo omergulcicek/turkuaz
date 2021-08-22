@@ -7,9 +7,8 @@
   cursor: pointer;
   display: inline-block;
   height: $checkbox-radio-size;
-  margin: 0 4px -2px 0;
+  margin: 0 0 -2px;
   position: relative;
-  pointer-events: none;
   width: $checkbox-radio-size;
   transition: box-shadow .2s ease;
 
@@ -24,7 +23,17 @@
 
   &[disabled] {
     background-color: $grey-200;
+    cursor: not-allowed;
     opacity: $disabled;
+
+    & + span {
+      cursor: not-allowed;
+    }
+  }
+  
+  & + span {
+    margin-left: -4px;
+    padding-left: 8px;
   }
 }
 

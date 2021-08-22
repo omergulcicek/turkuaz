@@ -41,7 +41,7 @@
   }
 
   &.is-borderless {
-    tr:not(:last-child) td {
+    tr:not(:last-child) {
       border: 0;
     }
   }
@@ -49,6 +49,18 @@
   &.is-striped {
     tr:nth-child(even) {
       background-color: $grey-100;
+    }
+  }
+
+  &.is-hoverable {
+    tr:hover {
+      background-color: $grey-100;
+    }
+
+    &.is-striped {
+      tr:nth-child(even):hover {
+        background-color: $grey-200;
+      }
     }
   }
 }
