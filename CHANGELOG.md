@@ -1,3 +1,8 @@
+## 0.49.0
+
+* Eklendi     : `autoprefixer` eklendi
+* Güncellendi : Tasarımsal güncellemeler yapıldı.
+
 ## 0.48.0
 
 * Güncellendi : `checkbox` ve `radio buton` kodları input'a taşındı. Dropdown'a focus desteği getirildi.
