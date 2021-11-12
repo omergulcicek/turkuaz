@@ -1,3 +1,7 @@
+## 1.0.0
+
+* İLK SÜRÜM
+
 ## 0.49.0
 
 * Eklendi     : `autoprefixer` eklendi

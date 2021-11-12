@@ -3,7 +3,9 @@
   margin-bottom: 16px;
 
   & > label {
+    display: block;
     font-size: $label-font-size;
+    margin-bottom: 4px;
   }
 
   &.has-loading {
